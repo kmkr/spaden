@@ -9,9 +9,6 @@
     border-radius:2px;
     background-color:white;
     max-width: 100%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
 }
 a.photoframe img:hover, a .photoframe img:hover, .photoframe a img:hover, .linkblock:hover .photoframe img, .linkblock:hover .photoframe .photo {
     border:1px solid #777;

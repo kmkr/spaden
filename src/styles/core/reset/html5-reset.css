@@ -62,7 +62,6 @@ rt
 
 progress
 {
-    box-sizing: border-box;
     display: inline-block;
     height: 1em;
     width: 10em;
@@ -70,7 +69,6 @@ progress
 
 meter
 {
-    box-sizing: border-box;
     display: inline-block;
     height: 1em;
     width: 5em;
