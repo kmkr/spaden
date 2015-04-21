@@ -10,25 +10,12 @@
 }
 
 /* Market hover */
+
+.market-selector{margin:0 11px 10px 0!important}
 .market-selector a{display:block;height:auto;}
-
-.market-selector [class^="icon-"]{
-	line-height:43px;font-size:43px
-}
-
-.external-link{
-	position: absolute;
-	bottom: 10px;
-	right: 17px;
-}
+.market-selector .mod{margin:0 -1px 0 0!important;}
 @media screen and (max-width:767px) {
-	.external-link{
-		bottom: -6px;
-		right: 3px;
-	}
-}
-.market-selector .icon-eksternlenke{
-	font-size:20px;
+	.market-selector{margin:0 3px 2px 0!important}
 }
 
 .scroll-container {
