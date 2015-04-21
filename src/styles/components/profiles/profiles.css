@@ -13,7 +13,7 @@
 .profile .profilebg-peach { background-color: #E37D67; background-image: url('/img/profiles/profile-bg-peach.jpg'); }
 .profile .profilebg-pink { background-color: #F07E98; background-image: url('/img/profiles/profile-bg-pink.jpg'); }
 .profile .profilebg-purple { background-color: #B375B4; background-image: url('/img/profiles/profile-bg-purple.jpg'); }
-.profiletxt { 
+.profilebg .profiletxt { 
     color: #fff; 
     text-shadow: 0 1px 1px rgba(0,0,0,.3); 
 }
@@ -35,4 +35,12 @@
     margin-left: 5px;
     background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkZJTk5fY29weSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIxMnB4IiBoZWlnaHQ9IjEycHgiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTIgMTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZmlsbD0iIzAwOTlGRiIgZD0iTTguMDMyLDAuNEgzLjk2OEMyLDAuNCwwLjQsMiwwLjQsMy45Njh2NC4wNjRDMC40LDEwLDIsMTEuNiwzLjk2OCwxMS42SDExLjZWMy45NjgNCgkJQzExLjYsMiwxMCwwLjQsOC4wMzIsMC40eiIvPg0KCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik05LjMyOCwzLjg1Nkw5LjMxMywzLjg0Yy0wLjIwOS0wLjIwOC0wLjU0NS0wLjIwOC0wLjczNiwwTDUuNDg4LDYuODhMMy44NCw1LjINCgkJQzMuNjMyLDUuMDA4LDMuMzEyLDUuMDA4LDMuMTIsNS4yMTZMMy4xMDQsNS4yMzJjLTAuMTkyLDAuMTkyLTAuMjA4LDAuNTEyLTAuMDE2LDAuNzJsMCwwbDIuMDMyLDIuMDgNCgkJYzAuMjA4LDAuMjA4LDAuNTQ0LDAuMjA4LDAuNzM2LDBsMy40NzItMy40NTZDOS41MzYsNC4zODQsOS41MzYsNC4wNDgsOS4zMjgsMy44NTZ6Ii8+DQo8L2c+DQo8L3N2Zz4NCg==");
     background-size: contain;
+}
+.companyprofile .profilebg {
+    padding-top: 75px;
+    background-size: 100%;
+    background-positon: center;
+}
+.companyprofile .keyinfo {
+    background-color: rgba(255, 255, 255, .5);
 }

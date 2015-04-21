@@ -34,7 +34,9 @@ b.top, b.top b, b.bottom, b.bottom b{display:block;background-repeat:no-repeat;f
 .pop .tr{float:right;margin-right:-10px;_display:inline; /*fix double margin bug*/ }
 
 .mod.shadow > .inner {
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0,0,0,.15);
+	border-right: 1px solid rgba(0,0,0,.075);
+	border-left: 1px solid rgba(0,0,0,.075);
 }
 a.mod{
     display: block;
