@@ -564,7 +564,6 @@ select.blank{
     filter: alpha(opacity=0);
     opacity: 0;
     cursor: pointer;
-    pointer-events: auto;
 }
 .file-input-button ::-webkit-file-upload-button {
     cursor: pointer;

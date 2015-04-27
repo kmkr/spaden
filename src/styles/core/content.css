@@ -109,11 +109,3 @@
     z-index: 5;
 }
 
-/*
-This solves a problem with screen readers (at least VoiceOver): elements with aria-hidden=true
-do not react to touch, so if we have such an element (for example an icon font) inside a link,
-touching the icon does nothing. This makes sure the touch is registered by the parent element.
-*/
-[aria-hidden="true"] {
-    pointer-events: none;
-}
