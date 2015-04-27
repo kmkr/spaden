@@ -11,11 +11,25 @@
 
 /* Market hover */
 
-.market-selector{margin:0 11px 10px 0!important}
-.market-selector a{display:block;height:auto;}
-.market-selector .mod{margin:0 -1px 0 0!important;}
+.market-selector{
+    border-left: 1px solid rgba(0,0,0,.05);
+    border-radius: 2px;
+    margin-right:10px;
+}
+.market-selector a{
+    display:block;
+    height:auto;
+}
+.market-selector .mod {
+    margin:0 0 0 0!important;
+}
+.market-selector .mod.shadow>.inner{
+    border-left:0;
+}
 @media screen and (max-width:767px) {
-	.market-selector{margin:0 3px 2px 0!important}
+	.market-selector{
+        margin-right: 2px;
+    }
 }
 
 .scroll-container {

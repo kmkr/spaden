@@ -34,9 +34,10 @@ b.top, b.top b, b.bottom, b.bottom b{display:block;background-repeat:no-repeat;f
 .pop .tr{float:right;margin-right:-10px;_display:inline; /*fix double margin bug*/ }
 
 .mod.shadow > .inner {
-    border-bottom: 1px solid rgba(0,0,0,.15);
-	border-right: 1px solid rgba(0,0,0,.075);
-	border-left: 1px solid rgba(0,0,0,.075);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+	border-right: 1px solid rgba(0,0,0,.05);
+	border-left: 1px solid rgba(0,0,0,.05);
+    background-clip:padding-box;
 }
 a.mod{
     display: block;
