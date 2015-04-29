@@ -14,7 +14,8 @@
 .hamburger-menu .nav-trigger { position: absolute; clip: rect(0, 0, 0, 0); }
 .hamburger-menu label[for="nav-trigger"] { color: #fff; padding: 10px; font-size: 37px; cursor: pointer; float: right; margin-top: 7px; }
 @media screen and (max-width:767px) {
-    .homelink { padding-left: 10px!important; padding-right: 10px; width: 80px; }
+    .homelink { padding-left: 10px!important; padding-right: 10px; }
+    .topbar-nav-svg-home { width: 100%; }
     .topbar-level2.open, .topbar-level2.open .inner, .topbar-level2.open .bd, .topbar-level2.open .nav-level2 { height: 100%; }
     .topbar-nav-svg-caption { display: block; }
     .nav-level1 { width: 100%; }
