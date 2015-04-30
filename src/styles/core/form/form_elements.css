@@ -138,6 +138,13 @@ select:focus {
     box-shadow: inset 1px 1px 6px rgba(79, 102, 118, 0.25);
 }
 
+/* Input with no styling */
+input.unstyled {
+    background-color: transparent;
+    border: 0 solid #999999;
+    box-shadow: none;
+}
+
 /* Input status */
 /* .invalid  */
 
