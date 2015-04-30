@@ -22,21 +22,18 @@
     color: #0474bf;
 }
 .customds1 details[open] > summary:first-of-type:before {
-    content: "⌃";
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    margin: 0;
-    font-size: 2em;
-    height: 30px;
+    -ms-transform: matrix(1.1, 0, 0, 1.1, -10, 7); 
+	-webkit-transform: matrix(1.1, 0, 0, 1.1, -10, 7); 
+	transform: matrix(1.1, 0, 0, 1.1, -10, 7);
 }
 .customds1 details > summary:before {
     content: "⌃";
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    margin: 0;
     float: right;
     font-size: 2em;
     height: 35px;
+    -ms-transform: matrix(1.1, 0, 0, -1.1, -10, -14); 
+	-webkit-transform: matrix(1.1, 0, 0, -1.1, -10, -14); 
+	transform: matrix(1.1, 0, 0, -1.1, -10, -14);
 }
 
 /*----- Custom1 details/summary inline----------------------*/
