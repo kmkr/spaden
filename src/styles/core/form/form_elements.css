@@ -148,7 +148,8 @@ select:focus {
 }
 .invalid input,
 .invalid textarea,
-.invalid select{
+.invalid select,
+.invalid button{
     border-color:#E7384A;
 }
 .invalid input:focus,
