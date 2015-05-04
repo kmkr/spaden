@@ -80,6 +80,9 @@
     border: 3px solid rgba(255,255,255,.5);
     z-index: 3;
 }
+.editmode .profiletxt div {
+    z-index: 3;
+}
 
 @media (min-width: 768px) {
     .companyprofile .profilebg {
