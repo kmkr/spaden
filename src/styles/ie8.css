@@ -111,3 +111,15 @@ dt, dd { margin: 0 20px; }
 
 /* tagwords */
 a.tagword.editable:after, .editable a.tagword:after{ content:'x'; }
+
+/* profiles */
+.profileimg img { width: 177px; }
+.editmode .profileimg .profileimg-overlay .editimg {
+	background: #000;
+	opacity: .7;
+}
+.editmode input, .editmode textarea {
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
