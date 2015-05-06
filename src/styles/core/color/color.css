@@ -1,4 +1,5 @@
 ﻿/* ? */
+/*
 .bg-black{background-color:#000 !important}
 .bg-dk-gray{background-color:#666 !important}
 .bg-lt-gray{background-color:#eee !important}
@@ -12,7 +13,7 @@
 .bg-firm{background-color:#ff6600 !important;}
 .bg-snotgreen{background-color:#d2e286 !important}
 .bg-pissyellow{background-color:#ffff99 !important}
-
+*/
 
 /* Gråskala */
 .sharp, a.sharp{color:#04253c}
@@ -21,12 +22,20 @@
 .pale, a.pale{color:#cdd3d8}
 .bare, a.bare{color:#edf0f1}
 .bright, .contrast, a.bright, a.contrast{color:#ffffff;}
+
 .bg-sharp{background-color:#04253c !important}
 .bg-opaque{background-color:#4f6676 !important}
 .bg-neutral{background-color:#9ba8b1 !important}
 .bg-pale{background-color:#cdd3d8 !important}
 .bg-bare{background-color:#edf0f1 !important}
 .bg-bright{background-color:#ffffff !important}
+
+.border-sharp{border-color:#04253c}
+.border-opaque{border-color:#4f6676}
+.border-neutral{border-color:#9ba8b1}
+.border-pale{border-color:#cdd3d8}
+.border-bare{border-color:#edf0f1}
+.border-bright{border-color:#ffffff}
 
 /* Blåskala */
 .blue-dk, a.blue-dk{color:#0077ee} /* Ikoner,lenker */
@@ -37,6 +46,7 @@
 .blue-xxlt, a.blue-xxlt{color:#f2faff}
 .blue-greyish, a.blue-greyish{color:#e9eff5}
 .blue-greyish-lt{color:#F4F7FB} 
+
 .bg-blue-dk{background-color:#0077ee !important} /* Knapper */ 
 .bg-blue{background-color:#0099ff !important} /* Knapper */ 
 .bg-blue-lt{background-color:#4cb7ff !important} /* Menylinje, (implementert med 0099ff med alpha 0.7) */
@@ -46,70 +56,123 @@
 .bg-blue-greyish{background-color:#e9eff5 !important} /* Finn main-bg */
 .bg-blue-greyish-lt{background-color:#F4F7FB !important} /* Finn hover-bg */
 
+.border-blue-dk{border-color:#0077ee} 
+.border-blue{border-color:#0099ff} 
+.border-blue-lt{border-color:#4cb7ff}
+.border-blue-ltlt{border-color:#99d6ff}
+.border-blue-xlt{border-color:#e5f5ff}
+.border-blue-xxlt{border-color:#f2faff}
+.border-blue-greyish{border-color:#e9eff5}
+.border-blue-greyish-lt{border-color:#F4F7FB}
+
 
 /* Sekundærfarger */
 .lilac, a.lilac{color:#7863c8}
 .lilac-lt, a.lilac-lt{color:#c9c1e9}
 .lilac-xlt, a.lilac-xlt{color:#f1eff9}
+
 .bg-lilac{background-color:#7863c8 !important}
 .bg-lilac-lt{background-color:#c9c1e9 !important}
 .bg-lilac-xlt{background-color:#f1eff9 !important}
+
+.border-lilac{border-color:#7863c8}
+.border-lilac-lt{border-color:#c9c1e9}
+.border-lilac-xlt{border-color:#f1eff9}
 
 
 .purple, a.purple{color:#8b31e7}
 .purple-lt, a.purple-lt{color:#d1adf5}
 .purple-xlt, a.purple-xlt{color:#e8d6fa}
+
 .bg-purple{background-color:#8b31e7 !important}
 .bg-purple-lt{background-color:#d1adf5 !important}
 .bg-purple-xlt{background-color:#e8d6fa !important}
+
+.border-purple{border-color:#8b31e7}
+.border-purple-lt{border-color:#d1adf5}
+.border-purple-xlt{border-color:#e8d6fa}
 
 
 .candy, a.candy{color:#ff3bcf}
 .candy-lt, a.candy-lt{color:#ffb1ec}
 .candy-xlt, a.candy-xlt{color:#ffebfa}
+
 .bg-candy{background-color:#ff3bcf !important}
 .bg-candy-lt{background-color:#ffb1ec !important}
 .bg-candy-xlt{background-color:#ffebfa !important}
+
+.border-candy{border-color:#ff3bcf}
+.border-candy-lt{border-color:#ffb1ec}
+.border-candy-xlt{border-color:#ffebfa}
 
 
 .red, .negative, a.red, .negative, a.negative{color:#e7384a}
 .red-lt, a.red-lt{color:#ee7380}
 .red-xlt, a.red-xlt{color:#fbe3e6}
+
 .bg-red, .bg-negative{background-color:#e7384a !important}
 .bg-red-lt{background-color:#ee7380 !important}
 .bg-red-xlt{background-color:#fbe3e6 !important}
 
+.border-red{border-color:#e7384a}
+.border-red-lt{border-color:#ee7380}
+.border-red-xlt{border-color:#fbe3e6}
+
+
 .lemon, a.lemon{color:#fbdd25}
 .lemon-lt, a.lemon-lt{color:#fdf1a8}
 .lemon-xlt, a.lemon-xlt{color:#fef8e4}
+
 .bg-lemon{background-color:#fbdd25 !important}
 .bg-lemon-lt{background-color:#fbf1a8 !important}
 .bg-lemon-xlt{background-color:#fef8e4 !important}
 
+.border-lemon{border-color:#fbdd25}
+.border-lemon-lt{border-color:#fbf1a8}
+.border-lemon-xlt{border-color:#fef8e4}
+
+
 .rust, a.rust{color:#e78007}
 .rust-lt, a.rust-lt{color:#fe8d08}
 .rust-xlt, a.rust-xlt{color:#feefd2}
+
 .bg-rust{background-color:#e78007 !important}
 .bg-rust-lt{background-color:#fe8d08 !important}
 .bg-rust-xlt{background-color:#feefd2 !important}
 
+.border-rust{border-color:#e78007}
+.border-rust-lt{border-color:#fe8d08}
+.border-rust-xlt{border-color:#feefd2}
+
+
 .lime, a.lime{color:#cad522}
 .lime-lt, a.lime-lt{color:#eef1b6}
 .lime-xlt, a.lime-xlt{color:#f6f8da}
+
 .bg-lime{background-color:#cad522 !important}
 .bg-lime-lt{background-color:#eef1b6 !important}
 .bg-lime-xlt{background-color:#f6f8da !important}
 
+.border-lime{border-color:#cad522}
+.border-lime-lt{border-color:#eef1b6}
+.border-lime-xlt{border-color:#f6f8da}
+
+
 .green, a.green, .positive, a.positive{color:#3b7908}
 .green-lt, a.green-lt{color:#7bb02d}
 .green-xlt, a.green-xlt{color:#e4efd4}
+
 .bg-green, .bg-positive{background-color:#3b7908 !important}
 .bg-green-lt{background-color:#7bb02d !important}
 .bg-green-xlt{background-color:#e4efd4 !important}
 
+.border-green{border-color:#3b7908}
+.border-green-lt{border-color:#7bb02d}
+.border-green-xlt{border-color:#e4efd4}
+
+
 
 /*Vise farge for energiklasse pa eiendom objektsider*/
-
 .energylabel.morkegronn {background-color: #009247;}
 .energylabel.lysegronn  {background-color: #92cb51;}
 .energylabel.gul        {background-color: #e2cb23;}
