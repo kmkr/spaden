@@ -12,6 +12,7 @@
 @import url("form/form_elements.css");
 @import url("content.css");
 @import url("base.css");
+@import url("border/border.css");
 @import url("color/color.css");
 @import url("images/images.css");
 @import url("print/print.css");
