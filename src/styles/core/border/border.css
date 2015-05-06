@@ -8,6 +8,7 @@ must be included before color.css
 .bat,.btt,.brt,.bbt,.blt,.bvt,.bht,.bas,.bts,.brs,.bbs,.bls,.bvs,.bhs{
 	border-style: solid;
 	border-color: #CDD3D8; /* Default border color */
+	border-width: 0;
 }
 
 .btn,.bvn,.ban{border-top-width:0}
