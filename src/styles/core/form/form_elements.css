@@ -137,6 +137,16 @@ select:focus {
     border-color: #52A8EC;
     box-shadow: inset 1px 1px 6px rgba(79, 102, 118, 0.25);
 }
+input[type="number"] { 
+  -moz-appearance: textfield; 
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 /* Input status */
 /* .invalid  */
@@ -270,6 +280,7 @@ a.button.disabled {
     background: #e2e6e9;
     color:#9ba8b1;
     background-image:none;
+    cursor:default;
 }
 button:not([disabled]):focus,
 a.icon:focus,
