@@ -174,7 +174,7 @@
 .progress {
     width: 16px;
     height: 16px;
-    background: url("/img/ajax-loader-circle.gif") no-repeat scroll 50% 50% #FFF;
+    background: url("/img/loading/ajax-loader-circle.gif") no-repeat scroll 50% 50% #FFF;
     display: inline-block;
     margin-left: 5px;
 }

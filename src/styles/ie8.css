@@ -89,7 +89,7 @@ dt, dd { margin: 0 20px; }
 .r-cols2to6 > .unit:first-child + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit + .unit { clear:both }
 
 /* Misc fallbacks */
-.inprogress { background: url("../../img/animatedstripes.gif") repeat!important; }
+.inprogress { background: url("/img/loading/animatedstripes.gif") repeat!important; }
 .nav-level1 a { height: 55px; line-height: 55px; padding-left: 20px; padding-right: 20px; }
 .topbar-nav-svg img, .topbar-nav-svg-home img { display: none; }
 .homelink { position: relative; }
