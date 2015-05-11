@@ -1,60 +1,30 @@
-/* ====== Tooltips ====== */
-.tip {
+.tooltip {
     position: relative;
-    display: inline-block;
+    border-bottom: 1px dashed #9BA8B1;
+    z-index: 0;
 }
-/* Klasse .qm legger til ikon med spørsmålstegn */
-.tip.qm:after {
-    content: "?";
-    display: inline-block;
-    font-size: 12px;
-    width: 13px;
-    height: 14px;
-    line-height: 14px;
-    background: #693;
+.tooltip[data-tooltip]:hover:before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    background: #4f6676;
     color: #fff;
     border-radius: 4px;
-    border: 1px solid #fff;
-    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.1);
-    font-weight: bold;
-    text-align: center;
+    padding: 5px 10px;
+    width: 15em;
+    z-index: 2;
 }
-.tip .tip-text {
-    display: none;
-    border: 2px solid #693;
-    background: #fff;
-    color: #693;
-    padding: 10px;
-    border-radius: 4px;
-    position: absolute;
-    top: -20px;
-    margin-left: 30px;
-    width: 27em;
-    z-index: 30;
-    font-style: normal;
-    font-weight: normal;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
-}
-
-.tip .tip-text:after {
+.tooltip[data-tooltip]:hover:after {
     content: "";
     display: block;
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
     position: absolute;
-    z-index: 20;
-    border-left: 2px solid #693;
-    border-bottom: 2px solid #693;
-    background: #fff;
-    width: 12px;
-    height: 12px;
-    left: -9px;
-    top: 18px;
+    top: -10px;
+    left: 15px;
+    width: 0;
+    height: 0;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-top: 8px solid #4f6676;
+    z-index: 1;
 }
-.tip:hover .tip-text,
-.tip:focus .tip-text,
-.tip:active .tip-text { display: inline-block; }
-
