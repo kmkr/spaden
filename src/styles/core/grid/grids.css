@@ -236,18 +236,27 @@ html {
 
 
 /* Css Multicol system, ie9- not supported    */
-.multi-cols2,.multi-cols3,.multi-cols1to2,.multi-cols1to3 {
-    -moz-column-gap: 0px;
-    -webkit-column-gap: 0px;
-    column-gap: 0px;
+.multi-cols2,
+.multi-cols3,
+.multi-cols1to2,
+.multi-cols1to3 {
+    -moz-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
 }
-.multi-cols2.bordered,.multi-cols3.bordered,.multi-cols1to2.bordered,.multi-cols1to3.bordered {
+.multi-cols2.bordered,
+.multi-cols3.bordered,
+.multi-cols1to2.bordered,
+.multi-cols1to3.bordered {
     -webkit-column-rule: 1px solid #CDD3D8;
     -moz-column-rule: 1px solid #CDD3D8;
     column-rule: 1px solid #CDD3D8;
     -moz-column-break-inside: avoid;
     -webkit-column-break-inside: avoid;
     column-break-inside: avoid;
+    -moz-column-gap: 40px;
+    -webkit-column-gap: 40px;
+    column-gap: 40px;
 }
 
 .multi-cols2{

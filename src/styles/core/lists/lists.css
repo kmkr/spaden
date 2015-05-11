@@ -38,7 +38,7 @@ ul.horizontal-list li { display: inline; }
 .separator { border-right: 1px solid #9ba8b1; }
 
 /* definition lists */
-dt { color: #666; }
+dt { color: #9BA8AF; }
 dl.multicol, dl.dl-liquid { margin: 10px 0px; }
 dl.colspan2{ width:320px; }
 dl.colspan4{ width:650px; }
@@ -91,14 +91,11 @@ dl.compact dd {
     clear:both;
 }
 .dl-bordered dd, .ul-bordered li  {
-    border-top: 1px solid;
+    border-bottom: 1px solid;
 }
 .dl-bordered dd, .dl-bordered dt, .ul-bordered li {
     padding-top: 3px;
     padding-bottom: 1px;
-}
-.dl-bordered dd:first-of-type, .ul-bordered li:first-of-type {
-    border: none;
 }
 .dl-compressed{
     clear:both;
