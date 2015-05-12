@@ -148,6 +148,13 @@ input[type="date"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+/* Input with no styling */
+input.unstyled {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
 /* Input status */
 /* .invalid  */
 
