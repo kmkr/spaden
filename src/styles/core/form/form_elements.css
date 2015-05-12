@@ -141,7 +141,7 @@ select:focus {
 /* Input with no styling */
 input.unstyled {
     background-color: transparent;
-    border: 0 solid #999999;
+    border: 0;
     box-shadow: none;
 }
 
