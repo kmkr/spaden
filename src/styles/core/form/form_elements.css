@@ -149,7 +149,9 @@ select:focus {
 .invalid input,
 .invalid textarea,
 .invalid select,
-.invalid button{
+.invalid button,
+.invalid a.button,
+.invalid input.button {
     border-color:#E7384A;
 }
 .invalid input:focus,
