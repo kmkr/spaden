@@ -1,6 +1,6 @@
 .tooltip {
     position: relative;
-    border-bottom: 1px dashed #9BA8B1;
+    border-bottom: 1px dashed #CDD3D8;
     z-index: 0;
 }
 .tooltip[data-tooltip]:hover:before {
