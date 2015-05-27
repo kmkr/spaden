@@ -25,6 +25,7 @@
     .profile-large .profileimg,
     .profile-large .ratings { margin-right: 20px; }
 }
+.profile-large .profileimg img,
 .profile-medium .profileimg img { max-width: 150px; }
 .profile-small .profileimg img { max-width: 100px; }
 .profiletxt .verified:after { 

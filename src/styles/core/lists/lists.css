@@ -109,6 +109,9 @@ dl.compact dd {
     clear:both;
     padding-right:10px;
 }
+.removelastborder *:last-child {
+    border: none;
+}
 
 @media screen and (min-width:768px) {
     .multicol dt { margin: 0 10px 0 20px; }
