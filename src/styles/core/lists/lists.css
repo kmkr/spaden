@@ -1,5 +1,5 @@
 /* Bullet lists */
-ul.bullets, .object-description ul { margin-left:20px; }
+
 ul.bullets li, .object-description ul li { list-style: none; position: relative; }
 ul.bullets li:before, .object-description ul li:before {
     content: " ";
