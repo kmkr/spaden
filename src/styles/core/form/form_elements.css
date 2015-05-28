@@ -271,7 +271,6 @@ button:not([disabled]).primary:hover,
 a.icon.primary:hover,
 a.button.primary:not(.disabled):hover {
     background: #0099ff;
-    box-shadow: 0 0 6px rgba(07, 37, 60, 0.4);
     background-image: none;
 }
 input:not([disabled]).primary:active,
