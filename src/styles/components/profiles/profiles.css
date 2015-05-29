@@ -13,7 +13,8 @@
 .profile .profilebg-peach { background-color: #E37D67; background-image: url('/img/profiles/profile-bg-peach.jpg'); }
 .profile .profilebg-pink { background-color: #F07E98; background-image: url('/img/profiles/profile-bg-pink.jpg'); }
 .profile .profilebg-purple { background-color: #B375B4; background-image: url('/img/profiles/profile-bg-purple.jpg'); }
-.profilebg .profiletxt { 
+.profilebg .profiletxt,
+.profilebg .profiletxt a { 
     color: #fff; 
     text-shadow: 0 1px 1px rgba(0,0,0,.3); 
 }
@@ -28,6 +29,7 @@
 .profile-large .profileimg img,
 .profile-medium .profileimg img { max-width: 150px; }
 .profile-small .profileimg img { max-width: 100px; }
+.profile-company-small .profileimg img { max-width: 200px; max-height: 200px; }
 .profiletxt .verified:after { 
     content: "";
     display: inline-block;
