@@ -14,4 +14,37 @@
     --blue-xxlt: #f2faff;
     --blue-greyish: #e9eff5;
     --blue-greyish-lt: #F4F7FB;
+
+    --lilac: #7863c8;
+    --lilac-lt: #c9c1e9;
+    --lilac-xlt: #f1eff9;
+
+    --purple: #8b31e7;
+    --purple-lt: #d1adf5;
+    --purple-xlt: #e8d6fa;
+
+    --candy: #ff3bcf;
+    --candy-lt: #ffb1ec;
+    --candy-xlt: #ffebfa;
+
+    --red: #e7384a;
+    --red-lt: #ee7380;
+    --red-xlt: #fbe3e6;
+
+    --lemon: #fbdd25;
+    --lemon-lt: #fdf1a8;
+    --lemon-xlt: #fef8e4;
+
+    --rust: #e78007;
+    --rust-lt: #fe8d08;
+    --rust-xlt: #feefd2;
+
+    --lime: #cad522;
+    --lime-lt: #eef1b6;
+    --lime-xlt: #f6f8da;
+
+    --green: #3b7908;
+    --green-lt: #7bb02d;
+    --green-xlt: #e4efd4;
+
 }

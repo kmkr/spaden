@@ -161,7 +161,7 @@ input.unstyled {
 .invalid .help-block,
 .invalid .help-inline,
 .invalid label{
-    color:#E7384A;
+    color:var(--red);
 }
 .invalid input,
 .invalid textarea,
@@ -169,11 +169,11 @@ input.unstyled {
 .invalid button,
 .invalid a.button,
 .invalid input.button {
-    border-color:#E7384A;
+    border-color:var(--red);
 }
 .invalid input:focus,
 .invalid textarea{
-    border-color: #E7384A;
+    border-color: var(--red);
     box-shadow: 0 0 6px #f8b9b7;
 }
 
@@ -246,13 +246,13 @@ input:not([disabled]).order:hover,
 button:not([disabled]).order:hover,
 a.icon.order:hover,
 a.button.order:not(.disabled):hover {
-    background:#fe8d08;
+    background:var(--rust-lt);
 }
 input:not([disabled]).order:active,
 button:not([disabled]).order:active,
 a.icon.order:active,
 a.button.order:not(.disabled):active {
-    background:#e78007;
+    background:var(--rust);
 }
 input.primary,
 button.primary,

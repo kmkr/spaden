@@ -67,108 +67,108 @@
 
 
 /* Sekundærfarger */
-.lilac, a.lilac{color:#7863c8}
-.lilac-lt, a.lilac-lt{color:#c9c1e9}
-.lilac-xlt, a.lilac-xlt{color:#f1eff9}
+.lilac, a.lilac{color:var(--lilac)}
+.lilac-lt, a.lilac-lt{color:var(--lilac-lt)}
+.lilac-xlt, a.lilac-xlt{color:var(--lilac-xlt)}
 
-.bg-lilac{background-color:#7863c8 !important}
-.bg-lilac-lt{background-color:#c9c1e9 !important}
-.bg-lilac-xlt{background-color:#f1eff9 !important}
+.bg-lilac{background-color:var(--lilac) !important}
+.bg-lilac-lt{background-color:var(--lilac-lt) !important}
+.bg-lilac-xlt{background-color:var(--lilac-xlt) !important}
 
-.border-lilac{border-color:#7863c8}
-.border-lilac-lt{border-color:#c9c1e9}
-.border-lilac-xlt{border-color:#f1eff9}
-
-
-.purple, a.purple{color:#8b31e7}
-.purple-lt, a.purple-lt{color:#d1adf5}
-.purple-xlt, a.purple-xlt{color:#e8d6fa}
-
-.bg-purple{background-color:#8b31e7 !important}
-.bg-purple-lt{background-color:#d1adf5 !important}
-.bg-purple-xlt{background-color:#e8d6fa !important}
-
-.border-purple{border-color:#8b31e7}
-.border-purple-lt{border-color:#d1adf5}
-.border-purple-xlt{border-color:#e8d6fa}
+.border-lilac{border-color:var(--lilac)}
+.border-lilac-lt{border-color:var(--lilac-lt)}
+.border-lilac-xlt{border-color:var(--lilac-xlt)}
 
 
-.candy, a.candy{color:#ff3bcf}
-.candy-lt, a.candy-lt{color:#ffb1ec}
-.candy-xlt, a.candy-xlt{color:#ffebfa}
+.purple, a.purple{color:var(--purple)}
+.purple-lt, a.purple-lt{color:var(--purple-lt)}
+.purple-xlt, a.purple-xlt{color:var(--purple-xlt)}
 
-.bg-candy{background-color:#ff3bcf !important}
-.bg-candy-lt{background-color:#ffb1ec !important}
-.bg-candy-xlt{background-color:#ffebfa !important}
+.bg-purple{background-color:var(--purple) !important}
+.bg-purple-lt{background-color:var(--purple-lt) !important}
+.bg-purple-xlt{background-color:var(--purple-xlt) !important}
 
-.border-candy{border-color:#ff3bcf}
-.border-candy-lt{border-color:#ffb1ec}
-.border-candy-xlt{border-color:#ffebfa}
-
-
-.red, .negative, a.red, .negative, a.negative{color:#e7384a}
-.red-lt, a.red-lt{color:#ee7380}
-.red-xlt, a.red-xlt{color:#fbe3e6}
-
-.bg-red, .bg-negative{background-color:#e7384a !important}
-.bg-red-lt{background-color:#ee7380 !important}
-.bg-red-xlt{background-color:#fbe3e6 !important}
-
-.border-red{border-color:#e7384a}
-.border-red-lt{border-color:#ee7380}
-.border-red-xlt{border-color:#fbe3e6}
+.border-purple{border-color:var(--purple)}
+.border-purple-lt{border-color:var(--purple-lt)}
+.border-purple-xlt{border-color:var(--purple-xlt)}
 
 
-.lemon, a.lemon{color:#fbdd25}
-.lemon-lt, a.lemon-lt{color:#fdf1a8}
-.lemon-xlt, a.lemon-xlt{color:#fef8e4}
+.candy, a.candy{color:var(--candy)}
+.candy-lt, a.candy-lt{color:var(--candy-lt)}
+.candy-xlt, a.candy-xlt{color:var(--candy-xlt)}
 
-.bg-lemon{background-color:#fbdd25 !important}
-.bg-lemon-lt{background-color:#fbf1a8 !important}
-.bg-lemon-xlt{background-color:#fef8e4 !important}
+.bg-candy{background-color:var(--candy) !important}
+.bg-candy-lt{background-color:var(--candy-lt) !important}
+.bg-candy-xlt{background-color:var(--candy-xlt) !important}
 
-.border-lemon{border-color:#fbdd25}
-.border-lemon-lt{border-color:#fbf1a8}
-.border-lemon-xlt{border-color:#fef8e4}
-
-
-.rust, a.rust{color:#e78007}
-.rust-lt, a.rust-lt{color:#fe8d08}
-.rust-xlt, a.rust-xlt{color:#feefd2}
-
-.bg-rust{background-color:#e78007 !important}
-.bg-rust-lt{background-color:#fe8d08 !important}
-.bg-rust-xlt{background-color:#feefd2 !important}
-
-.border-rust{border-color:#e78007}
-.border-rust-lt{border-color:#fe8d08}
-.border-rust-xlt{border-color:#feefd2}
+.border-candy{border-color:var(--candy)}
+.border-candy-lt{border-color:var(--candy-lt)}
+.border-candy-xlt{border-color:var(--candy-xlt)}
 
 
-.lime, a.lime{color:#cad522}
-.lime-lt, a.lime-lt{color:#eef1b6}
-.lime-xlt, a.lime-xlt{color:#f6f8da}
+.red, .negative, a.red, .negative, a.negative{color:var(--red)}
+.red-lt, a.red-lt{color:var(--red-lt)}
+.red-xlt, a.red-xlt{color:var(--red-xlt)}
 
-.bg-lime{background-color:#cad522 !important}
-.bg-lime-lt{background-color:#eef1b6 !important}
-.bg-lime-xlt{background-color:#f6f8da !important}
+.bg-red, .bg-negative{background-color:var(--red) !important}
+.bg-red-lt{background-color:var(--red-lt) !important}
+.bg-red-xlt{background-color:var(--red-xlt) !important}
 
-.border-lime{border-color:#cad522}
-.border-lime-lt{border-color:#eef1b6}
-.border-lime-xlt{border-color:#f6f8da}
+.border-red{border-color:var(--red)}
+.border-red-lt{border-color:var(--red-lt)}
+.border-red-xlt{border-color:var(--red-xlt)}
 
 
-.green, a.green, .positive, a.positive{color:#3b7908}
-.green-lt, a.green-lt{color:#7bb02d}
-.green-xlt, a.green-xlt{color:#e4efd4}
+.lemon, a.lemon{color:var(--lemon)}
+.lemon-lt, a.lemon-lt{color:var(--lemon-lt)}
+.lemon-xlt, a.lemon-xlt{color:var(--lemon-xlt)}
 
-.bg-green, .bg-positive{background-color:#3b7908 !important}
-.bg-green-lt{background-color:#7bb02d !important}
-.bg-green-xlt{background-color:#e4efd4 !important}
+.bg-lemon{background-color:var(--lemon) !important}
+.bg-lemon-lt{background-color:var(--lemon-lt) !important}
+.bg-lemon-xlt{background-color:var(--lemon-xlt) !important}
 
-.border-green{border-color:#3b7908}
-.border-green-lt{border-color:#7bb02d}
-.border-green-xlt{border-color:#e4efd4}
+.border-lemon{border-color:var(--lemon)}
+.border-lemon-lt{border-color:var(--lemon-lt)}
+.border-lemon-xlt{border-color:var(--lemon-xlt)}
+
+
+.rust, a.rust{color:var(--rust)}
+.rust-lt, a.rust-lt{color:var(--rust-lt)}
+.rust-xlt, a.rust-xlt{color:var(--rust-xlt)}
+
+.bg-rust{background-color:var(--rust) !important}
+.bg-rust-lt{background-color:var(--rust-lt) !important}
+.bg-rust-xlt{background-color:var(--rust-xlt) !important}
+
+.border-rust{border-color:var(--rust)}
+.border-rust-lt{border-color:var(--rust-lt)}
+.border-rust-xlt{border-color:var(--rust-xlt)}
+
+
+.lime, a.lime{color:var(--lime)}
+.lime-lt, a.lime-lt{color:var(--lime-lt)}
+.lime-xlt, a.lime-xlt{color:var(--lime-xlt)}
+
+.bg-lime{background-color:var(--lime) !important}
+.bg-lime-lt{background-color:var(--lime-lt) !important}
+.bg-lime-xlt{background-color:var(--lime-xlt) !important}
+
+.border-lime{border-color:var(--lime)}
+.border-lime-lt{border-color:var(--lime-lt)}
+.border-lime-xlt{border-color:var(--lime-xlt)}
+
+
+.green, a.green, .positive, a.positive{color:var(--green)}
+.green-lt, a.green-lt{color:var(--green-lt)}
+.green-xlt, a.green-xlt{color:var(--green-xlt)}
+
+.bg-green, .bg-positive{background-color:var(--green) !important}
+.bg-green-lt{background-color:var(--green-lt) !important}
+.bg-green-xlt{background-color:var(--green-xlt) !important}
+
+.border-green{border-color:var(--green)}
+.border-green-lt{border-color:var(--green-lt)}
+.border-green-xlt{border-color:var(--green-xlt)}
 
 
 

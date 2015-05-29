@@ -50,36 +50,36 @@
 .speech.bg-bare:after { border-top-color: var(--bare); }
 .speech.bg-bright:after { border-top-color: #FFF; }
 
-.speech.bg-lilac:after { border-top-color: #7863C8; }
-.speech.bg-lilac-lt:after { border-top-color: #C9C1E9; }
-.speech.bg-lilac-xlt:after { border-top-color: #F1EFF9; }
+.speech.bg-lilac:after { border-top-color: var(--lilac); }
+.speech.bg-lilac-lt:after { border-top-color: var(--lilac-lt); }
+.speech.bg-lilac-xlt:after { border-top-color: var(--lilac-xlt); }
 
-.speech.bg-purple:after { border-top-color: #8B31E7; }
-.speech.bg-purple-lt:after { border-top-color: #D1ADF5; }
-.speech.bg-purple-xlt:after { border-top-color: #E8D6FA; }
+.speech.bg-purple:after { border-top-color: var(--purple); }
+.speech.bg-purple-lt:after { border-top-color: var(--purple-lt); }
+.speech.bg-purple-xlt:after { border-top-color: var(--purple-xlt); }
 
-.speech.bg-candy:after { border-top-color: #FF3BCF; }
-.speech.bg-candy-lt:after { border-top-color: #FFB1EC; }
-.speech.bg-candy-xlt:after { border-top-color: #FFEBFA; }
+.speech.bg-candy:after { border-top-color: var(--candy); }
+.speech.bg-candy-lt:after { border-top-color: var(--candy-lt); }
+.speech.bg-candy-xlt:after { border-top-color: var(--candy-xlt); }
 
-.speech.bg-red:after { border-top-color: #E7384A; }
-.speech.bg-negative:after { border-top-color: #E7384A; }
-.speech.bg-red-lt:after { border-top-color: #EE7380; }
-.speech.bg-red-xlt:after { border-top-color: #FBE3E6; }
+.speech.bg-red:after { border-top-color: var(--red); }
+.speech.bg-negative:after { border-top-color: var(--red); }
+.speech.bg-red-lt:after { border-top-color: var(--red-lt); }
+.speech.bg-red-xlt:after { border-top-color: var(--red-xlt); }
 
-.speech.bg-lemon:after { border-top-color: #FBDD25; }
-.speech.bg-lemon-lt:after { border-top-color: #FDF1A8; }
-.speech.bg-lemon-xlt:after { border-top-color: #FEF8E4; }
+.speech.bg-lemon:after { border-top-color: var(--lemon); }
+.speech.bg-lemon-lt:after { border-top-color: var(--lemon-lt); }
+.speech.bg-lemon-xlt:after { border-top-color: var(--lemon-xlt); }
 
-.speech.bg-rust:after { border-top-color: #E78007; }
-.speech.bg-rust-lt:after { border-top-color: #FE8D08; }
-.speech.bg-rust-xlt:after { border-top-color: #FEEFD2; }
+.speech.bg-rust:after { border-top-color: var(--rust); }
+.speech.bg-rust-lt:after { border-top-color: var(--rust-lt); }
+.speech.bg-rust-xlt:after { border-top-color: var(--rust-xlt); }
 
-.speech.bg-lime:after { border-top-color: #CAD522; }
-.speech.bg-lime-lt:after { border-top-color: #EEF1B6; }
-.speech.bg-lime-xlt:after { border-top-color: #F6F8DA; }
+.speech.bg-lime:after { border-top-color: var(--lime); }
+.speech.bg-lime-lt:after { border-top-color: var(--lime-lt); }
+.speech.bg-lime-xlt:after { border-top-color: var(--lime-xlt); }
 
-.speech.green:after { border-top-color: #3B7908; }
-.speech.bg-positive:after { border-top-color: #3B7908; }
-.speech.green-lt:after { border-top-color: #7BB02D; }
-.speech.green-xlt:after { border-top-color: #E4EFD4; }
+.speech.green:after { border-top-color: var(--green); }
+.speech.bg-positive:after { border-top-color: var(--green); }
+.speech.green-lt:after { border-top-color: var(--green-lt); }
+.speech.green-xlt:after { border-top-color: var(--green-xlt); }
