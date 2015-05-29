@@ -17,7 +17,7 @@ gulp.task('copy-images', ['clean'], function() {
         .pipe(gulp.dest(OUT_DIR));
 });
 
-gulp.task('optimize', [], function() {
+gulp.task('optimize-images', [], function() {
     return gulp.src([OUT_DIR + '/img/**'], { base: OUT_DIR}).pipe(plugins.imageoptim.optimize());
 });
 
@@ -71,6 +71,6 @@ gulp.task('default', [
 
 gulp.task('package', [
     'default',
-    'optimize',
+    'optimize-images',
     'package-tarball'
 ]);
