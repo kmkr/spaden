@@ -1,5 +1,5 @@
 .profilebg {
-    background-color: #9BA8B1;
+    background-color: var(--neutral);
     background-size: cover;
     position: relative;
     border-radius: 2px 2px 0 0;

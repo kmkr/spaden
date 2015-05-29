@@ -1,4 +1,4 @@
-.topbar { top: 0; width: 100%; z-index: 3; -webkit-backface-visibility: hidden; backface-visibility: hidden; background-color: #0099ff; }
+.topbar { top: 0; width: 100%; z-index: 3; -webkit-backface-visibility: hidden; backface-visibility: hidden; background-color: var(--blue); }
 .topbar-level2 { top: 55px; width: 100%; z-index: 2; }
 .topbar:after, .topbar-level2:after { clear: both; }
 .topbar-nav-svg img { width: 22px; height: 22px; vertical-align: middle; }
@@ -8,7 +8,7 @@
 .nav-level1 a .caption { vertical-align: middle; }
 .nav-level1 a:hover, .nav-level1 a.active { text-decoration: none; }
 .nav-level1 .nav-element:hover, .nav-level1 .nav-active { background-color: #07e; }
-.nav-level2 { clear: both; border-bottom: 1px solid #cdd3d8; }
+.nav-level2 { clear: both; border-bottom: 1px solid var(--pale); }
 .topbar.fixed + .page { margin-top: 65px; }
 .topbar-level2.fixed + .page { margin-top: 110px; }
 .hamburger-menu .nav-trigger { position: absolute; clip: rect(0, 0, 0, 0); }
@@ -24,7 +24,7 @@
     .sitenav .nav-element { width: 17%; }
     .hamburger-menu .nav-level1 a { border-right: 0; }
     .hamburger-menu .homelink { display: block; height: 55px; line-height: 55px; }
-    .hamburger-menu .nav-element { display: none; padding: 10px; background: #4cb7ff; float: left; width: calc(100% - 2px); border-radius: 2px; margin-bottom: 2px; }
+    .hamburger-menu .nav-element { display: none; padding: 10px; background: var(--blue-lt); float: left; width: calc(100% - 2px); border-radius: 2px; margin-bottom: 2px; }
     .hamburger-menu .nav-trigger:checked ~ .nav-element { display: block; }
     .hamburger-menu .nav-level1 span { font-size: 13px; }
 }

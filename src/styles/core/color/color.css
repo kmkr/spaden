@@ -1,4 +1,4 @@
-﻿/* ? */
+/* ? */
 /*
 .bg-black{background-color:#000 !important}
 .bg-dk-gray{background-color:#666 !important}
@@ -6,7 +6,7 @@
 .bg-pale-gray{background-color:#f5f5f5 !important}
 .bg-white{background-color:#fff !important}
 .bg-dkdk-blue{background-color:#000066 !important}
-.bg-dk-blue{background-color:#0099ff !important}
+.bg-dk-blue{background-color:var(--blue) !important}
 .bg-lt-blue{background-color:#ddeeff !important}
 .bg-pale-blue{background-color:#f1f8ff !important}
 .bg-contrast{background-color:#444 !important;}
@@ -16,54 +16,54 @@
 */
 
 /* Gråskala */
-.sharp, a.sharp{color:#04253c}
-.opaque, a.opaque{color:#4f6676}
-.neutral, a.neutral{color:#9ba8b1}
-.pale, a.pale{color:#cdd3d8}
-.bare, a.bare{color:#edf0f1}
-.bright, .contrast, a.bright, a.contrast{color:#ffffff;}
+.sharp, a.sharp{color:var(--sharp)}
+.opaque, a.opaque{color:var(--opaque)}
+.neutral, a.neutral{color:var(--neutral)}
+.pale, a.pale{color:var(--pale)}
+.bare, a.bare{color:var(--bare)}
+.bright, .contrast, a.bright, a.contrast{color:var(--bright);}
 
-.bg-sharp{background-color:#04253c !important}
-.bg-opaque{background-color:#4f6676 !important}
-.bg-neutral{background-color:#9ba8b1 !important}
-.bg-pale{background-color:#cdd3d8 !important}
-.bg-bare{background-color:#edf0f1 !important}
-.bg-bright{background-color:#ffffff !important}
+.bg-sharp{background-color:var(--sharp) !important}
+.bg-opaque{background-color:var(--opaque) !important}
+.bg-neutral{background-color:var(--neutral) !important}
+.bg-pale{background-color:var(--pale) !important}
+.bg-bare{background-color:var(--bare) !important}
+.bg-bright{background-color:var(--bright) !important}
 
-.border-sharp{border-color:#04253c}
-.border-opaque{border-color:#4f6676}
-.border-neutral{border-color:#9ba8b1}
-.border-pale{border-color:#cdd3d8}
-.border-bare{border-color:#edf0f1}
-.border-bright{border-color:#ffffff}
+.border-sharp{border-color:var(--sharp)}
+.border-opaque{border-color:var(--opaque)}
+.border-neutral{border-color:var(--neutral)}
+.border-pale{border-color:var(--pale)}
+.border-bare{border-color:var(--bare)}
+.border-bright{border-color:var(--bright)}
 
 /* Blåskala */
-.blue-dk, a.blue-dk{color:#0077ee} /* Ikoner,lenker */
-.blue, a.blue{color:#0099ff}
-.blue-lt, a.blue-lt{color:#4cb7ff}
-.blue-ltlt, a.blue-ltlt{color:#99d6ff}
-.blue-xlt, a.blue-xlt{color:#e5f5ff}
-.blue-xxlt, a.blue-xxlt{color:#f2faff}
-.blue-greyish, a.blue-greyish{color:#e9eff5}
-.blue-greyish-lt{color:#F4F7FB} 
+.blue-dk, a.blue-dk{color:var(--blue-dk)} /* Ikoner,lenker */
+.blue, a.blue{color:var(--blue)}
+.blue-lt, a.blue-lt{color:var(--blue-lt)}
+.blue-ltlt, a.blue-ltlt{color:var(--blue-ltlt)}
+.blue-xlt, a.blue-xlt{color:var(--blue-xlt)}
+.blue-xxlt, a.blue-xxlt{color:var(--blue-xxlt)}
+.blue-greyish, a.blue-greyish{color:var(--blue-greyish)}
+.blue-greyish-lt{color:var(--blue-greyish-lt)}
 
-.bg-blue-dk{background-color:#0077ee !important} /* Knapper */ 
-.bg-blue{background-color:#0099ff !important} /* Knapper */ 
-.bg-blue-lt{background-color:#4cb7ff !important} /* Menylinje, (implementert med 0099ff med alpha 0.7) */
-.bg-blue-ltlt{background-color:#99d6ff !important} /* Disabled knapp, markeringer?  */
-.bg-blue-xlt{background-color:#e5f5ff !important}
-.bg-blue-xxlt{background-color:#f2faff !important}
-.bg-blue-greyish{background-color:#e9eff5 !important} /* Finn main-bg */
-.bg-blue-greyish-lt{background-color:#F4F7FB !important} /* Finn hover-bg */
+.bg-blue-dk{background-color:var(--blue-dk) !important} /* Knapper */
+.bg-blue{background-color:var(--blue) !important} /* Knapper */
+.bg-blue-lt{background-color:var(--blue-lt) !important} /* Menylinje, (implementert med 0099ff med alpha 0.7) */
+.bg-blue-ltlt{background-color:var(--blue-ltlt) !important} /* Disabled knapp, markeringer?  */
+.bg-blue-xlt{background-color:var(--blue-xlt) !important}
+.bg-blue-xxlt{background-color:var(--blue-xxlt) !important}
+.bg-blue-greyish{background-color:var(--blue-greyish) !important} /* Finn main-bg */
+.bg-blue-greyish-lt{background-color:var(--blue-greyish-lt) !important} /* Finn hover-bg */
 
-.border-blue-dk{border-color:#0077ee} 
-.border-blue{border-color:#0099ff} 
-.border-blue-lt{border-color:#4cb7ff}
-.border-blue-ltlt{border-color:#99d6ff}
-.border-blue-xlt{border-color:#e5f5ff}
-.border-blue-xxlt{border-color:#f2faff}
-.border-blue-greyish{border-color:#e9eff5}
-.border-blue-greyish-lt{border-color:#F4F7FB}
+.border-blue-dk{border-color:var(--blue-dk)}
+.border-blue{border-color:var(--blue)}
+.border-blue-lt{border-color:var(--blue-lt)}
+.border-blue-ltlt{border-color:var(--blue-ltlt)}
+.border-blue-xlt{border-color:var(--blue-xlt)}
+.border-blue-xxlt{border-color:var(--blue-xxlt)}
+.border-blue-greyish{border-color:var(--blue-greyish)}
+.border-blue-greyish-lt{border-color:var(--blue-greyish-lt)}
 
 
 /* Sekundærfarger */
@@ -178,6 +178,3 @@
 .energylabel.gul        {background-color: #e2cb23;}
 .energylabel.oransje    {background-color: #f18c31;}
 .energylabel.rod        {background-color: #ca3743;}
-
-
-

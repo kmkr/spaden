@@ -7,7 +7,7 @@
 .mod .inner .ft{ border-radius: 0 0 2px 2px ; }
 /* ====== Background blocks ====== */
 
-.mod .inner{ background-color:#ffffff }
+.mod .inner{ background-color:var(--bright) }
 .mod.commercial .inner{ background-color:#ffff99 }
 
 .mod.transparent > .inner { background:transparent; }

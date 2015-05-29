@@ -149,5 +149,5 @@
 .fixed {
     position: fixed;
 }
-hr, .hr{border:0;border-bottom: 1px solid #CDD3D8; margin: 10px 0;} /* Endret farge: ønsket default av skippern, samme farge som .pale utgaven, what to do?; */
-hr.pale, .hr.pale{border:0;border-bottom: 1px solid #cdd3d8; margin: 10px 0;}
+hr, .hr{border:0;border-bottom: 1px solid var(--pale); margin: 10px 0;} /* Endret farge: ønsket default av skippern, samme farge som .pale utgaven, what to do?; */
+hr.pale, .hr.pale{border:0;border-bottom: 1px solid var(--pale); margin: 10px 0;}

@@ -186,7 +186,7 @@
 	display: table-cell;
 	vertical-align: middle; }
 .ad-gallery.horizontal .unit {
-	border-right: 1px solid #edf0f1;
+	border-right: 1px solid var(--bare);
 	min-height: 165px;
 }
 .ad-gallery.horizontal .lastUnit {
@@ -259,7 +259,7 @@
 }
 
 /* Oppdrag intern reklame */
-.oppdrag-ad .oppdrag-object {background:#FFFFFF url("/styles/static/oppdrag-example-job.png") no-repeat; height:87px; }
+.oppdrag-ad .oppdrag-object {background:var(--bright) url("/styles/static/oppdrag-example-job.png") no-repeat; height:87px; }
 
 /* Let's deal intern reklame */
 .letsdeal-ad { overflow: visible; }

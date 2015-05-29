@@ -1,3 +1,17 @@
 :root {
-    --red: #ASD
+    --sharp: #04253c;
+    --opaque: #4f6676;
+    --neutral: #9ba8b1;
+    --pale: #cdd3d8;
+    --bare: #edf0f1;
+    --bright: #ffffff;
+
+    --blue-dk: #0077ee;
+    --blue: #0099ff;
+    --blue-lt: #4cb7ff;
+    --blue-ltlt: #99d6ff;
+    --blue-xlt: #e5f5ff;
+    --blue-xxlt: #f2faff;
+    --blue-greyish: #e9eff5;
+    --blue-greyish-lt: #F4F7FB;
 }

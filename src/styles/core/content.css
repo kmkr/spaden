@@ -43,7 +43,7 @@
 }
 
 .list-line:not(:last-child) {
-    border-bottom: 1px solid #CDD3D8;
+    border-bottom: 1px solid var(--pale);
 }
 
 /* footer specific, default is collapsed for old phones, temporary fix? */
@@ -56,7 +56,7 @@
     }
     /* should we make a generic thing for vertical dividers. this one is for the footer */
     .verticalhr li:not(:last-child){
-        border-right:1px solid #CDD3D8;
+        border-right:1px solid var(--pale);
     }
 }
 

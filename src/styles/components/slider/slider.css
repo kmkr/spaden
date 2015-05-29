@@ -29,7 +29,7 @@
 
 .finn-slider-thumb
 {
-    background-color: #FFFFFF;
+    background-color: var(--bright);
     border: 8px solid #09f;
     border-radius: 50%;
     height: 13px;

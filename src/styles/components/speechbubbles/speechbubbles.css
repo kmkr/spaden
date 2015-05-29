@@ -25,7 +25,7 @@
 .speech.bg-pale-gray:after { border-top-color: #f5f5f5; }
 .speech.bg-white:after { border-top-color: #fff; }
 .speech.bg-dkdk-blue:after { border-top-color: #000066; }
-.speech.bg-dk-blue:after { border-top-color: #0099ff; }
+.speech.bg-dk-blue:after { border-top-color: var(--blue); }
 .speech.bg-lt-blue:after { border-top-color: #ddeeff; }
 .speech.bg-pale-blue:after { border-top-color: #f1f8ff; }
 .speech.bg-contrast:after { border-top-color: #444; }
@@ -35,19 +35,19 @@
 
 /* New colors */
 
-.speech.bg-blue-dk:after { border-top-color: #0077EE; }
-.speech.bg-blue:after { border-top-color: #0099FF; }
-.speech.bg-blue-lt:after { border-top-color: #4CB7FF; }
-.speech.bg-blue-ltlt:after { border-top-color: #99D6FF; }
-.speech.bg-blue-xlt:after { border-top-color: #E5F5FF; }
-.speech.bg-blue-xxlt:after { border-top-color: #F2FAFF; }
-.speech.bg-blue-greyish:after { border-top-color: #E9EFF5; }
+.speech.bg-blue-dk:after { border-top-color: var(--blue-dk); }
+.speech.bg-blue:after { border-top-color: var(--blue); }
+.speech.bg-blue-lt:after { border-top-color: var(--blue-lt); }
+.speech.bg-blue-ltlt:after { border-top-color: var(--blue-ltlt); }
+.speech.bg-blue-xlt:after { border-top-color: var(--blue-xlt); }
+.speech.bg-blue-xxlt:after { border-top-color: var(--blue-xxlt); }
+.speech.bg-blue-greyish:after { border-top-color: var(--blue-greyish); }
 
-.speech.bg-sharp:after { border-top-color: #04253C; }
-.speech.bg-opaque:after { border-top-color: #4F6676; }
-.speech.bg-neutral:after { border-top-color: #9BA8B1; }
-.speech.bg-pale:after { border-top-color: #CDD3D8; }
-.speech.bg-bare:after { border-top-color: #EDF0F1; }
+.speech.bg-sharp:after { border-top-color: var(--sharp); }
+.speech.bg-opaque:after { border-top-color: var(--opaque); }
+.speech.bg-neutral:after { border-top-color: var(--neutral); }
+.speech.bg-pale:after { border-top-color: var(--pale); }
+.speech.bg-bare:after { border-top-color: var(--bare); }
 .speech.bg-bright:after { border-top-color: #FFF; }
 
 .speech.bg-lilac:after { border-top-color: #7863C8; }
