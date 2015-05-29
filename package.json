@@ -31,7 +31,7 @@
     "gulp-tar": "^1.0.0",
     "maven-deploy": "0.0.3",
     "postcss": "^4.1.11",
-    "postcss-css-variables": "^0.3.8",
+    "postcss-custom-properties": "^3.3.0",
     "postcss-import": "^5.2.2",
     "postcss-nested": "^0.3.1",
     "tar": "^1.0.2"
