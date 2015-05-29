@@ -1,43 +1,44 @@
+@import './config/variables.css';
 /*
-	Skal kun inneholde finnspesifikt stuff, ikke skap avhengigheter slik at andre må inkludere denne. 
+	Skal kun inneholde finnspesifikt stuff, ikke skap avhengigheter slik at andre må inkludere denne.
 
 */
 
 /* forbrukertrygghet */
-.warranty .hd { 
-	background-image: url("/img/happylock.png"); 
-	background-repeat: no-repeat; 
-	background-position: 20px 5px; 
-	padding-left: 25px; 
+.warranty .hd {
+	background-image: url("/img/happylock.png");
+	background-repeat: no-repeat;
+	background-position: 20px 5px;
+	padding-left: 25px;
 }
-.warranty ol li { 
-	list-style-type: decimal; margin: 0 0 5px 20px; 
+.warranty ol li {
+	list-style-type: decimal; margin: 0 0 5px 20px;
 }
-.warranty-inline img { 
-	padding: 7px 10px; border-radius: 3px; 
+.warranty-inline img {
+	padding: 7px 10px; border-radius: 3px;
 }
 
 /* annonser forkledd som innhold */
-.advertisement { 
-	font-size: 12px; color: #333; 
+.advertisement {
+	font-size: 12px; color: #333;
 }
-.advertisement .smalltext { 
-	font-size: 9px; font-weight: normal; 
+.advertisement .smalltext {
+	font-size: 9px; font-weight: normal;
 }
 
 /* annonseinnlegging */
-.newobject .inner { 
-	background-image: url("/img/icon_register.png"); 
-	background-repeat: no-repeat; 
-	background-position: 20px 10px; 
-	height: 70px; 
-	line-height: 50px; 
-	text-indent: 70px; 
+.newobject .inner {
+	background-image: url("/img/icon_register.png");
+	background-repeat: no-repeat;
+	background-position: 20px 10px;
+	height: 70px;
+	line-height: 50px;
+	text-indent: 70px;
 }
 
 /* markedsforside */
-.frontpage-search .searchlinks .mrm:last-child { 
-	margin-right: 0!important; 
+.frontpage-search .searchlinks .mrm:last-child {
+	margin-right: 0!important;
 }
 
 /* Advanced search */
@@ -122,9 +123,9 @@
 }
 
 /* Flere annonser fra ... */
-.crosspromotion img { 
-	max-width: 100%; 
-	max-height: 60px; 
+.crosspromotion img {
+	max-width: 100%;
+	max-height: 60px;
 }
 
 /* Bli brediftskunde  */
@@ -137,15 +138,15 @@
 }
 
 /* Tredjepartsinnhold p� objektsiden */
-.separated-content { 
-	border:1px solid #eee; 
-	border-radius:2px; 
-	padding-right:10px; 
-	padding-top:5px; 
-	box-shadow:inset 0 3px 10px #efefef; 
+.separated-content {
+	border:1px solid #eee;
+	border-radius:2px;
+	padding-right:10px;
+	padding-top:5px;
+	box-shadow:inset 0 3px 10px #efefef;
 }
-.separated-content:hover { 
-	border:1px solid #ccc; 
+.separated-content:hover {
+	border:1px solid #ccc;
 }
 /* filter */
 .multicollist li{
@@ -180,35 +181,35 @@
 }
 
 /* Annonsegalleri */
-.ad-gallery.horizontal .logoframe { 
-	height: 105px; 
-	display: table-cell; 
+.ad-gallery.horizontal .logoframe {
+	height: 105px;
+	display: table-cell;
 	vertical-align: middle; }
-.ad-gallery.horizontal .unit { 
-	border-right: 1px solid #edf0f1; 
-	min-height: 165px; 
+.ad-gallery.horizontal .unit {
+	border-right: 1px solid #edf0f1;
+	min-height: 165px;
 }
-.ad-gallery.horizontal .lastUnit { 
-	border-right: none; 
+.ad-gallery.horizontal .lastUnit {
+	border-right: none;
 }
-.ad-gallery img { 
-	max-height: 100px; 
-	max-width: 135px; 
+.ad-gallery img {
+	max-height: 100px;
+	max-width: 135px;
 }
-.ad-gallery.vertical img { 
-	max-height: 150px; 
+.ad-gallery.vertical img {
+	max-height: 150px;
 }
-.ad-gallery .pseudoCrop { 
-	max-width: 100%!important; 
+.ad-gallery .pseudoCrop {
+	max-width: 100%!important;
 }
-.ad-gallery.horizontal .logoframe { 
-	*text-align: left; 
+.ad-gallery.horizontal .logoframe {
+	*text-align: left;
 	} /* IE7 */
-.ad-gallery.horizontal .mam { 
-	*margin: 5px!important; 
+.ad-gallery.horizontal .mam {
+	*margin: 5px!important;
 	} /* IE7 */
-.ad-gallery.horizontal .unit { 
-	*height: 165px; 
+.ad-gallery.horizontal .unit {
+	*height: 165px;
 	} /* IE7 */
 
 /* Jquery UI datepicker */
@@ -226,35 +227,35 @@
     cursor: pointer;
 }
 /* Object beskrivelsestekster */
-.object-description table { 
-	margin-left: 20px; 
+.object-description table {
+	margin-left: 20px;
 }
-.object-description strong em, .article strong em { 
-	font-weight: bold; 
+.object-description strong em, .article strong em {
+	font-weight: bold;
 }
-.object-description em strong, .article em strong { 
-	font-style: italic; 
+.object-description em strong, .article em strong {
+	font-style: italic;
 }
-.object .colspan2 hr:last-child { 
-	display: none; 
+.object .colspan2 hr:last-child {
+	display: none;
 } /* Deprecated? */
 
 /* Partnerinfo */
-.partnerinfo li { 
-	list-style: none; 
+.partnerinfo li {
+	list-style: none;
 }
-.partnerinfo li ul li { 
-	list-style: disc outside; 
+.partnerinfo li ul li {
+	list-style: disc outside;
 }
 
 /* Checked headline */
-.checked-headline:before { 
-	content: url("/img/check.png"); 
-	margin-left: -30px; 
-	margin-right: 11px; 
-	display: block; 
-	float: left; 
-	margin-top: 2px; 
+.checked-headline:before {
+	content: url("/img/check.png");
+	margin-left: -30px;
+	margin-right: 11px;
+	display: block;
+	float: left;
+	margin-top: 2px;
 }
 
 /* Oppdrag intern reklame */
