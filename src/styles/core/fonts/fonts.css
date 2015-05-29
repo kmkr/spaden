@@ -43,7 +43,7 @@ h1, h2, h3, h4 {
 .debug-fonts .d1::after,.debug-fonts .smalltext::after{content:".d1(12px)";color:var(--lilac);}
 .debug-fonts .d2::after,.debug-fonts .microtext::after{content:".d2(10px)";color:var(--lilac);}
 
-@media (max-width: 767px) {
+@media (--small-screen) {
     body {
         font-size: 13px;
     }

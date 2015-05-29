@@ -56,7 +56,7 @@
     background-color:#666;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (--small-screen) {
     .pagination a,
     .pagination span { padding: 6px 15px; }
     .pagination li a { display: none; }

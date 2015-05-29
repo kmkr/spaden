@@ -113,6 +113,6 @@ dl.compact dd {
     border: none;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (--larger-screen) {
     .multicol dt { margin: 0 10px 0 20px; }
 }

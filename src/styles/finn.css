@@ -167,7 +167,7 @@
 .resultlist .media div.img { width: 226px; min-height: 80px; }
 .resultlist .media .objectinfo { width: 95%; }
 
-@media screen and (max-width:767px) {
+@media screen and (--small-screen) {
     .resultlist .media .objectinfo { width: 100%; }
 }
 /* Progress loaders */

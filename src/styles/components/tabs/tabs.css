@@ -31,7 +31,7 @@
 /* 10px margin version */
 .tabs.extern.mediumm > li > a{ padding:0 10px}
 
-@media screen and (max-width:767px) {
+@media screen and (--small-screen) {
     .r-tabs { margin: 10px 0!important; float: none; }
     .r-tabs:before { content: "Meny"; color: #22419b; cursor: pointer; display: block; line-height: 29px; border-bottom: 1px solid #ddd; padding: 0 10px; background-color:#f5f5f5; }
     .r-tabs:hover li, .r-tabs:active li, .r-tabs:focus li, .r-tabs.r-tabs-open li { display: block; }

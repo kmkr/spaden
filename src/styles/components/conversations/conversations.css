@@ -91,7 +91,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (--small-screen) {
 
     .finnbox-profile-margin {
         margin-left: 51px;

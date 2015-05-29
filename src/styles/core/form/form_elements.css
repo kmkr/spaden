@@ -324,7 +324,7 @@ a.button:not(.disabled):focus{
 @keyframes animate-inprogress { 0% {background-position: 0 0;} 100% {background-position: 60px 0;} }
 
 /* Input responsive */
-@media screen and (min-width:768px) {
+@media screen and (--larger-screen) {
   input:not([type]),
   input[type="text"],
   input[type="password"],
@@ -402,7 +402,7 @@ label, legend {
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (--larger-screen) {
   .formelement,.actions{
     margin:10px 20px;
   }
@@ -645,7 +645,7 @@ select.blank{
   pointer-events: none;
   border-radius: 0 2px 2px 0;
 }
-@media screen and (min-width:768px) {
+@media screen and (--larger-screen) {
   .fancyselect::before { line-height: 2em; }
 }
 

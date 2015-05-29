@@ -10,7 +10,7 @@ a.media {
 
 /* Mediabasert objektsidelayout */
 /* ?
-@media screen and (max-width:767px) {
+@media screen and (--small-screen) {
     .r-object > .bd { clear: both; }
 }
 */

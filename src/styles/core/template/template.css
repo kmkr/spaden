@@ -29,7 +29,7 @@ body, html {
     z-index: 10;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (--larger-screen) {
     .page{max-width:990px;margin-left: 10px;}
     .container { max-width: 1000px; margin: 0 auto; }
 	.container.kindawide { max-width: 1240px; }

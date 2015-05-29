@@ -1,3 +1,6 @@
+@custom-media --small-screen (max-width: 767px);
+@custom-media --larger-screen (min-width: 768px);
+
 :root {
     --sharp: #04253c;
     --opaque: #4f6676;

@@ -13,7 +13,7 @@
 .topbar-level2.fixed + .page { margin-top: 110px; }
 .hamburger-menu .nav-trigger { position: absolute; clip: rect(0, 0, 0, 0); }
 .hamburger-menu label[for="nav-trigger"] { color: #fff; padding: 10px; font-size: 37px; cursor: pointer; float: right; margin-top: 7px; }
-@media screen and (max-width:767px) {
+@media screen and (--small-screen) {
     .homelink { padding-left: 10px!important; padding-right: 10px; }
     .topbar-nav-svg-home { width: 100%; }
     .topbar-level2.open, .topbar-level2.open .inner, .topbar-level2.open .bd, .topbar-level2.open .nav-level2 { height: 100%; }
@@ -28,7 +28,7 @@
     .hamburger-menu .nav-trigger:checked ~ .nav-element { display: block; }
     .hamburger-menu .nav-level1 span { font-size: 13px; }
 }
-@media screen and (min-width: 768px) {
+@media screen and (--larger-screen) {
 	.nav-level1 a { height: 55px; padding-left: 20px; padding-right: 20px; }
 	.topbar-nav-svg img, .topbar-nav-svg-home { margin-right: 5px; }
     .sitenav .nav-level1 { width: 100%; }

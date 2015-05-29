@@ -23,7 +23,7 @@ a.photoframe img:hover, a .photoframe img:hover, .photoframe a img:hover, .linkb
     max-width: 100%;
     margin-top: 1px;
 }
-@media screen and (min-width:768px) {
+@media screen and (--larger-screen) {
     .photoframe:after {
         bottom: 5px;
         content: "";

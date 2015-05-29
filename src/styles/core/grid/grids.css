@@ -55,7 +55,7 @@ html {
 .r-cols3to4 > .unit { width: 33.3333%; }
 .r-cols3to7 > .unit { width: 33.3333%; }
 
-@media screen and (min-width:460px) and (max-width:767px){
+@media screen and (min-width:460px) and (--small-screen){
     .r-cols2to6 > .unit:nth-child(3n+1),
     .r-cols2to5 > .unit:nth-child(3n+1) { clear:both; }
     .r-cols1to4 > .unit:nth-child(2n+1),
@@ -73,7 +73,7 @@ html {
     .r-cols2to6 > .unit { width: 33.3333%; }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (--larger-screen) {
     .r-cols1to2 > .unit { width: 50%; }
     .r-cols1to3 > .unit,
     .r-cols2to3 > .unit { width: 33.3333%; }
@@ -118,7 +118,7 @@ html {
     .show-lt-768 { display: none!important; }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (--small-screen) {
     .r-cols3to4 .unit:nth-child(3n+1) { clear:both; }
     .r-cols2to4 .unit:nth-child(2n+1),
     .r-cols2to3 .unit:nth-child(2n+1) { clear:both; }
@@ -189,7 +189,7 @@ html {
     border-right:1px solid var(--pale);
     border-top:1px solid var(--pale);
 }
-@media screen and (min-width:460px) and (max-width:767px){
+@media screen and (min-width:460px) and (--small-screen){
     .r-cols2to6.bordered > .unit:nth-child(3n),
     .r-cols2to5.bordered > .unit:nth-child(3n),
     .r-cols1to4.bordered > .unit:nth-child(2n),
@@ -206,7 +206,7 @@ html {
     .r-cols2to6.bordered > .unit:nth-child(-n+2),
     .r-cols2to5.bordered > .unit:nth-child(-n+2){border-top:0;}
 }
-@media screen and (min-width:768px) {
+@media screen and (--larger-screen) {
     .r-cols2to6.bordered > .unit:nth-child(6n),
     .r-cols2to5.bordered > .unit:nth-child(5n),
     .r-cols3to4.bordered > .unit:nth-child(4n),
@@ -225,7 +225,7 @@ html {
     .r-cols1to3.bordered > .unit:nth-child(-n+3),
     .r-cols1to2.bordered > .unit:nth-child(-n+2){border-top:0;}
 }
-@media screen and (max-width:767px) {
+@media screen and (--small-screen) {
     .r-cols3to4.bordered > .unit:nth-child(3n),
     .r-cols2to4.bordered > .unit:nth-child(2n),
     .r-cols2to3.bordered > .unit:nth-child(2n) { border-right:0;}
@@ -269,7 +269,7 @@ html {
     -webkit-column-count: 3;
     column-count: 3;
 }
-@media screen and (min-width:460px) and (max-width:767px){
+@media screen and (min-width:460px) and (--small-screen){
     .multi-cols1to3 {
         -moz-column-count: 2;
         -webkit-column-count: 2;
@@ -277,7 +277,7 @@ html {
     }
 }
 
-@media screen and (min-width:768px){
+@media screen and (--larger-screen){
     .multi-cols1to2 {
         -moz-column-count: 2;
         -webkit-column-count: 2;
