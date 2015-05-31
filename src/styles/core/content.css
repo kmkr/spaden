@@ -26,7 +26,7 @@
 .market-selector .mod.shadow>.inner{
     border-left:0;
 }
-@media screen and (--small-screen) {
+@media (--small-screen) {
 	.market-selector{
         margin-right: 2px;
     }
@@ -50,7 +50,7 @@
 .horizontal-list.default1col li{
     display:block;
 }
-@media screen and (--larger-screen) {
+@media (--larger-screen) {
     .horizontal-list.default1col li{
         display:inline;
     }
@@ -61,7 +61,7 @@
 }
 
 
-@media screen and (--larger-screen) {
+@media (--larger-screen) {
     .fixedfilters .scrollbar::-webkit-scrollbar {
         width:5px;
         background: transparent;
@@ -70,7 +70,7 @@
 
     }
     .fixedfilters .scrollbar::-webkit-scrollbar-thumb{
-        background-color:#eee;
+        background-color:var(--lt-gray);
         border-radius:5px;
     }
     .fixedfilters .scrollbar:hover::-webkit-scrollbar-thumb{
