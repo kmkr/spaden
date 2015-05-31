@@ -90,7 +90,7 @@ a, a:link { color:#07e; text-decoration:none; }
 a:visited { color: #07e; text-decoration:none; }
 a:hover, a:focus, a:active { text-decoration:underline; }
 a:focus{outline:none;}
-a.neutral { color: #666!important; }
+a.neutral { color: var(--dk-gray)!important; }
 a > .neutral:hover,
 a:hover > .neutral { text-decoration: underline; }
 
@@ -99,15 +99,15 @@ a.userhistory:visited, .userhistory a:visited { color:var(--neutral); }
 a.userhistory:visited:hover, .userhistory a:visited:hover {   }
 
 /* high contrast font color scheme */
-a.contrast:link,.contrast a:link { color:#eee; }
+a.contrast:link,.contrast a:link { color:var(--lt-gray); }
 a.contrast:visited,.contrast a:visited { color:#ddd; }
 a.contrast:focus,.contrast a:hover { color:#fff; }
 a.contrast:focus,.contrast a:focus,
 a.contrast:active,.contrast a:active { background:transparent; }
 
 /* navigational links, visited on */
-a.contrast.userhistory:link,.contrast.userhistory a:link { color:#eee; }
-a.contrast.userhistory:visited,.contrast.userhistory a:visited { color:#eee; }
+a.contrast.userhistory:link,.contrast.userhistory a:link { color:var(--lt-gray); }
+a.contrast.userhistory:visited,.contrast.userhistory a:visited { color:var(--lt-gray); }
 a.contrast.userhistory:focus,.contrast.userhistory a:hover { color:#fff; }
 
 /* dark links */

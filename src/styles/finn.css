@@ -139,7 +139,7 @@
 
 /* Tredjepartsinnhold p� objektsiden */
 .separated-content {
-	border:1px solid #eee;
+	border:1px solid var(--lt-gray);
 	border-radius:2px;
 	padding-right:10px;
 	padding-top:5px;
@@ -153,8 +153,8 @@
     width:50%;
     float:left;
 }
-.navigator { color: #666; }
-.navigator li span { color: #666; }
+.navigator { color: var(--dk-gray); }
+.navigator li span { color: var(--dk-gray); }
 .navigator h4 { color: #000; }
 .navigator label { float: none; width: auto; }
 .navigator .submitFilter { margin-top: 10px; }
@@ -167,7 +167,7 @@
 .resultlist .media div.img { width: 226px; min-height: 80px; }
 .resultlist .media .objectinfo { width: 95%; }
 
-@media screen and (--small-screen) {
+@media (--small-screen) {
     .resultlist .media .objectinfo { width: 100%; }
 }
 /* Progress loaders */
@@ -284,7 +284,7 @@
 }
 .prisjakt p {
     line-height:16px;
-    color:#666;
+    color:var(--dk-gray);
     font-weight:bold;
 }
 .prisjakt .price {

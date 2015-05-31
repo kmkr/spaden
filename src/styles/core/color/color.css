@@ -1,18 +1,18 @@
 /* ? */
 /*
 .bg-black{background-color:#000 !important}
-.bg-dk-gray{background-color:#666 !important}
-.bg-lt-gray{background-color:#eee !important}
-.bg-pale-gray{background-color:#f5f5f5 !important}
+.bg-dk-gray{background-color:var(--dk-gray) !important}
+.bg-lt-gray{background-color:var(--lt-gray) !important}
+.bg-pale-gray{background-color:var(--pale-gray) !important}
 .bg-white{background-color:#fff !important}
-.bg-dkdk-blue{background-color:#000066 !important}
+.bg-dkdk-blue{background-color:var(--dkdk-blue) !important}
 .bg-dk-blue{background-color:var(--blue) !important}
-.bg-lt-blue{background-color:#ddeeff !important}
-.bg-pale-blue{background-color:#f1f8ff !important}
-.bg-contrast{background-color:#444 !important;}
-.bg-firm{background-color:#ff6600 !important;}
-.bg-snotgreen{background-color:#d2e286 !important}
-.bg-pissyellow{background-color:#ffff99 !important}
+.bg-lt-blue{background-color:var(--lt-blue) !important}
+.bg-pale-blue{background-color:var(--pale-blue) !important}
+.bg-contrast{background-color:var(--contrast) !important;}
+.bg-firm{background-color:var(--firm) !important;}
+.bg-snotgreen{background-color:var(--snotgreen) !important}
+.bg-pissyellow{background-color:var(--pissyellow) !important}
 */
 
 /* Gråskala */

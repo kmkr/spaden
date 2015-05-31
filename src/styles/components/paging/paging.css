@@ -53,10 +53,10 @@
     margin-right:3px;
 }
 .dot.active {
-    background-color:#666;
+    background-color:var(--dk-gray);
 }
 
-@media screen and (--small-screen) {
+@media (--small-screen) {
     .pagination a,
     .pagination span { padding: 6px 15px; }
     .pagination li a { display: none; }

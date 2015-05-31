@@ -13,7 +13,7 @@
 }
 
 .finnbox-conversation.open {
-    background-color: #f5f5f5;
+    background-color: var(--pale-gray);
     border-bottom: 4px solid #ddd;
     border-top: 4px solid #ddd;
     padding-top: 9px;
@@ -54,7 +54,7 @@
     border-radius:34px;
     border:1px solid #DDD;
     padding:1px;
-    background:#F5F5F5;
+    background:var(--pale-gray);
 }
 
 .finnbox-conversation .unread {
@@ -67,7 +67,7 @@
 }
 
 .finnbox-conversation.open .pale {
-    color: #666 !important;
+    color: var(--dk-gray) !important;
 }
 
 .finnbox-count-1 {

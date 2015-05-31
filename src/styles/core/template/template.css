@@ -12,9 +12,9 @@ body, html {
 .topbar.fixed.defaultopen + .container,
 .topbar-level2.fixed:not(.hidden) + .container { margin-top: 110px; }
 .container.fullsize { max-width: 100%; }
- 
+
 /* wraps other template elems to set width */ /* text-align IE5.5 */
-/*? 
+/*?
 .liquid, .liquid .page {max-width: none!important;} */
 /* ====== Columns ====== */
 
@@ -29,7 +29,7 @@ body, html {
     z-index: 10;
 }
 
-@media screen and (--larger-screen) {
+@media (--larger-screen) {
     .page{max-width:990px;margin-left: 10px;}
     .container { max-width: 1000px; margin: 0 auto; }
 	.container.kindawide { max-width: 1240px; }

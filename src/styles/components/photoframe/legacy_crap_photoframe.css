@@ -19,7 +19,7 @@
 
 .photoframe img { display: block; }
 
-/* eksperimentel kode for å beskjære thumbs til samme størrelse */
+/* eksperimentel kode for ï¿½ beskjï¿½re thumbs til samme stï¿½rrelse */
 .thumbwrap,
 .thumbwrap-allimages {
     height:50px;
@@ -31,7 +31,7 @@
     float: left;
 }
 .viewImage .thumbwrap {
-    border: 6px solid #EEE;
+    border: 6px solid var(--lt-gray);
 }
 .thumbwrap{
     overflow:hidden;
@@ -78,5 +78,5 @@
     overflow: hidden;
 }
 
-.thumbwrap, .thumbwrap-allimages { border: 3px solid #eee; }
+.thumbwrap, .thumbwrap-allimages { border: 3px solid var(--lt-gray); }
 .thumbwrap.selectedThumb { border: 3px solid #999; }

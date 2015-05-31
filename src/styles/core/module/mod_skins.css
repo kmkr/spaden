@@ -8,7 +8,7 @@
 /* ====== Background blocks ====== */
 
 .mod .inner{ background-color:var(--bright) }
-.mod.commercial .inner{ background-color:#ffff99 }
+.mod.commercial .inner{ background-color:var(--pissyellow) }
 
 .mod.transparent > .inner { background:transparent; }
 .mod.transparent .hd,

@@ -247,20 +247,20 @@ table.hover-cells tbody td:hover, td.hover-cells{
 }
 
 .border-black, .border-black * { border-color:#000 !important; }
-.border-dk-gray, .border-dk-gray * { border-color:#666 !important; }
-.border-lt-gray, .border-lt-gray * { border-color:#eee !important; }
-.border-pale-gray, .border-pale-gray * { border-color:#f5f5f5 !important; }
+.border-dk-gray, .border-dk-gray * { border-color:var(--dk-gray) !important; }
+.border-lt-gray, .border-lt-gray * { border-color:var(--lt-gray) !important; }
+.border-pale-gray, .border-pale-gray * { border-color:var(--pale-gray) !important; }
 .border-white, .border-white * { border-color:#fff !important; }
-.border-dkdk-blue, .border-dkdk-blue * { border-color:#000066 !important; }
+.border-dkdk-blue, .border-dkdk-blue * { border-color:var(--dkdk-blue) !important; }
 .border-dk-blue, .border-dk-blue * { border-color:var(--blue) !important; }
 .border-blue, .border-blue * { border-color:#a2d2ee !important; }
-.border-lt-blue, .border-lt-blue * { border-color:#ddeeff !important; }
-.border-pale-blue, .border-pale-blue * { border-color:#f1f8ff !important; }
-.border-contrast, .border-contrast * { border-color:#444 !important;}
-.border-firm, .border-firm * { border-color:#ff6600 !important;}
+.border-lt-blue, .border-lt-blue * { border-color:var(--lt-blue) !important; }
+.border-pale-blue, .border-pale-blue * { border-color:var(--pale-blue) !important; }
+.border-contrast, .border-contrast * { border-color:var(--contrast) !important;}
+.border-firm, .border-firm * { border-color:var(--firm) !important;}
 .border-positive, .border-positive * { border-color:#669933 !important;}
 .border-negative, .border-negative * { border-color:#cc0000 !important;}
-.border-snotgreen, .border-snotgreen * { border-color:#d2e286 !important; }
-.border-pissyellow, .border-pissyellow * { border-color:#ffff99 !important; }
+.border-snotgreen, .border-snotgreen * { border-color:var(--snotgreen) !important; }
+.border-pissyellow, .border-pissyellow * { border-color:var(--pissyellow) !important; }
 
 .border-pale, .border-pale * { border-color:var(--pale) !important; }
