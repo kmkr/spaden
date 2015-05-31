@@ -61,7 +61,10 @@ gulp.on('err', function(e) {
     console.log(e.err.stack);
 });
 
-gulp.task('watch', []);
+//
+gulp.task('watch', ['default'], function(){
+    gulp.watch('src/styles/**/*.css', ['compile-stylesheets']);
+});
 
 gulp.task('default', [
     'copy-images',
