@@ -8,8 +8,11 @@
   "devDependencies": {
     "autoprefixer": "^5.2.0",
     "autoprefixer-core": "^5.2.0",
+    "colors": "^1.1.0",
+    "css-color-converter": "^1.0.2",
     "del": "^1.1.1",
     "express": "^4.11.2",
+    "filewalker": "^0.1.2",
     "fstream": "^1.0.2",
     "gulp": "^3.6.2",
     "gulp-bump": "^0.1.11",
