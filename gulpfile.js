@@ -16,6 +16,11 @@ gulp.task('copy-images', ['clean'], function() {
         .pipe(gulp.dest(OUT_DIR));
 });
 
+gulp.task('copy-legacy-files', ['clean'], function() {
+    return gulp.src(['./src/styles/thirdparty/**/**.css'], { base: './src'})
+        .pipe(gulp.dest(OUT_DIR));
+});
+
 gulp.task('copy-browser-files', ['clean'], function() {
     return gulp.src(['./src/styles/browsers/*.css'], { base: './src/styles/browsers'})
         .pipe(gulp.dest(OUT_DIR));
@@ -71,8 +76,9 @@ gulp.task('watch', ['default'], function(){
 
 gulp.task('default', [
     'copy-images',
-    'copy-browser-files',
     'compile-stylesheets',
+    'copy-legacy-files',
+    'copy-browser-files',
     'replace-imgpaths'
 ]);
 
