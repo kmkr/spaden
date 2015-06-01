@@ -1,8 +1,8 @@
-@custom-media --mini-screen screen and (max-width: 459px);
-@custom-media --not-mini-screen screen and (min-width: 460px);
-@custom-media --small-but-not-mini screen and (min-width: 460px) and (max-width: 767px);
-@custom-media --small-screen screen and (max-width: 767px);
-@custom-media --larger-screen screen and (min-width: 768px);
+@custom-media --mini-screen (max-width: 459px);
+@custom-media --not-mini-screen (min-width: 460px);
+@custom-media --small-but-not-mini (min-width: 460px) and (max-width: 767px);
+@custom-media --small-screen (max-width: 767px);
+@custom-media --larger-screen (min-width: 768px);
 
 :root {
     --black: #000;
