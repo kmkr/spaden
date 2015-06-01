@@ -4,6 +4,7 @@ var postcss = require('postcss');
 var fs = require('fs');
 var convertColor = require('css-color-converter');
 var reSPACE_BETWEEN_RULES = /,(\S)/g;
+var del = require('del');
 
 function prettySelector(selector) {
     return selector && selector.replace(reSPACE_BETWEEN_RULES, ', $1').replace(/"/g, '\'');
@@ -127,12 +128,16 @@ function iterator(depth, node, childIndex, list) {
 function formatFile(filename) {
     var content = fs.readFileSync(filename, 'utf8');
 
-    var ast = postcss.parse(content);
+    var ast = postcss.parse(content, { safe: true });
 
     ast.nodes.forEach(iterator.bind(null, 1));
 
     // fs.writeFileSync(__dirname + '/debug-css.json', JSON.stringify(ast, null, 4), 'utf8');
-    fs.writeFileSync(filename.replace(/\.css$/i, '-edited.css'), ast.toString(), 'utf8');
+    if (process.env.REALLY_DO_IT) {
+        fs.writeFileSync(filename, ast.toString(), 'utf8');
+    } else {
+        fs.writeFileSync(filename.replace(/\.css$/i, '-formatted-dry-run.css'), ast.toString(), 'utf8');
+    }
 }
 
 // formatFile(__dirname + '/../src/styles/core/grid/grids.css');
@@ -144,7 +149,7 @@ function walk(dir) {
         })
         .on('file', function(p, s) {
             if (/\.css$/i.test(p) &&
-                p.indexOf('edited') === -1 &&
+                p.indexOf('-formatted-dry-run') === -1 &&
                 p.indexOf('browsers/') === -1) {
                 console.log('file: %s, %d bytes', p, s.size);
                 formatFile(dir + '/' + p);
@@ -165,4 +170,16 @@ function walk(dir) {
         .walk();
 }
 
-walk( __dirname + '/../src/styles');
+if (process.env.CLEAN){
+    console.log('---------------- '.yellow.bold+'CLEANUP'.green+' -------------------'.yellow.bold);
+    del( __dirname + '/../src/styles/**/*-formatted-dry-run.css');
+} else if (!process.env.REALLY_DO_IT) {
+    console.log('---------------- '.yellow.bold+'DRY RUN'.green+' -------------------'.yellow.bold);
+    console.log('Add ENV REALLY_DO_IT=1 to run on sourcefiles');
+    console.log('---------------- '.yellow.bold+'DRY RUN'.green+' -------------------'.yellow.bold);
+    walk( __dirname + '/../src/styles');
+} else {
+    del( __dirname + '/../src/styles/**/*-formatted-dry-run.css', function() {
+        walk( __dirname + '/../src/styles');
+    });
+}

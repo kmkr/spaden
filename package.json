@@ -3,7 +3,10 @@
   "version": "2.0.10",
   "description": "The FINN.no front-end CSS framework built on top of OOCSS",
   "scripts": {
-    "package": "./node_modules/.bin/gulp package"
+    "package": "gulp package",
+    "start": "gulp",
+    "watch": "gulp watch",
+    "format-source-code": "REALLY_DO_IT=1 node ./scripts/format-stylesheet.js"
   },
   "devDependencies": {
     "autoprefixer": "^5.2.0",
