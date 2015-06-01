@@ -13,14 +13,17 @@ function addVersionHeader() {
 
 gulp.task('copy-images', ['clean'], function() {
     return gulp.src(['./src/img/**'], { base: 'src/'})
-        // .pipe(plugins.imageoptim.optimize())
+        .pipe(gulp.dest(OUT_DIR));
+});
+
+gulp.task('copy-browser-files', ['clean'], function() {
+    return gulp.src(['./src/styles/browsers/*.css'], { base: './src/styles/browsers'})
         .pipe(gulp.dest(OUT_DIR));
 });
 
 gulp.task('optimize-images', [], function() {
     return gulp.src([OUT_DIR + '/img/**'], { base: OUT_DIR}).pipe(plugins.imageoptim.optimize());
 });
-
 
 gulp.task('compile-stylesheets', ['copy-images'], function() {
     return gulp.src('src/styles/*.css')
@@ -68,6 +71,7 @@ gulp.task('watch', ['default'], function(){
 
 gulp.task('default', [
     'copy-images',
+    'copy-browser-files',
     'compile-stylesheets',
     'replace-imgpaths'
 ]);
