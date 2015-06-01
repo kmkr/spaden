@@ -89,12 +89,12 @@ function iterator(depth, node, childIndex, list) {
         node.semicolon = true;
 
         if (node.nodes.length === 0) {
-            console.warn('$'.red, ('"' + node.selector + '"').blue.bold, 'is empty'.yellow);
+            console.warn('Selector'.red, ('"' + node.selector + '"').blue.bold, 'is empty'.yellow);
         }
 
         if (/[A-Z]/g.test(node.selector)) {
             count.case ++;
-            console.warn('$'.red, ('"'.blue + node.selector.blue.bold.replace(/[A-Z]/g, function(v) {
+            console.warn('Selector'.red, ('"'.blue + node.selector.italic.replace(/[A-Z]/g, function(v) {
                 return v.red;
             }) + '"'.blue), 'has uppercase chars!'.yellow);
         }
