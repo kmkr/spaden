@@ -6,8 +6,17 @@ var convertColor = require('css-color-converter');
 var reSPACE_BETWEEN_RULES = /,(\S)/g;
 var del = require('del');
 
-function prettySelector(selector) {
-    return selector && selector.replace(reSPACE_BETWEEN_RULES, ', $1').replace(/"/g, '\'');
+function prettySelector(selector, indentLevel) {
+    if (selector.length > 120 && selector.indexOf('\n') === -1) {
+        selector = selector.replace(/\n/g, '').split(',').map(function(entry){
+            return entry && entry.trim();
+        }).join(',\n' + indentLevel);
+    }
+    return selector && selector
+        .replace(reSPACE_BETWEEN_RULES, ', $1')
+        .replace(/"/gm, '\'')
+        .replace(/(\s*\>\s*)/gm, ' > ')
+        .replace(/(\s*\+\s*)/gm, ' + ');
 }
 
 function prettyDeclarationValue(value) {
@@ -70,18 +79,20 @@ function iterator(depth, node, childIndex, list) {
 
         node.nodes.forEach(iterator.bind(null, depth + 1));
 
-        if (node.nodes.length <= 1) {
-            // make single declartions one-liners
-            node.after = ' ';
-        } else {
-            // enfore formatting for multi decl.
-            node.after = '\n' + space(depth);
+        if (node.type !== 'atrule') {
+            if (node.nodes.length <= 1) {
+                // make single declartions one-liners
+                node.after = ' ';
+            } else {
+                // enfore formatting for multi decl.
+                node.after = '\n' + space(depth);
+            }
         }
     }
 
     if (node.selector) {
         node.before = replaceTabs(node.before, space(depth));
-        node.selector = prettySelector(node.selector);
+        node.selector = prettySelector(node.selector, space(depth));
 
         // allow single decl rules to be indented however
         if (!node.between || node.nodes.length > 1) {
