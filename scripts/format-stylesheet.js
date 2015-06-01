@@ -115,11 +115,12 @@ function iterator(depth, node, childIndex, list) {
     if (node.type === 'decl') {
         node.before = replaceTabs(node.before, space(depth));
 
+        var _before = node.before.replace(/\s*/ig, '') ||'';
         if (list.length <= 1) {
             // make single declartions one-liners
-            node.before = ' ';
+            node.before = ' '+ _before;
         } else {
-            node.before = '\n' + space(depth);
+            node.before = '\n' + space(depth) + _before;
         }
 
         if (node.important) {
@@ -136,6 +137,21 @@ function iterator(depth, node, childIndex, list) {
 }
 
 
+function copy(src){
+    var res = {};
+
+    if (src.nodes) {
+        res.nodes = src.nodes.map(copy);
+    }
+    Object.keys(src).forEach(function(key){
+        if (key === 'nodes' || key === 'source' || key === 'parent') {
+            return;
+        }
+        res[key] = src[key];
+    });
+    return res;
+}
+
 function formatFile(filename) {
     var content = fs.readFileSync(filename, 'utf8');
 
@@ -143,7 +159,7 @@ function formatFile(filename) {
 
     ast.nodes.forEach(iterator.bind(null, 1));
 
-    // fs.writeFileSync(__dirname + '/debug-css.json', JSON.stringify(ast, null, 4), 'utf8');
+    // fs.writeFileSync(__dirname + '/debug-css-'+filename.match(/\w+.css$/)[0]+'.json', JSON.stringify(copy(ast), null, 4), 'utf8');
     if (process.env.REALLY_DO_IT) {
         fs.writeFileSync(filename, ast.toString(), 'utf8');
     } else {
@@ -184,6 +200,7 @@ function walk(dir) {
 if (process.env.CLEAN){
     console.log('---------------- '.yellow.bold+'CLEANUP'.green+' -------------------'.yellow.bold);
     del( __dirname + '/../src/styles/**/*-formatted-dry-run.css');
+    del( __dirname + '/debug*.json');
 } else if (!process.env.REALLY_DO_IT) {
     console.log('---------------- '.yellow.bold+'DRY RUN'.green+' -------------------'.yellow.bold);
     console.log('Add ENV REALLY_DO_IT=1 to run on sourcefiles');
