@@ -7,6 +7,14 @@ var reSPACE_BETWEEN_RULES = /,(\S)/g;
 var del = require('del');
 
 function prettySelector(selector, indentLevel) {
+
+    // ensure indent is same
+    if (selector.indexOf('\n') !== -1) {
+        selector = selector.split('\n').map(function(v){
+            return v && v.trim();
+        }).join('\n' + indentLevel);
+    }
+
     if (selector.length > 120 && selector.indexOf('\n') === -1) {
         selector = selector.replace(/\n/g, '').split(',').map(function(entry){
             return entry && entry.trim();
