@@ -34,7 +34,7 @@ gulp.task('compile-stylesheets', ['copy-images'], function() {
     return gulp.src('src/styles/*.css')
         .pipe(plugins.sourcemaps.init())
         .pipe(plugins.postcss(postcssPlugins))
-        .pipe(plugins.minifyCss({processImport: false, keepBreaks: true}))
+        .pipe(plugins.minifyCss({processImport: false, keepBreaks: true, compatibility: 'ie7'}))
         .pipe(addVersionHeader())
         .pipe(plugins.sourcemaps.write('.'))
         .pipe(gulp.dest(OUT_DIR));
