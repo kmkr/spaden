@@ -6,7 +6,7 @@ var convertColor = require('css-color-converter');
 var reSPACE_BETWEEN_RULES = /,(\S)/g;
 
 function prettySelector(selector) {
-    return selector && selector.replace(reSPACE_BETWEEN_RULES, ', $1');
+    return selector && selector.replace(reSPACE_BETWEEN_RULES, ', $1').replace(/"/g, '\'');
 }
 
 function prettyDeclarationValue(value) {
@@ -131,7 +131,7 @@ function formatFile(filename) {
 
     ast.nodes.forEach(iterator.bind(null, 1));
 
-    fs.writeFileSync(__dirname + '/debug-css.json', JSON.stringify(ast, null, 4), 'utf8');
+    // fs.writeFileSync(__dirname + '/debug-css.json', JSON.stringify(ast, null, 4), 'utf8');
     fs.writeFileSync(filename.replace(/\.css$/i, '-edited.css'), ast.toString(), 'utf8');
 }
 
