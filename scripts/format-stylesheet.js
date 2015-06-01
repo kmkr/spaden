@@ -44,11 +44,12 @@ var count = {
     important: 0,
     case: 0
 };
+
 function isPrefixed(prop) {
-    return prop && prop.indexOf('-') === 0;
+    return prop && prop.match(/^\-\w+\-/);
 }
 
-function getPrefixUnprefixed(prop) {
+function getPropUnprefixed(prop) {
     return prop.replace(/(\-\w+\-)/, '');
 }
 
@@ -57,6 +58,17 @@ function hasProp(nodes, prop) {
         return n.prop === prop;
     });
 }
+
+function getValueFnName(value){
+    return value && value.replace(/(\-\w+\-)/, '').replace(/\(.*$/, '');
+}
+
+function startsWithValue(nodes, value) {
+    return nodes.length > 0 && nodes.some(function(n) {
+        return n.value && n.value.indexOf(value) === 0;
+    });
+}
+
 
 function iterator(depth, node, childIndex, list) {
     if (node.nodes) {
@@ -68,9 +80,16 @@ function iterator(depth, node, childIndex, list) {
         }*/
 
         node.nodes = node.nodes.filter(function(_node) {
-            //console.log('isPrefixed(node.prop)', _node.prop, isPrefixed(_node.prop));
+
+            // remove e.g. background-color: -webkit-... if native is unprefixed is present
+            if (isPrefixed(_node.value) &&
+                startsWithValue(node.nodes, getValueFnName(_node.value))) {
+                console.warn('Removed value:'.red, _node.prop + ': ' + _node.value);
+                return false
+            }
+
             if (isPrefixed(_node.prop) &&
-                hasProp(node.nodes, getPrefixUnprefixed(_node.prop))) {
+                hasProp(node.nodes, getPropUnprefixed(_node.prop))) {
                 console.warn('Removed declaration:'.red, _node.prop);
                 return false
             }
@@ -109,6 +128,12 @@ function iterator(depth, node, childIndex, list) {
             console.warn('Selector'.red, ('"'.blue + node.selector.italic.replace(/[A-Z]/g, function(v) {
                 return v.red;
             }) + '"'.blue), 'has uppercase chars!'.yellow);
+        }
+    }
+
+    if (node.type === 'comment') {
+        if (node.before && node.before.trim() === '') {
+            node.before = '\n' + space(depth);
         }
     }
 
@@ -159,7 +184,7 @@ function formatFile(filename) {
 
     ast.nodes.forEach(iterator.bind(null, 1));
 
-    // fs.writeFileSync(__dirname + '/debug-css-'+filename.match(/\w+.css$/)[0]+'.json', JSON.stringify(copy(ast), null, 4), 'utf8');
+    fs.writeFileSync(__dirname + '/debug-css-'+filename.match(/\w+.css$/)[0]+'.json', JSON.stringify(copy(ast), null, 4), 'utf8');
     if (process.env.REALLY_DO_IT) {
         fs.writeFileSync(filename, ast.toString(), 'utf8');
     } else {
