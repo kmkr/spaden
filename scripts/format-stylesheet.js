@@ -157,7 +157,6 @@ function iterator(depth, node, childIndex, list) {
         }
 
         if (node.important) {
-            count.important ++;
             node._important = ' !important';
         }
 
