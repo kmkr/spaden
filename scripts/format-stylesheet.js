@@ -61,8 +61,6 @@ function space(nr) {
     return (new Array(nr).join('    '));
 }
 
-
-
 function isPrefixed(prop) {
     return prop && prop.match(/^\-\w+\-/);
 }
@@ -155,8 +153,19 @@ function iterator(depth, node, childIndex, list) {
     }
 
     if (node.type === 'comment') {
-        if (node.before && node.before.trim() === '') {
+        if (
+                (childIndex === 0 || node.before.indexOf('\n') !== -1) &&
+                node.before &&
+                node.before.trim() === ''
+            ) {
             node.before = '\n' + space(depth);
+        }
+
+        if (!node.left) {
+            node.left =  ' ';
+        }
+        if (!node.right) {
+            node.right =  ' ';
         }
     }
 
@@ -207,15 +216,19 @@ function formatFile(filename) {
 
     ast.nodes.forEach(iterator.bind(null, 1));
 
-    fs.writeFileSync(__dirname + '/debug-css-'+filename.match(/\w+.css$/)[0]+'.json', JSON.stringify(copy(ast), null, 4), 'utf8');
+    if (process.env.DEBUG) {
+        fs.writeFileSync(filename.replace(/\.css$/i, '-formatted-dry-run') + '.json', JSON.stringify(copy(ast), null, 4), 'utf8');
+    }
+
+    ast.after = '\n';
+
+    var output = ast.toString();
     if (process.env.REALLY_DO_IT) {
-        fs.writeFileSync(filename, ast.toString(), 'utf8');
+        fs.writeFileSync(filename, output, 'utf8');
     } else {
-        fs.writeFileSync(filename.replace(/\.css$/i, '-formatted-dry-run.css'), ast.toString(), 'utf8');
+        fs.writeFileSync(filename.replace(/\.css$/i, '-formatted-dry-run.css'), output, 'utf8');
     }
 }
-
-// formatFile(__dirname + '/../src/styles/core/table/table.css');
 
 function walk(dir) {
     return filewalker(dir)
@@ -259,15 +272,15 @@ function walk(dir) {
 
 if (process.env.CLEAN){
     console.log('---------------- '.yellow.bold+'CLEANUP'.green+' -------------------'.yellow.bold);
-    del( __dirname + '/../src/styles/**/*-formatted-dry-run.css');
-    del( __dirname + '/debug*.json');
+    del( __dirname + '/../src/styles/**/*-formatted-dry-run.*');
 } else if (!process.env.REALLY_DO_IT) {
     console.log('---------------- '.yellow.bold+'DRY RUN'.green+' -------------------'.yellow.bold);
     console.log('Add ENV REALLY_DO_IT=1 to run on sourcefiles');
     console.log('---------------- '.yellow.bold+'DRY RUN'.green+' -------------------'.yellow.bold);
+    // formatFile(__dirname + '/../src/styles/components/businesscard/businesscard.css');
     walk( __dirname + '/../src/styles');
 } else {
-    del( __dirname + '/../src/styles/**/*-formatted-dry-run.css', function() {
+    del( __dirname + '/../src/styles/**/*-formatted-dry-run.*', function() {
         walk( __dirname + '/../src/styles');
     });
 }
