@@ -96,6 +96,11 @@ function iterator(depth, node, childIndex, list) {
         }*/
 
         node.nodes = node.nodes.filter(function(_node) {
+            if (_node.type === 'comment' && !_node.text.match(/\S+/)) {
+                // remove empty comments
+                console.log('Removed emtpy comment');
+                return false;
+            }
 
             // remove e.g. background-color: -webkit-... if native is unprefixed is present
             if (isPrefixed(_node.value) &&
@@ -123,6 +128,10 @@ function iterator(depth, node, childIndex, list) {
                 node.after = '\n' + space(depth);
             }
         }
+    }
+
+    if (node.type === 'atrule') {
+        node.params = node.params.replace(/"/gm, '\'');
     }
 
     if (node.selector) {
