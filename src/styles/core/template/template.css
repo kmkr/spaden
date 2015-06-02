@@ -2,7 +2,7 @@
 /* ====== Page Head, Body, and Foot ====== */
 .main{display:table-cell;*display:block;width:auto;}
 body, html {
-    background-color:#e9eff5;
+    background-color:var(--blue-greyish);
 }
 .body,.main{*zoom:1;}
 .body:after,.main:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0 !important;line-height:0;font-size:xx-large;content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";}
@@ -12,9 +12,9 @@ body, html {
 .topbar.fixed.defaultopen + .container,
 .topbar-level2.fixed:not(.hidden) + .container { margin-top: 110px; }
 .container.fullsize { max-width: 100%; }
- 
+
 /* wraps other template elems to set width */ /* text-align IE5.5 */
-/*? 
+/*?
 .liquid, .liquid .page {max-width: none!important;} */
 /* ====== Columns ====== */
 
@@ -29,7 +29,7 @@ body, html {
     z-index: 10;
 }
 
-@media screen and (min-width:768px) {
+@media (--larger-screen) {
     .page{max-width:990px;margin-left: 10px;}
     .container { max-width: 1000px; margin: 0 auto; }
 	.container.kindawide { max-width: 1240px; }

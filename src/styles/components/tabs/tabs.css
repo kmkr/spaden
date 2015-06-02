@@ -6,10 +6,10 @@
 .tabs>li>a{display:block;}
 .tabs{float:left;width:100%;border-bottom:1px solid #ddd;}
 .tabs>li{position:relative;top:1px;}
-.tabs>li>a{padding:0 20px;margin-right:2px;line-height:30px;border:1px solid transparent;border-radius:4px 4px 0 0;background-color:#f5f5f5; border-color:#f5f5f5 #f5f5f5 #ddd;}
+.tabs>li>a{padding:0 20px;margin-right:2px;line-height:30px;border:1px solid transparent;border-radius:4px 4px 0 0;background-color:var(--pale-gray); border-color:var(--pale-gray) var(--pale-gray) #ddd;}
 .tabs.pills>li>a{border-radius:4px;}
-.tabs>li>a:hover{text-decoration:none;cursor:pointer;background-color:#eee; border-color:#eee #eee #ddd;}
-.tabs>li.active>a{color:#808080;background-color:#ffffff;border:1px solid #ddd;border-bottom-color:transparent;}
+.tabs>li>a:hover{text-decoration:none;cursor:pointer;background-color:var(--lt-gray); border-color:var(--lt-gray) var(--lt-gray) #ddd;}
+.tabs>li.active>a{color:#808080;background-color:var(--bright);border:1px solid #ddd;border-bottom-color:transparent;}
 .tabs .menu-dropdown,.tabs .dropdown-menu{top:35px;border-width:1px;border-radius:0 6px 6px 6px;}
 .tabs a.menu:after,.tabs .dropdown-toggle:after{border-top-color:#999;margin-top:15px;margin-left:5px;}
 .tabs li.open.menu .menu,.tabs .open.dropdown .dropdown-toggle{border-color:#999;}
@@ -31,9 +31,9 @@
 /* 10px margin version */
 .tabs.extern.mediumm > li > a{ padding:0 10px}
 
-@media screen and (max-width:767px) {
+@media (--small-screen) {
     .r-tabs { margin: 10px 0!important; float: none; }
-    .r-tabs:before { content: "Meny"; color: #22419b; cursor: pointer; display: block; line-height: 29px; border-bottom: 1px solid #ddd; padding: 0 10px; background-color:#f5f5f5; }
+    .r-tabs:before { content: "Meny"; color: #22419b; cursor: pointer; display: block; line-height: 29px; border-bottom: 1px solid #ddd; padding: 0 10px; background-color:var(--pale-gray); }
     .r-tabs:hover li, .r-tabs:active li, .r-tabs:focus li, .r-tabs.r-tabs-open li { display: block; }
     .r-tabs li { display:none; float: none; margin: 0!important; }
     .r-tabs li a { padding: 0 10px; margin: 0; border-radius: 0!important; }

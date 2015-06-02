@@ -1,7 +1,7 @@
-/** 
- * Spacing classes 
+/**
+ * Spacing classes
  * Should be used to modify the default spacing between objects (not between nodes of the same object)
- * Please use judiciously. You want to be using defaults most of the time, these are exceptions! 
+ * Please use judiciously. You want to be using defaults most of the time, these are exceptions!
  * <type><location><size>
  */
  /* ====== Default spacing ====== */
@@ -78,7 +78,7 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
 
 .rmargin, .r-margin {margin:10px 10px;}
 
-@media screen and (min-width:768px) {
+@media (--larger-screen) {
     h1, h2, h3, h4, h5, h6, ul, ol, dl, p,blockquote, .media {margin:10px 20px;}
     dt, dd { margin: 0 20px; }
     .rmargin, .r-margin {margin:10px 20px;}

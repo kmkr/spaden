@@ -3,12 +3,18 @@
   "version": "2.0.10",
   "description": "The FINN.no front-end CSS framework built on top of OOCSS",
   "scripts": {
-    "package": "./node_modules/.bin/gulp"
+    "package": "gulp package",
+    "start": "gulp",
+    "watch": "gulp watch",
+    "format-source-code": "REALLY_DO_IT=1 node ./scripts/format-stylesheet.js"
   },
   "devDependencies": {
+    "autoprefixer": "^5.2.0",
+    "autoprefixer-core": "^5.2.0",
+    "colors": "^1.1.0",
+    "css-color-converter": "^1.0.2",
     "del": "^1.1.1",
-    "express": "^4.11.2",
-    "fstream": "^1.0.2",
+    "filewalker": "^0.1.2",
     "gulp": "^3.6.2",
     "gulp-bump": "^0.1.11",
     "gulp-concat": "^2.2.0",
@@ -16,27 +22,35 @@
     "gulp-filter": "^1.0.2",
     "gulp-git": "^0.5.0",
     "gulp-gzip": "0.0.8",
+    "gulp-imageoptim": "^0.2.11",
     "gulp-inject-string": "0.0.2",
+    "gulp-load-plugins": "^0.10.0",
     "gulp-minify-css": "^0.4.0",
-    "gulp-prompt": "^0.1.1",
+    "gulp-postcss": "^5.1.8",
     "gulp-rename": "^1.2.0",
     "gulp-replace": "^0.4.0",
+    "gulp-sourcemaps": "^1.5.2",
     "gulp-tag-version": "^1.1.0",
     "gulp-tar": "^1.0.0",
+    "gulp-util": "^3.0.0",
     "maven-deploy": "0.0.3",
+    "postcss": "^4.1.11",
+    "postcss-custom-media": "^3.0.0",
+    "postcss-custom-properties": "^3.3.0",
+    "postcss-import": "^5.2.2",
+    "postcss-media-minmax": "^1.1.0",
     "tar": "^1.0.2"
   },
   "contributors": [
     "Snorre Nygaard <skadegryd>",
     "Anders Johnsen <antidecaf>",
     "David Hasäther <hzr>",
-    "Espen Dalløkken <leftieFriele>"
+    "Espen Dalløkken <leftieFriele>",
+    "Sveinung Røsaker <sveisvei>"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/finn-no/spaden"
   },
-  "dependencies": {
-    "gulp-util": "^3.0.0"
-  }
+  "dependencies": {}
 }

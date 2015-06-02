@@ -1,5 +1,5 @@
 .profilebg {
-    background-color: #9BA8B1;
+    background-color: var(--neutral);
     background-size: cover;
     position: relative;
     border-radius: 2px 2px 0 0;
@@ -22,7 +22,7 @@
     border: 1px solid rgba(0, 153, 255, .6);
 }
 
-@media screen and (min-width:768px) {
+@media (--larger-screen) {
     .profile-large .profileimg,
     .profile-large .ratings { margin-right: 20px; }
 }
@@ -87,7 +87,7 @@
     z-index: 3;
 }
 
-@media (min-width: 768px) {
+@media (--larger-screen) {
     .companyprofile .profilebg {
        padding-top: 100px;
     }
@@ -101,7 +101,7 @@
         left: 40%;
     }
 }
-@media (max-width: 767px) {
+@media (--small-screen) {
     .companyprofile .profileimg img {
         max-width: 200px;
         max-height: 140px;

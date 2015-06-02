@@ -42,15 +42,6 @@ When releasing you must specify how to bump the version number. Please consult t
 	<link rel="stylesheet" href="styles/ie.css">
 	<![endif]-->
 
-## Local development
-
-	$ npm start
-
-```html
-<link rel="stylesheet" href="http://localhost:3000/">
-```
-
-This includes core.css and components.css
 
 ## Using Spaden from Node.js/Express
 

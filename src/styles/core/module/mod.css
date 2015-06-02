@@ -50,7 +50,7 @@ a.mod{
 /* fix så høyrekolonner ikke får 30px marg til høyre, i bruk på objektsider */
 .last-col > .mod { margin-right:0!important;}
 
-@media screen and (min-width:768px) {
+@media (--larger-screen) {
     .mod{margin:0 10px 10px 0 !important}
     .mod.shadow > .inner {
         padding-top: 10px;

@@ -13,7 +13,7 @@
 }
 
 .finnbox-conversation.open {
-    background-color: #f5f5f5;
+    background-color: var(--pale-gray);
     border-bottom: 4px solid #ddd;
     border-top: 4px solid #ddd;
     padding-top: 9px;
@@ -54,7 +54,7 @@
     border-radius:34px;
     border:1px solid #DDD;
     padding:1px;
-    background:#F5F5F5;
+    background:var(--pale-gray);
 }
 
 .finnbox-conversation .unread {
@@ -67,7 +67,7 @@
 }
 
 .finnbox-conversation.open .pale {
-    color: #666 !important;
+    color: var(--dk-gray) !important;
 }
 
 .finnbox-count-1 {
@@ -91,7 +91,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (--small-screen) {
 
     .finnbox-profile-margin {
         margin-left: 51px;
@@ -117,11 +117,11 @@
     word-wrap: break-word;
 }
 .conversation.lefty{
-    background-color:#4f6676;
+    background-color:var(--opaque);
     color:#fff;
 }
 .conversation.righty{
-    background-color:#0077EE;
+    background-color:var(--blue-dk);
     color:#fff;
 }
 .conversation.lefty:after {
@@ -133,7 +133,7 @@
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-right:10px solid #4f6676;
+    border-right:10px solid var(--opaque);
     z-index: 1;
 }
 .conversation.righty:after {
@@ -145,7 +145,7 @@
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left:10px solid #0077EE;
+    border-left:10px solid var(--blue-dk);
     z-index: 1;
 }
 /* test only, have to be rewritten */

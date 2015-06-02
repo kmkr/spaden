@@ -26,7 +26,7 @@
 .market-selector .mod.shadow>.inner{
     border-left:0;
 }
-@media screen and (max-width:767px) {
+@media (--small-screen) {
 	.market-selector{
         margin-right: 2px;
     }
@@ -43,25 +43,25 @@
 }
 
 .list-line:not(:last-child) {
-    border-bottom: 1px solid #CDD3D8;
+    border-bottom: 1px solid var(--pale);
 }
 
 /* footer specific, default is collapsed for old phones, temporary fix? */
 .horizontal-list.default1col li{
     display:block;
 }
-@media screen and (min-width: 768px) {
+@media (--larger-screen) {
     .horizontal-list.default1col li{
         display:inline;
     }
     /* should we make a generic thing for vertical dividers. this one is for the footer */
     .verticalhr li:not(:last-child){
-        border-right:1px solid #CDD3D8;
+        border-right:1px solid var(--pale);
     }
 }
 
 
-@media screen and (min-width: 768px) {
+@media (--larger-screen) {
     .fixedfilters .scrollbar::-webkit-scrollbar {
         width:5px;
         background: transparent;
@@ -70,7 +70,7 @@
 
     }
     .fixedfilters .scrollbar::-webkit-scrollbar-thumb{
-        background-color:#eee;
+        background-color:var(--lt-gray);
         border-radius:5px;
     }
     .fixedfilters .scrollbar:hover::-webkit-scrollbar-thumb{
@@ -85,7 +85,7 @@
     .fixedfilters .scrollbar { max-height: 600px; margin-right: 5px; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
 }
 
-@media (max-width: 767px) {
+@media (--small-screen) {
     body,
     .scroll-container {
         padding-bottom: 30px; /* Avoid the issue of toolbars showing up when clicking too close to the bottom toolbar on iOS 7. */
@@ -108,4 +108,3 @@
     opacity: 1;
     z-index: 5;
 }
-

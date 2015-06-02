@@ -21,14 +21,14 @@
     top: 0;
     height: 50px;
     width: 100%;
-    border: 0 solid #cdd3d8;
+    border: 0 solid var(--pale);
     border-bottom-width: 1px;
     background-color: #fff;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
-@media (max-width: 767px) {
+@media (--small-screen) {
     .modal-container {
         top: 0 !important; /* top is set for bigger screens, but always override on small screens. */
         right: 0;
@@ -46,7 +46,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (--larger-screen) {
     .modal-container {
         position: absolute;
         opacity: 1;

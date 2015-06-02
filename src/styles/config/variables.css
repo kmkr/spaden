@@ -1,0 +1,70 @@
+@custom-media --mini-screen (max-width: 459px);
+@custom-media --small-but-not-mini (min-width: 460px) and (max-width: 767px);
+@custom-media --small-screen (max-width: 767px);
+@custom-media --larger-screen (min-width: 768px);
+
+:root {
+    --black: #000;
+    --white: #ffffff;
+    --dk-gray: #666;
+    --lt-gray: #eee;
+    --pale-gray: #f5f5f5;
+    --dkdk-blue: #000066;
+    --dk-blue: #0099ff;
+    --lt-blue: #ddeeff;
+    --pale-blue: #f1f8ff;
+    --contrast: #444;
+    --firm: #ff6600;
+    --snotgreen: #d2e286;
+    --pissyellow: #ffff99;
+
+
+    --sharp: #04253c;
+    --opaque: #4f6676;
+    --neutral: #9ba8b1;
+    --pale: #cdd3d8;
+    --bare: #edf0f1;
+    --bright: #ffffff;
+
+    --blue-dk: #0077ee;
+    --blue: #0099ff;
+    --blue-lt: #4cb7ff;
+    --blue-ltlt: #99d6ff;
+    --blue-xlt: #e5f5ff;
+    --blue-xxlt: #f2faff;
+    --blue-greyish: #e9eff5;
+    --blue-greyish-lt: #F4F7FB;
+
+    --lilac: #7863c8;
+    --lilac-lt: #c9c1e9;
+    --lilac-xlt: #f1eff9;
+
+    --purple: #8b31e7;
+    --purple-lt: #d1adf5;
+    --purple-xlt: #e8d6fa;
+
+    --candy: #ff3bcf;
+    --candy-lt: #ffb1ec;
+    --candy-xlt: #ffebfa;
+
+    --red: #e7384a;
+    --red-lt: #ee7380;
+    --red-xlt: #fbe3e6;
+
+    --lemon: #fbdd25;
+    --lemon-lt: #fdf1a8;
+    --lemon-xlt: #fef8e4;
+
+    --rust: #e78007;
+    --rust-lt: #fe8d08;
+    --rust-xlt: #feefd2;
+
+    --lime: #cad522;
+    --lime-lt: #eef1b6;
+    --lime-xlt: #f6f8da;
+
+    --green: #3b7908;
+    --green-lt: #7bb02d;
+    --green-xlt: #e4efd4;
+
+}

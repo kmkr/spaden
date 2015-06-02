@@ -19,67 +19,67 @@
 }
 
 /* Legacy colors */
-.speech.bg-lt-gray:after { border-top-color: #eee; }
+.speech.bg-lt-gray:after { border-top-color: var(--lt-gray); }
 .speech.bg-black:after { border-top-color: #000; }
-.speech.bg-dk-gray:after { border-top-color: #666; }
-.speech.bg-pale-gray:after { border-top-color: #f5f5f5; }
+.speech.bg-dk-gray:after { border-top-color: var(--dk-gray); }
+.speech.bg-pale-gray:after { border-top-color: var(--pale-gray); }
 .speech.bg-white:after { border-top-color: #fff; }
-.speech.bg-dkdk-blue:after { border-top-color: #000066; }
-.speech.bg-dk-blue:after { border-top-color: #0099ff; }
-.speech.bg-lt-blue:after { border-top-color: #ddeeff; }
-.speech.bg-pale-blue:after { border-top-color: #f1f8ff; }
-.speech.bg-contrast:after { border-top-color: #444; }
-.speech.bg-firm:after { border-top-color: #ff6600; }
-.speech.bg-snotgreen:after { border-top-color: #d2e286; }
-.speech.bg-pissyellow:after { border-top-color: #ffff99; }
+.speech.bg-dkdk-blue:after { border-top-color: var(--dkdk-blue); }
+.speech.bg-dk-blue:after { border-top-color: var(--blue); }
+.speech.bg-lt-blue:after { border-top-color: var(--lt-blue); }
+.speech.bg-pale-blue:after { border-top-color: var(--pale-blue); }
+.speech.bg-contrast:after { border-top-color: var(--contrast); }
+.speech.bg-firm:after { border-top-color: var(--firm); }
+.speech.bg-snotgreen:after { border-top-color: var(--snotgreen); }
+.speech.bg-pissyellow:after { border-top-color: var(--pissyellow); }
 
 /* New colors */
 
-.speech.bg-blue-dk:after { border-top-color: #0077EE; }
-.speech.bg-blue:after { border-top-color: #0099FF; }
-.speech.bg-blue-lt:after { border-top-color: #4CB7FF; }
-.speech.bg-blue-ltlt:after { border-top-color: #99D6FF; }
-.speech.bg-blue-xlt:after { border-top-color: #E5F5FF; }
-.speech.bg-blue-xxlt:after { border-top-color: #F2FAFF; }
-.speech.bg-blue-greyish:after { border-top-color: #E9EFF5; }
+.speech.bg-blue-dk:after { border-top-color: var(--blue-dk); }
+.speech.bg-blue:after { border-top-color: var(--blue); }
+.speech.bg-blue-lt:after { border-top-color: var(--blue-lt); }
+.speech.bg-blue-ltlt:after { border-top-color: var(--blue-ltlt); }
+.speech.bg-blue-xlt:after { border-top-color: var(--blue-xlt); }
+.speech.bg-blue-xxlt:after { border-top-color: var(--blue-xxlt); }
+.speech.bg-blue-greyish:after { border-top-color: var(--blue-greyish); }
 
-.speech.bg-sharp:after { border-top-color: #04253C; }
-.speech.bg-opaque:after { border-top-color: #4F6676; }
-.speech.bg-neutral:after { border-top-color: #9BA8B1; }
-.speech.bg-pale:after { border-top-color: #CDD3D8; }
-.speech.bg-bare:after { border-top-color: #EDF0F1; }
+.speech.bg-sharp:after { border-top-color: var(--sharp); }
+.speech.bg-opaque:after { border-top-color: var(--opaque); }
+.speech.bg-neutral:after { border-top-color: var(--neutral); }
+.speech.bg-pale:after { border-top-color: var(--pale); }
+.speech.bg-bare:after { border-top-color: var(--bare); }
 .speech.bg-bright:after { border-top-color: #FFF; }
 
-.speech.bg-lilac:after { border-top-color: #7863C8; }
-.speech.bg-lilac-lt:after { border-top-color: #C9C1E9; }
-.speech.bg-lilac-xlt:after { border-top-color: #F1EFF9; }
+.speech.bg-lilac:after { border-top-color: var(--lilac); }
+.speech.bg-lilac-lt:after { border-top-color: var(--lilac-lt); }
+.speech.bg-lilac-xlt:after { border-top-color: var(--lilac-xlt); }
 
-.speech.bg-purple:after { border-top-color: #8B31E7; }
-.speech.bg-purple-lt:after { border-top-color: #D1ADF5; }
-.speech.bg-purple-xlt:after { border-top-color: #E8D6FA; }
+.speech.bg-purple:after { border-top-color: var(--purple); }
+.speech.bg-purple-lt:after { border-top-color: var(--purple-lt); }
+.speech.bg-purple-xlt:after { border-top-color: var(--purple-xlt); }
 
-.speech.bg-candy:after { border-top-color: #FF3BCF; }
-.speech.bg-candy-lt:after { border-top-color: #FFB1EC; }
-.speech.bg-candy-xlt:after { border-top-color: #FFEBFA; }
+.speech.bg-candy:after { border-top-color: var(--candy); }
+.speech.bg-candy-lt:after { border-top-color: var(--candy-lt); }
+.speech.bg-candy-xlt:after { border-top-color: var(--candy-xlt); }
 
-.speech.bg-red:after { border-top-color: #E7384A; }
-.speech.bg-negative:after { border-top-color: #E7384A; }
-.speech.bg-red-lt:after { border-top-color: #EE7380; }
-.speech.bg-red-xlt:after { border-top-color: #FBE3E6; }
+.speech.bg-red:after { border-top-color: var(--red); }
+.speech.bg-negative:after { border-top-color: var(--red); }
+.speech.bg-red-lt:after { border-top-color: var(--red-lt); }
+.speech.bg-red-xlt:after { border-top-color: var(--red-xlt); }
 
-.speech.bg-lemon:after { border-top-color: #FBDD25; }
-.speech.bg-lemon-lt:after { border-top-color: #FDF1A8; }
-.speech.bg-lemon-xlt:after { border-top-color: #FEF8E4; }
+.speech.bg-lemon:after { border-top-color: var(--lemon); }
+.speech.bg-lemon-lt:after { border-top-color: var(--lemon-lt); }
+.speech.bg-lemon-xlt:after { border-top-color: var(--lemon-xlt); }
 
-.speech.bg-rust:after { border-top-color: #E78007; }
-.speech.bg-rust-lt:after { border-top-color: #FE8D08; }
-.speech.bg-rust-xlt:after { border-top-color: #FEEFD2; }
+.speech.bg-rust:after { border-top-color: var(--rust); }
+.speech.bg-rust-lt:after { border-top-color: var(--rust-lt); }
+.speech.bg-rust-xlt:after { border-top-color: var(--rust-xlt); }
 
-.speech.bg-lime:after { border-top-color: #CAD522; }
-.speech.bg-lime-lt:after { border-top-color: #EEF1B6; }
-.speech.bg-lime-xlt:after { border-top-color: #F6F8DA; }
+.speech.bg-lime:after { border-top-color: var(--lime); }
+.speech.bg-lime-lt:after { border-top-color: var(--lime-lt); }
+.speech.bg-lime-xlt:after { border-top-color: var(--lime-xlt); }
 
-.speech.green:after { border-top-color: #3B7908; }
-.speech.bg-positive:after { border-top-color: #3B7908; }
-.speech.green-lt:after { border-top-color: #7BB02D; }
-.speech.green-xlt:after { border-top-color: #E4EFD4; }
+.speech.green:after { border-top-color: var(--green); }
+.speech.bg-positive:after { border-top-color: var(--green); }
+.speech.green-lt:after { border-top-color: var(--green-lt); }
+.speech.green-xlt:after { border-top-color: var(--green-xlt); }

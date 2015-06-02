@@ -7,7 +7,7 @@ ul.bullets li:before, .object-description ul li:before {
     position: absolute;
     left: -15px;
     top: 7px;
-    background: #0099ff;
+    background: var(--blue);
     height: 5px;
     width: 5px;
 }
@@ -19,23 +19,23 @@ ul.horizontal-list li { display: inline; }
 .object-description ol { list-style: decimal outside; }
 
 .bullets-bg-black li:before { background:#000 !important; }
-.bullets-bg-dk-gray li:before { background-color:#666 !important; }
-.bullets-bg-lt-gray li:before { background-color:#eee !important; }
-.bullets-bg-pale-gray li:before { background-color:#f5f5f5 !important; }
+.bullets-bg-dk-gray li:before { background-color:var(--dk-gray) !important; }
+.bullets-bg-lt-gray li:before { background-color:var(--lt-gray) !important; }
+.bullets-bg-pale-gray li:before { background-color:var(--pale-gray) !important; }
 .bullets-bg-white li:before { background-color:#fff !important; }
-.bullets-bg-dkdk-blue li:before { background-color:#000066 !important; }
-.bullets-bg-dk-blue li:before { background-color:#0099ff !important; }
+.bullets-bg-dkdk-blue li:before { background-color:var(--dkdk-blue) !important; }
+.bullets-bg-dk-blue li:before { background-color:var(--blue) !important; }
 .bullets-bg-blue li:before { background-color:#a2d2ee !important; }
-.bullets-bg-lt-blue li:before { background-color:#ddeeff !important; }
-.bullets-bg-pale-blue li:before { background-color:#f1f8ff !important; }
-.bullets-bg-contrast li:before { background-color:#444 !important;}
-.bullets-bg-firm li:before { background-color:#ff6600 !important;}
+.bullets-bg-lt-blue li:before { background-color:var(--lt-blue) !important; }
+.bullets-bg-pale-blue li:before { background-color:var(--pale-blue) !important; }
+.bullets-bg-contrast li:before { background-color:var(--contrast) !important;}
+.bullets-bg-firm li:before { background-color:var(--firm) !important;}
 .bullets-bg-positive li:before { background-color:#669933 !important;}
 .bullets-bg-negative li:before { background-color:#cc0000 !important;}
-.bullets-bg-snotgreen li:before { background-color:#d2e286 !important; }
-.bullets-bg-pissyellow li:before { background-color:#ffff99 !important; }
+.bullets-bg-snotgreen li:before { background-color:var(--snotgreen) !important; }
+.bullets-bg-pissyellow li:before { background-color:var(--pissyellow) !important; }
 
-.separator { border-right: 1px solid #9ba8b1; }
+.separator { border-right: 1px solid var(--neutral); }
 
 /* definition lists */
 dt { color: #9BA8AF; }
@@ -105,7 +105,7 @@ dl.compact dd {
     margin:0;
 }
 .dl-compressed dt {
-    color: #9BA8B1;
+    color: var(--neutral);
     clear:both;
     padding-right:10px;
 }
@@ -113,6 +113,6 @@ dl.compact dd {
     border: none;
 }
 
-@media screen and (min-width:768px) {
+@media (--larger-screen) {
     .multicol dt { margin: 0 10px 0 20px; }
 }
