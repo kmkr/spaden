@@ -85,6 +85,27 @@ function startsWithValue(nodes, value) {
     });
 }
 
+function cleanIterator(node, _node) {
+    if (_node.type === 'comment' && !_node.text.match(/\S+/)) {
+        // remove empty comments
+        console.log('Removed emtpy comment');
+        return false;
+    }
+
+    // remove e.g. background-color: -webkit-... if native is unprefixed is present
+    if (_node.value && isPrefixed(_node.value) &&
+        startsWithValue(node.nodes, getValueFnName(_node.value))) {
+        console.warn('Removed value:'.red, _node.prop + ': ' + _node.value);
+        return false
+    }
+
+    if (_node.prop && isPrefixed(_node.prop) &&
+        hasProp(node.nodes, getPropUnprefixed(_node.prop))) {
+        console.warn('Removed declaration:'.red, _node.prop);
+        return false
+    }
+    return true;
+}
 
 function iterator(depth, node, childIndex, list) {
     if (node.nodes) {
@@ -95,28 +116,7 @@ function iterator(depth, node, childIndex, list) {
             node.nodes.sort();
         }*/
 
-        node.nodes = node.nodes.filter(function(_node) {
-            if (_node.type === 'comment' && !_node.text.match(/\S+/)) {
-                // remove empty comments
-                console.log('Removed emtpy comment');
-                return false;
-            }
-
-            // remove e.g. background-color: -webkit-... if native is unprefixed is present
-            if (isPrefixed(_node.value) &&
-                startsWithValue(node.nodes, getValueFnName(_node.value))) {
-                console.warn('Removed value:'.red, _node.prop + ': ' + _node.value);
-                return false
-            }
-
-            if (isPrefixed(_node.prop) &&
-                hasProp(node.nodes, getPropUnprefixed(_node.prop))) {
-                console.warn('Removed declaration:'.red, _node.prop);
-                return false
-            }
-            return true;
-        });
-
+        node.nodes = node.nodes.filter(cleanIterator.bind(null, node));
         node.nodes.forEach(iterator.bind(null, depth + 1));
 
         if (node.type !== 'atrule') {
@@ -223,6 +223,7 @@ function formatFile(filename) {
 
     var ast = postcss.parse(content, { safe: true });
 
+    ast.nodes = ast.nodes.filter(cleanIterator.bind(null, ast));
     ast.nodes.forEach(iterator.bind(null, 1));
 
     if (process.env.DEBUG) {

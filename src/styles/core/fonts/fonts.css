@@ -133,7 +133,12 @@ a.contrast.userhistory:focus, .contrast.userhistory a:hover { color: #FFFFFF; }
 /* dark links */
 a.dark-links, a.dark-links:link, .dark-links a, .dark-links a:link { color: var(--sharp); }
 a.dark-links:visited, .dark-links a:visited { color: var(--sharp); }
-a.dark-links:hover, .dark-links a:hover, a.dark-links:focus, .dark-links a:focus, a.dark-links:active, .dark-links a:active { text-decoration: underline; }
+a.dark-links:hover,
+.dark-links a:hover,
+a.dark-links:focus,
+.dark-links a:focus,
+a.dark-links:active,
+.dark-links a:active { text-decoration: underline; }
 /* block the link styling */
 
 a.linkblock:hover,

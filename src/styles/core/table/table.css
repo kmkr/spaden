@@ -35,7 +35,6 @@ tbody th {
 
 .super-condensed th, .super-condensed td { padding: 2px 3px !important; }
 table.centerify td, table.centerify th { text-align: center; }
-/*  */
 
 .bordered-table {
     border: 1px solid var(--pale);
