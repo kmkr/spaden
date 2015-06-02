@@ -39,7 +39,6 @@
     "postcss-custom-properties": "^3.3.0",
     "postcss-import": "^5.2.2",
     "postcss-media-minmax": "^1.1.0",
-    "postcss-nested": "^0.3.1",
     "tar": "^1.0.2"
   },
   "contributors": [
