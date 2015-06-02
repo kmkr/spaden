@@ -1,5 +1,4 @@
-@custom-media --mini-screen (max-width: 459px);
-@custom-media --not-mini-screen (min-width: 460px);
+@custom-media --mini-screen all and (max-width: 459px);
 @custom-media --small-but-not-mini (min-width: 460px) and (max-width: 767px);
 @custom-media --small-screen (max-width: 767px);
 @custom-media --larger-screen (min-width: 768px);

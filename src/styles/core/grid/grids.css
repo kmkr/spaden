@@ -67,7 +67,7 @@ html {
     .r-cols2to5 > .unit:nth-child(2n+1) { clear:both; }
 }
 
-@media (--not-mini-screen) {
+@media not (--mini-screen) {
     .r-cols1to3 > .unit { width: 50%; }
     .r-cols1to4 > .unit { width: 50%; }
     .r-cols2to5 > .unit { width: 33.3333%; }
