@@ -26,7 +26,7 @@ gulp.task('copy-browser-files', ['clean'], function() {
         .pipe(gulp.dest(OUT_DIR));
 });
 
-gulp.task('optimize-images', [], function() {
+gulp.task('optimize-images', ['copy-images'], function() {
     return gulp.src([OUT_DIR + '/img/**'], { base: OUT_DIR}).pipe(plugins.imageoptim.optimize());
 });
 
@@ -82,8 +82,4 @@ gulp.task('default', [
     'replace-imgpaths'
 ]);
 
-gulp.task('package', [
-    'default',
-    'optimize-images',
-    'package-tarball'
-]);
+gulp.task('package', ['default', 'optimize-images', 'package-tarball']);
