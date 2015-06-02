@@ -15,11 +15,16 @@ body {
     color: var(--sharp);
 }
 
-html {font-size: 100%;}
-table{font-size:inherit;font:100%;}
-pre,code,kbd,samp,tt{font-family:monospace;line-height:100%;}
-code{color:#0B8C8F;}
-
+html { font-size: 100%; }
+table {
+    font-size: inherit;
+    font: 100%;
+}
+pre, code, kbd, samp, tt {
+    font-family: monospace;
+    line-height: 100%;
+}
+code { color: #0B8C8F; }
 /* ====== Headings ====== */
 /* .h1-.h6 classes should be used to maintain the semantically appropriate heading levels - NOT for use on non-headings */
 h1, .h1, .t1 { font-size: 35px; }
@@ -27,7 +32,7 @@ h2, .h2, .t2 { font-size: 25px; }
 h3, .h3, .t3 { font-size: 20px; }
 h4, .h4, .t4 { font-size: 16px; }
 h1, h2, h3, h4 {
-    font-weight: 300; /*firefox translates normal to 400 other browsers 300*/
+    font-weight: 300; /* firefox translates normal to 400 other browsers 300 */
     line-height: 1.25;
 }
 /* if additional headings are needed they should be created via additional classes, never via location dependant styling */
@@ -36,17 +41,33 @@ h1, h2, h3, h4 {
 .d2, .microtext { font-size: 10px; }
 .largetext { font-size: 16px; }
 
-.debug-fonts h1::after,.debug-fonts .h1::after,.debug-fonts .t1::after{content:".t1(35px)";color:var(--lilac);}
-.debug-fonts h2::after,.debug-fonts .h2::after,.debug-fonts .t2::after{content:".t2(25px)";color:var(--lilac);}
-.debug-fonts h3::after,.debug-fonts .h3::after,.debug-fonts .t3::after{content:".t3(20px)";color:var(--lilac);}
-.debug-fonts h4::after,.debug-fonts .h4::after,.debug-fonts .t4::after,.debug-fonts .largetext::after{content:".t4(16px)";color:var(--lilac);}
-.debug-fonts .d1::after,.debug-fonts .smalltext::after{content:".d1(12px)";color:var(--lilac);}
-.debug-fonts .d2::after,.debug-fonts .microtext::after{content:".d2(10px)";color:var(--lilac);}
+.debug-fonts h1::after, .debug-fonts .h1::after, .debug-fonts .t1::after {
+    content: '.t1(35px)';
+    color: var(--lilac);
+}
+.debug-fonts h2::after, .debug-fonts .h2::after, .debug-fonts .t2::after {
+    content: '.t2(25px)';
+    color: var(--lilac);
+}
+.debug-fonts h3::after, .debug-fonts .h3::after, .debug-fonts .t3::after {
+    content: '.t3(20px)';
+    color: var(--lilac);
+}
+.debug-fonts h4::after, .debug-fonts .h4::after, .debug-fonts .t4::after, .debug-fonts .largetext::after {
+    content: '.t4(16px)';
+    color: var(--lilac);
+}
+.debug-fonts .d1::after, .debug-fonts .smalltext::after {
+    content: '.d1(12px)';
+    color: var(--lilac);
+}
+.debug-fonts .d2::after, .debug-fonts .microtext::after {
+    content: '.d2(10px)';
+    color: var(--lilac);
+}
 
 @media (--small-screen) {
-    body {
-        font-size: 13px;
-    }
+    body { font-size: 13px; }
     /* ====== Headings ====== */
     h1, .h1, .t1 { font-size: 25px; }
     h2, .h2, .t2 { font-size: 20px; }
@@ -57,12 +78,12 @@ h1, h2, h3, h4 {
     .d2, .microtext { font-size: 9px; }
     .largetext { font-size: 14px; }
 
-    .debug-fonts h1::after, .debug-fonts .h1::after,.debug-fonts .t1::after{content:".t1(25x)"}
-    .debug-fonts h2::after,.debug-fonts .h2::after,.debug-fonts .t2::after{content:".t2(20px)"}
-    .debug-fonts h3::after,.debug-fonts .h3::after,.debug-fonts .t3::after{content:".t3(16px)"}
-    .debug-fonts h4::after,.debug-fonts .h4::after,.debug-fonts .t4::after,.debug-fonts .largetext::after{content:".t4(14px)"}
-    .debug-fonts .d1::after,.debug-fonts .smalltext::after{content:".d1(10px)"}
-    .debug-fonts .d2::after,.debug-fonts .microtext::after{content:".d2(9px)"}
+    .debug-fonts h1::after, .debug-fonts .h1::after, .debug-fonts .t1::after { content: '.t1(25x)'; }
+    .debug-fonts h2::after, .debug-fonts .h2::after, .debug-fonts .t2::after { content: '.t2(20px)'; }
+    .debug-fonts h3::after, .debug-fonts .h3::after, .debug-fonts .t3::after { content: '.t3(16px)'; }
+    .debug-fonts h4::after, .debug-fonts .h4::after, .debug-fonts .t4::after, .debug-fonts .largetext::after { content: '.t4(14px)'; }
+    .debug-fonts .d1::after, .debug-fonts .smalltext::after { content: '.d1(10px)'; }
+    .debug-fonts .d2::after, .debug-fonts .microtext::after { content: '.d2(9px)'; }
 }
 
 .fixedfontsize.b1 { font-size: 14px; }
@@ -72,97 +93,111 @@ h1, h2, h3, h4 {
 .fixedfontsize.t2 { font-size: 25px; }
 .fixedfontsize.t3 { font-size: 20px; }
 .fixedfontsize.t4 { font-size: 16px; }
-
 /* Fix for webscript subscript + superscript alignment bug */
-sup,sub{line-height:1em;}
+sup, sub { line-height: 1em; }
 
-.em{font-style: italic;}
-.strong{font-weight:bold;}
-.normal{font-weight: normal;}
+.em { font-style: italic; }
+.strong { font-weight: bold; }
+.normal { font-weight: normal; }
 .justify { text-align: justify; }
 .strikethrough { text-decoration: line-through; }
 .capitalize:first-letter { text-transform: capitalize; }
 .uppercase { text-transform: uppercase; }
-
-
 /* default links */
-a, a:link { color:#07e; text-decoration:none; }
-a:visited { color: #07e; text-decoration:none; }
-a:hover, a:focus, a:active { text-decoration:underline; }
-a:focus{outline:none;}
-a.neutral { color: var(--dk-gray)!important; }
+a, a:link {
+    color: #0077EE;
+    text-decoration: none;
+}
+a:visited {
+    color: #0077EE;
+    text-decoration: none;
+}
+a:hover, a:focus, a:active { text-decoration: underline; }
+a:focus { outline: none; }
+a.neutral { color: var(--dk-gray) !important; }
 a > .neutral:hover,
 a:hover > .neutral { text-decoration: underline; }
-
 /* navigational links, visited on */
-a.userhistory:visited, .userhistory a:visited { color:var(--neutral); }
-a.userhistory:visited:hover, .userhistory a:visited:hover {   }
-
+a.userhistory:visited, .userhistory a:visited { color: var(--neutral); }
+a.userhistory:visited:hover, .userhistory a:visited:hover { }
 /* high contrast font color scheme */
-a.contrast:link,.contrast a:link { color:var(--lt-gray); }
-a.contrast:visited,.contrast a:visited { color:#ddd; }
-a.contrast:focus,.contrast a:hover { color:#fff; }
-a.contrast:focus,.contrast a:focus,
-a.contrast:active,.contrast a:active { background:transparent; }
-
+a.contrast:link, .contrast a:link { color: var(--lt-gray); }
+a.contrast:visited, .contrast a:visited { color: #DDDDDD; }
+a.contrast:focus, .contrast a:hover { color: #FFFFFF; }
+a.contrast:focus, .contrast a:focus,
+a.contrast:active, .contrast a:active { background: transparent; }
 /* navigational links, visited on */
-a.contrast.userhistory:link,.contrast.userhistory a:link { color:var(--lt-gray); }
-a.contrast.userhistory:visited,.contrast.userhistory a:visited { color:var(--lt-gray); }
-a.contrast.userhistory:focus,.contrast.userhistory a:hover { color:#fff; }
-
+a.contrast.userhistory:link, .contrast.userhistory a:link { color: var(--lt-gray); }
+a.contrast.userhistory:visited, .contrast.userhistory a:visited { color: var(--lt-gray); }
+a.contrast.userhistory:focus, .contrast.userhistory a:hover { color: #FFFFFF; }
 /* dark links */
-a.dark-links,a.dark-links:link,.dark-links a,.dark-links a:link{color:var(--sharp);}
-a.dark-links:visited,.dark-links a:visited{color:var(--sharp);}
-a.dark-links:hover,.dark-links a:hover,a.dark-links:focus,.dark-links a:focus,a.dark-links:active,.dark-links a:active{ text-decoration: underline; }
-
+a.dark-links, a.dark-links:link, .dark-links a, .dark-links a:link { color: var(--sharp); }
+a.dark-links:visited, .dark-links a:visited { color: var(--sharp); }
+a.dark-links:hover, .dark-links a:hover, a.dark-links:focus, .dark-links a:focus, a.dark-links:active, .dark-links a:active { text-decoration: underline; }
 /* block the link styling */
 
-a.linkblock:hover, .linkblock a:hover, a.linkblock:active, .linkblock a:active, a.linkblock:focus, .linkblock a:focus, button.blank.linkblock:hover, button.blank.linkblock:active, button.blank.linkblock:focus { text-decoration: none; }
-
+a.linkblock:hover,
+.linkblock a:hover,
+a.linkblock:active,
+.linkblock a:active,
+a.linkblock:focus,
+.linkblock a:focus,
+button.blank.linkblock:hover,
+button.blank.linkblock:active,
+button.blank.linkblock:focus { text-decoration: none; }
 /* toolbar links */
-a.toolbar,a.toolbar:link,.toolbar a,.toolbar a:link{color:var(--opaque); text-decoration:none;}
-a.toolbar:visited,.toolbar a:visited{color:var(--opaque); text-decoration:none;}
-a.toolbar:hover,.toolbar a:hover,a.toolbar:focus,.toolbar a:focus{color:var(--opaque); text-decoration:none;}
-a.toolbar:active,.toolbar a:active{color:var(--opaque); text-decoration:none;}
-
+a.toolbar, a.toolbar:link, .toolbar a, .toolbar a:link {
+    color: var(--opaque);
+    text-decoration: none;
+}
+a.toolbar:visited, .toolbar a:visited {
+    color: var(--opaque);
+    text-decoration: none;
+}
+a.toolbar:hover, .toolbar a:hover, a.toolbar:focus, .toolbar a:focus {
+    color: var(--opaque);
+    text-decoration: none;
+}
+a.toolbar:active, .toolbar a:active {
+    color: var(--opaque);
+    text-decoration: none;
+}
 /* tagwords */
 a.tagword {
     display: inline-block;
     padding: 2px 4px 0 0;
     text-transform: lowercase;
 }
-a.tagword:before{
-    content:'#';
-    color:var(--neutral);
+a.tagword:before {
+    content: '#';
+    color: var(--neutral);
 }
-a.tagword.editable:before, .editable a.tagword:before{
-    content:'';
-    color:var(--neutral);
+a.tagword.editable:before, .editable a.tagword:before {
+    content: '';
+    color: var(--neutral);
 }      
-a.tagword.editable:after, .editable a.tagword:after{
-    content:'';
+a.tagword.editable:after, .editable a.tagword:after {
+    content: '';
     margin-left: 5px;
-    height:8px;
-    width:8px;
-    display:inline-block;
+    height: 8px;
+    width: 8px;
+    display: inline-block;
     background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgOCA4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZmlsbD0iIzlCQThCMSIgZD0iTTUuNiw0TDgsNi40TDYuNCw4TDQsNS42TDEuNiw4TDAsNi40TDIuNCw0TDAsMS42TDEuNiwwTDQsMi40TDYuNCwwTDgsMS42TDUuNiw0eiIvPgo8L2c+Cjwvc3ZnPg==);
 }   
-a.tagword.editable, .editable a.tagword{
+a.tagword.editable, .editable a.tagword {
     background-color: var(--opaque);
     border-radius: 2px;
     padding: 4px 8px;
-    color:white;
-    margin-top:10px;
+    color: white;
+    margin-top: 10px;
 }
 a.tagword.editable:hover, .editable a.tagword:hover,
-a.tagword.editable:focus, .editable a.tagword:focus{
+a.tagword.editable:focus, .editable a.tagword:focus {
     background-color: #627E93;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 @media (max-width: 1024px) {
-    /*Prevents underline on touch/click on mobile */
-    a:link, a:visited, a:hover, a:focus, a:active {
-        text-decoration: none !important;
-    }
+    /* Prevents underline on touch/click on mobile */
+    a:link, a:visited, a:hover, a:focus, a:active { text-decoration: none !important; }
 }

@@ -5,22 +5,44 @@
     border-radius: 2px 2px 0 0;
     z-index: 0;
 }
-.profile .profilebg-blue { background-color: #70ADAE; background-image: url('/img/profiles/profile-bg-blue.jpg'); }
-.profile .profilebg-green { background-color: #8FA22C; background-image: url('/img/profiles/profile-bg-green.jpg'); }
-.profile .profilebg-greendk { background-color: #78805B; background-image: url('/img/profiles/profile-bg-greendk.jpg'); }
-.profile .profilebg-indigo { background-color: #746665; background-image: url('/img/profiles/profile-bg-indigo.jpg'); }
-.profile .profilebg-orange { background-color: #EEA82F; background-image: url('/img/profiles/profile-bg-orange.jpg'); }
-.profile .profilebg-peach { background-color: #E37D67; background-image: url('/img/profiles/profile-bg-peach.jpg'); }
-.profile .profilebg-pink { background-color: #F07E98; background-image: url('/img/profiles/profile-bg-pink.jpg'); }
-.profile .profilebg-purple { background-color: #B375B4; background-image: url('/img/profiles/profile-bg-purple.jpg'); }
+.profile .profilebg-blue {
+    background-color: #70ADAE;
+    background-image: url('/img/profiles/profile-bg-blue.jpg');
+}
+.profile .profilebg-green {
+    background-color: #8FA22C;
+    background-image: url('/img/profiles/profile-bg-green.jpg');
+}
+.profile .profilebg-greendk {
+    background-color: #78805B;
+    background-image: url('/img/profiles/profile-bg-greendk.jpg');
+}
+.profile .profilebg-indigo {
+    background-color: #746665;
+    background-image: url('/img/profiles/profile-bg-indigo.jpg');
+}
+.profile .profilebg-orange {
+    background-color: #EEA82F;
+    background-image: url('/img/profiles/profile-bg-orange.jpg');
+}
+.profile .profilebg-peach {
+    background-color: #E37D67;
+    background-image: url('/img/profiles/profile-bg-peach.jpg');
+}
+.profile .profilebg-pink {
+    background-color: #F07E98;
+    background-image: url('/img/profiles/profile-bg-pink.jpg');
+}
+.profile .profilebg-purple {
+    background-color: #B375B4;
+    background-image: url('/img/profiles/profile-bg-purple.jpg');
+}
 .profilebg .profiletxt,
-.profilebg .profiletxt a { 
-    color: #fff; 
-    text-shadow: 0 1px 1px rgba(0,0,0,.3); 
+.profilebg .profiletxt a {
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
 }
-.profileimg img {
-    border: 1px solid rgba(0, 153, 255, .6);
-}
+.profileimg img { border: 1px solid rgba(0, 153, 255, .6); }
 
 @media (--larger-screen) {
     .profile-large .profileimg,
@@ -29,14 +51,17 @@
 .profile-large .profileimg img,
 .profile-medium .profileimg img { max-width: 150px; }
 .profile-small .profileimg img { max-width: 100px; }
-.profile-company-small .profileimg img { max-width: 200px; max-height: 200px; }
-.profiletxt .verified:after { 
-    content: "";
+.profile-company-small .profileimg img {
+    max-width: 200px;
+    max-height: 200px;
+}
+.profiletxt .verified:after {
+    content: '';
     display: inline-block;
     height: 20px;
     width: 20px;
     margin-left: 5px;
-    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkZJTk5fY29weSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIxMnB4IiBoZWlnaHQ9IjEycHgiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTIgMTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZmlsbD0iIzAwOTlGRiIgZD0iTTguMDMyLDAuNEgzLjk2OEMyLDAuNCwwLjQsMiwwLjQsMy45Njh2NC4wNjRDMC40LDEwLDIsMTEuNiwzLjk2OCwxMS42SDExLjZWMy45NjgNCgkJQzExLjYsMiwxMCwwLjQsOC4wMzIsMC40eiIvPg0KCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik05LjMyOCwzLjg1Nkw5LjMxMywzLjg0Yy0wLjIwOS0wLjIwOC0wLjU0NS0wLjIwOC0wLjczNiwwTDUuNDg4LDYuODhMMy44NCw1LjINCgkJQzMuNjMyLDUuMDA4LDMuMzEyLDUuMDA4LDMuMTIsNS4yMTZMMy4xMDQsNS4yMzJjLTAuMTkyLDAuMTkyLTAuMjA4LDAuNTEyLTAuMDE2LDAuNzJsMCwwbDIuMDMyLDIuMDgNCgkJYzAuMjA4LDAuMjA4LDAuNTQ0LDAuMjA4LDAuNzM2LDBsMy40NzItMy40NTZDOS41MzYsNC4zODQsOS41MzYsNC4wNDgsOS4zMjgsMy44NTZ6Ii8+DQo8L2c+DQo8L3N2Zz4NCg==");
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkZJTk5fY29weSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIxMnB4IiBoZWlnaHQ9IjEycHgiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTIgMTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZmlsbD0iIzAwOTlGRiIgZD0iTTguMDMyLDAuNEgzLjk2OEMyLDAuNCwwLjQsMiwwLjQsMy45Njh2NC4wNjRDMC40LDEwLDIsMTEuNiwzLjk2OCwxMS42SDExLjZWMy45NjgNCgkJQzExLjYsMiwxMCwwLjQsOC4wMzIsMC40eiIvPg0KCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik05LjMyOCwzLjg1Nkw5LjMxMywzLjg0Yy0wLjIwOS0wLjIwOC0wLjU0NS0wLjIwOC0wLjczNiwwTDUuNDg4LDYuODhMMy44NCw1LjINCgkJQzMuNjMyLDUuMDA4LDMuMzEyLDUuMDA4LDMuMTIsNS4yMTZMMy4xMDQsNS4yMzJjLTAuMTkyLDAuMTkyLTAuMjA4LDAuNTEyLTAuMDE2LDAuNzJsMCwwbDIuMDMyLDIuMDgNCgkJYzAuMjA4LDAuMjA4LDAuNTQ0LDAuMjA4LDAuNzM2LDBsMy40NzItMy40NTZDOS41MzYsNC4zODQsOS41MzYsNC4wNDgsOS4zMjgsMy44NTZ6Ii8+DQo8L2c+DQo8L3N2Zz4NCg==');
     background-size: contain;
 }
 .companyprofile .profilebg {
@@ -45,13 +70,11 @@
     background-size: 980px;
     background-position: center;
 }
-.companyprofile .keyinfo {
-    background-color: rgba(255, 255, 255, .5);
-}
+.companyprofile .keyinfo { background-color: rgba(255, 255, 255, .5); }
 
 .editmode .profilebg { position: relative; }
 .editmode .profilebg:after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     top: 0;
@@ -83,17 +106,11 @@
     border: 3px solid rgba(255,255,255,.5);
     z-index: 3;
 }
-.editmode .profiletxt div {
-    z-index: 3;
-}
+.editmode .profiletxt div { z-index: 3; }
 
 @media (--larger-screen) {
-    .companyprofile .profilebg {
-       padding-top: 100px;
-    }
-    .companyprofile .profileimg img {
-        max-height: 100px;
-    }
+    .companyprofile .profilebg { padding-top: 100px; }
+    .companyprofile .profileimg img { max-height: 100px; }
     .editmode .profilebg .editbg {
         position: absolute;
         z-index: 1;

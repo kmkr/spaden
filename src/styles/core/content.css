@@ -1,35 +1,27 @@
 /* Specific stuff */
-.video-container iframe {max-width:100%}
-
+.video-container iframe { max-width: 100%; }
 /* Random spacing fix (jobb) */
-.object-description .r-margin p { margin-left: 0; margin-right: 0; }
-
-/*  */
-.hover-background a:hover{
-	background-color:#f4f7fa;
+.object-description .r-margin p {
+    margin-left: 0;
+    margin-right: 0;
 }
-
+/*   */
+.hover-background a:hover { background-color: #F4F7FA; }
 /* Market hover */
 
-.market-selector{
+.market-selector {
     border-left: 1px solid rgba(0,0,0,.05);
     border-radius: 2px;
-    margin-right:10px;
+    margin-right: 10px;
 }
-.market-selector a{
-    display:block;
-    height:auto;
+.market-selector a {
+    display: block;
+    height: auto;
 }
-.market-selector .mod {
-    margin:0 0 0 0!important;
-}
-.market-selector .mod.shadow>.inner{
-    border-left:0;
-}
+.market-selector .mod { margin: 0 0 0 0 !important; }
+.market-selector .mod.shadow > .inner { border-left: 0; }
 @media (--small-screen) {
-	.market-selector{
-        margin-right: 2px;
-    }
+    .market-selector { margin-right: 2px; }
 }
 
 .scroll-container {
@@ -42,47 +34,35 @@
     -webkit-overflow-scrolling: touch;
 }
 
-.list-line:not(:last-child) {
-    border-bottom: 1px solid var(--pale);
-}
-
+.list-line:not(:last-child) { border-bottom: 1px solid var(--pale); }
 /* footer specific, default is collapsed for old phones, temporary fix? */
-.horizontal-list.default1col li{
-    display:block;
-}
+.horizontal-list.default1col li { display: block; }
 @media (--larger-screen) {
-    .horizontal-list.default1col li{
-        display:inline;
-    }
+    .horizontal-list.default1col li { display: inline; }
     /* should we make a generic thing for vertical dividers. this one is for the footer */
-    .verticalhr li:not(:last-child){
-        border-right:1px solid var(--pale);
-    }
+    .verticalhr li:not(:last-child) { border-right: 1px solid var(--pale); }
 }
 
 
 @media (--larger-screen) {
     .fixedfilters .scrollbar::-webkit-scrollbar {
-        width:5px;
+        width: 5px;
         background: transparent;
     }
-    .fixedfilters .scrollbar:hover::-webkit-scrollbar {
-
+    .fixedfilters .scrollbar:hover::-webkit-scrollbar { }
+    .fixedfilters .scrollbar::-webkit-scrollbar-thumb {
+        background-color: var(--lt-gray);
+        border-radius: 5px;
     }
-    .fixedfilters .scrollbar::-webkit-scrollbar-thumb{
-        background-color:var(--lt-gray);
-        border-radius:5px;
+    .fixedfilters .scrollbar:hover::-webkit-scrollbar-thumb { background-color: #CCCCCC; }
+    .fixedfilters .scrollbar::-webkit-scrollbar-thumb:hover { background-color: #BBBBBB; }
+    .fixedfilters .scrollbar::-webkit-scrollbar-thumb:active { background-color: #AAAAAA; }
+    .fixedfilters .scrollbar {
+        max-height: 600px;
+        margin-right: 5px;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }
-    .fixedfilters .scrollbar:hover::-webkit-scrollbar-thumb{
-        background-color:#ccc;
-    }
-    .fixedfilters .scrollbar::-webkit-scrollbar-thumb:hover{
-        background-color:#bbb;
-    }
-    .fixedfilters .scrollbar::-webkit-scrollbar-thumb:active{
-        background-color: #aaa;
-    }
-    .fixedfilters .scrollbar { max-height: 600px; margin-right: 5px; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
 }
 
 @media (--small-screen) {
@@ -98,8 +78,8 @@
     top: 0;
     left: 0;
     opacity: 0;
-    background: #fff;
-    color: #000;
+    background: #FFFFFF;
+    color: #000000;
     padding: 5px 10px;
     z-index: -1;
 }

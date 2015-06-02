@@ -5,21 +5,21 @@ t,s,n = tiny(1px),small(2px),none(0px)
 must be included before color.css
 */
 
-.bat,.btt,.brt,.bbt,.blt,.bvt,.bht,.bas,.bts,.brs,.bbs,.bls,.bvs,.bhs{
-	border-style: solid;
-	border-color: var(--pale); /* Default border color */
-	border-width: 0;
+.bat, .btt, .brt, .bbt, .blt, .bvt, .bht, .bas, .bts, .brs, .bbs, .bls, .bvs, .bhs {
+    border-style: solid;
+    border-color: var(--pale); /* Default border color */
+    border-width: 0;
 }
 
-.btn,.bvn,.ban{border-top-width:0}
-.btt,.bvt,.bat{border-top-width:1px}
-.bts,.bvs,.bas{border-top-width:2px}
-.brn,.bhn,.ban{border-right-width:0}
-.brt,.bht,.bat{border-right-width:1px}
-.brs,.bhs,.bas{border-right-width:2px}
-.bbn,.bvn,.ban{border-bottom-width:0}
-.bbt,.bvt,.bat{border-bottom-width:1px}
-.bbs,.bvs,.bas{border-bottom-width:2px}
-.bln,.bhn,.ban{border-left-width:0}
-.blt,.bht,.bat{border-left-width:1px}
-.bls,.bhs,.bas{border-left-width:2px}
+.btn, .bvn, .ban { border-top-width: 0; }
+.btt, .bvt, .bat { border-top-width: 1px; }
+.bts, .bvs, .bas { border-top-width: 2px; }
+.brn, .bhn, .ban { border-right-width: 0; }
+.brt, .bht, .bat { border-right-width: 1px; }
+.brs, .bhs, .bas { border-right-width: 2px; }
+.bbn, .bvn, .ban { border-bottom-width: 0; }
+.bbt, .bvt, .bat { border-bottom-width: 1px; }
+.bbs, .bvs, .bas { border-bottom-width: 2px; }
+.bln, .bhn, .ban { border-left-width: 0; }
+.blt, .bht, .bat { border-left-width: 1px; }
+.bls, .bhs, .bas { border-left-width: 2px; }

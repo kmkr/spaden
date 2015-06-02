@@ -1,4 +1,8 @@
-.ribbon2 { position: relative; z-index: 1; overflow: hidden;}
+.ribbon2 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
 .ribbon2:hover { text-decoration: none; }
 .ribbon2 .ribbon-content {
     font-size: 13px;
@@ -8,15 +12,11 @@
     top: 18px;
     text-transform: uppercase;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    -moz-transform:rotate(45deg);
-    -webkit-transform:rotate(45deg);
-    -o-transform:rotate(45deg);
-    -ms-transform:rotate(45deg);
-    transform:rotate(45deg);
+    transform: rotate(45deg);
     text-align: center;
-    background: #fff264;
-    background-image: linear-gradient(to left, #fff264, #ffffe3);
-    color: #5a4600;
+    background: #FFF264;
+    background-image: linear-gradient(to left, #FFF264, #FFFFE3);
+    color: #5A4600;
     text-shadow: 1px 0 0 rgba(255,255,255,.9);
     z-index: 2;
     height: 18px;
@@ -25,201 +25,201 @@
 .ribbon-content.mini {
     z-index: 2;
     height: 11px;
-    line-height:11px;
+    line-height: 11px;
     width: 80px;
     right: -18px;
     top: 16px;
     font-size: 10px;
 }
 .ribbon-content.yellow {
-    background: #fff264;
-    background-image: linear-gradient(to left, #fff264, #ffffe3);
-    color: #5a4600;
+    background: #FFF264;
+    background-image: linear-gradient(to left, #FFF264, #FFFFE3);
+    color: #5A4600;
 }
 .ribbon-content.gray {
-    background: #d1cfcf;
-    background-image: linear-gradient(to left, #d1cfcf, #e1e0e0);
+    background: #D1CFCF;
+    background-image: linear-gradient(to left, #D1CFCF, #E1E0E0);
 }
 .ribbon-content.green {
-    color: #fff;
+    color: #FFFFFF;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
-    background: #59852e;
-    background-image: linear-gradient(to left, #59852e, #75ab3d);
+    background: #59852E;
+    background-image: linear-gradient(to left, #59852E, #75AB3D);
 }
 .ribbon-content.orange {
-    color: #fff;
+    color: #FFFFFF;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
-    background: #ff5700;
-    background-image: linear-gradient(to left, #ff5700, #ff8f00);
+    background: #FF5700;
+    background-image: linear-gradient(to left, #FF5700, #FF8F00);
 }
 .ribbon-content.red {
-    color: #fff;
+    color: #FFFFFF;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
-    background: #b72626;
-    background-image: linear-gradient(to left, #b72626, #e57c7c);
+    background: #B72626;
+    background-image: linear-gradient(to left, #B72626, #E57C7C);
 }
 
 .ribbon-content.purple {
-    color: #fff;
+    color: #FFFFFF;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
-    background: #8b31e8;
-    background-image: linear-gradient(to left, #8b31e8, #ad61fc);
+    background: #8B31E8;
+    background-image: linear-gradient(to left, #8B31E8, #AD61FC);
 }
 
-.ribbon { position: relative; -webkit-backface-visibility: hidden; z-index: 1}
+.ribbon {
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    z-index: 1;
+}
 .ribbon:hover { text-decoration: none; }
 .ribbon:before {
     font-size: 13px;
     text-transform: uppercase;
     position: absolute;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    -moz-transform:rotate(45deg);
-    -webkit-transform:rotate(45deg);
-    -o-transform:rotate(45deg);
-    -ms-transform:rotate(45deg);
-    transform:rotate(45deg);
+    transform: rotate(45deg);
     text-align: center;
     font-weight: bold;
-    background: #fff264;
-    background-image: linear-gradient(to left, #fff264, #ffffe3);
-    color: #5a4600;
+    background: #FFF264;
+    background-image: linear-gradient(to left, #FFF264, #FFFFE3);
+    color: #5A4600;
     text-shadow: 1px 0 0 rgba(255,255,255,.9);
     padding: 4px 11px 3px 33px;
     z-index: 2;
 }
 .ribbon.newToday:before {
     width: 129px;
-    content:"Ny i dag";
+    content: 'Ny i dag';
     right: -30px;
     top: 8px;
     padding: 0 11px 3px 33px;
-    color: #fff;
+    color: #FFFFFF;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
-    background: #59852e;
-    background-image: linear-gradient(to left, #59852e, #75ab3d);
+    background: #59852E;
+    background-image: linear-gradient(to left, #59852E, #75AB3D);
     height: 18px;
     line-height: 18px;
 }
 .ribbon.expiresToday:before {
     width: 151px;
-    content:"Siste frist";
+    content: 'Siste frist';
     right: -34px;
     top: 14px;
     padding: 0 11px 3px 36px;
-    color: #fff;
+    color: #FFFFFF;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
-    background: #ff5700;
-    background-image: linear-gradient(to left, #ff5700, #ff8f00);
+    background: #FF5700;
+    background-image: linear-gradient(to left, #FF5700, #FF8F00);
     height: 18px;
     line-height: 18px;
 }
 .ribbon.sold:before {
     width: 122px;
-    content:"Solgt";
+    content: 'Solgt';
     right: -31px;
     top: 3px;
 }
 .ribbon.rented:before {
     width: 121px;
-    content:"Utleid";
+    content: 'Utleid';
     right: -28px;
     top: 5px;
 }
 .ribbon.filled:before {
     width: 118px;
-    content:"Besatt";
+    content: 'Besatt';
     right: -25px;
     top: 7px;
 }
 .ribbon.fulfilled:before {
     width: 127px;
-    content:"Utf\00F8 rt";
+    content: 'Utf\00F8 rt';
     right: -31px;
     top: 4px;
 }
 .ribbon.bought:before {
     width: 111px;
-    content:"Kj\00F8 pt";
+    content: 'Kj\00F8 pt';
     right: -25px;
     top: 5px;
 }
 .ribbon.givenaway:before {
     width: 137px;
-    content:"Gitt bort";
+    content: 'Gitt bort';
     right: -30px;
     top: 8px;
 }
 .ribbon.started:before {
     width: 134px;
-    content:"P\00e5 begynt";
+    content: 'P\00e5 begynt';
     right: -30px;
     top: 9px;
 }
 .ribbon.inactive:before {
     width: 128px;
-    content:"Inaktiv";
+    content: 'Inaktiv';
     right: -31px;
     top: 5px;
-    background: #d1cfcf;
-    background-image: linear-gradient(to left, #d1cfcf, #e1e0e0);
+    background: #D1CFCF;
+    background-image: linear-gradient(to left, #D1CFCF, #E1E0E0);
 }
 .ribbon.active:before {
     width: 121px;
-    content:"Aktiv";
+    content: 'Aktiv';
     right: -31px;
     top: 0;
-    color: #fff;
+    color: #FFFFFF;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
-    background: #59852e;
-    background-image: linear-gradient(to left, #59852e, #75ab3d);
+    background: #59852E;
+    background-image: linear-gradient(to left, #59852E, #75AB3D);
 }
 .ribbon.expired:before {
     width: 125px;
-    content:"Utl\00F8 pt";
+    content: 'Utl\00F8 pt';
     right: -31px;
     top: 3px;
-    background: #d1cfcf;
-    background-image: linear-gradient(to left, #d1cfcf, #e1e0e0);
+    background: #D1CFCF;
+    background-image: linear-gradient(to left, #D1CFCF, #E1E0E0);
 }
 .ribbon.control:before {
     width: 152px;
-    content:"Til kontroll";
+    content: 'Til kontroll';
     right: -31px;
     top: 20px;
     padding: 0 11px 3px 36px;
-    color: #fff;
+    color: #FFFFFF;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
-    background: #ff5700;
-    background-image: linear-gradient(to left, #ff5700, #ff8f00);
+    background: #FF5700;
+    background-image: linear-gradient(to left, #FF5700, #FF8F00);
     height: 18px;
     line-height: 18px;
 }
 .ribbon.rejected:before {
     width: 125px;
-    content:"Avvist";
+    content: 'Avvist';
     right: -31px;
     top: 2px;
-    color: #fff;
+    color: #FFFFFF;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
-    background: #b72626;
-    background-image: linear-gradient(to left, #b72626, #e57c7c);
+    background: #B72626;
+    background-image: linear-gradient(to left, #B72626, #E57C7C);
 }
 .ribbon.deleted:before {
     width: 129px;
-    content:"Slettet";
+    content: 'Slettet';
     right: -31px;
     top: 6px;
-    background: #d1cfcf;
-    background-image: linear-gradient(to left, #d1cfcf, #e1e0e0);
+    background: #D1CFCF;
+    background-image: linear-gradient(to left, #D1CFCF, #E1E0E0);
 }
 
 .ribbon.newprice:before {
     width: 126px;
-    content:"Ny pris";
+    content: 'Ny pris';
     right: -31px;
     top: 3px;
-    color: #fff;
+    color: #FFFFFF;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
-    background: #59852e;
-    background-image: linear-gradient(to left, #59852e, #75ab3d);
+    background: #59852E;
+    background-image: linear-gradient(to left, #59852E, #75AB3D);
 }

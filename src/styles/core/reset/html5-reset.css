@@ -1,8 +1,6 @@
 template,
 datalist
-{
-    display: none;
-}
+{ display: none; }
 
 section,
 nav,
@@ -14,12 +12,9 @@ main,
 figcaption,
 details,
 summary
-{
-    display: block;
-}
+{ display: block; }
 
-figure
-{
+figure {
     display: block;
     margin-bottom: 1em;
     margin-left: 40px;
@@ -27,60 +22,47 @@ figure
     margin-top: 1em;
 }
 
-mark
-{
-    color: #000;
-    background-color: #ff0;
+mark {
+    color: #000000;
+    background-color: #FFFF00;
 }
 
 video
-{
-    object-fit: contain;
-}
+{ object-fit: contain; }
 
-audio
-{
+audio {
     height: 30px;
     width: 300px;
 }
 
 keygen
-{
-    display: inline-block;
-}
+{ display: inline-block; }
 
 ruby
-{
-    text-indent: 0;
-}
+{ text-indent: 0; }
 
-rt
-{
+rt {
     text-indent: 0;
     line-height: normal;
 }
 
-progress
-{
+progress {
     display: inline-block;
     height: 1em;
     width: 10em;
 }
 
-meter
-{
+meter {
     display: inline-block;
     height: 1em;
     width: 5em;
     vertical-align: -0.2em;
 }
 
-menu
-{
+menu {
     display: block;
     margin-bottom: 1em;
     margin-top: 1em;
     padding-left: 40px;
 }
-
 /* embed, canvas, bdi, data, time, rp, wbr, source, track, svg, math, output, menuitem */

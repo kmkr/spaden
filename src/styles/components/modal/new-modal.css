@@ -1,6 +1,6 @@
 .modal-container {
     position: fixed;
-    background-color: #fff;
+    background-color: #FFFFFF;
     opacity: 0;
     margin: auto;
 }
@@ -11,9 +11,7 @@
     display: none;
 }
 
-.modal-active {
-    display: block;
-}
+.modal-active { display: block; }
 
 .app-toolbar-modal {
     position: absolute;
@@ -23,8 +21,7 @@
     width: 100%;
     border: 0 solid var(--pale);
     border-bottom-width: 1px;
-    background-color: #fff;
-    -webkit-backface-visibility: hidden;
+    background-color: #FFFFFF;
     backface-visibility: hidden;
 }
 
@@ -35,13 +32,11 @@
         bottom: 0;
         left: 0;
         max-height: none !important; /* Same as for `top`. */
-        -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
     }
 
     .modal-active .modal-container {
         opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
 }
@@ -65,18 +60,14 @@
         bottom: 0;
         left: 0;
         background-color: rgba(0, 0, 0, 0.35);
-        -webkit-transform: translate3d(0, -100000px, 0);
         transform: translate3d(0, -100000px, 0);
     }
 
     .modal-active {
         opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
 
-    .app-toolbar-modal {
-        border-radius: 3px 3px 0 0;
-    }
+    .app-toolbar-modal { border-radius: 3px 3px 0 0; }
 
 }
