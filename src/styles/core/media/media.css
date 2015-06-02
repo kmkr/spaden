@@ -1,13 +1,14 @@
 /* ====== media (requires mod.css) ====== */
-.media{overflow:hidden;*overflow:visible;zoom:1;}
-.media .img{float:left;}
-.media .img img{display:block;}
-.media .imgExt{float:right;}
-
-a.media {
-    display: block;
+.media {
+    overflow: hidden;
+    *overflow: visible;
+    zoom: 1;
 }
+.media .img { float: left; }
+.media .img img { display: block; }
+.media .imgExt { float: right; }
 
+a.media { display: block; }
 /* Mediabasert objektsidelayout */
 /* ?
 @media (--small-screen) {

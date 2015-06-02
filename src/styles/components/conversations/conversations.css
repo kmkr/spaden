@@ -1,21 +1,17 @@
 .finnbox-conversation {
-    background-color: #fff;
-    border-top: 1px solid #ddd;
+    background-color: #FFFFFF;
+    border-top: 1px solid #DDDDDD;
     padding-top: 10px;
 }
 
-.finnbox-conversation a {
-    -webkit-tap-highlight-color: transparent;
-}
+.finnbox-conversation a { -webkit-tap-highlight-color: transparent; }
 
-.finnbox-conversation:first-child {
-    border-top-color: white;
-}
+.finnbox-conversation:first-child { border-top-color: white; }
 
 .finnbox-conversation.open {
     background-color: var(--pale-gray);
-    border-bottom: 4px solid #ddd;
-    border-top: 4px solid #ddd;
+    border-bottom: 4px solid #DDDDDD;
+    border-top: 4px solid #DDDDDD;
     padding-top: 9px;
     margin-top: -2px;
 }
@@ -26,57 +22,41 @@
     padding-top: 0;
 }
 
-.finnbox-conversation-open-hide {
-    display: inline-block;
-}
+.finnbox-conversation-open-hide { display: inline-block; }
 
-.finnbox-conversation.open .finnbox-conversation-open-hide {
-    display: none;
-}
+.finnbox-conversation.open .finnbox-conversation-open-hide { display: none; }
 
-.finnbox-conversation-open-show {
-    display: none;
-}
+.finnbox-conversation-open-show { display: none; }
 
-.finnbox-conversation.open .finnbox-conversation-open-show {
-    display: block;
-}
+.finnbox-conversation.open .finnbox-conversation-open-show { display: block; }
 
 .finnbox-profile-container {
-    min-width:15px;
-    height:32px;
+    min-width: 15px;
+    height: 32px;
     padding-right: 10px;
 }
 
 .finnbox-profile-image {
-    width:32px;
-    height:32px;
-    border-radius:34px;
-    border:1px solid #DDD;
-    padding:1px;
-    background:var(--pale-gray);
+    width: 32px;
+    height: 32px;
+    border-radius: 34px;
+    border: 1px solid #DDDDDD;
+    padding: 1px;
+    background: var(--pale-gray);
 }
 
 .finnbox-conversation .unread {
     font-weight: bold;
-    color: #000 !important;
+    color: #000000 !important;
 }
 
-.finnbox-conversation .unread .pale {
-    color: #000 !important;
-}
+.finnbox-conversation .unread .pale { color: #000000 !important; }
 
-.finnbox-conversation.open .pale {
-    color: var(--dk-gray) !important;
-}
+.finnbox-conversation.open .pale { color: var(--dk-gray) !important; }
 
-.finnbox-count-1 {
-    display: none;
-}
+.finnbox-count-1 { display: none; }
 
-.finnbox-profile-margin {
-    margin-left: 66px;
-}
+.finnbox-profile-margin { margin-left: 66px; }
 
 .finnbox-replymessage textarea {
     width: 100%;
@@ -86,67 +66,59 @@
 
 @media (max-width: 480px) {
 
-    .finnbox-replybutton button {
-        width: 100%;
-    }
+    .finnbox-replybutton button { width: 100%; }
 }
 
 @media (--small-screen) {
 
-    .finnbox-profile-margin {
-        margin-left: 51px;
-    }
+    .finnbox-profile-margin { margin-left: 51px; }
 
-    .smalltext-lt768 {
-        font-size: 11px;
-    }
+    .smalltext-lt768 { font-size: 11px; }
 
-    .finnbox-conversation {
-        padding-top: 7px;
-    }
+    .finnbox-conversation { padding-top: 7px; }
 
-    .finnbox-conversation.open {
-        padding-top: 6px;
-    }
+    .finnbox-conversation.open { padding-top: 6px; }
 }
-
 /* Kun det under ska være i bruk framover */
 
-.conversation{
-    position:relative;
+.conversation {
+    position: relative;
     word-wrap: break-word;
 }
-.conversation.lefty{
-    background-color:var(--opaque);
-    color:#fff;
+.conversation.lefty {
+    background-color: var(--opaque);
+    color: #FFFFFF;
 }
-.conversation.righty{
-    background-color:var(--blue-dk);
-    color:#fff;
+.conversation.righty {
+    background-color: var(--blue-dk);
+    color: #FFFFFF;
 }
 .conversation.lefty:after {
-    content: "";
-    top:15px;
+    content: '';
+    top: 15px;
     left: -10px;
     position: absolute;
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-right:10px solid var(--opaque);
+    border-right: 10px solid var(--opaque);
     z-index: 1;
 }
 .conversation.righty:after {
-    content: "";
-    top:15px;
+    content: '';
+    top: 15px;
     right: -10px;
     position: absolute;
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left:10px solid var(--blue-dk);
+    border-left: 10px solid var(--blue-dk);
     z-index: 1;
 }
 /* test only, have to be rewritten */
-.profile .img{ width:65px;height:65px  }
+.profile .img {
+    width: 65px;
+    height: 65px;
+}

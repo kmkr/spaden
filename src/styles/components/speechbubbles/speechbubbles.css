@@ -1,8 +1,16 @@
-.speech-byline { margin-left: 68px; position: relative; z-index: 2; }
-.speech { position: relative; border-bottom: 1px solid rgba(0, 0, 0, .2); border-radius:5px; }
+.speech-byline {
+    margin-left: 68px;
+    position: relative;
+    z-index: 2;
+}
+.speech {
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
 .speech:after {
     bottom: -17px;
-    content: "";
+    content: '';
     left: 21px;
     position: absolute;
     width: 0;
@@ -10,20 +18,15 @@
     border-top: 18px solid;
     border-left: 18px solid transparent;
     border-right: 0;
-    -webkit-transform: skew(28deg);
-    -moz-transform: skew(28deg);
-    -ms-transform: skew(28deg);
-    -o-transform: skew(28deg);
     transform: skew(28deg);
     z-index: 1;
 }
-
 /* Legacy colors */
 .speech.bg-lt-gray:after { border-top-color: var(--lt-gray); }
-.speech.bg-black:after { border-top-color: #000; }
+.speech.bg-black:after { border-top-color: #000000; }
 .speech.bg-dk-gray:after { border-top-color: var(--dk-gray); }
 .speech.bg-pale-gray:after { border-top-color: var(--pale-gray); }
-.speech.bg-white:after { border-top-color: #fff; }
+.speech.bg-white:after { border-top-color: #FFFFFF; }
 .speech.bg-dkdk-blue:after { border-top-color: var(--dkdk-blue); }
 .speech.bg-dk-blue:after { border-top-color: var(--blue); }
 .speech.bg-lt-blue:after { border-top-color: var(--lt-blue); }
@@ -32,7 +35,6 @@
 .speech.bg-firm:after { border-top-color: var(--firm); }
 .speech.bg-snotgreen:after { border-top-color: var(--snotgreen); }
 .speech.bg-pissyellow:after { border-top-color: var(--pissyellow); }
-
 /* New colors */
 
 .speech.bg-blue-dk:after { border-top-color: var(--blue-dk); }
@@ -48,7 +50,7 @@
 .speech.bg-neutral:after { border-top-color: var(--neutral); }
 .speech.bg-pale:after { border-top-color: var(--pale); }
 .speech.bg-bare:after { border-top-color: var(--bare); }
-.speech.bg-bright:after { border-top-color: #FFF; }
+.speech.bg-bright:after { border-top-color: #FFFFFF; }
 
 .speech.bg-lilac:after { border-top-color: var(--lilac); }
 .speech.bg-lilac-lt:after { border-top-color: var(--lilac-lt); }

@@ -1,7 +1,6 @@
 /* Photo framing */
 /* add photoframe class to a wrapper directly outside img tag */
 /* photothumbframe class for thumb frame with no shadow */
-
 /*
 .photoframe img, .photoframe .photo {
     border:1px solid #d8d8d8;
@@ -101,4 +100,4 @@ a.photoframe img:hover, a .photoframe img:hover, .photoframe a img:hover, .linkb
 .image.small{width:110px;xheight:73px}
 .image.small.result{width:120px;height: 80px; overflow: hidden;}
 .image.medium{width:320px;xheight:200px}
-.image.full{width:auto;height:auto}*/
+.image.full{width:auto;height:auto} */
