@@ -15,10 +15,7 @@
     transform:rotate(45deg);
     text-align: center;
     background: #fff264;
-    background-image: -moz-linear-gradient(right, #fff264, #ffffe3);
-    background-image: -webkit-linear-gradient(right, #fff264, #ffffe3);
-    background-image: -o-linear-gradient(right, #fff264, #ffffe3);
-    background-image: linear-gradient(right, #fff264, #ffffe3);
+    background-image: linear-gradient(to left, #fff264, #ffffe3);
     color: #5a4600;
     text-shadow: 1px 0 0 rgba(255,255,255,.9);
     z-index: 2;
@@ -36,55 +33,37 @@
 }
 .ribbon-content.yellow {
     background: #fff264;
-    background-image: -moz-linear-gradient(right, #fff264, #ffffe3);
-    background-image: -webkit-linear-gradient(right, #fff264, #ffffe3);
-    background-image: -o-linear-gradient(right, #fff264, #ffffe3);
-    background-image: linear-gradient(right, #fff264, #ffffe3);
+    background-image: linear-gradient(to left, #fff264, #ffffe3);
     color: #5a4600;
 }
 .ribbon-content.gray {
     background: #d1cfcf;
-    background-image: -moz-linear-gradient(right, #d1cfcf, #e1e0e0);
-    background-image: -webkit-linear-gradient(right, #d1cfcf, #e1e0e0);
-    background-image: -o-linear-gradient(right, #d1cfcf, #e1e0e0);
-    background-image: linear-gradient(right, #d1cfcf, #e1e0e0);
+    background-image: linear-gradient(to left, #d1cfcf, #e1e0e0);
 }
 .ribbon-content.green {
     color: #fff;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #59852e;
-    background-image: -moz-linear-gradient(right, #59852e, #75ab3d);
-    background-image: -webkit-linear-gradient(right, #59852e, #75ab3d);
-    background-image: -o-linear-gradient(right, #59852e, #75ab3d);
-    background-image: linear-gradient(right, #59852e, #75ab3d);
+    background-image: linear-gradient(to left, #59852e, #75ab3d);
 }
 .ribbon-content.orange {
     color: #fff;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #ff5700;
-    background-image: -moz-linear-gradient(right, #ff5700, #ff8f00);
-    background-image: -webkit-linear-gradient(right, #ff5700, #ff8f00);
-    background-image: -o-linear-gradient(right, #ff5700, #ff8f00);
-    background-image: linear-gradient(right, #ff5700, #ff8f00);
+    background-image: linear-gradient(to left, #ff5700, #ff8f00);
 }
 .ribbon-content.red {
     color: #fff;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #b72626;
-    background-image: -moz-linear-gradient(right, #b72626, #e57c7c);
-    background-image: -webkit-linear-gradient(right, #b72626, #e57c7c);
-    background-image: -o-linear-gradient(right, #b72626, #e57c7c);
-    background-image: linear-gradient(right, #b72626, #e57c7c);
+    background-image: linear-gradient(to left, #b72626, #e57c7c);
 }
 
 .ribbon-content.purple {
     color: #fff;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #8b31e8;
-    background-image: -moz-linear-gradient(right, #8b31e8, #ad61fc);
-    background-image: -webkit-linear-gradient(right, #8b31e8, #ad61fc);
-    background-image: -o-linear-gradient(right, #8b31e8, #ad61fc);
-    background-image: linear-gradient(right, #8b31e8, #ad61fc);
+    background-image: linear-gradient(to left, #8b31e8, #ad61fc);
 }
 
 .ribbon { position: relative; -webkit-backface-visibility: hidden; z-index: 1}
@@ -102,10 +81,7 @@
     text-align: center;
     font-weight: bold;
     background: #fff264;
-    background-image: -moz-linear-gradient(right, #fff264, #ffffe3);
-    background-image: -webkit-linear-gradient(right, #fff264, #ffffe3);
-    background-image: -o-linear-gradient(right, #fff264, #ffffe3);
-    background-image: linear-gradient(right, #fff264, #ffffe3);
+    background-image: linear-gradient(to left, #fff264, #ffffe3);
     color: #5a4600;
     text-shadow: 1px 0 0 rgba(255,255,255,.9);
     padding: 4px 11px 3px 33px;
@@ -120,10 +96,7 @@
     color: #fff;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #59852e;
-    background-image: -moz-linear-gradient(right, #59852e, #75ab3d);
-    background-image: -webkit-linear-gradient(right, #59852e, #75ab3d);
-    background-image: -o-linear-gradient(right, #59852e, #75ab3d);
-    background-image: linear-gradient(right, #59852e, #75ab3d);
+    background-image: linear-gradient(to left, #59852e, #75ab3d);
     height: 18px;
     line-height: 18px;
 }
@@ -136,10 +109,7 @@
     color: #fff;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #ff5700;
-    background-image: -moz-linear-gradient(right, #ff5700, #ff8f00);
-    background-image: -webkit-linear-gradient(right, #ff5700, #ff8f00);
-    background-image: -o-linear-gradient(right, #ff5700, #ff8f00);
-    background-image: linear-gradient(right, #ff5700, #ff8f00);
+    background-image: linear-gradient(to left, #ff5700, #ff8f00);
     height: 18px;
     line-height: 18px;
 }
@@ -191,10 +161,7 @@
     right: -31px;
     top: 5px;
     background: #d1cfcf;
-    background-image: -moz-linear-gradient(right, #d1cfcf, #e1e0e0);
-    background-image: -webkit-linear-gradient(right, #d1cfcf, #e1e0e0);
-    background-image: -o-linear-gradient(right, #d1cfcf, #e1e0e0);
-    background-image: linear-gradient(right, #d1cfcf, #e1e0e0);
+    background-image: linear-gradient(to left, #d1cfcf, #e1e0e0);
 }
 .ribbon.active:before {
     width: 121px;
@@ -204,10 +171,7 @@
     color: #fff;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #59852e;
-    background-image: -moz-linear-gradient(right, #59852e, #75ab3d);
-    background-image: -webkit-linear-gradient(right, #59852e, #75ab3d);
-    background-image: -o-linear-gradient(right, #59852e, #75ab3d);
-    background-image: linear-gradient(right, #59852e, #75ab3d);
+    background-image: linear-gradient(to left, #59852e, #75ab3d);
 }
 .ribbon.expired:before {
     width: 125px;
@@ -215,10 +179,7 @@
     right: -31px;
     top: 3px;
     background: #d1cfcf;
-    background-image: -moz-linear-gradient(right, #d1cfcf, #e1e0e0);
-    background-image: -webkit-linear-gradient(right, #d1cfcf, #e1e0e0);
-    background-image: -o-linear-gradient(right, #d1cfcf, #e1e0e0);
-    background-image: linear-gradient(right, #d1cfcf, #e1e0e0);
+    background-image: linear-gradient(to left, #d1cfcf, #e1e0e0);
 }
 .ribbon.control:before {
     width: 152px;
@@ -229,10 +190,7 @@
     color: #fff;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #ff5700;
-    background-image: -moz-linear-gradient(right, #ff5700, #ff8f00);
-    background-image: -webkit-linear-gradient(right, #ff5700, #ff8f00);
-    background-image: -o-linear-gradient(right, #ff5700, #ff8f00);
-    background-image: linear-gradient(right, #ff5700, #ff8f00);
+    background-image: linear-gradient(to left, #ff5700, #ff8f00);
     height: 18px;
     line-height: 18px;
 }
@@ -244,10 +202,7 @@
     color: #fff;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #b72626;
-    background-image: -moz-linear-gradient(right, #b72626, #e57c7c);
-    background-image: -webkit-linear-gradient(right, #b72626, #e57c7c);
-    background-image: -o-linear-gradient(right, #b72626, #e57c7c);
-    background-image: linear-gradient(right, #b72626, #e57c7c);
+    background-image: linear-gradient(to left, #b72626, #e57c7c);
 }
 .ribbon.deleted:before {
     width: 129px;
@@ -255,10 +210,7 @@
     right: -31px;
     top: 6px;
     background: #d1cfcf;
-    background-image: -moz-linear-gradient(right, #d1cfcf, #e1e0e0);
-    background-image: -webkit-linear-gradient(right, #d1cfcf, #e1e0e0);
-    background-image: -o-linear-gradient(right, #d1cfcf, #e1e0e0);
-    background-image: linear-gradient(right, #d1cfcf, #e1e0e0);
+    background-image: linear-gradient(to left, #d1cfcf, #e1e0e0);
 }
 
 .ribbon.newprice:before {
@@ -269,8 +221,5 @@
     color: #fff;
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #59852e;
-    background-image: -moz-linear-gradient(right, #59852e, #75ab3d);
-    background-image: -webkit-linear-gradient(right, #59852e, #75ab3d);
-    background-image: -o-linear-gradient(right, #59852e, #75ab3d);
-    background-image: linear-gradient(right, #59852e, #75ab3d);
+    background-image: linear-gradient(to left, #59852e, #75ab3d);
 }
