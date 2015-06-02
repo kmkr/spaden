@@ -6,6 +6,12 @@ var convertColor = require('css-color-converter');
 var reSPACE_BETWEEN_RULES = /,(\S)/g;
 var del = require('del');
 
+var stats = {
+    important: 0,
+    case: 0,
+    colors: {}
+};
+
 function prettySelector(selector, indentLevel) {
 
     // ensure indent is same
@@ -15,11 +21,13 @@ function prettySelector(selector, indentLevel) {
         }).join('\n' + indentLevel);
     }
 
+    // split long selectors
     if (selector.length > 120 && selector.indexOf('\n') === -1) {
         selector = selector.replace(/\n/g, '').split(',').map(function(entry){
             return entry && entry.trim();
         }).join(',\n' + indentLevel);
     }
+
     return selector && selector
         .replace(reSPACE_BETWEEN_RULES, ', $1')
         .replace(/"/gm, '\'')
@@ -35,6 +43,11 @@ function prettyDeclarationValue(value) {
         .replace(/\#[A-Z\d]{3,6}/ig, function(color) {
             try {
                 color = convertColor(color).toHexString().toUpperCase();
+                if (!stats.colors[color]) {
+                    stats.colors[color] = 1;
+                } else {
+                    stats.colors[color]++;
+                }
             } catch (e) {}
             return color;
         });
@@ -48,10 +61,7 @@ function space(nr) {
     return (new Array(nr).join('    '));
 }
 
-var count = {
-    important: 0,
-    case: 0
-};
+
 
 function isPrefixed(prop) {
     return prop && prop.match(/^\-\w+\-/);
@@ -118,8 +128,13 @@ function iterator(depth, node, childIndex, list) {
     }
 
     if (node.selector) {
-        node.before = replaceTabs(node.before, space(depth));
-        node.selector = prettySelector(node.selector, space(depth));
+
+        var _space =  space(depth);
+        node.before   = replaceTabs(node.before, _space);
+        // if ((node.before +'').replace(/\n\r/m, '') < _space.length) {
+        //     node.before = '\n' + _space;
+        // }
+        node.selector = prettySelector(node.selector, _space);
 
         // allow single decl rules to be indented however
         if (!node.between || node.nodes.length > 1) {
@@ -132,7 +147,7 @@ function iterator(depth, node, childIndex, list) {
         }
 
         if (/[A-Z]/g.test(node.selector)) {
-            count.case ++;
+            stats.case ++;
             console.warn('Selector'.red, ('"'.blue + node.selector.italic.replace(/[A-Z]/g, function(v) {
                 return v.red;
             }) + '"'.blue), 'has uppercase chars!'.yellow);
@@ -157,6 +172,7 @@ function iterator(depth, node, childIndex, list) {
         }
 
         if (node.important) {
+            stats.important ++;
             node._important = ' !important';
         }
 
@@ -199,7 +215,7 @@ function formatFile(filename) {
     }
 }
 
-// formatFile(__dirname + '/../src/styles/core/grid/grids.css');
+// formatFile(__dirname + '/../src/styles/core/table/table.css');
 
 function walk(dir) {
     return filewalker(dir)
@@ -221,8 +237,20 @@ function walk(dir) {
         .on('done', function() {
             console.log('%d dirs, %d files, %d bytes', this.dirs, this.files, this.bytes);
 
-            Object.keys(count).forEach(function(key){
-                console.log('Count:'.red, key, 'usage:', count[key] + ''.yellow);
+            Object.keys(stats).forEach(function(key){
+                var value = stats[key];
+                if (key === 'colors') {
+                    var _value = {};
+                    Object.keys(value).sort(function(a, b){
+                        return value[a] > value[b] ? -1 : 1;
+                    }).filter(function(key){
+                        if (value[key] > 1) {
+                            _value[key] = value[key];
+                        }
+                    })
+                    value = _value;
+                }
+                console.log('Count/Stats:'.red, key, 'usage:', value);
             });
 
         })
