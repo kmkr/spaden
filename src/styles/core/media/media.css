@@ -9,9 +9,3 @@
 .media .imgExt { float: right; }
 
 a.media { display: block; }
-/* Mediabasert objektsidelayout */
-/* ?
-@media (--small-screen) {
-    .r-object > .bd { clear: both; }
-}
-*/

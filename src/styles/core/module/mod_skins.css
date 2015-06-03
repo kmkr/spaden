@@ -8,25 +8,17 @@
 /* ====== Background blocks ====== */
 
 .mod .inner { background-color: var(--bright); }
-.mod.commercial .inner { background-color: var(--pissyellow); }
 
 .mod.transparent > .inner { background: transparent; }
 .mod.transparent .hd,
 .mod.transparent .ft { border-radius: 2px; }
-/* Niceifyes list types of mods (Result list etc.) */
+
 .mod.listing hr { margin: 0; }
 .mod.listing hr:last-child { display: none; }
 .mod.listing.shadow > .inner {
     padding-top: 0px;
     padding-bottom: 0px;
 }
-/* overstyrer mod-bakgrunner for objektsider */
-.mod .lastUnit .mod .inner { background: transparent; }
-.mod .lastUnit .mod .inner .hd, .mod .lastUnit .mod .inner .ft {
-    background: transparent;
-    color: #000000;
-}
-
 .mod.navblock .bd {
     display: inline-table;
     width: 100%;
@@ -42,26 +34,3 @@
 /* UserFriendly clickable blocks */
 a.mod.clickable:focus .inner,
 a.mod.clickable:hover .inner { background-color: #F4F7FA; }
-/* *  Retardification av markedssider * */
-/* ikke i bruk? 
-
-.mod.navblock2 .bd{
-    display: inline-table;
-    width: 100%;
-}
-
-.mod.navblock2 p.lines1{
-    height:25px;
-}
-.mod.navblock2 p.lines2{
-    height:40px;
-}
-.mod.navblock2 p.lines3{
-    height:60px;
-}
-.mod.navblock2 p.lines4{
-    height:80px;
-}
-.mod.navblock2.toolbar a{height:60px}
-*/
-/* ====== Block headers and footers ====== */
