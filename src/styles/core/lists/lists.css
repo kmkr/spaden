@@ -12,34 +12,15 @@ ul.bullets li:before, .object-description ul li:before {
     top: 7px;
     background: var(--blue);
     height: 5px;
-    width: 5px;
-}
+    width: 5px;}
 
 ul.horizontal-list li { display: inline; }
 
-.article ul { margin-left: 40px; }
-.article ol, .decimals {
-    margin-left: 40px;
-    list-style: decimal outside;
-}
+/* No longer in use?
+.article ul { margin-left:40px; }
+.article ol, .decimals { margin-left:40px; list-style: decimal outside; }
+*/
 .object-description ol { list-style: decimal outside; }
-
-.bullets-bg-black li:before { background: #000000 !important; }
-.bullets-bg-dk-gray li:before { background-color: var(--dk-gray) !important; }
-.bullets-bg-lt-gray li:before { background-color: var(--lt-gray) !important; }
-.bullets-bg-pale-gray li:before { background-color: var(--pale-gray) !important; }
-.bullets-bg-white li:before { background-color: #FFFFFF !important; }
-.bullets-bg-dkdk-blue li:before { background-color: var(--dkdk-blue) !important; }
-.bullets-bg-dk-blue li:before { background-color: var(--blue) !important; }
-.bullets-bg-blue li:before { background-color: #A2D2EE !important; }
-.bullets-bg-lt-blue li:before { background-color: var(--lt-blue) !important; }
-.bullets-bg-pale-blue li:before { background-color: var(--pale-blue) !important; }
-.bullets-bg-contrast li:before { background-color: var(--contrast) !important; }
-.bullets-bg-firm li:before { background-color: var(--firm) !important; }
-.bullets-bg-positive li:before { background-color: #669933 !important; }
-.bullets-bg-negative li:before { background-color: #CC0000 !important; }
-.bullets-bg-snotgreen li:before { background-color: var(--snotgreen) !important; }
-.bullets-bg-pissyellow li:before { background-color: var(--pissyellow) !important; }
 
 .separator { border-right: 1px solid var(--neutral); }
 /* definition lists */

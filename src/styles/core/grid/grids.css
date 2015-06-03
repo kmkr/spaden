@@ -90,14 +90,6 @@ html { box-sizing: border-box; }
     .r-cols2to5 > .unit { width: 20%; }
     .r-cols2to6 > .unit { width: 16.6666666%; }
     .r-cols3to7 > .unit { width: 14.28%; }
-    /* .r-cols2to6 > .unit:nth-child(6n+1) { clear:both; }
-    .r-cols2to5 > .unit:nth-child(5n+1) { clear:both; }
-    .r-cols3to4 > .unit:nth-child(4n+1),
-    .r-cols2to4 > .unit:nth-child(4n+1),
-    .r-cols1to4 > .unit:nth-child(4n+1) { clear:both; }
-    .r-cols2to3 > .unit:nth-child(3n+1),
-    .r-cols1to3 > .unit:nth-child(3n+1) { clear:both; }
-    .r-cols1to2 > .unit:nth-child(2n+1) { clear:both; } */
 
     .r-size1of1 { float: none; }
     .r-size1of2 { width: 50%; }
