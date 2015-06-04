@@ -104,7 +104,7 @@
     .sitenav .page { padding-right: 10px; }
     .hamburger-menu .nav-trigger, .hamburger-menu label[for='nav-trigger'] { display: none; }
 }
-@media (max-width:470px) {
+@media (width <= 470px) {
     .homelink {
         padding-left: 5px !important;
         padding-right: 5px;

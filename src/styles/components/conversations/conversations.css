@@ -64,7 +64,7 @@
     padding: 0;
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
 
     .finnbox-replybutton button { width: 100%; }
 }

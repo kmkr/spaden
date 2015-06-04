@@ -132,51 +132,51 @@ html { box-sizing: border-box; }
     .show-gt-768 { display: none !important; }
 }
 
-@media (max-width:479px) {
+@media (width <= 479px) {
     .show-gt-480,
     .hidelt480,
     .hide-lt480 { display: none !important; }
 }
 
-@media (max-width:599px) {
+@media (width <= 599px) {
     .show-gt-600,
     .hidelt600,
     .hide-lt600 { display: none !important; }
 }
 
-@media (max-width:899px) {
+@media (width <= 899px) {
     .show-gt-900,
     .hidelt900,
     .hide-lt900 { display: none !important; }
 }
 
-@media (max-width:1235px) {
+@media (width <= 1235px) {
     .show-gt-1235,
     .hidelt1235,
     .hide-lt1235 { display: none !important; }
 }
 
-@media (min-width:480px) {
+@media (width >= 480px) {
     .show-lt-480,
     .hidegt480,
     .hide-gt480,
     .hide-ht480 { display: none !important; }
 }
 
-@media (min-width:600px) {
+@media (width >= 600px) {
     .show-lt-600,
     .hidegt600,
     .hide-gt600,
     .hide-ht600 { display: none !important; }
 }
 
-@media (min-width:900px) {
+@media (width >= 900px) {
     .hidegt900,
     .hide-gt900,
     .hide-ht900 { display: none !important; }
 }
 
-@media (min-width:1234px) {
+@media (width >= 1234px) {
     .hidegt1235,
     .hide-gt1235,
     .hide-ht1235 { display: none !important; }

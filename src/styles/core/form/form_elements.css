@@ -338,7 +338,7 @@ label, legend {
     display: block;
     margin: 8px 0 14px;
 }
-@media (min-width:640px) {
+@media (width >= 640px) {
   .hform640 .formelement, .hform640 .actions { margin: 10px 0px; }
 }
 
@@ -346,7 +346,7 @@ label, legend {
   .formelement, .actions { margin: 10px 20px; }
 }
 
-@media (min-width:640px) {
+@media (width >= 640px) {
   .hform640 fieldset { padding-top: 18px; }
   .hform640 fieldset legend {
         margin: 0;

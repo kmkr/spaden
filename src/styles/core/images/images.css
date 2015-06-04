@@ -8,6 +8,6 @@ img { max-width: 100%; }
     min-width: 100px;
 }
 
-@media (min-width: 990px) {
+@media (width >= 990px) {
     .stream-img { width: 25%; }
 }

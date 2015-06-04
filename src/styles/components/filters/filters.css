@@ -38,6 +38,6 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (width >= 900px) {
     .filters-overlay { width: 340px; }
 }
