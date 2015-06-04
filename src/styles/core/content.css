@@ -77,8 +77,8 @@
     top: 0;
     left: 0;
     opacity: 0;
-    background: #FFFFFF;
-    color: #000000;
+    background: var(--white);
+    color: var(--black);
     padding: 5px 10px;
     z-index: -1;
 }

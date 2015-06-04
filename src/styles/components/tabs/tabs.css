@@ -69,14 +69,14 @@
 }
 .tabs.extern > li > a:hover { }
 .tabs.extern > li.active > a {
-    background-color: #FFFFFF;
-    border-bottom: 1px solid white;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--white);
 }
 .tabs.pills.extern > li.active > a {
-    background-color: #FFFFFF;
+    background-color: var(--white);
     border-bottom: 1px solid #DDDDDD;
 }
-.mod .foldered { border-top-left-radius: 0px; }
+.mod .foldered { border-top-left-radius: 0; }
 /* 10px margin version */
 .tabs.extern.mediumm > li > a { padding: 0 10px; }
 

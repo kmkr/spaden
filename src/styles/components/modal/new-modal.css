@@ -1,6 +1,6 @@
 .modal-container {
     position: fixed;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     opacity: 0;
     margin: auto;
 }
@@ -21,7 +21,7 @@
     width: 100%;
     border: 0 solid var(--pale);
     border-bottom-width: 1px;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     backface-visibility: hidden;
 }
 

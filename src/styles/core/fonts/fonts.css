@@ -123,13 +123,13 @@ a.userhistory:visited:hover, .userhistory a:visited:hover { }
 /* high contrast font color scheme */
 a.contrast:link, .contrast a:link { color: var(--lt-gray); }
 a.contrast:visited, .contrast a:visited { color: #DDDDDD; }
-a.contrast:focus, .contrast a:hover { color: #FFFFFF; }
+a.contrast:focus, .contrast a:hover { color: var(--white); }
 a.contrast:focus, .contrast a:focus,
 a.contrast:active, .contrast a:active { background: transparent; }
 /* navigational links, visited on */
 a.contrast.userhistory:link, .contrast.userhistory a:link { color: var(--lt-gray); }
 a.contrast.userhistory:visited, .contrast.userhistory a:visited { color: var(--lt-gray); }
-a.contrast.userhistory:focus, .contrast.userhistory a:hover { color: #FFFFFF; }
+a.contrast.userhistory:focus, .contrast.userhistory a:hover { color: var(--white); }
 /* dark links */
 a.dark-links, a.dark-links:link, .dark-links a, .dark-links a:link { color: var(--sharp); }
 a.dark-links:visited, .dark-links a:visited { color: var(--sharp); }
@@ -180,7 +180,7 @@ a.tagword:before {
 a.tagword.editable:before, .editable a.tagword:before {
     content: '';
     color: var(--neutral);
-}      
+}
 a.tagword.editable:after, .editable a.tagword:after {
     content: '';
     margin-left: 5px;
@@ -188,12 +188,12 @@ a.tagword.editable:after, .editable a.tagword:after {
     width: 8px;
     display: inline-block;
     background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iOHB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDggOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgOCA4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZmlsbD0iIzlCQThCMSIgZD0iTTUuNiw0TDgsNi40TDYuNCw4TDQsNS42TDEuNiw4TDAsNi40TDIuNCw0TDAsMS42TDEuNiwwTDQsMi40TDYuNCwwTDgsMS42TDUuNiw0eiIvPgo8L2c+Cjwvc3ZnPg==);
-}   
+}
 a.tagword.editable, .editable a.tagword {
     background-color: var(--opaque);
     border-radius: 2px;
     padding: 4px 8px;
-    color: white;
+    color: var(--white);
     margin-top: 10px;
 }
 a.tagword.editable:hover, .editable a.tagword:hover,

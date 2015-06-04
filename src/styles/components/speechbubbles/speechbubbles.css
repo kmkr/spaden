@@ -23,10 +23,10 @@
 }
 /* Legacy colors */
 .speech.bg-lt-gray:after { border-top-color: var(--lt-gray); }
-.speech.bg-black:after { border-top-color: #000000; }
+.speech.bg-black:after { border-top-color: var(--black); }
 .speech.bg-dk-gray:after { border-top-color: var(--dk-gray); }
 .speech.bg-pale-gray:after { border-top-color: var(--pale-gray); }
-.speech.bg-white:after { border-top-color: #FFFFFF; }
+.speech.bg-white:after { border-top-color: var(--white); }
 .speech.bg-dkdk-blue:after { border-top-color: var(--dkdk-blue); }
 .speech.bg-dk-blue:after { border-top-color: var(--blue); }
 .speech.bg-lt-blue:after { border-top-color: var(--lt-blue); }
@@ -50,7 +50,7 @@
 .speech.bg-neutral:after { border-top-color: var(--neutral); }
 .speech.bg-pale:after { border-top-color: var(--pale); }
 .speech.bg-bare:after { border-top-color: var(--bare); }
-.speech.bg-bright:after { border-top-color: #FFFFFF; }
+.speech.bg-bright:after { border-top-color: var(--white); }
 
 .speech.bg-lilac:after { border-top-color: var(--lilac); }
 .speech.bg-lilac-lt:after { border-top-color: var(--lilac-lt); }

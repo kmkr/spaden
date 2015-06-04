@@ -41,26 +41,26 @@
     background-image: linear-gradient(to left, #D1CFCF, #E1E0E0);
 }
 .ribbon-content.green {
-    color: #FFFFFF;
+    color: var(--white);
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #59852E;
     background-image: linear-gradient(to left, #59852E, #75AB3D);
 }
 .ribbon-content.orange {
-    color: #FFFFFF;
+    color: var(--white);
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #FF5700;
     background-image: linear-gradient(to left, #FF5700, #FF8F00);
 }
 .ribbon-content.red {
-    color: #FFFFFF;
+    color: var(--white);
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #B72626;
     background-image: linear-gradient(to left, #B72626, #E57C7C);
 }
 
 .ribbon-content.purple {
-    color: #FFFFFF;
+    color: var(--white);
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #8B31E8;
     background-image: linear-gradient(to left, #8B31E8, #AD61FC);
@@ -93,7 +93,7 @@
     right: -30px;
     top: 8px;
     padding: 0 11px 3px 33px;
-    color: #FFFFFF;
+    color: var(--white);
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #59852E;
     background-image: linear-gradient(to left, #59852E, #75AB3D);
@@ -106,7 +106,7 @@
     right: -34px;
     top: 14px;
     padding: 0 11px 3px 36px;
-    color: #FFFFFF;
+    color: var(--white);
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #FF5700;
     background-image: linear-gradient(to left, #FF5700, #FF8F00);
@@ -168,7 +168,7 @@
     content: 'Aktiv';
     right: -31px;
     top: 0;
-    color: #FFFFFF;
+    color: var(--white);
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #59852E;
     background-image: linear-gradient(to left, #59852E, #75AB3D);
@@ -187,7 +187,7 @@
     right: -31px;
     top: 20px;
     padding: 0 11px 3px 36px;
-    color: #FFFFFF;
+    color: var(--white);
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #FF5700;
     background-image: linear-gradient(to left, #FF5700, #FF8F00);
@@ -199,7 +199,7 @@
     content: 'Avvist';
     right: -31px;
     top: 2px;
-    color: #FFFFFF;
+    color: var(--white);
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #B72626;
     background-image: linear-gradient(to left, #B72626, #E57C7C);
@@ -218,7 +218,7 @@
     content: 'Ny pris';
     right: -31px;
     top: 3px;
-    color: #FFFFFF;
+    color: var(--white);
     text-shadow: 1px 0 0 rgba(0,0,0,.1);
     background: #59852E;
     background-image: linear-gradient(to left, #59852E, #75AB3D);

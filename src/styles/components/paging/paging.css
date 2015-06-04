@@ -3,18 +3,18 @@
     border: 1px solid #A2D2EE;
     padding: 3px 6px;
     text-align: center;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 2px;
 }
 .paging span {
     background-color: #A2D2EE;
-    color: white;
+    color: var(--white);
 }
 
-.paging.bare a { border: 1px solid white; }
+.paging.bare a { border: 1px solid var(--white); }
 .paging.bare span {
     background-color: #A2D2EE;
-    color: white;
+    color: var(--white);
 }
 
 .pagination { text-align: right; }
@@ -30,7 +30,7 @@
 .pagination a:hover {
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.3);
     background-color: var(--pale);
-    color: white;
+    color: var(--white);
     text-decoration: none;
 }
 .pagination .current {

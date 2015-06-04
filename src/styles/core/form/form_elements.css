@@ -25,7 +25,7 @@ textarea {
     padding: 10px 5px;
     height: auto;
     border: 1px solid;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     border-color: var(--neutral);
     border-radius: 2px;
     outline: none;
@@ -80,7 +80,7 @@ input[type=file] {
 }
 /* eksperimentel søkeicon i søkefelt :sn */
 input[type='search'] {
-    background: #FFFFFF url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMTkuNSAxMTkuNSA2MiA2MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAxOS41IDExOS41IDYyIDYyIj48cGF0aCBkPSJNNjUuNzk5IDE0Ni4wODNjMC0xMC44MjMtOC43NzctMTkuNjAxLTE5LjYxNS0xOS42MDEtMTAuODMgMC0xOS42MTQgOC43NzctMTkuNjE0IDE5LjYwMSAwIDEwLjgzOSA4Ljc4NCAxOS42MTYgMTkuNjE0IDE5LjYxNiAxMC44MzcgMCAxOS42MTUtOC43NzcgMTkuNjE1LTE5LjYxNnoiIGZpbGw9Im5vbmUiLz48cGF0aCBmaWxsPSIjOWJhOGIxIiBkPSJNODAuOTgyIDE3NS44MThsLTEzLjkyLTEzLjkyNGMzLjMzNi00LjM5MyA1LjMxNi05Ljg2NyA1LjMxNi0xNS44MTIgMC0xNC40NTctMTEuNzI1LTI2LjE3Ny0yNi4xOTUtMjYuMTc3LTE0LjQ1NyAwLTI2LjE4NCAxMS43Mi0yNi4xODQgMjYuMTc3IDAgMTQuNDcyIDExLjcyNyAyNi4xOTYgMjYuMTg0IDI2LjE5NiA1LjkyOSAwIDExLjQwOC0xLjk4MyAxNS43OTQtNS4zMDdsMTMuOTI0IDEzLjkyMiA1LjA4MS01LjA3NXptLTU0LjQxMi0yOS43MzVjMC0xMC44MjMgOC43ODQtMTkuNjAxIDE5LjYxNC0xOS42MDEgMTAuODM1IDAgMTkuNjE1IDguNzc3IDE5LjYxNSAxOS42MDEgMCAxMC44MzktOC43NzcgMTkuNjE2LTE5LjYxNSAxOS42MTYtMTAuODMgMC0xOS42MTQtOC43NzctMTkuNjE0LTE5LjYxNnoiLz48L3N2Zz4=)
+    background: var(--white) url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMTkuNSAxMTkuNSA2MiA2MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAxOS41IDExOS41IDYyIDYyIj48cGF0aCBkPSJNNjUuNzk5IDE0Ni4wODNjMC0xMC44MjMtOC43NzctMTkuNjAxLTE5LjYxNS0xOS42MDEtMTAuODMgMC0xOS42MTQgOC43NzctMTkuNjE0IDE5LjYwMSAwIDEwLjgzOSA4Ljc4NCAxOS42MTYgMTkuNjE0IDE5LjYxNiAxMC44MzcgMCAxOS42MTUtOC43NzcgMTkuNjE1LTE5LjYxNnoiIGZpbGw9Im5vbmUiLz48cGF0aCBmaWxsPSIjOWJhOGIxIiBkPSJNODAuOTgyIDE3NS44MThsLTEzLjkyLTEzLjkyNGMzLjMzNi00LjM5MyA1LjMxNi05Ljg2NyA1LjMxNi0xNS44MTIgMC0xNC40NTctMTEuNzI1LTI2LjE3Ny0yNi4xOTUtMjYuMTc3LTE0LjQ1NyAwLTI2LjE4NCAxMS43Mi0yNi4xODQgMjYuMTc3IDAgMTQuNDcyIDExLjcyNyAyNi4xOTYgMjYuMTg0IDI2LjE5NiA1LjkyOSAwIDExLjQwOC0xLjk4MyAxNS43OTQtNS4zMDdsMTMuOTI0IDEzLjkyMiA1LjA4MS01LjA3NXptLTU0LjQxMi0yOS43MzVjMC0xMC44MjMgOC43ODQtMTkuNjAxIDE5LjYxNC0xOS42MDEgMTAuODM1IDAgMTkuNjE1IDguNzc3IDE5LjYxNSAxOS42MDEgMCAxMC44MzktOC43NzcgMTkuNjE2LTE5LjYxNSAxOS42MTYtMTAuODMgMC0xOS42MTQtOC43NzctMTkuNjE0LTE5LjYxNnoiLz48L3N2Zz4=)
                 10px center no-repeat;
     text-indent: 20px;
     transition: border linear 0.1s, text-indent 0.1s, box-shadow 0.1s, background-position 0.1s;
@@ -217,7 +217,7 @@ a.button.order {
     border: 1px solid #E68007;
     background: #FB8B08;
     background-image: linear-gradient(to bottom, #FB8B08, #E68007);
-    color: #FFFFFF;
+    color: var(--white);
 }
 input:not([disabled]).order:hover,
 button:not([disabled]).order:hover,
@@ -234,7 +234,7 @@ a.button.primary {
     border: 1px solid #007CF0;
     background: #0095FD;
     background-image: linear-gradient(to bottom, #0095FD, #007CF0);
-    color: #FFFFFF;
+    color: var(--white);
 }
 input:not([disabled]).primary:hover,
 button:not([disabled]).primary:hover,
@@ -482,7 +482,7 @@ select.blank {
 }
 .custom-dropdown-blue::after {
     /* farge paa ned pil */
-    color: #FFFFFF;
+    color: var(--white);
 }
 /* File input with button overlaid from m.skeleton */
 .file-input-button { position: relative; }
@@ -537,7 +537,7 @@ select.blank {
 .fancyselect::before {
     content: '\25BC';
     display: block;
-    color: #FFFFFF;
+    color: var(--white);
     background-color: #0086F5;
     position: absolute;
     right: 0;
@@ -582,7 +582,7 @@ select.blank {
     height: 17px;
     border: 1px solid var(--neutral);
     border-radius: 2px;
-    background: #FFFFFF;
+    background: var(--white);
     transition: border linear 0.1s;
 }
 .fancyinput [type='radio']:not(:checked) + label:before,

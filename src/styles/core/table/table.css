@@ -24,7 +24,7 @@ td {
 }
 thead th {
     background-color: var(--neutral);
-    color: #FFFFFF;
+    color: var(--white);
 }
 tbody th {
     border-top: 1px solid var(--pale);
@@ -69,7 +69,7 @@ table.centerify td, table.centerify th { text-align: center; }
     margin-left: 5px;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid #FFFFFF;
+    border-top: 5px solid var(--white);
     transform: rotate(360deg);
 }
 .sort-down:after {
@@ -80,7 +80,7 @@ table.centerify td, table.centerify th { text-align: center; }
     margin-left: 5px;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-bottom: 5px solid #FFFFFF;
+    border-bottom: 5px solid var(--white);
     transform: rotate(360deg);
 }
 .collapsed, .table-pointer {
@@ -96,7 +96,7 @@ table .header:after {
     margin-top: 7px;
     border-width: 0 4px 4px;
     border-style: solid;
-    border-color: #000000 transparent;
+    border-color: var(--black) transparent;
     visibility: hidden;
 }
 table .headerSortUp, table .headerSortDown {
@@ -112,7 +112,7 @@ table .headerSortUp:after {
     border-bottom: none;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 4px solid #000000;
+    border-top: 4px solid var(--black);
     visibility: visible;
     box-shadow: none; /* is this still needed? */
     opacity: 0.6;
@@ -175,11 +175,11 @@ table.hover-cells tbody td:hover, td.hover-cells { background-color: var(--bare)
 .table-collapsable .contentcrap td { border-top: 0; }
 .table-collapsable .contentcrap td p { border-radius: 2px; }
 
-.border-black, .border-black * { border-color: #000000 !important; }
+.border-black, .border-black * { border-color: var(--black) !important; }
 .border-dk-gray, .border-dk-gray * { border-color: var(--dk-gray) !important; }
 .border-lt-gray, .border-lt-gray * { border-color: var(--lt-gray) !important; }
 .border-pale-gray, .border-pale-gray * { border-color: var(--pale-gray) !important; }
-.border-white, .border-white * { border-color: #FFFFFF !important; }
+.border-white, .border-white * { border-color: var(--white) !important; }
 .border-dkdk-blue, .border-dkdk-blue * { border-color: var(--dkdk-blue) !important; }
 .border-dk-blue, .border-dk-blue * { border-color: var(--blue) !important; }
 .border-blue, .border-blue * { border-color: #A2D2EE !important; }

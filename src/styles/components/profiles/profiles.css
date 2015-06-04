@@ -39,7 +39,7 @@
 }
 .profilebg .profiletxt,
 .profilebg .profiletxt a {
-    color: #FFFFFF;
+    color: var(--white);
     text-shadow: 0 1px 1px rgba(0,0,0,.3);
 }
 .profileimg img { border: 1px solid rgba(0, 153, 255, .6); }

@@ -27,7 +27,7 @@
     table-layout: fixed;
 }
 .nav-level1 a {
-    color: #FFFFFF !important;
+    color: var(--white) !important;
     border-right: 1px solid #0077EE;
     display: table-cell;
     vertical-align: middle;
@@ -46,7 +46,7 @@
     clip: rect(0, 0, 0, 0);
 }
 .hamburger-menu label[for='nav-trigger'] {
-    color: #FFFFFF;
+    color: var(--white);
     padding: 10px;
     font-size: 37px;
     cursor: pointer;

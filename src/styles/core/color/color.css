@@ -1,10 +1,10 @@
 /* ? */
 /*
-.bg-black{background-color:#000 !important}
+.bg-black{background-color:var(--black) !important}
 .bg-dk-gray{background-color:var(--dk-gray) !important}
 .bg-lt-gray{background-color:var(--lt-gray) !important}
 .bg-pale-gray{background-color:var(--pale-gray) !important}
-.bg-white{background-color:#fff !important}
+.bg-white{background-color:var(--white) !important}
 .bg-dkdk-blue{background-color:var(--dkdk-blue) !important}
 .bg-dk-blue{background-color:var(--blue) !important}
 .bg-lt-blue{background-color:var(--lt-blue) !important}

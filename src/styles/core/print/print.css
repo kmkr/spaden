@@ -1,5 +1,5 @@
 @media print {
-    body, .page { background: #FFFFFF !important; }
+    body, .page { background: var(--white) !important; }
     img { max-width: 100%; }
     .noprint,
     .no-print,
