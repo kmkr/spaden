@@ -1,6 +1,6 @@
 # Spaden - the FINN.no CSS framework
 
-There is a Scandinavian figure of speech which is [call a spade a spade](https://en.wikipedia.org/wiki/Call_a_spade_a_spade). The is the reason this project is called Spaden.
+There is a figure of speech which is to [call a spade a spade](https://en.wikipedia.org/wiki/Call_a_spade_a_spade). This is (not) the reason this project is called Spaden.
 
 [![travis status](https://api.travis-ci.org/finn-no/spaden.png)](https://travis-ci.org/finn-no/spaden)
 
@@ -17,10 +17,9 @@ There is a Scandinavian figure of speech which is [call a spade a spade](https:/
 
 The built artifacts reside in the _/dist_ folder in the current directory.
 
-
 ## Releasing
 
-When releasing you must specify how to bump the version number. Please consult the [semver standard](http://semver.org/) if you're not certain which to choose:
+Spaden uses [semver](http://semver.org/)
 
 	$ npm version [patch | minor | major]
 	$ npm run package
@@ -29,6 +28,19 @@ When releasing you must specify how to bump the version number. Please consult t
 
 	# Finn internal deploy
 	$ node legacyDeploy.js false | true
+
+## Post-processing
+
+Spaden is processed with [postcss](https://github.com/postcss/postcss). The following future syntax features are used:
+
+* Variables (postcss-custom-properties)
+* Custom media queries (postcss-custom-media)
+* Range contexts in media features ("`(width > 500px)`") (postcss-media-minmax)
+
+The following features are used for building:
+
+* Autoprefixer (autoprefixer)
+* @import inlining (postcss-import)
 
 ## Legacy browser support
 
@@ -41,7 +53,6 @@ When releasing you must specify how to bump the version number. Please consult t
 	<!--[if lte IE 8]>
 	<link rel="stylesheet" href="styles/ie.css">
 	<![endif]-->
-
 
 ## Using Spaden from Node.js/Express
 
