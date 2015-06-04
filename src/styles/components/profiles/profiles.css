@@ -44,7 +44,7 @@
 }
 .profileimg img { border: 1px solid rgba(0, 153, 255, .6); }
 
-@media (--larger-screen) {
+@media not all and (--small-screen) {
     .profile-large .profileimg,
     .profile-large .ratings { margin-right: 20px; }
 }
@@ -108,7 +108,7 @@
 }
 .editmode .profiletxt div { z-index: 3; }
 
-@media (--larger-screen) {
+@media not all and (--small-screen) {
     .companyprofile .profilebg { padding-top: 100px; }
     .companyprofile .profileimg img { max-height: 100px; }
     .editmode .profilebg .editbg {

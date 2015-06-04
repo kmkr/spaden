@@ -88,7 +88,7 @@
     .hamburger-menu .nav-trigger:checked ~ .nav-element { display: block; }
     .hamburger-menu .nav-level1 span { font-size: 13px; }
 }
-@media (--larger-screen) {
+@media not all and (--small-screen) {
     .nav-level1 a {
         height: 55px;
         padding-left: 20px;

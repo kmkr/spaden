@@ -42,7 +42,7 @@ body, html { background-color: var(--blue-greyish); }
     z-index: 10;
 }
 
-@media (--larger-screen) {
+@media not all and (--small-screen) {
     .page {
         max-width: 990px;
         margin-left: 10px;

@@ -36,14 +36,14 @@
 .list-line:not(:last-child) { border-bottom: 1px solid var(--pale); }
 /* footer specific, default is collapsed for old phones, temporary fix? */
 .horizontal-list.default1col li { display: block; }
-@media (--larger-screen) {
+@media not all and (--small-screen) {
     .horizontal-list.default1col li { display: inline; }
     /* should we make a generic thing for vertical dividers. this one is for the footer */
     .verticalhr li:not(:last-child) { border-right: 1px solid var(--pale); }
 }
 
 
-@media (--larger-screen) {
+@media not all and (--small-screen) {
     .fixedfilters .scrollbar::-webkit-scrollbar {
         width: 5px;
         background: transparent;

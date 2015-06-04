@@ -91,6 +91,6 @@ dl.compact dd {
 }
 .removelastborder *:last-child { border: none; }
 
-@media (--larger-screen) {
+@media not all and (--small-screen) {
     .multicol dt { margin: 0 10px 0 20px; }
 }

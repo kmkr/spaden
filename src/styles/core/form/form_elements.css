@@ -279,7 +279,7 @@ a.button:not(.disabled):focus {
 @-o-keyframes animate-inprogress { 0% { background-position: 0 0; } 100% { background-position: 60px 0; } }
 @keyframes animate-inprogress { 0% { background-position: 0 0; } 100% { background-position: 60px 0; } }
 /* Input responsive */
-@media (--larger-screen) {
+@media not all and (--small-screen) {
   input:not([type]),
     input[type='text'],
     input[type='password'],
@@ -342,7 +342,7 @@ label, legend {
   .hform640 .formelement, .hform640 .actions { margin: 10px 0px; }
 }
 
-@media (--larger-screen) {
+@media not all and (--small-screen) {
   .formelement, .actions { margin: 10px 20px; }
 }
 
@@ -549,7 +549,7 @@ select.blank {
     pointer-events: none;
     border-radius: 0 2px 2px 0;
 }
-@media (--larger-screen) {
+@media not all and (--small-screen) {
   .fancyselect::before { line-height: 2em; }
 }
 /* Fancy checkboxes */

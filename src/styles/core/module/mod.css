@@ -41,7 +41,7 @@ a.mod { display: block; }
 
 .foot > .mod .inner { border-radius: 0 ; }
 
-@media (--larger-screen) {
+@media not all and (--small-screen) {
     .mod { margin: 0 10px 10px 0 !important; }
     .mod.shadow > .inner {
         padding-top: 10px;

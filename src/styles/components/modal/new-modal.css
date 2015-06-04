@@ -41,7 +41,7 @@
     }
 }
 
-@media (--larger-screen) {
+@media not all and (--small-screen) {
     .modal-container {
         position: absolute;
         opacity: 1;

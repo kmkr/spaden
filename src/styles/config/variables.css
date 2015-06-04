@@ -1,7 +1,6 @@
 @custom-media --mini-screen (width <= 459px);
-@custom-media --small-but-not-mini (width >= 460px) and (width <= 767px);
+@custom-media --small-but-not-mini-screen (width >= 460px) and (width <= 767px);
 @custom-media --small-screen (width <= 767px);
-@custom-media --larger-screen (width >= 768px);
 
 :root {
     --black: #000000;

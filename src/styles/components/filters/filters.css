@@ -25,7 +25,7 @@
     }
 }
 
-@media (--larger-screen) {
+@media not all and (--small-screen) {
     .filters { top: 0; }
 
     .filters-overlay {
