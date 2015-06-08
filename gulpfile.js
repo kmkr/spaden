@@ -40,7 +40,18 @@ gulp.task('compile-stylesheets', ['copy-images'], function() {
         .pipe(gulp.dest(DIST_DIR));
 });
 
-gulp.task('package-tarball', ['compile-stylesheets'], function() {
+gulp.task('minify-stylesheets', ['compile-stylesheets'], function(){
+    gulp.src([DIST_NAMED_FOLDER + '/*.css', DIST_DIR + '/*.css'])
+        .pipe(plugins.sourcemaps.init())
+        .pipe(plugins.rename({'extname': '.min.css'}))
+        .pipe(plugins.minifyCss({processImport: false, keepBreaks: false, compatibility: 'ie7'}))
+        .pipe(addVersionHeader())
+        .pipe(plugins.sourcemaps.write('.'))
+        .pipe(gulp.dest(DIST_NAMED_FOLDER))
+        .pipe(gulp.dest(DIST_DIR));
+});
+
+gulp.task('package-tarball', ['minify-stylesheets'], function() {
     var artifactVersion = pack.version;
 
     if (plugins.util.env.versionOverride) {
@@ -81,6 +92,7 @@ gulp.task('watch', ['default'], function(){
 gulp.task('default', [
     'copy-images',
     'compile-stylesheets',
+    'minify-stylesheets',
     'copy-legacy-files',
     'copy-browser-files',
     'replace-imgpaths'
