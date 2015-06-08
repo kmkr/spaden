@@ -67,7 +67,7 @@ gulp.task('replace-imgpaths', ['compile-stylesheets'], function() {
         .pipe(gulp.dest(DIST_NAMED_FOLDER));
 });
 
-gulp.task('clean', del.bind(null, DIST_DIR));
+gulp.task('clean', del.bind(null, DIST_DIR + '/*'));
 
 gulp.on('err', function(e) {
     console.log(e.err.stack);
