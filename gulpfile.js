@@ -5,7 +5,7 @@ var plugins = require('gulp-load-plugins')();
 var postcssPlugins = require('./postcss.config.js');
 
 var DIST_DIR = './dist/';
-var OUT_DIR = DIST_DIR + pack.name + '-' + pack.version;
+var DIST_NAMED_FOLDER = DIST_DIR + pack.name + '-' + pack.version;
 
 function addVersionHeader() {
     return plugins.injectString.prepend('/* ' + pack.version + ' - ' + new Date() + ' */\n');
@@ -13,17 +13,20 @@ function addVersionHeader() {
 
 gulp.task('copy-images', ['clean'], function() {
     return gulp.src(['./src/img/**'], { base: 'src/'})
-        .pipe(gulp.dest(OUT_DIR));
+        .pipe(gulp.dest(DIST_NAMED_FOLDER))
+        .pipe(gulp.dest(DIST_DIR));
 });
 
 gulp.task('copy-legacy-files', ['clean'], function() {
     return gulp.src(['./src/styles/thirdparty/**/**.css'], { base: './src'})
-        .pipe(gulp.dest(OUT_DIR));
+        .pipe(gulp.dest(DIST_NAMED_FOLDER))
+        .pipe(gulp.dest(DIST_DIR));
 });
 
 gulp.task('copy-browser-files', ['clean'], function() {
     return gulp.src(['./src/styles/browsers/*.css'], { base: './src/styles/browsers'})
-        .pipe(gulp.dest(OUT_DIR));
+        .pipe(gulp.dest(DIST_NAMED_FOLDER))
+        .pipe(gulp.dest(DIST_DIR));
 });
 
 gulp.task('compile-stylesheets', ['copy-images'], function() {
@@ -33,7 +36,8 @@ gulp.task('compile-stylesheets', ['copy-images'], function() {
         .pipe(plugins.minifyCss({processImport: false, keepBreaks: true, compatibility: 'ie7'}))
         .pipe(addVersionHeader())
         .pipe(plugins.sourcemaps.write('.'))
-        .pipe(gulp.dest(OUT_DIR));
+        .pipe(gulp.dest(DIST_NAMED_FOLDER))
+        .pipe(gulp.dest(DIST_DIR));
 });
 
 gulp.task('package-tarball', ['compile-stylesheets'], function() {
@@ -44,8 +48,12 @@ gulp.task('package-tarball', ['compile-stylesheets'], function() {
         console.log('Version / artifactVersion Overriden', artifactVersion);
     }
 
-    return gulp.src([ OUT_DIR + '/**', OUT_DIR + '/.css'], {
-            base: OUT_DIR + '/'
+    return gulp.src([
+            DIST_NAMED_FOLDER + '/**',
+            DIST_NAMED_FOLDER + '/.css'
+        ],
+        {
+            base: DIST_NAMED_FOLDER + '/'
         })
         .pipe(plugins.tar(pack.name + '-' + artifactVersion + '.tar'))
         .pipe(plugins.gzip())
@@ -53,10 +61,10 @@ gulp.task('package-tarball', ['compile-stylesheets'], function() {
 });
 
 gulp.task('replace-imgpaths', ['compile-stylesheets'], function() {
-    return gulp.src(OUT_DIR + '/**/*.css')
+    return gulp.src(DIST_NAMED_FOLDER + '/**/*.css')
         .pipe(plugins.replace(/\.\.\/\.\.\/img\//g, 'img/'))
         .pipe(plugins.replace(/\/img\//g, 'img/'))
-        .pipe(gulp.dest(OUT_DIR));
+        .pipe(gulp.dest(DIST_NAMED_FOLDER));
 });
 
 gulp.task('clean', del.bind(null, DIST_DIR));
