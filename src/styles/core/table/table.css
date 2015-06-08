@@ -24,7 +24,11 @@ td {
 }
 thead th {
     background-color: var(--neutral);
+<<<<<<< HEAD
     color: var(--white);
+=======
+    color: #FFFFFF;
+>>>>>>> Spring cleanup
 }
 tbody th {
     border-top: 1px solid var(--pale);
@@ -121,22 +125,46 @@ table .blue {
     color: #049CDB;
     border-bottom-color: #049CDB;
 }
+<<<<<<< HEAD
 table .headerSortUp.blue, table .headerSortDown.blue { background-color: #ADE6FE; }
+=======
+table .headerSortUp.blue, table .headerSortDown.blue { 
+    background-color: #ADE6FE; 
+}
+>>>>>>> Spring cleanup
 table .green {
     color: #46A546;
     border-bottom-color: #46A546;
 }
+<<<<<<< HEAD
 table .headerSortUp.green, table .headerSortDown.green { background-color: #CDEACD; }
+=======
+table .headerSortUp.green, table .headerSortDown.green { 
+    background-color: #CDEACD; 
+}
+>>>>>>> Spring cleanup
 table .red {
     color: #9D261D;
     border-bottom-color: #9D261D;
 }
+<<<<<<< HEAD
 table .headerSortUp.red, table .headerSortDown.red { background-color: #F4C8C5; }
+=======
+table .headerSortUp.red, table .headerSortDown.red { 
+    background-color: #F4C8C5; 
+}
+>>>>>>> Spring cleanup
 table .yellow {
     color: #FFC40D;
     border-bottom-color: #FFC40D;
 }
+<<<<<<< HEAD
 table .headerSortUp.yellow, table .headerSortDown.yellow { background-color: #FFF6D9; }
+=======
+table .headerSortUp.yellow, table .headerSortDown.yellow { 
+    background-color: #FFF6D9; 
+}
+>>>>>>> Spring cleanup
 table .orange {
     color: #F89406;
     border-bottom-color: #F89406;
@@ -166,6 +194,7 @@ table.outerborder td, table.outerborder th { padding-left: 10px; }
 table.innerborder th + th, table.innerborder td + td, .table.innerborder th + td { border-left: 1px solid var(--pale); }
 table.hover-rows tbody tr:hover td, table.hover-rows tbody tr:hover th, tr.hover-rows { background-color: var(--bare); }
 table.hover-cells tbody td:hover, td.hover-cells { background-color: var(--bare); }
+<<<<<<< HEAD
 /* Collapsable table */
 .table-collapsable { border-collapse: separate; }
 .table-collapsable tr:hover {
@@ -180,6 +209,13 @@ table.hover-cells tbody td:hover, td.hover-cells { background-color: var(--bare)
 .border-lt-gray, .border-lt-gray * { border-color: var(--lt-gray) !important; }
 .border-pale-gray, .border-pale-gray * { border-color: var(--pale-gray) !important; }
 .border-white, .border-white * { border-color: var(--white) !important; }
+=======
+
+.border-dk-gray, .border-dk-gray * { border-color: var(--dk-gray) !important; }
+.border-lt-gray, .border-lt-gray * { border-color: var(--lt-gray) !important; }
+.border-pale-gray, .border-pale-gray * { border-color: var(--pale-gray) !important; }
+.border-white, .border-white * { border-color: #FFFFFF !important; }
+>>>>>>> Spring cleanup
 .border-dkdk-blue, .border-dkdk-blue * { border-color: var(--dkdk-blue) !important; }
 .border-dk-blue, .border-dk-blue * { border-color: var(--blue) !important; }
 .border-blue, .border-blue * { border-color: #A2D2EE !important; }
@@ -187,9 +223,12 @@ table.hover-cells tbody td:hover, td.hover-cells { background-color: var(--bare)
 .border-pale-blue, .border-pale-blue * { border-color: var(--pale-blue) !important; }
 .border-contrast, .border-contrast * { border-color: var(--contrast) !important; }
 .border-firm, .border-firm * { border-color: var(--firm) !important; }
+<<<<<<< HEAD
 .border-positive, .border-positive * { border-color: #669933 !important; }
 .border-negative, .border-negative * { border-color: #CC0000 !important; }
 .border-snotgreen, .border-snotgreen * { border-color: var(--snotgreen) !important; }
 .border-pissyellow, .border-pissyellow * { border-color: var(--pissyellow) !important; }
 
+=======
+>>>>>>> Spring cleanup
 .border-pale, .border-pale * { border-color: var(--pale) !important; }
