@@ -118,10 +118,13 @@
     z-index: 3;
 }
 .editmode .profiletxt div { z-index: 3; }
-
+.companyprofile .profileimg img {
+    max-height: 120px;
+    background-color: var(--white);
+    border: 5px solid var(--white);
+}
 @media not all and (--small-screen) {
     .companyprofile .profilebg { padding-top: 100px; }
-    .companyprofile .profileimg img { max-height: 100px; }
     .editmode .profilebg .editbg {
         position: absolute;
         z-index: 1;
@@ -132,6 +135,5 @@
 @media (--small-screen) {
     .companyprofile .profileimg img {
         max-width: 200px;
-        max-height: 140px;
     }
 }

@@ -10,6 +10,11 @@
 .clearboth { clear: both; }
 .print-only { display: none; }
 .relative { position: relative; }
+.absolute { position: absolute; }
+.p-top { top: 0; }
+.p-bottom { bottom: 0; }
+.p-right { right: 0; }
+.p-left { left: 0; }
 .z-index1 { z-index: 1; }
 .blockify { display: block; }
 .inlineify { display: inline; }
