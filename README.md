@@ -23,11 +23,11 @@ Spaden uses [semver](http://semver.org/)
 
 	$ npm version [patch | minor | major]
 	$ npm run package
-	$ npm publish . --registry https://registry.npmjs.org
+	$ npm publish --registry https://registry.npmjs.org
 	$ git push --follow-tags origin master
 
 	# Finn internal deploy
-	$ node legacyDeploy.js false | true
+	$ node maven [install | snapshot | release]
 
 ## Post-processing
 
