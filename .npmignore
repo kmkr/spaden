@@ -1,4 +1,12 @@
+.*
 logs
 *.log
 build
 node_modules
+dist/spaden-*
+src
+gulpfile.js
+maven-config.json
+maven.js
+postcss.config.js
+scripts

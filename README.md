@@ -64,7 +64,7 @@ Serve Spaden assets
 
 ```javascript
 var app = express();
-app.use('/spaden', express.static(path.join(__dirname, 'node_modules', 'spaden', 'src')));
+app.use('/spaden', express.static(path.join(__dirname, 'node_modules', 'spaden', 'dist')));
 ```
 
 Import stylesheets

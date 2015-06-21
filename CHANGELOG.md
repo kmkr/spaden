@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Breaking changes:
 
-* Package does not include src directory.
+* Package does not include src directory. Use dist instead.
 * Removed images...
 * Third party css folder removed...
+* dist/spaden-{version} is not generated anymore
