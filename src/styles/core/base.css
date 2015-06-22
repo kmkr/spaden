@@ -30,6 +30,7 @@
 }
 .fit-height { height: 100%; }
 .overflowify { overflow: visible; }
+.unoverflowify { overflow: hidden; }
 .word-break { word-wrap: break-word; }
 .no-break { white-space: nowrap; }
 .truncate, .ellipsify {
