@@ -67,11 +67,10 @@ var app = express();
 app.use('/spaden', express.static(path.join(__dirname, 'node_modules', 'spaden', 'dist')));
 ```
 
-Import stylesheets
+Import stylesheet
 
 ```html
-<link rel="stylesheet" href="/spaden/styles/core/core.css">
-<link rel="stylesheet" href="/spaden/styles/components/components.css">
+<link rel="stylesheet" href="/spaden/spaden.min.css">
 ```
 
 ## Contributing?
