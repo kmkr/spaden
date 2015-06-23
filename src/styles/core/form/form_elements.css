@@ -345,43 +345,48 @@ label, legend {
     margin: 8px 0 14px;
 }
 @media (width >= 640px) {
-  .hform640 .formelement, .hform640 .actions { margin: 10px 0px; }
+    .hform640 .formelement, .hform640 .actions { margin: 10px 0px; }
 }
 
 @media not all and (--small-screen) {
-  .formelement, .actions { margin: 10px 20px; }
+    .formelement, .actions { margin: 10px 20px; }
 }
 
 @media (width >= 640px) {
-  .hform640 fieldset { padding-top: 18px; }
-  .hform640 fieldset legend {
+    /* 
+    .hform640 fieldset { padding-top: 18px; }
+    .hform640 fieldset legend {
         margin: 0;
         padding-left: 25%;
         margin-right: 25%;
         width: 50%;
     }
-  .hform640 .input {
+    */
+    .hform640 .input {
         padding: 0 25%;
-        xmargin-right: 25%;
     }
-  .hform640 .formelement { margin: 0 0 15px 0; }
-  .hform640 .help-block {
+    .hform640 .formelement { 
+        margin: 0 0 15px 0; }
+    .hform640 .help-block {
         margin-right: -10px;
         max-width: none;
     }
-  .hform640 .formelement > label, .hform640 .formelement > details label {
-        xpadding-top: 5px;
+    .hform640 .formelement > label, 
+    .hform640 .formelement > details label,
+    .hform640 .formelement > legend 
+    {
         float: left;
         width: 25%;
         text-align: right;
         padding-right: 20px;
     }
-  .hform640 .inputs-list label { text-align: left; }
-  .hform640 .collapselist label {
+    .hform640 .inputs-list label { 
+    text-align: left; }
+    .hform640 .collapselist label {
         text-align: left;
         width: auto;
     }
-  .hform640 .actions { padding-left: 25%; }
+    .hform640 .actions { padding-left: 25%; }
 }
 
 input.fullwidth,
