@@ -47,7 +47,11 @@
     .r-size1of6 { width: 16.6666666%; }
     .r-size5of6 { width: 83.3333333%; }
     .line, .lastUnit { overflow: visible !important; }
-    .line:after, .lastUnit:after { clear: both; }
+    .line:after, .lastUnit:after {
+        display: table;
+        clear: both;
+        width: 100%; 
+    }
     /* Spacing */
     h1, h2, h3, h4, h5, h6, ul, ol, dl, p, blockquote, .media { margin: 5px 10px; }
     dt, dd { margin: 0 10px; }
