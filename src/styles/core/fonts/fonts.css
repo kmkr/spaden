@@ -31,7 +31,7 @@ h1, .h1, .t1 { font-size: 35px; }
 h2, .h2, .t2 { font-size: 25px; }
 h3, .h3, .t3 { font-size: 20px; }
 h4, .h4, .t4 { font-size: 16px; }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, .h1, .h2, .h3, .h4, .t1, .t2, .t3, .t4 {
     font-weight: 300; /* firefox translates normal to 400 other browsers 300 */
     line-height: 1.25;
 }
