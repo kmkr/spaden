@@ -2,21 +2,31 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [3.0.0] - 2015-06-15
+## [3.0.1] - 2015-08-07
+
+### Fixed
+
+* Fix syntax error in the minified version
+* Fix legend layout and behaviour for misc groups
+* Fix better clearfix on print
+* Fix font-weight and line-heigth to .h1-.h4 and .t1-.t4
+
+## [3.0.0] - 2015-06-15 [YANKED]
 
 ### Added:
 
-* Using PostCSS as packer and pre/postprocessor.
-    * Added css-variables and custom-media queries
-    * Added autoprefixer, and removed inline prefixed declarations and functions
+* Use PostCSS as packer and pre/postprocessor.
+    * Add css-variables and custom-media queries
+    * Add autoprefixer, and remove inline prefixed declarations and functions
     * Images optimized with imageoptim
 
 ### Changed
+
 * Only *.min.css is minified
 
-### Breaking changes:
+### Breaking changes
 
 * Package does not include src directory. Use dist instead.
-* Removed images...
-* Third party css folder removed...
-* dist/spaden-{version} is not generated anymore
+* Remove images (that are likely not in use)
+* Remove third party css folder
+* Do not generate dist/spaden-{version} anymore
