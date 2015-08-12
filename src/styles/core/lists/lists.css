@@ -16,10 +16,7 @@ ul.bullets li:before, .object-description ul li:before {
 
 ul.horizontal-list li { display: inline; }
 
-/* No longer in use?
-.article ul { margin-left:40px; }
-.article ol, .decimals { margin-left:40px; list-style: decimal outside; }
-*/
+.decimals { margin-left:40px; list-style: decimal outside; }
 .object-description ol { list-style: decimal outside; }
 
 .separator { border-right: 1px solid var(--neutral); }
