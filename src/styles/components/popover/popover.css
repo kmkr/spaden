@@ -27,3 +27,17 @@
     border-top: 8px solid var(--pale);
     z-index: 1;
 }
+
+@media (--mini-screen) {
+    .popover-content {
+        display: inline-block;
+        position: fixed;
+        left: 10%;
+        width: 80%;
+        top: 25%;
+        bottom: auto;
+    }
+    .popover-content:after {
+        display: none;
+    }
+}
