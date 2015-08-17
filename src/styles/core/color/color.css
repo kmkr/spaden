@@ -20,6 +20,7 @@
 .neutral, a.neutral { color: var(--neutral); }
 .pale, a.pale { color: var(--pale); }
 .bare, a.bare { color: var(--bare); }
+.bare-lt { color: var(--bare-lt); }
 .bright, .contrast, a.bright, a.contrast { color: var(--bright); }
 
 .bg-sharp { background-color: var(--sharp) !important; }
@@ -27,6 +28,7 @@
 .bg-neutral { background-color: var(--neutral) !important; }
 .bg-pale { background-color: var(--pale) !important; }
 .bg-bare { background-color: var(--bare) !important; }
+.bg-bare-lt { background-color: var(--bare-lt) !important; }
 .bg-bright { background-color: var(--bright) !important; }
 
 .border-sharp { border-color: var(--sharp); }
