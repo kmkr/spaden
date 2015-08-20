@@ -3,7 +3,8 @@
     border-bottom: 1px dashed var(--pale);
     z-index: 0;
 }
-.tooltip[data-tooltip]:hover:before {
+.tooltip[data-tooltip]:hover:before,
+.tooltip[data-tooltip]:focus:before {
     content: attr(data-tooltip);
     position: absolute;
     bottom: 25px;
@@ -16,7 +17,8 @@
     z-index: 2;
     box-shadow: 3px 3px 4px rgba(0,0,0,.05);
 }
-.tooltip[data-tooltip]:hover:after {
+.tooltip[data-tooltip]:hover:after,
+.tooltip[data-tooltip]:focus:after {
     content: '';
     display: block;
     position: absolute;
@@ -28,4 +30,18 @@
     border-left: 8px solid transparent;
     border-top: 8px solid var(--opaque);
     z-index: 1;
+}
+
+@media (--mini-screen) {
+    .tooltip[data-tooltip]:hover:before {
+        display: inline-block;
+        position: fixed;
+        left: 10%;
+        width: 80%;
+        top: 25%;
+        bottom: auto;
+    }
+    .tooltip[data-tooltip]:hover:after {
+        display: none;
+    }
 }
