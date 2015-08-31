@@ -317,6 +317,12 @@ label, legend {
     color: var(--opaque);
     margin: 5px 0;
 }
+legend {
+    margin: 10px 20px;
+}
+.formelement legend {
+    margin: 10px 0;
+}
 .inputs-list { margin: 0 inherit; }
 /* larger font-size and padding on checbox and radio buttons label */
 .inputs-list input[type='radio'],
