@@ -67,7 +67,7 @@
 .companyprofile .profilebg {
     position: relative;
     background-repeat: no-repeat;
-    background-size: 980px;
+    background-size: cover;
     background-position: center;
 }
 .companyprofile .profilebg:before {
