@@ -14,9 +14,11 @@
     z-index: 2;
     box-shadow: 3px 3px 4px rgba(0,0,0,.05);
 }
-.popover-content.under {
-    bottom: auto;
-    top: 2.5em;
+@media (min-width: 460px) {
+    .popover-content.under {
+        bottom: auto;
+        top: 2.5em;
+    }
 }
 .popover-content:after {
     content: '';
