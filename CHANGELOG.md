@@ -2,6 +2,24 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.0.4] - 2015-08-31
+
+### Fixed
+
+* Removed default margin from elements to make r-margin work everywhere
+* Fixed default legend styling
+* Fix to make popovers work inside overflow hidden
+
+### Added
+
+* Added pop-under variant of popovers
+* Added utility class to make grid columns snap to fullwidth when printing
+* Added fullwidth class to labels
+
+### Breaking changes
+
+* Bugfix for popovers necessitates slightly different markup
+
 ## [3.0.1] - 2015-08-07
 
 ### Fixed
