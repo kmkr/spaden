@@ -10,6 +10,11 @@ gulp.task('copy-images', ['clean'], function() {
         .pipe(gulp.dest(DIST_DIR));
 });
 
+gulp.task('copy-icon-defs', ['clean'], function() {
+    return gulp.src(['./src/icons/**'], { base: 'src/'})
+        .pipe(gulp.dest(DIST_DIR));
+});
+
 gulp.task('copy-legacy-files', ['clean'], function() {
     return gulp.src(['./src/styles/thirdparty/**/**.css'], { base: './src'})
         .pipe(gulp.dest(DIST_DIR));
@@ -57,6 +62,7 @@ gulp.task('watch', ['default'], function(){
 
 gulp.task('default', [
     'copy-images',
+    'copy-icon-defs',
     'compile-stylesheets',
     'copy-legacy-files',
     'copy-browser-files',
