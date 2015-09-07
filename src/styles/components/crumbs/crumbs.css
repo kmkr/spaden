@@ -4,5 +4,5 @@
     *zoom: 1;
 }
 .breadcrumbs li + li:before{
-    content: " /";
+    content: " / ";
 }
