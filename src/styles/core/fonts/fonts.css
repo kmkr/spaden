@@ -15,7 +15,12 @@ body {
     color: var(--sharp);
 }
 
-html { font-size: 100%; }
+html {
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
 table {
     font-size: inherit;
     font: 100%;
