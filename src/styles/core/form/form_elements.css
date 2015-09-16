@@ -171,7 +171,6 @@ a.icon,
 a.button,
 .button-group label {
     display: inline-block;
-    overflow: visible;
     cursor: pointer;
     border: 1px solid;
     padding: 10px 12px;
