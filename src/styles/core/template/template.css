@@ -45,10 +45,10 @@ body, html { background-color: var(--blue-greyish); }
 @media not all and (--small-screen) {
     .page {
         max-width: 990px;
-        margin-left: 10px;
+        margin-left: 15px;
     }
     .container {
-        max-width: 1000px;
+        max-width: 1010px;
         margin: 0 auto;
     }
     .container.kindawide { max-width: 1240px; }
