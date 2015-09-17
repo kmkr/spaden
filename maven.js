@@ -9,7 +9,7 @@ var config = require('./maven-config');
  *
  * It will deploy the artifact to either a release or snapshot repo.
  **/
-var VALID_COMMANDS = ['install', 'snapshot', 'release'];
+var VALID_COMMANDS = ['install', 'snapshot', 'deploy'];
 
 var args = process.argv.slice(2);
 var command = args[0];
@@ -23,18 +23,13 @@ if (pkg.version.indexOf('SNAPSHOT') > -1) {
     error('The version i package.json should not contain "SNAPSHOT"');
 }
 
-//var repoPostfix = (isSnapshot) ? 'snapshot' : 'release';
-
-//var fileName = pkg.name + '-' + pkg.version;
-//console.log('Creating legacy artifact in ' + __dirname + '/dist/' + fileName + '.war');
-
 maven.config(config);
 
 if (command === 'install') {
     maven.install();
 } else if (command === 'snapshot') {
     maven.deploy('finntech-internal-snapshot', true);
-} else if (command === 'release') {
+} else if (command === 'deploy') {
     maven.deploy('finntech-internal-release');
 }
 

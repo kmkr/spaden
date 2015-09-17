@@ -17,18 +17,6 @@ There is a figure of speech which is to [call a spade a spade](https://en.wikipe
 
 The built artifacts reside in the _/dist_ folder in the current directory.
 
-## Releasing
-
-Spaden uses [semver](http://semver.org/)
-
-	$ npm version [patch | minor | major]
-	$ npm run package
-	$ npm publish --registry https://registry.npmjs.org
-	$ git push --follow-tags origin master
-
-	# Finn internal deploy
-	$ node maven [install | snapshot | release]
-
 ## Post-processing
 
 Spaden is processed with [postcss](https://github.com/postcss/postcss). The following future syntax features are used:

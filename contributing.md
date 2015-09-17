@@ -26,3 +26,22 @@ If possible use the _.editorconfig_ file in the project as it automates the rule
 
 * code should be indented with 4 spaces
 * double quotes should be used where feasible
+
+## Releasing
+
+Spaden uses [semver](http://semver.org/). See the definitions on when to release patch, minor or major versions.
+
+The release process has been simplified. It will change the version for you, tag, commit and push to git. Publish to npm
+and Maven. NB! Do not use this for alpha- or beta-versions. They should be published to npm with a beta or alpha tag. If not they will automatically be tagged as the latest version.
+
+To deploy a patch version:
+
+    $ npm run release:patch
+
+To deploy a minor version:
+
+    $ npm run release:minor
+
+To deploy a major version:
+
+    $ npm run release:major
