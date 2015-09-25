@@ -51,6 +51,7 @@
 .profile-large .profileimg img,
 .profile-medium .profileimg img { max-width: 150px; }
 .profile-small .profileimg img { max-width: 100px; }
+.profile-xsmall .profileimg img { max-width: 65px; }
 .profile-company-small .profileimg img {
     max-width: 200px;
     max-height: 200px;
@@ -62,22 +63,26 @@
     background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkZJTk5fY29weSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIxMnB4IiBoZWlnaHQ9IjEycHgiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTIgMTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZmlsbD0iIzAwOTlGRiIgZD0iTTguMDMyLDAuNEgzLjk2OEMyLDAuNCwwLjQsMiwwLjQsMy45Njh2NC4wNjRDMC40LDEwLDIsMTEuNiwzLjk2OCwxMS42SDExLjZWMy45NjgNCgkJQzExLjYsMiwxMCwwLjQsOC4wMzIsMC40eiIvPg0KCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik05LjMyOCwzLjg1Nkw5LjMxMywzLjg0Yy0wLjIwOS0wLjIwOC0wLjU0NS0wLjIwOC0wLjczNiwwTDUuNDg4LDYuODhMMy44NCw1LjINCgkJQzMuNjMyLDUuMDA4LDMuMzEyLDUuMDA4LDMuMTIsNS4yMTZMMy4xMDQsNS4yMzJjLTAuMTkyLDAuMTkyLTAuMjA4LDAuNTEyLTAuMDE2LDAuNzJsMCwwbDIuMDMyLDIuMDgNCgkJYzAuMjA4LDAuMjA4LDAuNTQ0LDAuMjA4LDAuNzM2LDBsMy40NzItMy40NTZDOS41MzYsNC4zODQsOS41MzYsNC4wNDgsOS4zMjgsMy44NTZ6Ii8+DQo8L2c+DQo8L3N2Zz4NCg==');
     background-size:contain;
     position: absolute;
-}
-
-.profile-small .profileimg .verified:after {
-    height: 20px;
-    width: 20px;
     left: 50%;
-    bottom: 7px;
-    margin-left: 20px;
+    bottom: 5px;
 }
 
 .profile-medium .profileimg .verified:after {
     height: 30px;
     width: 30px;
-    left: 50%;
-    bottom: 7px;
     margin-left: 30px;
+}
+
+.profile-small .profileimg .verified:after {
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+}
+
+.profile-xsmall .profileimg .verified:after {
+    height: 13px;
+    width: 13px;
+    margin-left: 13px;
 }
 
 .profiletxt .verified:after {
