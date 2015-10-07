@@ -1,3 +1,16 @@
+.objectstatus {
+    display: inline-block;
+    color: var(--white);
+    background-color: var(--lemon);
+    font-size: 12px;
+    padding: 2px 10px;
+}
+
+/* Old ribbons */
+@media (--small-screen) {
+    .objectstatus { font-size: 10px; }
+}
+
 .ribbon2 {
     position: relative;
     z-index: 1;
