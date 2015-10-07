@@ -5,6 +5,12 @@
     font-size: 12px;
     padding: 2px 10px;
 }
+.objectstatus.sold {
+    color: var(--sharp);
+}
+.objectstatus.lastcall {
+    background-color: var(--lilac);
+}
 
 /* Old ribbons */
 @media (--small-screen) {
