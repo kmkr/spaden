@@ -12,6 +12,9 @@
 .objectstatus.lastcall {
     background-color: var(--lilac);
 }
+.objectstatus.inactive {
+    background-color: var(--neutral);
+}
 
 /* Old ribbons */
 @media (--small-screen) {
