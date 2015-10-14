@@ -45,7 +45,7 @@ body, html { background-color: var(--blue-greyish); }
 @media not all and (--small-screen) {
     .page {
         max-width: 990px;
-        margin-left: 15px;
+        margin-left: 10px;
     }
     .container {
         max-width: 1010px;
@@ -64,4 +64,7 @@ body, html { background-color: var(--blue-greyish); }
         right: -240px;
         top: 0;
     }
+}
+@media (min-width: 990px) {
+    .page{ margin-left:15px; }
 }
