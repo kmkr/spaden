@@ -15,6 +15,9 @@
 .objectstatus.inactive {
     background-color: var(--neutral);
 }
+.objectstatus.updated {
+    background-color: var(--green-lt);
+}
 
 /* Old ribbons */
 @media (--small-screen) {
