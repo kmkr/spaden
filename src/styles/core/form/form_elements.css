@@ -1,3 +1,5 @@
+@import '../../config/variables.css';
+
 input,
 select,
 textarea,
@@ -362,7 +364,7 @@ legend {
 }
 
 @media (width >= 640px) {
-    /* 
+    /*
     .hform640 fieldset { padding-top: 18px; }
     .hform640 fieldset legend {
         margin: 0;
@@ -374,22 +376,22 @@ legend {
     .hform640 .input {
         padding: 0 25%;
     }
-    .hform640 .formelement { 
+    .hform640 .formelement {
         margin: 0 0 15px 0; }
     .hform640 .help-block {
         margin-right: -10px;
         max-width: none;
     }
-    .hform640 .formelement > label, 
+    .hform640 .formelement > label,
     .hform640 .formelement > details label,
-    .hform640 .formelement > legend 
+    .hform640 .formelement > legend
     {
         float: left;
         width: 25%;
         text-align: right;
         padding-right: 20px;
     }
-    .hform640 .inputs-list label { 
+    .hform640 .inputs-list label {
     text-align: left; }
     .hform640 .collapselist label {
         text-align: left;
