@@ -2,6 +2,34 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.0.12] - 2015-10-15
+
+### Fixed
+
+* Simplified release process to npm run scripts
+
+### Added
+
+* Object status component to replace ribbons
+* Add profileimg size xsmall
+
+### Breaking changes
+
+* Deprecated ribbons
+
+## [3.0.11] - 2015-09-16
+
+### Fixed
+
+* Removed overflow visible by default on buttons
+* Bring back text-size-adjust to fix orientation change issues
+* Added missing space in breadcrumbs
+
+### Added
+
+* Flex support and upgraded responsive grid system
+* Add verification icon to profile images
+
 ## [3.0.4] - 2015-08-31
 
 ### Fixed
