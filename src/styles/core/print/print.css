@@ -1,3 +1,5 @@
+@import '../../config/variables.css';
+
 @media print {
     body, .page { background: var(--white) !important; }
     img { max-width: 100%; }

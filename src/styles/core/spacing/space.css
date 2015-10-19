@@ -1,3 +1,5 @@
+@import '../../config/variables.css';
+
 /* *
  * Spacing classes
  * Should be used to modify the default spacing between objects (not between nodes of the same object)

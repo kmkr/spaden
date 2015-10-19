@@ -1,3 +1,5 @@
+@import '../../config/variables.css';
+
 @font-face {
     font-family: finnmain;
     src: local('HelveticaNeue-Light');

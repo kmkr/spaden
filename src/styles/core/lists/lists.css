@@ -1,3 +1,5 @@
+@import '../../config/variables.css';
+
 /* Bullet lists */
 
 ul.bullets li, .object-description ul li {
