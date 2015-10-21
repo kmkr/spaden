@@ -28,7 +28,7 @@ gulp.task('copy-browser-files', ['clean'], function() {
 gulp.task('compile-stylesheets', ['copy-images'], function() {
     return gulp.src('src/styles/*.css')
         .pipe(plugins.sourcemaps.init())
-        .pipe(plugins.postcss(postcssPlugins))
+        .pipe(plugins.postcss(postcssPlugins({})))
         .pipe(plugins.sourcemaps.write('.'))
         .pipe(gulp.dest(DIST_DIR));
 });
