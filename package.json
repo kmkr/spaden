@@ -8,6 +8,7 @@
     "maven:snapshot": "npm run package && node maven snapshot",
     "maven:deploy": "npm run package && node maven deploy",
     "package": "gulp",
+    "test": "npm run package",
     "push-package-publish": "git push --follow-tags && npm run package && npm publish && npm run maven:deploy",
     "release:patch": "npm version patch && npm run push-package-publish",
     "release:minor": "npm version minor && npm run push-package-publish",
