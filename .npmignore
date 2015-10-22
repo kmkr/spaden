@@ -7,5 +7,3 @@ dist/spaden-*
 gulpfile.js
 maven-config.json
 maven.js
-postcss.config.js
-scripts
