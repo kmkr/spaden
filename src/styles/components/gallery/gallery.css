@@ -105,3 +105,172 @@ when the page is scrolled and the browser chrome disappears, will recalculate `v
     right: 0;
     margin: auto;
 }
+
+.lightbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background: #000;
+    background: rgba(0, 0, 0, .9);
+}
+
+.lightbox-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+}
+
+.lightbox-body {
+    -webkit-flex: 1 0 0%;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    position: relative;
+    height: 90%; /* fallback if flexbox is not supported */
+}
+
+.lightbox-image-currentimage {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.lightbox-image-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.lightbox-imagecounter {
+    width: 60%;
+    padding-left: 40%;
+    text-align: center;
+}
+
+.lightbox-buttons {
+    width: 40%;
+    text-align: right;
+}
+
+@media (max-width: 640px) {
+    .lightbox-imagecounter {
+        padding-left: 20px;
+        width: 30%;
+        text-align: left;
+    }
+
+    .lightbox-buttons {
+        width: 70%;
+    }
+}
+
+.lightbox-left,
+.lightbox-right {
+    position: absolute;
+    top: 50%;
+    top: calc(50% - 22px);
+    opacity: .5;
+}
+
+.lightbox-left {
+    left: 20px;
+}
+
+.lightbox-right {
+    right: 20px;
+}
+.lightbox-left:hover,
+.lightbox-right:hover {
+    opacity: 1;
+}
+
+.lightbox-thumbs-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex: 1 0 0%;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    overflow-y: auto; /* Needed for Firefox */
+}
+
+.lightbox-thumbs {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    /* IE bug: https://github.com/philipwalton/flexbugs#2-column-flex-items-set-to-align-itemscenter-overflow-their-container */
+    max-width: 100%;
+}
+
+.lightbox-thumbs-image {
+    display: inline-block;
+    line-height: 100%;
+    padding: 2px 3px;
+}
+
+
+/* stuff for thumbs on object page */
+
+.widescreen-image-holder {
+    padding-top: 56.25%; /* 16:9 ratio */
+    overflow: hidden;
+    position: relative;
+}
+.normal-image-holder {
+    padding-top: 75%; /* 4:3 ratio */
+    overflow: hidden;
+    position: relative;
+}
+.more-images {
+    position: absolute; bottom: 0; right: 0; text-shadow: 0 1px 1px rgba(0,0,0,.3); background-color: rgba(0,0,0,.65);
+}
+
+.widescreen-image-holder .active-image {
+    width: 100%;
+}
+.normal-image-holder .active-image {
+    max-height: 100%;
+}
+
+.thumbs-slider {
+    margin-top: 5px;
+    padding-left: 5px;
+    height: 69px;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0;
+}
+
+.thumb {
+    width: 84px;
+    margin: 0 5px 0 0;
+    border: solid 2px transparent;
+}
+
+.activethumb {
+    border: solid 2px #0099FF;
+}
