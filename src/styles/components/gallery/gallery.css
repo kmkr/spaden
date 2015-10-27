@@ -247,9 +247,14 @@ when the page is scrolled and the browser chrome disappears, will recalculate `v
     position: absolute; bottom: 0; right: 0; text-shadow: 0 1px 1px rgba(0,0,0,.3); background-color: rgba(0,0,0,.65);
 }
 
-.widescreen-image-holder .active-image {
+.widescreen-image-holder .active-image:not(.isportrait) {
     width: 100%;
 }
+
+.widescreen-image-holder .active-image.isportrait {
+    max-height: 100%;
+}
+
 .normal-image-holder .active-image {
     max-height: 100%;
 }
