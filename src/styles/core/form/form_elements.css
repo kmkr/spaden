@@ -323,6 +323,9 @@ label, legend {
     color: var(--opaque);
     margin: 5px 0;
 }
+label:hover {
+    color: var(--sharp);
+}
 legend {
     margin: 10px 20px;
 }
@@ -707,3 +710,16 @@ select.blank {
 }
 .fancyinput:hover [type='checkbox'] + label:before,
 .fancyinput:hover [type='radio'] + label:before { border-color: #7D868C; }
+
+@media (--small-screen) {
+    .filter .fancyinput label:before {
+        top: 4px!important;
+    } 
+    .filter .fancyinput label:after {
+        top: 5px!important;
+    } 
+    .filter .fancyinput label {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+}
