@@ -5,13 +5,14 @@
 ul.bullets li, .object-description ul li {
     list-style: none;
     position: relative;
+    padding-left: 13px;
 }
 ul.bullets li:before, .object-description ul li:before {
     content: ' ';
     display: block;
     position: absolute;
-    left: -15px;
-    top: 7px;
+    left: 0px;
+    top: 8px;
     background: var(--blue);
     height: 5px;
     width: 5px;}
@@ -42,6 +43,7 @@ dl.colspan4 { width: 650px; }
     float: none;
     margin: 0 0 0 135px;
     line-height: 1.5em;
+    word-wrap: break-word;
 }
 .multicol dd:after {
     display: block;
