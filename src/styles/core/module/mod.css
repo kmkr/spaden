@@ -7,7 +7,7 @@ version: 0.2
 */
 /* **************** BLOCK STRUCTURES ***************** */
 /* mod */
-.mod { margin: 0 2px 10px 0 !important; }
+.mod { margin: 0 2px 3px 0 !important; }
 .mod .lastUnit .mod { margin-right: 0 !important; }
 .bd, .ft, .hd {
     overflow: hidden;
