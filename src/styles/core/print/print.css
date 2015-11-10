@@ -99,5 +99,6 @@
     .topbar.fixed { position: static; }
     /* Etc */
     .mod.shadow > .inner { box-shadow: none; }
+    .mod.shadow > .inner,
     .nav-level1 a { border: 0 !important; }
 }
