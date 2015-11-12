@@ -4,9 +4,16 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [3.0.23] - 2015-11-11
 
+### Fixed
+
+* Broken mediaqueries for grid 
+
 ### Added
 
 * Responsive filters
+* Breakpoint-customizable responsive helperclasses for grid
+* Flex-grid 
+* Gallery
 
 ## [3.0.18] - 2015-10-21
 
