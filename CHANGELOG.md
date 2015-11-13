@@ -13,7 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * Responsive filters
 * Breakpoint-customizable responsive helperclasses for grid
 * Flex-grid 
-* Gallery
+* Gallery  
 
 ## [3.0.18] - 2015-10-21
 
