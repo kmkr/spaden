@@ -239,7 +239,7 @@ when the page is scrolled and the browser chrome disappears, will recalculate `v
     position: relative;
 }
 .normal-image-holder {
-    padding-top: 75%; /* 4:3 ratio */
+    padding-top: 74.5%; /* 4:3 ratio - slightly lower than 75 to prevent phantom border on top and bottom on images with this exact ratio */
     overflow: hidden;
     position: relative;
 }
