@@ -1,0 +1,14 @@
+.stylized-blockquote {
+    padding-left: 40px;
+}
+
+.stylized-blockquote::before {
+    content: "\201C";
+    position: absolute;
+    margin-left: -40px;
+    font-size: 55px;
+    line-height: 40px;
+    font-family: serif;
+    font-weight: bold;
+    color: var(--pale);
+}
