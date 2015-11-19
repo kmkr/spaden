@@ -2,18 +2,26 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.0.25] - 2015-11-18
+
+### Breaking changes
+
+* Removed collapsible table styles
+
 ## [3.0.23] - 2015-11-11
 
 ### Fixed
 
-* Broken mediaqueries for grid 
+* Un-broken mediaqueries for grid 
 
 ### Added
 
 * Responsive filters
 * Breakpoint-customizable responsive helperclasses for grid
 * Flex-grid 
-* Gallery  
+* Gallery
+* Font size t5
+* Opacity60 utility class
 
 ## [3.0.18] - 2015-10-21
 
