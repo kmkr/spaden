@@ -153,6 +153,8 @@ when the page is scrolled and the browser chrome disappears, will recalculate `v
     left: 0;
     right: 0;
     margin: auto;
+    width: 100%; /* This is needed to center the image in IE 11, because we set max-width */
+    height: 100%;
 }
 
 .lightbox-imagecounter {
