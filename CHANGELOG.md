@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.1.2] - 2015-11-27
+
+### Breaking changes
+
+* Removed third party/video styling
+
 ## [3.0.26] - 2015-11-20
 
 ### Added
