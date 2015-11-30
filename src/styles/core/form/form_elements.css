@@ -6,6 +6,7 @@ textarea,
 button,
 a.icon,
 a.button,
+label.button,
 .button-group label {
     font: inherit;
     font-size: 16px; /* This avoids zooming on iOS */
@@ -162,6 +163,7 @@ input.unstyled {
 .invalid select,
 .invalid button,
 .invalid a.button,
+.invalid label.button,
 .invalid input.button { border-color: var(--red); }
 .invalid input:focus,
 .invalid textarea {
@@ -176,6 +178,7 @@ input[type=reset],
 button,
 a.icon,
 a.button,
+label.button,
 .button-group label {
     display: inline-block;
     cursor: pointer;
@@ -204,6 +207,7 @@ input[type=reset]:hover,
 button:hover,
 a.icon:hover,
 a.button:hover,
+label.button:hover,
 .button-group label:hover {
     background: var(--blue-xxlt);
     text-decoration: none;
@@ -214,6 +218,7 @@ input[type=reset]:active,
 button:active,
 a.icon:active,
 a.button:active,
+label.button:active,
 .button-group label:active {
     background: var(--blue-xlt);
     text-decoration: none;
@@ -221,7 +226,8 @@ a.button:active,
 input.order,
 button.order,
 a.icon.order,
-a.button.order {
+a.button.order,
+label.button.order {
     border: 1px solid #E68007;
     background: #FB8B08;
     background-image: linear-gradient(to bottom, #FB8B08, #E68007);
@@ -234,11 +240,13 @@ a.button.order:not(.disabled):hover { background: var(--rust-lt); }
 input:not([disabled]).order:active,
 button:not([disabled]).order:active,
 a.icon.order:active,
-a.button.order:not(.disabled):active { background: var(--rust); }
+a.button.order:not(.disabled):active,
+label.button.order:not(.disabled):active { background: var(--rust); }
 input.primary,
 button.primary,
 a.icon.primary,
 a.button.primary,
+label.button.primary,
 .button-group input:checked + label {
     border: 1px solid #007CF0;
     background: #0095FD;
@@ -249,6 +257,7 @@ input:not([disabled]).primary:hover,
 button:not([disabled]).primary:hover,
 a.icon.primary:hover,
 a.button.primary:not(.disabled):hover,
+label.button.primary:not(.disabled):hover,
 .button-group input:checked + label:hover {
     background: var(--blue);
     background-image: none;
@@ -257,13 +266,15 @@ input:not([disabled]).primary:active,
 button:not([disabled]).primary:active,
 a.icon.primary:active,
 a.button.primary:not(.disabled):active,
+label.button.primary:not(.disabled):active,
 .button-group input:checked + label:active { background: var(--blue-dk); }
 
 input:disabled[type=button],
 input:disabled[type=submit],
 input:disabled[type=reset],
 button:disabled,
-a.button.disabled {
+a.button.disabled,
+label.button.disabled {
     border: 1px solid #E2E6E9;
     background: #E2E6E9;
     color: var(--neutral);
@@ -272,7 +283,8 @@ a.button.disabled {
 }
 button:not([disabled]):focus,
 a.icon:focus,
-a.button:not(.disabled):focus {
+a.button:not(.disabled):focus,
+label.button:not(.disabled):focus {
     box-shadow: 0 0 6px rgba(07, 37, 60, 0.4);
     background-image: none;
     text-decoration: none;
@@ -306,7 +318,8 @@ a.button:not(.disabled):focus {
     textarea,
     button,
     a.icon,
-    a.button { padding: 6px 10px; }
+    a.button,
+    label.button { padding: 6px 10px; }
   select {
         height: 2.2em;
         padding: 3px 10px;
@@ -325,6 +338,10 @@ label, legend {
 }
 label:hover {
     color: var(--sharp);
+}
+label.button:hover,
+.button-group label:hover {
+    color: var(--blue-dk);
 }
 legend {
     margin: 10px 20px;
@@ -419,7 +436,8 @@ a.button.fullwidth {
 
 input.large,
 button.large,
-a.button.large {
+a.button.large,
+label.button.large {
     font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -427,7 +445,8 @@ a.button.large {
 
 input[type=button].large,
 button.large,
-a.button.large {
+a.button.large,
+label.button.large {
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -436,7 +455,8 @@ a.button.large {
 input.small,
 input[type=button].small,
 button.small,
-a.button.small {
+a.button.small,
+label.button.small {
     padding: 4px 10px;
     font-size: 12px;
 }
