@@ -428,7 +428,8 @@ select.fullwidth,
 textarea.fullwidth,
 label.fullwidth { width: 100%; }
 button.fullwidth,
-a.button.fullwidth {
+a.button.fullwidth,
+label.button.fullwidth {
     text-align: center;
     padding-left: 0 !important;
     padding-right: 0 !important;
