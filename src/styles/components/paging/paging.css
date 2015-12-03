@@ -19,12 +19,14 @@
 .pagination li.current span {
     background-color: var(--bare-lt);
     color: var(--opaque);
+    font-weight: bold;
 }
 
 @media (--small-screen) {
     .pagination li a,
     .pagination li.current span {
         padding: 5px 10px;
+        font-size: 16px;
     }
     .pagination li:not(:first-child):not(:last-child):not(.current) {
         display: none;
