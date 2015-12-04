@@ -4,6 +4,9 @@
 .pagination li {
     display: inline;
 }
+.pagination li:not(:last-child):after {
+    content: " ";
+}
 .pagination li a,
 .pagination li.current span {
     display: inline-block;
