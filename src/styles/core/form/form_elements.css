@@ -50,7 +50,6 @@ textarea:hover { border-color: #7D868C; }
 
 select {
     height: 2.6em;
-    padding-top: 4px;
 }
 
 input:not([type]):disabled,
@@ -622,24 +621,30 @@ select.blank {
 .expandfields:checked ~ .expandlabel { display: none; }
 /* Fancy selects */
 .fancyselect, .fancyinput { position: relative; }
-.fancyselect select { -webkit-appearance: none; }
+.fancyselect select {
+    appearance: none;
+    padding-right: 1.6em;
+}
+.fancyselect select::-ms-expand { display: none; }
 .fancyselect::before {
     content: '\25BC';
     display: block;
-    color: var(--white);
-    background-color: #0086F5;
+    color: var(--opaque);
     position: absolute;
-    right: 0;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
     width: 2.1em;
     text-align: center;
-    height: 100%;
-    line-height: 2.6em;
-    font-size: 1.3em;
+    line-height: 2.8em;
+    font-size: 1.1em;
     pointer-events: none;
-    border-radius: 0 2px 2px 0;
+}
+.fancyselect:hover::before {
+    color: var(--sharp);
 }
 @media not all and (--small-screen) {
-  .fancyselect::before { line-height: 2em; }
+  .fancyselect::before { line-height: 2.2em; }
 }
 /* Fancy checkboxes */
 .fancyinput label { display: inline-block; }
