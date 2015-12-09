@@ -40,31 +40,21 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.truncate-2-lines {
-    display: block; /* Fallback for non-webkit */
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.truncate-fade-2-lines {
+    position: relative;
     height: 3em;
     line-height: 1.5em;
+    overflow: hidden;
 }
-.truncate-fade-2 {
-    position: relative;
-    line-height: 1.2;
-    max-height: 2.4em; /* Up to 2 lines */
-}
-
-.truncate-fade-2::after {
-    content: '';
-    text-align: right;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 10ex;
-    height: 1.2em;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+.truncate-fade-2-lines:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 1.5em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
 }
 .unselectify { user-select: none; }
 .select-all { user-select: all; }
