@@ -631,9 +631,9 @@ select.blank {
     display: block;
     color: var(--opaque);
     position: absolute;
-    right: 1px;
-    top: 1px;
-    bottom: 1px;
+    right: 0;
+    top: 0;
+    bottom: 0;
     width: 2.1em;
     text-align: center;
     line-height: 2.8em;
