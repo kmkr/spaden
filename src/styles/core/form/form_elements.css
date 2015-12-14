@@ -342,6 +342,9 @@ label.button:hover,
 .button-group label:hover {
     color: var(--blue-dk);
 }
+label.button.primary:hover {
+    color: var(--bright);
+}
 legend {
     margin: 10px 20px;
 }
