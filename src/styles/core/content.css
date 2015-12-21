@@ -91,8 +91,7 @@
 }
 
 .actionFeedback {
-    border-radius: 10px;
     position: absolute;
-    z-index: 5;
+    z-index: 9;
     transition: all 1s ease-in-out 0.5s;
 }
