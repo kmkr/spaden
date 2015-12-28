@@ -95,3 +95,14 @@
     z-index: 9;
     transition: all 1s ease-in-out 0.5s;
 }
+
+.read-more::before {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    height: 140px;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0), #fff);
+    background: linear-gradient(to bottom, rgba(255,255,255,0), #fff);
+    content: "";
+}
