@@ -13,3 +13,55 @@ img { max-width: 100%; }
 @media (width >= 990px) {
     .stream-img { width: 25%; }
 }
+
+/* responsive image formats */
+.crop1by1,
+.crop4by3,
+.crop3by2,
+.crop16by9,
+.crop2by1 {
+    overflow: hidden;
+    position: relative;
+}
+
+.crop1by1 {
+    padding-top: 100%; /* 1:1 ratio */
+}
+.crop4by3 {
+    padding-top: 74.5%; /* 4:3 ratio - slightly lower than 75 to prevent phantom border on top and bottom on images with this exact ratio */
+}
+.crop3by2 {
+    padding-top: 66.6666%; /* 3:2 ratio */
+}
+.crop16by9 {
+    padding-top: 56.25%; /* 16:9 ratio */
+}
+.crop2by1 {
+    padding-top: 50%; /* 2:1 ratio */
+}
+
+@media (--small-screen) {
+  .crop1by1-lt768 {
+      padding-top: 100%; /* 1:1 ratio */
+  }
+  .crop4by3-lt768 {
+      padding-top: 74.5%; /* 4:3 ratio - slightly lower than 75 to prevent phantom border on top and bottom on images with this exact ratio */
+  }
+  .crop3by2-lt768 {
+      padding-top: 66.6666%; /* 3:2 ratio */
+  }
+  .crop16by9-lt768 {
+      padding-top: 56.25%; /* 16:9 ratio */
+  }
+}
+
+.isportrait {
+    max-height: 100%;
+}
+.islandscape {
+    max-width: 100%;
+}
+.islogo {
+    max-height: 100%;
+    max-width: 80%;
+}
