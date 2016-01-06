@@ -15,53 +15,86 @@ img { max-width: 100%; }
 }
 
 /* responsive image formats */
-.crop1by1,
-.crop4by3,
-.crop3by2,
-.crop16by9,
-.crop2by1 {
+.format1by1,
+.format4by3,
+.format3by2,
+.format16by9,
+.format2by1,
+.format1by1-lt768,
+.format4by3-lt768,
+.format3by2-lt768,
+.format16by9-lt768,
+.format2by1-lt768 {
     overflow: hidden;
     position: relative;
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
 }
 
-.crop1by1 {
+.format1by1 {
     padding-top: 100%; /* 1:1 ratio */
 }
-.crop4by3 {
-    padding-top: 74.5%; /* 4:3 ratio - slightly lower than 75 to prevent phantom border on top and bottom on images with this exact ratio */
+.format4by3 {
+    padding-top: 75%; /* 4:3 ratio */
 }
-.crop3by2 {
+.format3by2 {
     padding-top: 66.6666%; /* 3:2 ratio */
 }
-.crop16by9 {
+.format16by9 {
     padding-top: 56.25%; /* 16:9 ratio */
 }
-.crop2by1 {
+.format2by1 {
     padding-top: 50%; /* 2:1 ratio */
 }
 
 @media (--small-screen) {
-  .crop1by1-lt768 {
-      padding-top: 100%; /* 1:1 ratio */
-  }
-  .crop4by3-lt768 {
-      padding-top: 74.5%; /* 4:3 ratio - slightly lower than 75 to prevent phantom border on top and bottom on images with this exact ratio */
-  }
-  .crop3by2-lt768 {
-      padding-top: 66.6666%; /* 3:2 ratio */
-  }
-  .crop16by9-lt768 {
-      padding-top: 56.25%; /* 16:9 ratio */
-  }
+    .format1by1-lt768 {
+        padding-top: 100%; /* 1:1 ratio */
+    }
+    .format4by3-lt768 {
+        padding-top: 75%; /* 4:3 ratio */
+    }
+    .format3by2-lt768 {
+        padding-top: 66.6666%; /* 3:2 ratio */
+    }
+    .format16by9-lt768 {
+        padding-top: 56.25%; /* 16:9 ratio */
+    }
+    .format2by1-lt768 {
+        padding-top: 50%; /* 2:1 ratio */
+    }
 }
 
-.isportrait {
-    max-height: 100%;
-}
-.islandscape {
+.centered-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
     max-width: 100%;
-}
-.islogo {
     max-height: 100%;
-    max-width: 80%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+
+.crop-portrait {
+    width: 100%;
+    height: auto;
+    max-height: none;
+}
+.crop-landscape {
+    height: 100%;
+    width: auto;
+    max-width: none;
+}
+
+/* logo formatting */
+.logo-container {
+    overflow: hidden;
+    position: relative;
+    padding-top: 45%;
+}
+.logo {
+    max-height: 100%;
+    max-width: 65%;
 }
