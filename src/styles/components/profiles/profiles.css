@@ -167,3 +167,14 @@
         max-width: 200px;
     }
 }
+
+/* logo formatting */
+.company-logo-container {
+    overflow: hidden;
+    position: relative;
+    padding-top: 45%;
+}
+.company-logo {
+    max-height: 100%;
+    max-width: 65%;
+}
