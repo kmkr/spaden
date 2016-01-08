@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.1.10] - 2016-01-08
+
+### Breaking changes
+
+* Image holder classes changed from cropXbyX to formatXbyX
+
 ## [3.1.8] - 2016-01-04
 
 ### Breaking changes
