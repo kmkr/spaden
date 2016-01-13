@@ -2,6 +2,17 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.1.11] - 2016-01-13
+
+### Added
+
+* utility button
+
+### Fixed
+
+* renamed image cropping classes
+* changed button group styling
+
 ## [3.1.10] - 2016-01-08
 
 ### Breaking changes
