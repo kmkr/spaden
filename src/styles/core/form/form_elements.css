@@ -268,6 +268,33 @@ a.button.primary:not(.disabled):active,
 label.button.primary:not(.disabled):active,
 .button-group input:checked + label:active { background: var(--blue-dk); }
 
+input.utility,
+button.utility,
+a.icon.utility,
+a.button.utility,
+label.button.utility,
+.button-group label {
+    border: 1px solid var(--neutral);
+    background: var(--bright);
+    color: var(--blue-dk);
+}
+input:not([disabled]).utility:hover,
+button:not([disabled]).utility:hover,
+a.icon.utility:hover,
+a.button.utility:not(.disabled):hover,
+label.button.utility:not(.disabled):hover,
+.button-group label:hover,
+input:not([disabled]).utility:active,
+button:not([disabled]).utility:active,
+a.icon.utility:active,
+a.button.utility:not(.disabled):active,
+label.button.utility:not(.disabled):active,
+.button-group label:active {
+    border: 1px solid #7D868C;
+    background: var(--bright);
+    position: relative;
+}
+
 input:disabled[type=button],
 input:disabled[type=submit],
 input:disabled[type=reset],
@@ -280,6 +307,9 @@ label.button.disabled {
     background-image: none;
     cursor: default;
 }
+input:not([disabled])[type=button]:focus,
+input:not([disabled])[type=submit]:focus,
+input:not([disabled])[type=reset]:focus,
 button:not([disabled]):focus,
 a.icon:focus,
 a.button:not(.disabled):focus,
@@ -287,6 +317,15 @@ label.button:not(.disabled):focus {
     box-shadow: 0 0 6px rgba(07, 37, 60, 0.4);
     background-image: none;
     text-decoration: none;
+}
+input[type=button].utility:focus,
+input[type=submit].utility:focus,
+input[type=reset].utility:focus,
+button.utility:focus,
+a.icon.utility:focus,
+a.button.utility:focus,
+label.button.utility:focus {
+  box-shadow: initial;
 }
 
 .inprogress {
@@ -338,8 +377,7 @@ label, legend {
 label:hover {
     color: var(--sharp);
 }
-label.button:hover,
-.button-group label:hover {
+label.button:hover {
     color: var(--blue-dk);
 }
 label.button.primary:hover {
@@ -496,8 +534,9 @@ select.blank {
 .button-group a.button:focus,
 .button-group input:focus + label{
     box-shadow: initial !important;
-    outline: 1px solid #07e;
-    outline-offset: -2px;
+}
+.button-group input:checked + label {
+    position: relative;
 }
 
 .button-group button:first-child,
@@ -743,10 +782,10 @@ select.blank {
 @media (--small-screen) {
     .filter .fancyinput label:before {
         top: 4px!important;
-    } 
+    }
     .filter .fancyinput label:after {
         top: 5px!important;
-    } 
+    }
     .filter .fancyinput label {
         padding-top: 3px;
         padding-bottom: 3px;
