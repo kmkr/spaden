@@ -77,12 +77,12 @@ img { max-width: 100%; }
             transform: translate(-50%,-50%);
 }
 
-.crop-portrait {
+.crop-vertical {
     width: 100%;
     height: auto;
     max-height: none;
 }
-.crop-landscape {
+.crop-horizontal {
     height: 100%;
     width: auto;
     max-width: none;
