@@ -245,7 +245,8 @@ input.primary,
 button.primary,
 a.icon.primary,
 a.button.primary,
-label.button.primary {
+label.button.primary,
+.button-group input:checked + label {
     border: 1px solid #007CF0;
     background: #0095FD;
     background-image: linear-gradient(to bottom, #0095FD, #007CF0);
@@ -255,7 +256,8 @@ input:not([disabled]).primary:hover,
 button:not([disabled]).primary:hover,
 a.icon.primary:hover,
 a.button.primary:not(.disabled):hover,
-label.button.primary:not(.disabled):hover {
+label.button.primary:not(.disabled):hover,
+.button-group input:checked + label:hover {
     background: var(--blue);
     background-image: none;
 }
@@ -263,7 +265,8 @@ input:not([disabled]).primary:active,
 button:not([disabled]).primary:active,
 a.icon.primary:active,
 a.button.primary:not(.disabled):active,
-label.button.primary:not(.disabled):active { background: var(--blue-dk); }
+label.button.primary:not(.disabled):active,
+.button-group input:checked + label:active { background: var(--blue-dk); }
 
 input.utility,
 button.utility,
@@ -532,15 +535,8 @@ select.blank {
 .button-group input:focus + label{
     box-shadow: initial !important;
 }
-.button-group input:checked + label,
-.button-group input:checked + label:hover {
-    border: 1px solid var(--blue-dk);
-    background: var(--blue);
-    color: var(--white);
+.button-group input:checked + label {
     position: relative;
-}
-.button-group input:checked + label:active {
-    background: var(--blue-dk);
 }
 
 .button-group button:first-child,
