@@ -1,1 +1,5 @@
 .inprogress { background: url("../../img/animatedstripes.gif") repeat!important; }
+.fancyselect select,
+.fancyselect select.small,
+.fancyselect select.large { padding-right: 10px; }
+.fancyselect::before { display: none; }

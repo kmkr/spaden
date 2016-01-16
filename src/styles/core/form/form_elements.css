@@ -499,12 +499,16 @@ input[type=button].small,
 button.small,
 a.button.small,
 label.button.small {
-    padding: 4px 10px;
-    font-size: 12px;
+    padding: 5px 10px;
 }
 select.small {
     height: 2.1em;
-    font-size: 12px;
+    padding: 3px 5px;
+}
+@media not all and (--small-screen) {
+  select.small {
+    padding: 3px 10px;
+  }
 }
 select.large {
     height: 2.4em;
@@ -666,28 +670,36 @@ select.blank {
 .fancyselect, .fancyinput { position: relative; }
 .fancyselect select {
     appearance: none;
-    padding-right: 1.6em;
+    padding: 10px 30px 10px 10px;
+    height: auto;
+}
+@media not all and (--small-screen) {
+  .fancyselect select {
+    padding: 6px 30px 6px 10px;
+  }
+}
+.fancyselect select.small {
+  padding: 5px 30px 5px 10px;
+}
+.fancyselect select.large {
+  padding: 10px 30px 10px 10px;
 }
 .fancyselect select::-ms-expand { display: none; }
 .fancyselect::before {
     content: '\25BC';
-    display: block;
     color: var(--opaque);
     position: absolute;
     right: 0;
-    top: 0;
-    bottom: 0;
-    width: 2.1em;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 30px;
     text-align: center;
-    line-height: 2.8em;
-    font-size: 1.1em;
+    line-height: 1.6;
+    font-size: 13px;
     pointer-events: none;
 }
 .fancyselect:hover::before {
     color: var(--sharp);
-}
-@media not all and (--small-screen) {
-  .fancyselect::before { line-height: 2.2em; }
 }
 /* Fancy checkboxes */
 .fancyinput label { display: inline-block; }
