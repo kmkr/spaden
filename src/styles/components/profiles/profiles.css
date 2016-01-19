@@ -45,11 +45,13 @@
 .profileimg img { border: 1px solid rgba(0, 153, 255, .6); }
 
 @media not all and (--small-screen) {
-    .profile-large .profileimg,
     .profile-large .ratings { margin-right: 20px; }
 }
 .profile-large .profileimg img,
-.profile-medium .profileimg img { max-width: 150px; }
+.profile-medium .profileimg img {
+    max-width: 100%;
+    max-height: 150px;
+}
 .profile-small .profileimg img { max-width: 100px; }
 .profile-xsmall .profileimg img { max-width: 65px; }
 .profile-company-small .profileimg img {
