@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.1.13] - 2016-01-19
+
+### Fixed
+
+* fix text overflow issue in large profiles at 768px
+* Adjusted small button and fancy select styling
+
 ## [3.1.11] - 2016-01-13
 
 ### Added
