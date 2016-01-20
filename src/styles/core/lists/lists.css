@@ -31,10 +31,9 @@ dl.colspan4 { width: 650px; }
 
 .multicol dt {
     float: left;
-    width: 105px;
+    width: 110px;
     margin: 0 5px 0 10px;
     line-height: 1.5em;
-    white-space: nowrap;
 }
 .multicol.widelabels dt { width: 270px; }
 .multicol dd {
