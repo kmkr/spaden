@@ -251,7 +251,8 @@ when the page is scrolled and the browser chrome disappears, will recalculate `v
 }
 
 .thumb {
-    width: 84px;
+    max-width: 84px;
+    max-height: 84px;
     margin: 0 5px 0 0;
     border: solid 2px transparent;
 }
