@@ -2,7 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [3.1.13] - 2016-01-19
+## [3.1.14] - 2016-01-21
+
+### Fixed
+
+* Added max-width and max-height to thumb class to maintain aspect ratio in thumbnails
+
+## [3.1.13] - 2016-01-20
 
 ### Fixed
 
