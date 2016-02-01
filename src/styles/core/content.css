@@ -1,5 +1,4 @@
 @import '../config/variables.css';
-
 /* Specific stuff */
 .video-container iframe { max-width: 100%; }
 /* Random spacing fix (jobb) */
@@ -102,6 +101,6 @@
     left: 0;
     right: 0;
     height: 140px;
-    background: linear-gradient(to bottom, rgba(255,255,255,0), #fff);
-    content: "";
+    background: linear-gradient(to bottom, rgba(255,255,255,0), #FFFFFF);
+    content: '';
 }

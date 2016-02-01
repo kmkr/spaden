@@ -41,7 +41,5 @@
         top: 25%;
         bottom: auto;
     }
-    .tooltip[data-tooltip]:hover:before {
-        display: none;
-    }
+    .tooltip[data-tooltip]:hover:before { display: none; }
 }

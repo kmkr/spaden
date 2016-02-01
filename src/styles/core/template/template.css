@@ -1,5 +1,4 @@
 @import '../../config/variables.css';
-
 /* **************** TEMPLATE ***************** */
 /* ====== Page Head, Body, and Foot ====== */
 .main {
@@ -68,5 +67,5 @@ body, html { background-color: var(--blue-greyish); }
     }
 }
 @media (min-width: 990px) {
-    .page{ margin-left:15px; }
+    .page { margin-left: 15px; }
 }

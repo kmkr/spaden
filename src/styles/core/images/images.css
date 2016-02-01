@@ -13,7 +13,6 @@ img { max-width: 100%; }
 @media (width >= 990px) {
     .stream-img { width: 25%; }
 }
-
 /* responsive image formats */
 .format1by1,
 .format4by3,

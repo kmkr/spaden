@@ -1,12 +1,6 @@
-.pagination {
-    white-space: nowrap;
-}
-.pagination li {
-    display: inline;
-}
-.pagination li:not(:last-child):after {
-    content: " ";
-}
+.pagination { white-space: nowrap; }
+.pagination li { display: inline; }
+.pagination li:not(:last-child):after { content: ' '; }
 .pagination li a,
 .pagination li.current span {
     display: inline-block;
@@ -16,9 +10,7 @@
     background-color: var(--bright);
     text-decoration: none;
 }
-.pagination li a:hover {
-    background-color: var(--pale);
-}
+.pagination li a:hover { background-color: var(--pale); }
 .pagination li.current span {
     background-color: var(--bare-lt);
     color: var(--opaque);
@@ -31,7 +23,5 @@
         padding: 5px 10px;
         font-size: 16px;
     }
-    .pagination li:not(:first-child):not(:last-child):not(.current) {
-        display: none;
-    }
+    .pagination li:not(:first-child):not(:last-child):not(.current) { display: none; }
 }

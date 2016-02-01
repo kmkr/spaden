@@ -1,7 +1,7 @@
 .objectstatus {
     display: inline-block;
     color: var(--white);
-    background-color: #eebf1e;
+    background-color: #EEBF1E;
     font-size: 12px;
     padding: 2px 10px;
     white-space: nowrap;
@@ -10,16 +10,9 @@
     background-color: var(--lemon);
     color: var(--sharp);
 }
-.objectstatus.lastcall {
-    background-color: var(--lilac);
-}
-.objectstatus.inactive {
-    background-color: var(--neutral);
-}
-.objectstatus.updated {
-    background-color: var(--green-lt);
-}
-
+.objectstatus.lastcall { background-color: var(--lilac); }
+.objectstatus.inactive { background-color: var(--neutral); }
+.objectstatus.updated { background-color: var(--green-lt); }
 /* Old ribbons */
 @media (--small-screen) {
     .objectstatus { font-size: 10px; }
