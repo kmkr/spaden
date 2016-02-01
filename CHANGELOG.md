@@ -2,6 +2,16 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.0.0] - 2016-02-01
+
+### Added
+
+* New highly controllable grid-unit system (ref: styleguide > grid > .colsXupto[breakpoint])
+
+### Breaking changes
+
+* Rewritten flex support (.flex-area, .flex-unit no longer exists use .flex instead, ref: styleguide > flex )
+
 ## [3.1.14] - 2016-01-21
 
 ### Fixed
@@ -173,3 +183,5 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * Remove images (that are likely not in use)
 * Remove third party css folder
 * Do not generate dist/spaden-{version} anymore
+
+
