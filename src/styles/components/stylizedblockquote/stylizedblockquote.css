@@ -1,9 +1,7 @@
-.stylized-blockquote {
-    padding-left: 40px;
-}
+.stylized-blockquote { padding-left: 40px; }
 
 .stylized-blockquote::before {
-    content: "\201C";
+    content: '\201C';
     position: absolute;
     margin-left: -40px;
     font-size: 55px;

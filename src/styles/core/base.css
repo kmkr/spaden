@@ -47,14 +47,14 @@
     overflow: hidden;
 }
 .truncate-fade-2-lines:after {
-  content: "";
-  text-align: right;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  height: 1.5em;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+    content: '';
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 1.5em;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
 }
 .unselectify { user-select: none; }
 .select-all { user-select: all; }
@@ -69,9 +69,6 @@
 .noselect {
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
 }
 /* From h5bp */
@@ -93,4 +90,3 @@ hr, .hr {
     border-bottom: 1px solid var(--pale);
     margin: 10px 0;
 }
-

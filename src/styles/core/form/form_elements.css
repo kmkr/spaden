@@ -48,9 +48,7 @@ input[type='number']:hover,
 select:hover,
 textarea:hover { border-color: #7D868C; }
 
-select {
-    height: 2.6em;
-}
+select { height: 2.6em; }
 
 input:not([type]):disabled,
 input[type='text']:disabled,
@@ -90,11 +88,8 @@ input[type='search'] {
     -webkit-appearance: none;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
-
 /* This gets cut off in Safari: https://bugs.webkit.org/show_bug.cgi?id=111843. Hide for now */
-::-webkit-search-cancel-button {
-    display: none;
-}
+::-webkit-search-cancel-button { display: none; }
 
 input[type='search']:focus {
     background-position: -20px center;
@@ -325,9 +320,7 @@ input[type=reset].utility:focus,
 button.utility:focus,
 a.icon.utility:focus,
 a.button.utility:focus,
-label.button.utility:focus {
-  box-shadow: initial;
-}
+label.button.utility:focus { box-shadow: initial; }
 
 .inprogress {
     background-size: 30px 30px !important;
@@ -375,21 +368,11 @@ label, legend {
     color: var(--opaque);
     margin: 5px 0;
 }
-label:hover {
-    color: var(--sharp);
-}
-label.button:hover {
-    color: var(--blue-dk);
-}
-label.button.primary:hover {
-    color: var(--bright);
-}
-legend {
-    margin: 10px 20px;
-}
-.formelement legend {
-    margin: 10px 0;
-}
+label:hover { color: var(--sharp); }
+label.button:hover { color: var(--blue-dk); }
+label.button.primary:hover { color: var(--bright); }
+legend { margin: 10px 20px; }
+.formelement legend { margin: 10px 0; }
 .inputs-list { margin: 0 inherit; }
 /* larger font-size and padding on checbox and radio buttons label */
 .inputs-list input[type='radio'],
@@ -434,26 +417,21 @@ legend {
         width: 50%;
     }
     */
-    .hform640 .input {
-        padding: 0 25%;
-    }
-    .hform640 .formelement {
-        margin: 0 0 15px 0; }
+    .hform640 .input { padding: 0 25%; }
+    .hform640 .formelement { margin: 0 0 15px 0; }
     .hform640 .help-block {
         margin-right: -10px;
         max-width: none;
     }
     .hform640 .formelement > label,
     .hform640 .formelement > details label,
-    .hform640 .formelement > legend
-    {
+    .hform640 .formelement > legend {
         float: left;
         width: 25%;
         text-align: right;
         padding-right: 20px;
     }
-    .hform640 .inputs-list label {
-    text-align: left; }
+    .hform640 .inputs-list label { text-align: left; }
     .hform640 .collapselist label {
         text-align: left;
         width: auto;
@@ -522,49 +500,34 @@ select.blank {
     margin: 0;
     appearance: none;
 }
-.button-group{ overflow:hidden; }
+.button-group { overflow: hidden; }
 .button-group button,
 .button-group a.button,
-.button-group label
-{
+.button-group label {
     display: block;
     float: left;
     border-radius: 0;
 }
 .button-group button:focus,
 .button-group a.button:focus,
-.button-group input:focus + label{
-    box-shadow: initial !important;
-}
-.button-group input:checked + label {
-    position: relative;
-}
+.button-group input:focus + label { box-shadow: initial !important; }
+.button-group input:checked + label { position: relative; }
 
 .button-group button:first-child,
 .button-group a.button:first-child,
-.button-group label:first-of-type{
-    border-radius: 2px 0 0 2px;
-}
+.button-group label:first-of-type { border-radius: 2px 0 0 2px; }
 
 .button-group button:last-child,
 .button-group a.button:last-child,
-.button-group label:last-child{
-    border-radius: 0 2px 2px 0;
-}
+.button-group label:last-child { border-radius: 0 2px 2px 0; }
 
 .button-group button:not(:first-child),
 .button-group a.button:not(:first-child),
-.button-group label:not(:first-of-type){
-    margin-left: -1px;
-}
+.button-group label:not(:first-of-type) { margin-left: -1px; }
 .button-group input {
     position: absolute;
     left: -32000px;
 }
-
-
-
-
 /* ----- Custom radio/checkbox ------------------------------ */
 .customcbx input[type='checkbox'],
 .customcbx input[type='radio'] { display: none; }
@@ -683,9 +646,7 @@ select.blank {
     font-size: 1.1em;
     pointer-events: none;
 }
-.fancyselect:hover::before {
-    color: var(--sharp);
-}
+.fancyselect:hover::before { color: var(--sharp); }
 @media not all and (--small-screen) {
   .fancyselect::before { line-height: 2.2em; }
 }
@@ -781,12 +742,8 @@ select.blank {
 .fancyinput:hover [type='radio'] + label:before { border-color: #7D868C; }
 
 @media (--small-screen) {
-    .filter .fancyinput label:before {
-        top: 4px!important;
-    }
-    .filter .fancyinput label:after {
-        top: 5px!important;
-    }
+    .filter .fancyinput label:before { top: 4px !important; }
+    .filter .fancyinput label:after { top: 5px !important; }
     .filter .fancyinput label {
         padding-top: 3px;
         padding-bottom: 3px;

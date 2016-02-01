@@ -115,23 +115,18 @@ when the page is scrolled and the browser chrome disappears, will recalculate `v
     width: 100%;
     height: 100%;
     z-index: 3;
-    background: #000;
+    background: #000000;
     background: rgba(0, 0, 0, .9);
 }
 
 .lightbox-content {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
 }
 
 .lightbox-body {
-    -webkit-flex: 1 0 0%;
-    -ms-flex: 1 0 0%;
     flex: 1 0 0%;
     position: relative;
     height: 90%; /* fallback if flexbox is not supported */
@@ -177,9 +172,7 @@ when the page is scrolled and the browser chrome disappears, will recalculate `v
         text-align: left;
     }
 
-    .lightbox-buttons {
-        width: 70%;
-    }
+    .lightbox-buttons { width: 70%; }
 }
 
 .lightbox-left,
@@ -190,33 +183,20 @@ when the page is scrolled and the browser chrome disappears, will recalculate `v
     opacity: .5;
 }
 
-.lightbox-left {
-    left: 20px;
-}
+.lightbox-left { left: 20px; }
 
-.lightbox-right {
-    right: 20px;
-}
+.lightbox-right { right: 20px; }
 .lightbox-left:hover,
-.lightbox-right:hover {
-    opacity: 1;
-}
+.lightbox-right:hover { opacity: 1; }
 
 .lightbox-thumbs-wrapper {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-flex: 1 0 0%;
-    -ms-flex: 1 0 0%;
     flex: 1 0 0%;
     overflow-y: auto; /* Needed for Firefox */
 }
@@ -233,10 +213,13 @@ when the page is scrolled and the browser chrome disappears, will recalculate `v
     line-height: 100%;
     padding: 2px 3px;
 }
-
 /* stuff for thumbs on object page */
 .more-images {
-    position: absolute; bottom: 0; right: 0; text-shadow: 0 1px 1px rgba(0,0,0,.3); background-color: rgba(0,0,0,.65);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,.65);
 }
 
 .thumbs-slider {
@@ -257,6 +240,4 @@ when the page is scrolled and the browser chrome disappears, will recalculate `v
     border: solid 2px transparent;
 }
 
-.activethumb {
-    border: solid 2px var(--blue);
-}
+.activethumb { border: solid 2px var(--blue); }

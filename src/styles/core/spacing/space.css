@@ -1,5 +1,4 @@
 @import '../../config/variables.css';
-
 /* *
  * Spacing classes
  * Should be used to modify the default spacing between objects (not between nodes of the same object)
@@ -117,7 +116,6 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
     .r-ptl, .r-pvl, .r-pal { padding-top: 20px !important; }
     .r-pbl, .r-pvl, .r-pal { padding-bottom: 20px !important; }
 }
-
 /* Gen. classes for setting auto */
-.margin-left-auto,.margin-horizontal-auto{ margin-left:auto }
-.margin-right-auto,.margin-horizontal-auto{ margin-right:auto }
+.margin-left-auto, .margin-horizontal-auto { margin-left: auto; }
+.margin-right-auto, .margin-horizontal-auto { margin-right: auto; }
