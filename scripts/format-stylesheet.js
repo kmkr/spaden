@@ -1,6 +1,7 @@
 require('colors');
 var filewalker = require('filewalker');
 var postcss = require('postcss');
+var safeParse = require("postcss-safe-parser");
 var fs = require('fs');
 var convertColor = require('css-color-converter');
 var reSPACE_BETWEEN_RULES = /,(\S)/g;
@@ -221,7 +222,7 @@ function copy(src){
 function formatFile(filename) {
     var content = fs.readFileSync(filename, 'utf8');
 
-    var ast = postcss.parse(content, { safe: true });
+    var ast = postcss.parse(content, { parser: safeParse });
 
     ast.nodes = ast.nodes.filter(cleanIterator.bind(null, ast));
     ast.nodes.forEach(iterator.bind(null, 1));

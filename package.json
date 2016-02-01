@@ -45,6 +45,7 @@
     "postcss-custom-properties": "^5.0.0",
     "postcss-import": "^7.1.0",
     "postcss-media-minmax": "^2.1.0",
+    "postcss-safe-parser": "^1.0.4",
     "tar": "^2.1.1"
   },
   "contributors": [
