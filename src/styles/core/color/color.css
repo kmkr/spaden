@@ -1,20 +1,5 @@
 @import '../../config/variables.css';
-/* ? */
-/*
-.bg-black{background-color:var(--black) !important}
-.bg-dk-gray{background-color:var(--dk-gray) !important}
-.bg-lt-gray{background-color:var(--lt-gray) !important}
-.bg-pale-gray{background-color:var(--pale-gray) !important}
-.bg-white{background-color:var(--white) !important}
-.bg-dkdk-blue{background-color:var(--dkdk-blue) !important}
-.bg-dk-blue{background-color:var(--blue) !important}
-.bg-lt-blue{background-color:var(--lt-blue) !important}
-.bg-pale-blue{background-color:var(--pale-blue) !important}
-.bg-contrast{background-color:var(--contrast) !important;}
-.bg-firm{background-color:var(--firm) !important;}
-.bg-snotgreen{background-color:var(--snotgreen) !important}
-.bg-pissyellow{background-color:var(--pissyellow) !important}
-*/
+
 /* Gråskala */
 .sharp, a.sharp { color: var(--sharp); }
 .opaque, a.opaque { color: var(--opaque); }
@@ -37,7 +22,9 @@
 .border-neutral { border-color: var(--neutral); }
 .border-pale { border-color: var(--pale); }
 .border-bare { border-color: var(--bare); }
+.border-bare-lt { border-color: var(--bare-lt); }
 .border-bright { border-color: var(--bright); }
+
 /* Blåskala */
 .blue-dk, a.blue-dk { color: var(--blue-dk); } /* Ikoner,lenker */
 .blue, a.blue { color: var(--blue); }
@@ -65,6 +52,7 @@
 .border-blue-xxlt { border-color: var(--blue-xxlt); }
 .border-blue-greyish { border-color: var(--blue-greyish); }
 .border-blue-greyish-lt { border-color: var(--blue-greyish-lt); }
+
 /* Sekundærfarger */
 .lilac, a.lilac { color: var(--lilac); }
 .lilac-lt, a.lilac-lt { color: var(--lilac-lt); }
@@ -168,6 +156,8 @@
 .border-green { border-color: var(--green); }
 .border-green-lt { border-color: var(--green-lt); }
 .border-green-xlt { border-color: var(--green-xlt); }
+
+
 /* Vise farge for energiklasse pa eiendom objektsider */
 .energylabel.morkegronn { background-color: #009247; }
 .energylabel.lysegronn  { background-color: #92CB51; }
