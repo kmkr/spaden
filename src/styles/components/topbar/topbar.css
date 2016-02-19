@@ -111,3 +111,95 @@
         width: 80px;
     }
 }
+
+
+
+
+
+
+
+/* new topmenu */
+.topmenu{
+  width:100%;
+  background-color:#06BEFB;
+  top:0;
+}
+.navbar{
+  height:55px;
+}
+.navbar a.nav-logo,
+.navbar a.nav-element{
+  color:#ffffff;
+  font-size:16px;
+  padding:0 20px 0 0;
+  position:relative;
+}
+.navbar a.nav-element{
+  background-color:#0063FB;
+  padding:0 20px;
+}
+
+.topbar-nav-svg svg {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  fill:#ffffff;
+}
+@media (max-width: 767px){
+  .navbar span {
+    font-size: 10px;
+  }  
+  .navbar a.nav-logo {
+    padding:0 10px;
+  } 
+  .navbar a.nav-element{
+    display: block;
+    padding:7px 20px 0 20px;
+  }
+  .topmenu .page{ margin:0 }
+  .mod-behaviour{ margin:0!important }
+}
+@media (min-width: 767px){
+  .topbar-nav-svg-caption{
+    margin-left:5px;
+  }
+}
+@media (max-width: 479px){
+  .navbar a.nav-element{
+    padding:7px 10px 0 10px;
+  }
+}
+
+.navbar a.nav-element:hover:after,
+.navbar a.nav-active:after{ 
+  content: ""; 
+  position: absolute; 
+  height: 5px; 
+  width: 100%; 
+  background: #ffffff; 
+  bottom: 0; 
+  left: 0; 
+}
+
+/*  */
+.navbar a:hover .notification{ 
+  text-decoration:none
+}
+
+/* finns i m.finn.css */
+@media (min-width: 768px)
+.topbar-nav-svg-caption {
+    margin-left: 5px;
+}
+
+/* universal mod margin-behaviour */
+.mod-behaviour { 
+  margin: 0 2px 3px 0;
+}
+@media not all and (max-width: 767px) {
+  .mod-behaviour { 
+      margin: 0 10px 10px 0;
+  }
+}
+
+.topmenu.fixed +.container { margin-top: 65px; }
