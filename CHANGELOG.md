@@ -2,6 +2,16 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.1.1] - 2016-02-24
+
+### Added
+
+* Misc changes for the upcoming Identity update
+* Updated link colors
+* Updated market icon colors
+* Updated logo
+* New topbar 
+
 ## [4.0.0] - 2016-02-01
 
 ### Added
