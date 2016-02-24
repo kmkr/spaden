@@ -55,4 +55,21 @@
     --green: #3B7908;
     --green-lt: #7BB02D;
     --green-xlt: #E4EFD4;
+    /* New Identity 2016*/
+    --ni-blue-dk: #0063FB;
+    --ni-blue: #06BEFB;    
+    --ni-blue-lt: #B6F0FF;
+    --ni-blue-xlt: #F1F9FF;
+    --ni-red: #FF5844;
+    --ni-pink: #FFBDC9;
+    --ni-yellow: #FFEC99;
+    --ni-green: #28CD94;
+    --ni-green-lt: #B7FFE4;
+    --ni-red-dk: #DA2400;
+    --ni-navy: #0000B5;
+    --ni-blue-greyish: #E8EFF4;
+    --ni-grey: #A6A4A5;
+    --ni-grey-dk: #666364;
+    --ni-grey-xdk: #474445;
+    --ni-grey-xxdk: #353233;
 }

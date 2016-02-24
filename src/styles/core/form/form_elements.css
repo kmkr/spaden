@@ -178,14 +178,13 @@ label.button,
     cursor: pointer;
     border: 1px solid;
     padding: 10px 12px;
-    color: var(--blue-dk);
-    border-color: var(--blue-dk);
+    color: var(--ni-blue-dk);
+    border-color: var(--ni-blue);
     border-radius: 2px;
     appearance: none;
     height: auto;
     outline: none;
-    background: #FDFEFF;
-    background-image: linear-gradient(to bottom, #FDFEFF, #F4FBFF);
+    background: #FFF;
     line-height: 1.25em;
 }
 input[type=button]::-moz-focus-inner,
@@ -203,7 +202,7 @@ a.icon:hover,
 a.button:hover,
 label.button:hover,
 .button-group label:hover {
-    background: var(--blue-xxlt);
+    background: var(--ni-blue-xlt);
     text-decoration: none;
 }
 input[type=button]:active,
@@ -214,7 +213,7 @@ a.icon:active,
 a.button:active,
 label.button:active,
 .button-group label:active {
-    background: var(--blue-xlt);
+    background: var(--ni-blue-xlt);
     text-decoration: none;
 }
 input.order,
@@ -222,29 +221,27 @@ button.order,
 a.icon.order,
 a.button.order,
 label.button.order {
-    border: 1px solid #E68007;
-    background: #FB8B08;
-    background-image: linear-gradient(to bottom, #FB8B08, #E68007);
+    border: 1px solid var(--ni-red);
+    background: var(--ni-red);
     color: var(--white);
 }
 input:not([disabled]).order:hover,
 button:not([disabled]).order:hover,
 a.icon.order:hover,
-a.button.order:not(.disabled):hover { background: var(--rust-lt); }
+a.button.order:not(.disabled):hover { background: var(--ni-red-dk); }
 input:not([disabled]).order:active,
 button:not([disabled]).order:active,
 a.icon.order:active,
 a.button.order:not(.disabled):active,
-label.button.order:not(.disabled):active { background: var(--rust); }
+label.button.order:not(.disabled):active { background: var(--ni-red-dk); }
 input.primary,
 button.primary,
 a.icon.primary,
 a.button.primary,
 label.button.primary,
 .button-group input:checked + label {
-    border: 1px solid #007CF0;
-    background: #0095FD;
-    background-image: linear-gradient(to bottom, #0095FD, #007CF0);
+    border: 1px solid var(--ni-blue-dk);
+    background: var(--ni-blue-dk);
     color: var(--white);
 }
 input:not([disabled]).primary:hover,
@@ -253,7 +250,7 @@ a.icon.primary:hover,
 a.button.primary:not(.disabled):hover,
 label.button.primary:not(.disabled):hover,
 .button-group input:checked + label:hover {
-    background: var(--blue);
+    background: var(--ni-navy);
     background-image: none;
 }
 input:not([disabled]).primary:active,
@@ -261,7 +258,7 @@ button:not([disabled]).primary:active,
 a.icon.primary:active,
 a.button.primary:not(.disabled):active,
 label.button.primary:not(.disabled):active,
-.button-group input:checked + label:active { background: var(--blue-dk); }
+.button-group input:checked + label:active { background: var(--ni-navy); }
 
 input.utility,
 button.utility,
@@ -269,9 +266,9 @@ a.icon.utility,
 a.button.utility,
 label.button.utility,
 .button-group label {
-    border: 1px solid var(--neutral);
+    border: 1px solid var(--ni-blue);
     background: var(--bright);
-    color: var(--blue-dk);
+    color: var(--ni-blue-dk);
 }
 input:not([disabled]).utility:hover,
 button:not([disabled]).utility:hover,

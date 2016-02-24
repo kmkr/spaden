@@ -158,6 +158,12 @@
 .border-green-xlt { border-color: var(--green-xlt); }
 
 
+/* New Identity 2016 */
+.bg-blue-dk-ni{ background-color: var(--ni-blue-dk); }
+.bg-blue-ni{ background-color: var(--ni-blue); }
+.blue-dk-ni{ color: var(--ni-blue-dk); }
+.blue-ni{ color: var(--ni-blue); }
+
 /* Vise farge for energiklasse pa eiendom objektsider */
 .energylabel.morkegronn { background-color: #009247; }
 .energylabel.lysegronn  { background-color: #92CB51; }

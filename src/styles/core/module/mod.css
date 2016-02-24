@@ -6,7 +6,7 @@ version: 0.2
 */
 /* **************** BLOCK STRUCTURES ***************** */
 /* mod */
-.mod { margin: 0 2px 3px 0 !important; }
+.mod,.mod-behaviour { margin: 0 2px 3px 0 !important; }
 .mod .lastUnit .mod { margin-right: 0 !important; }
 .bd, .ft, .hd {
     overflow: hidden;
@@ -41,7 +41,7 @@ a.mod { display: block; }
 .foot > .mod .inner { border-radius: 0 ; }
 
 @media not all and (--small-screen) {
-    .mod { margin: 0 10px 10px 0 !important; }
+    .mod,.mod-behaviour { margin: 0 10px 10px 0 !important; }
     .mod.shadow > .inner {
         padding-top: 10px;
         padding-bottom: 10px;

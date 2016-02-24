@@ -121,7 +121,7 @@
 /* new topmenu */
 .topmenu{
   width:100%;
-  background-color:#06BEFB;
+  background-color:var(--ni-blue);
   top:0;
 }
 .navbar{
@@ -129,13 +129,13 @@
 }
 .navbar a.nav-logo,
 .navbar a.nav-element{
-  color:#ffffff;
+  color:var(--white);
   font-size:16px;
   padding:0 20px 0 0;
   position:relative;
 }
 .navbar a.nav-element{
-  background-color:#0063FB;
+  background-color:var(--ni-blue-dk);
   padding:0 20px;
 }
 
@@ -143,7 +143,7 @@
   width: 22px;
   height: 22px;
   vertical-align: middle;
-  fill:#ffffff;
+  fill:var(--white);
 }
 @media (max-width: 767px){
   .navbar span {
@@ -166,7 +166,7 @@
 }
 @media (max-width: 479px){
   .navbar a.nav-element{
-    padding:7px 10px 0 10px;
+    padding:7px 8px 0 8px;
   }
 }
 
@@ -176,7 +176,7 @@
   position: absolute; 
   height: 5px; 
   width: 100%; 
-  background: #ffffff; 
+  background: var(--ni-blue); 
   bottom: 0; 
   left: 0; 
 }
@@ -187,11 +187,12 @@
 }
 
 /* finns i m.finn.css */
+/*
 @media (min-width: 768px)
 .topbar-nav-svg-caption {
     margin-left: 5px;
 }
-
+*/
 /* universal mod margin-behaviour */
 .mod-behaviour { 
   margin: 0 2px 3px 0;
