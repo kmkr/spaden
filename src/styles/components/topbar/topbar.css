@@ -123,6 +123,8 @@
   width:100%;
   background-color:var(--ni-blue);
   top:0;
+  z-index: 3;
+  backface-visibility: hidden;
 }
 .navbar{
   height:55px;
