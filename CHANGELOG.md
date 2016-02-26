@@ -2,7 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [4.1.1] - 2016-02-24
+## [4.1.1] - 2016-02-26
+
+### Fixed
+
+* Topbar z-index issue
+
+## [4.1.0] - 2016-02-24
 
 ### Added
 
