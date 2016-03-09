@@ -2,6 +2,8 @@
 
 There is a figure of speech which is to [call a spade a spade](https://en.wikipedia.org/wiki/Call_a_spade_a_spade). This is (not) the reason this project is called Spaden.
 
+A hosted version of this project can be found at [styleguide.finn.no](https://styleguide.finn.no/).
+
 [![travis status](https://api.travis-ci.org/finn-no/spaden.png)](https://travis-ci.org/finn-no/spaden)
 
 [![NPM](https://nodei.co/npm/spaden.png?stars&downloads)](https://nodei.co/npm/spaden/)
