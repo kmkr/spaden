@@ -215,12 +215,15 @@
 .set20px.video.active,
 .icon-text.active .set20px.video { background-position: -80px -1480px; }
 
+
 input.hasDatepicker {
-    background-image: url('/img/icons/set20px.png');
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><g fill="#9BA8B1"><path d="M13 13h3v3h-3z"></path><path d="M18 4h-1V2h-2v2H7V2H5v2H4c-1.102 0-2 .9-2 2v12c0 1.1.898 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V9h14v9z"/></g></svg>');
     background-repeat: no-repeat;
-    background-position: right -1159px;
+    background-position-x: 5px;
+    background-position-y: 5px;
+    padding-left: 35px !important;
 }
-input.hasDatepicker:hover, input.hasDatepicker:focus { background-position: right -1199px; }
+
 /* common finnn delete icon - DEPRECATED due to .icon.danger? */
 .deleticon {
     background: url('http://cache.finn.no/styles/createalert_unselect.gif') no-repeat 0 0;
