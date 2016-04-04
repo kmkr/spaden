@@ -328,6 +328,12 @@ html { box-sizing: border-box; }
 .flex.align-content-space-between { align-content: space-between; }
 .flex.align-content-space-around { align-content: space-around; }
 .flex.align-content-stretch { align-content: stretch; }
+/* Align self */
+.flex > .align-self-start { align-self: flex-start; }
+.flex > .align-self-end { align-self: flex-end; }
+.flex > .align-self-center { align-self: center; }
+.flex > .align-self-baseline { align-self: baseline; }
+.flex > .align-self-stretch { align-self: stretch; }
 /* Adopts the mod>inner>bd structure to work in a flex grid */
 .flex.mod,
 .flex.mod > .inner { width: 100%; }
@@ -364,8 +370,8 @@ a.mod.flex { display: flex !important; }
     .cols7from990 > .unit { width: 14.2857%; }
     .cols8from990 > .unit { width: 12.5%; }
     .col-count1from990 { column-count: 1; }
-    .col-count2from990 { column-count: 2; } 
-    .col-count3from990 { column-count: 3; }     
+    .col-count2from990 { column-count: 2; }
+    .col-count3from990 { column-count: 3; }
 }
 @media ( width <= 989px ) {
     .cols1upto990 > .unit { width: 100%; }
@@ -391,7 +397,7 @@ a.mod.flex { display: flex !important; }
     .cols8upto768 > .unit { width: 20%; }
     .col-count1upto768 { column-count: 1; }
     .col-count2upto768 { column-count: 2; }
-    .col-count3upto768 { column-count: 3; }  
+    .col-count3upto768 { column-count: 3; }
 }
 @media ( width <= 639px ) {
     .cols1upto640 > .unit { width: 100%; }
@@ -404,7 +410,7 @@ a.mod.flex { display: flex !important; }
     .cols8upto640 > .unit { width: 20%; }
     .col-count1upto640 { column-count: 1; }
     .col-count2upto640 { column-count: 2; }
-    .col-count3upto640 { column-count: 3; }  
+    .col-count3upto640 { column-count: 3; }
 }
 @media ( width <= 479px ) {
     .cols1upto480 > .unit { width: 100%; }
@@ -417,5 +423,5 @@ a.mod.flex { display: flex !important; }
     .cols8upto480 > .unit { width: 20%; }
     .col-count1upto480 { column-count: 1; }
     .col-count2upto480 { column-count: 2; }
-    .col-count3upto480 { column-count: 3; }  
+    .col-count3upto480 { column-count: 3; }
 }
