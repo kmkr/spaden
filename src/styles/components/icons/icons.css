@@ -217,7 +217,7 @@
 
 
 input.hasDatepicker {
-    background-image: url('data:image/svg+xml,base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyMSIgdmlld0JveD0iMCAwIDE4IDI0Ij48ZyBmaWxsPSIjOUJBOEIxIj48cGF0aCBkPSJNMTMgMTNoM3YzaC0zeiI+PC9wYXRoPjxwYXRoIGQ9Ik0xOCA0aC0xVjJoLTJ2Mkg3VjJINXYySDRjLTEuMTAyIDAtMiAuOS0yIDJ2MTJjMCAxLjEuODk4IDIgMiAyaDE0YzEuMSAwIDItLjkgMi0yVjZjMC0xLjEtLjktMi0yLTJ6bTAgMTRINFY5aDE0djl6Ii8+PC9nPjwvc3ZnPg==');
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyMSIgdmlld0JveD0iMCAwIDE4IDI0Ij48ZyBmaWxsPSIjOUJBOEIxIj48cGF0aCBkPSJNMTMgMTNoM3YzaC0zeiI+PC9wYXRoPjxwYXRoIGQ9Ik0xOCA0aC0xVjJoLTJ2Mkg3VjJINXYySDRjLTEuMTAyIDAtMiAuOS0yIDJ2MTJjMCAxLjEuODk4IDIgMiAyaDE0YzEuMSAwIDItLjkgMi0yVjZjMC0xLjEtLjktMi0yLTJ6bTAgMTRINFY5aDE0djl6Ii8+PC9nPjwvc3ZnPg==');
     background-repeat: no-repeat;
     background-position: 0 50%;
     padding-left: 35px !important;
