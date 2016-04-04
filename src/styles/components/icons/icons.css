@@ -217,10 +217,9 @@
 
 
 input.hasDatepicker {
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><g fill="#9BA8B1"><path d="M13 13h3v3h-3z"></path><path d="M18 4h-1V2h-2v2H7V2H5v2H4c-1.102 0-2 .9-2 2v12c0 1.1.898 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V9h14v9z"/></g></svg>');
+    background-image: url('data:image/svg+xml,base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyMSIgdmlld0JveD0iMCAwIDE4IDI0Ij48ZyBmaWxsPSIjOUJBOEIxIj48cGF0aCBkPSJNMTMgMTNoM3YzaC0zeiI+PC9wYXRoPjxwYXRoIGQ9Ik0xOCA0aC0xVjJoLTJ2Mkg3VjJINXYySDRjLTEuMTAyIDAtMiAuOS0yIDJ2MTJjMCAxLjEuODk4IDIgMiAyaDE0YzEuMSAwIDItLjkgMi0yVjZjMC0xLjEtLjktMi0yLTJ6bTAgMTRINFY5aDE0djl6Ii8+PC9nPjwvc3ZnPg==');
     background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: 5px;
+    background-position: 0 50%;
     padding-left: 35px !important;
 }
 
