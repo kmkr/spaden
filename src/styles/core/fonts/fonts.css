@@ -123,7 +123,6 @@ a:visited {
     text-decoration: none;
 }
 a:hover, a:focus, a:active { text-decoration: underline; }
-a:focus { outline: none; }
 a.neutral { color: var(--dk-gray) !important; }
 a > .neutral:hover, a:hover > .neutral,
 a > .bright:hover, a:hover > .bright { text-decoration: underline; }
