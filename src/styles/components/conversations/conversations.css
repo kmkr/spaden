@@ -86,7 +86,7 @@
     word-wrap: break-word;
 }
 .conversation.lefty {
-    background-color: var(--ni-yellow);
+    background-color: var(--ni-yellow-lt);
 }
 .conversation.righty {
     background-color: var(--ni-green-lt);
@@ -100,7 +100,7 @@
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-right: 10px solid var(--ni-yellow);
+    border-right: 10px solid var(--ni-yellow-lt);
     z-index: 1;
 }
 .conversation.righty:after {
