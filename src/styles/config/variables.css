@@ -10,6 +10,7 @@
     --pale-gray: #F5F5F5;
     --dkdk-blue: #000066;
     --dk-blue: #0099FF;
+    --dk-blue: var(--ni-blue-dk);
     --lt-blue: #DDEEFF;
     --pale-blue: #F1F8FF;
     --contrast: #444444;
@@ -17,7 +18,9 @@
     --snotgreen: #D2E286;
     --pissyellow: #FFFF99;
     --sharp: #04253C;
+    --sharp: var(--ni-grey-xdk);
     --opaque: #4F6676;
+    --opaque: var(--ni-grey-dk);
     --neutral: #9BA8B1;
     --pale: #CDD3D8;
     --bare: #EDF0F1;
@@ -25,7 +28,9 @@
     --bright: #FFFFFF;
     --blue-dk: #0077EE;
     --blue: #0099FF;
+    --blue: var(--ni-blue-dk);
     --blue-lt: #4CB7FF;
+    --blue-lt: var(--ni-blue);
     --blue-ltlt: #99D6FF;
     --blue-xlt: #E5F5FF;
     --blue-xxlt: #F2FAFF;
@@ -41,12 +46,15 @@
     --candy-lt: #FFB1EC;
     --candy-xlt: #FFEBFA;
     --red: #E7384A;
+    --red: var(--ni-red-dk);
     --red-lt: #EE7380;
+    --red-lt: var(--ni-red);
     --red-xlt: #FBE3E6;
     --lemon: #FBDD25;
     --lemon-lt: #FDF1A8;
+    --lemon-lt: var(--ni-yellow-lt);
     --lemon-xlt: #FEF8E4;
-    --rust: #E78007;
+    --rust: #E78007; 
     --rust-lt: #FE8D08;
     --rust-xlt: #FEEFD2;
     --lime: #CAD522;
@@ -55,17 +63,19 @@
     --green: #3B7908;
     --green-lt: #7BB02D;
     --green-xlt: #E4EFD4;
+    --green-xlt: var(--ni-green-lt);
+    
     /* New Identity 2016*/
-    --ni-blue-dk: #0063FB;
+    --ni-blue-dk: #0063FB; 
     --ni-blue: #06BEFB;
     --ni-blue-lt: #B6F0FF;
     --ni-blue-xlt: #F1F9FF;
     --ni-red: #FF5844;
     --ni-pink: #FFBDC9;
     --ni-yellow: #FFEC99;
-    --ni-yellow-lt: #FEF1BB;
+    --ni-yellow-lt: #FFF2B7;
     --ni-green: #28CD94;
-    --ni-green-lt: #CCFEEB;
+    --ni-green-lt: #CCFFEC;
     --ni-red-dk: #DA2400;
     --ni-navy: #0000B5;
     --ni-blue-greyish: #E8EFF4;
