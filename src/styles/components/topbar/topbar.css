@@ -121,7 +121,7 @@
 /* new topmenu */
 .topmenu{
   width:100%;
-  background-color:var(--ni-blue);
+  background-color:var(--blue);
   top:0;
   z-index: 3;
   backface-visibility: hidden;
@@ -137,7 +137,7 @@
   position:relative;
 }
 .navbar a.nav-element{
-  background-color:var(--ni-blue-dk);
+  background-color:var(--blue-dk);
   padding:0 20px;
 }
 
@@ -178,7 +178,7 @@
   position: absolute; 
   height: 5px; 
   width: 100%; 
-  background: var(--ni-blue); 
+  background: var(--blue); 
   bottom: 0; 
   left: 0; 
 }

@@ -86,10 +86,10 @@
     word-wrap: break-word;
 }
 .conversation.lefty {
-    background-color: var(--ni-yellow-lt);
+    background-color: var(--yellow-lt);
 }
 .conversation.righty {
-    background-color: var(--ni-green-lt);
+    background-color: var(--green-lt);
 }
 .conversation.lefty:after {
     content: '';
@@ -100,7 +100,7 @@
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-right: 10px solid var(--ni-yellow-lt);
+    border-right: 10px solid var(--yellow-lt);
     z-index: 1;
 }
 .conversation.righty:after {
@@ -112,7 +112,7 @@
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 10px solid var(--ni-green-lt);
+    border-left: 10px solid var(--green-lt);
     z-index: 1;
 }
 /* test only, have to be rewritten */

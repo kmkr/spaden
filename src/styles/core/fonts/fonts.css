@@ -115,11 +115,11 @@ sup, sub { line-height: 1em; }
 .uppercase { text-transform: uppercase; }
 /* default links */
 a, a:link {
-    color: var(--ni-blue-dk);
+    color: var(--blue-dk);
     text-decoration: none;
 }
 a:visited {
-    color: var(--ni-blue-dk);
+    color: var(--blue-dk);
     text-decoration: none;
 }
 a:hover, a:focus, a:active { text-decoration: underline; }

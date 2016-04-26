@@ -26,22 +26,22 @@
 .border-bright { border-color: var(--bright); }
 
 /* Blåskala */
-.blue-dk, a.blue-dk { color: var(--blue-dk); } /* Ikoner,lenker */
+/*.blue-dk, a.blue-dk { color: var(--blue-dk); }
 .blue, a.blue { color: var(--blue); }
-.blue-lt, a.blue-lt { color: var(--blue-lt); }
+.blue-lt, a.blue-lt { color: var(--blue-lt); }*/
 .blue-ltlt, a.blue-ltlt { color: var(--blue-ltlt); }
-.blue-xlt, a.blue-xlt { color: var(--blue-xlt); }
+/*.blue-xlt, a.blue-xlt { color: var(--blue-xlt); }*/
 .blue-xxlt, a.blue-xxlt { color: var(--blue-xxlt); }
-.blue-greyish, a.blue-greyish { color: var(--blue-greyish); }
+/*.blue-greyish, a.blue-greyish { color: var(--blue-greyish); }*/
 .blue-greyish-lt { color: var(--blue-greyish-lt); }
 
-.bg-blue-dk { background-color: var(--blue-dk) !important; } /* Knapper */
-.bg-blue { background-color: var(--blue) !important; } /* Knapper */
-.bg-blue-lt { background-color: var(--blue-lt) !important; } /* Menylinje, (implementert med 0099ff med alpha 0.7) */
+/*.bg-blue-dk { background-color: var(--blue-dk) !important; }
+.bg-blue { background-color: var(--blue) !important; }
+.bg-blue-lt { background-color: var(--blue-lt) !important; }*/
 .bg-blue-ltlt { background-color: var(--blue-ltlt) !important; } /* Disabled knapp, markeringer?  */
-.bg-blue-xlt { background-color: var(--blue-xlt) !important; }
+/*.bg-blue-xlt { background-color: var(--blue-xlt) !important; }*/
 .bg-blue-xxlt { background-color: var(--blue-xxlt) !important; }
-.bg-blue-greyish { background-color: var(--blue-greyish) !important; } /* Finn main-bg */
+/*.bg-blue-greyish { background-color: var(--blue-greyish) !important; }*/ /* Finn main-bg */
 .bg-blue-greyish-lt { background-color: var(--blue-greyish-lt) !important; } /* Finn hover-bg */
 
 .border-blue-dk { border-color: var(--blue-dk); }
@@ -93,11 +93,11 @@
 .border-candy-xlt { border-color: var(--candy-xlt); }
 
 
-.red, .negative, a.red, .negative, a.negative { color: var(--red); }
+/*.red, .negative, a.red, .negative, a.negative { color: var(--red); }*/
 .red-lt, a.red-lt { color: var(--red-lt); }
 .red-xlt, a.red-xlt { color: var(--red-xlt); }
 
-.bg-red, .bg-negative { background-color: var(--red) !important; }
+/*.bg-red, .bg-negative { background-color: var(--red) !important; }*/
 .bg-red-lt { background-color: var(--red-lt) !important; }
 .bg-red-xlt { background-color: var(--red-xlt) !important; }
 
@@ -145,12 +145,12 @@
 .border-lime-xlt { border-color: var(--lime-xlt); }
 
 
-.green, a.green, .positive, a.positive { color: var(--green); }
-.green-lt, a.green-lt { color: var(--green-lt); }
+/*.green, a.green, .positive, a.positive { color: var(--green); }
+.green-lt, a.green-lt { color: var(--green-lt); }*/
 .green-xlt, a.green-xlt { color: var(--green-xlt); }
 
-.bg-green, .bg-positive { background-color: var(--green) !important; }
-.bg-green-lt { background-color: var(--green-lt) !important; }
+/*.bg-green, .bg-positive { background-color: var(--green) !important; }
+.bg-green-lt { background-color: var(--green-lt) !important; }*/
 .bg-green-xlt { background-color: var(--green-xlt) !important; }
 
 .border-green { border-color: var(--green); }
@@ -159,10 +159,40 @@
 
 
 /* New Identity 2016 */
-.bg-blue-dk-ni{ background-color: var(--ni-blue-dk); }
-.bg-blue-ni{ background-color: var(--ni-blue); }
-.blue-dk-ni{ color: var(--ni-blue-dk); }
-.blue-ni{ color: var(--ni-blue); }
+.blue-dk { color: var(--blue-dk); } 
+.bg-blue-dk { background-color: var(--blue-dk); } 
+.blue { color: var(--blue); }
+.bg-blue { background-color: var(--blue); }
+.blue-lt { color: var(--blue-lt); }
+.bg-blue-lt { background-color: var(--blue-lt); }
+.blue-xlt { color: var(--blue-xlt); }
+.bg-blue-xlt { background-color: var(--blue-xlt); }
+.red, .negative { color: var(--red); }
+.bg-red, .bg-negative { background-color: var(--red); }
+.pink { color: var(--pink); }
+.bg-pink { background-color: var(--pink); }
+.yellow { color: var(--yellow); }
+.bg-yellow { background-color: var(--yellow); }
+.yellow-lt { color: var(--yellow-lt); }
+.bg-yellow-lt { background-color: var(--yellow-lt); }
+.green, .positive { color: var(--green); }
+.bg-green, .bg-positive { background-color: var(--green); }
+.green-lt { color: var(--green-lt); }
+.bg-green-lt { background-color: var(--green-lt); }
+.red-dk { color: var(--red-dk); }
+.bg-red-dk { background-color: var(--red-dk); }
+.navy { color: var(--navy); }
+.bg-navy { background-color: var(--navy); }
+.blue-greyish { color: var(--blue-greyish); }
+.bg-blue-greyish { background-color: var(--blue-greyish); }
+.grey { color: var(--grey); }
+.bg-grey { background-color: var(--grey); }
+.grey-dk { color: var(--grey-dk); }
+.bg-grey-dk { background-color: var(--grey-dk); }
+.grey-xdk { color: var(--grey-xdk); }
+.bg-grey-xdk { background-color: var(--grey-xdk); }
+.grey-xxdk { color: var(--grey-xxdk); }
+.bg-grey-xxdk { background-color: var(--grey-xxdk); }
 
 /* Vise farge for energiklasse pa eiendom objektsider */
 .energylabel.morkegronn { background-color: #009247; }

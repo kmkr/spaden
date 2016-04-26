@@ -178,8 +178,8 @@ label.button,
     cursor: pointer;
     border: 1px solid;
     padding: 10px 12px;
-    color: var(--ni-blue-dk);
-    border-color: var(--ni-blue);
+    color: var(--blue-dk);
+    border-color: var(--blue);
     border-radius: 2px;
     appearance: none;
     height: auto;
@@ -202,7 +202,7 @@ a.icon:hover,
 a.button:hover,
 label.button:hover,
 .button-group label:hover {
-    background: var(--ni-blue-xlt);
+    background: var(--blue-xlt);
     text-decoration: none;
 }
 input[type=button]:active,
@@ -213,7 +213,7 @@ a.icon:active,
 a.button:active,
 label.button:active,
 .button-group label:active {
-    background: var(--ni-blue-xlt);
+    background: var(--blue-xlt);
     text-decoration: none;
 }
 input.order,
@@ -221,27 +221,27 @@ button.order,
 a.icon.order,
 a.button.order,
 label.button.order {
-    border: 1px solid var(--ni-red);
-    background: var(--ni-red);
+    border: 1px solid var(--red);
+    background: var(--red);
     color: var(--white);
 }
 input:not([disabled]).order:hover,
 button:not([disabled]).order:hover,
 a.icon.order:hover,
-a.button.order:not(.disabled):hover { background: var(--ni-red-dk); }
+a.button.order:not(.disabled):hover { background: var(--red-dk); }
 input:not([disabled]).order:active,
 button:not([disabled]).order:active,
 a.icon.order:active,
 a.button.order:not(.disabled):active,
-label.button.order:not(.disabled):active { background: var(--ni-red-dk); }
+label.button.order:not(.disabled):active { background: var(--red-dk); }
 input.primary,
 button.primary,
 a.icon.primary,
 a.button.primary,
 label.button.primary,
 .button-group input:checked + label {
-    border: 1px solid var(--ni-blue-dk);
-    background: var(--ni-blue-dk);
+    border: 1px solid var(--blue-dk);
+    background: var(--blue-dk);
     color: var(--white);
 }
 input:not([disabled]).primary:hover,
@@ -250,7 +250,7 @@ a.icon.primary:hover,
 a.button.primary:not(.disabled):hover,
 label.button.primary:not(.disabled):hover,
 .button-group input:checked + label:hover {
-    background: var(--ni-navy);
+    background: var(--navy);
     background-image: none;
 }
 input:not([disabled]).primary:active,
@@ -258,7 +258,7 @@ button:not([disabled]).primary:active,
 a.icon.primary:active,
 a.button.primary:not(.disabled):active,
 label.button.primary:not(.disabled):active,
-.button-group input:checked + label:active { background: var(--ni-navy); }
+.button-group input:checked + label:active { background: var(--navy); }
 
 input.utility,
 button.utility,
@@ -266,9 +266,9 @@ a.icon.utility,
 a.button.utility,
 label.button.utility,
 .button-group label {
-    border: 1px solid var(--ni-blue);
+    border: 1px solid var(--blue);
     background: var(--bright);
-    color: var(--ni-blue-dk);
+    color: var(--blue-dk);
 }
 input:not([disabled]).utility:hover,
 button:not([disabled]).utility:hover,
