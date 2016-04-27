@@ -179,6 +179,8 @@
 .bg-green, .bg-positive { background-color: var(--green); }
 .green-lt { color: var(--green-lt); }
 .bg-green-lt { background-color: var(--green-lt); }
+.green-dk { color: var(--green-dk); }
+.bg-green-dk { background-color: var(--green-dk); }
 .red-dk { color: var(--red-dk); }
 .bg-red-dk { background-color: var(--red-dk); }
 .navy { color: var(--navy); }
