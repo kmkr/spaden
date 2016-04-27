@@ -24,9 +24,15 @@ body, html { background-color: var(--blue-greyish); }
     margin-left: 2px;
 }
 .topbar.fixed + .container,
-.topbar-level2.hidden + .container { margin-top: 65px; }
-.topbar.fixed.defaultopen + .container,
-.topbar-level2.fixed:not(.hidden) + .container { margin-top: 110px; }
+.topmenu.fixed + .container,
+.topbar.fixed + .topbar-level2.hidden + .container,
+.topmenu.fixed + .topbar-level2.hidden + .container { margin-top: 65px; }
+
+.topmenu.fixed + .topbar-level2.fixed:not(.hidden) + .container { margin-top: 110px; }
+
+/* Special case. Topmenu margin comes from finnlet */
+.topbar-level2.fixed:not(.hidden) + .container { margin-top: 45px; }
+
 .container.fullsize { max-width: 100%; }
 /* wraps other template elems to set width */ /* text-align IE5.5 */
 /* ?
