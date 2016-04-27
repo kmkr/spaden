@@ -187,21 +187,3 @@
 .navbar a:hover .notification{
   text-decoration:none
 }
-
-/* finns i m.finn.css */
-/*
-@media (min-width: 768px)
-.topbar-nav-svg-caption {
-    margin-left: 5px;
-}
-*/
-/* universal mod margin-behaviour */
-.mod-behaviour {
-  margin: 0 2px 3px 0;
-}
-@media not all and (max-width: 767px) {
-  .mod-behaviour {
-      margin: 0 10px 10px 0;
-  }
-}
-
