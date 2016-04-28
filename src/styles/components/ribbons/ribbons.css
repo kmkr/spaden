@@ -10,6 +10,16 @@
     background-color: var(--lemon);
     color: var(--sharp);
 }
+
+.objectstatus.calendar {
+    display: inline-block;
+    color: var(--white);
+    background-color: #7bb02d;
+    font-size: 12px;
+    padding: 2px 10px;
+    white-space: nowrap;
+}
+
 .objectstatus.lastcall { background-color: var(--lilac); }
 .objectstatus.inactive { background-color: var(--neutral); }
 .objectstatus.updated { background-color: var(--green-lt); }
