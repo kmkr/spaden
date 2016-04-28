@@ -12,7 +12,10 @@
 }
 .objectstatus.lastcall { background-color: var(--lilac); }
 .objectstatus.inactive { background-color: var(--neutral); }
-.objectstatus.updated { background-color: var(--green-lt); }
+.objectstatus.updated {
+  background-color: var(--green-lt);
+  color: var(--sharp);
+}
 /* Old ribbons */
 @media (--small-screen) {
     .objectstatus { font-size: 10px; }
