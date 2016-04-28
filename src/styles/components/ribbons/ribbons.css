@@ -14,7 +14,7 @@
 .objectstatus.calendar {
     display: inline-block;
     color: var(--white);
-    background-color: #7bb02d;
+    background-color: var(--green-dk);
     font-size: 12px;
     padding: 2px 10px;
     white-space: nowrap;
