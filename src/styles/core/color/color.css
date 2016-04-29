@@ -160,41 +160,41 @@
 
 /* New Identity 2016 */
 .blue-dk { color: var(--blue-dk); } 
-.bg-blue-dk { background-color: var(--blue-dk); } 
+.bg-blue-dk { background-color: var(--blue-dk) !important; } 
 .blue { color: var(--blue); }
-.bg-blue { background-color: var(--blue); }
+.bg-blue { background-color: var(--blue) !important; }
 .blue-lt { color: var(--blue-lt); }
-.bg-blue-lt { background-color: var(--blue-lt); }
+.bg-blue-lt { background-color: var(--blue-lt) !important; }
 .blue-xlt { color: var(--blue-xlt); }
-.bg-blue-xlt { background-color: var(--blue-xlt); }
+.bg-blue-xlt { background-color: var(--blue-xlt) !important; }
 .red, .negative { color: var(--red); }
-.bg-red, .bg-negative { background-color: var(--red); }
+.bg-red, .bg-negative { background-color: var(--red) !important; }
 .pink { color: var(--pink); }
-.bg-pink { background-color: var(--pink); }
+.bg-pink { background-color: var(--pink) !important; }
 .yellow { color: var(--yellow); }
-.bg-yellow { background-color: var(--yellow); }
+.bg-yellow { background-color: var(--yellow) !important; }
 .yellow-lt { color: var(--yellow-lt); }
-.bg-yellow-lt { background-color: var(--yellow-lt); }
+.bg-yellow-lt { background-color: var(--yellow-lt) !important; }
 .green, .positive { color: var(--green); }
-.bg-green, .bg-positive { background-color: var(--green); }
+.bg-green, .bg-positive { background-color: var(--green) !important; }
 .green-lt { color: var(--green-lt); }
-.bg-green-lt { background-color: var(--green-lt); }
+.bg-green-lt { background-color: var(--green-lt) !important; }
 .green-dk { color: var(--green-dk); }
-.bg-green-dk { background-color: var(--green-dk); }
+.bg-green-dk { background-color: var(--green-dk) !important; }
 .red-dk { color: var(--red-dk); }
-.bg-red-dk { background-color: var(--red-dk); }
+.bg-red-dk { background-color: var(--red-dk) !important; }
 .navy { color: var(--navy); }
-.bg-navy { background-color: var(--navy); }
+.bg-navy { background-color: var(--navy) !important; }
 .blue-greyish { color: var(--blue-greyish); }
-.bg-blue-greyish { background-color: var(--blue-greyish); }
+.bg-blue-greyish { background-color: var(--blue-greyish) !important; }
 .grey { color: var(--grey); }
-.bg-grey { background-color: var(--grey); }
+.bg-grey { background-color: var(--grey) !important; }
 .grey-dk { color: var(--grey-dk); }
-.bg-grey-dk { background-color: var(--grey-dk); }
+.bg-grey-dk { background-color: var(--grey-dk) !important; }
 .grey-xdk { color: var(--grey-xdk); }
-.bg-grey-xdk { background-color: var(--grey-xdk); }
+.bg-grey-xdk { background-color: var(--grey-xdk) !important; }
 .grey-xxdk { color: var(--grey-xxdk); }
-.bg-grey-xxdk { background-color: var(--grey-xxdk); }
+.bg-grey-xxdk { background-color: var(--grey-xxdk) !important; }
 
 /* Vise farge for energiklasse pa eiendom objektsider */
 .energylabel.morkegronn { background-color: #009247; }
