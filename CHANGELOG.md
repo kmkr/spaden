@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.4.0] - 2016-05-04
+
+### Added
+
+* Added new Identity icons for markets (icon-ni-...)
+
 ## [4.1.1] - 2016-02-26
 
 ### Fixed
@@ -16,7 +22,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * Updated link colors
 * Updated market icon colors
 * Updated logo
-* New topbar 
+* New topbar
 
 ## [4.0.0] - 2016-02-01
 
@@ -107,13 +113,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 
-* Un-broken mediaqueries for grid 
+* Un-broken mediaqueries for grid
 
 ### Added
 
 * Responsive filters
 * Breakpoint-customizable responsive helperclasses for grid
-* Flex-grid 
+* Flex-grid
 * Gallery
 * Font size t5
 * Opacity60 utility class
@@ -199,5 +205,3 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * Remove images (that are likely not in use)
 * Remove third party css folder
 * Do not generate dist/spaden-{version} anymore
-
-
