@@ -1,6 +1,6 @@
 {
   "name": "spaden",
-  "version": "4.3.6",
+  "version": "4.4.0",
   "description": "The FINN.no front-end CSS framework built on top of OOCSS",
   "scripts": {
     "format-source-code": "REALLY_DO_IT=1 node ./scripts/format-stylesheet.js",
