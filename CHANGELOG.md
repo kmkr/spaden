@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.4.1] - 2016-05-09
+
+### Fixed
+
+* Bug in the icon svg
+
+
 ## [4.4.0] - 2016-05-04
 
 ### Added
