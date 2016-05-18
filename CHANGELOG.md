@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.4.3] - 2016-05-18
+
+### Fixed
+
+* Fixed new Identity colors for linked elements
+
 ## [4.4.1] - 2016-05-09
 
 ### Fixed
