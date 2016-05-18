@@ -159,41 +159,41 @@
 
 
 /* New Identity 2016 */
-.blue-dk { color: var(--blue-dk); } 
-.bg-blue-dk { background-color: var(--blue-dk) !important; } 
-.blue { color: var(--blue); }
+.blue-dk, a.blue-dk { color: var(--blue-dk); }
+.bg-blue-dk { background-color: var(--blue-dk) !important; }
+.blue, a.blue { color: var(--blue); }
 .bg-blue { background-color: var(--blue) !important; }
-.blue-lt { color: var(--blue-lt); }
+.blue-lt, a.blue-lt { color: var(--blue-lt); }
 .bg-blue-lt { background-color: var(--blue-lt) !important; }
-.blue-xlt { color: var(--blue-xlt); }
+.blue-xlt, a.blue-xlt { color: var(--blue-xlt); }
 .bg-blue-xlt { background-color: var(--blue-xlt) !important; }
-.red, .negative { color: var(--red); }
+.red, .negative, a.red, a.negative { color: var(--red); }
 .bg-red, .bg-negative { background-color: var(--red) !important; }
-.pink { color: var(--pink); }
+.pink, a.pink { color: var(--pink); }
 .bg-pink { background-color: var(--pink) !important; }
-.yellow { color: var(--yellow); }
+.yellow, a.yellow { color: var(--yellow); }
 .bg-yellow { background-color: var(--yellow) !important; }
-.yellow-lt { color: var(--yellow-lt); }
+.yellow-lt, a.yellow-lt { color: var(--yellow-lt); }
 .bg-yellow-lt { background-color: var(--yellow-lt) !important; }
-.green, .positive { color: var(--green); }
+.green, .positive, a.green, a.positive { color: var(--green); }
 .bg-green, .bg-positive { background-color: var(--green) !important; }
-.green-lt { color: var(--green-lt); }
+.green-lt, a.green-lt { color: var(--green-lt); }
 .bg-green-lt { background-color: var(--green-lt) !important; }
-.green-dk { color: var(--green-dk); }
+.green-dk, a.green-dk { color: var(--green-dk); }
 .bg-green-dk { background-color: var(--green-dk) !important; }
-.red-dk { color: var(--red-dk); }
+.red-dk, a.red-dk { color: var(--red-dk); }
 .bg-red-dk { background-color: var(--red-dk) !important; }
-.navy { color: var(--navy); }
+.navy, a.navy { color: var(--navy); }
 .bg-navy { background-color: var(--navy) !important; }
-.blue-greyish { color: var(--blue-greyish); }
+.blue-greyish, a.blue-greyish { color: var(--blue-greyish); }
 .bg-blue-greyish { background-color: var(--blue-greyish) !important; }
-.grey { color: var(--grey); }
+.grey, a.grey { color: var(--grey); }
 .bg-grey { background-color: var(--grey) !important; }
-.grey-dk { color: var(--grey-dk); }
+.grey-dk, a.grey-dk { color: var(--grey-dk); }
 .bg-grey-dk { background-color: var(--grey-dk) !important; }
-.grey-xdk { color: var(--grey-xdk); }
+.grey-xdk, a.grey-xdk { color: var(--grey-xdk); }
 .bg-grey-xdk { background-color: var(--grey-xdk) !important; }
-.grey-xxdk { color: var(--grey-xxdk); }
+.grey-xxdk, a.grey-xxdk { color: var(--grey-xxdk); }
 .bg-grey-xxdk { background-color: var(--grey-xxdk) !important; }
 
 /* Vise farge for energiklasse pa eiendom objektsider */
