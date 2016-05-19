@@ -12,10 +12,13 @@
 @media (--small-screen) {
     .market-selector { margin-right: 2px; }
 }
-.market-icon use{
+.market-selector .market-icon use {
     color:#06befb;
 }
-a:hover .market-icon use,
-a:focus .market-icon use {
+.market-selector a:hover .market-icon use,
+.market-selector a:focus .market-icon use {
     color:#0063fb;
+}
+.market-selector .market-title {
+    margin-top:-8px;
 }
