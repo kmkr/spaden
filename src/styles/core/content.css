@@ -7,22 +7,6 @@
     margin-right: 0;
 }
 .hover-background a:hover { background-color: #F4F7FA; }
-/* Market hover */
-
-.market-selector {
-    border-left: 1px solid rgba(0,0,0,.05);
-    border-radius: 2px;
-    margin-right: 10px;
-}
-.market-selector a {
-    display: block;
-    height: auto;
-}
-.market-selector .mod { margin: 0 0 0 0 !important; }
-.market-selector .mod.shadow > .inner { border-left: 0; }
-@media (--small-screen) {
-    .market-selector { margin-right: 2px; }
-}
 
 .scroll-container {
     position: absolute;
