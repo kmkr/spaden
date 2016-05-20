@@ -37,7 +37,7 @@ gulp.task('minify-stylesheets', ['compile-stylesheets', 'replace-imgpaths'], fun
     return gulp.src(DIST_DIR + '/*.css')
         .pipe(plugins.sourcemaps.init())
         .pipe(plugins.rename({'extname': '.min.css'}))
-        .pipe(plugins.minifyCss({processImport: false, keepBreaks: false, compatibility: 'ie7'}))
+        .pipe(plugins.cleanCss({processImport: false, keepBreaks: false, compatibility: 'ie7'}))
         .pipe(plugins.sourcemaps.write('.'))
         .pipe(gulp.dest(DIST_DIR));
 });
