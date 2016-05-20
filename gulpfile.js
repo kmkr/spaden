@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var del = require('del');
 var plugins = require('gulp-load-plugins')();
-var postcssPlugins = require('./postcss.config.js');
+var postcssPlugins = require('spaden-postcss-config');
 
 var DIST_DIR = './dist/';
 
