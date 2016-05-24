@@ -92,31 +92,6 @@ h5, .h5, .t5 { font-weight: bold; }
 .d2, .microtext { font-size: 10px; }
 .largetext { font-size: 16px; }
 
-.debug-fonts h1::after, .debug-fonts .h1::after, .debug-fonts .t1::after {
-    content: '.t1(35px)';
-    color: var(--lilac);
-}
-.debug-fonts h2::after, .debug-fonts .h2::after, .debug-fonts .t2::after {
-    content: '.t2(25px)';
-    color: var(--lilac);
-}
-.debug-fonts h3::after, .debug-fonts .h3::after, .debug-fonts .t3::after {
-    content: '.t3(20px)';
-    color: var(--lilac);
-}
-.debug-fonts h4::after, .debug-fonts .h4::after, .debug-fonts .t4::after, .debug-fonts .largetext::after {
-    content: '.t4(16px)';
-    color: var(--lilac);
-}
-.debug-fonts .d1::after, .debug-fonts .smalltext::after {
-    content: '.d1(12px)';
-    color: var(--lilac);
-}
-.debug-fonts .d2::after, .debug-fonts .microtext::after {
-    content: '.d2(10px)';
-    color: var(--lilac);
-}
-
 @media (--small-screen) {
     body { font-size: 13px; }
     /* ====== Headings ====== */
@@ -129,13 +104,6 @@ h5, .h5, .t5 { font-weight: bold; }
     .d1, .smalltext { font-size: 10px; }
     .d2, .microtext { font-size: 9px; }
     .largetext { font-size: 14px; }
-
-    .debug-fonts h1::after, .debug-fonts .h1::after, .debug-fonts .t1::after { content: '.t1(25x)'; }
-    .debug-fonts h2::after, .debug-fonts .h2::after, .debug-fonts .t2::after { content: '.t2(20px)'; }
-    .debug-fonts h3::after, .debug-fonts .h3::after, .debug-fonts .t3::after { content: '.t3(16px)'; }
-    .debug-fonts h4::after, .debug-fonts .h4::after, .debug-fonts .t4::after, .debug-fonts .largetext::after { content: '.t4(14px)'; }
-    .debug-fonts .d1::after, .debug-fonts .smalltext::after { content: '.d1(10px)'; }
-    .debug-fonts .d2::after, .debug-fonts .microtext::after { content: '.d2(9px)'; }
 }
 
 .fixedfontsize.b1 { font-size: 14px; }
@@ -166,6 +134,8 @@ a:visited {
 }
 a:hover, a:focus, a:active { text-decoration: underline; }
 a.neutral { color: var(--dk-gray) !important; }
+
+/* ugly fix for invisible broadcast links? */
 a > .neutral:hover, a:hover > .neutral,
 a > .bright:hover, a:hover > .bright { text-decoration: underline; }
 /* navigational links, visited on */

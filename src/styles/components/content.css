@@ -1,13 +1,20 @@
 @import '../config/variables.css';
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Conatins Misc stuff to small to be its own components */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 /* Specific stuff */
 .video-container iframe { max-width: 100%; }
+
 /* Random spacing fix (jobb) */
 .object-description .r-margin p {
     margin-left: 0;
     margin-right: 0;
 }
+
 .hover-background a:hover { background-color: #F4F7FA; }
 
+/* mfinn result? */
 .scroll-container {
     position: absolute;
     top: 50px;
@@ -17,8 +24,15 @@
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
+@media (--small-screen) {
+    body,
+    .scroll-container {
+        padding-bottom: 30px; /* Avoid the issue of toolbars showing up when clicking too close to the bottom toolbar on iOS 7. */
+    }
+}
 
 .list-line:not(:last-child) { border-bottom: 1px solid var(--pale); }
+
 /* footer specific, default is collapsed for old phones, temporary fix? */
 .horizontal-list.default1col li { display: block; }
 @media not all and (--small-screen) {
@@ -27,6 +41,7 @@
     .verticalhr li:not(:last-child) { border-right: 1px solid var(--pale); }
 }
 
+/* slett? skrevet ut av mfinn
 
 @media not all and (--small-screen) {
     .fixedfilters .scrollbar::-webkit-scrollbar {
@@ -49,12 +64,8 @@
     }
 }
 
-@media (--small-screen) {
-    body,
-    .scroll-container {
-        padding-bottom: 30px; /* Avoid the issue of toolbars showing up when clicking too close to the bottom toolbar on iOS 7. */
-    }
-}
+*/
+
 
 .skiplink {
     /* This has opacity 0 instead of display: none to avoid layout when it's focused */

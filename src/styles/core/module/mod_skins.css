@@ -32,6 +32,7 @@
 }
 .mod.navblock.toolbar a { height: 60px; }
 .mod.navblock .inner:hover, .mod.navblock .inner:focus { background-color: #FAFAFB !important; }
+
 /* UserFriendly clickable blocks */
 a.mod.clickable:focus .inner,
 a.mod.clickable:hover .inner { background-color: #F4F7FA; }
