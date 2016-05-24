@@ -1,6 +1,44 @@
 @import '../../config/variables.css';
 
 @font-face {
+    font-family: 'finntype-regular';
+    src: url('//finncdn.no/bb/latest/fonts/finntype-regular.eot');
+    src: url('//finncdn.no/bb/latest/fonts/finntype-regular.eot?#iefix') format('embedded-opentype'),
+    url('//finncdn.no/bb/latest/fonts/finntype-regular.woff') format('woff'),
+    url('//finncdn.no/bb/latest/fonts/finntype-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'finntype-regular';
+    src: url('//finncdn.no/bb/latest/fonts/finntype-bold.eot');
+    src: url('//finncdn.no/bb/latest/fonts/finntype-bold.eot?#iefix') format('embedded-opentype'),
+    url('//finncdn.no/bb/latest/fonts/finntype-bold.woff') format('woff'),
+    url('//finncdn.no/bb/latest/fonts/finntype-bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'finntype';
+    src: url('//finncdn.no/bb/latest/fonts/finntype-light.eot');
+    src: url('//finncdn.no/bb/latest/fonts/finntype-light.eot?#iefix') format('embedded-opentype'),
+    url('//finncdn.no/bb/latest/fonts/finntype-light.woff') format('woff'),
+    url('//finncdn.no/bb/latest/fonts/finntype-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'finntype';
+    src: url('//finncdn.no/bb/latest/fonts/finntype-medium.eot');
+    src: url('//finncdn.no/bb/latest/fonts/finntype-medium.eot?#iefix') format('embedded-opentype'),
+    url('//finncdn.no/bb/latest/fonts/finntype-medium.woff') format('woff'),
+    url('//finncdn.no/bb/latest/fonts/finntype-medium.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
     font-family: finnmain;
     src: local('HelveticaNeue-Light');
     font-weight: normal;
@@ -15,6 +53,10 @@
 body {
     font: 14px/1.5 finnmain, Arial, Helvetica, sans-serif;
     color: var(--sharp);
+}
+
+body.finntype {
+    font: 14px/1.5 'finntype', Arial, Helvetica, sans-serif;
 }
 
 html {
