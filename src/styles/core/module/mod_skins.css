@@ -36,3 +36,18 @@
 /* UserFriendly clickable blocks */
 a.mod.clickable:focus .inner,
 a.mod.clickable:hover .inner { background-color: #F4F7FA; }
+
+
+/* Green mod skin (Broadcast etc) mod */
+.mod.green-skin .inner{
+  background-color: var(--green-xlt);
+  border:2px solid;
+  border-color:var(--green);
+  border-radius:2px;
+}
+@media not all and (--small-screen) {
+    .mod.green-skin > .inner {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

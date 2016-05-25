@@ -54,7 +54,7 @@
     --lemon-lt: #FDF1A8;
     --lemon-lt: var(--yellow-lt);
     --lemon-xlt: #FEF8E4;
-    --rust: #E78007; 
+    --rust: #E78007;
     --rust-lt: #FE8D08;
     --rust-xlt: #FEEFD2;
     --lime: #CAD522;
@@ -64,10 +64,10 @@
     --green-lt: #7BB02D;
     --green-xlt: #E4EFD4;
     --green-xlt: var(--green-lt);
-    
+
     /* New Identity 2016*/
     --blue: #06BEFB;
-    --blue-dk: #0063FB; 
+    --blue-dk: #0063FB;
     --blue-lt: #B6F0FF;
     --blue-xlt: #F1F9FF;
     --red: #FF5844;
@@ -77,6 +77,7 @@
     --yellow-lt: #FFF2B7;
     --green: #28CD94;
     --green-lt: #CCFFEC;
+    --green-xlt:#e6fef7;
     --green-dk: #028256;
     --navy: #0000B5;
     --blue-greyish: #E8EFF4;
