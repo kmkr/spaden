@@ -96,6 +96,7 @@
         list-style: square outside !important;
         position: static;
     }
+    .topmenu.fixed,
     .topbar.fixed { position: static; }
     /* Etc */
     .mod.shadow > .inner { box-shadow: none; }
