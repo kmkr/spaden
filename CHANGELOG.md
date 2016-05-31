@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.4.8] - 2016-05-31
+
+### Added
+
+* green skin for mods (Intended for new broadcast and misc messages to user)
+
 ## [4.4.3] - 2016-05-18
 
 ### Fixed
