@@ -41,7 +41,7 @@ dl.colspan4 { width: 650px; }
 .multicol.widelabels dt { width: 270px; }
 .multicol dd {
     width: auto;
-    *overflow: visible;
+    overflow: hidden;
     *zoom: 1;
     float: none;
     margin: 0 0 0 140px;
