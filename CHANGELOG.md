@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.4.9] - 2016-06-09
+
+### Fixed
+
+* Fixed dd last element of multi-column definition list sliding to other column in IE 
+
 ## [4.4.8] - 2016-05-31
 
 ### Added
