@@ -295,7 +295,9 @@ html { box-sizing: border-box; }
 .flex.wrap-reverse { flex-wrap: wrap-reverse; }
 
 .flex.row { flex-direction: row; }
+.flex.row-reverse { flex-direction: row-reverse; }
 .flex.column { flex-direction: column; }
+.flex.column-reverse { flex-direction: column-reverse; }
 
 .flex-grow1 { flex-grow: 1; }
 .flex-grow2 { flex-grow: 2; }
