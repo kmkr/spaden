@@ -2,6 +2,16 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [5.0.0] - 2016-06-16
+
+### Breaking changes
+
+* Removed all traces of icon-font
+* Removed old market icon Set
+* Removed old logo
+* Removed old sprites from m/innFinn (sprite_mFINN_14)
+* Removed all traces of iconSet20px
+
 ## [4.4.10] - 2016-06-09
 
 ### Fixed
