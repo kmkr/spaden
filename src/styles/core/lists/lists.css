@@ -51,6 +51,7 @@ dl.colspan4 { width: 650px; }
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
+    -webkit-column-break-after: always;
 }
 .multicol dd:after {
     display: block;
