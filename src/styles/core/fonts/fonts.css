@@ -1,25 +1,6 @@
 @import '../../config/variables.css';
 
 @font-face {
-    font-family: 'finntype-regular';
-    src: url('//finncdn.no/bb/latest/fonts/finntype2-regular.eot');
-    src: url('//finncdn.no/bb/latest/fonts/finntype2-regular.eot?#iefix') format('embedded-opentype'),
-    url('//finncdn.no/bb/latest/fonts/finntype2-regular.woff') format('woff'),
-    url('//finncdn.no/bb/latest/fonts/finntype2-regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'finntype-regular';
-    src: url('//finncdn.no/bb/latest/fonts/finntype2-bold.eot');
-    src: url('//finncdn.no/bb/latest/fonts/finntype2-bold.eot?#iefix') format('embedded-opentype'),
-    url('//finncdn.no/bb/latest/fonts/finntype2-bold.woff') format('woff'),
-    url('//finncdn.no/bb/latest/fonts/finntype2-bold.ttf') format('truetype');
-    font-weight: bold;
-}
-
-@font-face {
     font-family: 'finntype';
     src: url('//finncdn.no/bb/latest/fonts/finntype2-light.eot');
     src: url('//finncdn.no/bb/latest/fonts/finntype2-light.eot?#iefix') format('embedded-opentype'),
