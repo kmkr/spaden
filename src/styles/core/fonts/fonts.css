@@ -116,9 +116,6 @@ a:visited {
 a:hover, a:focus, a:active { text-decoration: underline; }
 a.neutral { color: var(--dk-gray) !important; }
 
-/* ugly fix for invisible broadcast links? */
-a > .neutral:hover, a:hover > .neutral,
-a > .bright:hover, a:hover > .bright { text-decoration: underline; }
 /* navigational links, visited on */
 a.userhistory:visited, .userhistory a:visited { color: var(--neutral); }
 a.userhistory:visited:hover, .userhistory a:visited:hover { }
