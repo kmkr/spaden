@@ -1,5 +1,6 @@
 .breadcrumbs li {
     display: inline-block;
+    white-space: nowrap;
     *display: inline;
     *zoom: 1;
 }
