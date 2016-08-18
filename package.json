@@ -19,18 +19,18 @@
   "devDependencies": {
     "colors": "^1.1.0",
     "css-color-converter": "^1.0.2",
-    "del": "^1.1.1",
+    "del": "^2.2.2",
     "filewalker": "^0.1.2",
     "gulp": "^3.6.2",
-    "gulp-bump": "^0.3.1",
+    "gulp-bump": "^2.4.0",
     "gulp-clean-css": "^2.0.7",
     "gulp-concat": "^2.2.0",
     "gulp-filesize": "0.0.6",
-    "gulp-filter": "^2.0.2",
+    "gulp-filter": "^4.0.0",
     "gulp-git": "^1.2.4",
     "gulp-gzip": "^1.1.0",
-    "gulp-inject-string": "0.0.2",
-    "gulp-load-plugins": "^0.10.0",
+    "gulp-inject-string": "^1.1.0",
+    "gulp-load-plugins": "^1.2.4",
     "gulp-postcss": "^6.0.1",
     "gulp-rename": "^1.2.0",
     "gulp-replace": "^0.5.3",
@@ -49,7 +49,7 @@
     "Espen Dalløkken <leftieFriele>",
     "Sveinung Røsaker <sveisvei>",
     "Gregers Rygg <gregers@finn.no>",
-    "Tor Arne Kvaløy <tor.arne.kvaloy@finn.no"
+    "Tor Arne Kvaløy <tor.arne.kvaloy@finn.no>"
   ],
   "repository": {
     "type": "git",
