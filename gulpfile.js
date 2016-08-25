@@ -2,8 +2,13 @@ var gulp = require('gulp');
 var del = require('del');
 var plugins = require('gulp-load-plugins')();
 var postcssPlugins = require('spaden-postcss-config');
+var pack = require('./package');
 
 var DIST_DIR = './dist/';
+
+function addVersionHeader() {
+    return plugins.injectString.prepend('/* ' + pack.version + ' - ' + new Date() + ' */\n');
+}
 
 gulp.task('copy-images', ['clean'], function() {
     return gulp.src(['./src/img/**'], { base: 'src/'})
@@ -29,6 +34,7 @@ gulp.task('compile-stylesheets', ['copy-images'], function() {
     return gulp.src('src/styles/*.css')
         .pipe(plugins.sourcemaps.init())
         .pipe(plugins.postcss(postcssPlugins({})))
+        .pipe(addVersionHeader())
         .pipe(plugins.sourcemaps.write('.'))
         .pipe(gulp.dest(DIST_DIR));
 });
@@ -38,6 +44,7 @@ gulp.task('minify-stylesheets', ['compile-stylesheets', 'replace-imgpaths'], fun
         .pipe(plugins.sourcemaps.init())
         .pipe(plugins.rename({'extname': '.min.css'}))
         .pipe(plugins.cleanCss({processImport: false, keepBreaks: false, compatibility: 'ie7'}))
+        .pipe(addVersionHeader())
         .pipe(plugins.sourcemaps.write('.'))
         .pipe(gulp.dest(DIST_DIR));
 });
