@@ -330,6 +330,7 @@ label.button.utility:focus { box-shadow: initial; }
 @-webkit-keyframes animate-inprogress { 0% { background-position: 0 0; } 100% { background-position: 60px 0; } }
 @-o-keyframes animate-inprogress { 0% { background-position: 0 0; } 100% { background-position: 60px 0; } }
 @keyframes animate-inprogress { 0% { background-position: 0 0; } 100% { background-position: 60px 0; } }
+
 /* Input responsive */
 @media not all and (--small-screen) {
   input:not([type]),
@@ -365,9 +366,11 @@ label, legend {
     color: var(--opaque);
     margin: 5px 0;
 }
+
 label:hover { color: var(--sharp); }
 label.button:hover { color: var(--blue-dk); }
 label.button.primary:hover { color: var(--bright); }
+
 legend { margin: 10px 20px; }
 .formelement legend { margin: 10px 0; }
 .inputs-list { margin: 0 inherit; }
@@ -380,61 +383,6 @@ legend { margin: 10px 20px; }
     list-style: none outside none;
 }
 
-.formelement, .actions { margin: 10px 20px; }
-/* Layout */
-.formelement, .actions {
-    margin: 10px;
-    zoom: 1;
-}
-.formelement:before,
-.formelement:after {
-    display: table;
-    content: '';
-    zoom: 1;
-}
-.help-block, .help-inline {
-    display: block;
-    margin: 8px 0 14px;
-}
-@media (width >= 640px) {
-    .hform640 .formelement, .hform640 .actions { margin: 10px 0px; }
-}
-
-@media not all and (--small-screen) {
-    .formelement, .actions { margin: 10px 20px; }
-}
-
-@media (width >= 640px) {
-    /*
-    .hform640 fieldset { padding-top: 18px; }
-    .hform640 fieldset legend {
-        margin: 0;
-        padding-left: 25%;
-        margin-right: 25%;
-        width: 50%;
-    }
-    */
-    .hform640 .input { padding: 0 25%; }
-    .hform640 .formelement { margin: 0 0 15px 0; }
-    .hform640 .help-block {
-        margin-right: -10px;
-        max-width: none;
-    }
-    .hform640 .formelement > label,
-    .hform640 .formelement > details label,
-    .hform640 .formelement > legend {
-        float: left;
-        width: 25%;
-        text-align: right;
-        padding-right: 20px;
-    }
-    .hform640 .inputs-list label { text-align: left; }
-    .hform640 .collapselist label {
-        text-align: left;
-        width: auto;
-    }
-    .hform640 .actions { padding-left: 25%; }
-}
 
 input.fullwidth,
 button.fullwidth,
@@ -591,37 +539,7 @@ select.blank {
     cursor: pointer;
 }
 .file-input-button ::-webkit-file-upload-button { cursor: pointer; }
-/* Hidden, expandable inputs */
-.formelement details summary { line-height: 1.5em; }
-.formelement details summary:before {
-    content: '+ ';
-    display: block;
-    float: left;
-    width: .8em;
-    line-height: .95em;
-    font-size: 1.6em;
-    font-family: Arial, sans-serif;
-}
-.formelement details summary::-webkit-details-marker { display: none; }
-/* Hidden, expandable inputs - slightly more accessible version */
-.expandlabel { line-height: 1.5em; }
-.expandfields {
-    opacity: 0;
-    float: right;
-}
-.expandfields:focus + .expandlabel { text-decoration: underline; }
-.expandlabel:before {
-    content: '+ ';
-    display: block;
-    float: left;
-    width: .8em;
-    line-height: .95em;
-    font-size: 1.6em;
-    font-family: Arial, sans-serif;
-}
-.expandfields ~ .formelement { display: none; }
-.expandfields:checked ~ .formelement { display: block; }
-.expandfields:checked ~ .expandlabel { display: none; }
+
 /* Fancy selects */
 .fancyselect, .fancyinput { position: relative; }
 .fancyselect select {
@@ -746,3 +664,90 @@ select.blank {
         padding-bottom: 3px;
     }
 }
+
+
+
+/* Layout */
+
+.formelement, .actions { margin: 10px 20px; }
+
+.formelement, .actions {
+    margin: 10px;
+    zoom: 1;
+}
+
+.formelement:before,
+.formelement:after {
+    display: table;
+    content: '';
+    zoom: 1;
+}
+.help-block, .help-inline {
+    display: block;
+    margin: 8px 0 14px;
+}
+@media (width >= 640px) {
+    .hform640 .formelement, .hform640 .actions { margin: 10px 0px; }
+}
+
+@media not all and (--small-screen) {
+    .formelement, .actions { margin: 10px 20px; }
+}
+
+@media (width >= 640px) {
+
+    .hform640 .input { padding: 0 25%; }
+    .hform640 .formelement { margin: 0 0 15px 0; }
+    .hform640 .help-block {
+        margin-right: -10px;
+        max-width: none;
+    }
+    .hform640 .formelement > label,
+    .hform640 .formelement > details label,
+    .hform640 .formelement > legend {
+        float: left;
+        width: 25%;
+        text-align: right;
+        padding-right: 20px;
+    }
+    .hform640 .inputs-list label { text-align: left; }
+    .hform640 .collapselist label {
+        text-align: left;
+        width: auto;
+    }
+    .hform640 .actions { padding-left: 25%; }
+}
+
+/* Hidden, expandable inputs */
+.formelement details summary { line-height: 1.5em; }
+.formelement details summary:before {
+    content: '+ ';
+    display: block;
+    float: left;
+    width: .8em;
+    line-height: .95em;
+    font-size: 1.6em;
+    font-family: Arial, sans-serif;
+}
+.formelement details summary::-webkit-details-marker { display: none; }
+
+
+/* Hidden, expandable inputs - slightly more accessible version */
+.expandlabel { line-height: 1.5em; }
+.expandfields {
+    opacity: 0;
+    float: right;
+}
+.expandfields:focus + .expandlabel { text-decoration: underline; }
+.expandlabel:before {
+    content: '+ ';
+    display: block;
+    float: left;
+    width: .8em;
+    line-height: .95em;
+    font-size: 1.6em;
+    font-family: Arial, sans-serif;
+}
+.expandfields ~ .formelement { display: none; }
+.expandfields:checked ~ .formelement { display: block; }
+.expandfields:checked ~ .expandlabel { display: none; }
