@@ -1,0 +1,23 @@
+@import '../../config/variables.css';
+
+/* Green mark for new functionality */
+/* depends on: variables.css */
+
+.omgnew{
+  display:inline-block;
+}
+.omgnew:after{
+  content:"Ny";
+  background: var(--green-xlt); 
+  border: 2px solid var(--green); 
+  border-radius: 50%; 
+  height: 27px; 
+  width: 27px; 
+  display: inline-block; 
+  font-size: 12px;
+  font-weight:bold;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 23px;
+  margin-left:10px;
+}

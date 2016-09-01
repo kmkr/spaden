@@ -2,7 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [5.1.0] - 2016-06-16
+## [5.2.0] - 2016-09-01
+
+### Added
+
+* Omgnew: green circular thing to show off awsome new stuff
+
+## [5.1.0] - 2016-08-25
 
 ### Added
 
