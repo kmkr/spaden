@@ -108,11 +108,16 @@ html, body {
     color: 4CB7FF;
 }
 
+.lm-wrapper{
+    margin-top:-1px;
+}
+
 @media (max-width: 1249px) {}
 
 @media (min-width: 1250px) {
     .lm-wrapper {
         padding-left: 250px;
+
     }
     .lm-button {
         display: none
@@ -123,6 +128,11 @@ html, body {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *           Overstyringer for hvit bakgrunn           *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.topmenu{
+    background-color: rgba(255,255,255,0.9);
+    border-bottom: 1px solid #f4f4f4;
+}
 
 .outlines.container {
     outline: 1px solid blue;

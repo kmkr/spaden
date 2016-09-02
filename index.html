@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="noindex">
-    <link rel="canonical" href="http://codepen.io/Skadefryd/pen/KrmQmr">
     <link rel="stylesheet prefetch" href="./dist/spaden.min.css">
     <link rel="stylesheet prefetch" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
 </head>
 <body>
 
 <div class="outlines">
 <div id="leftmenu" class="leftmenu brt fixed bg-blue-xlt">
-  <div class="navbar bbt">
-
+  <div class="navbar bbt mtm">
+      v5.2.1
   </div>
   <nav class="mtm">
     <dl>
@@ -20,8 +21,21 @@
         <hr />
         <dt>Layout</dt>
         <dd class="dark-links">
-            <a href="#core-template">Template</a>
-            <a href="#core-grid">Grid</a>
+                <a href="#core-template">Template</a>
+                <a href="#core-grid">Grid</a>
+                <a href="#core-mod">Module</a>
+                <a href="#core-media">Media</a>
+                <a href="#core-spacing">Spacing</a>
+                <a href="#core-flex">Flex</a>
+        </dd>
+        <dt>Layout</dt>
+        <dd class="dark-links">
+                <a href="#core-color">Color</a>
+                <a href="#core-font">Font/Text</a>
+                <a href="#core-form">Form</a>
+                <a href="#core-image">Image</a>
+                <a href="#core-list">List</a>
+                <a href="#core-table">Table</a>
         </dd>
     </dl>
   </nav>
@@ -55,34 +69,36 @@
                 <hr />
                 <h2>Layout</h2>
                     <a id="core-template"></a>
+                    <h3>Template</h3>
+                        <h4><a href="#core-template-docs.hbs" id="core-template-docs.hbs">#</a>docs.hbs</h4>
                         
 <div class="mod">
   <div class="inner">
     <div class="bd">
         <p>Most pages on finn.no runs on the same <code>.container</code> > <code>.page</code> structure, these give the current widths to fit within the banners, and also the correct margins and responsive behaviour.</p>
-      <details>
-          <summary class="r-margin clickable h3 normal">Basic template</summary>
-<pre class="linenums prettyprint">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;no&quot; prefix=&quot;og: http://ogp.me/ns#&quot;&gt;
+        <details>
+            <summary class="r-margin clickable h3 normal">Basic template</summary>
+            <pre class="linenums prettyprint"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang&#x3D;&quot;no&quot; prefix&#x3D;&quot;og: http://ogp.me/ns#&quot;&gt;
     &lt;head&gt;
-        &lt;meta charset=&quot;utf-8&quot;&gt;
-        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge&quot;&gt;
+        &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;
+        &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1&quot;&gt;
+        &lt;meta http-equiv&#x3D;&quot;X-UA-Compatible&quot; content&#x3D;&quot;IE&#x3D;Edge&quot;&gt;
         &lt;title&gt;FINN&lt;/title&gt;
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;//static.finncdn.no/bb/latest/css/spaden/5.x/spaden.min.css&quot;&gt;
+        &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;//static.finncdn.no/bb/latest/css/spaden/5.x/spaden.min.css&quot;&gt;
         &lt;!--[if IE 9]&gt;
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/ie9.e7628c1e.css&quot;&gt;
+        &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;/static/ie9.e7628c1e.css&quot;&gt;
         &lt;![endif]--&gt;
     &lt;/head&gt;
     &lt;body&gt;
-        &lt;div class=&quot;container&quot;&gt;
-            &lt;div class=&quot;page&quot;&gt;
+        &lt;div class&#x3D;&quot;container&quot;&gt;
+            &lt;div class&#x3D;&quot;page&quot;&gt;
                 &lt;!-- page content --&gt;
-                &lt;div class=&quot;line&quot;&gt;
-                    &lt;div class=&quot;unit r-size2of3&quot;&gt;
+                &lt;div class&#x3D;&quot;line&quot;&gt;
+                    &lt;div class&#x3D;&quot;unit r-size2of3&quot;&gt;
                         ...
                     &lt;/div&gt;
-                    &lt;div class=&quot;unit r-size1of3&quot;&gt;
+                    &lt;div class&#x3D;&quot;unit r-size1of3&quot;&gt;
                         ...
                     &lt;/div&gt;
                 &lt;/div&gt;
@@ -90,10 +106,10 @@
         &lt;/div&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-</pre>
-</details>
+</code></pre>
+        </details>
 
-<p>You can start with this basic HTML template.</p>
+        <p>You can start with this basic HTML template.</p>
 
 
 
@@ -102,7 +118,385 @@
   </div>
 </div>
 
+
                     <a id="core-grid"></a>
+                    <h3>Grid</h3>
+                        <h4><a href="#core-grid-flex.mustache" id="core-grid-flex.mustache">#</a>flex.mustache</h4>
+                        <div class="line">
+    <div class="mod shadow">
+        <div class="inner">
+            <div class="bd">
+                <details>
+                    <summary class="r-margin clickable h3 normal">flex</summary>
+<pre class="linenums prettyprint">
+&lt;div class="flex"&gt;
+    ...
+&lt;/div&gt;</pre>
+<pre class="linenums prettyprint">
+&lt;div class=&quot;line flex wrap cols2upto480 cols4upto768 cols6upto990 cols8from990&quot;&gt;
+    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
+    ...
+&lt;/div&gt;</pre>
+                </details>
+                <p>Set on container holding the elements you want to flex. Turns on std. css flex (including flex default behaviour)</p>
+                <p><a href="/examples/example-grid-flex/view">With grid examples</a> Works very well with the std line > unit grid system. </p>
+                <p><a href="/examples/example-flex-toolbar/view">Toolbar examples</a> Also works well to make typical vertical centered toolbar-like thingies. </p>
+                <hr>
+                <details>
+                    <summary class="r-margin clickable h3 normal">inline-flex</summary>
+<pre class="linenums prettyprint">
+&lt;div class="inline-flex"&gt;
+    ...
+&lt;/div&gt;</pre>
+                </details>
+                <p>Works like <code>.flex</code> except the container itself behaves like an inline element. The flex-elements </p>
+                <hr>
+                <details>
+                    <summary class="r-margin clickable h3 normal">align-items</summary>
+<pre class="linenums prettyprint">
+&lt;div class=&quot;flex align-items-center&quot;&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+&lt;/div&gt;</pre>
+                </details>
+  <p>Extends <code>.Flex</code>.</p>
+    <div class="line r-cols2to3">
+        <div class="unit">
+            <h5><code>.align-items-start</code></h5>
+            <div class="r-margin relative flex align-items-start bg-pale" style="height:100px;width:190px">
+                <div class="bg-blue-lt" style="height:50px;width:40px;margin-right:10px"></div>
+                <div class="bg-blue-lt" style="height:60px;width:40px;margin-right:10px"></div>
+                <div class="bg-blue-lt" style="height:40px;width:40px;margin-right:10px"></div>
+                <div class="bg-blue-lt" style="height:80px;width:40px;"></div>
+            </div>
+        </div>
+        <div class="unit">
+            <h5><code>.align-items-end</code></h5>
+            <div class="r-margin relative flex align-items-end bg-pale" style="height:100px;width:190px">
+                <div class="bg-blue-lt" style="height:50px;width:40px;margin-right:10px"></div>
+                <div class="bg-blue-lt" style="height:60px;width:40px;margin-right:10px"></div>
+                <div class="bg-blue-lt" style="height:40px;width:40px;margin-right:10px"></div>
+                <div class="bg-blue-lt" style="height:80px;width:40px;"></div>
+            </div>
+        </div>
+        <div class="unit">
+            <h5><code>.align-items-center</code></h5>
+            <div class="r-margin relative flex align-items-center bg-pale" style="height:100px;width:190px">
+                <div class="bg-blue-lt" style="height:50px;width:40px;margin-right:10px"></div>
+                <div class="bg-blue-lt" style="height:60px;width:40px;margin-right:10px"></div>
+                <div class="bg-blue-lt" style="height:40px;width:40px;margin-right:10px"></div>
+                <div class="bg-blue-lt" style="height:80px;width:40px;"></div>
+            </div>
+        </div>
+                <div class="unit">
+            <h5><code>.align-items-baseline</code></h5>
+            <div class="r-margin relative flex align-items-baseline bg-pale" style="height:100px;width:190px">
+                <div class="bg-blue-lt" style="height:50px;width:40px;margin-right:10px"><h1 class="mam">A</h1></div>
+                <div class="bg-blue-lt" style="height:60px;width:40px;margin-right:10px"><h4 class="mam">B</h4></div>
+                <div class="bg-blue-lt" style="height:40px;width:40px;margin-right:10px"><h2 class="mam">C</h2></div>
+                <div class="bg-blue-lt" style="height:80px;width:40px;"><h3 class="mam">D</h3></div>
+            </div>
+        </div>
+                <div class="unit">
+            <h5><code>.align-items-stretch</code> (Default)</h5>
+            <div class="r-margin relative flex align-items-stretch bg-pale" style="height:100px;width:190px">
+                <div class="bg-blue-lt" style="width:40px;margin-right:10px"></div>
+                <div class="bg-blue-lt" style="width:40px;margin-right:10px"></div>
+                <div class="bg-blue-lt" style="width:40px;margin-right:10px"></div>
+                <div class="bg-blue-lt" style="width:40px;"></div>
+            </div>
+        </div>
+    </div>
+
+          <hr>
+                <details>
+                    <summary class="r-margin clickable h3 normal">wrap</summary>
+<pre class="linenums prettyprint">
+&lt;div class=&quot;flex wrap&quot;&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+&lt;/div&gt;</pre>
+                </details>
+  <p>Extends <code>.Flex</code>.</p>
+  <p>Flex will by default try to fit all flexelements on a single line.</p>
+  <p class="red">! Does not work in certain browsers, including firefox before v.28, use with care, make sure you have a working fallback. </p>
+    <div class="line r-cols2to3">
+        <div class="unit">
+            <h5><code>.wrap</code></h5>
+            <div class="r-margin relative flex wrap bg-pale" style="height:100px;width:190px">
+                <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                <div class="bg-blue-lt mrm  phl pvm">D</div>
+                <div class="bg-blue-lt mrm  phl pvm">E</div>
+            </div>
+        </div>
+        <div class="unit">
+            <h5><code>.nowrap</code> (Default)</h5>
+            <div class="r-margin relative flex nowrap bg-pale" style="height:100px;width:190px">
+                <div class="bg-blue-lt mrm  phl pvm">A</div>
+                <div class="bg-blue-lt mrm  phl pvm">B</div>
+                <div class="bg-blue-lt mrm  phl pvm">C</div>
+                <div class="bg-blue-lt mrm  phl pvm">D</div>
+                <div class="bg-blue-lt mrm  phl pvm">E</div>
+            </div>
+        </div>
+
+        <div class="unit">
+            <h5><code>.wrap-reverse</code></h5>
+            <div class="r-margin relative flex wrap-reverse bg-pale" style="height:100px;width:190px">
+                <div class="bg-blue-lt mrm  phl pvm">A</div>
+                <div class="bg-blue-lt mrm  phl pvm">B</div>
+                <div class="bg-blue-lt mrm  phl pvm">C</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">E</div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+ <hr>
+                <details>
+                    <summary class="r-margin clickable h3 normal">row/column</summary>
+<pre class="linenums prettyprint">
+&lt;div class=&quot;flex column&quot;&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+&lt;/div&gt;</pre>
+                </details>
+  <p>Extends <code>.Flex</code>.</p>
+  <p>Establishes a flex main-axis</p>
+
+    <div class="line r-cols2to3">
+        <div class="unit">
+            <h5><code>.row</code> (Default)</h5>
+            <div class="r-margin relative flex row bg-pale" style="height:100px;width:190px">
+                <div class="bg-blue-lt mrm  phl pvm">A</div>
+                <div class="bg-blue-lt mrm  phl pvm">B</div>
+                <div class="bg-blue-lt mrm  phl pvm">C</div>
+            </div>
+        </div>
+        <div class="unit">
+            <h5><code>.column</code></h5>
+            <div class="r-margin relative flex column bg-pale" style=";width:190px">
+                <div class="bg-blue-lt  mbm phl pvm">A</div>
+                <div class="bg-blue-lt  mbm phl pvm">B</div>
+                <div class="bg-blue-lt   phl pvm">C</div>
+            </div>
+        </div>
+    </div>
+
+ <hr>
+
+                <details>
+                    <summary class="r-margin clickable h3 normal">justify-content</summary>
+<pre class="linenums prettyprint">
+&lt;div class=&quot;flex justify-content-space-between&quot;&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+&lt;/div&gt;</pre>
+                </details>
+  <p>Extends <code>.Flex</code>.</p>
+  <p>Sets how 'free' space is distributed along the flex main-axis</p>
+
+    <div class="line r-cols2to3">
+        <div class="unit">
+            <h5><code>.justify-start</code> (Default)</h5>
+            <div class="r-margin relative flex justify-start bg-pale" style="height:100px;width:290px">
+                <div class="bg-blue-lt mrm  phl pvm">A</div>
+                <div class="bg-blue-lt mrm  phl pvm">B</div>
+                <div class="bg-blue-lt mrm  phl pvm">C</div>
+            </div>
+        </div>
+        <div class="unit">
+            <h5><code>.justify-end</code></h5>
+            <div class="r-margin relative flex justify-end bg-pale" style="height:100px;width:290px">
+                <div class="bg-blue-lt mrm  phl pvm">A</div>
+                <div class="bg-blue-lt mrm  phl pvm">B</div>
+                <div class="bg-blue-lt phl pvm">C</div>
+            </div>
+        </div>
+                <div class="unit">
+            <h5><code>.justify-center</code></h5>
+            <div class="r-margin relative flex justify-center bg-pale" style="height:100px;width:290px">
+                <div class="bg-blue-lt mrm  phl pvm">A</div>
+                <div class="bg-blue-lt mrm  phl pvm">B</div>
+                <div class="bg-blue-lt mrm  phl pvm">C</div>
+            </div>
+        </div>
+                <div class="unit">
+            <h5><code>.justify-space-between</code></h5>
+            <div class="r-margin relative flex justify-space-between bg-pale" style="height:100px;width:290px">
+                <div class="bg-blue-lt   phl pvm">A</div>
+                <div class="bg-blue-lt   phl pvm">B</div>
+                <div class="bg-blue-lt   phl pvm">C</div>
+            </div>
+        </div>
+                <div class="unit">
+            <h5><code>.justify-space-around</code></h5>
+            <div class="r-margin relative flex justify-space-around bg-pale" style="height:100px;width:290px">
+                <div class="bg-blue-lt   phl pvm">A</div>
+                <div class="bg-blue-lt   phl pvm">B</div>
+                <div class="bg-blue-lt   phl pvm">C</div>
+            </div>
+        </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+                <details>
+                    <summary class="r-margin clickable h3 normal">align-content</summary>
+<pre class="linenums prettyprint">
+&lt;div class=&quot;flex align-content-stretch&quot;&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+&lt;/div&gt;</pre>
+                </details>
+  <p>Extends <code>.Flex</code>.</p>
+  <p>Sets how 'free' space is distributed along the flex cross-axis (behaves Like justify-content but the coss direction from the specified flex-direction )</p>
+
+    <div class="line r-cols2to3">
+        <div class="unit">
+            <h5><code>.align-content-start</code> (Default)</h5>
+            <div class="r-margin relative flex wrap align-content-start bg-pale" style="height:150px;width:290px">
+                <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">E</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">F</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">G</div>
+            </div>
+        </div>
+        <div class="unit">
+            <h5><code>.align-content-end</code></h5>
+            <div class="r-margin relative flex wrap align-content-end bg-pale" style="height:150px;width:290px">
+                <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                <div class="bg-blue-lt mrm phl pvm">E</div>
+                <div class="bg-blue-lt mrm phl pvm">F</div>
+                <div class="bg-blue-lt mrm phl pvm">G</div>
+            </div>
+        </div>
+                <div class="unit">
+            <h5><code>.align-content-center</code></h5>
+            <div class="r-margin relative flex wrap align-content-center bg-pale" style="height:150px;width:290px">
+                <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                <div class="bg-blue-lt mrm  phl pvm">E</div>
+                <div class="bg-blue-lt mrm  phl pvm">F</div>
+                <div class="bg-blue-lt mrm  phl pvm">G</div>
+            </div>
+        </div>
+                <div class="unit">
+           <h5><code>.align-content-space-between</code></h5>
+            <div class="r-margin relative flex wrap align-content-space-between bg-pale" style="height:150px;width:290px">
+                <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                <div class="bg-blue-lt mrm  phl pvm">E</div>
+                <div class="bg-blue-lt mrm  phl pvm">F</div>
+                <div class="bg-blue-lt mrm  phl pvm">G</div>
+            </div>
+        </div>
+        <div class="unit">
+           <h5><code>.align-content-space-around</code></h5>
+            <div class="r-margin relative flex wrap align-content-space-around bg-pale" style="height:150px;width:290px">
+                <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                <div class="bg-blue-lt mrm  phl pvm">E</div>
+                <div class="bg-blue-lt mrm  phl pvm">F</div>
+                <div class="bg-blue-lt mrm  phl pvm">G</div>
+            </div>
+        </div>
+                <div class="unit">
+                   <h5><code>.align-content-stretch</code></h5>
+                    <div class="r-margin relative flex wrap align-content-stretch bg-pale" style="height:150px;width:290px">
+                        <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                        <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                        <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                        <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                        <div class="bg-blue-lt mrm  phl pvm">E</div>
+                        <div class="bg-blue-lt mrm  phl pvm">F</div>
+                        <div class="bg-blue-lt mrm  phl pvm">G</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <hr class="man pan">
+        <div class="inner bg-lemon-xlt">
+            <div class="bd">
+                <h3>Flex: Properties that may be set directly on specific flex-items</h3>
+                <hr>
+                            <details>
+                    <summary class="r-margin clickable h3 normal">flex-grow[n]</summary>
+<pre class="linenums prettyprint">&lt;div class=&quot;flex align-items-center&quot;&gt;
+    &lt;div class=&quot;flex-grow1&quot;&gt; ... &lt;/div&gt;
+    &lt;div class=&quot;flex-grow2&quot;&gt; ... &lt;/div&gt;
+    &lt;div class=&quot;flex-grow1&quot;&gt; ... &lt;/div&gt;
+&lt;/div&gt;</pre>
+                </details>
+  <p>Defines the flex-item's ability to grow, Sets how 'free' space is distributed along the flex cross-axis (behaves Like justify-content but the coss direction from the specified flex-direction )</p>
+  <p>Supported values: 1 - 10 (Default:0)</p>
+
+  <hr>
+                            <details>
+                    <summary class="r-margin clickable h3 normal">flex-no-shrink</summary>
+<pre class="linenums prettyprint">&lt;div class=&quot;flex align-items-center&quot;&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div&gt; ... &lt;/div&gt;
+    &lt;div class=&quot;flex-no-shrink&quot;&gt; ... &lt;/div&gt;
+&lt;/div&gt;</pre>
+                </details>
+  <p>This defines the ability for a flex item to shrink if necessary.</p>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                        <h4><a href="#core-grid-docs.hbs" id="core-grid-docs.hbs">#</a>docs.hbs</h4>
                         <!-- grid -->
 <div class="line">
 <div class="mod shadow">
@@ -110,44 +504,38 @@
 <div class="bd">
 
     <h2>Grid system for all FINN pages</h2>
-<!--                            <pre class="prettyprint linenums">
-&lt;div class=&quot;line&quot;&gt;
-    &lt;div class=&quot;unit r-size1of3&quot;&gt;....&lt;/div&gt;
-    &lt;div class=&quot;unit r-size2of3&quot;&gt;....&lt;/div&gt;
-&lt;/div&gt;
-</pre>-->
 
 <hr>
 <details>
     <summary class="r-margin clickable h3 normal">line</summary>
-                                                                <pre class="linenums prettyprint">
-&lt;div class="line"&gt;
+       <pre class="linenums prettyprint html">&lt;div class&#x3D;&quot;line&quot;&gt;
     ...
-&lt;/div&gt;</pre>
+&lt;/div&gt;
+</pre>
 </details>
 <p>Groups units on one horizontal line. Note: for mobile layout units may be stacked to avoid horizontal scrolling.</p>
 <hr>
 
 <details>
     <summary class="r-margin clickable h3 normal">unit</summary>
-                                                                <pre class="linenums prettyprint">
-&lt;div class="line"&gt;
-    &lt;div class="unit"&gt;
+    <pre class="linenums prettyprint"><code>&lt;div class&#x3D;&quot;line&quot;&gt;
+    &lt;div class&#x3D;&quot;unit&quot;&gt;
         ...
     &lt;/div&gt;
-&lt;/div&gt;</pre>
+&lt;/div&gt;
+</code></pre>
 </details>
 <p>Base class which divides a line into sections (columns).</p>
 <hr>
 
 <details>
     <summary class="r-margin clickable h3 normal">r-sizeXofY</summary>
-<pre class="linenums prettyprint">
-&lt;div class="line"&gt;
-    &lt;div class="unit r-sizeXofY"&gt;
+<pre class="linenums prettyprint"><code>&lt;div class&#x3D;&quot;line&quot;&gt;
+    &lt;div class&#x3D;&quot;unit r-sizeXofY&quot;&gt;
         ...
     &lt;/div&gt;
-&lt;/div&gt;</pre>
+&lt;/div&gt;
+</code></pre>
 </details>
 <p>Extends <code>unit</code>. Indicates the number of grid units this element spans, for example <code>r-size2of3</code>
     would take up 2 of 3 columns. Collapses to 1 column at 768px.</p>
@@ -157,12 +545,12 @@
 
 <details>
     <summary class="r-margin clickable h3 normal">sizeXofY</summary>
-<pre class="linenums prettyprint">
-&lt;div class="line"&gt;
-    &lt;div class="unit sizeXofY"&gt;
+<pre class="linenums prettyprint"><code>&lt;div class&#x3D;&quot;line&quot;&gt;
+    &lt;div class&#x3D;&quot;unit sizeXofY&quot;&gt;
         ...
     &lt;/div&gt;
-&lt;/div&gt;</pre>
+&lt;/div&gt;
+</code></pre>
 
     <p>Supported fractions:</p>
     <ul class="bullets pll">
@@ -189,25 +577,30 @@
 
 <details>
     <summary class="r-margin clickable h3 normal">r-colsXtoY</summary>
-<pre class="linenums prettyprint">
-&lt;div class="line r-colsXtoY"&gt;
-    &lt;div class="unit"&gt;
+<pre class="linenums prettyprint"><code>&lt;div class&#x3D;&quot;line&quot;&gt;
+    &lt;div class&#x3D;&quot;unit sizeXofY&quot;&gt;
         ...
     &lt;/div&gt;
-&lt;/div&gt;</pre>
+&lt;/div&gt;
+</code></pre>
 
-<pre class="linenums prettyprint">
+<pre class="linenums prettyprint"><code>&lt;div class&#x3D;&quot;line r-colsXtoY&quot;&gt;
+    &lt;div class&#x3D;&quot;unit&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
 &lt;form&gt;
-  &lt;div class="line <span class="positive">r-cols1to2</span>"&gt;
-    &lt;div class="unit formelement man"&gt;
+  &lt;div class&#x3D;&quot;line r-cols1to2&quot;&gt;
+    &lt;div class&#x3D;&quot;unit formelement man&quot;&gt;
       &lt;label&gt;
-        &lt;input type="checkbox"&gt;
+        &lt;input type&#x3D;&quot;checkbox&quot;&gt;
         &lt;span&gt;Akershus&lt;/span&gt;
       &lt;/label&gt;
     &lt;/div&gt;
     &lt;!-- etc --&gt;
   &lt;/div&gt;
-&lt;form&gt;</pre>
+&lt;form&gt;
+</code></pre>
 
     <p>
         <code>
@@ -353,18 +746,19 @@
 <details>
     <summary class="r-margin clickable h3 normal">colsXupto[Breakpoint]</summary>
 
-<pre class="linenums prettyprint">&lt;div class=&quot;line cols2upto480 cols4upto768 cols6upto990 cols8from990&quot;&gt;
-    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
-    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
-    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
-    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
-    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
-    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
-    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
-    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
-    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
-    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
-&lt;/div&gt;</pre>
+<pre class="linenums prettyprint"><code>&lt;div class&#x3D;&quot;line cols2upto480 cols4upto768 cols6upto990 cols8from990&quot;&gt;
+    &lt;div class&#x3D;&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class&#x3D;&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class&#x3D;&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class&#x3D;&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class&#x3D;&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class&#x3D;&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class&#x3D;&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class&#x3D;&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class&#x3D;&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class&#x3D;&quot;unit&quot;&gt; ... &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
        <p>Supported column count: 1 - 8</p>
           <p>Supported breakpoints:</p>
     <ul class="bullets pll">
@@ -375,8 +769,8 @@
     </ul>
 </details>
 
-<p>Extends <code>line</code>. 
-<p><code>.cols[X]upto[breakpoint]</code> Sets number of columns up to specified breakpoint</p> 
+<p>Extends <code>line</code>.
+<p><code>.cols[X]upto[breakpoint]</code> Sets number of columns up to specified breakpoint</p>
 <p><code>.cols[X]from990</code> Sets number of columns from 990 and up</p>
 
 <p>Classname indicates number of colums at specific breakpoints, for example
@@ -392,21 +786,6 @@
 </div>
 
 
-
-<script type="text/javascript">
-/*    $(document).ready(function () {
-        $(".cols").click(function () {
-            var cols = $(this).attr("id");
-            $(".cols").removeClass("strong bg-lt-gray");
-            $(this).addClass("strong bg-lt-gray");
-            $(".positive").text(cols);
-            $("#cols").removeClass();
-            $("#cols").addClass(cols + " line");
-            return false;
-        });
-    });
-    */
-</script>
 <style type="text/css">
     .gridexample .r-cols1to2 {background: #D2E286;}
     .gridexample .r-cols1to3 {background: #eee;}
@@ -511,6 +890,3308 @@
             </div>
         </div>
     </div>
+</div>
+
+
+                    <a id="core-mod"></a>
+                    <h3>Module</h3>
+                    <a id="core-media"></a>
+                    <h3>Media</h3>
+                        <h4><a href="#core-media-media-block.mustache" id="core-media-media-block.mustache">#</a>media-block.mustache</h4>
+                        <!-- media -->
+<div class="line">
+    <div class="unit colspan6 lastUnit">
+        <div class="mod shadow">
+            <div class="inner">
+                <div class="bd">
+                    <p>Works excellent for anything that involves positioning a block of image, flash or whatever to the left and/or right of a content block.</p>
+                    <p>Any content in the body including nesting other media blocks.</p>
+                    <hr>
+
+                    <details>
+                        <summary class="r-margin clickable h3 normal">Standard media block</summary>
+                        <pre class="prettyprint linenums">
+&lt;div class=&quot;media&quot;&gt;
+    &lt;a href=&quot;http://www.finn.no&quot; class=&quot;img&quot;&gt;
+        &lt;img src=&quot;//placekitten.com/64/64&quot;&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;bd&quot;&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit...&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                    </details>
+                    <div class="media">
+                        <a href="http://www.finn.no" class="img mtm"><img src="//placekitten.com/64/64" /></a>
+                        <div class="bd">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <details>
+                        <summary class="r-margin clickable h3 normal">Nested media blocks</summary>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;media&quot;&gt;
+    &lt;a href=&quot;http://www.finn.no&quot; class=&quot;img&quot;&gt;
+        &lt;img src=&quot;//placekitten.com/128/128&quot;&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;bd&quot;&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.....&lt;/p&gt;
+        &lt;div class=&quot;media&quot;&gt;
+            &lt;a href=&quot;http://www.finn.no&quot; class=&quot;img&quot;&gt;
+                &lt;img src=&quot;//placekitten.com/64/64&quot;&gt;
+            &lt;/a&gt;
+            &lt;div class=&quot;bd&quot;&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                    </details>
+
+                    <div class="media">
+                        <a href="http://www.finn.no" class="img mtm"><img src="//placekitten.com/128/128" /></a>
+                        <div class="bd">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="media">
+                                <a href="http://www.finn.no" class="img mtm"><img src="//placekitten.com/64/64" /></a>
+                                <div class="bd">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div><!-- media -->
+                        </div>
+                    </div>
+
+                    <hr/>
+
+
+
+                    <details>
+                        <summary class="r-margin clickable h3 normal">Right-aligned image</summary>
+                        <pre class="prettyprint linenums">
+&lt;div class=&quot;media&quot;&gt;
+    &lt;a href=&quot;http://www.finn.no&quot; class=&quot;imgExt&quot;&gt;
+        &lt;img src=&quot;//placekitten.com/510/290&quot;&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;bd&quot;&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.....&lt;/p&gt;
+        &lt;p&gt;SupercalifragilisticexpialidociousSupercalifragilisticex...&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                    </details>
+
+                    <div class="media mln">
+                        <a href="http://www.finn.no" class="imgExt mtm"><img src="//placekitten.com/510/290" /></a>
+                        <div class="bd">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div><!-- media -->
+
+
+
+                </div>
+            </div>
+        </div><!-- mod -->
+    </div>
+</div><!-- line -->
+
+
+                    <a id="core-spacing"></a>
+                    <h3>Spacing</h3>
+                        <h4><a href="#core-spacing-spacing.mustache" id="core-spacing-spacing.mustache">#</a>spacing.mustache</h4>
+                        <!-- spacing -->
+<div class="mod shadow">
+    <div class="inner">
+        <div class="bd">
+            <h2>Margin/Padding</h2>
+            <p>NB! these are absolute, if you need the kind of margin that collapses to something smaller on a mobile device, use <code>.r-margin</code></p>
+            <p>
+                Class names are built up by 3 letters in the following order:<br/>
+
+                <code>[type][location][size]</code>
+            </p>
+
+            <h4>type</h4>
+            <p>p, m = padding, margin</p>
+
+            <h4>location</h4>
+            <p>a, t, r, b, l, h, v = all, top, right, bottom, left, horizontal, vertical</p>
+
+            <h4>size</h4>
+            <p>t, s, m, l, n = tiny(3px), small(5px), medium(10px), large(20px), none(0px)</p>
+            <hr/>
+            <h4>some examples</h4>
+            <p>
+                <code>pam</code> = padding + all sides + medium<br/>
+                <code>ptn</code> = padding + top + none<br/>
+                <code>mal</code> = margin + all sides + large<br/>
+            </p>
+            <div class="bg-lt-gray r-margin"><button class="mal">The button</button></div>
+<pre class="prettyprint linenums">
+&lt;button class=&quot;mal&quot;&gt;The button&lt;/button&gt;
+</pre>
+
+            <div class="bg-lt-gray r-margin"><button class="mam">The button</button></div>
+<pre class="prettyprint linenums">
+&lt;button class=&quot;mam&quot;&gt;The button&lt;/button&gt;
+</pre>
+
+            <div class="bg-lt-gray r-margin"><button class="pal mhs mtt mbl">The button</button></div>
+<pre class="prettyprint linenums">
+&lt;button class=&quot;pal mhs mtt mbl&quot;&gt;The button&lt;/button&gt;
+</pre>
+
+        </div>
+    </div>
+</div><!-- mod -->
+
+
+
+<!-- spacing -->
+<div class="mod shadow">
+    <div class="inner">
+        <div class="bd">
+            <h2>Some other helpers</h2>
+            <p><code>margin-left-auto</code></p>
+            <p><code>margin-right-auto</code></p>
+            <p><code>margin-horizontal-auto</code></p>
+        </div>
+    </div>
+</div>
+
+                    <a id="core-flex"></a>
+                    <h3>Flex</h3>
+                <h2>Layout</h2>
+                    <a id="core-color"></a>
+                    <h3>Color</h3>
+                        <h4><a href="#core-color-color.mustache" id="core-color-color.mustache">#</a>color.mustache</h4>
+                        <div class="mod shadow">
+    <div class="inner">
+        <div class="bd">
+            <h2>New identity 2016</h2>
+
+            <div class="line r-cols1to3">
+                <div class="unit">
+                    <div class="media pbs">
+                        <div class="bg-navy roundify img pam">
+                            <code class="bright blockify pbt pts">#0000B5</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.navy</code>
+                            <code class="blockify">.bg-navy</code>
+                        </div>
+                    </div>
+
+                    <div class="media pbs">
+                        <div class="bg-blue-dk roundify img pam">
+                            <code class="bright blockify pbt pts">#0063FB</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.blue-dk</code>
+                            <code class="blockify">.bg-blue-dk</code>
+                        </div>
+                    </div>
+
+                    <div class="media pbs">
+                        <div class="bg-blue roundify img pam">
+                            <code class="bright blockify pbt pts">#06BEFB</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.blue</code>
+                            <code class="blockify">.bg-blue</code>
+                        </div>
+                    </div>
+
+                    <div class="media pbs">
+                        <div class="bg-blue-lt roundify img pam">
+                            <code class="grey-xxdk blockify pbt pts">#B6F0FF</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.blue-lt</code>
+                            <code class="blockify">.bg-blue-lt</code>
+                        </div>
+                    </div>
+
+                    <div class="media pbs">
+                        <div class="bg-blue-xlt roundify img pam">
+                            <code class="grey-xxdk blockify pbt pts">#F1F9FF</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.blue-xlt</code>
+                            <code class="blockify">.bg-blue-xlt</code>
+                        </div>
+                    </div>
+
+                    <div class="media pbs">
+                        <div class="bg-blue-greyish roundify img pam">
+                            <code class="grey-xxdk blockify pbt pts">#E8EFF4</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.blue-greyish</code>
+                            <code class="blockify">.bg-blue-greyish</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unit">
+                    <div class="media pbs">
+                        <div class="bg-red-dk roundify img pam">
+                            <code class="bright blockify pbt pts">#DA2400</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.red-dk</code>
+                            <code class="blockify">.bg-red-dk</code>
+                        </div>
+                    </div>
+
+                    <div class="media pbs">
+                        <div class="bg-red roundify img pam">
+                            <code class="bright blockify pbt pts">#FF5844</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.red</code>
+                            <code class="blockify">.bg-red</code>
+                        </div>
+                    </div>
+
+                    <div class="media pbs">
+                        <div class="bg-pink roundify img pam">
+                            <code class="grey-xxdk blockify pbt pts">#FFBDC9</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.pink</code>
+                            <code class="blockify">.bg-pink</code>
+                        </div>
+                    </div>
+
+                    <div class="media pbs">
+                        <div class="bg-yellow-lt roundify img pam">
+                            <code class="grey-xxdk blockify pbt pts">#FFF2B7</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.yellow-lt</code>
+                            <code class="blockify">.bg-yellow-lt</code>
+                        </div>
+                    </div>
+
+                    <div class="media pbs">
+                        <div class="bg-yellow roundify img pam">
+                            <code class="grey-xxdk blockify pbt pts">#FFEC99</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.yellow</code>
+                            <code class="blockify">.bg-yellow</code>
+                        </div>
+                    </div>
+
+                    <div class="media pbs">
+                        <div class="bg-green-lt roundify img pam">
+                            <code class="grey-xxdk blockify pbt pts">#CCFFEC</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.green-lt</code>
+                            <code class="blockify">.bg-green-lt</code>
+                        </div>
+                    </div>
+
+                    <div class="media pbs">
+                        <div class="bg-green roundify img pam">
+                            <code class="bright blockify pbt pts">#28CD94</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.green</code>
+                            <code class="blockify">.bg-green</code>
+                        </div>
+                    </div>
+
+                    <div class="media pbs">
+                        <div class="bg-green-dk roundify img pam">
+                            <code class="bright blockify pbt pts">#028256</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.green-dk</code>
+                            <code class="blockify">.bg-green-dk</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unit">
+                    <div class="media pbs">
+                        <div class="bg-grey-xxdk roundify img pam">
+                            <code class="bright blockify pbt pts">#353233</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.grey-xxdk</code>
+                            <code class="blockify">.bg-grey-xxdk</code>
+                        </div>
+                    </div>
+
+                    <div class="media pbs">
+                        <div class="bg-grey-xdk roundify img pam">
+                            <code class="bright blockify pbt pts">#474445</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.grey-xdk</code>
+                            <code class="blockify">.bg-grey-xdk</code>
+                        </div>
+                    </div>
+
+                    <div class="media pbs">
+                        <div class="bg-grey-dk roundify img pam">
+                            <code class="bright blockify pbt pts">#666364</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.grey-dk</code>
+                            <code class="blockify">.bg-grey-dk</code>
+                        </div>
+                    </div>
+
+                    <div class="media pbs">
+                        <div class="bg-grey roundify img pam">
+                            <code class="bright blockify pbt pts">#A6A4A5</code>
+                        </div>
+                        <div class="bd phm">
+                            <code class="blockify pts pbt">.grey</code>
+                            <code class="blockify">.bg-grey</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+<div class="mod shadow">
+    <div class="inner">
+        <h2>Old color palette (Deprecated)</h2>
+        <div class="bd opacity25">
+            <h2>Primary colors</h2>
+
+            <div class="line">
+                <div class="unit r-size1of2">
+                    <h3>Got da Blues</h3>
+                    <div class="media">
+                        <div class="img bg-blue-dk centerify contrast roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#0077EE</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.blue-dk</code><br/>
+                            <code>.bg-blue-dk</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-blue centerify contrast roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#0099FF</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.blue</code><br/>
+                            <code>.bg-blue</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-blue-lt centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#4CB7FF</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.blue-lt</code><br/>
+                            <code>.bg-blue-lt</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-blue-ltlt centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#99D6FF</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.blue-ltlt</code><br/>
+                            <code>.bg-blue-ltlt</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-blue-xlt centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#E5F5FF</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.blue-xlt</code><br/>
+                            <code>.bg-blue-xlt</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-blue-xxlt centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#F2FAFF</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.blue-xxlt</code><br/>
+                            <code>.bg-blue-xxlt</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-blue-greyish centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#E9EFF5</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.blue-greyish</code><br/>
+                            <code>.bg-blue-greyish</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unit r-size1of2">
+
+                    <h3>Greys</h3>
+
+                    <div class="media">
+                        <div class="img bg-sharp centerify contrast roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#04253C</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.sharp</code><br/>
+                            <code>.bg-sharp</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-opaque centerify contrast roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#4f6676</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.opaque</code><br/>
+                            <code>.bg-opaque</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-neutral centerify contrast roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#9BA8B1</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.neutral</code><br/>
+                            <code>.bg-neutral</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-pale centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#CDD3D8</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.pale</code><br/>
+                            <code>.bg-pale</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-bare centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#EDF0F1</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.bare</code><br/>
+                            <code>.bg-bare</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-bare-lt centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#F4F7FA</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.bare-lt</code><br/>
+                            <code>.bg-bare-lt</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-bright centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#FFFFFF</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.bright</code><br/>
+                            <code>.bg-bright</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2>Secondary colors</h2>
+
+            <div class="line">
+                <div class="unit r-size1of2">
+                    <h3>Lilacs</h3>
+                    <div class="media">
+                        <div class="img bg-lilac centerify contrast roundify display-table" style="height:50px;width:100px;">
+                        <span class="display-cell">#7863C8</span>
+                        </div>
+                        <div class="bd plm">
+                        <code>.lilac</code><br/>
+                        <code>.bg-lilac</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-lilac-lt centerify contrast roundify display-table" style="height:50px;width:100px;">
+                        <span class="display-cell">#C9C1E9</span>
+                        </div>
+                        <div class="bd plm">
+                        <code>.lilac-lt</code><br/>
+                        <code>.bg-lilac-lt</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-lilac-xlt centerify roundify display-table" style="height:50px;width:100px;">
+                        <span class="display-cell">#F1EFF9</span>
+                        </div>
+                        <div class="bd plm">
+                        <code>.lilac-xlt</code><br/>
+                        <code>.bg-lilac-xlt</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit r-size1of2">
+                    <h3>Purples</h3>
+                    <div class="media">
+                        <div class="img bg-purple centerify contrast roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#8B31E7</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.purple</code><br/>
+                            <code>.bg-purple</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-purple-lt centerify contrast roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#D1ADF5</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.purple-lt</code><br/>
+                            <code>.bg-purple-lt</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-purple-xlt centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#E8D6FA</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.purple-xlt</code><br/>
+                            <code>.bg-purple-xlt</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unit r-size1of2">
+                    <h3>Pinks</h3>
+                    <div class="media">
+                        <div class="img bg-candy centerify contrast roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#FF3BCF</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.candy</code><br/>
+                            <code>.bg-candy</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-candy-lt centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#FFB1EC</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.candy-lt</code><br/>
+                            <code>.bg-candy-lt</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-candy-xlt centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#FFEBFA</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.candy-xlt</code><br/>
+                            <code>.bg-candy-xlt</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unit r-size1of2">
+                    <h3>Reds</h3>
+                    <div class="media">
+                        <div class="img bg-red centerify contrast roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#E7384A</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.red, .negative</code><br/>
+                            <code>.bg-red, .bg-negative</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-red-lt centerify contrast roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#EE7380</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.red-lt</code><br/>
+                            <code>.bg-red-lt</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-red-xlt centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#FBE3E6</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.red-xlt</code><br/>
+                            <code>.bg-red-xlt</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unit r-size1of2">
+                    <h3>Yellows</h3>
+                    <div class="media">
+                        <div class="img bg-lemon centerify contrast roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#FBDD25</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.lemon</code><br/>
+                            <code>.bg-lemon</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-lemon-lt centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#FDF1A8</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.lemon-lt</code><br/>
+                            <code>.bg-lemon-lt</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-lemon-xlt centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#FEF8E4</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.lemon-xlt</code><br/>
+                            <code>.bg-lemon-xlt</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unit r-size1of2">
+                    <h3>Rust</h3>
+                    <div class="media">
+                        <div class="img bg-rust centerify contrast roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#E78007</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.rust</code><br/>
+                            <code>.bg-rust</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-rust-lt centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#FE8D08</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.rust-lt</code><br/>
+                            <code>.bg-rust-lt</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-rust-xlt centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#FEEFD2</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.rust-xlt</code><br/>
+                            <code>.bg-rust-xlt</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unit r-size1of2">
+                    <h3>Neons</h3>
+                    <div class="media">
+                        <div class="img bg-lime centerify contrast roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#CAD522</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.lime</code><br/>
+                            <code>.bg-lime</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-lime-lt centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#EEF1B6</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.lime-lt</code><br/>
+                            <code>.bg-lime-lt</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-lime-xlt centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#F6F8DA</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.lime-xlt</code><br/>
+                            <code>.bg-lime-xlt</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="unit r-size1of2">
+                    <h3>Greens</h3>
+                    <div class="media">
+                        <div class="img bg-green centerify contrast roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#3B7908</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.green, .positive</code><br/>
+                            <code>.bg-green, .bg-positive</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-green-lt centerify contrast roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#7BB02D</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.green-lt</code><br/>
+                            <code>.bg-green-lt</code>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="img bg-green-xlt centerify roundify display-table" style="height:50px;width:100px;">
+                            <span class="display-cell">#E4EFD4</span>
+                        </div>
+                        <div class="bd plm">
+                            <code>.green-xlt</code><br/>
+                            <code>.bg-green-xlt</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+-->
+
+
+                    <a id="core-font"></a>
+                    <h3>Font/Text</h3>
+                        <h4><a href="#core-font-font.mustache" id="core-font-font.mustache">#</a>font.mustache</h4>
+                        <!-- fonts -->
+<div class="mod shadow" >
+    <div class="inner">
+        <div class="bd">
+
+            <p>All pages should now use the FINNType font and nothing else unless extreme fallback situations.  This font is included and default on all elements from spaden v.5.1.0 </p>
+            <h2>Sizes</h2>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Default</summary>
+                        <pre class="prettyprint linenums">
+&lt;p&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+&lt;p class=&quot;normal&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p>The quick brown fox jumps over the lazy dog</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">smalltext</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;smalltext&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="smalltext">The quick brown fox jumps over the lazy dog</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">largetext</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;largetext&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="largetext">The quick brown fox jumps over the lazy dog</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">t1</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;t1&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="t1">The quick brown fox jumps over the lazy dog</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">t2</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;t2&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="t2">The quick brown fox jumps over the lazy dog</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">t3</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;t3&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="t3">The quick brown fox jumps over the lazy dog</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">t4</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;t4&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="t4">The quick brown fox jumps over the lazy dog</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">t5</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;t5&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="t5">The quick brown fox jumps over the lazy dog</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">b1</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;b1&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="b1">The quick brown fox jumps over the lazy dog</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">d1</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;d1&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="d1">The quick brown fox jumps over the lazy dog</p>
+
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">d2</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;d2&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="d2">The quick brown fox jumps over the lazy dog</p>
+        </div>
+    </div>
+</div>
+
+<div class="mod shadow">
+    <div class="inner">
+        <div class="bd">
+            <h2>Headings</h2>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">h1</summary>
+                        <pre class="prettyprint linenums">
+&lt;h1&gt;The quick brown fox jumps over the lazy dog&lt;/h1&gt;
+</pre>
+            </details>
+            <h1>The quick brown fox jumps over the lazy dog</h1>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">h2</summary>
+                        <pre class="prettyprint linenums">
+&lt;h2&gt;The quick brown fox jumps over the lazy dog&lt;/h2&gt;
+</pre>
+            </details>
+            <h2>The quick brown fox jumps over the lazy dog</h2>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">h3</summary>
+                        <pre class="prettyprint linenums">
+&lt;h3&gt;The quick brown fox jumps over the lazy dog&lt;/h3&gt;
+</pre>
+            </details>
+            <h3>The quick brown fox jumps over the lazy dog</h3>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">h4</summary>
+                        <pre class="prettyprint linenums">
+&lt;h4&gt;The quick brown fox jumps over the lazy dog&lt;/h4&gt;
+</pre>
+            </details>
+            <h4>The quick brown fox jumps over the lazy dog</h4>
+
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">h5</summary>
+                        <pre class="prettyprint linenums">
+&lt;h5&gt;The quick brown fox jumps over the lazy dog&lt;/h5&gt;
+</pre>
+            </details>
+            <h5>The quick brown fox jumps over the lazy dog</h5>
+
+        </div>
+    </div>
+</div>
+
+<div class="mod shadow">
+    <div class="inner">
+        <div class="bd">
+            <h2>Font Styles</h2>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Normal (default)</summary>
+                        <pre class="prettyprint linenums">
+&lt;p&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+
+                <pre class="prettyprint linenums">
+&lt;p class=&quot;normal&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p>The quick brown fox jumps over the lazy dog</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Italic</summary>
+                        <pre class="prettyprint linenums">
+&lt;em&gt;The quick brown fox jumps over the lazy dog&lt;/em&gt;
+</pre>
+
+                <pre class="prettyprint linenums">
+&lt;p class=&quot;em&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p><em>The quick brown fox jumps over the lazy dog</em></p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Strong</summary>
+                        <pre class="prettyprint linenums">
+&lt;strong&gt;The quick brown fox jumps over the lazy dog&lt;/strong&gt;
+</pre>
+
+                <pre class="prettyprint linenums">
+&lt;p class=&quot;strong&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p><strong>The quick brown fox jumps over the lazy dog</strong></p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Strikethrough</summary>
+                <pre class="prettyprint linenums">
+&lt;p class=&quot;strikethrough&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="strikethrough">The quick brown fox jumps over the lazy dog</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Capitalize</summary>
+                <pre class="prettyprint linenums">
+&lt;p class=&quot;capitalize&quot;&gt;the quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="capitalize">the quick brown fox jumps over the lazy dog</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Uppercase</summary>
+                <pre class="prettyprint linenums">
+&lt;p class=&quot;uppercase&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="uppercase">The quick brown fox jumps over the lazy dog</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="mod shadow" id="links">
+    <div class="inner">
+        <div class="bd">
+            <h2>Links</h2>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Default link</summary>
+                        <pre class="prettyprint linenums">
+&lt;a href=&quot;#&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/a&gt;
+</pre>
+            </details>
+            <p><a href="#">The quick brown fox jumps over the lazy dog</a></p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">User history</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;userhistory&quot;&gt;&lt;a href=&quot;#&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/a&gt;&lt;/p&gt;
+</pre>
+            </details>
+            <p class="userhistory"><a href="http://www.finn.no">The quick brown fox jumps over the lazy dog</a></p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Neutral</summary>
+                        <pre class="prettyprint linenums">
+&lt;a class=&quot;neutral&quot; href=&quot;#&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/a&gt;
+</pre>
+            </details>
+            <p><a class="neutral" href="#">The quick brown fox jumps over the lazy dog</a></p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Contrast</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;bg-contrast&quot;&gt;&lt;a class=&quot;contrast&quot; href=&quot;#&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/a&gt;&lt;/p&gt;
+</pre>
+            </details>
+            <p class="bg-contrast"><a class="contrast" href="#">The quick brown fox jumps over the lazy dog</a></p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Secondary</summary>
+                        <pre class="prettyprint linenums">
+&lt;a class=&quot;secondary-links&quot; href=&quot;#&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/a&gt;
+</pre>
+            </details>
+            <p><a class="secondary-links" href="#">The quick brown fox jumps over the lazy dog</a></p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Dark</summary>
+                        <pre class="prettyprint linenums">
+&lt;a class=&quot;dark-links&quot; href=&quot;#&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/a&gt;
+</pre>
+            </details>
+            <p><a class="dark-links" href="#">The quick brown fox jumps over the lazy dog</a></p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Linkblock</summary>
+                        <pre class="prettyprint linenums">
+&lt;a class=&quot;linkblock&quot; href=&quot;#&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/a&gt;
+</pre>
+            </details>
+            <p><a class="linkblock" href="#">The quick brown fox jumps over the lazy dog</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="mod shadow" id="flytorini">
+    <div class="inner">
+        <div class="bd">
+            <h2>Text-flow</h2>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Leftify</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;leftify&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="leftify bg-lt-gray pam">The quick brown fox jumps over the lazy dog</p>
+            <p class="pale">Text-align left.</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Rightify</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;rightify&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="rightify bg-lt-gray pam">The quick brown fox jumps over the lazy dog</p>
+            <p class="pale">Text-align right.</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Centerify</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;centerify&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="centerify bg-lt-gray pam">The quick brown fox jumps over the lazy dog</p>
+            <p class="pale">Text-align center.</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Valign-top</summary>
+                        <pre class="prettyprint linenums">
+&lt;span&gt;The quick brown fox.... &lt;/span&gt;<br/>&lt;img class=&quot;valign-top&quot; src=&quot;...&quot;&gt;
+</pre>
+            </details>
+            <span class="bg-lt-gray rmargin mrn">The quick brown fox jumps over the lazy dog</span><img class="valign-top" src="//placekitten.com/g/24/32">
+            <p class="pale">Vertical align top.</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Valign-middle</summary>
+                        <pre class="prettyprint linenums">
+&lt;span&gt;The quick brown fox.... &lt;/span&gt;<br/>&lt;img class=&quot;valign-middle&quot; src=&quot;...&quot;&gt;
+</pre>
+            </details>
+            <span class="bg-lt-gray rmargin mrn">The quick brown fox jumps over the lazy dog</span><img class="valign-middle" src="//placekitten.com/24/32">
+            <p class="pale">Vertical align middle.</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Valign-bottom</summary>
+                        <pre class="prettyprint linenums">
+&lt;span&gt;The quick brown fox.... &lt;/span&gt;<br/>&lt;img class=&quot;valign-bottom&quot; src=&quot;...&quot;&gt;
+</pre>
+            </details>
+            <span class="bg-lt-gray rmargin mrn">The quick brown fox jumps over the lazy dog</span><img class="valign-bottom" src="//placekitten.com/24/32">
+            <p class="pale">Vertical align bottom.</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Word-break</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;word-break&quot;&gt;ThequickbrownfoxjumpsoverthelazydogThequickbrownfoxjumpsoverthelazydog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="word-break bg-lt-gray pam" style="width: 150px">ThequickbrownfoxjumpsoverthelazydogThequickbrownfoxjumpsoverthelazydog</p>
+            <p class="pale">Breaks on overflow even if there are no spaces.</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">No-break</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;no-break&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="no-break bg-lt-gray pam" style="width: 150px">The quick brown fox jumps over the lazy dog</p>
+            <p class="pale">Never breaks even with whitespace.</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Justify</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;justify&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="justify bg-lt-gray pam" style="width: 150px">The quick brown fox jumps over the lazy dog The quick brown fox jumps over the lazy dog</p>
+            <p class="pale">Justifies spaces between words so each line spans the whole width.</p>
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Truncate (ellipsis)</summary>
+                        <pre class="prettyprint linenums">
+&lt;p class=&quot;truncate&quot;&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;
+</pre>
+            </details>
+            <p class="truncate bg-lt-gray pam" style="width: 150px">The quick brown fox jumps over the lazy dog</p>
+            <p class="pale">Cuts the text when it is longer than the width of the parent element.</p>
+        </div>
+    </div>
+</div>
+
+<div class="mod shadow">
+    <div class="inner">
+        <div class="bd">
+            <h2>Text Formatting</h2>
+            <hr>
+
+            <h3>Dates and time</h3>
+
+            <h4>Specified time</h4>
+            <p>In Finn we display time and dates the following way:</p>
+            <div class="r-margin">
+                <ul class="bullets">
+                    <li>11. okt 2015 (without time)</li>
+                    <li>11. okt 2015 23:59 (with time)</li>
+                </ul>
+            </div>
+
+            <h4>Relative time</h4>
+            <p>If it's less than 3 days you can show relative time like this:</p>
+            <div class="r-margin">
+                <ul class="bullets">
+                    <li>Et øyeblikk siden</li>
+                    <li>1 minutt siden</li>
+                    <li>59 minutter siden</li>
+                    <li>1 time siden</li>
+                    <li>23 timer siden</li>
+                    <li>1 dag siden</li>
+                    <li>2 dager siden</li>
+                </ul>
+            </div>
+
+            <h3>Phone numbers</h3>
+            <div class="r-margin">
+                <ul class="bullets mbl">
+                    <li>Mobil: 998 87 766</li>
+                    <li>Fasttelefon: 22 33 44 55</li>
+                </ul>
+            </div>
+
+            <h3>Prices</h3>
+            <div class="r-margin">
+                <ul class="bullets">
+                    <li>198 kr</li>
+                    <li>1 198 kr</li>
+                    <li>1 198 198 kr</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                    <a id="core-form"></a>
+                    <h3>Form</h3>
+                        <h4><a href="#core-form-button.mustache" id="core-form-button.mustache">#</a>button.mustache</h4>
+                        <!-- Knapper -->
+<div class="mod shadow">
+    <div class="inner">
+        <div class="bd">
+                <details>
+                    <summary class="r-margin clickable h3 normal">Default</summary>
+<pre class="prettyprint linenums">
+&lt;button&gt;Button&lt;/button&gt;
+</pre>
+                </details>
+                <p><button>Button</button></p>
+
+            <hr>
+
+                <details>
+                    <summary class="r-margin clickable h3 normal">Primary</summary>
+<pre class="prettyprint linenums">
+&lt;button class=&quot;primary&quot;&gt;Button&lt;/button&gt;
+</pre>
+                </details>
+                <p><button class="primary">Button</button></p>
+
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Order</summary>
+<pre class="prettyprint linenums">
+&lt;button class=&quot;order&quot;&gt;Button&lt;/button&gt;
+</pre>
+            </details>
+            <p><button class="order">Button</button></p>
+
+
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Utility</summary>
+<pre class="prettyprint linenums">
+&lt;button class=&quot;utility&quot;&gt;Button&lt;/button&gt;
+</pre>
+            </details>
+            <p><button class="utility">Button</button></p>
+
+
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Large</summary>
+<pre class="prettyprint linenums">
+&lt;button class=&quot;large&quot;&gt;Button&lt;/button&gt;
+</pre>
+            </details>
+            <p><button class="large">Big Button</button></p>
+
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Small</summary>
+<pre class="prettyprint linenums">
+&lt;button class=&quot;small&quot;&gt;Button&lt;/button&gt;
+</pre>
+            </details>
+            <p><button class="small">Tiny Button</button></p>
+
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Full width</summary>
+<pre class="prettyprint linenums">
+&lt;button class=&quot;fullwidth&quot;&gt;Button&lt;/button&gt;
+</pre>
+            </details>
+            <p><button class="fullwidth">Button</button></p>
+
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Disabled</summary>
+<pre class="prettyprint linenums">
+&lt;button disabled&gt;Button&lt;/button&gt;
+</pre>
+            </details>
+            <p><button disabled>Button</button></p>
+
+            <hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">In progress</summary>
+<pre class="prettyprint linenums">
+&lt;button disabled class=&quot;inprogress&quot;&gt;Button&lt;/button&gt;
+</pre>
+            </details>
+            <p><button disabled class="inprogress">Button</button></p>
+
+
+<hr>
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Button group</summary>
+<pre class="prettyprint linenums">&lt;div role=&quot;group&quot; class=&quot;button-group line&quot;&gt;
+    &lt;button class=&quot;primary size1of4 truncate&quot;&gt;Knapp 1&lt;/button&gt;
+    &lt;button class=&quot;utility size1of4 truncate&quot;&gt;En annen knapp&lt;/button&gt;
+    &lt;button class=&quot;utility size1of4 truncate&quot;&gt;Knapp 3&lt;/button&gt;
+    &lt;button class=&quot;utility size1of4 truncate&quot;&gt;Enda en&lt;/button&gt;
+&lt;/div&gt;</pre>
+            </details>
+
+<div role="group" class="button-group r-margin line">
+    <button class="primary size1of4 truncate">Knapp 1</button>
+    <button class="utility size1of4 truncate">En annen knapp</button>
+    <button class="utility size1of4 truncate">Knapp 3</button>
+    <button class="utility size1of4 truncate">Enda en</button>
+</div>
+
+<div role="group" class="button-group r-margin line mtl">
+    <button class="primary size1of2 truncate">Knapp 1</button>
+    <button class="utility size1of2 truncate">En annen knapp</button>
+</div>
+
+
+        </div>
+    </div>
+</div><!-- mod -->
+
+
+                        <h4><a href="#core-form-form-element.mustache" id="core-form-form-element.mustache">#</a>form-element.mustache</h4>
+                        <div class="mod shadow">
+        <div class="inner">
+            <div class="bd">
+
+        <form class="">
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Input type text</summary>
+                <pre class="prettyprint linenums">&lt;div class="formelement"&gt;
+    &lt;label for="inputtext"&gt;Label&lt;/label&gt;
+    &lt;div class="input"&gt;
+        &lt;input type="text" id="inputtext"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="inputtext">Label</label>
+                <div class="input">
+                    <input type="text" id="inputtext">
+                </div>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Placeholder</summary>
+                <pre class="prettyprint linenums">&lt;input type="text" id="whatever" placeholder="Placeholder text"&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="inputplaceholder">Input with placeholder</label>
+                <div class="input">
+                    <input type="text" id="inputplaceholder" placeholder="Placeholder text">
+                </div>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Disabled input</summary>
+                <pre class="prettyprint linenums">&lt;div class="formelement"&gt;
+    &lt;div class="input"&gt;
+        &lt;label for="disabledinput"&gt;Disabled input&lt;/label&gt;
+        &lt;input type="text" id="disabledinput" disabled&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="disabledinput">Disabled input</label>
+                <div class="input">
+                    <input type="text" id="disabledinput" disabled>
+                </div>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Input type date</summary>
+                <pre class="prettyprint linenums">&lt;div class="formelement"&gt;
+    &lt;label for="inputtypedate"&gt;Input type date&lt;/label&gt;
+    &lt;div class="input"&gt;
+        &lt;input type="date" id="inputtypedate"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="inputtypedate">Input type date</label>
+                <div class="input">
+                    <input id="inputtypedate" type="date">
+                </div>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Select</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;formelement&quot;&gt;
+    &lt;label for=&quot;select&quot;&gt;Label&lt;/label&gt;
+    &lt;div class=&quot;input select&quot;&gt;
+        &lt;select id=&quot;select&quot;&gt;
+            &lt;option&gt;1&lt;/option&gt;
+            &lt;option&gt;2&lt;/option&gt;
+            &lt;option&gt;3&lt;/option&gt;
+            &lt;option&gt;4&lt;/option&gt;
+            &lt;option&gt;5&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="select">Label</label>
+                <div class="input select">
+                    <select id="select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Fancy select</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;formelement&quot;&gt;
+    &lt;label for=&quot;fancy&quot;&gt;Label&lt;/label&gt;
+    &lt;div class=&quot;input select&quot;&gt;
+        &lt;div class=&quot;fancyselect&quot;&gt;
+            &lt;select id=&quot;fancy&quot;&gt;
+                &lt;option&gt;1&lt;/option&gt;
+                &lt;option&gt;2&lt;/option&gt;
+                &lt;option&gt;3&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+                <div class="formelement">
+                    <label for="fancy">Label</label>
+                    <div class="input select">
+                        <div class="fancyselect">
+                            <select id="fancy">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            <hr class="mtl">
+          
+            <details>
+                <summary class="r-margin clickable h3 normal">Multiselect</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;formelement&quot;&gt;
+    &lt;label for=&quot;multiselect&quot;&gt;Label&lt;/label&gt;
+    &lt;div class=&quot;input select&quot;&gt;
+        &lt;select multiple="multiple" size="5" id=&quot;multiselect&quot;&gt;
+             &lt;option&gt;1&lt;/option&gt;
+             &lt;option&gt;2&lt;/option&gt;
+             &lt;option&gt;3&lt;/option&gt;
+             &lt;option&gt;4&lt;/option&gt;
+             &lt;option&gt;5&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="multiselect">Multiselect</label>
+                <div class="input select">
+                    <select multiple="multiple" size="5" id="multiselect">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h3 normal">File upload</summary>
+                <pre class="prettyprint linenums">&lt;div class="formelement">
+    &lt;label for="browsefile"&gt;Browse file&lt;/label&gt;
+    &lt;div class="input"&gt;
+        &lt;input id="browsefile" type="file"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <div class="input">
+                    <input id="browsefile" type="file" />
+                </div>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h3 normal">File upload</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;formelement&quot;&gt;
+    &lt;label for=&quot;browsefiles&quot;&gt;Images&lt;/label&gt;
+    &lt;div class=&quot;input&quot;&gt;
+        &lt;label class=&quot;button file-input-button&quot; tabindex=&quot;0&quot; role=&quot;button&quot;&gt;
+            &lt;span&gt;Last opp bilde&lt;/span&gt;
+            &lt;input type=&quot;file&quot; name=&quot;browsefiles&quot; id=&quot;browsefiles&quot; accept=&quot;image/jpeg, image/png, image/gif&quot; autocomplete=&quot;off&quot; tabindex=&quot;-1&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;/label&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="browsefiles">Images</label>
+                <div class="input">
+                    <label class="button file-input-button" tabindex="0" role="button">
+                        <span>Last opp bilde</span>
+                        <input type="file" name="browsefiles" id="browsefiles" accept="image/jpeg, image/png, image/gif" autocomplete="off" tabindex="-1" aria-hidden="true">
+                    </label>
+                </div>
+            </div>
+
+            <hr class="mtl">
+
+            <!--<details>
+                <summary class="r-margin clickable h3 normal">File upload with button overlay</summary>
+                <pre class="prettyprint linenums">&lt;div class="formelement">
+    &lt;label for="browsefile"&gt;Browse file&lt;/label&gt;
+    &lt;div class="input"&gt;
+        &lt;input id="browsefile" type="file"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <div class="input">
+                    <a class="button file-input-button" role="button">
+                        <span>Last opp bilde</span>
+                        <input type="file" name="files" accept="image/jpeg, image/png, image/gif" autocomplete="off" tabindex="-1" aria-hidden="true">
+                    </a>
+                </div>
+            </div>
+            <hr class="mtl">-->
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Textarea</summary>
+                <pre class="prettyprint linenums">&lt;div class="formelement">
+    &lt;label for="textarea"&gt;Textarea&lt;/label&gt;
+    &lt;div class="input"&gt;
+        &lt;textarea id="textarea" rows="3"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="textarea">Textarea</label>
+                <div class="input">
+                    <textarea id="textarea" rows="3"></textarea>
+                </div>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Disabled textarea</summary>
+                <pre class="prettyprint linenums">&lt;div class="formelement">
+    &lt;label for="disabledtextarea"&gt;Textarea&lt;/label&gt;
+    &lt;div class="input"&gt;
+        &lt;textarea id="disabledtextarea" rows="3" disabled&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="disabledtextarea">Disabled textarea</label>
+                <div class="input">
+                    <textarea id="disabledtextarea" rows="3" disabled></textarea>
+                </div>
+            </div>
+            <hr class="mtl">
+
+
+
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Radio buttons</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;formelement&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Choose one&lt;/legend&gt;
+        &lt;div class=&quot;input&quot;&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;radios&quot; checked&gt;
+                Nothing
+            &lt;/label&gt;
+
+            &lt;label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;radios&quot;&gt;
+                Something
+            &lt;/label&gt;
+
+            &lt;label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;radios&quot;&gt;
+                Other
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <fieldset>
+                <legend>Choose one</legend>
+                <div class="input">
+                    <label>
+                        <input type="radio" name="radios" checked>
+                        Nothing
+                    </label>
+
+                    <label>
+                        <input type="radio" name="radios">
+                        Something
+                    </label>
+
+                    <label>
+                        <input type="radio" name="radios">
+                        Other
+                    </label>
+                </div>
+                </fieldset>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Fancy radio buttons</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;formelement&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Choose one&lt;/legend&gt;
+        &lt;div class=&quot;input&quot;&gt;
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;fancyradio1&quot; name=&quot;fancyradio&quot;&gt;
+                &lt;label for=&quot;fancyradio1&quot;&gt;Nothing&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;fancyradio2&quot; name=&quot;fancyradio&quot;&gt;
+                &lt;label for=&quot;fancyradio2&quot;&gt;Something&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;fancyradio3&quot; name=&quot;fancyradio&quot;&gt;
+                &lt;label for=&quot;fancyradio3&quot;&gt;Other&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <fieldset>
+                    <legend>Choose one</legend>
+                    <div class="input">
+                        <div class="fancyinput">
+                            <input type="radio" id="fancyradio1" name="fancyradio">
+                            <label for="fancyradio1">Nothing</label>
+                        </div>
+
+                        <div class="fancyinput">
+                            <input type="radio" id="fancyradio2" name="fancyradio">
+                            <label for="fancyradio2">Something</label>
+                        </div>
+
+                        <div class="fancyinput">
+                            <input type="radio" id="fancyradio3" name="fancyradio">
+                            <label for="fancyradio3">Other</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Button group (based on radio inputs)</summary>
+                <pre class="prettyprint linenums">&lt;fieldset class=&quot;formelement&quot;&gt;                    
+    &lt;legend&gt;I want to&lt;/legend&gt;
+    &lt;div class=&quot;input &quot;&gt;
+        &lt;div class=&quot;button-group line&quot; role=&quot;radiogroup&quot;&gt;
+            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;radio-input-SELL&quot; type=&quot;radio&quot; value=&quot;SELL&quot; name=&quot;trade_type&quot; checked=&quot;&quot;&gt;
+            &lt;label class=&quot;pam size1of4 centerify truncate&quot; for=&quot;radio-input-SELL&quot;&gt;Selge&lt;/label&gt;
+            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;radio-input-GIVEAWAY&quot; type=&quot;radio&quot; value=&quot;GIVEAWAY&quot; name=&quot;trade_type&quot;&gt;
+            &lt;label class=&quot;pam size1of4 centerify truncate&quot; for=&quot;radio-input-GIVEAWAY&quot;&gt;Gi bort&lt;/label&gt;
+            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;radio-input-WANTED&quot; type=&quot;radio&quot; value=&quot;WANTED&quot; name=&quot;trade_type&quot;&gt;
+            &lt;label class=&quot;pam size1of4 centerify truncate&quot; for=&quot;radio-input-WANTED&quot;&gt;St&#230;le&lt;/label&gt;
+            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;radio-input-whatever&quot; type=&quot;radio&quot; value=&quot;WHATEVER&quot; name=&quot;trade_type&quot;&gt;
+            &lt;label class=&quot;pam size1of4 centerify truncate&quot; for=&quot;radio-input-whatever&quot;&gt;Ete&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/fieldset&gt;</pre>
+            </details>
+            <fieldset class="formelement">                    
+                <legend>I want to</legend>
+                <div class="input ">
+                    <div class="button-group line" role="radiogroup">
+                        <input tabindex="0" data-selector="" id="radio-input-SELL" type="radio" value="SELL" name="trade_type" checked="">
+                        <label class="pam size1of4 centerify truncate" for="radio-input-SELL">Selge</label>
+                        <input tabindex="0" data-selector="" id="radio-input-GIVEAWAY" type="radio" value="GIVEAWAY" name="trade_type">
+                        <label class="pam size1of4 centerify truncate" for="radio-input-GIVEAWAY">Gi bort</label>
+                        <input tabindex="0" data-selector="" id="radio-input-WANTED" type="radio" value="WANTED" name="trade_type">
+                        <label class="pam size1of4 centerify truncate" for="radio-input-WANTED">Stæle</label>
+                        <input tabindex="0" data-selector="" id="radio-input-whatever" type="radio" value="WHATEVER" name="trade_type">
+                        <label class="pam size1of4 centerify truncate" for="radio-input-whatever">Ete</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="formelement">                    
+                <legend>I want to</legend>
+                <div class="input ">
+                    <div class="button-group line" role="radiogroup">
+                        <input tabindex="0" data-selector="" id="radio-input-HURR" type="radio" value="HURR" name="trade_type2" checked="">
+                        <label class="pam size1of2 centerify truncate" for="radio-input-HURR">Selge</label>
+                        <input tabindex="0" data-selector="" id="radio-input-DURR" type="radio" value="DURR" name="trade_type2">
+                        <label class="pam size1of2 centerify truncate" for="radio-input-DURR">Gi bort</label>
+                    </div>
+                </div>
+            </fieldset>   
+
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Checkboxes</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;formelement&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Select more than one&lt;/legend&gt;
+        &lt;div class=&quot;input&quot;&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; checked&gt;
+                Nothing
+            &lt;/label&gt;
+
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot;&gt;
+                Something
+            &lt;/label&gt;
+
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot;&gt;
+                Other
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <fieldset>
+                <legend>Select more than one</legend>
+                <div class="input">
+                    <label>
+                        <input type="checkbox" checked>
+                        Nothing
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Something
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Other
+                    </label>
+                </div>
+                </fieldset>
+            </div>
+
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Fancy checkboxes</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;formelement&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Select more than one&lt;/legend&gt;
+        &lt;div class=&quot;input&quot;&gt;
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox1&quot;&gt;
+                &lt;label for=&quot;fancycheckbox1&quot;&gt;Nothing&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox2&quot;&gt;
+                &lt;label for=&quot;fancycheckbox2&quot;&gt;Something&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox3&quot;&gt;
+                &lt;label for=&quot;fancycheckbox3&quot;&gt;Other&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox4&quot;&gt;
+                &lt;label for=&quot;fancycheckbox4&quot; class=&quot;blockify&quot;&gt;
+                    &lt;div class=&quot;fright&quot;&gt;Price or something&lt;/div&gt;
+                    Block level label for lots of information
+                    &lt;div class=&quot;d1 neutral&quot;&gt;Yibbida yibbida&lt;/div&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <fieldset>
+                    <legend>Select more than one</legend>
+                    <div class="input">
+                        <div class="fancyinput">
+                            <input type="checkbox" id="fancycheckbox1">
+                            <label for="fancycheckbox1">Nothing</label>
+                        </div>
+
+                        <div class="fancyinput">
+                            <input type="checkbox" id="fancycheckbox2">
+                            <label for="fancycheckbox2">Something</label>
+                        </div>
+
+                        <div class="fancyinput">
+                            <input type="checkbox" id="fancycheckbox3">
+                            <label for="fancycheckbox3">Other</label>
+                        </div>
+
+                        <div class="fancyinput">
+                            <input type="checkbox" id="fancycheckbox4">
+                            <label for="fancycheckbox4" class="blockify">
+                                <div class="fright">Price or something</div>
+                                Block level label for lots of information
+                                <div class="d1 neutral">Yibbida yibbida</div>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Tagwords input</summary>
+<pre class="prettyprint linenums">
+&lt;a class=&quot;tagword editable&quot; href=&quot;#&quot;&gt;Nice&lt;/a&gt;
+
+&lt;p class=&quot;editable&quot;&gt;
+    &lt;a class=&quot;tagword&quot; href=&quot;#&quot;&gt;Nice&lt;/a&gt;
+    &lt;a class=&quot;tagword&quot; href=&quot;#&quot;&gt;Awsome&lt;/a&gt;
+    &lt;a class=&quot;tagword&quot; href=&quot;#&quot;&gt;PERDY&lt;/a&gt;
+    &lt;a class=&quot;tagword&quot; href=&quot;#&quot;&gt;Amazing&lt;/a&gt;
+    &lt;a class=&quot;tagword&quot; href=&quot;#&quot;&gt;cool&lt;/a&gt;
+&lt;/p&gt;    
+</pre>
+            </details>
+
+            <div class="formelement">
+                <div class="input">
+                    <div class="editable mbm">
+                        <a class="tagword" href="#">Nice</a>
+                        <a class="tagword" href="#">Awsome</a>
+                        <a class="tagword" href="#">PERDY</a>
+                        <a class="tagword" href="#">Amazing</a>
+                        <a class="tagword" href="#">cool</a>
+                    </div>
+                    <input type="text">
+                </div>
+            </div>
+
+            <hr class="mtl">
+        
+            <details>
+                <summary class="r-margin clickable h3 normal">Hidden (expandable) input</summary>
+                <pre class="prettyprint linenums">&lt;div&gt;
+    &lt;input type=&quot;checkbox&quot; class=&quot;expandfields&quot; id=&quot;expandfields&quot;&gt;
+    &lt;label for=&quot;expandfields&quot; tabindex=&quot;0&quot; class=&quot;input clickable expandlabel blue-dk&quot;&gt;Pris i kr&lt;/label&gt;
+    &lt;div class=&quot;formelement&quot;&gt;
+        &lt;label for=&quot;price&quot;&gt;Pris i kr&lt;/label&gt;
+        &lt;div class=&quot;input&quot;&gt;
+            &lt;input type=&quot;text&quot; id=&quot;price&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+            <p>Needs a javascript to set focus on the text input and disable the hidden checkbox on expand. To expand the input by default, set the <code>checked</code> attribute on the checkbox.</p>
+            </details>
+
+            <fieldset>
+                <div>
+                    <input type="checkbox" class="expandfields" id="expandfields">
+                    <label for="expandfields" tabindex="0" class="input clickable expandlabel blue-dk r-margin">Pris i kr</label>
+                    <div class="formelement">
+                        <label for="price">Pris i kr</label>
+                        <div class="input">
+                            <input type="text" id="price">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+        </div>
+        </div>
+        </div>
+
+
+    <div class="mod shadow">
+        <div class="inner">
+            <div class="bd">
+                <h2>Mandatory fields and validation</h2>
+
+
+                <table>
+                <tr>
+                    <td class="pll"><label class="required">Label</label></td>
+                    <td><code>.required</code></td>
+                </tr>
+                <tr>
+                    <td class="pll invalid"><label class="required">Label</label></td>
+                    <td><code>.invalid .required</code></td>
+                </tr>
+                <tr>
+                    <td class="pll valid"><label class="required">Label</label></td>
+                    <td><code>.valid .required</code></td>
+                </tr>
+                </table>
+                <pre  class="prettyprint linenums">&lt;div class=&quot;formelement invalid&quot;&gt;<br/>    &lt;label class=&quot;required&quot;&gt; ... &lt;/label&gt;<br/>    ...<br/>&lt;/div&gt;</pre>
+
+                <form class="stretched">
+                    <fieldset>
+                        <legend>Standard form</legend>
+                        <div class="formelement">
+                            <label for="aaa1" class="required">Fruit</label>
+                            <div class="input">
+                                <input class="span4" id="aaa1" type="text" />
+                                <span class="help-inline"></span>
+                            </div>
+                        </div><!-- /formelement -->
+                        <div class="formelement">
+                            <label for="aaa2">Fruit</label>
+                            <div class="input">
+                                <input class="span4" id="aaa2" type="text" value="Potato" />
+                                <span class="help-inline"></span>
+                            </div>
+                        </div><!-- /formelement -->
+                        <div class="formelement invalid">
+                            <label for="aaa3" class="required">Fruit</label>
+                            <div class="input">
+                                <input class="span4" id="aaa3" type="text" value="Potato" />
+                                <span class="help-inline">That's not a fruit, dude!</span>
+                            </div>
+                        </div><!-- /formelement -->
+
+                        <div class="formelement valid">
+                            <label for="aaa4" class="required">Fruit</label>
+                            <div class="input">
+                                <input class="span4" id="aaa4" type="text" value="Apple" />
+                                <span class="help-inline">Success!</span>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <h2>Javascript module for form validation</h2>
+                <p>For validation and error indication, use <a href="http://npm.finntech.no">common-validator-js</a>
+                    (here is the <a href="https://git.finn.no/projects/LIBS/repos/common-validator-js/browse">git repo</a>).</p>
+                <p>Additional data-attributes will be needed for the validator to work. Read the validator's readme for more details.  </p>
+            </div>
+        </div>
+    </div>
+
+
+                        <h4><a href="#core-form-form-layout.mustache" id="core-form-form-layout.mustache">#</a>form-layout.mustache</h4>
+                        <!-- forms -->
+<div class="line" id="forms">
+    <div class="r-size1of1">
+        <div class="mod shadow">
+            <div class="inner">
+                <div class="bd">
+
+
+                    <h2>Form layout</h2>
+                    <p>By default, all input fields have width set to 100%. Its size is dependent to its parent element. This makes it possible set up the form layout at a higher level, and also in each <a href="#forms">formelement</a> by using <a href="/#grid">the grid system</a>.</p>
+                    <hr>
+                    <details>
+                        <summary class="r-margin clickable h3 normal">Basic form markup</summary>
+                        <pre class="prettyprint linenums">&lt;form&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Section titlte&lt;/legend&gt;
+        &lt;div class=&quot;formelement&quot;&gt; ... &lt;/div&gt;
+        &lt;div class=&quot;formelement&quot;&gt; ... &lt;/div&gt;
+        &lt;div class=&quot;formelement&quot;&gt; ... &lt;/div&gt;
+        &lt;div class=&quot;actions&quot;&gt; ... &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+                        </pre>
+                    </details>
+                    <hr class="mtl">
+
+                    <details>
+                        <summary class="r-margin clickable h3 normal">Formelement</summary>
+                        <pre class="prettyprint linenums">&lt;div class="formelement">
+    &lt;label for="inputname">Example input&lt;/label&gt;
+    &lt;div class="input"&gt;
+        &lt;input id="inputname" type="text"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                    </details>
+                    <p>Every 'line' in a form.</p>
+                    <hr class="mtl">
+
+                    <details>
+                        <summary class="r-margin clickable h3 normal">Multiple inputs on the same line</summary>
+                        <pre class="prettyprint linenums">&lt;div class="formelement"&gt;
+    &lt;label for="postnr"&gt;Postcode/city&lt;/label&gt;
+    &lt;div class="input"&gt;
+        &lt;div class="line"&gt;
+            &lt;div class="unit size1of6 prs"&gt;
+                &lt;input type="text" id="postnr"&gt;
+            &lt;/div&gt;
+            &lt;div class="unit size5of6"&gt;
+                &lt;input type="text" id="poststed"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                    </details>
+
+                    <form>
+                        <fieldset>
+                            <div class="formelement">
+                                <label for="postnr">Postcode/city</label>
+                                <div class="input">
+                                    <div class="line">
+                                        <div class="unit size1of6 prs">
+                                            <input type="text" id="postnr">
+                                        </div>
+                                        <div class="unit size5of6">
+                                            <input type="text" id="poststed">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="mtl">
+
+                            <legend>Legend</legend>
+                            <div class="formelement">
+                                <label for="inputaasss">Search</label>
+                                <div class="input">
+                                    <div class="line">
+                                        <div class="unit size5of6 prs">
+                                            <input class="" id="inputaasss" type="text">
+                                        </div>
+                                        <div class="unit size1of6">
+                                            <button class="primary fullwidth">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="formelement">
+                                <label for="hf1">Label</label>
+                                <div class="input">
+                                    <input id="hf1" type="text" />
+                                </div>
+                            </div>
+
+                            <div class="formelement">
+                                <label for="inputaa44">Postcode/city</label>
+                                <div class="input">
+                                    <div class="line">
+                                        <div class="unit size1of6 prs">
+                                            <input id="inputaa44" type="text">
+                                        </div>
+                                        <div class="unit size5of6">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="formelement">
+                                <label for="inputaa33">Label</label>
+                                <div class="input select">
+                                    <div class="line">
+                                        <div class="unit r-size1of2 prs">
+                                            <select id="inputaa33">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <div class="unit r-size1of2">
+                                            <select id="inputaa333">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="actions">
+                                <button class="primary">Hell yeah!</button>
+                                <button class="secondary">No wai</button>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <hr class="mtl">
+
+                    <details>
+                        <summary class="r-margin clickable h3 normal">Default form layout with narrower parent element</summary>
+                        <pre class="prettyprint linenums">&lt;div class="size1of2"&gt;
+    &lt;form&gt;
+        ...
+    &lt;/form&gt;
+&lt;/div&gt;
+                        </pre>
+                    </details>
+
+                    <div class="size1of2 bg-lt-gray pam mhl">
+                        <form>
+                            <fieldset>
+                                <legend>Legend</legend>
+                                <div class="formelement">
+                                    <label for="inputaasss">Search</label>
+                                    <div class="input">
+                                        <div class="line">
+                                            <div class="unit size5of6 prs">
+                                                <input class="" id="inputaasss" type="text">
+                                            </div>
+                                            <div class="unit size1of6">
+                                                <button class="fullwidth">Search</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="formelement">
+                                    <label for="hf1">Label</label>
+                                    <div class="input">
+                                        <input id="hf1" type="text" />
+                                    </div>
+                                </div>
+
+                                <div class="formelement">
+                                    <label for="inputaa44">Postcode/city</label>
+                                    <div class="input">
+                                        <div class="line">
+                                            <div class="unit size1of6 prs">
+                                                <input id="inputaa44" type="text">
+                                            </div>
+                                            <div class="unit size5of6">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="formelement">
+                                    <label for="inputaa33">Label</label>
+                                    <div class="input select">
+                                        <div class="line">
+                                            <div class="unit r-size1of2 prs">
+                                                <select id="inputaa33">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="unit r-size1of2">
+                                                <select id="inputaa333">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="actions">
+                                    <button>Hell yeah!</button>
+                                    <button class="secondary">No wai</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <hr class="mtl">
+
+                    <details>
+                        <summary class="r-margin clickable h3 normal">hform640</summary>
+                        <pre class="prettyprint linenums">&lt;form class=&quot;hform640&quot;&gt;
+...
+&lt;/form&gt;
+                        </pre>
+                    </details>
+                    <p>Form layout with label on the left and input on the right for desktop/bigger screens. By default, the label is above the input field for mobiles/smaller screens.</p>
+
+                    <form class="hform640">
+                        <fieldset>
+                            <legend>Legend</legend>
+                            <div class="formelement">
+                                <label for="inputaasss">Search</label>
+                                <div class="input">
+                                    <div class="line">
+                                        <div class="unit size5of6 prs">
+                                            <input class="" id="inputaasss" type="text">
+                                        </div>
+                                        <div class="unit size1of6">
+                                            <button class="fullwidth">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="formelement">
+                                <label for="textarea">Textarea</label>
+                                <div class="input">
+                                    <textarea id="textarea" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="formelement">
+                                <label for="hf1">Label</label>
+                                <div class="input">
+                                    <input id="hf1" type="text" />
+                                </div>
+                            </div>
+                            <div class="formelement">
+                                <div class="input">
+                                    <ul class="inputs-list">
+                                        <li>
+                                            <input type="checkbox" id="nothing" name="checkboxes" value="nothing" checked>
+                                            <label for="nothing">Nothing</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="something" name="checkboxes" value="something">
+                                            <label for="something">Something</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="other" name="checkboxes" value="other">
+                                            <label for="other">Other</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="formelement">
+                                <label for="inputaa44">Postcode/city</label>
+                                <div class="input">
+                                    <div class="line">
+                                        <div class="unit size1of6 prs">
+                                            <input id="inputaa44" type="text">
+                                        </div>
+                                        <div class="unit size5of6">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="formelement">
+                                <label for="inputaa33">Label</label>
+                                <div class="input select">
+                                    <div class="line">
+                                        <div class="unit r-size1of2 prs">
+                                            <select id="inputaa33">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <div class="unit r-size1of2">
+                                            <select id="inputaa333">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="actions">
+                                <button>Hell yeah!</button>
+                                <button class="secondary">No wai</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- mod -->
+
+                    <a id="core-image"></a>
+                    <h3>Image</h3>
+                        <h4><a href="#core-image-image.mustache" id="core-image-image.mustache">#</a>image.mustache</h4>
+                        <!-- Bilder -->
+<div class="mod shadow">
+    <div class="inner">
+        <div class="bd">
+
+            <h2>Image formatting</h2>
+            <details>
+                <summary class="r-margin clickable h3 normal">Standard 4:3 image format</summary>
+                <pre class="prettyprint linenums">&lt;div class="format4by3"&gt;
+    &lt;img class="centered-image" src="//placekitten.com/510/382"&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <p>By default the image fills either the full width or height of the container without cropping, centered both horizontally and vertically.</p>
+            <div class="line">
+                <div class="unit size1of3">
+                    <figure class="r-margin">
+                        <div class="format4by3 bg-bare">
+                            <img class="centered-image" src="//placekitten.com/510/382" title="510 x 382 pixels">
+                        </div>
+                        <figcaption>Standard 4:3 image</figcaption>
+                    </figure>
+                </div>
+                <div class="unit size1of3">
+                    <figure class="r-margin">
+                        <div class="format4by3 bg-bare">
+                            <img class="centered-image" src="//placekitten.com/382/510" title="382 x 510 pixels">
+                        </div>
+                        <figcaption>Portrait image</figcaption>
+                    </figure>
+                </div>
+                <div class="unit size1of3">
+                    <figure class="r-margin">
+                        <div class="format4by3 bg-bare">
+                            <img class="centered-image" src="//placekitten.com/510/290" title="510 x 290 pixels">
+                        </div>
+                        <figcaption>Wider landscape image</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <h2>Aspect ratios</h2>
+            <details>
+                <summary class="r-margin clickable h3 normal">Widescreen 16:9 image format</summary>
+                <pre class="prettyprint linenums">&lt;div class="format16by9"&gt;
+    &lt;img class="centered-image" src="//placekitten.com/510/290"&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <p>Sets the relative width and height of the image container.</p>
+            <div class="mll mrl">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ratio</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><code>.format1by1</code></th>
+                            <td>Square format (equal sides).</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><code>.format4by3</code></th>
+                            <td>Standard mobile and digital camera format.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><code>.format3by2</code></th>
+                            <td>Professional camera format.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><code>.format16by9</code></th>
+                            <td>Widescreen format intended for images that span the full width of the page.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><code>.format2by1</code></th>
+                            <td>Even wider format.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Responsive helpers</h2>
+            <details>
+                <summary class="r-margin clickable h3 normal">16:9 on desktop, 3:2 on mobile</summary>
+                <pre class="prettyprint linenums">&lt;div class="format16by9 format3by2-lt768"&gt;
+    &lt;img class="centered-image" src="//placekitten.com/510/290"&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <p>Applies image formats depending on screen size.</p>
+            <p class="mal">
+                <strong>lt</strong> = less than
+            </p>
+            <div class="r-margin">
+                <table>
+                    <tr>
+                        <td><code>.format1by1-lt768</code></td>
+                        <td>Format 1:1 <strong>under</strong> 768px</td>
+                    </tr>
+                    <tr>
+                        <td><code>.format4by3-lt768</code></td>
+                        <td>Format 4:3 <strong>under</strong> 768px</td>
+                    </tr>
+                    <tr>
+                        <td><code>.format3by2-lt768</code></td>
+                        <td>Format 3:2 <strong>under</strong> 768px</td>
+                    </tr>
+                    <tr>
+                        <td><code>.format16by9-lt768</code></td>
+                        <td>Format 16:9 <strong>under</strong> 768px</td>
+                    </tr>
+                    <tr>
+                        <td><code>.format2by1-lt768</code></td>
+                        <td>Format 2:1 <strong>under</strong> 768px</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h2>Cropping</h2>
+            <details>
+                <summary class="r-margin clickable h3 normal">Horizontal cropping</summary>
+                <pre class="prettyprint linenums">&lt;div class="format4by3"&gt;
+    &lt;img class="centered-image crop-horizontal" src="//placekitten.com/510/290"&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <p>Cropping applied to an image possibly wider than its container, filling the height and cropped on the sides.</p>
+            <div class="line">
+                <div class="unit size1of3">
+                    <figure class="r-margin">
+                        <div class="format4by3 bg-bare">
+                            <img class="centered-image" src="//placekitten.com/510/290" title="510 x 209 pixels">
+                        </div>
+                        <figcaption>Original</figcaption>
+                    </figure>
+                </div>
+                <div class="unit size1of3">
+                    <figure class="r-margin">
+                        <div class="format4by3 bg-bare">
+                            <img class="centered-image crop-horizontal" src="//placekitten.com/510/290" title="510 x 209 pixels">
+                        </div>
+                        <figcaption>Cropped</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <hr>
+            <details>
+                <summary class="r-margin clickable h3 normal">Vertical cropping</summary>
+                <pre class="prettyprint linenums">&lt;div class="format4by3"&gt;
+    &lt;img class="centered-image crop-vertical" src="//placekitten.com/382/510"&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <p>Cropping applied to an image possibly higher than its container, filling the width and cropped top and bottom.</p>
+            <div class="line">
+                <div class="unit size1of3">
+                    <figure class="r-margin">
+                        <div class="format4by3 bg-bare">
+                            <img class="centered-image" src="//placekitten.com/382/510" title="382 x 510 pixels">
+                        </div>
+                        <figcaption>Original</figcaption>
+                    </figure>
+                </div>
+                <div class="unit size1of3">
+                    <figure class="r-margin">
+                        <div class="format4by3 bg-bare">
+                            <img class="centered-image crop-vertical" src="//placekitten.com/382/510" title="382 x 510 pixels">
+                        </div>
+                        <figcaption>Cropped</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                    <a id="core-list"></a>
+                    <h3>List</h3>
+                        <h4><a href="#core-list-list.mustache" id="core-list-list.mustache">#</a>list.mustache</h4>
+                        <div class="line" id="lists">
+    <div class="mod shadow">
+        <div class="inner">
+            <div class="bd">
+                <details>
+                    <summary class="r-margin clickable h3 normal">Unordered list, no bullets (default)</summary>
+                    <pre class="prettyprint linenums">&lt;ul&gt;
+    &lt;li&gt;List&lt;/li&gt;
+    &lt;li&gt;with&lt;/li&gt;
+    &lt;li&gt;no&lt;/li&gt;
+    &lt;li&gt;bullets&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                </details>
+                <ul>
+                    <li>List</li>
+                    <li>with</li>
+                    <li>no</li>
+                    <li>bullets</li>
+                </ul>
+
+                <hr>
+
+                <details>
+                    <summary class="r-margin clickable h3 normal">Unordered list with bullets</summary>
+                    <pre class="prettyprint linenums">&lt;ul class="bullets pll"&gt;
+    &lt;li&gt;List&lt;/li&gt;
+    &lt;li&gt;with&lt;/li&gt;
+    &lt;li&gt;bullets&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                </details>
+                <ul class="bullets pll">
+                    <li>List</li>
+                    <li>with</li>
+                    <li>bullets</li>
+                </ul>
+
+                <hr>
+
+                <details>
+                    <summary class="r-margin clickable h3 normal">Unordered list, horizontal</summary>
+<pre class="prettyprint linenums">&lt;ul class="horizontal-list"&gt;
+    &lt;li&gt;Horizontal&lt;/li&gt;
+    &lt;li&gt;List&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                </details>
+                <ul class="horizontal-list">
+                    <li>Horzontal</li>
+                    <li>list</li>
+                </ul>
+
+                <hr>
+
+                <details>
+                <summary class="r-margin clickable h3 normal">Ordered list</summary>
+<pre class="prettyprint linenums">&lt;ol class="decimals"&gt;
+    &lt;li&gt;List&lt;/li&gt;
+    &lt;li&gt;with&lt;/li&gt;
+    &lt;li&gt;decimals&lt;/li&gt;
+&lt;/ol&gt;</pre>
+                </details>
+
+                <ol class="decimals">
+                    <li>List</li>
+                    <li>with</li>
+                    <li>decimals</li>
+                </ol>
+
+                <hr>
+
+
+                <details>
+                    <summary class="r-margin clickable h3 normal">Definition list - multicol</summary>
+<pre class="prettyprint linenums">&lt;dl class="multicol"&gt;
+    &lt;dt&gt;Label&lt;/dt&gt;
+    &lt;dd>Value&lt;/dd&gt;
+    &lt;dt&gt;Label&lt;/dt&gt;
+    &lt;dd>Value&lt;/dd&gt;
+    &lt;dt&gt;Label&lt;/dt&gt;
+    &lt;dd>Value&lt;/dd&gt;
+&lt;/dl&gt;</pre>
+                </details>
+
+                <dl class="multicol">
+                    <dt>Label</dt>
+                    <dd>Value</dd>
+                    <dt>Label</dt>
+                    <dd>Value</dd>
+                    <dt>Label</dt>
+                    <dd>Value</dd>
+                </dl>
+
+                <hr>
+
+                <details>
+                    <summary class="r-margin clickable h3 normal">Definition list - compact</summary>
+<pre class="prettyprint linenums">&lt;dl class="compact man"&gt;
+    &lt;dt&gt;Label&lt;/dt&gt;
+    &lt;dd>Value&lt;/dd&gt;
+    &lt;dt&gt;Label&lt;/dt&gt;
+    &lt;dd>Value&lt;/dd&gt;
+    &lt;dt&gt;Label&lt;/dt&gt;
+    &lt;dd>Value&lt;/dd&gt;
+&lt;/dl&gt;</pre>
+                </details>
+
+                <dl class="compact man">
+                    <dt>Label</dt>
+                    <dd>Value</dd>
+                    <dt>Label</dt>
+                    <dd>Value</dd>
+                    <dt>Label</dt>
+                    <dd>Value</dd>
+                </dl>
+
+                <hr>
+
+                <details>
+                    <summary class="r-margin clickable h3 normal">Definition list - liquid</summary>
+<pre class="prettyprint linenums">&lt;dl class="dl-liquid"&gt;
+    &lt;dt&gt;Label&lt;/dt&gt;
+    &lt;dd>Value&lt;/dd&gt;
+    &lt;dt&gt;Label&lt;/dt&gt;
+    &lt;dd>Value&lt;/dd&gt;
+    &lt;dt&gt;Label&lt;/dt&gt;
+    &lt;dd>Value&lt;/dd&gt;
+&lt;/dl&gt;</pre>
+                </details>
+
+                <dl class="dl-liquid">
+                    <dt>Label</dt>
+                    <dd>Value</dd>
+                    <dt>Label</dt>
+                    <dd>Value</dd>
+                    <dt>Label</dt>
+                    <dd>Value</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    <a id="core-table"></a>
+                    <h3>Table</h3>
+                        <h4><a href="#core-table-table.mustache" id="core-table-table.mustache">#</a>table.mustache</h4>
+                        <div class="line" id="tables">
+    <div class="unit size2of3">
+<div class="mod shadow">
+<div class="inner">
+<div class="bd">
+<div class="r-margin">
+    <table>
+        <thead class="t4">
+        <tr>
+            <th>Property</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="odd">
+            <th scope="row"><code>.condensed</code></th>
+            <td>Tighter table layout, half padding.</td>
+        </tr>
+        <tr class="even">
+            <th scope="row"><code>.super-condensed</code></th>
+            <td>Even tighter table layout.</td>
+        </tr>
+        <tr class="odd">
+            <th scope="row"><code>.outerborder</code></th>
+            <td>Adds an external border.</td>
+        </tr>
+        <tr class="even">
+            <th scope="row"><code>.innerborder</code></th>
+            <td>Adds vertical inner borders</td>
+        </tr>
+        <tr class="odd">
+            <th scope="row"><code>.hover-rows</code></th>
+            <td>Adds hover effect on a full table row.</tr></td>
+        </tr>
+
+        <tr class="even">
+            <th scope="row"><code>.hover-cells</code></th>
+            <td>Adds hover effect on a cellular level.</td>
+        </tr>
+        <tr class="odd">
+            <th scope="row"><code>.zebra-stripes</code></th>
+            <td>Adds zebra-stripes </td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+<div class="">
+<hr>
+
+<details>
+<summary class="r-margin clickable h3 normal">Default table</summary>
+<pre class="prettyprint linenums">
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;First Name&lt;/th&gt;
+            &lt;th&gt;Last Name&lt;/th&gt;
+            &lt;th&gt;Language&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Some&lt;/td&gt;
+            &lt;td&gt;One&lt;/td&gt;
+            &lt;td&gt;English&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Joe&lt;/td&gt;
+            &lt;td&gt;Sixpack&lt;/td&gt;
+            &lt;td&gt;English&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Stu&lt;/td&gt;
+            &lt;td&gt;Dent&lt;/td&gt;
+            &lt;td&gt;Code&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+</details>
+
+<p>All tables will be automatically styled with only the essential borders to ensure readability and maintain structure. No need to add extra classes or attributes.</p>
+<div class="r-margin">
+    <table>
+        <thead class="t4">
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Language</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Some</td>
+            <td>One</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Joe</td>
+            <td>Sixpack</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Stu</td>
+            <td>Dent</td>
+            <td>Code</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr>
+
+<details>
+<summary class="r-margin clickable h3 normal">Condensed table</summary>
+<pre class="prettyprint linenums">
+&lt;table class=&quot;condensed&quot;&gt;
+    ...
+&lt;/table&gt;</pre>
+</details>
+
+<p>For tables that require more data in tighter spaces, use the condensed flavor that cuts padding in half. It can also be used in conjunction with borders and zebra-stripes, just like the default table styles.</p>
+<div class="r-margin">
+    <table class="condensed">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Language</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>1</th>
+            <td>Some</td>
+            <td>One</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>Joe</td>
+            <td>Sixpack</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>Stu</td>
+            <td>Dent</td>
+            <td>Code</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr>
+
+<details>
+<summary class="r-margin clickable h3 normal">Super-condensed table</summary>
+<pre class="prettyprint linenums">
+&lt;table class=&quot;super-condensed&quot;&gt;
+    ...
+&lt;/table&gt;</pre>
+</details>
+<p>For small tables with a lot of data in small spaces, use the super-condensed class.</p>
+<div class="r-margin">
+
+    <table class="super-condensed size1of3 mrl hover-cells innerborder outerborder smalltext centerify">
+        <thead>
+            <tr>
+                <th>Man</th>
+                <th>Tir</th>
+                <th>Ons</th>
+                <th>Tor</th>
+                <th>Fre</th>
+                <th>Lør</th>
+                <th>Søn</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+</div>
+
+<hr>
+
+<details>
+<summary class="r-margin clickable h3 normal">Zebra-striped table</summary>
+<pre class="prettyprint linenums">
+&lt;table class=&quot;zebra-striped&quot;&gt;
+    ...
+&lt;/table&gt;</pre>
+</details>
+
+<p>Get a little fancy with your tables by adding zebra-striping. Just add the <code>.zebra-striped</code> class.</p>
+<div class="r-margin">
+    <table class="outerborder zebra-striped">
+        <thead class="t4">
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Language</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Some</td>
+            <td>One</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Joe</td>
+            <td>Sixpack</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Stu</td>
+            <td>Dent</td>
+            <td>Code</td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                span 4 columns
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                span 2 columns
+            </td>
+            <td colspan="2">
+                span 2 columns
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<p><strong>Note:</strong> Zebra-striping is a progressive enhancement not available for older browsers like IE8 and below.</p>
+
+<hr>
+
+<details>
+<summary class="r-margin clickable h3 normal">Outer border</summary>
+<pre class="prettyprint linenums">
+&lt;table class=&quot;outerborder&quot;&gt;
+    ...
+&lt;/table&gt;</pre>
+</details>
+
+<div class="r-margin">
+    <table class="outerborder">
+        <thead class="t4">
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Language</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>1</th>
+            <td>Some</td>
+            <td>One</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>Joe</td>
+            <td>Sixpack</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>Stu</td>
+            <td>Dent</td>
+            <td>Code</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr>
+
+<details>
+<summary class="r-margin clickable h3 normal">Inner border</summary>
+<pre class="prettyprint linenums">
+&lt;table class=&quot;innerborder&quot;&gt;
+    ...
+&lt;/table&gt;</pre>
+</details>
+
+<div class="r-margin">
+    <table class="innerborder">
+        <thead class="t4">
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Language</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Some</td>
+            <td>One</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Joe</td>
+            <td>Sixpack</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Stu</td>
+            <td>Dent</td>
+            <td>Code</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr>
+
+<details>
+<summary class="r-margin clickable h3 normal">Border-colors</summary>
+<pre class="prettyprint linenums">
+&lt;table class=&quot;outerborder innerborder border-positive&quot;&gt;
+    ...
+&lt;/table&gt;</pre>
+
+    <div class="r-margin mbl">
+        <ul class="bullets bullets-bg-black mvn"><li><code>.border-black</code></li></ul>
+        <ul class="bullets bullets-bg-dk-gray mvn"><li><code>.border-dk-gray</code></li></ul>
+        <ul class="bullets bullets-bg-lt-gray mvn"><li><code>.border-lt-gray</code></li></ul>
+        <ul class="bullets bullets-bg-pale-gray mvn"><li><code>.border-pale-gray</code></li></ul>
+        <ul class="bullets bullets-bg-white mvn"><li><code>.border-white</code></li></ul>
+        <ul class="bullets bullets-bg-dkdk-blue mvn"><li><code>.border-dkdk-blue</code></li></ul>
+        <ul class="bullets bullets-bg-dk-blue mvn"><li><code>.border-dk-blue</code></li></ul>
+        <ul class="bullets bullets-bg-blue mvn"><li><code>.border-blue</code></li></ul>
+        <ul class="bullets bullets-bg-lt-blue mvn"><li><code>.border-lt-blue</code></li></ul>
+        <ul class="bullets bullets-bg-pale-blue mvn"><li><code>.border-pale-blue</code></li></ul>
+        <ul class="bullets bullets-bg-contrast mvn"><li><code>.border-contrast</code></li></ul>
+        <ul class="bullets bullets-bg-firm mvn"><li><code>.border-firm</code></li></ul>
+        <ul class="bullets bullets-bg-positive mvn"><li><code>.border-positive</code></li></ul>
+        <ul class="bullets bullets-bg-negative mvn"><li><code>.border-negative</code></li></ul>
+        <ul class="bullets bullets-bg-snotgreen mvn"><li><code>.border-snotgreen</code></li></ul>
+        <ul class="bullets bullets-bg-pissyellow mvn"><li><code>.border-pissyellow</code></li></ul>
+    </div>
+</details>
+
+<div class="r-margin">
+    <table class="outerborder innerborder border-positive">
+        <thead class="t4">
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Language</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Some</td>
+            <td>One</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Joe</td>
+            <td>Sixpack</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Stu</td>
+            <td>Dent</td>
+            <td>Code</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr>
+
+<details>
+<summary class="r-margin clickable h3 normal">Hover effects</summary>
+<pre class="prettyprint linenums">
+&lt;table class=&quot;hover-rows&quot;&gt;
+  ...
+&lt;/table&gt;</pre>
+</details>
+
+<div class="r-margin">
+    <table class="outerborder hover-rows">
+        <thead class="t4">
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Language</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Some</td>
+            <td>One</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Joe</td>
+            <td>Sixpack</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Stu</td>
+            <td>Dent</td>
+            <td>Code</td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                span 4 columns
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                span 2 columns
+            </td>
+            <td colspan="2">
+                span 2 columns
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr>
+
+<details>
+<summary class="r-margin clickable h3 normal">Sorting in table headers</summary>
+<pre class="prettyprint linenums">
+&lt;table&gt;
+    ...
+    &lt;th class=&quot;sort-up&quot;&gt;
+      ...
+    &lt;/th&gt;
+    &lt;th class=&quot;sort-down&quot;&gt;
+      ...
+    &lt;/th&gt;
+    ...
+&lt;/table&gt;</pre>
+</details>
+
+<div class="r-margin">
+    <table>
+        <thead class="t4">
+        <tr>
+            <th>#</th>
+            <th class="sort-up">First Name</th>
+            <th class="sort-down">Last Name</th>
+            <th class="sort-up">Language</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Some</td>
+            <td>One</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Joe</td>
+            <td>Sixpack</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Stu</td>
+            <td>Dent</td>
+            <td>Code</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr>
+
+<details>
+<summary class="r-margin clickable h3 normal">Centered content</summary>
+<pre class="prettyprint linenums">
+&lt;table&gt;
+    &lt;tbody class=&quot;centerify&quot;&gt;
+        ...
+    &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+</details>
+
+<p>Center all content within the table's body.</p>
+<div class="r-margin">
+    <table>
+        <tbody class="centerify">
+        <tr>
+            <td>1</td>
+            <td>Some</td>
+            <td>One</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Joe</td>
+            <td>Sixpack</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Stu</td>
+            <td>Dent</td>
+            <td>Code</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div>
+</div>
+</div><!-- mod -->
+</div>
+    <div class="unit r-size1of3">
+    <div class="mod shadow">
+        <div class="inner">
+            <div class="bd">
+                <h2>Building tables</h2>
+                <p>
+                    <code>&lt;table&gt;</code>
+                    <code>&lt;thead&gt;</code>
+                    <code>&lt;tbody&gt;</code>
+                    <code>&lt;tr&gt;</code>
+                    <code>&lt;th&gt;</code>
+                    <code>&lt;td&gt;</code>
+                    <code>&lt;colspan&gt;</code>
+                    <code>&lt;caption&gt;</code>
+                </p>
+                <p>Tables are great for a lot of things. Great tables, however, need a bit of markup love to be useful, scalable, and readable (at the code level). Here are a few tips to help:</p>
+                <p>Always wrap your column headers in a <code>&lt;thead&gt;</code> such that hierarchy is <code>&lt;thead&gt;</code> &gt; <code>&lt;tr&gt;</code> &gt; <code>&lt;th&gt;</code>.</p>
+                <p>Similar to the column headers, all your table?s body content should be wrapped in a <code>&lt;tbody&gt;</code> so your hierarchy is <code>&lt;tbody&gt;</code> &gt; <code>&lt;tr&gt;</code> &gt; <code>&lt;td&gt;</code>.</p>
+
+            </div>
+        </div>
+    </div><!-- mod -->
+</div>
 </div>
 
           </div>
