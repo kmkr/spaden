@@ -1,173 +1,14 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<script src="//assets.codepen.io/assets/editor/live/console_runner-d0a557e5cb67f9cd9bbb9673355c7e8e.js"></script>
-		<script src="//assets.codepen.io/assets/editor/live/events_runner-21174b4c7273cfddc124acb0876792e0.js"></script>
-		<script src="//assets.codepen.io/assets/editor/live/css_live_reload_init-7618a0de08795409d8f6c9ef6805f7b2.js"></script>
-		<meta charset="UTF-8">
-		<meta name="robots" content="noindex">
-		<link rel="canonical" href="http://codepen.io/Skadefryd/pen/KrmQmr">
-		<link rel="stylesheet prefetch" href="/dist/spaden.min.css">
-		<style class="cp-pen-styles">
-			html,body{
-  				background-color:white;
-				}
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *             Håndtering av venstremeny               *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-.leftmenu{
-  width:240px;
-  height:100%;
-  position:fixed;
-  top:0;
-  left:0;
-  bottom:0;
-  overflow-y:auto;
-  z-index:4;
-
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transition-delay: 0.1s;
-  -moz-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-property: -webkit-transform,left;
-  -moz-transition-property: -moz-transform,left;
-  transition-property: transform,left;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media (max-width: 1249px) {
-  .leftmenu{
-    left:-241px;
-    visibility: hidden;
-  }
-}
-@media (min-width: 1250px) {
-  .leftmenu {
-    display:block ;
-    visibility:visible;
-  }
-}
-.leftmenu.show {
-  left:0;
-  visibility:visible;
-}
-.leftmenu.show .lm-button{
-  position:absolute;
-  left:260px;
-}
-
-
-
-.topmenu.fixed+.lm-wrapper {
-  margin-top: 65px;
-}
-
-.lm-button {
-
-}
-
-.leftmenu dt{
-  color:#333;
-  font-weight:bold;
-}
-.leftmenu dl,.leftmenu dt{
-  margin:0;
-}
-.leftmenu dt{
-  padding:7px 0 7px 20px;
-}
-.leftmenu dl a{
-  display:block;
-  padding: 7px 0 7px 40px;
-}
-.leftmenu a.nav-active{
-  color:4CB7FF;
-}
-.leftmenu a.nav-active:link { color: #0063fb }
-.leftmenu a.nav-active:visited { color: #0063fb; }
-.leftmenu a.nav-active:hover { color: #0063fb; }
-
-
-
-
-.leftmenu .nav-active{
-  color:4CB7FF;
-}
-
-
-@media (max-width: 1249px) {
-
-}
-@media (min-width: 1250px) {
-  .lm-wrapper { padding-left: 250px; }
-  .lm-button { display:none }
-}
-
-
-
-
-
-
-
-
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *           Overstyringer for hvit bakgrunn           *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-.outlines.container{
-  outline:1px solid blue;
-}
-.outlines .page{
-  outline: 1px solid red;
-}
-.outlines .inner{
-  outline: 1px solid green;
-}
-.outlines .mod.skinned>.inner p,
-.outlines .mod.skinned>.inner,
-.outlines p{
-  outline:1px dotted red;
-}
-
-.wrapper>.inner{
-  padding:10px;
-}
-.wrapper .mod.skinned{
-  margin:10px!important;
-  margin-bottom:20px!important;
-}
-.mod.skinned>.inner{
-  padding-left:10px;
-  padding-right:10px;
-}
-
-
-.wrapper h1,
-.wrapper h2,
-.wrapper h3,
-.wrapper h4,
-.wrapper h5,
-.wrapper p{
-  margin:10px;
-}
-</style>
+<head>
+    <script src="//assets.codepen.io/assets/editor/live/console_runner-d0a557e5cb67f9cd9bbb9673355c7e8e.js"></script>
+    <script src="//assets.codepen.io/assets/editor/live/events_runner-21174b4c7273cfddc124acb0876792e0.js"></script>
+    <script src="//assets.codepen.io/assets/editor/live/css_live_reload_init-7618a0de08795409d8f6c9ef6805f7b2.js"></script>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="http://codepen.io/Skadefryd/pen/KrmQmr">
+    <link rel="stylesheet prefetch" href="./dist/spaden.min.css">
+    <link rel="stylesheet prefetch" href="./style.css">
 </head>
 <body>
 
@@ -178,29 +19,17 @@
   </div>
   <nav class="mtm">
     <dl>
-      <dt>Layout</dt>
-      <dd class="dark-links">
-        <a class="xnav-active" href="#">Template</a>
-        <a href="#">Grid</a>
-        <a href="#">Mod</a>
-        <a href="#">Media</a>
-        <a href="#">Spacing</a>
-        <a href="#">Flex</a>
-      </dd>
-
-      <dt>Decoration</dt>
-      <dd class="dark-links">
-        <a class="xnav-active" href="#">Colors</a>
-        <a href="#">Fonts</a>
-        <a href="#">Buttons</a>
-        <a href="#">Formfields</a>
-        <a href="#">Images</a>
-        <a href="#">Lists</a>
-        <a href="#">Tables</a>
-      </dd>
+        <p>Core</p>
+        <hr />
+        <dt>Layout</dt>
+        <dd class="dark-links">
+            <a href="#core-template">Template</a>
+            <a href="#core-grid">Grid</a>
+        </dd>
     </dl>
   </nav>
 </div>
+
 <div class="topmenu lm-wrapper fixed">
   <div class="container ">
     <div class="page">
@@ -211,16 +40,12 @@
           <svg class="hide-gt480" width="62" height="32" viewBox="0 0 124 64"><path fill="#06bffc" d="M119.8 58V6c0-1-.8-1.9-1.9-1.9H66c-1 0-1.9.8-1.9 1.9v53.8H118c1 0 1.8-.8 1.8-1.8"/><path fill="#0063fc" d="M22.5 4.2H6C5 4.2 4.2 5 4.2 6v52c0 1 .8 1.9 1.9 1.9H60V41.5C59.9 20.9 43.2 4.2 22.5 4.2"/><path fill="#ffffff" d="M118 0H66c-3.3 0-6 2.7-6 6v17.4C53.2 9.6 38.9 0 22.5 0H6C2.7 0 0 2.7 0 6v52c0 3.3 2.7 6 6 6h112c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6m1.8 58c0 1-.8 1.9-1.9 1.9H64.1V6c0-1 .8-1.9 1.9-1.9h52c1 0 1.9.8 1.9 1.9v52zM4.2 58V6C4.2 5 5 4.2 6 4.2h16.5c20.6 0 37.4 16.8 37.4 37.4v18.3H6c-1-.1-1.8-.9-1.8-1.9"/></svg><svg class="hide-lt480" width="92" height="32" viewBox="0 0 184 64"><path fill="#06bffc" d="M179.8 58V6c0-1-.8-1.9-1.9-1.9H66c-1 0-1.9.8-1.9 1.9v53.8H178c1 0 1.8-.8 1.8-1.8"/><path fill="#0063fc" d="M22.5 4.2H6C5 4.2 4.2 5 4.2 6v52c0 1 .8 1.9 1.9 1.9H60V41.5C59.9 20.9 43.2 4.2 22.5 4.2"/><path fill="#fff" d="M178 0H66c-3.3 0-6 2.7-6 6v17.4C53.2 9.6 38.9 0 22.5 0H6C2.7 0 0 2.7 0 6v52c0 3.3 2.7 6 6 6h172c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6m1.8 58c0 1-.8 1.9-1.9 1.9H64.1V6c0-1 .8-1.9 1.9-1.9h112c1 0 1.9.8 1.9 1.9v52zM4.2 58V6C4.2 5 5 4.2 6 4.2h16.5c20.6 0 37.4 16.8 37.4 37.4v18.3H6c-1-.1-1.8-.9-1.8-1.9"/><path fill="#fff" d="M110.1 21.1h-4.2c-.7 0-1.2.5-1.2 1.2v19.3c0 .7.5 1.2 1.2 1.2h4.2c.7 0 1.2-.5 1.2-1.2V22.3c0-.6-.6-1.2-1.2-1.2M98.1 21.1H83c-.7 0-1.2.5-1.2 1.2v19.3c0 .7.5 1.2 1.2 1.2h4.2c.7 0 1.2-.5 1.2-1.2v-4h7.7c.7 0 1.2-.5 1.2-1.2v-3.2c0-.7-.5-1.2-1.2-1.2h-7.7v-4.9h9.7c.7 0 1.2-.5 1.2-1.2v-3.7c0-.5-.6-1.1-1.2-1.1M160.9 21.1h-4.2c-.7 0-1.2.5-1.2 1.2v9.5l-6.6-10c-.3-.4-.8-.7-1.3-.7h-3.2c-.7 0-1.2.5-1.2 1.2v19.3c0 .7.5 1.2 1.2 1.2h4.2c.7 0 1.2-.5 1.2-1.2v-9.4l6.5 9.8c.3.4.8.7 1.3.7h3.4c.7 0 1.2-.5 1.2-1.2V22.3c-.1-.6-.6-1.2-1.3-1.2M135.5 21.1h-4.2c-.7 0-1.2.5-1.2 1.2v9.5l-6.6-10c-.3-.4-.8-.7-1.3-.7H119c-.7 0-1.2.5-1.2 1.2v19.3c0 .7.5 1.2 1.2 1.2h4.2c.7 0 1.2-.5 1.2-1.2v-9.4l6.5 9.8c.3.4.8.7 1.3.7h3.4c.7 0 1.2-.5 1.2-1.2V22.3c-.1-.6-.6-1.2-1.3-1.2"/></svg>
 
         </a>
-
-
         <!-- -->
       </nav>
 
     </div>
   </div>
 </div>
-
-
 
 <div class="lm-wrapper tb-fixed">
   <div class="container">
@@ -229,49 +54,476 @@
       <div class="mod">
         <div class="inner">
           <div class="bd">
-            <h1>Content</h1>
-            <p>yeaa</p>
+                <h1>Core</h1>
+                <hr />
+                <h2>Layout</h2>
+                    <a id="core-template"></a>
+                        
+<div class="mod">
+  <div class="inner">
+    <div class="bd">
+        <p>Most pages on finn.no runs on the same <code>.container</code> > <code>.page</code> structure, these give the current widths to fit within the banners, and also the correct margins and responsive behaviour.</p>
+      <details>
+          <summary class="r-margin clickable h3 normal">Basic template</summary>
+<pre class="linenums prettyprint">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;no&quot; prefix=&quot;og: http://ogp.me/ns#&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge&quot;&gt;
+        &lt;title&gt;FINN&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;//static.finncdn.no/bb/latest/css/spaden/5.x/spaden.min.css&quot;&gt;
+        &lt;!--[if IE 9]&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/static/ie9.e7628c1e.css&quot;&gt;
+        &lt;![endif]--&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;page&quot;&gt;
+                &lt;!-- page content --&gt;
+                &lt;div class=&quot;line&quot;&gt;
+                    &lt;div class=&quot;unit r-size2of3&quot;&gt;
+                        ...
+                    &lt;/div&gt;
+                    &lt;div class=&quot;unit r-size1of3&quot;&gt;
+                        ...
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</details>
 
-          </div>
-        </div>
-      </div>
+<p>You can start with this basic HTML template.</p>
+
+
+
 
     </div>
   </div>
 </div>
+
+                    <a id="core-grid"></a>
+                        <!-- grid -->
+<div class="line">
+<div class="mod shadow">
+<div class="inner">
+<div class="bd">
+
+    <h2>Grid system for all FINN pages</h2>
+<!--                            <pre class="prettyprint linenums">
+&lt;div class=&quot;line&quot;&gt;
+    &lt;div class=&quot;unit r-size1of3&quot;&gt;....&lt;/div&gt;
+    &lt;div class=&quot;unit r-size2of3&quot;&gt;....&lt;/div&gt;
+&lt;/div&gt;
+</pre>-->
+
+<hr>
+<details>
+    <summary class="r-margin clickable h3 normal">line</summary>
+                                                                <pre class="linenums prettyprint">
+&lt;div class="line"&gt;
+    ...
+&lt;/div&gt;</pre>
+</details>
+<p>Groups units on one horizontal line. Note: for mobile layout units may be stacked to avoid horizontal scrolling.</p>
+<hr>
+
+<details>
+    <summary class="r-margin clickable h3 normal">unit</summary>
+                                                                <pre class="linenums prettyprint">
+&lt;div class="line"&gt;
+    &lt;div class="unit"&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+</details>
+<p>Base class which divides a line into sections (columns).</p>
+<hr>
+
+<details>
+    <summary class="r-margin clickable h3 normal">r-sizeXofY</summary>
+<pre class="linenums prettyprint">
+&lt;div class="line"&gt;
+    &lt;div class="unit r-sizeXofY"&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+</details>
+<p>Extends <code>unit</code>. Indicates the number of grid units this element spans, for example <code>r-size2of3</code>
+    would take up 2 of 3 columns. Collapses to 1 column at 768px.</p>
+
+<p class="strong">Intended use: Main layout grid!</p>
+<hr>
+
+<details>
+    <summary class="r-margin clickable h3 normal">sizeXofY</summary>
+<pre class="linenums prettyprint">
+&lt;div class="line"&gt;
+    &lt;div class="unit sizeXofY"&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+    <p>Supported fractions:</p>
+    <ul class="bullets pll">
+        <li>1</li>
+        <li>1/2</li>
+        <li>1/3</li>
+        <li>2/3</li>
+        <li>1/4</li>
+        <li>3/4</li>
+        <li>1/5</li>
+        <li>2/5</li>
+        <li>3/5</li>
+        <li>4/5</li>
+        <li>1/6</li>
+        <li>5/6</li>
+    </ul>
+</details>
+<p>Extends <code>unit</code>. Indicates the fractional width of the unit, for example <code>size3of4</code> would take
+    up three quarters, or 75%, of the horizontal space.</p>
+<p class="strong">
+    Intended use: Non-responsive liquid elements
+</p>
+<hr>
+
+<details>
+    <summary class="r-margin clickable h3 normal">r-colsXtoY</summary>
+<pre class="linenums prettyprint">
+&lt;div class="line r-colsXtoY"&gt;
+    &lt;div class="unit"&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+<pre class="linenums prettyprint">
+&lt;form&gt;
+  &lt;div class="line <span class="positive">r-cols1to2</span>"&gt;
+    &lt;div class="unit formelement man"&gt;
+      &lt;label&gt;
+        &lt;input type="checkbox"&gt;
+        &lt;span&gt;Akershus&lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;!-- etc --&gt;
+  &lt;/div&gt;
+&lt;form&gt;</pre>
+
+    <p>
+        <code>
+            <a href="#" id="r-cols1to2" class="mrl cols strong bg-lt-gray">.r-cols1to2</a>
+            <a href="#" id="r-cols1to3" class="mrl cols">.r-cols1to3</a>
+            <a href="#" id="r-cols1to4" class="mrl cols">.r-cols1to4</a>
+            <a href="#" id="r-cols2to3" class="mrl cols">.r-cols2to3</a>
+            <a href="#" id="r-cols2to4" class="mrl cols">.r-cols2to4</a>
+            <a href="#" id="r-cols2to5" class="mrl cols">.r-cols2to5</a>
+            <a href="#" id="r-cols2to6" class="mrl cols">.r-cols2to6</a>
+        </code>
+    </p>
+
+    <div class="mal gridexample">
+        <form>
+            <div class="line r-cols1to2" id="cols">
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Akershus</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Aust-Agder</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Buskerud</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Finnmark</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Hedmark</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Hordaland</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Møre og Romsdal</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Nord-Trøndelag</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Nordland</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Oppland</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Oslo</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Rogaland</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Sogn og Fjordane</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Sør-Trøndelag</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Telemark</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Troms</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Vest-Agder</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Vestfold</span>
+                    </label>
+                </div>
+                <div class="unit formelement man">
+                    <label>
+                        <input type="checkbox">
+                        <span>Østfold</span>
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+</details>
+
+<p>Extends <code>line</code>. Responsive column setup for content. Classname indicates number of colums, for example
+    <code>r-cols2to4</code> will fit 2 columns on mobile screens and 4 columns from 768px and up.</p>
+
+<p class="strong">Intended use: Column based contents</p>
+<!-- ** -->
+<hr>
+
+<details>
+    <summary class="r-margin clickable h3 normal">colsXupto[Breakpoint]</summary>
+
+<pre class="linenums prettyprint">&lt;div class=&quot;line cols2upto480 cols4upto768 cols6upto990 cols8from990&quot;&gt;
+    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
+    &lt;div class=&quot;unit&quot;&gt; ... &lt;/div&gt;
+&lt;/div&gt;</pre>
+       <p>Supported column count: 1 - 8</p>
+          <p>Supported breakpoints:</p>
+    <ul class="bullets pll">
+        <li>480</li>
+        <li>640</li>
+        <li>768</li>
+        <li>990</li>
+    </ul>
+</details>
+
+<p>Extends <code>line</code>. 
+<p><code>.cols[X]upto[breakpoint]</code> Sets number of columns up to specified breakpoint</p> 
+<p><code>.cols[X]from990</code> Sets number of columns from 990 and up</p>
+
+<p>Classname indicates number of colums at specific breakpoints, for example
+    <code>.cols1upto480 .cols2upto768 .cols4from990</code> will fit 1 column below 480px, 2 columns between 480px and 767px, and 4 columns from 990px to infinity</p>
+    <p class="red">! Works in conjunction with colsXfrom990, remember to set this aswell, or 990px+ will get whatever is default (usually 1col )</p>
+
+<p class="strong">Intended use: Column based contents where we need more control</p>
+<!-- ** -->
+
 </div>
-</body>
-<script>
-// Menu button element
-var menu = document.getElementById('menu');
-
-// leftmenu element
-var leftmenu = document.getElementById('leftmenu');
-
-// Nav element
-var nav = document.getElementsByTagName('nav')[0]
-
-// Toggle class function
-function toggleClass(element, className){
-    if (!element || !className){
-        return;
-    }
-    var classString = element.className, nameIndex = classString.indexOf(className);
-    if (nameIndex == -1) {
-        classString += ' ' + className;
-    }
-    else {
-        classString = classString.substr(0, nameIndex) + classString.substr(nameIndex+className.length);
-    }
-    element.className = classString;
-}
-
-menu.onclick = function() {
-    toggleClass(leftmenu, 'show');
-};
+</div>
+</div>
+</div>
 
 
+
+<script type="text/javascript">
+/*    $(document).ready(function () {
+        $(".cols").click(function () {
+            var cols = $(this).attr("id");
+            $(".cols").removeClass("strong bg-lt-gray");
+            $(this).addClass("strong bg-lt-gray");
+            $(".positive").text(cols);
+            $("#cols").removeClass();
+            $("#cols").addClass(cols + " line");
+            return false;
+        });
+    });
+    */
 </script>
+<style type="text/css">
+    .gridexample .r-cols1to2 {background: #D2E286;}
+    .gridexample .r-cols1to3 {background: #eee;}
+    .gridexample .r-cols1to4 {background: #def;}
+    .gridexample .r-cols2to3 {background: #f60;}
+    .gridexample .r-cols2to4 {background: #ff9;}
+    .gridexample .r-cols2to5 {background: #ccc;}
+    .gridexample .r-cols2to6 {background: #f3ddad;}
+</style>
 
+
+
+<div class="line">
+    <div class="mod shadow">
+        <div class="inner">
+            <div class="bd">
+                <h2>Responsive helpers</h2>
+
+                <p class="mal">
+                    <strong>lt</strong> = less than<br>
+                    <strong>ht</strong> = higher than
+                </p>
+
+                <h2>Text alignment</h2>
+
+                <div class="r-margin">
+                    <table>
+                        <tr>
+                            <td><code>.leftify-ht768</code></td>
+                            <td>Adjust left <strong>over</strong> 768px</td>
+                        </tr>
+                        <tr>
+                            <td><code>.leftify-lt768</code></td>
+                            <td>Adjust left <strong>under</strong> 768px</td>
+                        </tr>
+                        <tr>
+                            <td><code>.rightify-ht768</code></td>
+                            <td>Adjust right <strong>over</strong> 768px</td>
+                        </tr>
+                        <tr>
+                            <td><code>.rightify-lt768</code></td>
+                            <td>Adjust right <strong>under</strong> 768px</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h2>Floating</h2>
+
+                <div class="r-margin">
+                    <table>
+                        <tr>
+                            <td><code>.fleft-ht768</code></td>
+                            <td>Float left <strong>over</strong> 768px</td>
+                        </tr>
+                        <tr>
+                            <td><code>.fleft-lt768</code></td>
+                            <td>Float left <strong>under</strong> 768px</td>
+                        </tr>
+                        <tr>
+                            <td><code>.fright-ht768</code></td>
+                            <td>Float right <strong>over</strong> 768px</td>
+                        </tr>
+                        <tr>
+                            <td><code>.fright-lt768</code></td>
+                            <td>Float right <strong>under</strong> 768px</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h2>Show/hide</h2>
+
+                <div class="r-margin">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>480px</th>
+                            <th>600px</th>
+                            <th>768px</th>
+                            <th>900px</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td>
+                                <code>.hide-lt480</code><br>
+                                <code>.hide-ht480</code>
+                            </td>
+                            <td>
+                                <code>.hide-lt600</code><br>
+                                <code>.hide-ht600</code>
+                            </td>
+                            <td>
+                                <code>.hide-lt768</code><br>
+                                <code>.hide-ht768</code>
+                            </td>
+                            <td>
+                                <code>.hide-lt900</code><br>
+                                <code>.hide-ht900</code>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="/docs.js" />
+</body>
 </html>
 
