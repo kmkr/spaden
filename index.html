@@ -1,1 +1,282 @@
-My GitHub Page
+<!DOCTYPE html>
+
+/* saksa rett fra codepen, skal seff ryddes, men hadde ikke tid :) */
+
+
+
+<html>
+	<head>
+		<script src="//assets.codepen.io/assets/editor/live/console_runner-d0a557e5cb67f9cd9bbb9673355c7e8e.js"></script>
+		<script src="//assets.codepen.io/assets/editor/live/events_runner-21174b4c7273cfddc124acb0876792e0.js"></script>
+		<script src="//assets.codepen.io/assets/editor/live/css_live_reload_init-7618a0de08795409d8f6c9ef6805f7b2.js"></script>
+		<meta charset="UTF-8">
+		<meta name="robots" content="noindex">
+		<link rel="canonical" href="http://codepen.io/Skadefryd/pen/KrmQmr">
+		<link rel="stylesheet prefetch" href="//finncdn.no/bb/latest/css/spaden/4.x/spaden.min.css">
+		<style class="cp-pen-styles">
+			html,body{
+  				background-color:white;
+				}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *             Håndtering av venstremeny               *     
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.leftmenu{
+  width:240px;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  overflow-y:auto;
+  z-index:4;
+  
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: -webkit-transform,left;
+  -moz-transition-property: -moz-transform,left;
+  transition-property: transform,left;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 1249px) {
+  .leftmenu{
+    left:-241px;
+    visibility: hidden;
+  }
+}
+@media (min-width: 1250px) {
+  .leftmenu { 
+    display:block ;
+    visibility:visible;
+  }
+}
+.leftmenu.show {
+  left:0;
+  visibility:visible;
+}
+.leftmenu.show .lm-button{
+  position:absolute;
+  left:260px;
+}
+  
+
+
+.topmenu.fixed+.lm-wrapper {
+  margin-top: 65px;
+}
+
+.lm-button {
+  
+}
+
+.leftmenu dt{
+  color:#333;
+  font-weight:bold;
+}
+.leftmenu dl,.leftmenu dt{
+  margin:0;
+}
+.leftmenu dt{
+  padding:7px 0 7px 20px;
+}
+.leftmenu dl a{ 
+  display:block;
+  padding: 7px 0 7px 40px; 
+}
+.leftmenu a.nav-active{
+  color:4CB7FF;
+}
+.leftmenu a.nav-active:link { color: #0063fb }
+.leftmenu a.nav-active:visited { color: #0063fb; }
+.leftmenu a.nav-active:hover { color: #0063fb; }
+
+
+
+
+.leftmenu .nav-active{
+  color:4CB7FF;
+}
+
+
+@media (max-width: 1249px) {
+
+}
+@media (min-width: 1250px) {
+  .lm-wrapper { padding-left: 250px; }
+  .lm-button { display:none }
+}
+
+
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *           Overstyringer for hvit bakgrunn           *     
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.outlines.container{
+  outline:1px solid blue;
+}
+.outlines .page{
+  outline: 1px solid red;
+}
+.outlines .inner{
+  outline: 1px solid green;
+}
+.outlines .mod.skinned>.inner p,
+.outlines .mod.skinned>.inner,
+.outlines p{
+  outline:1px dotted red;
+}
+
+.wrapper>.inner{
+  padding:10px;
+}
+.wrapper .mod.skinned{
+  margin:10px!important;
+  margin-bottom:20px!important;
+}
+.mod.skinned>.inner{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+
+.wrapper h1,
+.wrapper h2,
+.wrapper h3,
+.wrapper h4,
+.wrapper h5,
+.wrapper p{
+  margin:10px;
+}
+</style>
+</head>
+<body>
+
+<div class="outlines">
+<div id="leftmenu" class="leftmenu brt fixed bg-blue-xlt">
+  <div class="navbar bbt">
+   
+  </div>
+  <nav class="mtm">
+    <dl>
+      <dt>Layout</dt>
+      <dd class="dark-links">
+        <a class="xnav-active" href="#">Template</a>
+        <a href="#">Grid</a>
+        <a href="#">Mod</a>
+        <a href="#">Media</a>
+        <a href="#">Spacing</a>
+        <a href="#">Flex</a>
+      </dd>
+      
+      <dt>Decoration</dt>
+      <dd class="dark-links">
+        <a class="xnav-active" href="#">Colors</a>
+        <a href="#">Fonts</a>
+        <a href="#">Buttons</a>
+        <a href="#">Formfields</a>
+        <a href="#">Images</a>
+        <a href="#">Lists</a>
+        <a href="#">Tables</a>
+      </dd>
+    </dl>
+  </nav>
+</div>
+<div class="topmenu lm-wrapper fixed">
+  <div class="container ">
+    <div class="page">
+      
+      <nav class="navbar flex align-items-center align-items-stretch mod-behaviour mbn linkblock">
+        <button id="menu" class="lm-button mvm pvn phm r-mll bg-blue bright bas border-bright t3">☰</button>
+        <a href="/" class="nav-logo margin-left-auto flex align-items-center ">
+          <svg class="hide-gt480" width="62" height="32" viewBox="0 0 124 64"><path fill="#06bffc" d="M119.8 58V6c0-1-.8-1.9-1.9-1.9H66c-1 0-1.9.8-1.9 1.9v53.8H118c1 0 1.8-.8 1.8-1.8"/><path fill="#0063fc" d="M22.5 4.2H6C5 4.2 4.2 5 4.2 6v52c0 1 .8 1.9 1.9 1.9H60V41.5C59.9 20.9 43.2 4.2 22.5 4.2"/><path fill="#ffffff" d="M118 0H66c-3.3 0-6 2.7-6 6v17.4C53.2 9.6 38.9 0 22.5 0H6C2.7 0 0 2.7 0 6v52c0 3.3 2.7 6 6 6h112c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6m1.8 58c0 1-.8 1.9-1.9 1.9H64.1V6c0-1 .8-1.9 1.9-1.9h52c1 0 1.9.8 1.9 1.9v52zM4.2 58V6C4.2 5 5 4.2 6 4.2h16.5c20.6 0 37.4 16.8 37.4 37.4v18.3H6c-1-.1-1.8-.9-1.8-1.9"/></svg><svg class="hide-lt480" width="92" height="32" viewBox="0 0 184 64"><path fill="#06bffc" d="M179.8 58V6c0-1-.8-1.9-1.9-1.9H66c-1 0-1.9.8-1.9 1.9v53.8H178c1 0 1.8-.8 1.8-1.8"/><path fill="#0063fc" d="M22.5 4.2H6C5 4.2 4.2 5 4.2 6v52c0 1 .8 1.9 1.9 1.9H60V41.5C59.9 20.9 43.2 4.2 22.5 4.2"/><path fill="#fff" d="M178 0H66c-3.3 0-6 2.7-6 6v17.4C53.2 9.6 38.9 0 22.5 0H6C2.7 0 0 2.7 0 6v52c0 3.3 2.7 6 6 6h172c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6m1.8 58c0 1-.8 1.9-1.9 1.9H64.1V6c0-1 .8-1.9 1.9-1.9h112c1 0 1.9.8 1.9 1.9v52zM4.2 58V6C4.2 5 5 4.2 6 4.2h16.5c20.6 0 37.4 16.8 37.4 37.4v18.3H6c-1-.1-1.8-.9-1.8-1.9"/><path fill="#fff" d="M110.1 21.1h-4.2c-.7 0-1.2.5-1.2 1.2v19.3c0 .7.5 1.2 1.2 1.2h4.2c.7 0 1.2-.5 1.2-1.2V22.3c0-.6-.6-1.2-1.2-1.2M98.1 21.1H83c-.7 0-1.2.5-1.2 1.2v19.3c0 .7.5 1.2 1.2 1.2h4.2c.7 0 1.2-.5 1.2-1.2v-4h7.7c.7 0 1.2-.5 1.2-1.2v-3.2c0-.7-.5-1.2-1.2-1.2h-7.7v-4.9h9.7c.7 0 1.2-.5 1.2-1.2v-3.7c0-.5-.6-1.1-1.2-1.1M160.9 21.1h-4.2c-.7 0-1.2.5-1.2 1.2v9.5l-6.6-10c-.3-.4-.8-.7-1.3-.7h-3.2c-.7 0-1.2.5-1.2 1.2v19.3c0 .7.5 1.2 1.2 1.2h4.2c.7 0 1.2-.5 1.2-1.2v-9.4l6.5 9.8c.3.4.8.7 1.3.7h3.4c.7 0 1.2-.5 1.2-1.2V22.3c-.1-.6-.6-1.2-1.3-1.2M135.5 21.1h-4.2c-.7 0-1.2.5-1.2 1.2v9.5l-6.6-10c-.3-.4-.8-.7-1.3-.7H119c-.7 0-1.2.5-1.2 1.2v19.3c0 .7.5 1.2 1.2 1.2h4.2c.7 0 1.2-.5 1.2-1.2v-9.4l6.5 9.8c.3.4.8.7 1.3.7h3.4c.7 0 1.2-.5 1.2-1.2V22.3c-.1-.6-.6-1.2-1.3-1.2"/></svg>
+          
+        </a>
+        
+       
+        <!-- -->
+      </nav>
+      
+    </div>
+  </div>
+</div>
+      
+
+      
+<div class="lm-wrapper tb-fixed">
+  <div class="container"> 
+    <div class="page">
+
+      <div class="mod">
+        <div class="inner">
+          <div class="bd">
+            <h1>Content</h1>
+            <p>yeaa</p>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+</body>
+<script>
+// Menu button element
+var menu = document.getElementById('menu');
+
+// leftmenu element
+var leftmenu = document.getElementById('leftmenu');
+
+// Nav element
+var nav = document.getElementsByTagName('nav')[0]
+
+// Toggle class function
+function toggleClass(element, className){
+    if (!element || !className){
+        return;
+    }
+    var classString = element.className, nameIndex = classString.indexOf(className);
+    if (nameIndex == -1) {
+        classString += ' ' + className;
+    }
+    else {
+        classString = classString.substr(0, nameIndex) + classString.substr(nameIndex+className.length);
+    }
+    element.className = classString;
+}
+
+menu.onclick = function() {
+    toggleClass(leftmenu, 'show');
+};
+
+
+</script>
+
+</html>
+
