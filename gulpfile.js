@@ -30,6 +30,15 @@ gulp.task('copy-browser-files', ['clean'], function() {
         .pipe(gulp.dest(DIST_DIR));
 });
 
+gulp.task('compile-doc-sheet', function() {
+    return gulp.src('docs/*.css')
+        .pipe(plugins.sourcemaps.init())
+        .pipe(plugins.postcss(postcssPlugins({})))
+        // .pipe(addVersionHeader())
+        .pipe(plugins.sourcemaps.write('.'))
+        .pipe(gulp.dest('./out'));
+});
+
 gulp.task('compile-stylesheets', ['copy-images'], function() {
     return gulp.src('src/styles/*.css')
         .pipe(plugins.sourcemaps.init())
