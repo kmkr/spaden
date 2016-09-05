@@ -67,21 +67,22 @@
 
 
             <h2>Layout</h2>
+                <a id="core-template"></a>
                 <!-- -->
-                <ul class="breadcrumbs">
+                <ul class="breadcrumbs green-dk mbn">
                     <li>Core</li>
                     <li>Layout</li>
                     <li>Template</li>
                 </ul>
                 <!-- -->
-                
-                    <a id="core-template"></a>
+
+
                     <!--<h3>Template</h3>-->
-                        <small><a href="#core-template-docs.hbs" id="core-template-docs.hbs">#</a> docs.hbs</small>
+                        <small class="r-margin fright"><a href="#core-template-docs.hbs" id="core-template-docs.hbs">#</a> docs.hbs</small>
                         <div class="mod mbxxl">
   <div class="inner">
     <div class="bd">
-        <h2>Template</h2>
+        <h2 class="mtn">Template</h2>
         <p>Most pages on finn.no runs on the same <code>.container</code> > <code>.page</code> structure, these give the current widths to fit within the banners, and also the correct margins and responsive behaviour.</p>
         <details>
             <summary class="r-margin clickable h5">Basic template</summary>
@@ -121,23 +122,24 @@
 </div>
 
 
+                <a id="core-grid"></a>
                 <!-- -->
-                <ul class="breadcrumbs">
+                <ul class="breadcrumbs green-dk mbn">
                     <li>Core</li>
                     <li>Layout</li>
                     <li>Grid</li>
                 </ul>
                 <!-- -->
-                
-                    <a id="core-grid"></a>
+
+
                     <!--<h3>Grid</h3>-->
-                        <small><a href="#core-grid-docs.hbs" id="core-grid-docs.hbs">#</a> docs.hbs</small>
+                        <small class="r-margin fright"><a href="#core-grid-docs.hbs" id="core-grid-docs.hbs">#</a> docs.hbs</small>
                         <!-- grid -->
 <div class="mbxxl">
     <div class="mod">
         <div class="inner">
             <div class="bd">
-                <h2>Grid</h2>
+                <h2 class="mtn">Grid</h2>
                 <p>Highly customizable grid system used on all FINN pages</p>
 
                 <hr role="presentation">
@@ -432,22 +434,23 @@
 </div>
 
 
+                <a id="core-module"></a>
                 <!-- -->
-                <ul class="breadcrumbs">
+                <ul class="breadcrumbs green-dk mbn">
                     <li>Core</li>
                     <li>Layout</li>
                     <li>Module</li>
                 </ul>
                 <!-- -->
-                
-                    <a id="core-module"></a>
+
+
                     <!--<h3>Module</h3>-->
-                        <small><a href="#core-module-docs.mustache" id="core-module-docs.mustache">#</a> docs.mustache</small>
+                        <small class="r-margin fright"><a href="#core-module-docs.mustache" id="core-module-docs.mustache">#</a> docs.mustache</small>
                         <div class="mbxxl">
     <div class="mod">
         <div class="inner">
             <div class="bd">
-                <h2>Mod</h2>
+                <h2 class="mtn">Mod</h2>
                     <details>
                         <summary class="r-margin clickable h5">mod</summary>
                         <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mod"</span>&gt;</span>
@@ -579,22 +582,23 @@
 </div>
 
 
+                <a id="core-media"></a>
                 <!-- -->
-                <ul class="breadcrumbs">
+                <ul class="breadcrumbs green-dk mbn">
                     <li>Core</li>
                     <li>Layout</li>
                     <li>Media</li>
                 </ul>
                 <!-- -->
-                
-                    <a id="core-media"></a>
+
+
                     <!--<h3>Media</h3>-->
-                        <small><a href="#core-media-media-block.hbs" id="core-media-media-block.hbs">#</a> media-block.hbs</small>
+                        <small class="r-margin fright"><a href="#core-media-media-block.hbs" id="core-media-media-block.hbs">#</a> media-block.hbs</small>
                         <!-- media -->
 <div class="mod mbxxl">
     <div class="inner">
         <div class="bd">
-            <h2>Media</h2>
+            <h2 class="mtn">Media</h2>
             <p>Works excellent for anything that involves positioning a block of image, or whatever to the left and/or right of a content block.</p>
             <p>Any content in the body including nesting other media blocks.</p>
             <hr>
@@ -680,22 +684,23 @@
 </div>
 
 
+                <a id="core-spacing"></a>
                 <!-- -->
-                <ul class="breadcrumbs">
+                <ul class="breadcrumbs green-dk mbn">
                     <li>Core</li>
                     <li>Layout</li>
                     <li>Spacing</li>
                 </ul>
                 <!-- -->
-                
-                    <a id="core-spacing"></a>
+
+
                     <!--<h3>Spacing</h3>-->
-                        <small><a href="#core-spacing-spacing.mustache" id="core-spacing-spacing.mustache">#</a> spacing.mustache</small>
+                        <small class="r-margin fright"><a href="#core-spacing-spacing.mustache" id="core-spacing-spacing.mustache">#</a> spacing.mustache</small>
                         <!-- spacing -->
-<div class="mod shadow">
+<div class="mod mbxxl">
     <div class="inner">
         <div class="bd">
-            <h2>Margin/Padding</h2>
+            <h2 class="mtn">Margin/Padding</h2>
             <p>NB! these are absolute, if you need the kind of margin that collapses to something smaller on a mobile device, use <code>.r-margin</code></p>
             <p>
                 Class names are built up by 3 letters in the following order:<br/>
@@ -718,32 +723,26 @@
                 <code>ptn</code> = padding + top + none<br/>
                 <code>mal</code> = margin + all sides + large<br/>
             </p>
-            <div class="bg-lt-gray r-margin"><button class="mal">The button</button></div>
-<pre class="prettyprint linenums">
-&lt;button class=&quot;mal&quot;&gt;The button&lt;/button&gt;
-</pre>
-
-            <div class="bg-lt-gray r-margin"><button class="mam">The button</button></div>
-<pre class="prettyprint linenums">
-&lt;button class=&quot;mam&quot;&gt;The button&lt;/button&gt;
-</pre>
-
-            <div class="bg-lt-gray r-margin"><button class="pal mhs mtt mbl">The button</button></div>
-<pre class="prettyprint linenums">
-&lt;button class=&quot;pal mhs mtt mbl&quot;&gt;The button&lt;/button&gt;
-</pre>
-
-        </div>
-    </div>
-</div><!-- mod -->
-
-
-
-<!-- spacing -->
-<div class="mod shadow">
-    <div class="inner">
-        <div class="bd">
-            <h2>Some other helpers</h2>
+            <div>
+                <div class="bg-lt-gray r-margin inlineblockify" style="outline:1px solid grey">
+                    <button class="mal">The button</button>
+                </div>
+                <code>&lt;button class=&quot;mal&quot;&gt;The button&lt;/button&gt;</code>
+            </div>
+            <div>
+                <div class="bg-lt-gray r-margin inlineblockify" style="outline:1px solid grey">
+                    <button class="mam">The button</button>
+                </div>
+                <code>&lt;button class=&quot;mam&quot;&gt;The button&lt;/button&gt;</code>
+            </div>
+            <div>
+                <div class="bg-lt-gray r-margin inlineblockify" style="outline:1px solid grey">
+                    <button class="pal mhs mtt mbl">The button</button>
+                </div>
+                <code>&lt;button class=&quot;pal mhs mtt mbl&quot;&gt;The button&lt;/button&gt;</code>
+            </div>
+            <hr role="presentation">
+            <h3>Some other helpers</h3>
             <p><code>margin-left-auto</code></p>
             <p><code>margin-right-auto</code></p>
             <p><code>margin-horizontal-auto</code></p>
@@ -751,21 +750,23 @@
     </div>
 </div>
 
+
+                <a id="core-responsive"></a>
                 <!-- -->
-                <ul class="breadcrumbs">
+                <ul class="breadcrumbs green-dk mbn">
                     <li>Core</li>
                     <li>Layout</li>
                     <li>Responsive helpers</li>
                 </ul>
                 <!-- -->
-                
-                    <a id="core-responsive"></a>
+
+
                     <!--<h3>Responsive helpers</h3>-->
-                        <small><a href="#core-responsive-docs.hbs" id="core-responsive-docs.hbs">#</a> docs.hbs</small>
+                        <small class="r-margin fright"><a href="#core-responsive-docs.hbs" id="core-responsive-docs.hbs">#</a> docs.hbs</small>
                         <div class="mod mbxxl">
     <div class="inner">
         <div class="bd">
-            <h2>Responsive helpers</h2>
+            <h2 class="mtn">Responsive helpers</h2>
 
             <p class="mal">
                 <strong>lt</strong> = less than<br>
@@ -821,7 +822,7 @@
             <h2>Show/hide</h2>
 
             <div class="r-margin">
-                <table>
+                <table class="outerborder">
                     <thead>
                     <tr>
                         <th>480px</th>
@@ -855,23 +856,25 @@
 </div>
 
 
+                <a id="core-flex"></a>
                 <!-- -->
-                <ul class="breadcrumbs">
+                <ul class="breadcrumbs green-dk mbn">
                     <li>Core</li>
                     <li>Layout</li>
                     <li>Flex</li>
                 </ul>
                 <!-- -->
-                
-                    <a id="core-flex"></a>
+
+
                     <!--<h3>Flex</h3>-->
-                        <small><a href="#core-flex-flex.hbs" id="core-flex-flex.hbs">#</a> flex.hbs</small>
-                        <div class="line">
-    <div class="mod shadow">
+                        <small class="r-margin fright"><a href="#core-flex-flex.hbs" id="core-flex-flex.hbs">#</a> flex.hbs</small>
+                        
+    <div class="mod mbxxl">
         <div class="inner">
             <div class="bd">
+                <h2 class="mtn">Flex</h2>
                 <details>
-                    <summary class="r-margin clickable h3 normal">flex</summary>
+                    <summary class="r-margin clickable h5">flex</summary>
                     <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex"</span>&gt;</span>
     ...
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -889,7 +892,7 @@
                 <p><a href="/examples/example-flex-toolbar/view">Toolbar examples</a> Also works well to make typical vertical centered toolbar-like thingies. </p>
                 <hr>
                 <details>
-                    <summary class="r-margin clickable h3 normal">inline-flex</summary>
+                    <summary class="r-margin clickable h5">inline-flex</summary>
                     <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-flex"</span>&gt;</span>
     ...
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -898,7 +901,7 @@
                 <p>Works like <code>.flex</code> except the container itself behaves like an inline element. The flex-elements </p>
                 <hr>
                 <details>
-                    <summary class="r-margin clickable h3 normal">align-items</summary>
+                    <summary class="r-margin clickable h5">align-items</summary>
                     <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex align-items-center"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -906,58 +909,59 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
                 </details>
-  <p>Extends <code>.Flex</code>.</p>
-    <div class="line r-cols2to3">
-        <div class="unit">
-            <h5><code>.align-items-start</code></h5>
-            <div class="r-margin relative flex align-items-start bg-pale" style="height:100px;width:190px">
-                <div class="bg-blue-lt" style="height:50px;width:40px;margin-right:10px"></div>
-                <div class="bg-blue-lt" style="height:60px;width:40px;margin-right:10px"></div>
-                <div class="bg-blue-lt" style="height:40px;width:40px;margin-right:10px"></div>
-                <div class="bg-blue-lt" style="height:80px;width:40px;"></div>
-            </div>
-        </div>
-        <div class="unit">
-            <h5><code>.align-items-end</code></h5>
-            <div class="r-margin relative flex align-items-end bg-pale" style="height:100px;width:190px">
-                <div class="bg-blue-lt" style="height:50px;width:40px;margin-right:10px"></div>
-                <div class="bg-blue-lt" style="height:60px;width:40px;margin-right:10px"></div>
-                <div class="bg-blue-lt" style="height:40px;width:40px;margin-right:10px"></div>
-                <div class="bg-blue-lt" style="height:80px;width:40px;"></div>
-            </div>
-        </div>
-        <div class="unit">
-            <h5><code>.align-items-center</code></h5>
-            <div class="r-margin relative flex align-items-center bg-pale" style="height:100px;width:190px">
-                <div class="bg-blue-lt" style="height:50px;width:40px;margin-right:10px"></div>
-                <div class="bg-blue-lt" style="height:60px;width:40px;margin-right:10px"></div>
-                <div class="bg-blue-lt" style="height:40px;width:40px;margin-right:10px"></div>
-                <div class="bg-blue-lt" style="height:80px;width:40px;"></div>
-            </div>
-        </div>
-                <div class="unit">
-            <h5><code>.align-items-baseline</code></h5>
-            <div class="r-margin relative flex align-items-baseline bg-pale" style="height:100px;width:190px">
-                <div class="bg-blue-lt" style="height:50px;width:40px;margin-right:10px"><h1 class="mam">A</h1></div>
-                <div class="bg-blue-lt" style="height:60px;width:40px;margin-right:10px"><h4 class="mam">B</h4></div>
-                <div class="bg-blue-lt" style="height:40px;width:40px;margin-right:10px"><h2 class="mam">C</h2></div>
-                <div class="bg-blue-lt" style="height:80px;width:40px;"><h3 class="mam">D</h3></div>
-            </div>
-        </div>
-                <div class="unit">
-            <h5><code>.align-items-stretch</code> (Default)</h5>
-            <div class="r-margin relative flex align-items-stretch bg-pale" style="height:100px;width:190px">
-                <div class="bg-blue-lt" style="width:40px;margin-right:10px"></div>
-                <div class="bg-blue-lt" style="width:40px;margin-right:10px"></div>
-                <div class="bg-blue-lt" style="width:40px;margin-right:10px"></div>
-                <div class="bg-blue-lt" style="width:40px;"></div>
-            </div>
-        </div>
-    </div>
+                <p>Extends <code>.Flex</code>.</p>
+                <div class="line r-cols2to3">
+                    <div class="unit">
+                        <h5><code>.align-items-start</code></h5>
+                        <div class="r-margin relative flex align-items-start bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt" style="height:50px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:60px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:40px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:80px;width:40px;"></div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.align-items-end</code></h5>
+                        <div class="r-margin relative flex align-items-end bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt" style="height:50px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:60px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:40px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:80px;width:40px;"></div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.align-items-center</code></h5>
+                        <div class="r-margin relative flex align-items-center bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt" style="height:50px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:60px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:40px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:80px;width:40px;"></div>
+                        </div>
+                    </div>
+                            <div class="unit">
+                        <h5><code>.align-items-baseline</code></h5>
+                        <div class="r-margin relative flex align-items-baseline bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt" style="height:50px;width:40px;margin-right:10px"><h1 class="mam">A</h1></div>
+                            <div class="bg-blue-lt" style="height:60px;width:40px;margin-right:10px"><h4 class="mam">B</h4></div>
+                            <div class="bg-blue-lt" style="height:40px;width:40px;margin-right:10px"><h2 class="mam">C</h2></div>
+                            <div class="bg-blue-lt" style="height:80px;width:40px;"><h3 class="mam">D</h3></div>
+                        </div>
+                    </div>
+                            <div class="unit">
+                        <h5><code>.align-items-stretch</code> (Default)</h5>
+                        <div class="r-margin relative flex align-items-stretch bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt" style="width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="width:40px;"></div>
+                        </div>
+                    </div>
+                </div>
 
-          <hr>
+                <hr>
+
                 <details>
-                    <summary class="r-margin clickable h3 normal">wrap</summary>
+                    <summary class="r-margin clickable h5">wrap</summary>
                     <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex wrap"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -965,47 +969,49 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
                 </details>
-  <p>Extends <code>.Flex</code>.</p>
-  <p>Flex will by default try to fit all flexelements on a single line.</p>
-  <p class="red">! Does not work in certain browsers, including firefox before v.28, use with care, make sure you have a working fallback. </p>
-    <div class="line r-cols2to3">
-        <div class="unit">
-            <h5><code>.wrap</code></h5>
-            <div class="r-margin relative flex wrap bg-pale" style="height:100px;width:190px">
-                <div class="bg-blue-lt mrm mbm phl pvm">A</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">B</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">C</div>
-                <div class="bg-blue-lt mrm  phl pvm">D</div>
-                <div class="bg-blue-lt mrm  phl pvm">E</div>
-            </div>
-        </div>
-        <div class="unit">
-            <h5><code>.nowrap</code> (Default)</h5>
-            <div class="r-margin relative flex nowrap bg-pale" style="height:100px;width:190px">
-                <div class="bg-blue-lt mrm  phl pvm">A</div>
-                <div class="bg-blue-lt mrm  phl pvm">B</div>
-                <div class="bg-blue-lt mrm  phl pvm">C</div>
-                <div class="bg-blue-lt mrm  phl pvm">D</div>
-                <div class="bg-blue-lt mrm  phl pvm">E</div>
-            </div>
-        </div>
 
-        <div class="unit">
-            <h5><code>.wrap-reverse</code></h5>
-            <div class="r-margin relative flex wrap-reverse bg-pale" style="height:100px;width:190px">
-                <div class="bg-blue-lt mrm  phl pvm">A</div>
-                <div class="bg-blue-lt mrm  phl pvm">B</div>
-                <div class="bg-blue-lt mrm  phl pvm">C</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">D</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">E</div>
-            </div>
-        </div>
+                <p>Extends <code>.Flex</code>.</p>
+                <p>Flex will by default try to fit all flexelements on a single line.</p>
+                <p class="red">! Does not work in certain browsers, including firefox before v.28, use with care, make sure you have a working fallback. </p>
+                <div class="line r-cols2to3">
 
-    </div>
+                    <div class="unit">
+                        <h5><code>.wrap</code></h5>
+                        <div class="r-margin relative flex wrap bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                            <div class="bg-blue-lt mrm  phl pvm">D</div>
+                            <div class="bg-blue-lt mrm  phl pvm">E</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.nowrap</code> (Default)</h5>
+                        <div class="r-margin relative flex nowrap bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt mrm  phl pvm">A</div>
+                            <div class="bg-blue-lt mrm  phl pvm">B</div>
+                            <div class="bg-blue-lt mrm  phl pvm">C</div>
+                            <div class="bg-blue-lt mrm  phl pvm">D</div>
+                            <div class="bg-blue-lt mrm  phl pvm">E</div>
+                        </div>
+                    </div>
 
- <hr>
+                    <div class="unit">
+                        <h5><code>.wrap-reverse</code></h5>
+                        <div class="r-margin relative flex wrap-reverse bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt mrm  phl pvm">A</div>
+                            <div class="bg-blue-lt mrm  phl pvm">B</div>
+                            <div class="bg-blue-lt mrm  phl pvm">C</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">E</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr>
                 <details>
-                    <summary class="r-margin clickable h3 normal">row/column</summary>
+                    <summary class="r-margin clickable h5">row/column</summary>
                     <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex column"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1013,32 +1019,32 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
                 </details>
-  <p>Extends <code>.Flex</code>.</p>
-  <p>Establishes a flex main-axis</p>
+                <p>Extends <code>.Flex</code>.</p>
+                <p>Establishes a flex main-axis</p>
 
-    <div class="line r-cols2to3">
-        <div class="unit">
-            <h5><code>.row</code> (Default)</h5>
-            <div class="r-margin relative flex row bg-pale" style="height:100px;width:190px">
-                <div class="bg-blue-lt mrm  phl pvm">A</div>
-                <div class="bg-blue-lt mrm  phl pvm">B</div>
-                <div class="bg-blue-lt mrm  phl pvm">C</div>
-            </div>
-        </div>
-        <div class="unit">
-            <h5><code>.column</code></h5>
-            <div class="r-margin relative flex column bg-pale" style=";width:190px">
-                <div class="bg-blue-lt  mbm phl pvm">A</div>
-                <div class="bg-blue-lt  mbm phl pvm">B</div>
-                <div class="bg-blue-lt   phl pvm">C</div>
-            </div>
-        </div>
-    </div>
+                <div class="line r-cols2to3">
+                    <div class="unit">
+                        <h5><code>.row</code> (Default)</h5>
+                        <div class="r-margin relative flex row bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt mrm  phl pvm">A</div>
+                            <div class="bg-blue-lt mrm  phl pvm">B</div>
+                            <div class="bg-blue-lt mrm  phl pvm">C</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.column</code></h5>
+                        <div class="r-margin relative flex column bg-pale" style=";width:190px">
+                            <div class="bg-blue-lt  mbm phl pvm">A</div>
+                            <div class="bg-blue-lt  mbm phl pvm">B</div>
+                            <div class="bg-blue-lt   phl pvm">C</div>
+                        </div>
+                    </div>
+                </div>
 
- <hr>
+                <hr>
 
                 <details>
-                    <summary class="r-margin clickable h3 normal">justify-content</summary>
+                    <summary class="r-margin clickable h5">justify-content</summary>
                     <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex justify-content-space-between"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1046,55 +1052,55 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
                 </details>
-  <p>Extends <code>.Flex</code>.</p>
-  <p>Sets how 'free' space is distributed along the flex main-axis</p>
+                <p>Extends <code>.Flex</code>.</p>
+                <p>Sets how 'free' space is distributed along the flex main-axis</p>
 
-    <div class="line r-cols2to3">
-        <div class="unit">
-            <h5><code>.justify-start</code> (Default)</h5>
-            <div class="r-margin relative flex justify-start bg-pale" style="height:100px;width:290px">
-                <div class="bg-blue-lt mrm  phl pvm">A</div>
-                <div class="bg-blue-lt mrm  phl pvm">B</div>
-                <div class="bg-blue-lt mrm  phl pvm">C</div>
-            </div>
-        </div>
-        <div class="unit">
-            <h5><code>.justify-end</code></h5>
-            <div class="r-margin relative flex justify-end bg-pale" style="height:100px;width:290px">
-                <div class="bg-blue-lt mrm  phl pvm">A</div>
-                <div class="bg-blue-lt mrm  phl pvm">B</div>
-                <div class="bg-blue-lt phl pvm">C</div>
-            </div>
-        </div>
-                <div class="unit">
-            <h5><code>.justify-center</code></h5>
-            <div class="r-margin relative flex justify-center bg-pale" style="height:100px;width:290px">
-                <div class="bg-blue-lt mrm  phl pvm">A</div>
-                <div class="bg-blue-lt mrm  phl pvm">B</div>
-                <div class="bg-blue-lt mrm  phl pvm">C</div>
-            </div>
-        </div>
-                <div class="unit">
-            <h5><code>.justify-space-between</code></h5>
-            <div class="r-margin relative flex justify-space-between bg-pale" style="height:100px;width:290px">
-                <div class="bg-blue-lt   phl pvm">A</div>
-                <div class="bg-blue-lt   phl pvm">B</div>
-                <div class="bg-blue-lt   phl pvm">C</div>
-            </div>
-        </div>
-                <div class="unit">
-            <h5><code>.justify-space-around</code></h5>
-            <div class="r-margin relative flex justify-space-around bg-pale" style="height:100px;width:290px">
-                <div class="bg-blue-lt   phl pvm">A</div>
-                <div class="bg-blue-lt   phl pvm">B</div>
-                <div class="bg-blue-lt   phl pvm">C</div>
-            </div>
-        </div>
-            </div>
+                <div class="line r-cols2to3">
+                    <div class="unit">
+                        <h5><code>.justify-start</code> (Default)</h5>
+                        <div class="r-margin relative flex justify-start bg-pale" style="height:100px;width:290px">
+                            <div class="bg-blue-lt mrm  phl pvm">A</div>
+                            <div class="bg-blue-lt mrm  phl pvm">B</div>
+                            <div class="bg-blue-lt mrm  phl pvm">C</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.justify-end</code></h5>
+                        <div class="r-margin relative flex justify-end bg-pale" style="height:100px;width:290px">
+                            <div class="bg-blue-lt mrm  phl pvm">A</div>
+                            <div class="bg-blue-lt mrm  phl pvm">B</div>
+                            <div class="bg-blue-lt phl pvm">C</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.justify-center</code></h5>
+                        <div class="r-margin relative flex justify-center bg-pale" style="height:100px;width:290px">
+                            <div class="bg-blue-lt mrm  phl pvm">A</div>
+                            <div class="bg-blue-lt mrm  phl pvm">B</div>
+                            <div class="bg-blue-lt mrm  phl pvm">C</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.justify-space-between</code></h5>
+                        <div class="r-margin relative flex justify-space-between bg-pale" style="height:100px;width:290px">
+                            <div class="bg-blue-lt   phl pvm">A</div>
+                            <div class="bg-blue-lt   phl pvm">B</div>
+                            <div class="bg-blue-lt   phl pvm">C</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.justify-space-around</code></h5>
+                        <div class="r-margin relative flex justify-space-around bg-pale" style="height:100px;width:290px">
+                            <div class="bg-blue-lt   phl pvm">A</div>
+                            <div class="bg-blue-lt   phl pvm">B</div>
+                            <div class="bg-blue-lt   phl pvm">C</div>
+                        </div>
+                    </div>
+                </div>
 
 
                 <details>
-                    <summary class="r-margin clickable h3 normal">align-content</summary>
+                    <summary class="r-margin clickable h5">align-content</summary>
                     <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex align-content-stretch"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1102,93 +1108,93 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
                 </details>
-  <p>Extends <code>.Flex</code>.</p>
-  <p>Sets how 'free' space is distributed along the flex cross-axis (behaves Like justify-content but the coss direction from the specified flex-direction )</p>
+                <p>Extends <code>.Flex</code>.</p>
+                <p>Sets how 'free' space is distributed along the flex cross-axis (behaves Like justify-content but the coss direction from the specified flex-direction )</p>
 
-    <div class="line r-cols2to3">
-        <div class="unit">
-            <h5><code>.align-content-start</code> (Default)</h5>
-            <div class="r-margin relative flex wrap align-content-start bg-pale" style="height:150px;width:290px">
-                <div class="bg-blue-lt mrm mbm phl pvm">A</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">B</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">C</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">D</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">E</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">F</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">G</div>
-            </div>
-        </div>
-        <div class="unit">
-            <h5><code>.align-content-end</code></h5>
-            <div class="r-margin relative flex wrap align-content-end bg-pale" style="height:150px;width:290px">
-                <div class="bg-blue-lt mrm mbm phl pvm">A</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">B</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">C</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">D</div>
-                <div class="bg-blue-lt mrm phl pvm">E</div>
-                <div class="bg-blue-lt mrm phl pvm">F</div>
-                <div class="bg-blue-lt mrm phl pvm">G</div>
-            </div>
-        </div>
-                <div class="unit">
-            <h5><code>.align-content-center</code></h5>
-            <div class="r-margin relative flex wrap align-content-center bg-pale" style="height:150px;width:290px">
-                <div class="bg-blue-lt mrm mbm phl pvm">A</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">B</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">C</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">D</div>
-                <div class="bg-blue-lt mrm  phl pvm">E</div>
-                <div class="bg-blue-lt mrm  phl pvm">F</div>
-                <div class="bg-blue-lt mrm  phl pvm">G</div>
-            </div>
-        </div>
-                <div class="unit">
-           <h5><code>.align-content-space-between</code></h5>
-            <div class="r-margin relative flex wrap align-content-space-between bg-pale" style="height:150px;width:290px">
-                <div class="bg-blue-lt mrm mbm phl pvm">A</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">B</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">C</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">D</div>
-                <div class="bg-blue-lt mrm  phl pvm">E</div>
-                <div class="bg-blue-lt mrm  phl pvm">F</div>
-                <div class="bg-blue-lt mrm  phl pvm">G</div>
-            </div>
-        </div>
-        <div class="unit">
-           <h5><code>.align-content-space-around</code></h5>
-            <div class="r-margin relative flex wrap align-content-space-around bg-pale" style="height:150px;width:290px">
-                <div class="bg-blue-lt mrm mbm phl pvm">A</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">B</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">C</div>
-                <div class="bg-blue-lt mrm mbm phl pvm">D</div>
-                <div class="bg-blue-lt mrm  phl pvm">E</div>
-                <div class="bg-blue-lt mrm  phl pvm">F</div>
-                <div class="bg-blue-lt mrm  phl pvm">G</div>
-            </div>
-        </div>
-                <div class="unit">
-                   <h5><code>.align-content-stretch</code></h5>
-                    <div class="r-margin relative flex wrap align-content-stretch bg-pale" style="height:150px;width:290px">
-                        <div class="bg-blue-lt mrm mbm phl pvm">A</div>
-                        <div class="bg-blue-lt mrm mbm phl pvm">B</div>
-                        <div class="bg-blue-lt mrm mbm phl pvm">C</div>
-                        <div class="bg-blue-lt mrm mbm phl pvm">D</div>
-                        <div class="bg-blue-lt mrm  phl pvm">E</div>
-                        <div class="bg-blue-lt mrm  phl pvm">F</div>
-                        <div class="bg-blue-lt mrm  phl pvm">G</div>
+                <div class="line r-cols2to3">
+                    <div class="unit">
+                        <h5><code>.align-content-start</code> (Default)</h5>
+                        <div class="r-margin relative flex wrap align-content-start bg-pale" style="height:150px;width:290px">
+                            <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">E</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">F</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">G</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.align-content-end</code></h5>
+                        <div class="r-margin relative flex wrap align-content-end bg-pale" style="height:150px;width:290px">
+                            <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                            <div class="bg-blue-lt mrm phl pvm">E</div>
+                            <div class="bg-blue-lt mrm phl pvm">F</div>
+                            <div class="bg-blue-lt mrm phl pvm">G</div>
+                        </div>
+                    </div>
+                            <div class="unit">
+                        <h5><code>.align-content-center</code></h5>
+                        <div class="r-margin relative flex wrap align-content-center bg-pale" style="height:150px;width:290px">
+                            <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                            <div class="bg-blue-lt mrm  phl pvm">E</div>
+                            <div class="bg-blue-lt mrm  phl pvm">F</div>
+                            <div class="bg-blue-lt mrm  phl pvm">G</div>
+                        </div>
+                    </div>
+                            <div class="unit">
+                       <h5><code>.align-content-space-between</code></h5>
+                        <div class="r-margin relative flex wrap align-content-space-between bg-pale" style="height:150px;width:290px">
+                            <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                            <div class="bg-blue-lt mrm  phl pvm">E</div>
+                            <div class="bg-blue-lt mrm  phl pvm">F</div>
+                            <div class="bg-blue-lt mrm  phl pvm">G</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                       <h5><code>.align-content-space-around</code></h5>
+                        <div class="r-margin relative flex wrap align-content-space-around bg-pale" style="height:150px;width:290px">
+                            <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                            <div class="bg-blue-lt mrm  phl pvm">E</div>
+                            <div class="bg-blue-lt mrm  phl pvm">F</div>
+                            <div class="bg-blue-lt mrm  phl pvm">G</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                       <h5><code>.align-content-stretch</code></h5>
+                        <div class="r-margin relative flex wrap align-content-stretch bg-pale" style="height:150px;width:290px">
+                            <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                            <div class="bg-blue-lt mrm  phl pvm">E</div>
+                            <div class="bg-blue-lt mrm  phl pvm">F</div>
+                            <div class="bg-blue-lt mrm  phl pvm">G</div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
             </div>
         </div>
-        <hr class="man pan">
-        <div class="inner bg-lemon-xlt">
+
+        <div class="inner bg-lemon-xlt r-mhl mtl">
             <div class="bd">
                 <h3>Flex: Properties that may be set directly on specific flex-items</h3>
                 <hr>
                 <details>
-                    <summary class="r-margin clickable h3 normal">flex-grow[n]</summary>
+                    <summary class="r-margin clickable h5">flex-grow[n]</summary>
                     <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex align-items-center"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex-grow1"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex-grow2"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1196,12 +1202,12 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
                 </details>
-  <p>Defines the flex-item's ability to grow, Sets how 'free' space is distributed along the flex cross-axis (behaves Like justify-content but the coss direction from the specified flex-direction )</p>
-  <p>Supported values: 1 - 10 (Default:0)</p>
+                <p>Defines the flex-item's ability to grow, Sets how 'free' space is distributed along the flex cross-axis (behaves Like justify-content but the coss direction from the specified flex-direction )</p>
+                <p>Supported values: 1 - 10 (Default:0)</p>
 
                 <hr>
                 <details>
-                    <summary class="r-margin clickable h3 normal">flex-no-shrink</summary>
+                    <summary class="r-margin clickable h5">flex-no-shrink</summary>
                     <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex align-items-center"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -1209,34 +1215,32 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
                 </details>
-  <p>This defines the ability for a flex item to shrink if necessary.</p>
-
-
+                <p>This defines the ability for a flex item to shrink if necessary.</p>
 
             </div>
         </div>
     </div>
-</div>
 
 
 
 
             <h2>Decoration</h2>
+                <a id="core-color"></a>
                 <!-- -->
-                <ul class="breadcrumbs">
+                <ul class="breadcrumbs green-dk mbn">
                     <li>Core</li>
                     <li>Layout</li>
                     <li>Color</li>
                 </ul>
                 <!-- -->
-                
-                    <a id="core-color"></a>
+
+
                     <!--<h3>Color</h3>-->
-                        <small><a href="#core-color-color.hbs" id="core-color-color.hbs">#</a> color.hbs</small>
+                        <small class="r-margin fright"><a href="#core-color-color.hbs" id="core-color-color.hbs">#</a> color.hbs</small>
                         <div class="mod shadow">
     <div class="inner">
         <div class="bd">
-            <h2>New identity 2016</h2>
+            <h2 class="mtn">Colors</h2>
 
             <div class="line r-cols1to3">
                 <div class="unit">
@@ -1413,17 +1417,18 @@
 </div>
 
 
+                <a id="core-font"></a>
                 <!-- -->
-                <ul class="breadcrumbs">
+                <ul class="breadcrumbs green-dk mbn">
                     <li>Core</li>
                     <li>Layout</li>
                     <li>Font/Text</li>
                 </ul>
                 <!-- -->
-                
-                    <a id="core-font"></a>
+
+
                     <!--<h3>Font/Text</h3>-->
-                        <small><a href="#core-font-font.mustache" id="core-font-font.mustache">#</a> font.mustache</small>
+                        <small class="r-margin fright"><a href="#core-font-font.mustache" id="core-font-font.mustache">#</a> font.mustache</small>
                         <!-- fonts -->
 <div class="mod shadow" >
     <div class="inner">
@@ -1897,17 +1902,18 @@
 </div>
 
 
+                <a id="core-form"></a>
                 <!-- -->
-                <ul class="breadcrumbs">
+                <ul class="breadcrumbs green-dk mbn">
                     <li>Core</li>
                     <li>Layout</li>
                     <li>Form</li>
                 </ul>
                 <!-- -->
-                
-                    <a id="core-form"></a>
+
+
                     <!--<h3>Form</h3>-->
-                        <small><a href="#core-form-button.mustache" id="core-form-button.mustache">#</a> button.mustache</small>
+                        <small class="r-margin fright"><a href="#core-form-button.mustache" id="core-form-button.mustache">#</a> button.mustache</small>
                         <!-- Knapper -->
 <div class="mod shadow">
     <div class="inner">
@@ -2033,7 +2039,7 @@
 </div><!-- mod -->
 
 
-                        <small><a href="#core-form-form-element.mustache" id="core-form-form-element.mustache">#</a> form-element.mustache</small>
+                        <small class="r-margin fright"><a href="#core-form-form-element.mustache" id="core-form-form-element.mustache">#</a> form-element.mustache</small>
                         <div class="mod shadow">
         <div class="inner">
             <div class="bd">
@@ -2674,7 +2680,7 @@
     </div>
 
 
-                        <small><a href="#core-form-form-layout.mustache" id="core-form-form-layout.mustache">#</a> form-layout.mustache</small>
+                        <small class="r-margin fright"><a href="#core-form-form-layout.mustache" id="core-form-form-layout.mustache">#</a> form-layout.mustache</small>
                         <!-- forms -->
 <div class="line" id="forms">
     <div class="r-size1of1">
@@ -3015,17 +3021,18 @@
     </div>
 </div><!-- mod -->
 
+                <a id="core-image"></a>
                 <!-- -->
-                <ul class="breadcrumbs">
+                <ul class="breadcrumbs green-dk mbn">
                     <li>Core</li>
                     <li>Layout</li>
                     <li>Image</li>
                 </ul>
                 <!-- -->
-                
-                    <a id="core-image"></a>
+
+
                     <!--<h3>Image</h3>-->
-                        <small><a href="#core-image-image.mustache" id="core-image-image.mustache">#</a> image.mustache</small>
+                        <small class="r-margin fright"><a href="#core-image-image.mustache" id="core-image-image.mustache">#</a> image.mustache</small>
                         <!-- Bilder -->
 <div class="mod shadow">
     <div class="inner">
@@ -3200,17 +3207,18 @@
 </div>
 
 
+                <a id="core-list"></a>
                 <!-- -->
-                <ul class="breadcrumbs">
+                <ul class="breadcrumbs green-dk mbn">
                     <li>Core</li>
                     <li>Layout</li>
                     <li>List</li>
                 </ul>
                 <!-- -->
-                
-                    <a id="core-list"></a>
+
+
                     <!--<h3>List</h3>-->
-                        <small><a href="#core-list-list.mustache" id="core-list-list.mustache">#</a> list.mustache</small>
+                        <small class="r-margin fright"><a href="#core-list-list.mustache" id="core-list-list.mustache">#</a> list.mustache</small>
                         <div class="line" id="lists">
     <div class="mod shadow">
         <div class="inner">
@@ -3352,17 +3360,18 @@
     </div>
 </div>
 
+                <a id="core-table"></a>
                 <!-- -->
-                <ul class="breadcrumbs">
+                <ul class="breadcrumbs green-dk mbn">
                     <li>Core</li>
                     <li>Layout</li>
                     <li>Table</li>
                 </ul>
                 <!-- -->
-                
-                    <a id="core-table"></a>
+
+
                     <!--<h3>Table</h3>-->
-                        <small><a href="#core-table-table.mustache" id="core-table-table.mustache">#</a> table.mustache</small>
+                        <small class="r-margin fright"><a href="#core-table-table.mustache" id="core-table-table.mustache">#</a> table.mustache</small>
                         <div class="line" id="tables">
     <div class="unit size2of3">
 <div class="mod shadow">
