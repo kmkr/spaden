@@ -124,6 +124,12 @@ html, body {
     }
 }
 
+/* Bigger vertical distance between each section for better readabillity in the doc */
+
+.mod.doc {
+    margin-bottom: 50px!important;
+}
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *           Overstyringer for hvit bakgrunn           *
