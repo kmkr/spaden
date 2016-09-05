@@ -61,19 +61,20 @@
 
             <h2>{{title}}</h2>
                 {{#each children}}
+                <a id="{{ref}}"></a>
                 <!-- -->
-                <ul class="breadcrumbs">
+                <ul class="breadcrumbs green-dk mbn">
                     <li>Core</li>
                     <li>Layout</li>
                     <li>{{title}}</li>
                 </ul>
                 <!-- -->
-                
-                    <a id="{{ref}}"></a>
+
+
                     <!--<h3>{{title}}</h3>-->
                     {{#each files}}
                     {{^requested}}
-                        <small><a href="#{{ref}}" id="{{ref}}">#</a> {{name}}</small>
+                        <small class="r-margin fright"><a href="#{{ref}}" id="{{ref}}">#</a> {{name}}</small>
                         {{{rendered}}}
 
                         {{^rendered}}
