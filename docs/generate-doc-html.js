@@ -31,7 +31,7 @@ const spec = [
 					},
 					{
 						title: 'Module',
-						id: 'mod'
+						id: 'module'
 					},
 					{
 						title: 'Media',
@@ -40,6 +40,10 @@ const spec = [
 					{
 						title: 'Spacing',
 						id: 'spacing'
+					},
+					{
+						title: 'Responsive helpers',
+						id: 'responsive'
 					},
 					{
 						title: 'Flex',

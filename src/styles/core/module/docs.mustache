@@ -1,0 +1,119 @@
+<div class="mbxxl">
+    <div class="mod">
+        <div class="inner">
+            <div class="bd">
+                <h2>Mod</h2>
+                    <details>
+                        <summary class="r-margin clickable h5">mod</summary>
+                        <pre><code>{{{example-1}}}</code></pre>
+                    </details>
+
+                    <div class="mll mrl">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><code>.mod</code></th>
+                                <td>Main module wrapper.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><code>.inner</code></th>
+                                <td>Layout container wrapper, this is the one to extend for custom boxes. Add predefined background color class (bg- prefix), and/or color class for text. See <span class="navigation scrollTo"><a href="#colors">color definition</a></span> for more info. In case your making a supercustom module this is the class to extend (background-image and so on). </td>
+                            </tr>
+                            <!--<tr class="odd">
+                                <th scope="row"><code>hd</code></th>
+                                <td>Creates a heading bar</td>
+                            </tr>-->
+                            <tr>
+                                <th scope="row"><code>.bd</code></th>
+                                <td>Content goes here</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><code>.shadow</code></th>
+                                <td>Extends <code>.mod</code>. Adds dropshadow and extra vertical padding, do not use on nested mods.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><code>.listing</code></th>
+                                <td>Extends <code>.mod</code>. Use for listings like result listing etc. Adjusts vertical margins and hides the last <code>hr</code></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><code>.clickable</code></th>
+                                <td>Extends <code>.mod</code>. Adds hover/focus states (the mod needs to be an <code>a</code> tag for this to work properly including keyboard support). Since the whole block has its own focus and hover states, it works well paired with <code>.linkblock</code> to disable link behavior for the actual content of the mod.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h5>Mod skins</h5>
+                <div class="mll mrl">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><code>.green-skin</code></th>
+                                <td>Extends <code>.mod</code>. Color it green with a dark green frame.(Used for misc info boxes, boradcast etc.)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <details>
+                    <summary class="r-margin clickable h5">Clickable mod</summary>
+                    <pre><code>{{{example-2}}}</code></pre>
+                </details>
+            </div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="unit size1of3">
+            <a class="mod shadow clickable linkblock" href="#">
+                <div class="inner">
+                    <div class="bd">
+                        <h3>Clickable 1</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="unit size1of3">
+            <a class="mod shadow clickable linkblock" href="#">
+                <div class="inner">
+                    <div class="bd">
+                        <h3>Clickable 2</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+            <div class="unit size1of3">
+            <a class="mod shadow clickable linkblock" href="#">
+                <div class="inner">
+                    <div class="bd">
+                        <h3>Clickable 3</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="line">
+        <div class="unit size1of3">
+            <div class="mod green-skin" href="#">
+                <div class="inner">
+                    <div class="bd">
+                        <h3>Mod-skin</h3>
+                        <p>.green-skin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

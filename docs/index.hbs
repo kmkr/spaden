@@ -53,15 +53,22 @@
   <div class="container">
     <div class="page">
 
-      <div class="mod">
-        <div class="inner">
-          <div class="bd">
-            {{#each spec}}
-                <h1>{{title}}</h1>
-                <hr />
+        {{#each spec}}
+            <h1>{{title}}</h1>
+            <hr />
+            {{#each children}}
+
+
+            <h2>{{title}}</h2>
                 {{#each children}}
-                <h2>{{title}}</h2>
-                {{#each children}}
+                <!-- -->
+                <ul class="breadcrumbs">
+                    <li>Core</li>
+                    <li>Layout</li>
+                    <li>{{title}}</li>
+                </ul>
+                <!-- -->
+                
                     <a id="{{ref}}"></a>
                     <!--<h3>{{title}}</h3>-->
                     {{#each files}}
@@ -75,11 +82,9 @@
                         {{/requested}}
                     {{/each}}
                 {{/each}}
-                {{/each}}
             {{/each}}
-          </div>
-        </div>
-      </div>
+        {{/each}}
+
     </div>
   </div>
 </div>
