@@ -1,0 +1,169 @@
+html, body {
+    background-color: white;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *             Håndtering av venstremeny               *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.leftmenu {
+    width: 240px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    z-index: 4;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: -webkit-transform, left;
+    -moz-transition-property: -moz-transform, left;
+    transition-property: transform, left;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 1249px) {
+    .leftmenu {
+        left: -241px;
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 1250px) {
+    .leftmenu {
+        display: block;
+        visibility: visible;
+    }
+}
+
+.leftmenu.show {
+    left: 0;
+    visibility: visible;
+}
+
+.leftmenu.show .lm-button {
+    position: absolute;
+    left: 260px;
+}
+
+.topmenu.fixed+.lm-wrapper {
+    margin-top: 65px;
+}
+
+.lm-button {}
+
+.leftmenu dt {
+    color: #333;
+    font-weight: bold;
+}
+
+.leftmenu dl, .leftmenu dt {
+    margin: 0;
+}
+
+.leftmenu dt {
+    padding: 7px 0 7px 20px;
+}
+
+.leftmenu dl a {
+    display: block;
+    padding: 7px 0 7px 40px;
+}
+
+.leftmenu a.nav-active {
+    color: 4CB7FF;
+}
+
+.leftmenu a.nav-active:link {
+    color: #0063fb
+}
+
+.leftmenu a.nav-active:visited {
+    color: #0063fb;
+}
+
+.leftmenu a.nav-active:hover {
+    color: #0063fb;
+}
+
+.leftmenu .nav-active {
+    color: 4CB7FF;
+}
+
+.lm-wrapper{
+    margin-top:-1px;
+}
+
+@media (max-width: 1249px) {}
+
+@media (min-width: 1250px) {
+    .lm-wrapper {
+        padding-left: 250px;
+
+    }
+    .lm-button {
+        display: none
+    }
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *           Overstyringer for hvit bakgrunn           *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.topmenu{
+    background-color: rgba(255,255,255,0.85);
+    border-bottom: 1px solid #dddddd;
+}
+
+.outlines.container {
+    outline: 1px solid blue;
+}
+
+.outlines .page {
+    outline: 1px solid red;
+}
+
+.outlines .inner {
+    outline: 1px solid green;
+}
+
+.outlines .mod.skinned>.inner p, .outlines .mod.skinned>.inner, .outlines p {
+    outline: 1px dotted red;
+}
+
+.wrapper>.inner {
+    padding: 10px;
+}
+
+.wrapper .mod.skinned {
+    margin: 10px!important;
+    margin-bottom: 20px!important;
+}
+
+.mod.skinned>.inner {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5, .wrapper p {
+    margin: 10px;
+}

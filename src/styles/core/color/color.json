@@ -1,0 +1,102 @@
+{
+    "cols": [
+        [
+            {
+                "color": "#0000B5",
+                "main": "navy",
+                "bg": "bg-navy"
+            },
+            {
+                "color": "#0063FB",
+                "main": "blue-dk",
+                "bg": "bg-blue-dk"
+            },
+            {
+                "color": "#06BEFB",
+                "main": "blue",
+                "bg": "bg-blue"
+            },
+            {
+                "color": "#B6F0FF",
+                "main": "blue-lt",
+                "bg": "bg-blue-lt"
+            },
+            {
+                "color": "#F1F9FF",
+                "main": "blue-xlt",
+                "bg": "bg-blue-xlt"
+            },
+            {
+                "color": "#E8EFF4",
+                "main": "blue-greyish",
+                "bg": "bg-blue-greyish"
+            }
+        ],
+        [
+
+            {
+                "color": "#DA2400",
+                "main": "red-dk",
+                "bg": "bg-red-dk"
+            },
+            {
+                "color": "#FF5844",
+                "main": "red",
+                "bg": "bg-red"
+            },
+            {
+                "color": "#FFBDC9",
+                "main": "pink",
+                "bg": "bg-pink"
+            },
+            {
+                "color": "#FFF2B7",
+                "main": "yellow-lt",
+                "bg": "bg-yellow-lt"
+            },
+            {
+                "color": "#FFEC99",
+                "main": "yellow",
+                "bg": "bg-yellow"
+            },
+            {
+                "color": "#CCFFEC",
+                "main": "green-lt",
+                "bg": "bg-green-lt"
+            },
+            {
+                "color": "#28CD94",
+                "main": "green",
+                "bg": "bg-green"
+            },
+            {
+                "color": "#028256",
+                "main": "green-dk",
+                "bg": "bg-green-dk"
+            }
+        ],
+
+        [
+            {
+                "color": "#353233",
+                "main": "grey-xxdk",
+                "bg": "bg-grey-xxdk"
+            },
+            {
+                "color": "#474445",
+                "main": "grey-xdk",
+                "bg": "bg-grey-xdk"
+            },
+            {
+                "color": "#666364",
+                "main": "grey-dk",
+                "bg": "bg-grey-dk"
+            },
+            {
+                "color": "#A6A4A5",
+                "main": "grey",
+                "bg": "bg-grey"
+            }
+        ]
+    ]
+}
