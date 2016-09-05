@@ -202,7 +202,7 @@ resolveTree(spec, basePath)
             hbs.compile(fs.readFileSync(path.join(__dirname, 'index.hbs'), 'utf8'))({
                 version: `v${pkg.version}`,
                 spec: spec,
-                sha: process.env.SHA || pkg.version
+                sha: process.env.GIT_SHA || pkg.version
             }),
             'utf8'
         );

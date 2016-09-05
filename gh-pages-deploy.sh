@@ -33,7 +33,7 @@ cp -R dist out
 # temp copy until preprocessor done
 cp docs/style.css out/style.css
 cp docs/docs.js out/docs.js
-npm run build-docs
+GIT_SHA=$SHA npm run build-docs
 
 # Now let's go have some fun with the cloned repo
 cd out
