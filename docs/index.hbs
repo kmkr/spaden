@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div class="outlines">
+<div class="_outlines">
 <div id="leftmenu" class="leftmenu brt fixed bg-blue-xlt">
   <div class="navbar bbt ptm">
       {{version}}
@@ -20,7 +20,7 @@
         <p>{{title}}</p>
         <hr />
         {{#each children}}
-        <dt>Layout</dt>
+        <dt>{{title}}</dt>
         <dd class="dark-links">
             {{#each children}}
                 <a href="#{{ref}}">{{title}}</a>
@@ -60,10 +60,10 @@
                 <h1>{{title}}</h1>
                 <hr />
                 {{#each children}}
-                <h2>Layout</h2>
+                <h2>{{title}}</h2>
                 {{#each children}}
                     <a id="{{ref}}"></a>
-                    <h3>{{title}}</h3>
+                    <!--<h3>{{title}}</h3>-->
                     {{#each files}}
                     {{^requested}}
                         <small><a href="#{{ref}}" id="{{ref}}">#</a> {{name}}</small>
