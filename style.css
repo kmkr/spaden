@@ -1,3 +1,88 @@
+/*
+
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #002b36;
+  color: #839496;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #586e75;
+}
+
+/* Solarized Green */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-addition {
+  color: #859900;
+}
+
+/* Solarized Cyan */
+.hljs-number,
+.hljs-string,
+.hljs-meta .hljs-meta-string,
+.hljs-literal,
+.hljs-doctag,
+.hljs-regexp {
+  color: #2aa198;
+}
+
+/* Solarized Blue */
+.hljs-title,
+.hljs-section,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #268bd2;
+}
+
+/* Solarized Yellow */
+.hljs-attribute,
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-class .hljs-title,
+.hljs-type {
+  color: #b58900;
+}
+
+/* Solarized Orange */
+.hljs-symbol,
+.hljs-bullet,
+.hljs-subst,
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-link {
+  color: #cb4b16;
+}
+
+/* Solarized Red */
+.hljs-built_in,
+.hljs-deletion {
+  color: #dc322f;
+}
+
+.hljs-formula {
+  background: #073642;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
 html, body {
     background-color: white;
 }
@@ -17,26 +102,15 @@ html, body {
     overflow-y: auto;
     z-index: 4;
     -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
     -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transition-delay: 0.1s;
-    -moz-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
     transition-duration: 0.2s;
-    -webkit-transition-property: -webkit-transform, left;
-    -moz-transition-property: -moz-transform, left;
+    transition-property: left, -webkit-transform;
     transition-property: transform, left;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform, left, -webkit-transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -173,3 +247,5 @@ html, body {
 .wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5, .wrapper p {
     margin: 10px;
 }
+
+/*# sourceMappingURL=style.css.map */
