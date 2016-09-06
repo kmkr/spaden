@@ -11,7 +11,7 @@
     "build-docs": "mkdir -p out && npm run build-docs:html && npm run build-docs:js && npm run build-docs:css",
     "build-docs:html": "node ./docs/generate-doc-html.js",
     "build-docs:js": "browserify docs/docs.js --outfile out/docs.js",
-    "build-docs:css": "gulp compile-doc-sheet",
+    "build-docs:css": "gulp compile-doc-sheet && gulp package-to-docs",
     "test": "npm run package",
     "push-package-publish": "git push --follow-tags && npm run package && npm publish --registry 'https://registry.npmjs.org' && npm run maven:deploy",
     "release:patch": "npm version patch && npm run push-package-publish",

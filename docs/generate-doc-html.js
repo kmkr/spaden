@@ -82,7 +82,22 @@ const spec = [
 				]
 			}
 		]
-	}
+	},
+    {
+        title: 'Components',
+        id: 'components',
+        children: [
+            {
+                title: 'Basic',
+                children: [
+                    {
+                        title: 'Profiles',
+                        id: 'profiles'
+                    }
+                ]
+            }
+        ]
+    }
 ];
 
 function createRef(ref) {

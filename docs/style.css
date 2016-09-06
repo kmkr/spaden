@@ -1,4 +1,5 @@
 @import "../node_modules/highlight.js/styles/solarized-dark.css";
+@import '../src/styles/config/variables.css';
 
 html, body {
     background-color: white;
