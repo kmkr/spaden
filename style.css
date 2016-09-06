@@ -106,11 +106,12 @@ html, body {
     bottom: 0;
     overflow-y: auto;
     z-index: 4;
+
     -webkit-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
+
+            transform: translateZ(0);
     -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+            transform-style: preserve-3d;
     transition-delay: 0.1s;
     transition-duration: 0.2s;
     transition-property: left, -webkit-transform;
