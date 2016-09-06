@@ -4,7 +4,10 @@
 html, body {
     background-color: white;
 }
-
+pre{
+  background-color:#f3f3f3;
+  padding:10px;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *             Håndtering av venstremeny               *

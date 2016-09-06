@@ -91,8 +91,52 @@ const spec = [
                 title: 'Basic',
                 children: [
                     {
+                        title: 'contextbox',
+                        id: 'contextbox'
+                    },
+										{
+                        title: 'conversations',
+                        id: 'conversations'
+                    },
+										{
+                        title: 'crumbs',
+                        id: 'crumbs'
+                    },
+										{
+                        title: 'detailsummary',
+                        id: 'detailsummary'
+                    },
+										{
+                        title: 'filters',
+                        id: 'filters'
+                    },
+										{
+                        title: 'notification',
+                        id: 'notification'
+                    },
+										{
+                        title: 'omgnew',
+                        id: 'omgnew'
+                    },
+										{
+                        title: 'paging',
+                        id: 'paging'
+                    },
+										{
                         title: 'Profiles',
                         id: 'profiles'
+                    },
+										{
+                        title: 'ratings',
+                        id: 'ratings'
+                    },
+										{
+                        title: 'ribbons',
+                        id: 'ribbons'
+                    },
+										{
+                        title: 'Speech bubbles',
+                        id: 'speech-bubbles'
                     }
                 ]
             }
