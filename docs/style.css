@@ -19,27 +19,12 @@ html, body {
     bottom: 0;
     overflow-y: auto;
     z-index: 4;
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
+
     transform: translateZ(0);
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transition-delay: 0.1s;
-    -moz-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
     transition-duration: 0.2s;
-    -webkit-transition-property: -webkit-transform, left;
-    -moz-transition-property: -moz-transform, left;
     transition-property: transform, left;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 

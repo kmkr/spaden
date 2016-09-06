@@ -10,13 +10,13 @@
 
 <div class="_outlines">
 <div id="leftmenu" class="leftmenu brt fixed bg-blue-xlt">
-  <div class="navbar bbt ptm">
-      {{version}}
+  <div class="navbar bbt relative">
+
   </div>
   <nav class="mtm">
     <dl>
     {{#each spec}}
-        <p>{{title}}</p>
+        <h3>{{title}}</h3>
         <hr />
         {{#each children}}
         <dt>{{title}}</dt>
@@ -51,6 +51,19 @@
 <div class="lm-wrapper tb-fixed">
   <div class="container">
     <div class="page">
+
+        <div class="mod mbxxl">
+            <div class="inner">
+                <div class="bd ptl relative">
+                    <div class="relative inlineblockify">
+                        <h1 style="font-size:5em">Spaden</h1>
+                        <span class="d1 absolute grey-xdk" style="bottom:6px;left:87px">IMPLEMENTASJONSGUIDE</span>
+                        <span class="d1 absolute blue-dk" style="top:20px;right:24px">{{version}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         {{#each spec}}
             <h1>{{title}}</h1>
