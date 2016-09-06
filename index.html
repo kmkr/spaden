@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./dist/spaden.min.css?sha=bd68e3d5e17ecc3c3f9f88890f8578739ac90fc6">
-    <link rel="stylesheet" href="./style.css?sha=bd68e3d5e17ecc3c3f9f88890f8578739ac90fc6">
+    <link rel="stylesheet" href="./dist/spaden.min.css?sha=f1b4dc73bdaf4815fe5610d862f0daa7a8f34892">
+    <link rel="stylesheet" href="./style.css?sha=f1b4dc73bdaf4815fe5610d862f0daa7a8f34892">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
 </head>
 <body>
@@ -2886,7 +2886,7 @@
 
 
                     <!--<h3>List</h3>-->
-                        <small class="hidden"><a href="#core-list-list.mustache" id="core-list-list.mustache">#</a> list.mustache</small>
+                        <small class="hidden"><a href="#core-list-docs.mustache" id="core-list-docs.mustache">#</a> docs.mustache</small>
                         
     <div class="mod mbxxl">
         <div class="inner">
@@ -2894,136 +2894,153 @@
                 <h2 class="mtn">List types</h2>
                 <details>
                     <summary class="r-margin clickable h5">Unordered list, no bullets (default)</summary>
-                    <pre class="prettyprint linenums">&lt;ul&gt;
-    &lt;li&gt;List&lt;/li&gt;
-    &lt;li&gt;with&lt;/li&gt;
-    &lt;li&gt;no&lt;/li&gt;
-    &lt;li&gt;bullets&lt;/li&gt;
-&lt;/ul&gt;</pre>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>with<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>no<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>bullets<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
                 </details>
+
                 <ul>
-                    <li>List</li>
-                    <li>with</li>
-                    <li>no</li>
-                    <li>bullets</li>
-                </ul>
+    <li>List</li>
+    <li>with</li>
+    <li>no</li>
+    <li>bullets</li>
+</ul>
+
 
                 <hr>
 
                 <details>
                     <summary class="r-margin clickable h5">Unordered list with bullets</summary>
-                    <pre class="prettyprint linenums">&lt;ul class="bullets pll"&gt;
-    &lt;li&gt;List&lt;/li&gt;
-    &lt;li&gt;with&lt;/li&gt;
-    &lt;li&gt;bullets&lt;/li&gt;
-&lt;/ul&gt;</pre>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bullets pll"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>with<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>bullets<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
                 </details>
+
                 <ul class="bullets pll">
-                    <li>List</li>
-                    <li>with</li>
-                    <li>bullets</li>
-                </ul>
+    <li>List</li>
+    <li>with</li>
+    <li>bullets</li>
+</ul>
+
 
                 <hr>
 
                 <details>
                     <summary class="r-margin clickable h5">Unordered list, horizontal</summary>
-<pre class="prettyprint linenums">&lt;ul class="horizontal-list"&gt;
-    &lt;li&gt;Horizontal&lt;/li&gt;
-    &lt;li&gt;List&lt;/li&gt;
-&lt;/ul&gt;</pre>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"horizontal-list"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Horizontal<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
                 </details>
+
                 <ul class="horizontal-list">
-                    <li>Horzontal</li>
-                    <li>list</li>
-                </ul>
+    <li>Horizontal</li>
+    <li>List</li>
+</ul>
+
 
                 <hr>
 
                 <details>
-                <summary class="r-margin clickable h5">Ordered list</summary>
-<pre class="prettyprint linenums">&lt;ol class="decimals"&gt;
-    &lt;li&gt;List&lt;/li&gt;
-    &lt;li&gt;with&lt;/li&gt;
-    &lt;li&gt;decimals&lt;/li&gt;
-&lt;/ol&gt;</pre>
+                    <summary class="r-margin clickable h5">Ordered list</summary>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"decimals"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>with<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>decimals<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+</code></pre>
                 </details>
 
                 <ol class="decimals">
-                    <li>List</li>
-                    <li>with</li>
-                    <li>decimals</li>
-                </ol>
+    <li>List</li>
+    <li>with</li>
+    <li>decimals</li>
+</ol>
+
 
                 <hr>
 
-
                 <details>
                     <summary class="r-margin clickable h5">Definition list - multicol</summary>
-<pre class="prettyprint linenums">&lt;dl class="multicol"&gt;
-    &lt;dt&gt;Label&lt;/dt&gt;
-    &lt;dd>Value&lt;/dd&gt;
-    &lt;dt&gt;Label&lt;/dt&gt;
-    &lt;dd>Value&lt;/dd&gt;
-    &lt;dt&gt;Label&lt;/dt&gt;
-    &lt;dd>Value&lt;/dd&gt;
-&lt;/dl&gt;</pre>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">dl</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"multicol"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Label<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Value<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Label<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Value<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Label<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Value<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span>
+</code></pre>
                 </details>
 
                 <dl class="multicol">
-                    <dt>Label</dt>
-                    <dd>Value</dd>
-                    <dt>Label</dt>
-                    <dd>Value</dd>
-                    <dt>Label</dt>
-                    <dd>Value</dd>
-                </dl>
+    <dt>Label</dt>
+    <dd>Value</dd>
+    <dt>Label</dt>
+    <dd>Value</dd>
+    <dt>Label</dt>
+    <dd>Value</dd>
+</dl>
+
 
                 <hr>
 
                 <details>
                     <summary class="r-margin clickable h5">Definition list - compact</summary>
-<pre class="prettyprint linenums">&lt;dl class="compact man"&gt;
-    &lt;dt&gt;Label&lt;/dt&gt;
-    &lt;dd>Value&lt;/dd&gt;
-    &lt;dt&gt;Label&lt;/dt&gt;
-    &lt;dd>Value&lt;/dd&gt;
-    &lt;dt&gt;Label&lt;/dt&gt;
-    &lt;dd>Value&lt;/dd&gt;
-&lt;/dl&gt;</pre>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">dl</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"compact man"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Label<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Value<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Label<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Value<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Label<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Value<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span>
+</code></pre>
                 </details>
 
                 <dl class="compact man">
-                    <dt>Label</dt>
-                    <dd>Value</dd>
-                    <dt>Label</dt>
-                    <dd>Value</dd>
-                    <dt>Label</dt>
-                    <dd>Value</dd>
-                </dl>
+    <dt>Label</dt>
+    <dd>Value</dd>
+    <dt>Label</dt>
+    <dd>Value</dd>
+    <dt>Label</dt>
+    <dd>Value</dd>
+</dl>
+
 
                 <hr>
 
                 <details>
-                    <summary class="r-margin clickable h5">Definition list - liquid</summary>
-<pre class="prettyprint linenums">&lt;dl class="dl-liquid"&gt;
-    &lt;dt&gt;Label&lt;/dt&gt;
-    &lt;dd>Value&lt;/dd&gt;
-    &lt;dt&gt;Label&lt;/dt&gt;
-    &lt;dd>Value&lt;/dd&gt;
-    &lt;dt&gt;Label&lt;/dt&gt;
-    &lt;dd>Value&lt;/dd&gt;
-&lt;/dl&gt;</pre>
+                    <summary class="r-margin clickable h5">Definition list - Liquid</summary>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">dl</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dl-liquid"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Label<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Value<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Label<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Value<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Label<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Value<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span>
+</code></pre>
                 </details>
 
                 <dl class="dl-liquid">
-                    <dt>Label</dt>
-                    <dd>Value</dd>
-                    <dt>Label</dt>
-                    <dd>Value</dd>
-                    <dt>Label</dt>
-                    <dd>Value</dd>
-                </dl>
+    <dt>Label</dt>
+    <dd>Value</dd>
+    <dt>Label</dt>
+    <dd>Value</dd>
+    <dt>Label</dt>
+    <dd>Value</dd>
+</dl>
+
+
             </div>
         </div>
     </div>
@@ -4437,6 +4454,6 @@
   </div>
 </div>
 </div>
-<script src="./docs.js?sha=bd68e3d5e17ecc3c3f9f88890f8578739ac90fc6"></script>
+<script src="./docs.js?sha=f1b4dc73bdaf4815fe5610d862f0daa7a8f34892"></script>
 </body>
 </html>
