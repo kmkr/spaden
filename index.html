@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./dist/spaden.min.css?sha=2fd79e30ca987560346ec3f365cca9e2205c7901">
-    <link rel="stylesheet" href="./style.css?sha=2fd79e30ca987560346ec3f365cca9e2205c7901">
+    <link rel="stylesheet" href="./dist/spaden.min.css?sha=790e859d92b7e1c61069a488a4e0762e0a5c5cb4">
+    <link rel="stylesheet" href="./style.css?sha=790e859d92b7e1c61069a488a4e0762e0a5c5cb4">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
 </head>
 <body>
@@ -40,7 +40,18 @@
         <hr />
         <dt>Basic</dt>
         <dd class="dark-links">
+                <a href="#components-contextbox">contextbox</a>
+                <a href="#components-conversations">conversations</a>
+                <a href="#components-crumbs">crumbs</a>
+                <a href="#components-detailsummary">detailsummary</a>
+                <a href="#components-filters">filters</a>
+                <a href="#components-notification">notification</a>
+                <a href="#components-omgnew">omgnew</a>
+                <a href="#components-paging">paging</a>
                 <a href="#components-profiles">Profiles</a>
+                <a href="#components-ratings">ratings</a>
+                <a href="#components-ribbons">ribbons</a>
+                <a href="#components-speech-bubbles">Speech bubbles</a>
         </dd>
     </dl>
   </nav>
@@ -3962,6 +3973,840 @@
 
 
             <h2>Basic</h2>
+                <a id="components-contextbox"></a>
+                <!-- -->
+                <ul class="breadcrumbs green-dk mbn">
+                    <li>Components</li>
+                    <li>Basic</li>
+                    <li>contextbox</li>
+                </ul>
+                <!-- -->
+
+
+                    <!--<h3>contextbox</h3>-->
+                        <small class="hidden"><a href="#components-contextbox-contextbox.mustache" id="components-contextbox-contextbox.mustache">#</a> contextbox.mustache</small>
+                        <div class="mod shadow mtl">
+    <div class="inner pan">
+        <div class="bd">
+            <details>
+                <summary class="r-margin clickable h3 normal">context-box</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;bg-bare context-box up&quot;&gt;
+    ....
+&lt;/div&gt;</pre>
+            </details>
+            <div class="mll mrl">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><code>.context-box</code></th>
+                            <td>Main context-box container. Accepts background color-classes.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><code>.up .down .left .right</code></th>
+                            <td>Point at stuff in any direction, arrow is always centered. In certain cases you need to set ekstra margin on the arrow side to stop it from been hidden by overflow:hidden.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="centerify t3">Somethin</p>
+            <div class="bg-bare context-box up mal">
+                <div class="inlineblockify">
+                    <h3>Something about somethin</h3>
+                    <p>...........</p>
+                </div>
+            </div>
+            <div class="line r-cols2to4">
+                <div class="unit">
+                    <div class="bg-bare context-box up mal">
+                        <div class="inlineblockify">
+                            <h3>Viste du at ...</h3>
+                            <p>...........</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit">
+                    <div class="bg-bare context-box right mal">
+                        <div class="inlineblockify">
+                            <h3>Viste du at ...</h3>
+                            <p>...........</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit">
+                    <div class="bg-bare context-box down mal">
+                        <div class="inlineblockify">
+                            <h3>Viste du at ...</h3>
+                            <p>...........</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="unit">
+                    <div class="bg-bare context-box left mal">
+                        <div class="inlineblockify">
+                            <h3>Viste du at ...</h3>
+                            <p>...........</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                <a id="components-conversations"></a>
+                <!-- -->
+                <ul class="breadcrumbs green-dk mbn">
+                    <li>Components</li>
+                    <li>Basic</li>
+                    <li>conversations</li>
+                </ul>
+                <!-- -->
+
+
+                    <!--<h3>conversations</h3>-->
+                        <small class="hidden"><a href="#components-conversations-conversations.mustache" id="components-conversations-conversations.mustache">#</a> conversations.mustache</small>
+                        <div class="mod shadow">
+    <div class="inner">
+        <div class="bd">
+        <details>
+            <summary class="r-margin clickable h3 normal">Conversations</summary>
+<pre class="prettyprint linenums">
+&lt;!-- From me --&gt;
+&lt;div class="bd"&gt;
+    &lt;div class="display-table r-prl mvl"&gt;
+        &lt;div class="display-cell size1of6 neutral d1"&gt;&lt;time datetime="21.11 12:26"&gt;21.11 12:26&lt;/time&gt;&lt;/div&gt;
+        &lt;div class="display-cell size5of6 conversation roundify righty pvs"&gt;
+            &lt;p class="word-break"&gt;This is a message&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- From others --&gt;
+&lt;div class="bd"&gt;
+    &lt;div class="display-table r-pll mvl"&gt;
+        &lt;div class="display-cell size5of6 conversation roundify lefty pvs"&gt;
+            &lt;p class="word-break"&gt;This is a message&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="display-cell size1of6 rightify neutral d1"&gt;&lt;time datetime="21.11 13:26"&gt;21.11 13:26&lt;/time&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+        </details>
+
+
+
+            <div class="conversations bg-bright r-margin mbl">
+            <!-- From others -->
+                    <div class="bd">
+                        <div class="conversation roundify lefty pvs mhl mvm size3of4 ">
+                            <p>
+                                Jerky filet mignon tongue venison.Jerky filet mignon tongue venison. Jerky filet mignon tongue venison.Jerky filet mignon tongue venison.Jerky filet mignon tongue venison.
+                            </p>
+                        </div>
+                    </div>
+            <!-- From me -->
+                    <div class="bd">
+                        <div class="conversation roundify righty pvs mhl mvm  size3of4 fright">
+                            <p>
+                                Jerky filet mignon tongue venison.
+                            </p>
+                        </div>
+                    </div>
+            <!--          -->
+            <!-- From others -->
+                <h2>Conversations with img</h2>
+                <div class="media mhn">
+                    <div class="img roundedborder" style="width:65px;height:65px;overflow:hidden"><img style="max-width:65px" src="//baconmockup.com/300/300"></div>
+                    <div class="bd">
+                        <div class="conversation roundify lefty pvs mhl mvm size3of4 ">
+                            <p>
+                                Jerky filet mignon tongue venison.Jerky filet mignon tongue venison.Jerky filet mignon tongue venison.Jerky filet mignon tongue venison.Jerky filet mignon tongue venison.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <!-- From me -->
+                <div class="media mhn">
+                    <div class="imgExt roundedborder" style="width:65px;height:65px;overflow:hidden"><img style="max-width:65px" src="//baconmockup.com/300/300"></div>
+                    <div class="bd">
+                        <div class="conversation roundify righty pvs mhl mvm  size3of4 fright">
+                            <p>
+                                Jerky filet mignon tongue venison.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <!--          -->
+            </div>
+
+
+            <hr/>
+            <div class="media">
+                <div class="img roundedborder mtm" style="width:65px;height:65px;overflow:hidden"><img style="max-width:65px" src="//baconmockup.com/300/300"></div>
+                <div class="bd">
+                    <div class="r-margin fright">I går</div>
+                    <h3>John Doe</h3>
+                    <p>Bacon ipsum dolor amet hamburger shankle short ribs, andouille ham shoulder prosciutto kielbasa tongue beef ribs cow tenderloin. Spare ribs pork loin tongue beef ribs kevin. Filet mignon ham doner prosciutto shank shoulder bacon tenderloin hamburger pork chop turducken short ribs. Strip steak spare ribs turkey, chicken beef ham hock rump drumstick. Boudin ground round cow, pork chop beef fatback frankfurter pork sirloin t-bone bresaola salami. Porchetta beef ham hock shank turkey tri-tip. Ham hock meatball pancetta kevin prosciutto fatback.</p>
+                </div>
+            </div>
+            <hr/>
+            <div class="media">
+
+                <div class="img roundedborder mtm" style="width:65px;height:65px;overflow:hidden"><img style="max-width:65px" src="//baconmockup.com/300/300"></div>
+                <div class="bd">
+                    <div class="r-margin fright">I går</div>
+                    <h3>Jane Doe</h3>
+                    <p>Bacon ipsum dolor amet hamburger shankle short ribs, andouille ham shoulder prosciutto kielbasa tongue beef ribs cow tenderloin. Spare ribs pork loin tongue beef ribs kevin. Filet mignon ham doner prosciutto shank shoulder bacon tenderloin hamburger pork chop turducken short ribs. Strip steak spare ribs turkey, chicken beef ham hock rump drumstick. Boudin ground round cow, pork chop beef fatback frankfurter pork sirloin t-bone bresaola salami. Porchetta beef ham hock shank turkey tri-tip. Ham hock meatball pancetta kevin prosciutto fatback.</p>
+                </div>
+            </div>
+            <hr/>
+            <div class="media">
+                <div class="img roundedborder mtm" style="width:65px;height:65px;overflow:hidden"><img style="max-width:65px" src="//baconmockup.com/300/300"></div>
+                <div class="bd">
+                    <div class="r-margin fright">I går</div>
+                    <h3>Don Dow</h3>
+                    <p class="">Bacon ipsum dolor amet hamburger shankle short ribs, andouille ham shoulder prosciutto kielbasa tongue beef ribs cow tenderloin. Spare ribs pork loin tongue beef ribs kevin. Filet mignon ham doner prosciutto shank shoulder bacon tenderloin hamburger pork chop turducken short ribs. Strip steak spare ribs turkey, chicken beef ham hock rump drumstick. Boudin ground round cow, pork chop beef fatback frankfurter pork sirloin t-bone bresaola salami. Porchetta beef ham hock shank turkey tri-tip. Ham hock meatball pancetta kevin prosciutto fatback.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+                <a id="components-crumbs"></a>
+                <!-- -->
+                <ul class="breadcrumbs green-dk mbn">
+                    <li>Components</li>
+                    <li>Basic</li>
+                    <li>crumbs</li>
+                </ul>
+                <!-- -->
+
+
+                    <!--<h3>crumbs</h3>-->
+                        <small class="hidden"><a href="#components-crumbs-crumbs.hbs" id="components-crumbs-crumbs.hbs">#</a> crumbs.hbs</small>
+                        <div class="mod shadow">
+    <div class="inner">
+        <div class="bd">
+            <details>
+                <summary class="r-margin clickable h3 normal">Breadcrumbs</summary>
+                <pre class="prettyprint linenums">
+&lt;ul class=&quot;breadcrumbs&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;FINN&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Jobb&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Heltidsstillinger&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Buzzword-konsulent&lt;/li&gt;
+&lt;/ul&gt;</pre>
+            </details>
+            <ul class="breadcrumbs">
+                <li><a href="#">FINN</a></li>
+                <li><a href="#">Jobb</a></li>
+                <li><a href="#">Heltidsstillinger</a></li>
+                <li>Buzzword-konsulent</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                <a id="components-detailsummary"></a>
+                <!-- -->
+                <ul class="breadcrumbs green-dk mbn">
+                    <li>Components</li>
+                    <li>Basic</li>
+                    <li>detailsummary</li>
+                </ul>
+                <!-- -->
+
+
+                    <!--<h3>detailsummary</h3>-->
+                <a id="components-filters"></a>
+                <!-- -->
+                <ul class="breadcrumbs green-dk mbn">
+                    <li>Components</li>
+                    <li>Basic</li>
+                    <li>filters</li>
+                </ul>
+                <!-- -->
+
+
+                    <!--<h3>filters</h3>-->
+                        <small class="hidden"><a href="#components-filters-filters.hbs" id="components-filters-filters.hbs">#</a> filters.hbs</small>
+                        <div class="line">
+    <div class="unit r-size1of1">
+        <div class="mod shadow">
+            <div class="inner">
+                <div class="bd">
+                    <h2>Filters</h2>
+
+                    <p>Filters reside in a more or less standard mod. Each filter in turn resides in a <code>.filter.r-pvm</code> container and are separated by <code>&lt;hr&gt;</code>.<br><a href="/pages/result/view">Here's an example in a realistic context</a>.</p>
+
+                    <details class="mtl">
+                        <summary class="r-margin clickable h3 normal">Container</summary>
+<pre class="prettyprint linenums">&lt;div class=&quot;mod shadow&quot;&gt;
+    &lt;div class=&quot;inner filters pan&quot;&gt;
+        &lt;div class=&quot;bd&quot;&gt;
+            &lt;div class=&quot;filter r-pvm&quot;&gt;
+                &lt;h4 class=&quot;truncate t5&quot;&gt;Title&lt;/h4&gt;
+                ...
+            &lt;/div&gt;
+
+            &lt;hr class=&quot;man&quot; role=&quot;presentation&quot;&gt;
+
+            &lt;div class=&quot;filter r-pvm&quot;&gt;
+                &lt;h4 class=&quot;truncate t5&quot;&gt;Title&lt;/h4&gt;
+                ...
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                    </details>
+
+                    <div class="r-margin bg-blue-xlt pal">
+                        <div class="r-size1of3">
+<div class="mod shadow">
+    <div class="inner filters pan">
+        <div class="bd">
+            <div class="filter r-pvm">
+                <h4 class="truncate t5">Title</h4>
+                <p>...</p>
+            </div>
+
+            <hr class="man" role="presentation">
+
+            <div class="filter r-pvm">
+                <h4 class="truncate t5">Title</h4>
+                <p>...</p>
+            </div>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+
+                    <details class="mtl">
+                        <summary class="r-margin clickable h3 normal">Taxonomies</summary>
+<pre class="prettyprint linenums">&lt;div class=&quot;filter r-pvm&quot;&gt;
+    &lt;h4 class=&quot;truncate t5&quot;&gt;Title&lt;/h4&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox1&quot;&gt;
+                &lt;label for=&quot;fancycheckbox1&quot; class=&quot;blockify&quot;&gt;Level 1 &lt;span class=&quot;d1 neutral&quot;&gt;(345)&lt;/span&gt;&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox2&quot;&gt;
+                &lt;label for=&quot;fancycheckbox2&quot; class=&quot;blockify&quot;&gt;&lt;span class=&quot;opacity60&quot;&gt;Level 1 - no hits&lt;span class=&quot;d1 neutral&quot;&gt;(0)&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox3&quot;&gt;
+                &lt;label for=&quot;fancycheckbox3&quot; class=&quot;blockify&quot;&gt;Level 1 &lt;span class=&quot;d1 neutral&quot;&gt;(195)&lt;/span&gt;&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;ul class=&quot;mvn&quot;&gt;
+                &lt;li&gt;
+                    &lt;div class=&quot;fancyinput&quot;&gt;
+                        &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox1-1&quot;&gt;
+                        &lt;label for=&quot;fancycheckbox1-1&quot; class=&quot;blockify&quot;&gt;Level 2 &lt;span class=&quot;d1 neutral&quot;&gt;(128)&lt;/span&gt;&lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;div class=&quot;fancyinput&quot;&gt;
+                        &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox1-2&quot;&gt;
+                        &lt;label for=&quot;fancycheckbox1-2&quot; class=&quot;blockify&quot;&gt;Level 2 &lt;span class=&quot;d1 neutral&quot;&gt;(33)&lt;/span&gt;&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;ul class=&quot;mvn&quot;&gt;
+                        &lt;li&gt;
+                            &lt;div class=&quot;fancyinput&quot;&gt;
+                                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox2-1&quot;&gt;
+                                &lt;label for=&quot;fancycheckbox2-1&quot; class=&quot;blockify&quot;&gt;Level 3 &lt;span class=&quot;d1 neutral&quot;&gt;(91)&lt;/span&gt;&lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox4&quot;&gt;
+                &lt;label for=&quot;fancycheckbox4&quot; class=&quot;blockify&quot;&gt;Level 1 &lt;span class=&quot;d1 neutral&quot;&gt;(45)&lt;/span&gt;&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox5&quot;&gt;
+                &lt;label for=&quot;fancycheckbox5&quot; class=&quot;blockify&quot;&gt;Level 1 &lt;span class=&quot;d1 neutral&quot;&gt;(2)&lt;/span&gt;&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</pre>
+                    </details>
+
+                    <p>See also: <a href="/core/form-elements/view">Fancy checkboxes</a></p>
+
+                    <div class="r-margin bg-blue-xlt pal">
+                        <div class="r-size1of3">
+                            <div class="mod shadow">
+                                <div class="inner filters pan">
+                                    <div class="bd">
+                                        <div class="filter r-pvm">
+                                            <h4 class="truncate t5">Title</h4>
+                                            <ul>
+                                                <li>
+                                                    <div class="fancyinput">
+                                                        <input type="checkbox" id="fancycheckbox1">
+                                                        <label for="fancycheckbox1" class="blockify">Level 1 <span class="d1 neutral">(345)</span></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="fancyinput">
+                                                        <input type="checkbox" id="fancycheckbox2">
+                                                        <label for="fancycheckbox2" class="blockify opacity"><span class="opacity60">Level 1 - no hits <span class="d1 neutral">(0)</span></span></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="fancyinput">
+                                                        <input type="checkbox" id="fancycheckbox3">
+                                                        <label for="fancycheckbox3" class="blockify">Level 1 <span class="d1 neutral">(195)</span></label>
+                                                    </div>
+                                                    <ul class="mvn">
+                                                        <li>
+                                                            <div class="fancyinput">
+                                                                <input type="checkbox" id="fancycheckbox1-1">
+                                                                <label for="fancycheckbox1-1" class="blockify">Level 2 <span class="d1 neutral">(128)</span></label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="fancyinput">
+                                                                <input type="checkbox" id="fancycheckbox1-2">
+                                                                <label for="fancycheckbox1-2" class="blockify">Level 2 <span class="d1 neutral">(33)</span></label>
+                                                            </div>
+                                                            <ul class="mvn">
+                                                                <li>
+                                                                    <div class="fancyinput">
+                                                                        <input type="checkbox" id="fancycheckbox2-1">
+                                                                        <label for="fancycheckbox2-1" class="blockify">Level 3 <span class="d1 neutral">(91)</span></label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <div class="fancyinput">
+                                                        <input type="checkbox" id="fancycheckbox4">
+                                                        <label for="fancycheckbox4" class="blockify">Level 1 <span class="d1 neutral">(45)</span></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="fancyinput">
+                                                        <input type="checkbox" id="fancycheckbox5">
+                                                        <label for="fancycheckbox5" class="blockify">Level 1 <span class="d1 neutral">(2)</span></label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <details class="mtl">
+                        <summary class="r-margin clickable h3 normal">Button groups</summary>
+<pre class="prettyprint linenums">&lt;div class=&quot;filter r-pvm&quot;&gt;
+    &lt;h4 class=&quot;truncate t5&quot;&gt;Number of things&lt;/h4&gt;
+    &lt;div class=&quot;input r-margin&quot;&gt;
+        &lt;div class=&quot;button-group line&quot; role=&quot;radiogroup&quot;&gt;
+            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;sr0&quot; type=&quot;radio&quot; value=&quot;1&quot; name=&quot;bedrooms&quot; checked&gt;
+            &lt;label class=&quot;pas size1of6 centerify&quot; for=&quot;sr0&quot;&gt;All&lt;/label&gt;
+            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;sr1&quot; type=&quot;radio&quot; value=&quot;1&quot; name=&quot;bedrooms&quot;&gt;
+            &lt;label class=&quot;pas size1of6 centerify&quot; for=&quot;sr1&quot;&gt;1+&lt;/label&gt;
+            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;sr2&quot; type=&quot;radio&quot; value=&quot;2&quot; name=&quot;bedrooms&quot;&gt;
+            &lt;label class=&quot;pas size1of6 centerify&quot; for=&quot;sr2&quot;&gt;2+&lt;/label&gt;
+            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;sr3&quot; type=&quot;radio&quot; value=&quot;3&quot; name=&quot;bedrooms&quot;&gt;
+            &lt;label class=&quot;pas size1of6 centerify&quot; for=&quot;sr3&quot;&gt;3+&lt;/label&gt;
+            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;sr4&quot; type=&quot;radio&quot; value=&quot;4&quot; name=&quot;bedrooms&quot;&gt;
+            &lt;label class=&quot;pas size1of6 centerify&quot; for=&quot;sr4&quot;&gt;4+&lt;/label&gt;
+            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;sr5&quot; type=&quot;radio&quot; value=&quot;5&quot; name=&quot;bedrooms&quot;&gt;
+            &lt;label class=&quot;pas size1of6 centerify&quot; for=&quot;sr5&quot;&gt;5+&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                    </details>
+
+                    <p>See also: <a href="/core/grid/view">Grid</a>, <a href="/core/form-elements/view">Button groups</a></p>
+
+                    <div class="r-margin bg-blue-xlt pal">
+                        <div class="r-size1of3">
+                            <div class="mod shadow">
+                                <div class="inner filters pan">
+                                    <div class="bd">
+<div class="filter r-pvm">
+    <h4 class="truncate t5">Number of things</h4>
+    <div class="input r-margin">
+        <div class="button-group line" role="radiogroup">
+            <input tabindex="0" data-selector="" id="sr0" type="radio" value="1" name="bedrooms" checked>
+            <label class="pas size1of6 centerify" for="sr0">All</label>
+            <input tabindex="0" data-selector="" id="sr1" type="radio" value="1" name="bedrooms">
+            <label class="pas size1of6 centerify" for="sr1">1+</label>
+            <input tabindex="0" data-selector="" id="sr2" type="radio" value="2" name="bedrooms">
+            <label class="pas size1of6 centerify" for="sr2">2+</label>
+            <input tabindex="0" data-selector="" id="sr3" type="radio" value="3" name="bedrooms">
+            <label class="pas size1of6 centerify" for="sr3">3+</label>
+            <input tabindex="0" data-selector="" id="sr4" type="radio" value="4" name="bedrooms">
+            <label class="pas size1of6 centerify" for="sr4">4+</label>
+            <input tabindex="0" data-selector="" id="sr5" type="radio" value="5" name="bedrooms">
+            <label class="pas size1of6 centerify" for="sr5">5+</label>
+        </div>
+    </div>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <details class="mtl">
+                        <summary class="r-margin clickable h3 normal">Search</summary>
+<pre class="prettyprint linenums">&lt;div class=&quot;filter r-pvm&quot;&gt;
+    &lt;div class=&quot;r-margin&quot;&gt;
+        &lt;input type=&quot;search&quot; name=&quot;q&quot; placeholder=&quot;S&oslash;k&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                    </details>
+
+                    <div class="r-margin bg-blue-xlt pal">
+                        <div class="r-size1of3">
+                            <div class="mod shadow">
+                                <div class="inner filters pan">
+                                    <div class="bd">
+<div class="filter r-pvm">
+    <div class="r-margin">
+        <input type="search" name="q" placeholder="Søk">
+    </div>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                <a id="components-notification"></a>
+                <!-- -->
+                <ul class="breadcrumbs green-dk mbn">
+                    <li>Components</li>
+                    <li>Basic</li>
+                    <li>notification</li>
+                </ul>
+                <!-- -->
+
+
+                    <!--<h3>notification</h3>-->
+                        <small class="hidden"><a href="#components-notification-notification.hbs" id="components-notification-notification.hbs">#</a> notification.hbs</small>
+                        <div class="mod shadow">
+    <div class="inner">
+        <div class="bd">
+            <details>
+                <summary class="r-margin clickable h3 normal">Notification</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;notification bg-red bright centerify inlineblockify&quot;&gt;2&lt;/div&gt;</pre>
+            </details>
+            <p>The notification dot is by default an inline element but can easily be positioned by setting the <code>relativeify</code> class on its parent element and setting top,right,bottom,left for positioning. We might be able to find some patern for these but most likely a one off spesific positioning setting is nessesary for each implementation (?). </p>     
+            <div class="r-margin">
+                <div class="notification bg-red bright centerify inlineblockify">1</div>
+                <div class="notification bg-red bright centerify inlineblockify">13</div>
+                <div class="notification bg-red bright centerify inlineblockify">245</div>
+            </div>
+
+            <div class="r-margin">
+                <span class="bg-blue bright clickable relative pvm phl">
+                    <div class="notification topright bg-red bright centerify inlineblockify ">1</div>
+                    Finnbox
+                </span>
+            </div>
+        </div>
+    </div>
+</div> 
+
+                <a id="components-omgnew"></a>
+                <!-- -->
+                <ul class="breadcrumbs green-dk mbn">
+                    <li>Components</li>
+                    <li>Basic</li>
+                    <li>omgnew</li>
+                </ul>
+                <!-- -->
+
+
+                    <!--<h3>omgnew</h3>-->
+                        <small class="hidden"><a href="#components-omgnew-omgnew.hbs" id="components-omgnew-omgnew.hbs">#</a> omgnew.hbs</small>
+                        <div class="mod">
+    <div class="inner">
+        <div class="bd">
+            <details>
+                <summary class="r-margin clickable h3 normal">Omgnew</summary>
+                <pre class="prettyprint linenums">&lt;h5 class=&quot;omgnew&quot;&gt;Awsome functionality&lt;/h5&gt;</pre>
+            </details>
+            <h5 class="omgnew">OMG theres new functionality</h5>
+            <p>Add <code>.omgnew</code> to stuff to show off awsome new functionality! Tested on header tags but theres no reason why it should not work on other stuff. A tiny bit of inline css might be neccesary for proper placement If you get into trouble placing it on 'innovative' content. <span class="bg-pink phm"> Added in spaden v5.2.0 </span></p>
+
+            <ul>
+                <li><a href="">Stuffs</a></li>
+                <li><a href="">More Stuffs</a></li>
+                <li><a href="">Other Stuffs</a></li>
+                <li><a href="">Different Stuffs</a></li>
+                <li class="omgnew"><a href="">Some new Stuffs</a></li>
+                <li><a href="">Misc Stuffs</a></li>
+            </ul>
+            <h1 class="omgnew">H1 stuffs</h1>
+            <h2 class="omgnew">H2 stuffs</h2>
+            <h3 class="omgnew">H3 stuffs</h3>
+            <h4 class="omgnew">H4 stuffs</h4>
+            <h5 class="omgnew">H5 stuffs</h5>
+
+        </div>
+    </div>
+</div>
+
+
+                <a id="components-paging"></a>
+                <!-- -->
+                <ul class="breadcrumbs green-dk mbn">
+                    <li>Components</li>
+                    <li>Basic</li>
+                    <li>paging</li>
+                </ul>
+                <!-- -->
+
+
+                    <!--<h3>paging</h3>-->
+                        <small class="hidden"><a href="#components-paging-pagination.hbs" id="components-paging-pagination.hbs">#</a> pagination.hbs</small>
+                        <div class="line">
+    <div class="unit r-size1of1">
+        <div class="mod shadow">
+            <div class="inner">
+                <div class="bd">
+                    <details>
+                        <summary class="r-margin clickable h3 normal">Pagination</summary>
+<pre class="prettyprint linenums">
+&lt;div class="t4 centerify r-margin">
+    &lt;a rel="start" href="#" class="mrm pam" aria-label="Første">
+        &lt;svg height="1em" viewBox="0 0 18 16" class="valign-middle">
+            &lt;switch>
+                &lt;g fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    &lt;polyline points="8,2 2,8 8,14"/>
+                    &lt;polyline points="16,2 10,8 16,14"/>
+                &lt;/g>
+                &lt;text>&amp;lt;&amp;lt;&lt;/text>
+            &lt;/switch>
+        &lt;/svg>&lt;!-- No line break here
+        -->&lt;/a>
+    &lt;a rel="prev" href="#" class="pam" aria-label="Forrige">
+        &lt;svg height="1em" viewBox="0 0 10 16" class="valign-middle">
+            &lt;switch>
+                &lt;polyline points="8,2 2,8 8,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                &lt;text>&amp;lt;&lt;/text>
+            &lt;/switch>
+        &lt;/svg>&lt;!-- No line break here
+    -->&lt;/a>
+    &lt;span class="hidegt768">
+        Side 3
+    &lt;/span>
+    &lt;span class="hidelt768">
+        &lt;a href="#" class="phs valign-middle">1&lt;/a>
+        &lt;a href="#" class="phs valign-middle">2&lt;/a>
+        &lt;b class="phs valign-middle">3&lt;/b>
+        &lt;a href="#" class="phs valign-middle">4&lt;/a>
+        &lt;a href="#" class="phs valign-middle">5&lt;/a>
+        &lt;a href="#" class="phs valign-middle">6&lt;/a>
+        &lt;a href="#" class="phs valign-middle">7&lt;/a>
+        &lt;a href="#" class="phs valign-middle">8&lt;/a>
+        &lt;a href="#" class="phs valign-middle">9&lt;/a>
+        &lt;a href="#" class="phs valign-middle">10&lt;/a>
+    &lt;/span>
+    &lt;span>
+        &lt;a rel="next" href="#" class="pam" aria-label="Neste">&lt;span class="hidegt768 valign-middle mrs">Neste&lt;/span>&lt;!-- No line break here
+            -->&lt;svg height="1em" viewBox="0 0 10 16" class="valign-middle">
+                &lt;switch>
+                    &lt;polyline points="2,2 8,8 2,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    &lt;text>&amp;gt;&lt;/text>
+                &lt;/switch>
+            &lt;/svg>
+        &lt;/a>
+    &lt;/span>
+&lt;/div></pre>
+                    </details>
+
+                    <p>Paging differs on large and small screens. Page numbers are not shown on smaller screens.
+
+                    <h3>First page</h3>
+                    <p>On large screens the page numbers and a next link is shown. On small screens, only the next link is shown.
+                    <div class="t4 centerify r-margin">
+                        <span class="hidelt768">
+                            <b class="phs valign-middle">1</b>
+                            <a href="#" class="phs valign-middle">2</a>
+                            <a href="#" class="phs valign-middle">3</a>
+                            <a href="#" class="phs valign-middle">4</a>
+                            <a href="#" class="phs valign-middle">5</a>
+                            <a href="#" class="phs valign-middle">6</a>
+                            <a href="#" class="phs valign-middle">7</a>
+                            <a href="#" class="phs valign-middle">8</a>
+                            <a href="#" class="phs valign-middle">9</a>
+                            <a href="#" class="phs valign-middle">10</a>
+                        </span>
+                        <span>
+                            <a rel="next" href="#" class="pam" aria-label="Neste"><span class="hidegt768 valign-middle mrs">Neste</span><svg height="1em" viewBox="0 0 10 16" class="valign-middle">
+                                    <switch>
+                                        <polyline points="2,2 8,8 2,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <text>&gt;</text>
+                                    </switch>
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+
+                    <h3>Second page</h3>
+                    <p>On large screens a previous link, the page numbers, and a next link is shown. On small screens, a previous link, the current page number, and a next link is shown.
+                    <div class="t4 centerify r-margin">
+                        <a rel="prev" href="#" class="pam" aria-label="Forrige">
+                            <svg height="1em" viewBox="0 0 10 16" class="valign-middle">
+                                <switch>
+                                    <polyline points="8,2 2,8 8,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <text>&lt;</text>
+                                </switch>
+                            </svg></a>
+                        <span class="hidegt768">
+                            Side 2
+                        </span>
+                        <span class="hidelt768">
+                            <a href="#" class="phs valign-middle">1</a>
+                            <b class="phs valign-middle">2</b>
+                            <a href="#" class="phs valign-middle">3</a>
+                            <a href="#" class="phs valign-middle">4</a>
+                            <a href="#" class="phs valign-middle">5</a>
+                            <a href="#" class="phs valign-middle">6</a>
+                            <a href="#" class="phs valign-middle">7</a>
+                            <a href="#" class="phs valign-middle">8</a>
+                            <a href="#" class="phs valign-middle">9</a>
+                            <a href="#" class="phs valign-middle">10</a>
+                        </span>
+                        <span>
+                            <a rel="next" href="#" class="pam" aria-label="Neste"><span class="hidegt768 valign-middle mrs">Neste</span><svg height="1em" viewBox="0 0 10 16" class="valign-middle">
+                                    <switch>
+                                        <polyline points="2,2 8,8 2,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <text>&gt;</text>
+                                    </switch>
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+
+                    <h3>Consecutive pages</h3>
+                    <p>On large screens a link to the first page, a previous link, the page numbers, and a next link is shown. On small screens, a link to the first page, a previous link, the current page number, and a next link is shown.
+                    <div class="t4 centerify r-margin">
+                        <a rel="start" href="#" class="mrm pam" aria-label="Første">
+                            <svg height="1em" viewBox="0 0 18 16" class="valign-middle">
+                                <switch>
+                                    <g fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="8,2 2,8 8,14"/>
+                                        <polyline points="16,2 10,8 16,14"/>
+                                    </g>
+                                    <text>&lt;&lt;</text>
+                                </switch>
+                            </svg></a>
+                        <a rel="prev" href="#" class="pam" aria-label="Forrige">
+                            <svg height="1em" viewBox="0 0 10 16" class="valign-middle">
+                                <switch>
+                                    <polyline points="8,2 2,8 8,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <text>&lt;</text>
+                                </switch>
+                            </svg></a>
+                        <span class="hidegt768">
+                            Side 3
+                        </span>
+                        <span class="hidelt768">
+                            <a href="#" class="phs valign-middle">1</a>
+                            <a href="#" class="phs valign-middle">2</a>
+                            <b class="phs valign-middle">3</b>
+                            <a href="#" class="phs valign-middle">4</a>
+                            <a href="#" class="phs valign-middle">5</a>
+                            <a href="#" class="phs valign-middle">6</a>
+                            <a href="#" class="phs valign-middle">7</a>
+                            <a href="#" class="phs valign-middle">8</a>
+                            <a href="#" class="phs valign-middle">9</a>
+                            <a href="#" class="phs valign-middle">10</a>
+                        </span>
+                        <span>
+                            <a rel="next" href="#" class="pam" aria-label="Neste"><span class="hidegt768 valign-middle mrs">Neste</span><svg height="1em" viewBox="0 0 10 16" class="valign-middle">
+                                    <switch>
+                                        <polyline points="2,2 8,8 2,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <text>&gt;</text>
+                                    </switch>
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mod shadow">
+            <div class="inner">
+                <div class="bd">
+                    <div class="opacity25">
+                        <details>
+                            <summary class="r-margin clickable h3 normal">Pagination (deprecated)</summary>
+                                <pre class="prettyprint linenums">&lt;ul class=&quot;pagination centerify&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&amp;laquo; forrige&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;11&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;12&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;13&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;14&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;current&quot;&gt;&lt;span&gt;15&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;16&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;17&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;18&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;19&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;neste &amp;raquo;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                        </details>
+                        <ul class="pagination centerify mtl">
+                            <li><a href="#">&laquo; forrige</a></li>
+                            <li><a href="#">11</a></li>
+                            <li><a href="#">12</a></li>
+                            <li><a href="#">13</a></li>
+                            <li><a href="#">14</a></li>
+                            <li class="current"><span>15</span></li>
+                            <li><a href="#">16</a></li>
+                            <li><a href="#">17</a></li>
+                            <li><a href="#">18</a></li>
+                            <li><a href="#">19</a></li>
+                            <li><a href="#">neste &raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
                 <a id="components-profiles"></a>
                 <!-- -->
                 <ul class="breadcrumbs green-dk mbn">
@@ -4732,11 +5577,396 @@
 </div>
 
 
+                <a id="components-ratings"></a>
+                <!-- -->
+                <ul class="breadcrumbs green-dk mbn">
+                    <li>Components</li>
+                    <li>Basic</li>
+                    <li>ratings</li>
+                </ul>
+                <!-- -->
+
+
+                    <!--<h3>ratings</h3>-->
+                        <small class="hidden"><a href="#components-ratings-ratings.hbs" id="components-ratings-ratings.hbs">#</a> ratings.hbs</small>
+                        <div class="line">
+    <div class="mod shadow">
+        <div class="inner">
+            <div class="bd">
+                <p>Width (in percentages) is added with <code>.stars</code> to determine number of stars.</p>
+                <hr>
+
+
+
+                <details>
+                    <summary class="r-margin clickable h3 normal">Small stars</summary>
+                    <pre class="prettyprint linenums">
+&lt;span class="rating-stars small-stars"&gt;
+    &lt;span class="stars" style="width: 50%;"&gt;&lt;/span&gt;
+&lt;/span&gt;</pre>
+                    </details>
+
+                        <p>
+                            <span class="rating-stars small-stars">
+                                <span class="stars" style="width: 80%;"></span>
+                            </span>
+                        </p>
+                        <p>
+                            <span class="rating-stars small-stars">
+                                <span class="stars" style="width: 20%;"></span>
+                            </span>
+                        </p>
+                        <p>
+                            <span class="rating-stars small-stars">
+                                <span class="stars" style="width: 50%;"></span>
+                            </span>
+                        </p>
+
+                                        <hr>
+
+                                                        <details>
+                    <summary class="r-margin clickable h3 normal">Regular stars</summary>
+                    <pre class="prettyprint linenums">
+&lt;span class="rating-stars"&gt;
+    &lt;span class="stars" style="width: 50%;"&gt;&lt;/span&gt;
+&lt;/span&gt;</pre>
+                </details>
+
+                        <p>
+                        <span class="rating-stars">
+                            <span class="stars" style="width: 80%;"></span>
+                        </span>
+                        </p>
+                        <p>
+                        <span class="rating-stars">
+                            <span class="stars" style="width: 20%;"></span>
+                        </span>
+                        </p>
+                        <p>
+                        <span class="rating-stars">
+                            <span class="stars" style="width: 50%;"></span>
+                        </span>
+                        </p>
+
+
+                <hr>
+
+                <details>
+                    <summary class="r-margin clickable h3 normal">Medium stars</summary>
+                    <pre class="prettyprint linenums">
+&lt;span class="rating-stars medium-stars"&gt;
+    &lt;span class="stars" style="width: 50%;"&gt;&lt;/span&gt;
+&lt;/span&gt;</pre>
+                </details>
+
+                        <p>
+                        <span class="rating-stars medium-stars">
+                            <span class="stars" style="width: 80%;"></span>
+                        </span>
+                        </p>
+                        <p>
+                        <span class="rating-stars medium-stars">
+                            <span class="stars" style="width: 20%;"></span>
+                        </span>
+                        </p>
+                        <p>
+                        <span class="rating-stars medium-stars">
+                            <span class="stars" style="width: 50%;"></span>
+                        </span>
+                        </p>
+
+
+                <hr>
+
+                                                        <details>
+                    <summary class="r-margin clickable h3 normal">Large stars</summary>
+                    <pre class="prettyprint linenums">
+&lt;span class="rating-stars large-stars"&gt;
+    &lt;span class="stars" style="width: 50%;"&gt;&lt;/span&gt;
+&lt;/span&gt;</pre>
+                    </details>
+
+                        <p>
+                            <span class="rating-stars large-stars">
+                                <span class="stars" style="width: 80%;"></span>
+                            </span>
+                        </p>
+                        <p>
+                            <span class="rating-stars large-stars">
+                                <span class="stars" style="width: 20%;"></span>
+                            </span>
+                        </p>
+                        <p>
+                            <span class="rating-stars large-stars">
+                                <span class="stars" style="width: 50%;"></span>
+                            </span>
+                        </p>
+
+                                        <hr>
+
+
+                <details>
+                    <summary class="r-margin clickable h3 normal">Set rating</summary>
+                    <pre class="prettyprint linenums">
+&lt;span class=&quot;star-rating&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;rating&quot; value=&quot;1&quot; id=&quot;star1&quot;&gt;&lt;label for=&quot;star1&quot;&gt;1 stjerne&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;rating&quot; value=&quot;2&quot; id=&quot;star2&quot;&gt;&lt;label for=&quot;star2&quot;&gt;2 stjerner&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;rating&quot; value=&quot;3&quot; id=&quot;star3&quot;&gt;&lt;label for=&quot;star3&quot;&gt;3 stjerner&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;rating&quot; value=&quot;4&quot; id=&quot;star4&quot;&gt;&lt;label for=&quot;star4&quot;&gt;4 stjerner&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;rating&quot; value=&quot;5&quot; id=&quot;star5&quot;&gt;&lt;label for=&quot;star5&quot;&gt;5 stjerner&lt;/label&gt;
+&lt;/span&gt;</pre>
+                    </details>
+
+                <div class="r-margin">
+                    <span class="star-rating">
+                        <input type="radio" name="rating" value="1" id="star1"><label for="star1">1 stjerne</label>
+                        <input type="radio" name="rating" value="2" id="star2"><label for="star2">2 stjerner</label>
+                        <input type="radio" name="rating" value="3" id="star3"><label for="star3">3 stjerner</label>
+                        <input type="radio" name="rating" value="4" id="star4"><label for="star4">4 stjerner</label>
+                        <input type="radio" name="rating" value="5" id="star5"><label for="star5">5 stjerner</label>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                <a id="components-ribbons"></a>
+                <!-- -->
+                <ul class="breadcrumbs green-dk mbn">
+                    <li>Components</li>
+                    <li>Basic</li>
+                    <li>ribbons</li>
+                </ul>
+                <!-- -->
+
+
+                    <!--<h3>ribbons</h3>-->
+                        <small class="hidden"><a href="#components-ribbons-ribbons.hbs" id="components-ribbons-ribbons.hbs">#</a> ribbons.hbs</small>
+                        <div class="mod shadow" xmlns="http://www.w3.org/1999/html">
+    <div class="inner">
+        <div class="bd">
+            <details>
+                <summary class="r-margin clickable h3 normal">Object status</summary>
+<pre class="prettyprint linenums">&lt;span class=&quot;objectstatus&quot;&gt;Betalt plassering&lt;/span&gt;
+
+&lt;span class=&quot;objectstatus sold&quot;&gt;Solgt&lt;/span&gt;
+
+&lt;span class=&quot;objectstatus lastcall&quot;&gt;Siste frist&lt;/span&gt;
+
+&lt;span class=&quot;objectstatus inactive&quot;&gt;Inaktiv&lt;/span&gt;
+</pre>
+            </details>
+
+            <p>
+                <span class="objectstatus">Betalt plassering</span>
+            </p>
+
+            <p>
+                <span class="objectstatus sold">Solgt</span>
+            </p>
+
+            <p>
+                <span class="objectstatus lastcall">Siste frist</span>
+            </p>
+
+            <p>
+                <span class="objectstatus inactive">Inaktiv</span>
+            </p>
+
+            <p>
+                <span class="objectstatus updated">Ny pris</span>
+            </p>
+
+            <p class="mtl">Usage: Display ad status in result and detail pages.</p>
+
+            <hr>
+            <h3 class="bare">Ribbons (deprecated)</h3>
+            <div class="line r-margin r-cols3to6 opacity25">
+                <div class="unit">
+                    <div class="bg-lt-gray ribbon2 mrl mbl" style="height: 100px">
+                        <span class="ribbon-content">Solgt</span>
+                        <p>Things n stuff n things n stuff n things n stuff</p>
+                        <p><code>.ribbon-content.yellow</code></p>
+                    </div>
+                </div>
+
+                <div class="unit">
+                    <div class="bg-lt-gray ribbon2 mrl mbl" style="height: 100px">
+                        <span class="ribbon-content green">Aktiv</span>
+                        <p>Things n stuff n things n stuff n things n stuff</p>
+                        <p><code>.ribbon-content.green</code></p>
+                    </div>
+                </div>
+
+                <div class="unit">
+                    <div class="bg-lt-gray ribbon2 mrl mbl" style="height: 100px">
+                        <span class="ribbon-content orange smalltext">Til kontroll</span>
+                        <p>Things n stuff n things n stuff n things n stuff</p>
+                        <p><code>.ribbon-content.orange</code></p>
+                    </div>
+                </div>
+
+                <div class="unit">
+                    <div class="bg-lt-gray ribbon2 mrl mbl" style="height: 100px">
+                        <span class="ribbon-content gray">Inaktiv</span>
+                        <p>Things n stuff n things n stuff n things n stuff</p>
+                        <p><code>.ribbon-content.gray</code></p>
+                    </div>
+                </div>
+
+                <div class="unit">
+                    <div class="bg-lt-gray ribbon2 mrl mbl" style="height: 100px">
+                        <span class="ribbon-content red">Avvist</span>
+                        <p>Things n stuff n things n stuff n things n stuff</p>
+                        <p><code>.ribbon-content.red</code></p>
+                    </div>
+                </div>
+
+                <div class="unit">
+                    <div class="bg-lt-gray ribbon2 mrl mbl" style="height: 100px">
+                        <span class="ribbon-content purple">Nyhet</span>
+                        <p>Things n stuff n things n stuff n things n stuff</p>
+                        <p><code>.ribbon-content.purple</code></p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3 class="bare">Mini-ribbons (deprecated)</h3>
+            <div class="line r-margin r-cols3to6 opacity25">
+                <div class="unit">
+                    <div class="bg-lt-gray ribbon2 mrl mbl" style="height: 100px">
+                        <span class="ribbon-content mini">Solgt</span>
+                        <p>Things n stuff n things n stuff n things n stuff</p>
+                        <p><code>.ribbon-content.yellow</code></p>
+                    </div>
+                </div>
+
+                <div class="unit">
+                    <div class="bg-lt-gray ribbon2 mrl mbl" style="height: 100px">
+                        <span class="ribbon-content green mini">Aktiv</span>
+                        <p>Things n stuff n things n stuff n things n stuff</p>
+                        <p><code>.ribbon-content.green</code></p>
+                    </div>
+                </div>
+
+                <div class="unit">
+                    <div class="bg-lt-gray ribbon2 mrl mbl" style="height: 100px">
+                        <span class="ribbon-content orange mini">Til kontroll</span>
+                        <p>Things n stuff n things n stuff n things n stuff</p>
+                        <p><code>.ribbon-content.orange</code></p>
+                    </div>
+                </div>
+
+                <div class="unit">
+                    <div class="bg-lt-gray ribbon2 mrl mbl" style="height: 100px">
+                        <span class="ribbon-content gray mini">Inaktiv</span>
+                        <p>Things n stuff n things n stuff n things n stuff</p>
+                        <p><code>.ribbon-content.gray</code></p>
+                    </div>
+                </div>
+
+                <div class="unit">
+                    <div class="bg-lt-gray ribbon2 mrl mbl" style="height: 100px">
+                        <span class="ribbon-content red mini">Avvist</span>
+                        <p>Things n stuff n things n stuff n things n stuff</p>
+                        <p><code>.ribbon-content.red</code></p>
+                    </div>
+                </div>
+
+                <div class="unit">
+                    <div class="bg-lt-gray ribbon2 mrl mbl" style="height: 100px">
+                        <span class="ribbon-content purple mini">Nyhet</span>
+                        <p>Things n stuff n things n stuff n things n stuff</p>
+                        <p><code>.ribbon-content.purple</code></p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3 class="bare">Gammelt ribbon-opplegg (deprecated)</h3>
+
+            <div class="opacity25">
+            <div class="line">
+                <div class="unit">
+                    <a class="man phl pvm media ribbon sold" style="width:100px; height: 80px;"></a>
+                </div>
+                <div class="unit">
+                    <a class="man phl pvm media ribbon rented" style="width:100px; height: 80px;"></a>
+                </div>
+                <div class="unit">
+                    <a class="man phl pvm media ribbon givenaway" style="width:100px; height: 80px;"></a>
+                </div>
+                <div class="unit">
+                    <a class="man phl pvm media ribbon filled" style="width:100px; height: 80px;"></a>
+                </div>
+                <div class="unit">
+                    <a class="man phl pvm media ribbon bought" style="width:100px; height: 80px;"></a>
+                </div>
+            </div>
+            <div class="line">
+                <div class="unit">
+                    <a class="man phl pvm media ribbon newToday" style="width:100px; height: 80px;"></a>
+                </div>
+                <div class="unit">
+                    <a class="man phl pvm media ribbon expiresToday" style="width:100px; height: 80px;"></a>
+                </div>
+                <div class="unit">
+                    <a class="man phl pvm media ribbon started" style="width:100px; height: 80px;"></a>
+                </div>
+                <div class="unit">
+                    <a class="man phl pvm media ribbon inactive" style="width:100px; height: 80px;"></a>
+                </div>
+                <div class="unit">
+                    <a class="man phl pvm media ribbon active" style="width:100px; height: 80px;"></a>
+                </div>
+
+                <div class="unit">
+                    <a class="man phl pvm media ribbon newprice" style="width:100px; height: 80px;"></a>
+                </div>
+
+            </div>
+            <div class="line">
+                <div class="unit">
+                    <a class="man phl pvm media ribbon expired" style="width:100px; height: 80px;"></a>
+                </div>
+                <div class="unit">
+                    <a class="man phl pvm media ribbon control" style="width:100px; height: 80px;"></a>
+                </div>
+                <div class="unit">
+                    <a class="man phl pvm media ribbon rejected" style="width:100px; height: 80px;"></a>
+                </div>
+                <div class="unit">
+                    <a class="man phl pvm media ribbon deleted" style="width:100px; height: 80px;"></a>
+                </div>
+                <div class="unit">
+                    <a class="man phl pvm media ribbon fulfilled" style="width:100px; height: 80px;"></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                <a id="components-speech-bubbles"></a>
+                <!-- -->
+                <ul class="breadcrumbs green-dk mbn">
+                    <li>Components</li>
+                    <li>Basic</li>
+                    <li>Speech bubbles</li>
+                </ul>
+                <!-- -->
+
+
+                    <!--<h3>Speech bubbles</h3>-->
 
     </div>
   </div>
 </div>
 </div>
-<script src="./docs.js?sha=2fd79e30ca987560346ec3f365cca9e2205c7901"></script>
+<script src="./docs.js?sha=790e859d92b7e1c61069a488a4e0762e0a5c5cb4"></script>
 </body>
 </html>
