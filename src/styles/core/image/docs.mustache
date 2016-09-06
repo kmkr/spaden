@@ -5,17 +5,16 @@
 
             <h2 class="mtn">Image formatting</h2>
             <details>
-                <summary class="r-margin clickable h3 normal">Standard 4:3 image format</summary>
-                <pre class="prettyprint linenums">&lt;div class="format4by3"&gt;
-    &lt;img class="centered-image" src="//placekitten.com/510/382"&gt;
-&lt;/div&gt;</pre>
+                <summary class="r-margin clickable h5">Standard 4:3 image format</summary>
+                <pre><code>{{{example-1}}}</code></pre>
             </details>
+
             <p>By default the image fills either the full width or height of the container without cropping, centered both horizontally and vertically.</p>
             <div class="line">
                 <div class="unit size1of3">
                     <figure class="r-margin">
                         <div class="format4by3 bg-bare">
-                            <img class="centered-image" src="img/dummies/640x480.jpg" title="649 x 480 pixels">
+                            <img class="centered-image" src="dist/img/dummies/spade-510x384.jpg" title="510 x 384 pixels">
                         </div>
                         <figcaption>Standard 4:3 image</figcaption>
                     </figure>
@@ -23,7 +22,7 @@
                 <div class="unit size1of3">
                     <figure class="r-margin">
                         <div class="format4by3 bg-bare">
-                            <img class="centered-image" src="//placekitten.com/382/510" title="382 x 510 pixels">
+                            <img class="centered-image" src="dist/img/dummies/spade-341x510.jpg" title="341 x 510 pixels">
                         </div>
                         <figcaption>Portrait image</figcaption>
                     </figure>
@@ -31,7 +30,7 @@
                 <div class="unit size1of3">
                     <figure class="r-margin">
                         <div class="format4by3 bg-bare">
-                            <img class="centered-image" src="//placekitten.com/510/290" title="510 x 290 pixels">
+                            <img class="centered-image" src="dist/img/dummies/spade-510x287.jpg" title="510 x 287 pixels">
                         </div>
                         <figcaption>Wider landscape image</figcaption>
                     </figure>
@@ -40,11 +39,10 @@
 
             <h2>Aspect ratios</h2>
             <details>
-                <summary class="r-margin clickable h3 normal">Widescreen 16:9 image format</summary>
-                <pre class="prettyprint linenums">&lt;div class="format16by9"&gt;
-    &lt;img class="centered-image" src="//placekitten.com/510/290"&gt;
-&lt;/div&gt;</pre>
+                <summary class="r-margin clickable h5">Widescreen 16:9 image format</summary>
+                <pre><code>{{{example-2}}}</code></pre>
             </details>
+
             <p>Sets the relative width and height of the image container.</p>
             <div class="mll mrl">
                 <table class="outerborder">
@@ -81,11 +79,10 @@
 
             <h2>Responsive helpers</h2>
             <details>
-                <summary class="r-margin clickable h3 normal">16:9 on desktop, 3:2 on mobile</summary>
-                <pre class="prettyprint linenums">&lt;div class="format16by9 format3by2-lt768"&gt;
-    &lt;img class="centered-image" src="//placekitten.com/510/290"&gt;
-&lt;/div&gt;</pre>
+                <summary class="r-margin clickable h5">16:9 on desktop, 3:2 on mobile</summary>
+                <pre><code>{{{example-3}}}</code></pre>
             </details>
+
             <p>Applies image formats depending on screen size.</p>
             <p class="mal">
                 <strong>lt</strong> = less than
@@ -117,17 +114,16 @@
 
             <h2>Cropping</h2>
             <details>
-                <summary class="r-margin clickable h3 normal">Horizontal cropping</summary>
-                <pre class="prettyprint linenums">&lt;div class="format4by3"&gt;
-    &lt;img class="centered-image crop-horizontal" src="//placekitten.com/510/290"&gt;
-&lt;/div&gt;</pre>
+                <summary class="r-margin clickable h5">Horizontal cropping</summary>
+                <pre><code>{{{example-4}}}</code></pre>
             </details>
+
             <p>Cropping applied to an image possibly wider than its container, filling the height and cropped on the sides.</p>
             <div class="line">
                 <div class="unit size1of3">
                     <figure class="r-margin">
                         <div class="format4by3 bg-bare">
-                            <img class="centered-image" src="//placekitten.com/510/290" title="510 x 209 pixels">
+                            <img class="centered-image" src="dist/img/dummies/spade-510x287.jpg" title="510 x 287 pixels">
                         </div>
                         <figcaption>Original</figcaption>
                     </figure>
@@ -135,7 +131,7 @@
                 <div class="unit size1of3">
                     <figure class="r-margin">
                         <div class="format4by3 bg-bare">
-                            <img class="centered-image crop-horizontal" src="//placekitten.com/510/290" title="510 x 209 pixels">
+                            <img class="centered-image crop-horizontal" src="dist/img/dummies/spade-510x287.jpg" title="510 x 287 pixels">
                         </div>
                         <figcaption>Cropped</figcaption>
                     </figure>
@@ -143,17 +139,16 @@
             </div>
             <hr>
             <details>
-                <summary class="r-margin clickable h3 normal">Vertical cropping</summary>
-                <pre class="prettyprint linenums">&lt;div class="format4by3"&gt;
-    &lt;img class="centered-image crop-vertical" src="//placekitten.com/382/510"&gt;
-&lt;/div&gt;</pre>
+                <summary class="r-margin clickable h5">Vertical cropping</summary>
+                <pre><code>{{{example-5}}}</code></pre>
             </details>
+
             <p>Cropping applied to an image possibly higher than its container, filling the width and cropped top and bottom.</p>
             <div class="line">
                 <div class="unit size1of3">
                     <figure class="r-margin">
                         <div class="format4by3 bg-bare">
-                            <img class="centered-image" src="//placekitten.com/382/510" title="382 x 510 pixels">
+                            <img class="centered-image" src="dist/img/dummies/spade-341x510.jpg" title="341 x 510 pixels">
                         </div>
                         <figcaption>Original</figcaption>
                     </figure>
@@ -161,7 +156,7 @@
                 <div class="unit size1of3">
                     <figure class="r-margin">
                         <div class="format4by3 bg-bare">
-                            <img class="centered-image crop-vertical" src="//placekitten.com/382/510" title="382 x 510 pixels">
+                            <img class="centered-image crop-vertical" src="dist/img/dummies/spade-341x510.jpg" title="341 x 510 pixels">
                         </div>
                         <figcaption>Cropped</figcaption>
                     </figure>
