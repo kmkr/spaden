@@ -9,7 +9,37 @@ pre{
   padding:10px;
   border-radius: 3px;
 }
-
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *                      Fancy headings                 *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*
+h1.fancy {
+    position: relative;
+    height: 25px;
+    line-height: 25px;
+    z-index: 1;
+    margin-top: 60px;
+    margin-bottom:30px;
+}
+h1.fancy span {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    display: inline-block;
+    float: left;
+    background: #fff;
+    padding-right: 10px;
+}
+h1.fancy:after {
+    position: absolute;
+    top: 8px;
+    content: "";
+    display: block;
+    height: 10px;
+    background: #06BEFB;
+    width: 100%;
+}
+*/
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *             Håndtering av venstremeny               *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * */
