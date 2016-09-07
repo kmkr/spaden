@@ -64,6 +64,14 @@ const spec = [
 						id: 'font'
 					},
 					{
+						title: 'Print',
+						id: 'print'
+					},
+					{
+						title: 'Border',
+						id: 'border'
+					},
+					{
 						title: 'Form',
 						id: 'form'
 					},

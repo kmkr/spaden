@@ -3,245 +3,103 @@
     <div class="mod">
         <div class="inner">
             <div class="bd">
-                <h2 class="mtn">Grid</h2>
-                <p>Highly customizable grid system used on all FINN pages</p>
+                <p>Highly customizable grid system used on all FINN pages. combine <code>.line</code> and multiple <code>.unit</code> to build complex responsive grids. There are several ways of controlling responsivness and also how many units you get pr line. (Think of line more like a containing block, sometimes its a line, sometimes elements may stack differently).</p>
+                <div class="r-margin">
+                  <table class="outerborder">
+                      <thead>
+                          <tr>
+                              <th>Property</th>
+                              <th>Description</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <th scope="row"><code>.line</code></th>
+                              <td>Groups units on one horizontal line. Note: for mobile layout units may be stacked to avoid horizontal scrolling.</td>
+                          </tr>
+                          <tr>
+                              <th scope="row"><code>.unit</code></th>
+                              <td>Base class which divides a line into sections (columns).</td>
+                          </tr>
+                          <tr>
+                              <th scope="row"><code>.sizeXofY</code></th>
+                              <td>Extends <code>unit</code>. Indicates the fractional width of the unit, for example <code>size3of4</code> would take
+                                    up three quarters, or 75%, of the horizontal space.
 
-                <hr role="presentation">
-                <details>
-                    <summary class="r-margin clickable h5">line</summary>
-                    <pre><code>{{{example-1}}}</code></pre>
-                </details>
-                <p>Groups units on one horizontal line. Note: for mobile layout units may be stacked to avoid horizontal scrolling.</p>
-                <hr role="presentation">
+                                    <h5 class="mln">Supported fractions:</h5>
+                                    <ul class="man horizontal-list">
+                                        <li class="phm">1</li>
+                                        <li class="phm">1/2</li>
+                                        <li class="phm">1/3</li>
+                                        <li class="phm">2/3</li>
+                                        <li class="phm">1/4</li>
+                                        <li class="phm">3/4</li>
+                                        <li class="phm">1/5</li>
+                                        <li class="phm">2/5</li>
+                                        <li class="phm">3/5</li>
+                                        <li class="phm">4/5</li>
+                                        <li class="phm">1/6</li>
+                                        <li class="phm">5/6</li>
+                                    </ul>
+                                <p class="strong">
+                                    Intended use: Non-responsive liquid elements
+                                </p>
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row"><code class="no-break">.r-sizeXofY</code></th>
+                              <td>Extends <code>unit</code>. Indicates the number of grid units this element spans, for example <code>r-size2of3</code>
+                                  would take up 2 of 3 columns. Collapses to 1 column at 768px.
+                                  <p class="strong">Intended use: Column based contents</p>
+                                </td>
+                          </tr>
+                          <tr>
+                              <th scope="row"><code>.r-colsXtoY</code></th>
+                              <td>Extends <code>line</code>. Responsive column setup for content. Classname indicates number of colums, for example
+                                  <code>r-cols2to4</code> will fit 2 columns on mobile screens and 4 columns from 768px and up.
+                                  <p class="mhn">Great for dynamic content when you dont know how many units youll get.</p>
 
-                <details>
-                    <summary class="r-margin clickable h5">unit</summary>
-                    <pre><code>{{{example-2}}}</code></pre>
-                </details>
-                <p>Base class which divides a line into sections (columns).</p>
-                <hr role="presentation">
+                                  <p class="mhn">Supported combos: 1to2, 1to3, 1to4, 2to3, 2to4, 2to5, 2to6</p>
 
-                <details>
-                    <summary class="r-margin clickable h5">r-sizeXofY</summary>
-                    <pre><code>{{{example-3-1}}}</code></pre>
-                </details>
-                <p>Extends <code>unit</code>. Indicates the number of grid units this element spans, for example <code>r-size2of3</code>
-                    would take up 2 of 3 columns. Collapses to 1 column at 768px.</p>
+                              <p class="strong">Intended use: Column based contents
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row"><code>.colsXupto[Breakpoint]</code></th>
+                              <td>
+                                  <p class="mhn mtn">Extends <code>line</code>.
+                                  <p class="mhn">Classname indicates number of colums at specific breakpoints, for example <code>.cols1upto480 .cols2upto768 .cols4from990</code> will fit 1 column below 480px, 2 columns between 480px and 767px, and 4 columns from 990px to infinity</p>
+                                  <p class="red mhn">! Works in conjunction with colsXfrom990, remember to set this aswell, or 990px+ will get whatever is default (usually 1col )</p>
+                                  <p class="mhn"><code>.cols[X]upto[breakpoint]</code> Sets number of columns up to specified breakpoint</p>
+                                  <p class="mhn"><code>.cols[X]from990</code> Sets number of columns from 990 and up</p>
+                                  <p class="mhn">Supported column count: 1 - 8</p>
+                                  <p class="mhn">Supported breakpoints: 480px, 640px, 768px, 990px</p>
+                                  <p class="strong">Intended use: Column based contents where we need more control</p>
+                            </td>
+                          </tr>
+                      </tbody>
+                  </table>
+                </div>
 
-                <p class="strong">Intended use: Main layout grid!</p>
-                <hr role="presentation">
+                <h5 class="mbn">Line</h5>
+                <pre class="mtn"><code>{{{example-1}}}</code></pre>
 
-                <details>
-                    <summary class="r-margin clickable h5">sizeXofY</summary>
-                    <pre><code>{{{example-3-2}}}</code></pre>
+                <h5 class="mbn">Unit</h5>
+                <pre class="mtn"><code>{{{example-2}}}</code></pre>
 
-                    <p>Supported fractions:</p>
-                    <ul class="bullets pll">
-                        <li>1</li>
-                        <li>1/2</li>
-                        <li>1/3</li>
-                        <li>2/3</li>
-                        <li>1/4</li>
-                        <li>3/4</li>
-                        <li>1/5</li>
-                        <li>2/5</li>
-                        <li>3/5</li>
-                        <li>4/5</li>
-                        <li>1/6</li>
-                        <li>5/6</li>
-                    </ul>
-                </details>
-                <p>Extends <code>unit</code>. Indicates the fractional width of the unit, for example <code>size3of4</code> would take
-                    up three quarters, or 75%, of the horizontal space.</p>
-                <p class="strong">
-                    Intended use: Non-responsive liquid elements
-                </p>
-                <hr role="presentation">
+                <h5 class="mbn">sizeXofY</h5>
+                <pre class="mtn"><code>{{{example-4}}}</code></pre>
 
-                <details>
-                    <summary class="r-margin clickable h5">r-colsXtoY</summary>
-                    <pre><code>{{{example-4}}}</code></pre>
-                    <pre><code>{{{example-5}}}</code></pre>
+                <h5 class="mbn">r-sizeXofY</h5>
+                <pre class="mtn"><code>{{{example-3}}}</code></pre>
 
-                    <p>
-                        <code>
-                            <a href="#" id="r-cols1to2" class="mrl cols strong bg-lt-gray">.r-cols1to2</a>
-                            <a href="#" id="r-cols1to3" class="mrl cols">.r-cols1to3</a>
-                            <a href="#" id="r-cols1to4" class="mrl cols">.r-cols1to4</a>
-                            <a href="#" id="r-cols2to3" class="mrl cols">.r-cols2to3</a>
-                            <a href="#" id="r-cols2to4" class="mrl cols">.r-cols2to4</a>
-                            <a href="#" id="r-cols2to5" class="mrl cols">.r-cols2to5</a>
-                            <a href="#" id="r-cols2to6" class="mrl cols">.r-cols2to6</a>
-                        </code>
-                    </p>
+                <h5 class="mbn">r-colsXtoY</h5>
+                <pre class="mtn"><code>{{{example-5}}}</code></pre>
 
-                    <div class="mal gridexample">
-                        <form>
-                            <div class="line r-cols1to2" id="cols">
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Akershus</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Aust-Agder</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Buskerud</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Finnmark</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Hedmark</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Hordaland</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Møre og Romsdal</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Nord-Trøndelag</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Nordland</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Oppland</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Oslo</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Rogaland</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Sogn og Fjordane</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Sør-Trøndelag</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Telemark</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Troms</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Vest-Agder</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Vestfold</span>
-                                    </label>
-                                </div>
-                                <div class="unit formelement man">
-                                    <label>
-                                        <input type="checkbox">
-                                        <span>Østfold</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </details>
-
-                <p>Extends <code>line</code>. Responsive column setup for content. Classname indicates number of colums, for example
-                    <code>r-cols2to4</code> will fit 2 columns on mobile screens and 4 columns from 768px and up.</p>
-
-                <p class="strong">Intended use: Column based contents</p>
-                <!-- ** -->
-                <hr role="presentation">
-
-                <details>
-                    <summary class="r-margin clickable h5">colsXupto[Breakpoint]</summary>
-                    <pre><code>{{{example-6}}}</code></pre>
-                    <p>Supported column count: 1 - 8</p>
-                    <p>Supported breakpoints:</p>
-                    <ul class="bullets pll">
-                        <li>480</li>
-                        <li>640</li>
-                        <li>768</li>
-                        <li>990</li>
-                    </ul>
-                </details>
-
-                <p>Extends <code>line</code>.
-                <p><code>.cols[X]upto[breakpoint]</code> Sets number of columns up to specified breakpoint</p>
-                <p><code>.cols[X]from990</code> Sets number of columns from 990 and up</p>
-
-                <p>Classname indicates number of colums at specific breakpoints, for example
-                    <code>.cols1upto480 .cols2upto768 .cols4from990</code> will fit 1 column below 480px, 2 columns between 480px and 767px, and 4 columns from 990px to infinity</p>
-                    <p class="red">! Works in conjunction with colsXfrom990, remember to set this aswell, or 990px+ will get whatever is default (usually 1col )</p>
-
-                <p class="strong">Intended use: Column based contents where we need more control</p>
-<!-- ** -->
+                <h5 class="mbn">colsXupto[Breakpoint]</h5>
+                <pre class="mtn"><code>{{{example-6}}}</code></pre>
 
             </div>
         </div>
     </div>
-
-
-    <style type="text/css">
-        .gridexample .r-cols1to2 {background: #D2E286;}
-        .gridexample .r-cols1to3 {background: #eee;}
-        .gridexample .r-cols1to4 {background: #def;}
-        .gridexample .r-cols2to3 {background: #f60;}
-        .gridexample .r-cols2to4 {background: #ff9;}
-        .gridexample .r-cols2to5 {background: #ccc;}
-        .gridexample .r-cols2to6 {background: #f3ddad;}
-    </style>
-
-
 </div>
