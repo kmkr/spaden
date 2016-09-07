@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./dist/spaden.min.css?sha=1f4e8ec7d6981ca02184a21ba8017916f57a61e8">
-    <link rel="stylesheet" href="./style.css?sha=1f4e8ec7d6981ca02184a21ba8017916f57a61e8">
+    <link rel="stylesheet" href="./dist/spaden.min.css?sha=a35de055de5e7968d5c82eeaa12aee4d3785c22f">
+    <link rel="stylesheet" href="./style.css?sha=a35de055de5e7968d5c82eeaa12aee4d3785c22f">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
 </head>
 <body>
@@ -175,138 +175,130 @@
 <div class="container">
 <div class="page">
     <h1>Form</h1>
-            <small class="hidden"><a href="#core-form-button.mustache" id="core-form-button.mustache">#</a> button.mustache</small>
-            <!-- Knapper -->
-<div class="mod mbxxl">
-    <div class="inner">
-        <div class="bd">
-            <h2 class="mtn">Buttons</h2>
-                <details>
-                    <summary class="r-margin clickable h5">Default</summary>
-<pre class="prettyprint linenums">
-&lt;button&gt;Button&lt;/button&gt;
-</pre>
-                </details>
-                <p><button>Button</button></p>
+            <small class="hidden"><a href="#core-form-docs.hbs" id="core-form-docs.hbs">#</a> docs.hbs</small>
+            <!-- forms -->
 
-            <hr>
+        <div class="mod mbxxl">
+            <div class="inner">
+                <div class="bd">
+                  <h2 class="mtn">Buttons</h2>
+                      <details>
+                          <summary class="r-margin clickable h5">Default</summary>
+                <pre class="prettyprint linenums">
+                &lt;button&gt;Button&lt;/button&gt;
+                </pre>
+                      </details>
+                      <p><button>Button</button></p>
 
-                <details>
-                    <summary class="r-margin clickable h5">Primary</summary>
-<pre class="prettyprint linenums">
-&lt;button class=&quot;primary&quot;&gt;Button&lt;/button&gt;
-</pre>
-                </details>
-                <p><button class="primary">Button</button></p>
+                  <hr>
 
-            <hr>
+                      <details>
+                          <summary class="r-margin clickable h5">Primary</summary>
+                <pre class="prettyprint linenums">
+                &lt;button class=&quot;primary&quot;&gt;Button&lt;/button&gt;
+                </pre>
+                      </details>
+                      <p><button class="primary">Button</button></p>
 
-            <details>
-                <summary class="r-margin clickable h5">Order</summary>
-<pre class="prettyprint linenums">
-&lt;button class=&quot;order&quot;&gt;Button&lt;/button&gt;
-</pre>
-            </details>
-            <p><button class="order">Button</button></p>
+                  <hr>
 
-
-            <hr>
-
-            <details>
-                <summary class="r-margin clickable h5">Utility</summary>
-<pre class="prettyprint linenums">
-&lt;button class=&quot;utility&quot;&gt;Button&lt;/button&gt;
-</pre>
-            </details>
-            <p><button class="utility">Button</button></p>
+                  <details>
+                      <summary class="r-margin clickable h5">Order</summary>
+                <pre class="prettyprint linenums">
+                &lt;button class=&quot;order&quot;&gt;Button&lt;/button&gt;
+                </pre>
+                  </details>
+                  <p><button class="order">Button</button></p>
 
 
-            <hr>
+                  <hr>
 
-            <details>
-                <summary class="r-margin clickable h5">Large</summary>
-<pre class="prettyprint linenums">
-&lt;button class=&quot;large&quot;&gt;Button&lt;/button&gt;
-</pre>
-            </details>
-            <p><button class="large">Big Button</button></p>
-
-            <hr>
-
-            <details>
-                <summary class="r-margin clickable h5">Small</summary>
-<pre class="prettyprint linenums">
-&lt;button class=&quot;small&quot;&gt;Button&lt;/button&gt;
-</pre>
-            </details>
-            <p><button class="small">Tiny Button</button></p>
-
-            <hr>
-
-            <details>
-                <summary class="r-margin clickable h5">Full width</summary>
-<pre class="prettyprint linenums">
-&lt;button class=&quot;fullwidth&quot;&gt;Button&lt;/button&gt;
-</pre>
-            </details>
-            <p><button class="fullwidth">Button</button></p>
-
-            <hr>
-
-            <details>
-                <summary class="r-margin clickable h5">Disabled</summary>
-<pre class="prettyprint linenums">
-&lt;button disabled&gt;Button&lt;/button&gt;
-</pre>
-            </details>
-            <p><button disabled>Button</button></p>
-
-            <hr>
-
-            <details>
-                <summary class="r-margin clickable h5">In progress</summary>
-<pre class="prettyprint linenums">
-&lt;button disabled class=&quot;inprogress&quot;&gt;Button&lt;/button&gt;
-</pre>
-            </details>
-            <p><button disabled class="inprogress">Button</button></p>
+                  <details>
+                      <summary class="r-margin clickable h5">Utility</summary>
+                <pre class="prettyprint linenums">
+                &lt;button class=&quot;utility&quot;&gt;Button&lt;/button&gt;
+                </pre>
+                  </details>
+                  <p><button class="utility">Button</button></p>
 
 
-<hr>
+                  <hr>
 
-            <details>
-                <summary class="r-margin clickable h5">Button group</summary>
-<pre class="prettyprint linenums">&lt;div role=&quot;group&quot; class=&quot;button-group line&quot;&gt;
-    &lt;button class=&quot;primary size1of4 truncate&quot;&gt;Knapp 1&lt;/button&gt;
-    &lt;button class=&quot;utility size1of4 truncate&quot;&gt;En annen knapp&lt;/button&gt;
-    &lt;button class=&quot;utility size1of4 truncate&quot;&gt;Knapp 3&lt;/button&gt;
-    &lt;button class=&quot;utility size1of4 truncate&quot;&gt;Enda en&lt;/button&gt;
-&lt;/div&gt;</pre>
-            </details>
+                  <details>
+                      <summary class="r-margin clickable h5">Large</summary>
+                <pre class="prettyprint linenums">
+                &lt;button class=&quot;large&quot;&gt;Button&lt;/button&gt;
+                </pre>
+                  </details>
+                  <p><button class="large">Big Button</button></p>
 
-<div role="group" class="button-group r-margin line">
-    <button class="primary size1of4 truncate">Knapp 1</button>
-    <button class="utility size1of4 truncate">En annen knapp</button>
-    <button class="utility size1of4 truncate">Knapp 3</button>
-    <button class="utility size1of4 truncate">Enda en</button>
-</div>
+                  <hr>
 
-<div role="group" class="button-group r-margin line mtl">
-    <button class="primary size1of2 truncate">Knapp 1</button>
-    <button class="utility size1of2 truncate">En annen knapp</button>
-</div>
+                  <details>
+                      <summary class="r-margin clickable h5">Small</summary>
+                <pre class="prettyprint linenums">
+                &lt;button class=&quot;small&quot;&gt;Button&lt;/button&gt;
+                </pre>
+                  </details>
+                  <p><button class="small">Tiny Button</button></p>
+
+                  <hr>
+
+                  <details>
+                      <summary class="r-margin clickable h5">Full width</summary>
+                <pre class="prettyprint linenums">
+                &lt;button class=&quot;fullwidth&quot;&gt;Button&lt;/button&gt;
+                </pre>
+                  </details>
+                  <p><button class="fullwidth">Button</button></p>
+
+                  <hr>
+
+                  <details>
+                      <summary class="r-margin clickable h5">Disabled</summary>
+                <pre class="prettyprint linenums">
+                &lt;button disabled&gt;Button&lt;/button&gt;
+                </pre>
+                  </details>
+                  <p><button disabled>Button</button></p>
+
+                  <hr>
+
+                  <details>
+                      <summary class="r-margin clickable h5">In progress</summary>
+                <pre class="prettyprint linenums">
+                &lt;button disabled class=&quot;inprogress&quot;&gt;Button&lt;/button&gt;
+                </pre>
+                  </details>
+                  <p><button disabled class="inprogress">Button</button></p>
 
 
-        </div>
-    </div>
-</div><!-- mod -->
+                <hr>
+
+                  <details>
+                      <summary class="r-margin clickable h5">Button group</summary>
+                <pre class="prettyprint linenums">&lt;div role=&quot;group&quot; class=&quot;button-group line&quot;&gt;
+                &lt;button class=&quot;primary size1of4 truncate&quot;&gt;Knapp 1&lt;/button&gt;
+                &lt;button class=&quot;utility size1of4 truncate&quot;&gt;En annen knapp&lt;/button&gt;
+                &lt;button class=&quot;utility size1of4 truncate&quot;&gt;Knapp 3&lt;/button&gt;
+                &lt;button class=&quot;utility size1of4 truncate&quot;&gt;Enda en&lt;/button&gt;
+                &lt;/div&gt;</pre>
+                  </details>
+
+                <div role="group" class="button-group r-margin line">
+                <button class="primary size1of4 truncate">Knapp 1</button>
+                <button class="utility size1of4 truncate">En annen knapp</button>
+                <button class="utility size1of4 truncate">Knapp 3</button>
+                <button class="utility size1of4 truncate">Enda en</button>
+                </div>
+
+                <div role="group" class="button-group r-margin line mtl">
+                <button class="primary size1of2 truncate">Knapp 1</button>
+                <button class="utility size1of2 truncate">En annen knapp</button>
+                </div>
+<!-- -->
 
 
-            <small class="hidden"><a href="#core-form-form-element.mustache" id="core-form-form-element.mustache">#</a> form-element.mustache</small>
-            <div class="mod mbxxl">
-        <div class="inner">
-            <div class="bd">
-                <h2 class="mtn">Inputs</h2>
         <form class="">
 
             <details>
@@ -930,17 +922,14 @@
                 <p>For validation and error indication, use <a href="http://npm.finntech.no">common-validator-js</a>
                     (here is the <a href="https://git.finn.no/projects/LIBS/repos/common-validator-js/browse">git repo</a>).</p>
                 <p>Additional data-attributes will be needed for the validator to work. Read the validator's readme for more details.  </p>
-            </div>
-        </div>
-    </div>
 
 
-            <small class="hidden"><a href="#core-form-form-layout.mustache" id="core-form-form-layout.mustache">#</a> form-layout.mustache</small>
-            <!-- forms -->
+<!-- -->
 
-        <div class="mod mbxxl">
-            <div class="inner">
-                <div class="bd">
+
+
+
+
 
 
                     <h2 class="mtn">Form layout</h2>
@@ -1278,6 +1267,6 @@
 </div>
 
 
-<script src="./docs.js?sha=1f4e8ec7d6981ca02184a21ba8017916f57a61e8"></script>
+<script src="./docs.js?sha=a35de055de5e7968d5c82eeaa12aee4d3785c22f"></script>
 </body>
 </html>

@@ -174,95 +174,24 @@
 
 <div class="container">
 <div class="page">
-    <h1>Responsive helpers</h1>
-            <small class="hidden"><a href="#core-responsive-docs.hbs" id="core-responsive-docs.hbs">#</a> docs.hbs</small>
+    <h1>Print</h1>
+            <small class="hidden"><a href="#core-print-print.mustache" id="core-print-print.mustache">#</a> print.mustache</small>
             <div class="mod mbxxl">
     <div class="inner">
         <div class="bd">
 
-            <p class="mal">
-                <strong>lt</strong> = less than<br>
-                <strong>ht</strong> = higher than
-            </p>
+            <h5 class="mbn">Hide content on print</h5>
+            <pre class="mtn"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"no-print"</span>&gt;</span>
+    ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
 
-            <h2>Text alignment</h2>
+            <h5 class="mbn">Show content on print only</h5>
+            <pre class="mtn"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"print-only"</span>&gt;</span>
+    ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
 
-            <div class="r-margin">
-                <table>
-                    <tr>
-                        <td><code>.leftify-ht768</code></td>
-                        <td>Adjust left <strong>over</strong> 768px</td>
-                    </tr>
-                    <tr>
-                        <td><code>.leftify-lt768</code></td>
-                        <td>Adjust left <strong>under</strong> 768px</td>
-                    </tr>
-                    <tr>
-                        <td><code>.rightify-ht768</code></td>
-                        <td>Adjust right <strong>over</strong> 768px</td>
-                    </tr>
-                    <tr>
-                        <td><code>.rightify-lt768</code></td>
-                        <td>Adjust right <strong>under</strong> 768px</td>
-                    </tr>
-                </table>
-            </div>
-
-            <h2>Floating</h2>
-
-            <div class="r-margin">
-                <table>
-                    <tr>
-                        <td><code>.fleft-ht768</code></td>
-                        <td>Float left <strong>over</strong> 768px</td>
-                    </tr>
-                    <tr>
-                        <td><code>.fleft-lt768</code></td>
-                        <td>Float left <strong>under</strong> 768px</td>
-                    </tr>
-                    <tr>
-                        <td><code>.fright-ht768</code></td>
-                        <td>Float right <strong>over</strong> 768px</td>
-                    </tr>
-                    <tr>
-                        <td><code>.fright-lt768</code></td>
-                        <td>Float right <strong>under</strong> 768px</td>
-                    </tr>
-                </table>
-            </div>
-
-            <h2>Show/hide</h2>
-
-            <div class="r-margin">
-                <table class="outerborder">
-                    <thead>
-                    <tr>
-                        <th>480px</th>
-                        <th>600px</th>
-                        <th>768px</th>
-                        <th>900px</th>
-                    </tr>
-                    </thead>
-                    <tr>
-                        <td>
-                            <code>.hide-lt480</code><br>
-                            <code>.hide-ht480</code>
-                        </td>
-                        <td>
-                            <code>.hide-lt600</code><br>
-                            <code>.hide-ht600</code>
-                        </td>
-                        <td>
-                            <code>.hide-lt768</code><br>
-                            <code>.hide-ht768</code>
-                        </td>
-                        <td>
-                            <code>.hide-lt900</code><br>
-                            <code>.hide-ht900</code>
-                        </td>
-                    </tr>
-                </table>
-            </div>
         </div>
     </div>
 </div>

@@ -174,98 +174,60 @@
 
 <div class="container">
 <div class="page">
-    <h1>Responsive helpers</h1>
-            <small class="hidden"><a href="#core-responsive-docs.hbs" id="core-responsive-docs.hbs">#</a> docs.hbs</small>
+    <h1>Border</h1>
+            <small class="hidden"><a href="#core-border-border.mustache" id="core-border-border.mustache">#</a> border.mustache</small>
             <div class="mod mbxxl">
     <div class="inner">
         <div class="bd">
+            <p>
+                Class names are built up by 3 letters in the following order:<br/>
 
-            <p class="mal">
-                <strong>lt</strong> = less than<br>
-                <strong>ht</strong> = higher than
+                <code>[type][location][size]</code>
             </p>
 
-            <h2>Text alignment</h2>
+            <h5>type</h5>
+            <p>b = border</p>
 
-            <div class="r-margin">
-                <table>
-                    <tr>
-                        <td><code>.leftify-ht768</code></td>
-                        <td>Adjust left <strong>over</strong> 768px</td>
-                    </tr>
-                    <tr>
-                        <td><code>.leftify-lt768</code></td>
-                        <td>Adjust left <strong>under</strong> 768px</td>
-                    </tr>
-                    <tr>
-                        <td><code>.rightify-ht768</code></td>
-                        <td>Adjust right <strong>over</strong> 768px</td>
-                    </tr>
-                    <tr>
-                        <td><code>.rightify-lt768</code></td>
-                        <td>Adjust right <strong>under</strong> 768px</td>
-                    </tr>
-                </table>
-            </div>
+            <h5>location</h5>
+            <p>a, t, r, b, l, h, v = all, top, right, bottom, left, horizontal, vertical</p>
 
-            <h2>Floating</h2>
+            <h5>size</h5>
+            <p>t, s, n = tiny(1px), small(2px), none(0px)</p>
+            <hr/>
+            <h5>some examples</h5>
+            <p>
+                <code>bas</code> = border + all sides + small<br/>
+                <code>btn</code> = border + top + none<br/>
+                <code>brt</code> = border + right + tiny<br/>
+            </p>
 
-            <div class="r-margin">
-                <table>
-                    <tr>
-                        <td><code>.fleft-ht768</code></td>
-                        <td>Float left <strong>over</strong> 768px</td>
-                    </tr>
-                    <tr>
-                        <td><code>.fleft-lt768</code></td>
-                        <td>Float left <strong>under</strong> 768px</td>
-                    </tr>
-                    <tr>
-                        <td><code>.fright-ht768</code></td>
-                        <td>Float right <strong>over</strong> 768px</td>
-                    </tr>
-                    <tr>
-                        <td><code>.fright-lt768</code></td>
-                        <td>Float right <strong>under</strong> 768px</td>
-                    </tr>
-                </table>
-            </div>
+            <div class="bg-blue-xxlt bas r-mll" style="height:100px;width:200px"><code>.bas</code></div>
 
-            <h2>Show/hide</h2>
+			<pre class="prettyprint linenums">&lt;div class=&quot;bas&quot;&gt; ... &lt;/div&gt;</pre>
 
-            <div class="r-margin">
-                <table class="outerborder">
-                    <thead>
-                    <tr>
-                        <th>480px</th>
-                        <th>600px</th>
-                        <th>768px</th>
-                        <th>900px</th>
-                    </tr>
-                    </thead>
-                    <tr>
-                        <td>
-                            <code>.hide-lt480</code><br>
-                            <code>.hide-ht480</code>
-                        </td>
-                        <td>
-                            <code>.hide-lt600</code><br>
-                            <code>.hide-ht600</code>
-                        </td>
-                        <td>
-                            <code>.hide-lt768</code><br>
-                            <code>.hide-ht768</code>
-                        </td>
-                        <td>
-                            <code>.hide-lt900</code><br>
-                            <code>.hide-ht900</code>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+			<div class="bg-blue-xxlt brs bbs blt r-mll" style="height:100px;width:200px"><code>.brs .bbs .blt</code></div>
+
+			<pre class="prettyprint linenums">&lt;div class=&quot;brs bbs blt&quot;&gt; ... &lt;/div&gt;</pre>
+
+			<div class="bg-blue-xxlt brt r-mll" style="height:100px;width:200px"><code>.brt</code></div>
+
+			<pre class="prettyprint linenums">&lt;div class=&quot;bat&quot;&gt; ... &lt;/div&gt;</pre>
+
+
+            <h5>Border-colors</h5>
+            <p>
+                Bordercolors are set with the border- prefix on all colors from the <a href="/core/colors/view">color palette</a>.<br/>
+            </p>
+            <p>
+				<span class="bbs border-pale"><code>.border-pale</code></span>
+                <span class="bbs border-red"><code>.border-red</code></span>
+                <span class="bbs border-sharp"><code>.border-sharp</code></span>
+				<span class="bbs border-green-lt"><code>.border-green-lt</code></span>
+            </p>
+
+       </div>
     </div>
-</div>
+</div><!-- mod -->
 
 
 </div>
