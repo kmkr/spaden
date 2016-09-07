@@ -1,0 +1,16 @@
+<div class="lm-wrapper tb-fixed">
+    <div class="container">
+    <div class="page">
+        {{#each data.files}}
+            {{^requested}}
+                <small class="hidden"><a href="#{{ref}}" id="{{ref}}">#</a> {{name}}</small>
+                {{{rendered}}}
+
+                {{^rendered}}
+                    <pre><code>{{content}}</code></pre>
+                {{/rendered}}
+            {{/requested}}
+        {{/each}}
+    </div>
+    </div>
+</div>

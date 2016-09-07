@@ -1,28 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./dist/spaden.min.css?sha={{sha}}">
-    <link rel="stylesheet" href="./style.css?sha={{sha}}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
-</head>
-<body>
-
 <div class="_outlines">
 <div id="leftmenu" class="leftmenu brt fixed bg-blue-xlt">
   <div class="navbar bbt relative">
 
   </div>
   <nav class="mtm">
-    <dl>
-    {{#each spec}}
+    <dl id="tree-menu">
+    {{#each data}}
         <h3>{{title}}</h3>
         <hr />
         {{#each children}}
         <dt>{{title}}</dt>
         <dd class="dark-links">
             {{#each children}}
-                <a href="#{{ref}}">{{title}}</a>
+                <a href="{{href}}" data-ref="{{ref}}">{{title}}</a>
             {{/each}}
         </dd>
         {{/each}}
@@ -43,7 +33,6 @@
         </a>
         <!-- -->
       </nav>
-
     </div>
   </div>
 </div>
@@ -64,44 +53,36 @@
             </div>
         </div>
 
-
-        {{#each spec}}
+        {{#each data}}
             <h1>{{title}}</h1>
             <hr />
             {{#each children}}
 
-
             <h2>{{title}}</h2>
                 {{#each children}}
-                <a id="{{ref}}"></a>
-                <!-- -->
-                <ul class="breadcrumbs green-dk mbn">
-                    <li>{{../../title}}</li>
-                    <li>{{../title}}</li>
-                    <li>{{title}}</li>
-                </ul>
-                <!-- -->
-
-
+                    <a id="{{ref}}"></a>
+                    <!-- -->
+                    <ul class="breadcrumbs green-dk mbn">
+                        <li>{{../../title}}</li>
+                        <li>{{../title}}</li>
+                        <li>{{title}}</li>
+                    </ul>
+                    <!-- -->
                     <!--<h3>{{title}}</h3>-->
                     {{#each files}}
-                    {{^requested}}
-                        <small class="hidden"><a href="#{{ref}}" id="{{ref}}">#</a> {{name}}</small>
-                        {{{rendered}}}
+                        {{^requested}}
+                            <small class="hidden"><a href="#{{ref}}" id="{{ref}}">#</a> {{name}}</small>
+                            {{{rendered}}}
 
-                        {{^rendered}}
-                            <pre><code>{{content}}</code></pre>
-                        {{/rendered}}
+                            {{^rendered}}
+                                <pre><code>{{content}}</code></pre>
+                            {{/rendered}}
                         {{/requested}}
                     {{/each}}
                 {{/each}}
             {{/each}}
         {{/each}}
-
     </div>
   </div>
 </div>
 </div>
-<script src="./docs.js?sha={{sha}}"></script>
-</body>
-</html>

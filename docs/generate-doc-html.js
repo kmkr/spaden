@@ -92,7 +92,8 @@ const spec = [
                 children: [
                     {
                         title: 'contextbox',
-                        id: 'contextbox'
+                        id: 'contextbox',
+                        entry: true
                     },
 										{
                         title: 'conversations',
@@ -221,6 +222,7 @@ function resolveEntry (entry, contextPath = '') {
             )
             ).then((res) => {
                 entry.ref = createRef(_contextPath),
+                entry.href = `./${createRef(_contextPath)}.html`
                 entry.files = res.filter(Boolean);
 
                 entry.files = entry.files.map((fileObj) => {
@@ -251,20 +253,61 @@ function resolveTree(tree, contextPath = '') {
     );
 }
 
+function getEntryPoints(spec) {
+    const result = [{
+        index: 'index',
+        layout: 'base',
+        out: 'index',
+        data: spec
+    }];
+
+    function iterate(entry) {
+        const copied = Object.assign({}, entry);
+        delete copied.children;
+        result.push({
+            data: copied,
+            index: 'standalone',
+            layout: 'base',
+            out: entry.ref
+        });
+        entry.children && entry.children.forEach(entry => iterate(entry));
+    }
+
+    spec.forEach(entry => iterate(entry));
+    return result;
+}
+
+const baseData = {
+    version: `v${pkg.version}`,
+    sha: process.env.GIT_SHA || pkg.version
+};
+function render(template, layout, data) {
+    const index = hbs.compile(template)(Object.assign({}, baseData, { data }));
+    const result = hbs.compile(layout)(Object.assign({}, baseData, { data, content: index }));
+
+    return result;
+}
+
+
 resolveTree(spec, basePath)
     .then((res) => {
         // DEBUG
         // fs.writeFileSync('./debug.json', JSON.stringify(spec, null, 4), 'utf8');
 
-        fs.writeFileSync(
-            path.join(__dirname, '..', OUT_FOLDER, 'index.html'),
-            hbs.compile(fs.readFileSync(path.join(__dirname, 'index.hbs'), 'utf8'))({
-                version: `v${pkg.version}`,
-                spec: spec,
-                sha: process.env.GIT_SHA || pkg.version
-            }),
-            'utf8'
-        );
+        const entries = getEntryPoints(spec);
+
+        entries.forEach(({ out, layout, index, data }) => {
+            const outputPath = path.join(__dirname, '..', OUT_FOLDER, `${out}.html`);
+            const baseFileContent = fs.readFileSync(path.join(__dirname, 'templates', `${layout}.hbs`), 'utf8');
+            const indexFileContent = fs.readFileSync(path.join(__dirname, 'templates', `${index}.hbs`), 'utf8');
+
+            fs.writeFileSync(
+                outputPath,
+                render(indexFileContent, baseFileContent, data),
+                'utf8'
+            );
+
+        });
     })
     .catch((err) => {
         console.error('err:', err);
@@ -272,8 +315,15 @@ resolveTree(spec, basePath)
 
 
 
-// * build css via postcss
-// * build js?
-    //  FIX TOUCH/CLICK ON BODY
-// * prepare markdown files
-    // same as hbs
+/*
+
+* examples folder - filer injectes inn i base.hbs
+* filer av alle seksjoner alene (krever filterert spec men kan kjøre i samme index.hbs)
+
+
+* legge til støtte for .js og .md filer
+* fixe touch/click på sidemenyen/body (skjul/vis)
+
+* lokal utvikling med reload
+
+*/
