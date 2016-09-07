@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./dist/spaden.min.css?sha=1547e08655387f79addc12d43ab972d1de4e2729">
+    <link rel="stylesheet" href="./style.css?sha=1547e08655387f79addc12d43ab972d1de4e2729">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+</head>
+<body>
+<div class="lm-wrapper tb-fixed">
+    <div class="container">
+    <div class="page">
+                <small class="hidden"><a href="#core-spacing-spacing.mustache" id="core-spacing-spacing.mustache">#</a> spacing.mustache</small>
+                <!-- spacing -->
+<div class="mod mbxxl">
+    <div class="inner">
+        <div class="bd">
+            <h2 class="mtn">Margin/Padding</h2>
+            <p>NB! these are absolute, if you need the kind of margin that collapses to something smaller on a mobile device, use <code>.r-margin</code></p>
+            <p>
+                Class names are built up by 3 letters in the following order:<br/>
+
+                <code>[type][location][size]</code>
+            </p>
+
+            <h4>type</h4>
+            <p>p, m = padding, margin</p>
+
+            <h4>location</h4>
+            <p>a, t, r, b, l, h, v = all, top, right, bottom, left, horizontal, vertical</p>
+
+            <h4>size</h4>
+            <p>t, s, m, l, n = tiny(3px), small(5px), medium(10px), large(20px), none(0px)</p>
+            <hr/>
+            <h4>some examples</h4>
+            <p>
+                <code>pam</code> = padding + all sides + medium<br/>
+                <code>ptn</code> = padding + top + none<br/>
+                <code>mal</code> = margin + all sides + large<br/>
+            </p>
+            <div>
+                <div class="bg-lt-gray r-margin inlineblockify" style="outline:1px solid grey">
+                    <button class="mal">The button</button>
+                </div>
+                <code>&lt;button class=&quot;mal&quot;&gt;The button&lt;/button&gt;</code>
+            </div>
+            <div>
+                <div class="bg-lt-gray r-margin inlineblockify" style="outline:1px solid grey">
+                    <button class="mam">The button</button>
+                </div>
+                <code>&lt;button class=&quot;mam&quot;&gt;The button&lt;/button&gt;</code>
+            </div>
+            <div>
+                <div class="bg-lt-gray r-margin inlineblockify" style="outline:1px solid grey">
+                    <button class="pal mhs mtt mbl">The button</button>
+                </div>
+                <code>&lt;button class=&quot;pal mhs mtt mbl&quot;&gt;The button&lt;/button&gt;</code>
+            </div>
+            <hr role="presentation">
+            <h3>Some other helpers</h3>
+            <p><code>margin-left-auto</code></p>
+            <p><code>margin-right-auto</code></p>
+            <p><code>margin-horizontal-auto</code></p>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+    </div>
+</div>
+
+<script src="./docs.js?sha=1547e08655387f79addc12d43ab972d1de4e2729"></script>
+</body>
+</html>

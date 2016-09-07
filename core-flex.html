@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./dist/spaden.min.css?sha=1547e08655387f79addc12d43ab972d1de4e2729">
+    <link rel="stylesheet" href="./style.css?sha=1547e08655387f79addc12d43ab972d1de4e2729">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+</head>
+<body>
+<div class="lm-wrapper tb-fixed">
+    <div class="container">
+    <div class="page">
+                <small class="hidden"><a href="#core-flex-flex.hbs" id="core-flex-flex.hbs">#</a> flex.hbs</small>
+                
+    <div class="mod mbxxl">
+        <div class="inner">
+            <div class="bd">
+                <h2 class="mtn">Flex</h2>
+                <details>
+                    <summary class="r-margin clickable h5">flex</summary>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex"</span>&gt;</span>
+    ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line flex wrap cols2upto480 cols4upto768 cols6upto990 cols8from990"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+                </details>
+                <p>Set on container holding the elements you want to flex. Turns on std. css flex (including flex default behaviour)</p>
+                <p><a href="/examples/example-grid-flex/view">With grid examples</a> Works very well with the std line > unit grid system. </p>
+                <p><a href="/examples/example-flex-toolbar/view">Toolbar examples</a> Also works well to make typical vertical centered toolbar-like thingies. </p>
+                <hr>
+                <details>
+                    <summary class="r-margin clickable h5">inline-flex</summary>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-flex"</span>&gt;</span>
+    ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+                </details>
+                <p>Works like <code>.flex</code> except the container itself behaves like an inline element. The flex-elements </p>
+                <hr>
+                <details>
+                    <summary class="r-margin clickable h5">align-items</summary>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex align-items-center"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+                </details>
+                <p>Extends <code>.Flex</code>.</p>
+                <div class="line r-cols2to3">
+                    <div class="unit">
+                        <h5><code>.align-items-start</code></h5>
+                        <div class="r-margin relative flex align-items-start bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt" style="height:50px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:60px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:40px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:80px;width:40px;"></div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.align-items-end</code></h5>
+                        <div class="r-margin relative flex align-items-end bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt" style="height:50px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:60px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:40px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:80px;width:40px;"></div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.align-items-center</code></h5>
+                        <div class="r-margin relative flex align-items-center bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt" style="height:50px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:60px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:40px;width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="height:80px;width:40px;"></div>
+                        </div>
+                    </div>
+                            <div class="unit">
+                        <h5><code>.align-items-baseline</code></h5>
+                        <div class="r-margin relative flex align-items-baseline bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt" style="height:50px;width:40px;margin-right:10px"><h1 class="mam">A</h1></div>
+                            <div class="bg-blue-lt" style="height:60px;width:40px;margin-right:10px"><h4 class="mam">B</h4></div>
+                            <div class="bg-blue-lt" style="height:40px;width:40px;margin-right:10px"><h2 class="mam">C</h2></div>
+                            <div class="bg-blue-lt" style="height:80px;width:40px;"><h3 class="mam">D</h3></div>
+                        </div>
+                    </div>
+                            <div class="unit">
+                        <h5><code>.align-items-stretch</code> (Default)</h5>
+                        <div class="r-margin relative flex align-items-stretch bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt" style="width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="width:40px;margin-right:10px"></div>
+                            <div class="bg-blue-lt" style="width:40px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <details>
+                    <summary class="r-margin clickable h5">wrap</summary>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex wrap"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+                </details>
+
+                <p>Extends <code>.Flex</code>.</p>
+                <p>Flex will by default try to fit all flexelements on a single line.</p>
+                <p class="red">! Does not work in certain browsers, including firefox before v.28, use with care, make sure you have a working fallback. </p>
+                <div class="line r-cols2to3">
+
+                    <div class="unit">
+                        <h5><code>.wrap</code></h5>
+                        <div class="r-margin relative flex wrap bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                            <div class="bg-blue-lt mrm  phl pvm">D</div>
+                            <div class="bg-blue-lt mrm  phl pvm">E</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.nowrap</code> (Default)</h5>
+                        <div class="r-margin relative flex nowrap bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt mrm  phl pvm">A</div>
+                            <div class="bg-blue-lt mrm  phl pvm">B</div>
+                            <div class="bg-blue-lt mrm  phl pvm">C</div>
+                            <div class="bg-blue-lt mrm  phl pvm">D</div>
+                            <div class="bg-blue-lt mrm  phl pvm">E</div>
+                        </div>
+                    </div>
+
+                    <div class="unit">
+                        <h5><code>.wrap-reverse</code></h5>
+                        <div class="r-margin relative flex wrap-reverse bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt mrm  phl pvm">A</div>
+                            <div class="bg-blue-lt mrm  phl pvm">B</div>
+                            <div class="bg-blue-lt mrm  phl pvm">C</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">E</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr>
+                <details>
+                    <summary class="r-margin clickable h5">row/column</summary>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex column"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+                </details>
+                <p>Extends <code>.Flex</code>.</p>
+                <p>Establishes a flex main-axis</p>
+
+                <div class="line r-cols2to3">
+                    <div class="unit">
+                        <h5><code>.row</code> (Default)</h5>
+                        <div class="r-margin relative flex row bg-pale" style="height:100px;width:190px">
+                            <div class="bg-blue-lt mrm  phl pvm">A</div>
+                            <div class="bg-blue-lt mrm  phl pvm">B</div>
+                            <div class="bg-blue-lt mrm  phl pvm">C</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.column</code></h5>
+                        <div class="r-margin relative flex column bg-pale" style=";width:190px">
+                            <div class="bg-blue-lt  mbm phl pvm">A</div>
+                            <div class="bg-blue-lt  mbm phl pvm">B</div>
+                            <div class="bg-blue-lt   phl pvm">C</div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <details>
+                    <summary class="r-margin clickable h5">justify-content</summary>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex justify-content-space-between"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+                </details>
+                <p>Extends <code>.Flex</code>.</p>
+                <p>Sets how 'free' space is distributed along the flex main-axis</p>
+
+                <div class="line r-cols2to3">
+                    <div class="unit">
+                        <h5><code>.justify-start</code> (Default)</h5>
+                        <div class="r-margin relative flex justify-start bg-pale" style="height:100px;width:290px">
+                            <div class="bg-blue-lt mrm  phl pvm">A</div>
+                            <div class="bg-blue-lt mrm  phl pvm">B</div>
+                            <div class="bg-blue-lt mrm  phl pvm">C</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.justify-end</code></h5>
+                        <div class="r-margin relative flex justify-end bg-pale" style="height:100px;width:290px">
+                            <div class="bg-blue-lt mrm  phl pvm">A</div>
+                            <div class="bg-blue-lt mrm  phl pvm">B</div>
+                            <div class="bg-blue-lt phl pvm">C</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.justify-center</code></h5>
+                        <div class="r-margin relative flex justify-center bg-pale" style="height:100px;width:290px">
+                            <div class="bg-blue-lt mrm  phl pvm">A</div>
+                            <div class="bg-blue-lt mrm  phl pvm">B</div>
+                            <div class="bg-blue-lt mrm  phl pvm">C</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.justify-space-between</code></h5>
+                        <div class="r-margin relative flex justify-space-between bg-pale" style="height:100px;width:290px">
+                            <div class="bg-blue-lt   phl pvm">A</div>
+                            <div class="bg-blue-lt   phl pvm">B</div>
+                            <div class="bg-blue-lt   phl pvm">C</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.justify-space-around</code></h5>
+                        <div class="r-margin relative flex justify-space-around bg-pale" style="height:100px;width:290px">
+                            <div class="bg-blue-lt   phl pvm">A</div>
+                            <div class="bg-blue-lt   phl pvm">B</div>
+                            <div class="bg-blue-lt   phl pvm">C</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <details>
+                    <summary class="r-margin clickable h5">align-content</summary>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex align-content-stretch"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+                </details>
+                <p>Extends <code>.Flex</code>.</p>
+                <p>Sets how 'free' space is distributed along the flex cross-axis (behaves Like justify-content but the coss direction from the specified flex-direction )</p>
+
+                <div class="line r-cols2to3">
+                    <div class="unit">
+                        <h5><code>.align-content-start</code> (Default)</h5>
+                        <div class="r-margin relative flex wrap align-content-start bg-pale" style="height:150px;width:290px">
+                            <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">E</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">F</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">G</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                        <h5><code>.align-content-end</code></h5>
+                        <div class="r-margin relative flex wrap align-content-end bg-pale" style="height:150px;width:290px">
+                            <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                            <div class="bg-blue-lt mrm phl pvm">E</div>
+                            <div class="bg-blue-lt mrm phl pvm">F</div>
+                            <div class="bg-blue-lt mrm phl pvm">G</div>
+                        </div>
+                    </div>
+                            <div class="unit">
+                        <h5><code>.align-content-center</code></h5>
+                        <div class="r-margin relative flex wrap align-content-center bg-pale" style="height:150px;width:290px">
+                            <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                            <div class="bg-blue-lt mrm  phl pvm">E</div>
+                            <div class="bg-blue-lt mrm  phl pvm">F</div>
+                            <div class="bg-blue-lt mrm  phl pvm">G</div>
+                        </div>
+                    </div>
+                            <div class="unit">
+                       <h5><code>.align-content-space-between</code></h5>
+                        <div class="r-margin relative flex wrap align-content-space-between bg-pale" style="height:150px;width:290px">
+                            <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                            <div class="bg-blue-lt mrm  phl pvm">E</div>
+                            <div class="bg-blue-lt mrm  phl pvm">F</div>
+                            <div class="bg-blue-lt mrm  phl pvm">G</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                       <h5><code>.align-content-space-around</code></h5>
+                        <div class="r-margin relative flex wrap align-content-space-around bg-pale" style="height:150px;width:290px">
+                            <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                            <div class="bg-blue-lt mrm  phl pvm">E</div>
+                            <div class="bg-blue-lt mrm  phl pvm">F</div>
+                            <div class="bg-blue-lt mrm  phl pvm">G</div>
+                        </div>
+                    </div>
+                    <div class="unit">
+                       <h5><code>.align-content-stretch</code></h5>
+                        <div class="r-margin relative flex wrap align-content-stretch bg-pale" style="height:150px;width:290px">
+                            <div class="bg-blue-lt mrm mbm phl pvm">A</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">B</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">C</div>
+                            <div class="bg-blue-lt mrm mbm phl pvm">D</div>
+                            <div class="bg-blue-lt mrm  phl pvm">E</div>
+                            <div class="bg-blue-lt mrm  phl pvm">F</div>
+                            <div class="bg-blue-lt mrm  phl pvm">G</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="inner bg-lemon-xlt r-mhl mtl">
+            <div class="bd">
+                <h3>Flex: Properties that may be set directly on specific flex-items</h3>
+                <hr>
+                <details>
+                    <summary class="r-margin clickable h5">flex-grow[n]</summary>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex align-items-center"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex-grow1"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex-grow2"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex-grow1"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+                </details>
+                <p>Defines the flex-item's ability to grow, Sets how 'free' space is distributed along the flex cross-axis (behaves Like justify-content but the coss direction from the specified flex-direction )</p>
+                <p>Supported values: 1 - 10 (Default:0)</p>
+
+                <hr>
+                <details>
+                    <summary class="r-margin clickable h5">flex-no-shrink</summary>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex align-items-center"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex-no-shrink"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+                </details>
+                <p>This defines the ability for a flex item to shrink if necessary.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+</div>
+
+<script src="./docs.js?sha=1547e08655387f79addc12d43ab972d1de4e2729"></script>
+</body>
+</html>

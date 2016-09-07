@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./dist/spaden.min.css?sha=1547e08655387f79addc12d43ab972d1de4e2729">
+    <link rel="stylesheet" href="./style.css?sha=1547e08655387f79addc12d43ab972d1de4e2729">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+</head>
+<body>
+<div class="lm-wrapper tb-fixed">
+    <div class="container">
+    <div class="page">
+                <small class="hidden"><a href="#core-grid-docs.hbs" id="core-grid-docs.hbs">#</a> docs.hbs</small>
+                <!-- grid -->
+<div class="mbxxl">
+    <div class="mod">
+        <div class="inner">
+            <div class="bd">
+                <h2 class="mtn">Grid</h2>
+                <p>Highly customizable grid system used on all FINN pages</p>
+
+                <hr role="presentation">
+                <details>
+                    <summary class="r-margin clickable h5">line</summary>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line"</span>&gt;</span>
+    ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+                </details>
+                <p>Groups units on one horizontal line. Note: for mobile layout units may be stacked to avoid horizontal scrolling.</p>
+                <hr role="presentation">
+
+                <details>
+                    <summary class="r-margin clickable h5">unit</summary>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit"</span>&gt;</span>
+        ...
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+                </details>
+                <p>Base class which divides a line into sections (columns).</p>
+                <hr role="presentation">
+
+                <details>
+                    <summary class="r-margin clickable h5">r-sizeXofY</summary>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-sizeXofY"</span>&gt;</span>
+        ...
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+                </details>
+                <p>Extends <code>unit</code>. Indicates the number of grid units this element spans, for example <code>r-size2of3</code>
+                    would take up 2 of 3 columns. Collapses to 1 column at 768px.</p>
+
+                <p class="strong">Intended use: Main layout grid!</p>
+                <hr role="presentation">
+
+                <details>
+                    <summary class="r-margin clickable h5">sizeXofY</summary>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit sizeXofY"</span>&gt;</span>
+        ...
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+
+                    <p>Supported fractions:</p>
+                    <ul class="bullets pll">
+                        <li>1</li>
+                        <li>1/2</li>
+                        <li>1/3</li>
+                        <li>2/3</li>
+                        <li>1/4</li>
+                        <li>3/4</li>
+                        <li>1/5</li>
+                        <li>2/5</li>
+                        <li>3/5</li>
+                        <li>4/5</li>
+                        <li>1/6</li>
+                        <li>5/6</li>
+                    </ul>
+                </details>
+                <p>Extends <code>unit</code>. Indicates the fractional width of the unit, for example <code>size3of4</code> would take
+                    up three quarters, or 75%, of the horizontal space.</p>
+                <p class="strong">
+                    Intended use: Non-responsive liquid elements
+                </p>
+                <hr role="presentation">
+
+                <details>
+                    <summary class="r-margin clickable h5">r-colsXtoY</summary>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit sizeXofY"</span>&gt;</span>
+        ...
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line r-colsXtoY"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit"</span>&gt;</span>
+        ...
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line r-cols1to2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit formelement man"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Akershus<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- etc --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+
+                    <p>
+                        <code>
+                            <a href="#" id="r-cols1to2" class="mrl cols strong bg-lt-gray">.r-cols1to2</a>
+                            <a href="#" id="r-cols1to3" class="mrl cols">.r-cols1to3</a>
+                            <a href="#" id="r-cols1to4" class="mrl cols">.r-cols1to4</a>
+                            <a href="#" id="r-cols2to3" class="mrl cols">.r-cols2to3</a>
+                            <a href="#" id="r-cols2to4" class="mrl cols">.r-cols2to4</a>
+                            <a href="#" id="r-cols2to5" class="mrl cols">.r-cols2to5</a>
+                            <a href="#" id="r-cols2to6" class="mrl cols">.r-cols2to6</a>
+                        </code>
+                    </p>
+
+                    <div class="mal gridexample">
+                        <form>
+                            <div class="line r-cols1to2" id="cols">
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Akershus</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Aust-Agder</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Buskerud</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Finnmark</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Hedmark</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Hordaland</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Møre og Romsdal</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Nord-Trøndelag</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Nordland</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Oppland</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Oslo</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Rogaland</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Sogn og Fjordane</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Sør-Trøndelag</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Telemark</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Troms</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Vest-Agder</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Vestfold</span>
+                                    </label>
+                                </div>
+                                <div class="unit formelement man">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span>Østfold</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </details>
+
+                <p>Extends <code>line</code>. Responsive column setup for content. Classname indicates number of colums, for example
+                    <code>r-cols2to4</code> will fit 2 columns on mobile screens and 4 columns from 768px and up.</p>
+
+                <p class="strong">Intended use: Column based contents</p>
+                <!-- ** -->
+                <hr role="presentation">
+
+                <details>
+                    <summary class="r-margin clickable h5">colsXupto[Breakpoint]</summary>
+                    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line cols2upto480 cols4upto768 cols6upto990 cols8from990"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit"</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+                    <p>Supported column count: 1 - 8</p>
+                    <p>Supported breakpoints:</p>
+                    <ul class="bullets pll">
+                        <li>480</li>
+                        <li>640</li>
+                        <li>768</li>
+                        <li>990</li>
+                    </ul>
+                </details>
+
+                <p>Extends <code>line</code>.
+                <p><code>.cols[X]upto[breakpoint]</code> Sets number of columns up to specified breakpoint</p>
+                <p><code>.cols[X]from990</code> Sets number of columns from 990 and up</p>
+
+                <p>Classname indicates number of colums at specific breakpoints, for example
+                    <code>.cols1upto480 .cols2upto768 .cols4from990</code> will fit 1 column below 480px, 2 columns between 480px and 767px, and 4 columns from 990px to infinity</p>
+                    <p class="red">! Works in conjunction with colsXfrom990, remember to set this aswell, or 990px+ will get whatever is default (usually 1col )</p>
+
+                <p class="strong">Intended use: Column based contents where we need more control</p>
+<!-- ** -->
+
+            </div>
+        </div>
+    </div>
+
+
+    <style type="text/css">
+        .gridexample .r-cols1to2 {background: #D2E286;}
+        .gridexample .r-cols1to3 {background: #eee;}
+        .gridexample .r-cols1to4 {background: #def;}
+        .gridexample .r-cols2to3 {background: #f60;}
+        .gridexample .r-cols2to4 {background: #ff9;}
+        .gridexample .r-cols2to5 {background: #ccc;}
+        .gridexample .r-cols2to6 {background: #f3ddad;}
+    </style>
+
+
+</div>
+
+
+    </div>
+    </div>
+</div>
+
+<script src="./docs.js?sha=1547e08655387f79addc12d43ab972d1de4e2729"></script>
+</body>
+</html>

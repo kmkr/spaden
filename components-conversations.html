@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./dist/spaden.min.css?sha=1547e08655387f79addc12d43ab972d1de4e2729">
+    <link rel="stylesheet" href="./style.css?sha=1547e08655387f79addc12d43ab972d1de4e2729">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+</head>
+<body>
+<div class="lm-wrapper tb-fixed">
+    <div class="container">
+    <div class="page">
+                <small class="hidden"><a href="#components-conversations-conversations.mustache" id="components-conversations-conversations.mustache">#</a> conversations.mustache</small>
+                <div class="mod mbxxl">
+    <div class="inner">
+        <div class="bd">
+            <h2 class="mtn">Conversations</h2>
+            <details>
+                <summary class="r-margin clickable h5">Without picture</summary>
+                <pre><code><span class="hljs-comment">&lt;!-- From me --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bd"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-table r-prl mvl"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-cell size1of6 r-pll neutral d1"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">"21.11 12:26"</span>&gt;</span>[timestamp]<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-cell size5of6 conversation roundify righty pvs"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"word-break"</span>&gt;</span>This is a message<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- From others --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bd"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-table r-pll mvl"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-cell size5of6 conversation roundify lefty pvs"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"word-break"</span>&gt;</span>This is a message<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-cell size1of6 r-prl rightify neutral d1"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">"21.11 13:26"</span>&gt;</span>[timestamp]<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+            </details>
+
+            <!-- From me -->
+<div class="bd">
+    <div class="display-table r-prl mvl">
+        <div class="display-cell size1of6 r-pll neutral d1">
+            <time datetime="21.11 12:26">[timestamp]</time>
+        </div>
+        <div class="display-cell size5of6 conversation roundify righty pvs">
+            <p class="word-break">This is a message</p>
+        </div>
+    </div>
+</div>
+<!-- From others -->
+<div class="bd">
+    <div class="display-table r-pll mvl">
+        <div class="display-cell size5of6 conversation roundify lefty pvs">
+            <p class="word-break">This is a message</p>
+        </div>
+        <div class="display-cell size1of6 r-prl rightify neutral d1">
+            <time datetime="21.11 13:26">[timestamp]</time>
+        </div>
+    </div>
+</div>
+
+            <details>
+                <summary class="r-margin clickable h5">With pictures</summary>
+                <pre><code><span class="hljs-comment">&lt;!-- From others --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"media mhn"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"img roundedborder overflowify"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"overflow:hidden;height:65px"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"max-height:65px"</span>  <span class="hljs-attr">src</span>=<span class="hljs-string">"dist/img/dummies/shovelface.jpg"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bd"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"conversation roundify lefty pvs mhl mvm size3of4 "</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+                Jerky filet mignon tongue venison.Jerky filet mignon tongue venison.Jerky filet mignon tongue venison.Jerky filet mignon tongue venison.Jerky filet mignon tongue venison.
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- From me --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"media mhn"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"imgExt roundedborder"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"overflow:hidden;height:65px"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"max-height:65px"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"dist/img/dummies/shovelfacelady.jpg"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bd"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"conversation roundify righty pvs mhl mvm  size3of4 fright"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+                Jerky filet mignon tongue venison.
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+            </details>
+
+            <!-- From others -->
+<div class="media mhn">
+    <div class="img roundedborder overflowify" style="overflow:hidden;height:65px"><img style="max-height:65px"  src="dist/img/dummies/shovelface.jpg"></div>
+    <div class="bd">
+        <div class="conversation roundify lefty pvs mhl mvm size3of4 ">
+            <p>
+                Jerky filet mignon tongue venison.Jerky filet mignon tongue venison.Jerky filet mignon tongue venison.Jerky filet mignon tongue venison.Jerky filet mignon tongue venison.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- From me -->
+<div class="media mhn">
+    <div class="imgExt roundedborder" style="overflow:hidden;height:65px"><img style="max-height:65px" src="dist/img/dummies/shovelfacelady.jpg"></div>
+    <div class="bd">
+        <div class="conversation roundify righty pvs mhl mvm  size3of4 fright">
+            <p>
+                Jerky filet mignon tongue venison.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+            <hr/>
+            <div class="media">
+                <div class="img roundedborder mtm" style="width:65px;height:65px;overflow:hidden"><img style="max-height:65px"  src="dist/img/dummies/shovelface.jpg"></div>
+                <div class="bd">
+                    <div class="r-margin fright">I går</div>
+                    <h3>John Doe</h3>
+                    <p>Bacon ipsum dolor amet hamburger shankle short ribs, andouille ham shoulder prosciutto kielbasa tongue beef ribs cow tenderloin. Spare ribs pork loin tongue beef ribs kevin. Filet mignon ham doner prosciutto shank shoulder bacon tenderloin hamburger pork chop turducken short ribs. Strip steak spare ribs turkey, chicken beef ham hock rump drumstick. Boudin ground round cow, pork chop beef fatback frankfurter pork sirloin t-bone bresaola salami. Porchetta beef ham hock shank turkey tri-tip. Ham hock meatball pancetta kevin prosciutto fatback.</p>
+                </div>
+            </div>
+            <hr/>
+            <div class="media">
+
+                <div class="img roundedborder mtm" style="width:65px;height:65px;overflow:hidden"><img style="max-height:65px"  src="dist/img/dummies/shovelfacelady.jpg"></div>
+                <div class="bd">
+                    <div class="r-margin fright">I går</div>
+                    <h3>Jane Doe</h3>
+                    <p>Bacon ipsum dolor amet hamburger shankle short ribs, andouille ham shoulder prosciutto kielbasa tongue beef ribs cow tenderloin. Spare ribs pork loin tongue beef ribs kevin. Filet mignon ham doner prosciutto shank shoulder bacon tenderloin hamburger pork chop turducken short ribs. Strip steak spare ribs turkey, chicken beef ham hock rump drumstick. Boudin ground round cow, pork chop beef fatback frankfurter pork sirloin t-bone bresaola salami. Porchetta beef ham hock shank turkey tri-tip. Ham hock meatball pancetta kevin prosciutto fatback.</p>
+                </div>
+            </div>
+            <hr/>
+            <div class="media">
+                <div class="img roundedborder mtm" style="width:65px;height:65px;overflow:hidden"><img style="max-height:65px"  src="dist/img/dummies/shovelface.jpg"></div>
+                <div class="bd">
+                    <div class="r-margin fright">I går</div>
+                    <h3>John Doe</h3>
+                    <p class="">Bacon ipsum dolor amet hamburger shankle short ribs, andouille ham shoulder prosciutto kielbasa tongue beef ribs cow tenderloin. Spare ribs pork loin tongue beef ribs kevin. Filet mignon ham doner prosciutto shank shoulder bacon tenderloin hamburger pork chop turducken short ribs. Strip steak spare ribs turkey, chicken beef ham hock rump drumstick. Boudin ground round cow, pork chop beef fatback frankfurter pork sirloin t-bone bresaola salami. Porchetta beef ham hock shank turkey tri-tip. Ham hock meatball pancetta kevin prosciutto fatback.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+    </div>
+    </div>
+</div>
+
+<script src="./docs.js?sha=1547e08655387f79addc12d43ab972d1de4e2729"></script>
+</body>
+</html>
