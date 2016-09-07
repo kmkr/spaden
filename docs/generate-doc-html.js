@@ -91,36 +91,36 @@ const spec = [
                 title: 'Basic',
                 children: [
                     {
-                        title: 'contextbox',
+                        title: 'Context-box',
                         id: 'contextbox',
                         entry: true
                     },
 										{
-                        title: 'conversations',
+                        title: 'Conversations',
                         id: 'conversations'
                     },
 										{
-                        title: 'crumbs',
+                        title: 'Crumbs',
                         id: 'crumbs'
                     },
 										{
-                        title: 'detailsummary',
+                        title: 'Detailsummary',
                         id: 'detailsummary'
                     },
 										{
-                        title: 'filters',
+                        title: 'Filters',
                         id: 'filters'
                     },
 										{
-                        title: 'notification',
+                        title: 'Notification',
                         id: 'notification'
                     },
 										{
-                        title: 'omgnew',
+                        title: 'OMGnew',
                         id: 'omgnew'
                     },
 										{
-                        title: 'paging',
+                        title: 'Paging',
                         id: 'paging'
                     },
 										{
@@ -128,11 +128,11 @@ const spec = [
                         id: 'profiles'
                     },
 										{
-                        title: 'ratings',
+                        title: 'Ratings',
                         id: 'ratings'
                     },
 										{
-                        title: 'ribbons',
+                        title: 'Ribbons',
                         id: 'ribbons'
                     },
 										{
@@ -279,8 +279,11 @@ function getEntryPoints(spec) {
 
 const baseData = {
     version: `v${pkg.version}`,
-    sha: process.env.GIT_SHA || pkg.version
+    sha: process.env.GIT_SHA || pkg.version,
+    icons: ''
 };
+
+
 function render(template, layout, data) {
     const index = hbs.compile(template)(Object.assign({}, baseData, { data }));
     const result = hbs.compile(layout)(Object.assign({}, baseData, { data, content: index }));
@@ -290,7 +293,15 @@ function render(template, layout, data) {
 
 
 resolveTree(spec, basePath)
-    .then((res) => {
+    .then(() => {
+        const iconsDir = path.join(__dirname, '..', 'dist', 'icons');
+        return fsp.readdir(iconsDir).then(content =>
+            Promise.all(
+                content.map(entry => fsp.readFile(path.join(iconsDir, entry), 'utf8'))
+            ).then(results => baseData.icons = results.join('\n'))
+        )
+    })
+    .then(() => {
         // DEBUG
         // fs.writeFileSync('./debug.json', JSON.stringify(spec, null, 4), 'utf8');
 

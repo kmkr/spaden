@@ -68,7 +68,12 @@
                         <li>{{title}}</li>
                     </ul>
                     <!-- -->
-                    <!--<h3>{{title}}</h3>-->
+                    <h2 class="mtn">{{title}} <a href="{{href}}" target="_blank" title="{{title}}">
+                        <svg width="22" height="22" class="valign-middle" alt="{{title}}" >
+                            <use xlink:href="#icon-external"></use>
+                        </svg>
+                    </a></h2>
+
                     {{#each files}}
                         {{^requested}}
                             <small class="hidden"><a href="#{{ref}}" id="{{ref}}">#</a> {{name}}</small>
