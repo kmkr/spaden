@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./dist/spaden.min.css?sha=52ace230653f1cd2f7378f82f4891a532ef1359d">
-    <link rel="stylesheet" href="./style.css?sha=52ace230653f1cd2f7378f82f4891a532ef1359d">
+    <link rel="stylesheet" href="./dist/spaden.min.css?sha=e258f59231ed77e715c11922df9fb87946419260">
+    <link rel="stylesheet" href="./style.css?sha=e258f59231ed77e715c11922df9fb87946419260">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
 </head>
 <body>
@@ -926,8 +926,7 @@
                     </ul>
 
                             <small class="hidden"><a href="#core-flex-flex.hbs" id="core-flex-flex.hbs">#</a> flex.hbs</small>
-                            
-    <div class="mod mbxxl">
+                                <div class="mod mbxxl">
         <div class="inner">
             <div class="bd">
                 <details>
@@ -1742,6 +1741,651 @@
                         <li>Decoration</li>
                         <li>Form</li>
                     </ul>
+
+                            <small class="hidden"><a href="#core-form-button.mustache" id="core-form-button.mustache">#</a> button.mustache</small>
+                            <!-- Knapper -->
+<div class="mod mbxxl">
+    <div class="inner">
+        <div class="bd">
+          
+
+        </div>
+    </div>
+</div><!-- mod -->
+
+
+                            <small class="hidden"><a href="#core-form-form-element.mustache" id="core-form-form-element.mustache">#</a> form-element.mustache</small>
+                            <div class="mod mbxxl">
+        <div class="inner">
+            <div class="bd">
+
+        <form class="">
+
+            <details>
+                <summary class="r-margin clickable h5">Input type text</summary>
+                <pre class="prettyprint linenums">&lt;div class="formelement"&gt;
+    &lt;label for="inputtext"&gt;Label&lt;/label&gt;
+    &lt;div class="input"&gt;
+        &lt;input type="text" id="inputtext"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="inputtext">Label</label>
+                <div class="input">
+                    <input type="text" id="inputtext">
+                </div>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h5">Placeholder</summary>
+                <pre class="prettyprint linenums">&lt;input type="text" id="whatever" placeholder="Placeholder text"&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="inputplaceholder">Input with placeholder</label>
+                <div class="input">
+                    <input type="text" id="inputplaceholder" placeholder="Placeholder text">
+                </div>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h5">Disabled input</summary>
+                <pre class="prettyprint linenums">&lt;div class="formelement"&gt;
+    &lt;div class="input"&gt;
+        &lt;label for="disabledinput"&gt;Disabled input&lt;/label&gt;
+        &lt;input type="text" id="disabledinput" disabled&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="disabledinput">Disabled input</label>
+                <div class="input">
+                    <input type="text" id="disabledinput" disabled>
+                </div>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h5">Input type date</summary>
+                <pre class="prettyprint linenums">&lt;div class="formelement"&gt;
+    &lt;label for="inputtypedate"&gt;Input type date&lt;/label&gt;
+    &lt;div class="input"&gt;
+        &lt;input type="date" id="inputtypedate"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="inputtypedate">Input type date</label>
+                <div class="input">
+                    <input id="inputtypedate" type="date">
+                </div>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h5">Select</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;formelement&quot;&gt;
+    &lt;label for=&quot;select&quot;&gt;Label&lt;/label&gt;
+    &lt;div class=&quot;input select&quot;&gt;
+        &lt;select id=&quot;select&quot;&gt;
+            &lt;option&gt;1&lt;/option&gt;
+            &lt;option&gt;2&lt;/option&gt;
+            &lt;option&gt;3&lt;/option&gt;
+            &lt;option&gt;4&lt;/option&gt;
+            &lt;option&gt;5&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="select">Label</label>
+                <div class="input select">
+                    <select id="select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h5">Fancy select</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;formelement&quot;&gt;
+    &lt;label for=&quot;fancy&quot;&gt;Label&lt;/label&gt;
+    &lt;div class=&quot;input select&quot;&gt;
+        &lt;div class=&quot;fancyselect&quot;&gt;
+            &lt;select id=&quot;fancy&quot;&gt;
+                &lt;option&gt;1&lt;/option&gt;
+                &lt;option&gt;2&lt;/option&gt;
+                &lt;option&gt;3&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+                <div class="formelement">
+                    <label for="fancy">Label</label>
+                    <div class="input select">
+                        <div class="fancyselect">
+                            <select id="fancy">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h5">Multiselect</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;formelement&quot;&gt;
+    &lt;label for=&quot;multiselect&quot;&gt;Label&lt;/label&gt;
+    &lt;div class=&quot;input select&quot;&gt;
+        &lt;select multiple="multiple" size="5" id=&quot;multiselect&quot;&gt;
+             &lt;option&gt;1&lt;/option&gt;
+             &lt;option&gt;2&lt;/option&gt;
+             &lt;option&gt;3&lt;/option&gt;
+             &lt;option&gt;4&lt;/option&gt;
+             &lt;option&gt;5&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="multiselect">Multiselect</label>
+                <div class="input select">
+                    <select multiple="multiple" size="5" id="multiselect">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h5">File upload</summary>
+                <pre class="prettyprint linenums">&lt;div class="formelement">
+    &lt;label for="browsefile"&gt;Browse file&lt;/label&gt;
+    &lt;div class="input"&gt;
+        &lt;input id="browsefile" type="file"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <div class="input">
+                    <input id="browsefile" type="file" />
+                </div>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h5">File upload</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;formelement&quot;&gt;
+    &lt;label for=&quot;browsefiles&quot;&gt;Images&lt;/label&gt;
+    &lt;div class=&quot;input&quot;&gt;
+        &lt;label class=&quot;button file-input-button&quot; tabindex=&quot;0&quot; role=&quot;button&quot;&gt;
+            &lt;span&gt;Last opp bilde&lt;/span&gt;
+            &lt;input type=&quot;file&quot; name=&quot;browsefiles&quot; id=&quot;browsefiles&quot; accept=&quot;image/jpeg, image/png, image/gif&quot; autocomplete=&quot;off&quot; tabindex=&quot;-1&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;/label&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="browsefiles">Images</label>
+                <div class="input">
+                    <label class="button file-input-button" tabindex="0" role="button">
+                        <span>Last opp bilde</span>
+                        <input type="file" name="browsefiles" id="browsefiles" accept="image/jpeg, image/png, image/gif" autocomplete="off" tabindex="-1" aria-hidden="true">
+                    </label>
+                </div>
+            </div>
+
+            <hr class="mtl">
+
+            <!--<details>
+                <summary class="r-margin clickable h5">File upload with button overlay</summary>
+                <pre class="prettyprint linenums">&lt;div class="formelement">
+    &lt;label for="browsefile"&gt;Browse file&lt;/label&gt;
+    &lt;div class="input"&gt;
+        &lt;input id="browsefile" type="file"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <div class="input">
+                    <a class="button file-input-button" role="button">
+                        <span>Last opp bilde</span>
+                        <input type="file" name="files" accept="image/jpeg, image/png, image/gif" autocomplete="off" tabindex="-1" aria-hidden="true">
+                    </a>
+                </div>
+            </div>
+            <hr class="mtl">-->
+
+            <details>
+                <summary class="r-margin clickable h5">Textarea</summary>
+                <pre class="prettyprint linenums">&lt;div class="formelement">
+    &lt;label for="textarea"&gt;Textarea&lt;/label&gt;
+    &lt;div class="input"&gt;
+        &lt;textarea id="textarea" rows="3"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="textarea">Textarea</label>
+                <div class="input">
+                    <textarea id="textarea" rows="3"></textarea>
+                </div>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h5">Disabled textarea</summary>
+                <pre class="prettyprint linenums">&lt;div class="formelement">
+    &lt;label for="disabledtextarea"&gt;Textarea&lt;/label&gt;
+    &lt;div class="input"&gt;
+        &lt;textarea id="disabledtextarea" rows="3" disabled&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <label for="disabledtextarea">Disabled textarea</label>
+                <div class="input">
+                    <textarea id="disabledtextarea" rows="3" disabled></textarea>
+                </div>
+            </div>
+            <hr class="mtl">
+
+
+
+
+            <details>
+                <summary class="r-margin clickable h5">Radio buttons</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;formelement&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Choose one&lt;/legend&gt;
+        &lt;div class=&quot;input&quot;&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;radios&quot; checked&gt;
+                Nothing
+            &lt;/label&gt;
+
+            &lt;label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;radios&quot;&gt;
+                Something
+            &lt;/label&gt;
+
+            &lt;label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;radios&quot;&gt;
+                Other
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <fieldset>
+                <legend>Choose one</legend>
+                <div class="input">
+                    <label>
+                        <input type="radio" name="radios" checked>
+                        Nothing
+                    </label>
+
+                    <label>
+                        <input type="radio" name="radios">
+                        Something
+                    </label>
+
+                    <label>
+                        <input type="radio" name="radios">
+                        Other
+                    </label>
+                </div>
+                </fieldset>
+            </div>
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h5">Fancy radio buttons</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;formelement&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Choose one&lt;/legend&gt;
+        &lt;div class=&quot;input&quot;&gt;
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;fancyradio1&quot; name=&quot;fancyradio&quot;&gt;
+                &lt;label for=&quot;fancyradio1&quot;&gt;Nothing&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;fancyradio2&quot; name=&quot;fancyradio&quot;&gt;
+                &lt;label for=&quot;fancyradio2&quot;&gt;Something&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;radio&quot; id=&quot;fancyradio3&quot; name=&quot;fancyradio&quot;&gt;
+                &lt;label for=&quot;fancyradio3&quot;&gt;Other&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <fieldset>
+                    <legend>Choose one</legend>
+                    <div class="input">
+                        <div class="fancyinput">
+                            <input type="radio" id="fancyradio1" name="fancyradio">
+                            <label for="fancyradio1">Nothing</label>
+                        </div>
+
+                        <div class="fancyinput">
+                            <input type="radio" id="fancyradio2" name="fancyradio">
+                            <label for="fancyradio2">Something</label>
+                        </div>
+
+                        <div class="fancyinput">
+                            <input type="radio" id="fancyradio3" name="fancyradio">
+                            <label for="fancyradio3">Other</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h5">Button group (based on radio inputs)</summary>
+                <pre class="prettyprint linenums">&lt;fieldset class=&quot;formelement&quot;&gt;
+    &lt;legend&gt;I want to&lt;/legend&gt;
+    &lt;div class=&quot;input &quot;&gt;
+        &lt;div class=&quot;button-group line&quot; role=&quot;radiogroup&quot;&gt;
+            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;radio-input-SELL&quot; type=&quot;radio&quot; value=&quot;SELL&quot; name=&quot;trade_type&quot; checked=&quot;&quot;&gt;
+            &lt;label class=&quot;pam size1of4 centerify truncate&quot; for=&quot;radio-input-SELL&quot;&gt;Selge&lt;/label&gt;
+            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;radio-input-GIVEAWAY&quot; type=&quot;radio&quot; value=&quot;GIVEAWAY&quot; name=&quot;trade_type&quot;&gt;
+            &lt;label class=&quot;pam size1of4 centerify truncate&quot; for=&quot;radio-input-GIVEAWAY&quot;&gt;Gi bort&lt;/label&gt;
+            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;radio-input-WANTED&quot; type=&quot;radio&quot; value=&quot;WANTED&quot; name=&quot;trade_type&quot;&gt;
+            &lt;label class=&quot;pam size1of4 centerify truncate&quot; for=&quot;radio-input-WANTED&quot;&gt;St&#230;le&lt;/label&gt;
+            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;radio-input-whatever&quot; type=&quot;radio&quot; value=&quot;WHATEVER&quot; name=&quot;trade_type&quot;&gt;
+            &lt;label class=&quot;pam size1of4 centerify truncate&quot; for=&quot;radio-input-whatever&quot;&gt;Ete&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/fieldset&gt;</pre>
+            </details>
+            <fieldset class="formelement">
+                <legend>I want to</legend>
+                <div class="input ">
+                    <div class="button-group line" role="radiogroup">
+                        <input tabindex="0" data-selector="" id="radio-input-SELL" type="radio" value="SELL" name="trade_type" checked="">
+                        <label class="pam size1of4 centerify truncate" for="radio-input-SELL">Selge</label>
+                        <input tabindex="0" data-selector="" id="radio-input-GIVEAWAY" type="radio" value="GIVEAWAY" name="trade_type">
+                        <label class="pam size1of4 centerify truncate" for="radio-input-GIVEAWAY">Gi bort</label>
+                        <input tabindex="0" data-selector="" id="radio-input-WANTED" type="radio" value="WANTED" name="trade_type">
+                        <label class="pam size1of4 centerify truncate" for="radio-input-WANTED">Stæle</label>
+                        <input tabindex="0" data-selector="" id="radio-input-whatever" type="radio" value="WHATEVER" name="trade_type">
+                        <label class="pam size1of4 centerify truncate" for="radio-input-whatever">Ete</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="formelement">
+                <legend>I want to</legend>
+                <div class="input ">
+                    <div class="button-group line" role="radiogroup">
+                        <input tabindex="0" data-selector="" id="radio-input-HURR" type="radio" value="HURR" name="trade_type2" checked="">
+                        <label class="pam size1of2 centerify truncate" for="radio-input-HURR">Selge</label>
+                        <input tabindex="0" data-selector="" id="radio-input-DURR" type="radio" value="DURR" name="trade_type2">
+                        <label class="pam size1of2 centerify truncate" for="radio-input-DURR">Gi bort</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h5">Checkboxes</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;formelement&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Select more than one&lt;/legend&gt;
+        &lt;div class=&quot;input&quot;&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; checked&gt;
+                Nothing
+            &lt;/label&gt;
+
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot;&gt;
+                Something
+            &lt;/label&gt;
+
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot;&gt;
+                Other
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <fieldset>
+                <legend>Select more than one</legend>
+                <div class="input">
+                    <label>
+                        <input type="checkbox" checked>
+                        Nothing
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Something
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Other
+                    </label>
+                </div>
+                </fieldset>
+            </div>
+
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h5">Fancy checkboxes</summary>
+                <pre class="prettyprint linenums">&lt;div class=&quot;formelement&quot;&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Select more than one&lt;/legend&gt;
+        &lt;div class=&quot;input&quot;&gt;
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox1&quot;&gt;
+                &lt;label for=&quot;fancycheckbox1&quot;&gt;Nothing&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox2&quot;&gt;
+                &lt;label for=&quot;fancycheckbox2&quot;&gt;Something&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox3&quot;&gt;
+                &lt;label for=&quot;fancycheckbox3&quot;&gt;Other&lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;fancyinput&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox4&quot;&gt;
+                &lt;label for=&quot;fancycheckbox4&quot; class=&quot;blockify&quot;&gt;
+                    &lt;div class=&quot;fright&quot;&gt;Price or something&lt;/div&gt;
+                    Block level label for lots of information
+                    &lt;div class=&quot;d1 neutral&quot;&gt;Yibbida yibbida&lt;/div&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/fieldset&gt;
+&lt;/div&gt;</pre>
+            </details>
+            <div class="formelement">
+                <fieldset>
+                    <legend>Select more than one</legend>
+                    <div class="input">
+                        <div class="fancyinput">
+                            <input type="checkbox" id="fancycheckbox1">
+                            <label for="fancycheckbox1">Nothing</label>
+                        </div>
+
+                        <div class="fancyinput">
+                            <input type="checkbox" id="fancycheckbox2">
+                            <label for="fancycheckbox2">Something</label>
+                        </div>
+
+                        <div class="fancyinput">
+                            <input type="checkbox" id="fancycheckbox3">
+                            <label for="fancycheckbox3">Other</label>
+                        </div>
+
+                        <div class="fancyinput">
+                            <input type="checkbox" id="fancycheckbox4">
+                            <label for="fancycheckbox4" class="blockify">
+                                <div class="fright">Price or something</div>
+                                Block level label for lots of information
+                                <div class="d1 neutral">Yibbida yibbida</div>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h5">Tagwords input</summary>
+<pre class="prettyprint linenums">
+&lt;a class=&quot;tagword editable&quot; href=&quot;#&quot;&gt;Nice&lt;/a&gt;
+
+&lt;p class=&quot;editable&quot;&gt;
+    &lt;a class=&quot;tagword&quot; href=&quot;#&quot;&gt;Nice&lt;/a&gt;
+    &lt;a class=&quot;tagword&quot; href=&quot;#&quot;&gt;Awsome&lt;/a&gt;
+    &lt;a class=&quot;tagword&quot; href=&quot;#&quot;&gt;PERDY&lt;/a&gt;
+    &lt;a class=&quot;tagword&quot; href=&quot;#&quot;&gt;Amazing&lt;/a&gt;
+    &lt;a class=&quot;tagword&quot; href=&quot;#&quot;&gt;cool&lt;/a&gt;
+&lt;/p&gt;
+</pre>
+            </details>
+
+            <div class="formelement">
+                <div class="input">
+                    <div class="editable mbm">
+                        <a class="tagword" href="#">Nice</a>
+                        <a class="tagword" href="#">Awsome</a>
+                        <a class="tagword" href="#">PERDY</a>
+                        <a class="tagword" href="#">Amazing</a>
+                        <a class="tagword" href="#">cool</a>
+                    </div>
+                    <input type="text">
+                </div>
+            </div>
+
+            <hr class="mtl">
+
+            <details>
+                <summary class="r-margin clickable h5">Hidden (expandable) input</summary>
+                <pre class="prettyprint linenums">&lt;div&gt;
+    &lt;input type=&quot;checkbox&quot; class=&quot;expandfields&quot; id=&quot;expandfields&quot;&gt;
+    &lt;label for=&quot;expandfields&quot; tabindex=&quot;0&quot; class=&quot;input clickable expandlabel blue-dk&quot;&gt;Pris i kr&lt;/label&gt;
+    &lt;div class=&quot;formelement&quot;&gt;
+        &lt;label for=&quot;price&quot;&gt;Pris i kr&lt;/label&gt;
+        &lt;div class=&quot;input&quot;&gt;
+            &lt;input type=&quot;text&quot; id=&quot;price&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+            <p>Needs a javascript to set focus on the text input and disable the hidden checkbox on expand. To expand the input by default, set the <code>checked</code> attribute on the checkbox.</p>
+            </details>
+
+            <fieldset>
+                <div>
+                    <input type="checkbox" class="expandfields" id="expandfields">
+                    <label for="expandfields" tabindex="0" class="input clickable expandlabel blue-dk r-margin">Pris i kr</label>
+                    <div class="formelement">
+                        <label for="price">Pris i kr</label>
+                        <div class="input">
+                            <input type="text" id="price">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+
+                <h2 class="mtl">Mandatory fields and validation</h2>
+
+                <table>
+                <tr>
+                    <td class="pll"><label class="required">Label</label></td>
+                    <td><code>.required</code></td>
+                </tr>
+                <tr>
+                    <td class="pll invalid"><label class="required">Label</label></td>
+                    <td><code>.invalid .required</code></td>
+                </tr>
+                <tr>
+                    <td class="pll valid"><label class="required">Label</label></td>
+                    <td><code>.valid .required</code></td>
+                </tr>
+                </table>
+                <pre  class="prettyprint linenums">&lt;div class=&quot;formelement invalid&quot;&gt;<br/>    &lt;label class=&quot;required&quot;&gt; ... &lt;/label&gt;<br/>    ...<br/>&lt;/div&gt;</pre>
+
+                <form class="stretched">
+                    <fieldset>
+                        <legend>Standard form</legend>
+                        <div class="formelement">
+                            <label for="aaa1" class="required">Fruit</label>
+                            <div class="input">
+                                <input class="span4" id="aaa1" type="text" />
+                                <span class="help-inline"></span>
+                            </div>
+                        </div><!-- /formelement -->
+                        <div class="formelement">
+                            <label for="aaa2">Fruit</label>
+                            <div class="input">
+                                <input class="span4" id="aaa2" type="text" value="Potato" />
+                                <span class="help-inline"></span>
+                            </div>
+                        </div><!-- /formelement -->
+                        <div class="formelement invalid">
+                            <label for="aaa3" class="required">Fruit</label>
+                            <div class="input">
+                                <input class="span4" id="aaa3" type="text" value="Potato" />
+                                <span class="help-inline">That's not a fruit, dude!</span>
+                            </div>
+                        </div><!-- /formelement -->
+
+                        <div class="formelement valid">
+                            <label for="aaa4" class="required">Fruit</label>
+                            <div class="input">
+                                <input class="span4" id="aaa4" type="text" value="Apple" />
+                                <span class="help-inline">Success!</span>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <h2>Javascript module for form validation</h2>
+                <p>For validation and error indication, use <a href="http://npm.finntech.no">common-validator-js</a>
+                    (here is the <a href="https://git.finn.no/projects/LIBS/repos/common-validator-js/browse">git repo</a>).</p>
+                <p>Additional data-attributes will be needed for the validator to work. Read the validator's readme for more details.  </p>
+            </div>
+        </div>
+    </div>
+
 
                             <small class="hidden"><a href="#core-form-docs.hbs" id="core-form-docs.hbs">#</a> docs.hbs</small>
                             <!-- forms -->
@@ -4123,7 +4767,7 @@
                             <div class="mod mbxxl">
     <div class="inner">
         <div class="bd">
-            <h2 class="mtn">Context-box</h2>
+            <p class="red">Needs to be updated to ni2016 (Should probably be green)</p>
             <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-bare context-box up"</span>&gt;</span>
     ....
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -4213,7 +4857,7 @@
                             <div class="mod mbxxl">
     <div class="inner">
         <div class="bd">
-            <h2 class="mtn">Conversations</h2>
+
             <details>
                 <summary class="r-margin clickable h5">Without picture</summary>
                 <pre><code><span class="hljs-comment">&lt;!-- From me --&gt;</span>
@@ -4761,14 +5405,12 @@
                     </ul>
 
                             <small class="hidden"><a href="#components-notification-notification.hbs" id="components-notification-notification.hbs">#</a> notification.hbs</small>
-                            <div class="mod shadow">
+                            <div class="mod mbxxl">
     <div class="inner">
         <div class="bd">
-            <details>
-                <summary class="r-margin clickable h3 normal">Notification</summary>
-                <pre class="prettyprint linenums">&lt;div class=&quot;notification bg-red bright centerify inlineblockify&quot;&gt;2&lt;/div&gt;</pre>
-            </details>
-            <p>The notification dot is by default an inline element but can easily be positioned by setting the <code>relativeify</code> class on its parent element and setting top,right,bottom,left for positioning. We might be able to find some patern for these but most likely a one off spesific positioning setting is nessesary for each implementation (?). </p>     
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"notification bg-red bright centerify inlineblockify"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+            <p>The notification dot is by default an inline element but can easily be positioned by setting the <code>relativeify</code> class on its parent element and setting top,right,bottom,left for positioning. We might be able to find some patern for these but most likely a one off spesific positioning setting is nessesary for each implementation (?). </p>
             <div class="r-margin">
                 <div class="notification bg-red bright centerify inlineblockify">1</div>
                 <div class="notification bg-red bright centerify inlineblockify">13</div>
@@ -4783,7 +5425,8 @@
             </div>
         </div>
     </div>
-</div> 
+</div>
+
 
                     <a id="components-omgnew"></a>
 
@@ -4800,14 +5443,13 @@
                     </ul>
 
                             <small class="hidden"><a href="#components-omgnew-omgnew.hbs" id="components-omgnew-omgnew.hbs">#</a> omgnew.hbs</small>
-                            <div class="mod">
+                            <div class="mod mbxxl">
     <div class="inner">
         <div class="bd">
-            <details>
-                <summary class="r-margin clickable h3 normal">Omgnew</summary>
-                <pre class="prettyprint linenums">&lt;h5 class=&quot;omgnew&quot;&gt;Awsome functionality&lt;/h5&gt;</pre>
-            </details>
-            <h5 class="omgnew">OMG theres new functionality</h5>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"omgnew"</span>&gt;</span>Awsome functionality<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+</code></pre>
+            <h5 class="omgnew">Awsome functionality</h5>
+
             <p>Add <code>.omgnew</code> to stuff to show off awsome new functionality! Tested on header tags but theres no reason why it should not work on other stuff. A tiny bit of inline css might be neccesary for proper placement If you get into trouble placing it on 'innovative' content. <span class="bg-pink phm"> Added in spaden v5.2.0 </span></p>
 
             <ul>
@@ -4844,214 +5486,217 @@
                     </ul>
 
                             <small class="hidden"><a href="#components-paging-pagination.hbs" id="components-paging-pagination.hbs">#</a> pagination.hbs</small>
-                            <div class="line">
-    <div class="unit r-size1of1">
-        <div class="mod shadow">
-            <div class="inner">
-                <div class="bd">
-                    <details>
-                        <summary class="r-margin clickable h3 normal">Pagination</summary>
-<pre class="prettyprint linenums">
-&lt;div class="t4 centerify r-margin">
-    &lt;a rel="start" href="#" class="mrm pam" aria-label="Første">
-        &lt;svg height="1em" viewBox="0 0 18 16" class="valign-middle">
-            &lt;switch>
-                &lt;g fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    &lt;polyline points="8,2 2,8 8,14"/>
-                    &lt;polyline points="16,2 10,8 16,14"/>
-                &lt;/g>
-                &lt;text>&amp;lt;&amp;lt;&lt;/text>
-            &lt;/switch>
-        &lt;/svg>&lt;!-- No line break here
-        -->&lt;/a>
-    &lt;a rel="prev" href="#" class="pam" aria-label="Forrige">
-        &lt;svg height="1em" viewBox="0 0 10 16" class="valign-middle">
-            &lt;switch>
-                &lt;polyline points="8,2 2,8 8,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                &lt;text>&amp;lt;&lt;/text>
-            &lt;/switch>
-        &lt;/svg>&lt;!-- No line break here
-    -->&lt;/a>
-    &lt;span class="hidegt768">
+                            <div class="mod mbxxl">
+    <div class="inner">
+        <div class="bd">
+            <summary class="r-margin clickable h5">Pagination</summary>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"t4 centerify r-margin"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"start"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mrm pam"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Første"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"1em"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 18 16"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"valign-middle"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">switch</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">g</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">"#07E"</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">stroke-linecap</span>=<span class="hljs-string">"round"</span> <span class="hljs-attr">stroke-linejoin</span>=<span class="hljs-string">"round"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">polyline</span> <span class="hljs-attr">points</span>=<span class="hljs-string">"8,2 2,8 8,14"</span>/&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">polyline</span> <span class="hljs-attr">points</span>=<span class="hljs-string">"16,2 10,8 16,14"</span>/&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">g</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">text</span>&gt;</span>&amp;lt;&amp;lt;<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">switch</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-comment">&lt;!-- No line break here
+        --&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"prev"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pam"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Forrige"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"1em"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 10 16"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"valign-middle"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">switch</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">polyline</span> <span class="hljs-attr">points</span>=<span class="hljs-string">"8,2 2,8 8,14"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">"#07E"</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">stroke-linecap</span>=<span class="hljs-string">"round"</span> <span class="hljs-attr">stroke-linejoin</span>=<span class="hljs-string">"round"</span>/&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">text</span>&gt;</span>&amp;lt;<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">switch</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span><span class="hljs-comment">&lt;!-- No line break here
+    --&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hidegt768"</span>&gt;</span>
         Side 3
-    &lt;/span>
-    &lt;span class="hidelt768">
-        &lt;a href="#" class="phs valign-middle">1&lt;/a>
-        &lt;a href="#" class="phs valign-middle">2&lt;/a>
-        &lt;b class="phs valign-middle">3&lt;/b>
-        &lt;a href="#" class="phs valign-middle">4&lt;/a>
-        &lt;a href="#" class="phs valign-middle">5&lt;/a>
-        &lt;a href="#" class="phs valign-middle">6&lt;/a>
-        &lt;a href="#" class="phs valign-middle">7&lt;/a>
-        &lt;a href="#" class="phs valign-middle">8&lt;/a>
-        &lt;a href="#" class="phs valign-middle">9&lt;/a>
-        &lt;a href="#" class="phs valign-middle">10&lt;/a>
-    &lt;/span>
-    &lt;span>
-        &lt;a rel="next" href="#" class="pam" aria-label="Neste">&lt;span class="hidegt768 valign-middle mrs">Neste&lt;/span>&lt;!-- No line break here
-            -->&lt;svg height="1em" viewBox="0 0 10 16" class="valign-middle">
-                &lt;switch>
-                    &lt;polyline points="2,2 8,8 2,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    &lt;text>&amp;gt;&lt;/text>
-                &lt;/switch>
-            &lt;/svg>
-        &lt;/a>
-    &lt;/span>
-&lt;/div></pre>
-                    </details>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hidelt768"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"phs valign-middle"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"phs valign-middle"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">b</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"phs valign-middle"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"phs valign-middle"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"phs valign-middle"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"phs valign-middle"</span>&gt;</span>6<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"phs valign-middle"</span>&gt;</span>7<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"phs valign-middle"</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"phs valign-middle"</span>&gt;</span>9<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"phs valign-middle"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"next"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pam"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Neste"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hidegt768 valign-middle mrs"</span>&gt;</span>Neste<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-comment">&lt;!-- No line break here
+            --&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"1em"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 10 16"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"valign-middle"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">switch</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">polyline</span> <span class="hljs-attr">points</span>=<span class="hljs-string">"2,2 8,8 2,14"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">stroke</span>=<span class="hljs-string">"#07E"</span> <span class="hljs-attr">stroke-width</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">stroke-linecap</span>=<span class="hljs-string">"round"</span> <span class="hljs-attr">stroke-linejoin</span>=<span class="hljs-string">"round"</span>/&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">text</span>&gt;</span>&amp;gt;<span class="hljs-tag">&lt;/<span class="hljs-name">text</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">switch</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+            <div class="t4 centerify r-margin">
+    <a rel="start" href="#" class="mrm pam" aria-label="Første">
+        <svg height="1em" viewBox="0 0 18 16" class="valign-middle">
+            <switch>
+                <g fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="8,2 2,8 8,14"/>
+                    <polyline points="16,2 10,8 16,14"/>
+                </g>
+                <text>&lt;&lt;</text>
+            </switch>
+        </svg><!-- No line break here
+        --></a>
+    <a rel="prev" href="#" class="pam" aria-label="Forrige">
+        <svg height="1em" viewBox="0 0 10 16" class="valign-middle">
+            <switch>
+                <polyline points="8,2 2,8 8,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <text>&lt;</text>
+            </switch>
+        </svg><!-- No line break here
+    --></a>
+    <span class="hidegt768">
+        Side 3
+    </span>
+    <span class="hidelt768">
+        <a href="#" class="phs valign-middle">1</a>
+        <a href="#" class="phs valign-middle">2</a>
+        <b class="phs valign-middle">3</b>
+        <a href="#" class="phs valign-middle">4</a>
+        <a href="#" class="phs valign-middle">5</a>
+        <a href="#" class="phs valign-middle">6</a>
+        <a href="#" class="phs valign-middle">7</a>
+        <a href="#" class="phs valign-middle">8</a>
+        <a href="#" class="phs valign-middle">9</a>
+        <a href="#" class="phs valign-middle">10</a>
+    </span>
+    <span>
+        <a rel="next" href="#" class="pam" aria-label="Neste"><span class="hidegt768 valign-middle mrs">Neste</span><!-- No line break here
+            --><svg height="1em" viewBox="0 0 10 16" class="valign-middle">
+                <switch>
+                    <polyline points="2,2 8,8 2,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <text>&gt;</text>
+                </switch>
+            </svg>
+        </a>
+    </span>
+</div>
 
-                    <p>Paging differs on large and small screens. Page numbers are not shown on smaller screens.
+            <p>Paging differs on large and small screens. Page numbers are not shown on smaller screens.
 
-                    <h3>First page</h3>
-                    <p>On large screens the page numbers and a next link is shown. On small screens, only the next link is shown.
-                    <div class="t4 centerify r-margin">
-                        <span class="hidelt768">
-                            <b class="phs valign-middle">1</b>
-                            <a href="#" class="phs valign-middle">2</a>
-                            <a href="#" class="phs valign-middle">3</a>
-                            <a href="#" class="phs valign-middle">4</a>
-                            <a href="#" class="phs valign-middle">5</a>
-                            <a href="#" class="phs valign-middle">6</a>
-                            <a href="#" class="phs valign-middle">7</a>
-                            <a href="#" class="phs valign-middle">8</a>
-                            <a href="#" class="phs valign-middle">9</a>
-                            <a href="#" class="phs valign-middle">10</a>
-                        </span>
-                        <span>
-                            <a rel="next" href="#" class="pam" aria-label="Neste"><span class="hidegt768 valign-middle mrs">Neste</span><svg height="1em" viewBox="0 0 10 16" class="valign-middle">
-                                    <switch>
-                                        <polyline points="2,2 8,8 2,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <text>&gt;</text>
-                                    </switch>
-                                </svg>
-                            </a>
-                        </span>
-                    </div>
-
-                    <h3>Second page</h3>
-                    <p>On large screens a previous link, the page numbers, and a next link is shown. On small screens, a previous link, the current page number, and a next link is shown.
-                    <div class="t4 centerify r-margin">
-                        <a rel="prev" href="#" class="pam" aria-label="Forrige">
-                            <svg height="1em" viewBox="0 0 10 16" class="valign-middle">
-                                <switch>
-                                    <polyline points="8,2 2,8 8,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <text>&lt;</text>
-                                </switch>
-                            </svg></a>
-                        <span class="hidegt768">
-                            Side 2
-                        </span>
-                        <span class="hidelt768">
-                            <a href="#" class="phs valign-middle">1</a>
-                            <b class="phs valign-middle">2</b>
-                            <a href="#" class="phs valign-middle">3</a>
-                            <a href="#" class="phs valign-middle">4</a>
-                            <a href="#" class="phs valign-middle">5</a>
-                            <a href="#" class="phs valign-middle">6</a>
-                            <a href="#" class="phs valign-middle">7</a>
-                            <a href="#" class="phs valign-middle">8</a>
-                            <a href="#" class="phs valign-middle">9</a>
-                            <a href="#" class="phs valign-middle">10</a>
-                        </span>
-                        <span>
-                            <a rel="next" href="#" class="pam" aria-label="Neste"><span class="hidegt768 valign-middle mrs">Neste</span><svg height="1em" viewBox="0 0 10 16" class="valign-middle">
-                                    <switch>
-                                        <polyline points="2,2 8,8 2,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <text>&gt;</text>
-                                    </switch>
-                                </svg>
-                            </a>
-                        </span>
-                    </div>
-
-                    <h3>Consecutive pages</h3>
-                    <p>On large screens a link to the first page, a previous link, the page numbers, and a next link is shown. On small screens, a link to the first page, a previous link, the current page number, and a next link is shown.
-                    <div class="t4 centerify r-margin">
-                        <a rel="start" href="#" class="mrm pam" aria-label="Første">
-                            <svg height="1em" viewBox="0 0 18 16" class="valign-middle">
-                                <switch>
-                                    <g fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polyline points="8,2 2,8 8,14"/>
-                                        <polyline points="16,2 10,8 16,14"/>
-                                    </g>
-                                    <text>&lt;&lt;</text>
-                                </switch>
-                            </svg></a>
-                        <a rel="prev" href="#" class="pam" aria-label="Forrige">
-                            <svg height="1em" viewBox="0 0 10 16" class="valign-middle">
-                                <switch>
-                                    <polyline points="8,2 2,8 8,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <text>&lt;</text>
-                                </switch>
-                            </svg></a>
-                        <span class="hidegt768">
-                            Side 3
-                        </span>
-                        <span class="hidelt768">
-                            <a href="#" class="phs valign-middle">1</a>
-                            <a href="#" class="phs valign-middle">2</a>
-                            <b class="phs valign-middle">3</b>
-                            <a href="#" class="phs valign-middle">4</a>
-                            <a href="#" class="phs valign-middle">5</a>
-                            <a href="#" class="phs valign-middle">6</a>
-                            <a href="#" class="phs valign-middle">7</a>
-                            <a href="#" class="phs valign-middle">8</a>
-                            <a href="#" class="phs valign-middle">9</a>
-                            <a href="#" class="phs valign-middle">10</a>
-                        </span>
-                        <span>
-                            <a rel="next" href="#" class="pam" aria-label="Neste"><span class="hidegt768 valign-middle mrs">Neste</span><svg height="1em" viewBox="0 0 10 16" class="valign-middle">
-                                    <switch>
-                                        <polyline points="2,2 8,8 2,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <text>&gt;</text>
-                                    </switch>
-                                </svg>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </div>
+        <h5>First page</h5>
+        <p>On large screens the page numbers and a next link is shown. On small screens, only the next link is shown.
+        <div class="t4 centerify r-margin">
+            <span class="hidelt768">
+                <b class="phs valign-middle">1</b>
+                <a href="#" class="phs valign-middle">2</a>
+                <a href="#" class="phs valign-middle">3</a>
+                <a href="#" class="phs valign-middle">4</a>
+                <a href="#" class="phs valign-middle">5</a>
+                <a href="#" class="phs valign-middle">6</a>
+                <a href="#" class="phs valign-middle">7</a>
+                <a href="#" class="phs valign-middle">8</a>
+                <a href="#" class="phs valign-middle">9</a>
+                <a href="#" class="phs valign-middle">10</a>
+            </span>
+            <span>
+                <a rel="next" href="#" class="pam" aria-label="Neste"><span class="hidegt768 valign-middle mrs">Neste</span><svg height="1em" viewBox="0 0 10 16" class="valign-middle">
+                        <switch>
+                            <polyline points="2,2 8,8 2,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <text>&gt;</text>
+                        </switch>
+                    </svg>
+                </a>
+            </span>
         </div>
 
-        <div class="mod shadow">
-            <div class="inner">
-                <div class="bd">
-                    <div class="opacity25">
-                        <details>
-                            <summary class="r-margin clickable h3 normal">Pagination (deprecated)</summary>
-                                <pre class="prettyprint linenums">&lt;ul class=&quot;pagination centerify&quot;&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&amp;laquo; forrige&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;11&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;12&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;13&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;14&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;current&quot;&gt;&lt;span&gt;15&lt;/span&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;16&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;17&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;18&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;19&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;neste &amp;raquo;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-                        </details>
-                        <ul class="pagination centerify mtl">
-                            <li><a href="#">&laquo; forrige</a></li>
-                            <li><a href="#">11</a></li>
-                            <li><a href="#">12</a></li>
-                            <li><a href="#">13</a></li>
-                            <li><a href="#">14</a></li>
-                            <li class="current"><span>15</span></li>
-                            <li><a href="#">16</a></li>
-                            <li><a href="#">17</a></li>
-                            <li><a href="#">18</a></li>
-                            <li><a href="#">19</a></li>
-                            <li><a href="#">neste &raquo;</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <h5>Second page</h5>
+        <p>On large screens a previous link, the page numbers, and a next link is shown. On small screens, a previous link, the current page number, and a next link is shown.
+        <div class="t4 centerify r-margin">
+            <a rel="prev" href="#" class="pam" aria-label="Forrige">
+                <svg height="1em" viewBox="0 0 10 16" class="valign-middle">
+                    <switch>
+                        <polyline points="8,2 2,8 8,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <text>&lt;</text>
+                    </switch>
+                </svg></a>
+            <span class="hidegt768">
+                Side 2
+            </span>
+            <span class="hidelt768">
+                <a href="#" class="phs valign-middle">1</a>
+                <b class="phs valign-middle">2</b>
+                <a href="#" class="phs valign-middle">3</a>
+                <a href="#" class="phs valign-middle">4</a>
+                <a href="#" class="phs valign-middle">5</a>
+                <a href="#" class="phs valign-middle">6</a>
+                <a href="#" class="phs valign-middle">7</a>
+                <a href="#" class="phs valign-middle">8</a>
+                <a href="#" class="phs valign-middle">9</a>
+                <a href="#" class="phs valign-middle">10</a>
+            </span>
+            <span>
+                <a rel="next" href="#" class="pam" aria-label="Neste"><span class="hidegt768 valign-middle mrs">Neste</span><svg height="1em" viewBox="0 0 10 16" class="valign-middle">
+                        <switch>
+                            <polyline points="2,2 8,8 2,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <text>&gt;</text>
+                        </switch>
+                    </svg>
+                </a>
+            </span>
+        </div>
+
+        <h5>Consecutive pages</h5>
+        <p>On large screens a link to the first page, a previous link, the page numbers, and a next link is shown. On small screens, a link to the first page, a previous link, the current page number, and a next link is shown.
+        <div class="t4 centerify r-margin">
+            <a rel="start" href="#" class="mrm pam" aria-label="Første">
+                <svg height="1em" viewBox="0 0 18 16" class="valign-middle">
+                    <switch>
+                        <g fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="8,2 2,8 8,14"/>
+                            <polyline points="16,2 10,8 16,14"/>
+                        </g>
+                        <text>&lt;&lt;</text>
+                    </switch>
+                </svg></a>
+            <a rel="prev" href="#" class="pam" aria-label="Forrige">
+                <svg height="1em" viewBox="0 0 10 16" class="valign-middle">
+                    <switch>
+                        <polyline points="8,2 2,8 8,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <text>&lt;</text>
+                    </switch>
+                </svg></a>
+            <span class="hidegt768">
+                Side 3
+            </span>
+            <span class="hidelt768">
+                <a href="#" class="phs valign-middle">1</a>
+                <a href="#" class="phs valign-middle">2</a>
+                <b class="phs valign-middle">3</b>
+                <a href="#" class="phs valign-middle">4</a>
+                <a href="#" class="phs valign-middle">5</a>
+                <a href="#" class="phs valign-middle">6</a>
+                <a href="#" class="phs valign-middle">7</a>
+                <a href="#" class="phs valign-middle">8</a>
+                <a href="#" class="phs valign-middle">9</a>
+                <a href="#" class="phs valign-middle">10</a>
+            </span>
+            <span>
+                <a rel="next" href="#" class="pam" aria-label="Neste"><span class="hidegt768 valign-middle mrs">Neste</span><svg height="1em" viewBox="0 0 10 16" class="valign-middle">
+                        <switch>
+                            <polyline points="2,2 8,8 2,14" fill="none" stroke="#07E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <text>&gt;</text>
+                        </switch>
+                    </svg>
+                </a>
+            </span>
         </div>
     </div>
 </div>
+</div>
+
 
                     <a id="components-profiles"></a>
 
@@ -5068,7 +5713,9 @@
                     </ul>
 
                             <small class="hidden"><a href="#components-profiles-profiles.hbs" id="components-profiles-profiles.hbs">#</a> profiles.hbs</small>
-                            <h2>Backgrounds</h2>
+                            <div class="mbxxl">
+
+<h5>Backgrounds</h5>
 
 <ul class="horizontal-list">
     <li>
@@ -5113,153 +5760,150 @@
     </li>
 </ul>
 
-<div class="mod shadow mtl">
-    <div class="inner">
-        <div class="bd">
-            <details>
-                <summary class="r-margin clickable h3 normal">Large profile</summary>
-                <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bd profilebg profilebg-blue"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line r-margin"</span>&gt;</span>
+
+<details>
+    <summary class="r-margin clickable h5">Large profile</summary>
+    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mod mbl profile profile-large"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inner pvn"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bd profilebg profilebg-blue"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line r-margin"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-size1of6"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"profileimg centerify"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-border r-mtm"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://i.imgur.com/ktHTmYw.jpg"</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"profileimg centerify"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-border r-mtm"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"dist/img/dummies/shovelface.jpg"</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit profiletxt r-size5of6 centerify-lt768"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"verified"</span>&gt;</span>Gjærmund Emanuelle Spøttabotten<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"largetext"</span>&gt;</span><span class="hljs-comment">&lt;!--Hei jeg heter Gjærmund og hjertelig velkommen til min internett-profil. Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.--&gt;</span>Har vært på FINN i 5 år.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"verified"</span>&gt;</span>Gjærmund Emanuelle Spøttabotten<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"largetext"</span>&gt;</span><span class="hljs-comment">&lt;!--Hei jeg heter Gjærmund og hjertelig velkommen til min internett-profil. Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.--&gt;</span>Har vært på FINN i 5 år.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bd"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line r-margin"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-size1of6"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"centerify r-mtm ratings"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rating-stars medium-stars"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"stars"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 80%;"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"centerify d2 mts"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>18 vurderinger<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bd"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line r-margin"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-size1of6"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"centerify r-mtm ratings"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rating-stars medium-stars"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"stars"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 80%;"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"centerify d2 mts"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>18 vurderinger<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-size2of3"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line r-cols3to7 mbn centerify opaque"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-mbl"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"t2"</span>&gt;</span>19<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d2"</span>&gt;</span>Måneder på<span class="hljs-tag">&lt;<span class="hljs-name">br</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span> småjobber<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-mbl"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"t2"</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d2"</span>&gt;</span>Småjobber<span class="hljs-tag">&lt;<span class="hljs-name">br</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span> vunnet<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-mbl"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"t2"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d2"</span>&gt;</span>Småjobber<span class="hljs-tag">&lt;<span class="hljs-name">br</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span> lagt ut<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-mbl"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"t2"</span>&gt;</span>63<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d2"</span>&gt;</span>Salg på<span class="hljs-tag">&lt;<span class="hljs-name">br</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span> Torget<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-mbl"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"t2"</span>&gt;</span>14<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d2"</span>&gt;</span>Kjøp på<span class="hljs-tag">&lt;<span class="hljs-name">br</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span> Torget<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-mbl"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"t2"</span>&gt;</span>97<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d2"</span>&gt;</span>Følgere på<span class="hljs-tag">&lt;<span class="hljs-name">br</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span> FINN<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-mbl"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"t2"</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d2"</span>&gt;</span>År på<span class="hljs-tag">&lt;<span class="hljs-name">br</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span> FINN<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line r-cols3to7 mbn centerify opaque"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-mbl"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"t2"</span>&gt;</span>19<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d2"</span>&gt;</span>Måneder på<span class="hljs-tag">&lt;<span class="hljs-name">br</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span> småjobber<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-mbl"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"t2"</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d2"</span>&gt;</span>Småjobber<span class="hljs-tag">&lt;<span class="hljs-name">br</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span> vunnet<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-mbl"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"t2"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d2"</span>&gt;</span>Småjobber<span class="hljs-tag">&lt;<span class="hljs-name">br</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span> lagt ut<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-mbl"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"t2"</span>&gt;</span>63<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d2"</span>&gt;</span>Salg på<span class="hljs-tag">&lt;<span class="hljs-name">br</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span> Torget<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-mbl"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"t2"</span>&gt;</span>14<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d2"</span>&gt;</span>Kjøp på<span class="hljs-tag">&lt;<span class="hljs-name">br</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span> Torget<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-mbl"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"t2"</span>&gt;</span>97<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d2"</span>&gt;</span>Følgere på<span class="hljs-tag">&lt;<span class="hljs-name">br</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span> FINN<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-mbl"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"t2"</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"d2"</span>&gt;</span>År på<span class="hljs-tag">&lt;<span class="hljs-name">br</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span> FINN<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-size1of6 rightify"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"primary r-mvm"</span>&gt;</span>+ Følg<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"primary r-mvm"</span>&gt;</span>+ Følg<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
-            </details>
-        </div>
-    </div>
-</div>
-
-<div class="mod shadow mbl profile profile-large">
-    <div class="inner pvn">
-        <div class="bd profilebg profilebg-blue">
-    <div class="line r-margin">
+</details>
+<div class="r-margin">
+<div class="mod mbl profile profile-large">
+  <div class="inner pvn">
+    <div class="bd profilebg profilebg-blue">
+      <div class="line r-margin">
         <div class="unit r-size1of6">
-            <div class="profileimg centerify">
-                <img class="rounded-border r-mtm" src="http://i.imgur.com/ktHTmYw.jpg">
-            </div>
+          <div class="profileimg centerify">
+            <img class="rounded-border r-mtm" src="dist/img/dummies/shovelface.jpg">
+          </div>
         </div>
         <div class="unit profiletxt r-size5of6 centerify-lt768">
-            <h1 class="verified">Gjærmund Emanuelle Spøttabotten</h1>
-            <p class="largetext"><!--Hei jeg heter Gjærmund og hjertelig velkommen til min internett-profil. Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.-->Har vært på FINN i 5 år.</p>
+          <h1 class="verified">Gjærmund Emanuelle Spøttabotten</h1>
+          <p class="largetext"><!--Hei jeg heter Gjærmund og hjertelig velkommen til min internett-profil. Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.-->Har vært på FINN i 5 år.</p>
         </div>
+      </div>
     </div>
-</div>
-<div class="bd">
-    <div class="line r-margin">
-            <div class="unit r-size1of6">
-            <div class="centerify r-mtm ratings">
-                <span class="rating-stars medium-stars">
-                    <span class="stars" style="width: 80%;"></span>
-                </span>
-                <p class="centerify d2 mts"><a href="#">18 vurderinger</a></p>
-            </div>
+    <div class="bd">
+      <div class="line r-margin">
+        <div class="unit r-size1of6">
+          <div class="centerify r-mtm ratings">
+            <span class="rating-stars medium-stars">
+              <span class="stars" style="width: 80%;"></span>
+            </span>
+            <p class="centerify d2 mts"><a href="#">18 vurderinger</a></p>
+          </div>
         </div>
         <div class="unit r-size2of3">
-            <div class="line r-cols3to7 mbn centerify opaque">
-                <div class="unit r-mbl">
-                    <div class="t2">19</div>
-                    <div class="d2">Måneder på<br aria-hidden="true"> småjobber</div>
-                </div>
-                <div class="unit r-mbl">
-                    <div class="t2">0</div>
-                    <div class="d2">Småjobber<br aria-hidden="true"> vunnet</div>
-                </div>
-                <div class="unit r-mbl">
-                    <div class="t2">3</div>
-                    <div class="d2">Småjobber<br aria-hidden="true"> lagt ut</div>
-                </div>
-                <div class="unit r-mbl">
-                    <div class="t2">63</div>
-                    <div class="d2">Salg på<br aria-hidden="true"> Torget</div>
-                </div>
-                <div class="unit r-mbl">
-                    <div class="t2">14</div>
-                    <div class="d2">Kjøp på<br aria-hidden="true"> Torget</div>
-                </div>
-                <div class="unit r-mbl">
-                    <div class="t2">97</div>
-                    <div class="d2">Følgere på<br aria-hidden="true"> FINN</div>
-                </div>
-                <div class="unit r-mbl">
-                    <div class="t2">8</div>
-                    <div class="d2">År på<br aria-hidden="true"> FINN</div>
-                </div>
+          <div class="line r-cols3to7 mbn centerify opaque">
+            <div class="unit r-mbl">
+              <div class="t2">19</div>
+              <div class="d2">Måneder på<br aria-hidden="true"> småjobber</div>
             </div>
+            <div class="unit r-mbl">
+              <div class="t2">0</div>
+              <div class="d2">Småjobber<br aria-hidden="true"> vunnet</div>
+            </div>
+            <div class="unit r-mbl">
+              <div class="t2">3</div>
+              <div class="d2">Småjobber<br aria-hidden="true"> lagt ut</div>
+            </div>
+            <div class="unit r-mbl">
+              <div class="t2">63</div>
+              <div class="d2">Salg på<br aria-hidden="true"> Torget</div>
+            </div>
+            <div class="unit r-mbl">
+              <div class="t2">14</div>
+              <div class="d2">Kjøp på<br aria-hidden="true"> Torget</div>
+            </div>
+            <div class="unit r-mbl">
+              <div class="t2">97</div>
+              <div class="d2">Følgere på<br aria-hidden="true"> FINN</div>
+            </div>
+            <div class="unit r-mbl">
+              <div class="t2">8</div>
+              <div class="d2">År på<br aria-hidden="true"> FINN</div>
+            </div>
+          </div>
         </div>
         <div class="unit r-size1of6 rightify">
-            <button class="primary r-mvm">+ Følg</button>
+          <button class="primary r-mvm">+ Følg</button>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
-    </div>
 </div>
 
-<div class="mod shadow">
-    <div class="inner">
-        <div class="bd">
-            <details>
-                <summary class="r-margin clickable h3 normal">Medium profile</summary>
-                <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mod shadow mbl profile profile-medium"</span>&gt;</span>
+<details>
+    <summary class="r-margin clickable h5">Medium profile</summary>
+    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mod mbl profile profile-medium"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inner pvn"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bd profilebg profilebg-green"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"centerify r-margin profileimg"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-border r-mtm"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://i.imgur.com/ktHTmYw.jpg"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-border r-mtm"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"dist/img/dummies/shovelface.jpg"</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"profiletxt r-mbl"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"centerify verified"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Skrotfinn Johansen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
@@ -5320,18 +5964,15 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
-            </details>
-        </div>
-    </div>
-</div>
-
-<div class="line">
-    <div class="unit r-size1of3">
-        <div class="mod shadow mbl profile profile-medium">
+</details>
+<div class="r-margin">
+    <div class="line">
+        <div class="unit r-size1of3">
+            <div class="mod mbl profile profile-medium">
     <div class="inner pvn">
         <div class="bd profilebg profilebg-green">
             <div class="centerify r-margin profileimg">
-                <img class="rounded-border r-mtm" src="http://i.imgur.com/ktHTmYw.jpg">
+                <img class="rounded-border r-mtm" src="dist/img/dummies/shovelface.jpg">
             </div>
             <div class="profiletxt r-mbl">
                 <h2 class="centerify verified"><a href="#">Skrotfinn Johansen</a></h2>
@@ -5392,19 +6033,17 @@
     </div>
 </div>
 
+        </div>
     </div>
 </div>
 
-<div class="mod shadow">
-    <div class="inner">
-        <div class="bd">
-            <details>
-                <summary class="r-margin clickable h3 normal">Small profile</summary>
-                <pre><code> <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mod shadow mbl profile profile-small"</span>&gt;</span>
+<details>
+    <summary class="r-margin clickable h5">Small profile</summary>
+    <pre><code> <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mod mbl profile profile-small"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inner pvn"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bd"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"centerify r-margin profileimg"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-border r-mtm"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://i.imgur.com/ktHTmYw.jpg"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-border r-mtm"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"dist/img/dummies/shovelface.jpg"</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"profiletxt"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"centerify verified"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Bent Snorre Ljugebakken<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
@@ -5465,18 +6104,15 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
-            </details>
-        </div>
-    </div>
-</div>
-
-<div class="line">
-    <div class="unit r-size1of3">
-         <div class="mod shadow mbl profile profile-small">
+</details>
+<div class="r-margin">
+    <div class="line">
+        <div class="unit r-size1of3">
+             <div class="mod mbl profile profile-small">
     <div class="inner pvn">
         <div class="bd">
             <div class="centerify r-margin profileimg">
-                <img class="rounded-border r-mtm" src="http://i.imgur.com/ktHTmYw.jpg">
+                <img class="rounded-border r-mtm" src="dist/img/dummies/shovelface.jpg">
             </div>
             <div class="profiletxt">
                 <h2 class="centerify verified"><a href="#">Bent Snorre Ljugebakken</a></h2>
@@ -5537,19 +6173,17 @@
     </div>
 </div>
 
+        </div>
     </div>
 </div>
 
-<div class="mod shadow">
-    <div class="inner">
-        <div class="bd">
-            <details>
-                <summary class="r-margin clickable h3 normal">Verified profile images</summary>
-                <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-size1of3 centerify"</span>&gt;</span>
+<details>
+    <summary class="r-margin clickable h5">Verified profile images</summary>
+    <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-size1of3 centerify"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 mbm"</span>&gt;</span>Medium<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"profile-medium"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"profileimg relative"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-border"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://i.imgur.com/ktHTmYw.jpg"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-border"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"dist/img/dummies/shovelface.jpg"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"verified"</span>
                 <span class="hljs-attr">title</span>=<span class="hljs-string">"Brukeren er verifisert"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -5559,7 +6193,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 mbm"</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"profile-small"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"profileimg relative"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-border"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://i.imgur.com/ktHTmYw.jpg"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-border"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"dist/img/dummies/shovelface.jpg"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"verified"</span>
                 <span class="hljs-attr">title</span>=<span class="hljs-string">"Brukeren er verifisert"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -5569,19 +6203,16 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3 mbm"</span>&gt;</span>X-Small<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"profile-xsmall"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"profileimg relative"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-border"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://i.imgur.com/ktHTmYw.jpg"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rounded-border"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"dist/img/dummies/shovelface.jpg"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"verified"</span>
                 <span class="hljs-attr">title</span>=<span class="hljs-string">"Brukeren er verifisert"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
-            </details>
-        </div>
-    </div>
-</div>
+</details>
 
-<div class="mod shadow">
+<div class="mod">
     <div class="inner">
         <div class="bd">
             <div class="line r-margin">
@@ -5589,7 +6220,7 @@
     <div class="h3 mbm">Medium</div>
     <div class="profile-medium">
         <div class="profileimg relative">
-            <img class="rounded-border" src="http://i.imgur.com/ktHTmYw.jpg">
+            <img class="rounded-border" src="dist/img/dummies/shovelface.jpg">
             <a class="verified"
                 title="Brukeren er verifisert" href="#"></a>
         </div>
@@ -5599,7 +6230,7 @@
     <div class="h3 mbm">Small</div>
     <div class="profile-small">
         <div class="profileimg relative">
-            <img class="rounded-border" src="http://i.imgur.com/ktHTmYw.jpg">
+            <img class="rounded-border" src="dist/img/dummies/shovelface.jpg">
             <a class="verified"
                 title="Brukeren er verifisert" href="#"></a>
         </div>
@@ -5609,7 +6240,7 @@
     <div class="h3 mbm">X-Small</div>
     <div class="profile-xsmall">
         <div class="profileimg relative">
-            <img class="rounded-border" src="http://i.imgur.com/ktHTmYw.jpg">
+            <img class="rounded-border" src="dist/img/dummies/shovelface.jpg">
             <a class="verified"
                 title="Brukeren er verifisert" href="#"></a>
         </div>
@@ -5621,11 +6252,11 @@
     </div>
 </div>
 
-<div class="mod shadow">
+<div class="mod">
     <div class="inner">
         <div class="bd">
             <details>
-                <summary class="r-margin clickable h3 normal">Company profile</summary>
+                <summary class="r-margin clickable h5">Company profile</summary>
                 <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"company-logo-container"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"centered-element pvl company-logo"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://i.imgur.com/Xl11XPO.png"</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -5673,7 +6304,7 @@
 
 <div class="line">
     <div class="unit r-size1of3">
-        <div class="mod shadow">
+        <div class="mod">
             <div class="inner">
                 <div class="bd">
                     <div class="company-logo-container">
@@ -5723,11 +6354,11 @@
 </div>
 
 
-<div class="mod shadow mtl">
+<div class="mod mtl">
     <div class="inner">
         <div class="bd">
             <details>
-                <summary class="r-margin clickable h3 normal">Company profile header</summary>
+                <summary class="r-margin clickable h5">Company profile header</summary>
                 <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bd profilebg"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image: url(http://i.imgur.com/4aoGGQX.jpg);"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line r-margin"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit r-size1of5"</span>&gt;</span>
@@ -5776,10 +6407,10 @@
         </div>
     </div>
 </div>
-
-<div class="mod shadow mbl profile companyprofile">
-    <div class="inner pvn">
-        <div class="bd profilebg" style="background-image: url(http://i.imgur.com/4aoGGQX.jpg);">
+<div class="r-margin">
+    <div class="mod mbl profile companyprofile">
+        <div class="inner pvn">
+            <div class="bd profilebg" style="background-image: url(http://i.imgur.com/4aoGGQX.jpg);">
     <div class="line r-margin">
         <div class="unit r-size1of5">
             <div class="profileimg centerify-lt768">
@@ -5822,7 +6453,9 @@
     </div>
 </div>
 
+        </div>
     </div>
+</div>
 </div>
 
 
@@ -6225,6 +6858,6 @@
 </div>
 </div>
 
-<script src="./docs.js?sha=52ace230653f1cd2f7378f82f4891a532ef1359d"></script>
+<script src="./docs.js?sha=e258f59231ed77e715c11922df9fb87946419260"></script>
 </body>
 </html>
