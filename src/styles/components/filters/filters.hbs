@@ -1,269 +1,81 @@
-<div class="line">
-    <div class="unit r-size1of1">
-        <div class="mod shadow">
-            <div class="inner">
-                <div class="bd">
-                    <h2>Filters</h2>
-
-                    <p>Filters reside in a more or less standard mod. Each filter in turn resides in a <code>.filter.r-pvm</code> container and are separated by <code>&lt;hr&gt;</code>.<br><a href="/pages/result/view">Here's an example in a realistic context</a>.</p>
-
-                    <details class="mtl">
-                        <summary class="r-margin clickable h3 normal">Container</summary>
-<pre class="prettyprint linenums">&lt;div class=&quot;mod shadow&quot;&gt;
-    &lt;div class=&quot;inner filters pan&quot;&gt;
-        &lt;div class=&quot;bd&quot;&gt;
-            &lt;div class=&quot;filter r-pvm&quot;&gt;
-                &lt;h4 class=&quot;truncate t5&quot;&gt;Title&lt;/h4&gt;
-                ...
-            &lt;/div&gt;
-
-            &lt;hr class=&quot;man&quot; role=&quot;presentation&quot;&gt;
-
-            &lt;div class=&quot;filter r-pvm&quot;&gt;
-                &lt;h4 class=&quot;truncate t5&quot;&gt;Title&lt;/h4&gt;
-                ...
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</pre>
-                    </details>
-
-                    <div class="r-margin bg-blue-xlt pal">
-                        <div class="r-size1of3">
-<div class="mod shadow">
-    <div class="inner filters pan">
+<div class="mod mbxxl">
+    <div class="inner">
         <div class="bd">
-            <div class="filter r-pvm">
-                <h4 class="truncate t5">Title</h4>
-                <p>...</p>
-            </div>
 
-            <hr class="man" role="presentation">
+            <p>Filters reside in a more or less standard mod. Each filter in turn resides in a <code>.filter.r-pvm</code> container and are separated by <code>&lt;hr&gt;</code>.<br><a href="/pages/result/view">Here's an example in a realistic context</a>.</p>
 
-            <div class="filter r-pvm">
-                <h4 class="truncate t5">Title</h4>
-                <p>...</p>
-            </div>
-        </div>
-    </div>
-</div>
-                        </div>
-                    </div>
+            <details class="mtl">
+                <summary class="r-margin clickable h5">Container</summary>
+                <pre><code>{{{example-1}}}</code></pre>
+              </details>
 
-                    <details class="mtl">
-                        <summary class="r-margin clickable h3 normal">Taxonomies</summary>
-<pre class="prettyprint linenums">&lt;div class=&quot;filter r-pvm&quot;&gt;
-    &lt;h4 class=&quot;truncate t5&quot;&gt;Title&lt;/h4&gt;
-    &lt;ul&gt;
-        &lt;li&gt;
-            &lt;div class=&quot;fancyinput&quot;&gt;
-                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox1&quot;&gt;
-                &lt;label for=&quot;fancycheckbox1&quot; class=&quot;blockify&quot;&gt;Level 1 &lt;span class=&quot;d1 neutral&quot;&gt;(345)&lt;/span&gt;&lt;/label&gt;
-            &lt;/div&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;div class=&quot;fancyinput&quot;&gt;
-                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox2&quot;&gt;
-                &lt;label for=&quot;fancycheckbox2&quot; class=&quot;blockify&quot;&gt;&lt;span class=&quot;opacity60&quot;&gt;Level 1 - no hits&lt;span class=&quot;d1 neutral&quot;&gt;(0)&lt;/span&gt;&lt;/span&gt;&lt;/label&gt;
-            &lt;/div&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;div class=&quot;fancyinput&quot;&gt;
-                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox3&quot;&gt;
-                &lt;label for=&quot;fancycheckbox3&quot; class=&quot;blockify&quot;&gt;Level 1 &lt;span class=&quot;d1 neutral&quot;&gt;(195)&lt;/span&gt;&lt;/label&gt;
-            &lt;/div&gt;
-            &lt;ul class=&quot;mvn&quot;&gt;
-                &lt;li&gt;
-                    &lt;div class=&quot;fancyinput&quot;&gt;
-                        &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox1-1&quot;&gt;
-                        &lt;label for=&quot;fancycheckbox1-1&quot; class=&quot;blockify&quot;&gt;Level 2 &lt;span class=&quot;d1 neutral&quot;&gt;(128)&lt;/span&gt;&lt;/label&gt;
-                    &lt;/div&gt;
-                &lt;/li&gt;
-                &lt;li&gt;
-                    &lt;div class=&quot;fancyinput&quot;&gt;
-                        &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox1-2&quot;&gt;
-                        &lt;label for=&quot;fancycheckbox1-2&quot; class=&quot;blockify&quot;&gt;Level 2 &lt;span class=&quot;d1 neutral&quot;&gt;(33)&lt;/span&gt;&lt;/label&gt;
-                    &lt;/div&gt;
-                    &lt;ul class=&quot;mvn&quot;&gt;
-                        &lt;li&gt;
-                            &lt;div class=&quot;fancyinput&quot;&gt;
-                                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox2-1&quot;&gt;
-                                &lt;label for=&quot;fancycheckbox2-1&quot; class=&quot;blockify&quot;&gt;Level 3 &lt;span class=&quot;d1 neutral&quot;&gt;(91)&lt;/span&gt;&lt;/label&gt;
-                            &lt;/div&gt;
-                        &lt;/li&gt;
-                    &lt;/ul&gt;
-                &lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;div class=&quot;fancyinput&quot;&gt;
-                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox4&quot;&gt;
-                &lt;label for=&quot;fancycheckbox4&quot; class=&quot;blockify&quot;&gt;Level 1 &lt;span class=&quot;d1 neutral&quot;&gt;(45)&lt;/span&gt;&lt;/label&gt;
-            &lt;/div&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;div class=&quot;fancyinput&quot;&gt;
-                &lt;input type=&quot;checkbox&quot; id=&quot;fancycheckbox5&quot;&gt;
-                &lt;label for=&quot;fancycheckbox5&quot; class=&quot;blockify&quot;&gt;Level 1 &lt;span class=&quot;d1 neutral&quot;&gt;(2)&lt;/span&gt;&lt;/label&gt;
-            &lt;/div&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</pre>
-                    </details>
-
-                    <p>See also: <a href="/core/form-elements/view">Fancy checkboxes</a></p>
-
-                    <div class="r-margin bg-blue-xlt pal">
-                        <div class="r-size1of3">
-                            <div class="mod shadow">
-                                <div class="inner filters pan">
-                                    <div class="bd">
-                                        <div class="filter r-pvm">
-                                            <h4 class="truncate t5">Title</h4>
-                                            <ul>
-                                                <li>
-                                                    <div class="fancyinput">
-                                                        <input type="checkbox" id="fancycheckbox1">
-                                                        <label for="fancycheckbox1" class="blockify">Level 1 <span class="d1 neutral">(345)</span></label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="fancyinput">
-                                                        <input type="checkbox" id="fancycheckbox2">
-                                                        <label for="fancycheckbox2" class="blockify opacity"><span class="opacity60">Level 1 - no hits <span class="d1 neutral">(0)</span></span></label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="fancyinput">
-                                                        <input type="checkbox" id="fancycheckbox3">
-                                                        <label for="fancycheckbox3" class="blockify">Level 1 <span class="d1 neutral">(195)</span></label>
-                                                    </div>
-                                                    <ul class="mvn">
-                                                        <li>
-                                                            <div class="fancyinput">
-                                                                <input type="checkbox" id="fancycheckbox1-1">
-                                                                <label for="fancycheckbox1-1" class="blockify">Level 2 <span class="d1 neutral">(128)</span></label>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="fancyinput">
-                                                                <input type="checkbox" id="fancycheckbox1-2">
-                                                                <label for="fancycheckbox1-2" class="blockify">Level 2 <span class="d1 neutral">(33)</span></label>
-                                                            </div>
-                                                            <ul class="mvn">
-                                                                <li>
-                                                                    <div class="fancyinput">
-                                                                        <input type="checkbox" id="fancycheckbox2-1">
-                                                                        <label for="fancycheckbox2-1" class="blockify">Level 3 <span class="d1 neutral">(91)</span></label>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <div class="fancyinput">
-                                                        <input type="checkbox" id="fancycheckbox4">
-                                                        <label for="fancycheckbox4" class="blockify">Level 1 <span class="d1 neutral">(45)</span></label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="fancyinput">
-                                                        <input type="checkbox" id="fancycheckbox5">
-                                                        <label for="fancycheckbox5" class="blockify">Level 1 <span class="d1 neutral">(2)</span></label>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <details class="mtl">
-                        <summary class="r-margin clickable h3 normal">Button groups</summary>
-<pre class="prettyprint linenums">&lt;div class=&quot;filter r-pvm&quot;&gt;
-    &lt;h4 class=&quot;truncate t5&quot;&gt;Number of things&lt;/h4&gt;
-    &lt;div class=&quot;input r-margin&quot;&gt;
-        &lt;div class=&quot;button-group line&quot; role=&quot;radiogroup&quot;&gt;
-            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;sr0&quot; type=&quot;radio&quot; value=&quot;1&quot; name=&quot;bedrooms&quot; checked&gt;
-            &lt;label class=&quot;pas size1of6 centerify&quot; for=&quot;sr0&quot;&gt;All&lt;/label&gt;
-            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;sr1&quot; type=&quot;radio&quot; value=&quot;1&quot; name=&quot;bedrooms&quot;&gt;
-            &lt;label class=&quot;pas size1of6 centerify&quot; for=&quot;sr1&quot;&gt;1+&lt;/label&gt;
-            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;sr2&quot; type=&quot;radio&quot; value=&quot;2&quot; name=&quot;bedrooms&quot;&gt;
-            &lt;label class=&quot;pas size1of6 centerify&quot; for=&quot;sr2&quot;&gt;2+&lt;/label&gt;
-            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;sr3&quot; type=&quot;radio&quot; value=&quot;3&quot; name=&quot;bedrooms&quot;&gt;
-            &lt;label class=&quot;pas size1of6 centerify&quot; for=&quot;sr3&quot;&gt;3+&lt;/label&gt;
-            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;sr4&quot; type=&quot;radio&quot; value=&quot;4&quot; name=&quot;bedrooms&quot;&gt;
-            &lt;label class=&quot;pas size1of6 centerify&quot; for=&quot;sr4&quot;&gt;4+&lt;/label&gt;
-            &lt;input tabindex=&quot;0&quot; data-selector=&quot;&quot; id=&quot;sr5&quot; type=&quot;radio&quot; value=&quot;5&quot; name=&quot;bedrooms&quot;&gt;
-            &lt;label class=&quot;pas size1of6 centerify&quot; for=&quot;sr5&quot;&gt;5+&lt;/label&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</pre>
-                    </details>
-
-                    <p>See also: <a href="/core/grid/view">Grid</a>, <a href="/core/form-elements/view">Button groups</a></p>
-
-                    <div class="r-margin bg-blue-xlt pal">
-                        <div class="r-size1of3">
-                            <div class="mod shadow">
-                                <div class="inner filters pan">
-                                    <div class="bd">
-<div class="filter r-pvm">
-    <h4 class="truncate t5">Number of things</h4>
-    <div class="input r-margin">
-        <div class="button-group line" role="radiogroup">
-            <input tabindex="0" data-selector="" id="sr0" type="radio" value="1" name="bedrooms" checked>
-            <label class="pas size1of6 centerify" for="sr0">All</label>
-            <input tabindex="0" data-selector="" id="sr1" type="radio" value="1" name="bedrooms">
-            <label class="pas size1of6 centerify" for="sr1">1+</label>
-            <input tabindex="0" data-selector="" id="sr2" type="radio" value="2" name="bedrooms">
-            <label class="pas size1of6 centerify" for="sr2">2+</label>
-            <input tabindex="0" data-selector="" id="sr3" type="radio" value="3" name="bedrooms">
-            <label class="pas size1of6 centerify" for="sr3">3+</label>
-            <input tabindex="0" data-selector="" id="sr4" type="radio" value="4" name="bedrooms">
-            <label class="pas size1of6 centerify" for="sr4">4+</label>
-            <input tabindex="0" data-selector="" id="sr5" type="radio" value="5" name="bedrooms">
-            <label class="pas size1of6 centerify" for="sr5">5+</label>
-        </div>
-    </div>
-</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <details class="mtl">
-                        <summary class="r-margin clickable h3 normal">Search</summary>
-<pre class="prettyprint linenums">&lt;div class=&quot;filter r-pvm&quot;&gt;
-    &lt;div class=&quot;r-margin&quot;&gt;
-        &lt;input type=&quot;search&quot; name=&quot;q&quot; placeholder=&quot;S&oslash;k&quot;&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</pre>
-                    </details>
-
-                    <div class="r-margin bg-blue-xlt pal">
-                        <div class="r-size1of3">
-                            <div class="mod shadow">
-                                <div class="inner filters pan">
-                                    <div class="bd">
-<div class="filter r-pvm">
-    <div class="r-margin">
-        <input type="search" name="q" placeholder="Søk">
-    </div>
-</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+            <div class="r-margin bg-blue-xlt pal">
+                <div class="r-size1of3">
+                    {{{example-1-plain}}}
                 </div>
             </div>
+
+
+            <details class="mtl">
+                <summary class="r-margin clickable h5">Taxonomies</summary>
+                <pre><code>{{{example-2}}}</code></pre>
+              </details>
+              <div class="r-margin bg-blue-xlt pal">
+                  <div class="r-size1of3">
+
+                      <div class="mod shadow">
+                          <div class="inner filters pan">
+                              <div class="bd">
+
+                                  <div class="filter r-pvm">
+                                      {{{example-2-plain}}}
+                                  </div>
+
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+
+            <p>Also checkout: <a href="core-form.html">Fancy checkboxes</a></p>
+
+            <details class="mtl">
+                <summary class="r-margin clickable h5">Button groups</summary>
+                <pre><code>{{{example-3}}}</code></pre>
+            </details>
+
+            <div class="r-margin bg-blue-xlt pal">
+                <div class="r-size1of3">
+                    <div class="mod shadow">
+                        <div class="inner filters pan">
+                            <div class="bd">
+                                {{{example-3-plain}}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>See also: <a href="core-grid.html">Grid</a>, <a href="core-form.html">Button groups</a></p>
+
+            <details class="mtl">
+                <summary class="r-margin clickable h5">Search</summary>
+                <pre><code>{{{example-4}}}</code></pre>
+            </details>
+
+            <div class="r-margin bg-blue-xlt pal">
+                <div class="r-size1of3">
+                    <div class="mod shadow">
+                        <div class="inner filters pan">
+                            <div class="bd">
+                                {{{example-4-plain}}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

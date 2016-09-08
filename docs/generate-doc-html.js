@@ -112,8 +112,8 @@ const spec = [
                         id: 'crumbs'
                     },
 										{
-                        title: 'Detailsummary',
-                        id: 'detailsummary'
+                        title: 'Detailssummary',
+                        id: 'detailssummary'
                     },
 										{
                         title: 'Filters',
