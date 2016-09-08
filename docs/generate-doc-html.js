@@ -106,6 +106,10 @@ const spec = [
             {
                 title: 'Basic',
                 children: [
+										{
+												title: 'Broadcast',
+												id: 'broadcast',
+										},
                     {
                         title: 'Context-box',
                         id: 'contextbox',
