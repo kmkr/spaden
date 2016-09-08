@@ -107,6 +107,10 @@ const spec = [
                 title: 'Basic',
                 children: [
 										{
+												title: 'Blockquote',
+												id: 'stylizedblockquote',
+										},
+										{
 												title: 'Broadcast',
 												id: 'broadcast',
 										},
