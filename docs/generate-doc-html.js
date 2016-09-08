@@ -319,16 +319,18 @@ function render(template, layout, data) {
     return result;
 }
 
+function collectIcons () {
+    const iconsDir = path.join(__dirname, '..', 'dist', 'icons');
+    return fsp.readdir(iconsDir).then(content =>
+        Promise.all(
+            content.map(entry => fsp.readFile(path.join(iconsDir, entry), 'utf8'))
+        ).then(results => baseData.icons = results.join('\n'))
+    )
+}
+
 
 resolveTree(spec, basePath)
-    .then(() => {
-        const iconsDir = path.join(__dirname, '..', 'dist', 'icons');
-        return fsp.readdir(iconsDir).then(content =>
-            Promise.all(
-                content.map(entry => fsp.readFile(path.join(iconsDir, entry), 'utf8'))
-            ).then(results => baseData.icons = results.join('\n'))
-        )
-    })
+    .then(collectIcons)
     .then(() => {
         // DEBUG
         // fs.writeFileSync('./debug.json', JSON.stringify(spec, null, 4), 'utf8');
