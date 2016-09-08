@@ -162,6 +162,10 @@ const spec = [
 										{
                         title: 'Speech bubbles',
                         id: 'speechbubbles'
+                    },
+										{
+                        title: 'Tabs',
+                        id: 'tabs'
                     }
                 ]
             }

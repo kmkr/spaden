@@ -1,175 +1,65 @@
-<!-- External tabs -->
-<div class="line" id="tabs">
-    <div class="unit r-size1of1">
-        <div class="mod shadow">
-            <div class="inner">
-                <div class="bd">
-                    <details>
-                        <summary class="r-margin clickable h3 normal">Internal tabs</summary>
+<div class="mod mbxxl">
+    <div class="inner">
+        <div class="bd">
+            <h5>Internal tabs</h5>
+            <pre><code>{{{example-1}}}</code></pre>
+            <div class="r-margin">{{{example-1-plain}}}</div>
+            <pre><code>{{{example-1b}}}</code></pre>
+            <p>
+                Tabs referencing external resources does not have a predefined content wrapper,
+                as shown with the last tab in the example above.
+            </p>
 
-<pre class="prettyprint linenums">
-&lt;div id=&quot;myTabsContainer&quot;&gt;
-    &lt;ul class=&quot;tabs&quot; data-tab-controls&gt;
-        &lt;li&gt;&lt;a href=&quot;#tab1&quot;&gt;Tab1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#tab2&quot;&gt;Tab2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#tab3&quot;&gt;Tab3&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;/an/external?type=resource&quot;&gt;External tab&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;div class=&quot;tab-content&quot; data-tab-content&gt;
-        &lt;div id=&quot;tab1&quot;&gt;...&lt;/div&gt;
-        &lt;div id=&quot;tab2&quot;&gt;...&lt;/div&gt;
-        &lt;div id=&quot;tab3&quot;&gt;...&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre>
+            <h3>Events</h3>
+            <h4>FINN.common.activateTabs.events.TAB_CHANGED</h4>
+            <p>
+                Published <em>after</em> a tab has changed and the content is visible.
+            </p>
+            <pre><code>{{{example-1c}}}</code></pre>
 
-<pre class="prettyprint linenums">
-&lt;script type="text/javascript" src="activateTabs.js"&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-    FINN.common.activateTabs.foundInContainer('#myTabsContainer');
-&lt;/script&gt;
-</pre>
-                    <p>
-                        Tabs referencing external resources does not have a predefined content wrapper,
-                        as shown with the last tab in the example above.
-                    </p>
-
-                    <h3>Events</h3>
-                    <h4>FINN.common.activateTabs.events.TAB_CHANGED</h4>
-                    <p>
-                        Published <em>after</em> a tab has changed and the content is visible.
-                    </p>
-                    <pre class="prettyprint linenums">
-&lt;script type=&quot;text/javascript&quot;&gt;
-    FINN.common.activateTabs.foundInContainer('#myTabsContainer');
-
-    FINN.eventHub.subscribe(
-        FINN.common.activateTabs.events.TAB_CHANGED,
-        myMagicTabChangedListener
-    );
-
-    function myMagicTabChangedListener(eventArgs) {
-        eventArgs.controlElement; // clicked element
-        eventArgs.contentElement; // content which just got visible
-
-        // .. this is where you might do some magic ninjatricks!
-        // Loading external content into the eventArgs.contentElement?
-    }
-&lt;/script&gt;</pre>
-                    </details>
-                    <div id="effinTabContainer" class="mll mrl">
-                        <ul class="tabs navigation" data-tab-controls>
-                            <li class="active"><a href="#tab1">tab1</a></li>
-                            <li class=""><a href="#tab2">tab2</a></li>
-                            <li class=""><a href="#tab3">tab3</a></li>
-                        </ul>
-                        <div class="tab-content" data-tab-content>
-                            <div class="active tab-pane" id="tab1">
-                                <h3>tab1</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                            <div class="tab-pane" id="tab2">
-                                <h3>tab2</h3>
-                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                            <div class="tab-pane" id="tab3">
-                                <h3>tab3</h3>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                            </div>
-                        </div>
+            <div id="effinTabContainer" class="mll mrl">
+                <ul class="tabs navigation" data-tab-controls>
+                    <li class="active"><a href="#tab1">tab1</a></li>
+                    <li class=""><a href="#tab2">tab2</a></li>
+                    <li class=""><a href="#tab3">tab3</a></li>
+                </ul>
+                <div class="tab-content" data-tab-content>
+                    <div class="active tab-pane" id="tab1">
+                        <h3>tab1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <script type="text/javascript">
-                    document.addEventListener("DOMContentLoaded", function(event) {
-                        FINN.common.activateTabs.foundInContainer('#effinTabContainer');
-                    });
-                    </script>
-                </div>
-
-                <hr>
-
-                <details>
-                    <summary class="r-margin clickable h3 normal">External tabs</summary>
-
-
-<pre class="prettyprint linenums">&lt;div id="tabContainer"&gt;
-    &lt;div class="line"&gt;
-        &lt;div class="unit colspan6 lastUnit"&gt;
-            &lt;ul class="tabs r-tabs extern navigation mbn" data-tab-controls&gt;
-                &lt;li class="active"&gt;&lt;a href="#externtab1"&gt;Externtab 1&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#externtab2"&gt;Externtab 2&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#externtab3"&gt;Externtab 3&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="line"&gt;
-        &lt;div class="unit colspan6 lastUnit"&gt;
-            &lt;div class="mod"&gt;
-                &lt;div class="inner foldered"&gt;
-                    &lt;div class="bd"&gt;
-                        &lt;div class="tab-content" data-tab-content&gt;
-                            &lt;div class="active tab-pane" id="externtab1"&gt;...&lt;/div&gt;
-                            &lt;div class="tab-pane" id="externtab2"&gt;...&lt;/div&gt;
-                            &lt;div class="tab-pane" id="externtab3"&gt;...&lt;/div&gt;
-                        &lt;/div&gt;
-
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</pre>
-                </details>
-
-                <p><code>.r-tabs</code> can be added for a table to collapse into a dropdown-style meny on smaller screens..</p>
-
-                <div class="r-margin">
-                    <div class="bg-lt-blue pal">
-
-            <div id="effinTabContainer2">
-                <div class="line">
-                    <div class="unit r-size1of1">
-                        <ul class="tabs r-tabs extern navigation mbn" data-tab-controls data-menu-label="Meny">
-                            <li class="active"><a href="#externtab1">External tab 1</a></li>
-                            <li><a href="#externtab2">External tab 2</a></li>
-                            <li><a href="#externtab3">Externaltab 3</a></li>
-                        </ul>
+                    <div class="tab-pane" id="tab2">
+                        <h3>tab2</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        <h3>tab3</h3>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     </div>
                 </div>
-                <div class="line">
-                    <div class="unit r-size1of1">
-                        <div class="mod shadow">
-                            <div class="inner foldered">
-                                <div class="bd">
-                                    <div class="tab-content" data-tab-content>
-                                        <div class="active tab-pane" id="externtab1">
-                                            <h3>external tab1</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        </div>
-                                        <div class="tab-pane" id="externtab2">
-                                            <h3>external tab2</h3>
-                                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        </div>
-                                        <div class="tab-pane" id="externtab3">
-                                            <h3>external tab3</h3>
-                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                        </div>
-                                    </div>
+            </div>
+            <script type="text/javascript">
+              document.addEventListener("DOMContentLoaded", function(event) {
+                  FINN.common.activateTabs.foundInContainer('#effinTabContainer');
+              });
+            </script>
+        </div>
 
-                                </div>
-                            </div>
-                        </div><!-- mod -->
-                    </div>
-                </div>
+        <hr>
+        <h5>External tabs</h5>
+        <pre><code>{{{example-2}}}</code></pre>
+        <div class="r-margin pal bg-blue-xlt">{{{example-2-plain}}}</div>
 
-            </div>
-                    </div>
-            </div>
-<script type="text/javascript">
-document.addEventListener("DOMContentLoaded", function(event) {
-    FINN.common.activateTabs.foundInContainer('#effinTabContainer2');
-});
-</script>
-            </div>
-        </div><!-- mod -->
+
+
+        <p><code>.r-tabs</code> can be added for a table to collapse into a dropdown-style meny on smaller screens..</p>
+
+
+        <script type="text/javascript">
+          document.addEventListener("DOMContentLoaded", function(event) {
+            FINN.common.activateTabs.foundInContainer('#effinTabContainer2');
+          });
+        </script>
+
     </div>
 </div>

@@ -1,0 +1,16 @@
+<script type="text/javascript">
+    FINN.common.activateTabs.foundInContainer('#myTabsContainer');
+
+    FINN.eventHub.subscribe(
+        FINN.common.activateTabs.events.TAB_CHANGED,
+        myMagicTabChangedListener
+    );
+
+    function myMagicTabChangedListener(eventArgs) {
+        eventArgs.controlElement; // clicked element
+        eventArgs.contentElement; // content which just got visible
+
+        // .. this is where you might do some magic ninjatricks!
+        // Loading external content into the eventArgs.contentElement?
+    }
+</script>
