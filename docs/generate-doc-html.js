@@ -23,7 +23,7 @@ const spec = [
 				children: [
 					{
 						title: 'Template',
-                        id: 'template'
+            id: 'template'
 					},
 					{
 						title: 'Grid',
@@ -145,7 +145,7 @@ const spec = [
                     },
 										{
                         title: 'Speech bubbles',
-                        id: 'speech-bubbles'
+                        id: 'speechbubbles'
                     }
                 ]
             }
