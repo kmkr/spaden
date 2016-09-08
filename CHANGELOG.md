@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Breaking Changes
 
 * Removed decoration.css (Not in use)
+* Removed components>icons all .toolbar .icon prefixed classes (Not in use)
 
 ### Added
 
