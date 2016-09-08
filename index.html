@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./dist/spaden.min.css?sha=c58ea98c4df35ebd24c850750f0810733d41444e">
-    <link rel="stylesheet" href="./style.css?sha=c58ea98c4df35ebd24c850750f0810733d41444e">
+    <link rel="stylesheet" href="./dist/spaden.min.css?sha=da5acbbed87a45139acbf3ed6b7564383d7b17cf">
+    <link rel="stylesheet" href="./style.css?sha=da5acbbed87a45139acbf3ed6b7564383d7b17cf">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
 </head>
 <body>
@@ -4857,7 +4857,7 @@
                             <div class="mod mbxxl">
     <div class="inner">
         <div class="bd">
-            <h2 class="mtn">Conversations</h2>
+
             <details>
                 <summary class="r-margin clickable h5">Without picture</summary>
                 <pre><code><span class="hljs-comment">&lt;!-- From me --&gt;</span>
@@ -6474,147 +6474,128 @@
                     </ul>
 
                             <small class="hidden"><a href="#components-ratings-ratings.hbs" id="components-ratings-ratings.hbs">#</a> ratings.hbs</small>
-                            <div class="line">
-    <div class="mod shadow">
-        <div class="inner">
-            <div class="bd">
-                <p>Width (in percentages) is added with <code>.stars</code> to determine number of stars.</p>
-                <hr>
+                            <div class="mod mbxxl">
+    <div class="inner">
+        <div class="bd">
+            <p>Width (in percentages) is added with <code>.stars</code> to determine number of stars.</p>
+            <hr>
 
+            <div class="mbl">
+              <h5 class="mbn">Small stars</h5>
+              <pre class="mtn"><code><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rating-stars small-stars"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"stars"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 50%;"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>
+</span></code></pre>
+              <p>
+                  <span class="rating-stars small-stars">
+                      <span class="stars" style="width: 80%;"></span>
+                  </span>
+              </p>
+              <p>
+                  <span class="rating-stars small-stars">
+                      <span class="stars" style="width: 20%;"></span>
+                  </span>
+              </p>
+              <p>
+                  <span class="rating-stars small-stars">
+                      <span class="stars" style="width: 50%;"></span>
+                  </span>
+              </p>
+            </div>
 
+            <div class="mbl">
+                <h5 class="mbn">Regular stars</h5>
+                <pre class="mtn"><code><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rating-stars"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"stars"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 50%;"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+                <p>
+                <span class="rating-stars">
+                    <span class="stars" style="width: 80%;"></span>
+                </span>
+                </p>
+                <p>
+                <span class="rating-stars">
+                    <span class="stars" style="width: 20%;"></span>
+                </span>
+                </p>
+                <p>
+                <span class="rating-stars">
+                    <span class="stars" style="width: 50%;"></span>
+                </span>
+                </p>
+            </div>
 
-                <details>
-                    <summary class="r-margin clickable h3 normal">Small stars</summary>
-                    <pre class="prettyprint linenums">
-&lt;span class="rating-stars small-stars"&gt;
-    &lt;span class="stars" style="width: 50%;"&gt;&lt;/span&gt;
-&lt;/span&gt;</pre>
-                    </details>
+            <div class="mbl">
+                <h5 class="mbn">Medium stars</h5>
+                <pre class="mtn"><code><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rating-stars medium-stars"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"stars"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 50%;"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+                <p>
+                <span class="rating-stars medium-stars">
+                    <span class="stars" style="width: 80%;"></span>
+                </span>
+                </p>
+                <p>
+                <span class="rating-stars medium-stars">
+                    <span class="stars" style="width: 20%;"></span>
+                </span>
+                </p>
+                <p>
+                <span class="rating-stars medium-stars">
+                    <span class="stars" style="width: 50%;"></span>
+                </span>
+                </p>
+            </div>
 
-                        <p>
-                            <span class="rating-stars small-stars">
-                                <span class="stars" style="width: 80%;"></span>
-                            </span>
-                        </p>
-                        <p>
-                            <span class="rating-stars small-stars">
-                                <span class="stars" style="width: 20%;"></span>
-                            </span>
-                        </p>
-                        <p>
-                            <span class="rating-stars small-stars">
-                                <span class="stars" style="width: 50%;"></span>
-                            </span>
-                        </p>
-
-                                        <hr>
-
-                                                        <details>
-                    <summary class="r-margin clickable h3 normal">Regular stars</summary>
-                    <pre class="prettyprint linenums">
-&lt;span class="rating-stars"&gt;
-    &lt;span class="stars" style="width: 50%;"&gt;&lt;/span&gt;
-&lt;/span&gt;</pre>
-                </details>
-
-                        <p>
-                        <span class="rating-stars">
-                            <span class="stars" style="width: 80%;"></span>
-                        </span>
-                        </p>
-                        <p>
-                        <span class="rating-stars">
-                            <span class="stars" style="width: 20%;"></span>
-                        </span>
-                        </p>
-                        <p>
-                        <span class="rating-stars">
-                            <span class="stars" style="width: 50%;"></span>
-                        </span>
-                        </p>
-
-
-                <hr>
-
-                <details>
-                    <summary class="r-margin clickable h3 normal">Medium stars</summary>
-                    <pre class="prettyprint linenums">
-&lt;span class="rating-stars medium-stars"&gt;
-    &lt;span class="stars" style="width: 50%;"&gt;&lt;/span&gt;
-&lt;/span&gt;</pre>
-                </details>
-
-                        <p>
-                        <span class="rating-stars medium-stars">
-                            <span class="stars" style="width: 80%;"></span>
-                        </span>
-                        </p>
-                        <p>
-                        <span class="rating-stars medium-stars">
-                            <span class="stars" style="width: 20%;"></span>
-                        </span>
-                        </p>
-                        <p>
-                        <span class="rating-stars medium-stars">
-                            <span class="stars" style="width: 50%;"></span>
-                        </span>
-                        </p>
-
-
-                <hr>
-
-                                                        <details>
-                    <summary class="r-margin clickable h3 normal">Large stars</summary>
-                    <pre class="prettyprint linenums">
-&lt;span class="rating-stars large-stars"&gt;
-    &lt;span class="stars" style="width: 50%;"&gt;&lt;/span&gt;
-&lt;/span&gt;</pre>
-                    </details>
-
-                        <p>
-                            <span class="rating-stars large-stars">
-                                <span class="stars" style="width: 80%;"></span>
-                            </span>
-                        </p>
-                        <p>
-                            <span class="rating-stars large-stars">
-                                <span class="stars" style="width: 20%;"></span>
-                            </span>
-                        </p>
-                        <p>
-                            <span class="rating-stars large-stars">
-                                <span class="stars" style="width: 50%;"></span>
-                            </span>
-                        </p>
-
-                                        <hr>
-
-
-                <details>
-                    <summary class="r-margin clickable h3 normal">Set rating</summary>
-                    <pre class="prettyprint linenums">
-&lt;span class=&quot;star-rating&quot;&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;rating&quot; value=&quot;1&quot; id=&quot;star1&quot;&gt;&lt;label for=&quot;star1&quot;&gt;1 stjerne&lt;/label&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;rating&quot; value=&quot;2&quot; id=&quot;star2&quot;&gt;&lt;label for=&quot;star2&quot;&gt;2 stjerner&lt;/label&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;rating&quot; value=&quot;3&quot; id=&quot;star3&quot;&gt;&lt;label for=&quot;star3&quot;&gt;3 stjerner&lt;/label&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;rating&quot; value=&quot;4&quot; id=&quot;star4&quot;&gt;&lt;label for=&quot;star4&quot;&gt;4 stjerner&lt;/label&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;rating&quot; value=&quot;5&quot; id=&quot;star5&quot;&gt;&lt;label for=&quot;star5&quot;&gt;5 stjerner&lt;/label&gt;
-&lt;/span&gt;</pre>
-                    </details>
-
-                <div class="r-margin">
-                    <span class="star-rating">
-                        <input type="radio" name="rating" value="1" id="star1"><label for="star1">1 stjerne</label>
-                        <input type="radio" name="rating" value="2" id="star2"><label for="star2">2 stjerner</label>
-                        <input type="radio" name="rating" value="3" id="star3"><label for="star3">3 stjerner</label>
-                        <input type="radio" name="rating" value="4" id="star4"><label for="star4">4 stjerner</label>
-                        <input type="radio" name="rating" value="5" id="star5"><label for="star5">5 stjerner</label>
+            <div class="mbl">
+                <h5 class="mbn">Large stars</h5>
+                <pre class="mtn"><code><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rating-stars large-stars"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"stars"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 50%;"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+                <p>
+                    <span class="rating-stars large-stars">
+                        <span class="stars" style="width: 80%;"></span>
                     </span>
-                </div>
+                </p>
+                <p>
+                    <span class="rating-stars large-stars">
+                        <span class="stars" style="width: 20%;"></span>
+                    </span>
+                </p>
+                <p>
+                    <span class="rating-stars large-stars">
+                        <span class="stars" style="width: 50%;"></span>
+                    </span>
+                </p>
+
+            </div>
+
+
+            <h5 class="mbn">Set rating</h5>
+            <pre class="mtn"><code><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"rating"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"star1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"star1"</span>&gt;</span>1 stjerne<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"rating"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"star2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"star2"</span>&gt;</span>2 stjerner<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"rating"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"3"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"star3"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"star3"</span>&gt;</span>3 stjerner<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"rating"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"4"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"star4"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"star4"</span>&gt;</span>4 stjerner<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"rating"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"5"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"star5"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"star5"</span>&gt;</span>5 stjerner<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+            <div class="r-margin">
+                <span class="star-rating">
+                    <input type="radio" name="rating" value="1" id="star1"><label for="star1">1 stjerne</label>
+                    <input type="radio" name="rating" value="2" id="star2"><label for="star2">2 stjerner</label>
+                    <input type="radio" name="rating" value="3" id="star3"><label for="star3">3 stjerner</label>
+                    <input type="radio" name="rating" value="4" id="star4"><label for="star4">4 stjerner</label>
+                    <input type="radio" name="rating" value="5" id="star5"><label for="star5">5 stjerner</label>
+                </span>
             </div>
         </div>
     </div>
 </div>
+
 
                     <a id="components-ribbons"></a>
 
@@ -6858,6 +6839,6 @@
 </div>
 </div>
 
-<script src="./docs.js?sha=c58ea98c4df35ebd24c850750f0810733d41444e"></script>
+<script src="./docs.js?sha=da5acbbed87a45139acbf3ed6b7564383d7b17cf"></script>
 </body>
 </html>
