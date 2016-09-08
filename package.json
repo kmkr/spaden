@@ -25,6 +25,8 @@
     "colors": "^1.1.0",
     "css-color-converter": "^1.0.2",
     "del": "^2.2.2",
+    "eslint": "^3.4.0",
+    "eslint-config-finn": "^1.0.0-alpha.11",
     "filewalker": "^0.1.2",
     "globby": "^6.0.0",
     "gulp": "^3.6.2",
