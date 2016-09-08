@@ -174,60 +174,173 @@
 
 <div class="container">
 <div class="page">
-    <h1>Border</h1>
-            <small class="hidden"><a href="#core-border-border.mustache" id="core-border-border.mustache">#</a> border.mustache</small>
+    <h1>Tabs</h1>
+            <small class="hidden"><a href="#components-tabs-tabs.hbs" id="components-tabs-tabs.hbs">#</a> tabs.hbs</small>
             <div class="mod mbxxl">
     <div class="inner">
         <div class="bd">
-            <p>
-                Class names are built up by 3 letters in the following order:<br/>
-
-                <code>[type][location][size]</code>
-            </p>
-
-            <h5>type</h5>
-            <p>b = border</p>
-
-            <h5>location</h5>
-            <p>a, t, r, b, l, h, v = all, top, right, bottom, left, horizontal, vertical</p>
-
-            <h5>size</h5>
-            <p>t, s, n = tiny(1px), small(2px), none(0px)</p>
-            <hr/>
-            <h5>some examples</h5>
-            <p>
-                <code>bas</code> = border + all sides + small<br/>
-                <code>btn</code> = border + top + none<br/>
-                <code>brt</code> = border + right + tiny<br/>
-            </p>
-
-            <div class="bg-blue-xxlt bas r-mll" style="height:100px;width:200px"><code>.bas</code></div>
-
-			<pre class="prettyprint linenums">&lt;div class=&quot;bas&quot;&gt; ... &lt;/div&gt;</pre>
-
-			<div class="bg-blue-xxlt brs bbs blt r-mll" style="height:100px;width:200px"><code>.brs .bbs .blt</code></div>
-
-			<pre class="prettyprint linenums">&lt;div class=&quot;brs bbs blt&quot;&gt; ... &lt;/div&gt;</pre>
-
-			<div class="bg-blue-xxlt brt r-mll" style="height:100px;width:200px"><code>.brt</code></div>
-
-			<pre class="prettyprint linenums">&lt;div class=&quot;bat&quot;&gt; ... &lt;/div&gt;</pre>
-
-
-            <h5>Border-colors</h5>
-            <p>
-                Bordercolors are set with the border- prefix on all colors from the <a href="/core/colors/view">color palette</a>.<br/>
-            </p>
-            <p>
-				<span class="bbs border-pale"><code>.border-pale</code></span>
-                <span class="bbs border-red"><code>.border-red</code></span>
-                <span class="bbs border-sharp"><code>.border-sharp</code></span>
-				<span class="bbs border-green-lt"><code>.border-green-lt</code></span>
-            </p>
-
-       </div>
+            <h5>Internal tabs</h5>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"myTabsContainer"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tabs"</span> <span class="hljs-attr">data-tab-controls</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#tab1"</span>&gt;</span>Tab1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#tab2"</span>&gt;</span>Tab2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#tab3"</span>&gt;</span>Tab3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/an/external?type=resource"</span>&gt;</span>External tab<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-content"</span> <span class="hljs-attr">data-tab-content</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"tab1"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"tab2"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"tab3"</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+            <div class="r-margin"><div id="myTabsContainer">
+    <ul class="tabs" data-tab-controls>
+        <li class="active"><a href="#tab1">Tab1</a></li>
+        <li><a href="#tab2">Tab2</a></li>
+        <li><a href="#tab3">Tab3</a></li>
+        <li><a href="/an/external?type=resource">External tab</a></li>
+    </ul>
+    <div class="tab-content" data-tab-content>
+        <div id="tab1">...</div>
+        <div id="tab2">...</div>
+        <div id="tab3">...</div>
     </div>
-</div><!-- mod -->
+</div>
+</div>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"activateTabs.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span>&gt;</span><span class="actionscript">
+    FINN.common.activateTabs.foundInContainer(<span class="hljs-string">'#myTabsContainer'</span>);
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+            <p>
+                Tabs referencing external resources does not have a predefined content wrapper,
+                as shown with the last tab in the example above.
+            </p>
+
+            <h3>Events</h3>
+            <h4>FINN.common.activateTabs.events.TAB_CHANGED</h4>
+            <p>
+                Published <em>after</em> a tab has changed and the content is visible.
+            </p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span>&gt;</span><span class="actionscript">
+    FINN.common.activateTabs.foundInContainer(<span class="hljs-string">'#myTabsContainer'</span>);
+
+    FINN.eventHub.subscribe(
+        FINN.common.activateTabs.events.TAB_CHANGED,
+        myMagicTabChangedListener
+    );
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myMagicTabChangedListener</span><span class="hljs-params">(eventArgs)</span> </span>{
+        eventArgs.controlElement; <span class="hljs-comment">// clicked element</span>
+        eventArgs.contentElement; <span class="hljs-comment">// content which just got visible</span>
+
+        <span class="hljs-comment">// .. this is where you might do some magic ninjatricks!</span>
+        <span class="hljs-comment">// Loading external content into the eventArgs.contentElement?</span>
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+
+            <div id="effinTabContainer" class="mll mrl">
+                <ul class="tabs navigation" data-tab-controls>
+                    <li class="active"><a href="#tab1">tab1</a></li>
+                    <li class=""><a href="#tab2">tab2</a></li>
+                    <li class=""><a href="#tab3">tab3</a></li>
+                </ul>
+                <div class="tab-content" data-tab-content>
+                    <div class="active tab-pane" id="tab1">
+                        <h3>tab1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        <h3>tab2</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        <h3>tab3</h3>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+              document.addEventListener("DOMContentLoaded", function(event) {
+                  FINN.common.activateTabs.foundInContainer('#effinTabContainer');
+              });
+            </script>
+        </div>
+
+        <hr>
+        <h5>External tabs</h5>
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"tabContainer"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit colspan6 lastUnit"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tabs r-tabs extern navigation mbn"</span> <span class="hljs-attr">data-tab-controls</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#externtab1"</span>&gt;</span>Externtab 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#externtab2"</span>&gt;</span>Externtab 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#externtab3"</span>&gt;</span>Externtab 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"line"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit colspan6 lastUnit"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mod"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inner foldered"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bd"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-content"</span> <span class="hljs-attr">data-tab-content</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"active tab-pane"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"externtab1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Wohooo I'm content...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"externtab2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>I'm other content...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"tab-pane"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"externtab3"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+        <div class="r-margin pal bg-blue-xlt"><div id="tabContainer">
+    <div class="line">
+        <div class="unit colspan6 lastUnit">
+            <ul class="tabs r-tabs extern navigation mbn" data-tab-controls>
+                <li class="active"><a href="#externtab1">Externtab 1</a></li>
+                <li><a href="#externtab2">Externtab 2</a></li>
+                <li><a href="#externtab3">Externtab 3</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="line">
+        <div class="unit colspan6 lastUnit">
+            <div class="mod">
+                <div class="inner foldered">
+                    <div class="bd">
+                        <div class="tab-content" data-tab-content>
+                            <div class="active tab-pane" id="externtab1"><p>Wohooo I'm content...</p></div>
+                            <div class="tab-pane" id="externtab2"><p>I'm other content...</p></div>
+                            <div class="tab-pane" id="externtab3"><p>...</p></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+        <p><code>.r-tabs</code> can be added for a table to collapse into a dropdown-style meny on smaller screens..</p>
+
+
+        <script type="text/javascript">
+          document.addEventListener("DOMContentLoaded", function(event) {
+            FINN.common.activateTabs.foundInContainer('#effinTabContainer2');
+          });
+        </script>
+
+    </div>
+</div>
 
 
 </div>
