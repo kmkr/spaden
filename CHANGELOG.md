@@ -2,7 +2,18 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [6.0.0] - 2016-09-08
+
+### Breaking Changes
+
+* Removed decoration.css (Not in use)
+
+### Added
+
+* Documentation is now part of the repo (finn-no.github.io/spaden)
+
 ## [5.2.0] - 2016-09-01
+
 
 ### Added
 
