@@ -32,7 +32,6 @@ if (treeMenu) {
     treeMenu.addEventListener('click', function (e) {
         if (e.target) {
             const ref = e.target.getAttribute('data-ref');
-            console.log('looking for ref', ref);
             if (document.getElementById(ref)) {
                 document.location.hash = `#${ref}`;
                 e.preventDefault();
