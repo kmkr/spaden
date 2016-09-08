@@ -72,12 +72,20 @@ const spec = [
 						id: 'border'
 					},
 					{
-						title: 'Form',
-						id: 'form'
+						title: 'Icon',
+						id: 'icon'
+					},
+					{
+						title: 'Logo',
+						id: 'logo'
 					},
 					{
 						title: 'Image',
 						id: 'image'
+					},
+					{
+						title: 'Form',
+						id: 'form'
 					},
 					{
 						title: 'List',
