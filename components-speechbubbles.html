@@ -174,76 +174,40 @@
 
 <div class="container">
 <div class="page">
-    <h1>Context-box</h1>
-            <small class="hidden"><a href="#components-contextbox-contextbox.mustache" id="components-contextbox-contextbox.mustache">#</a> contextbox.mustache</small>
+    <h1>Speech bubbles</h1>
+            <small class="hidden"><a href="#components-speechbubbles-docs.hbs" id="components-speechbubbles-docs.hbs">#</a> docs.hbs</small>
             <div class="mod mbxxl">
     <div class="inner">
         <div class="bd">
-            <p class="red">Needs to be updated to ni2016 (Should probably be green)</p>
-            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-bare context-box up"</span>&gt;</span>
-    ....
+            <p class="red">No longer in use by anyone? Should it be removed/Replaced by something new?</p>
+            <pre class="mtn"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pam speech bg-pale"</span>&gt;</span>
+        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+    <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"speech-byline"</span>&gt;</span>
+        Uncle Sam
+        <span class="hljs-tag">&lt;<span class="hljs-name">small</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"neutral"</span>&gt;</span>17. okt 2010<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre>
-            <div class="mll mrl">
-                <table class="outerborder">
-                    <thead>
-                        <tr>
-                            <th>Property</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row"><code>.context-box</code></th>
-                            <td>Main context-box container. Accepts background color-classes.</td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><code>.up .down .left .right</code></th>
-                            <td>Point at stuff in any direction, arrow is always centered. In certain cases you need to set ekstra margin on the arrow side to stop it from been hidden by overflow:hidden.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <p class="centerify t3">Somethin</p>
-            <div class="bg-bare context-box up mal">
-                <div class="inlineblockify">
-                    <h3>Something about somethin</h3>
-                    <p>...........</p>
+            <p>Background color can be changed by using the <a href="core-color.html">color</a> classes.</p>
+            <hr>
+            <div class="mtl">
+                <blockquote class="speech bg-pale pam">
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                </blockquote>
+                <div class="speech-byline">
+                    Uncle Sam
+                    <small class="neutral">17. okt 2010</small>
                 </div>
             </div>
-            <div class="line r-cols2to4">
-                <div class="unit">
-                    <div class="bg-bare context-box up mal">
-                        <div class="inlineblockify">
-                            <h3>Viste du at ...</h3>
-                            <p>...........</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="unit">
-                    <div class="bg-bare context-box right mal">
-                        <div class="inlineblockify">
-                            <h3>Viste du at ...</h3>
-                            <p>...........</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="unit">
-                    <div class="bg-bare context-box down mal">
-                        <div class="inlineblockify">
-                            <h3>Viste du at ...</h3>
-                            <p>...........</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="unit">
-                    <div class="bg-bare context-box left mal">
-                        <div class="inlineblockify">
-                            <h3>Viste du at ...</h3>
-                            <p>...........</p>
-                        </div>
-                    </div>
+            <div class="pal mal bg-opaque">
+                <blockquote class="speech bg-blue-xlt pam">
+                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                </blockquote>
+                <div class="speech-byline">
+                    Uncle Sam
+                    <small class="neutral">17. okt 2010</small>
                 </div>
             </div>
         </div>
