@@ -16,10 +16,11 @@ const spec = [
 	{
 		title: "Core",
         id: 'core',
-		path: 'core',
+        output: false,
 		children: [
 			{
 				title: "Layout",
+                output: false,
 				children: [
 					{
 						title: 'Template',
@@ -102,6 +103,7 @@ const spec = [
     {
         title: 'Components',
         id: 'components',
+        output: false,
         children: [
             {
                 title: 'Basic',
@@ -116,8 +118,7 @@ const spec = [
 										},
                     {
                         title: 'Context-box',
-                        id: 'contextbox',
-                        entry: true
+                        id: 'contextbox'
                     },
 										{
                         title: 'Conversations',
@@ -173,11 +174,13 @@ const spec = [
     }
 ];
 
-function createRef(ref) {
-    return ref.replace(basePath, '').split('/').filter(Boolean).join('-');
+function createRef (ref) {
+    return ref.replace(basePath, '').split('/')
+        .filter(Boolean)
+        .join('-');
 }
 
-function readFile(filePath) {
+function readFile (filePath) {
     if (path.extname(filePath) !== '') {
         return fsp.readFile(filePath, 'utf8').then(content => {
             return {
@@ -186,21 +189,22 @@ function readFile(filePath) {
                 id: path.basename(filePath, path.extname(filePath)),
                 ext: path.extname(filePath).replace(/^\./, ''),
                 filePath: filePath.replace(projectRoot, ''),
-                content
+                content,
             };
-        }).catch(e => Promise.resolve(false));
+        })
+        .catch(() => Promise.resolve(false));
     }
     return Promise.resolve(false);
 }
 
-function renderHandlebars(fileObj, files) {
+function renderHandlebars (fileObj, files) {
     // we need a hbs instance for files to be just scoped to this parent "template".
     const hbsInstance = hbs.create();
     let viewObj = {};
 
     files.forEach((_fileObj) => {
-         if (_fileObj === fileObj) {
-            return
+        if (_fileObj === fileObj) {
+            return;
         };
         if (_fileObj.ext === 'json' &&
                 (_fileObj.id === fileObj.id || _fileObj.id === 'data')
@@ -214,18 +218,18 @@ function renderHandlebars(fileObj, files) {
 
         // Somewhat funny solution to auto-include non included partials
         Object.defineProperty(viewObj, _fileObj.id, {
-            get: function () {
+            get () {
                 _fileObj.requested = true;
                 return hljs.highlight(_fileObj.ext || 'html', _fileObj.content).value;
-            }
+            },
         });
 
         // plain content
         Object.defineProperty(viewObj, _fileObj.id + '-plain', {
-            get: function () {
+            get () {
                 _fileObj.requested = true;
                 return _fileObj.content;
-            }
+            },
         });
     });
 
@@ -292,12 +296,18 @@ function getEntryPoints(spec) {
     function iterate(entry) {
         const copied = Object.assign({}, entry);
         delete copied.children;
-        result.push({
-            data: copied,
-            index: 'standalone',
-            layout: 'base',
-            out: entry.ref
-        });
+
+        if (entry.output !== false && entry.id) {
+
+            result.push({
+                data: copied,
+                index: 'standalone',
+                layout: 'base',
+                out: entry.ref
+            });;
+        } else {
+            console.log('Did not process file from entry:', entry.title);
+        }
         entry.children && entry.children.forEach(entry => iterate(entry));
     }
 
