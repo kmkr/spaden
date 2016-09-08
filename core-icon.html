@@ -174,7 +174,290 @@
 
 <div class="container">
 <div class="page">
-    <h1>Basic</h1>
+    <h1>Icon</h1>
+            <small class="hidden"><a href="#core-icon-docs.hbs" id="core-icon-docs.hbs">#</a> docs.hbs</small>
+            <div class="mod mbxxl">
+    <div class="inner">
+        <div class="bd">
+            <p>To use SVG icons, you have to insert an icons definition file in your markup. They are located in Spaden under <samp>dist/icons</samp> and grouped by type (e.g. market or share icons).</p>
+            <p>To refer to one of the icons, simply use an SVG <code>&lt;use>&lt;/use></code> element. (Don't use the empty element <code>&lt;use/></code> because it fails in Safari 6.)</p>
+            <h5>Example</h5>
+            <pre><code><span class="hljs-comment">&lt;!-- insert the contents of icons/share_icons_defs.html, e.g. in JSP: --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">%@include</span> <span class="hljs-attr">file</span>=<span class="hljs-string">"/external/spaden/icons/share_icons_defs.html"</span>%&gt;</span>
+<span class="hljs-comment">&lt;!-- or as a Mustache partial: --&gt;</span>
+
+[...]
+
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Del på Twitter"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"30"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Del på Twitter<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">xlink:href</span>=<span class="hljs-string">"#icon-share-twitter"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">use</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+            <p>Here we have a title element for the icon, which also acts as a fallback for browsers that don't support inline SVG. In this example, the contents of the title attribute of the <code>&lt;a></code> element will be read by screen readers.</p>
+
+
+            <h3>Market icons (<samp>market_icons_defs.html</samp>)</h3>
+            <div class="line r-cols2to4 r-margin toolbar mbl">
+                <div class="unit pvs">
+                    <svg width="60" height="60" class="valign-middle">
+                        <use xlink:href="#icon-ni-realestate"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-realestate</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="60" height="60" class="valign-middle">
+                        <use xlink:href="#icon-ni-car"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-car</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="60" height="60" class="valign-middle">
+                        <use xlink:href="#icon-ni-bap"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-bap</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="60" height="60" class="valign-middle">
+                        <use xlink:href="#icon-ni-job"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-job</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="60" height="60" class="valign-middle">
+                        <use xlink:href="#icon-ni-mc"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-mc</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="60" height="60" class="valign-middle">
+                        <use xlink:href="#icon-ni-boat"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-boat</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="60" height="60" class="valign-middle">
+                        <use xlink:href="#icon-ni-smajobber"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-smajobber</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="60" height="60" class="valign-middle">
+                        <use xlink:href="#icon-ni-reise"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-reise</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="60" height="60" class="valign-middle">
+                        <use xlink:href="#icon-ni-oppdrag"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-oppdrag</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="60" height="60" class="valign-middle">
+                        <use xlink:href="#icon-ni-kart"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-kart</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="60" height="60" class="valign-middle">
+                        <use xlink:href="#icon-ni-motesplassen"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-motesplassen</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="60" height="60" class="valign-middle">
+                        <use xlink:href="#icon-ni-b2b"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-b2b</span>
+                </div>
+            </div>
+
+            <h3>Share icons (<samp>share_icons_defs.html</samp>)</h3>
+            <p>These icons use <code>fill="currentColor"</code>. Set the <code>color</code> on the <code>use</code> element to colorize them.
+            <div class="line r-cols2to4 r-margin toolbar mbl">
+                <div class="unit pvs">
+                    <svg width="30" height="30" class="valign-middle">
+                        <use xlink:href="#icon-share-email" class="opaque"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-share-email</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="30" height="30" class="valign-middle">
+                        <use xlink:href="#icon-share-facebook" class="opaque"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-share-facebook</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="30" height="30" class="valign-middle">
+                        <use xlink:href="#icon-share-twitter" class="opaque"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-share-twitter</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="30" height="30" class="valign-middle">
+                        <use xlink:href="#icon-share-favorite-empty" class="opaque"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-share-favorite-empty</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="30" height="30" class="valign-middle">
+                        <use xlink:href="#icon-share-favorite-filled" class="opaque"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-share-favorite-filled</span>
+                </div>
+            </div>
+
+
+            <h3>Misc icons (<samp>misc_icons_defs.html</samp>)</h3>
+            <div class="line r-cols2to4 r-margin toolbar mbl">
+                <div class="unit pvs">
+                    <svg width="16" height="10" class="valign-middle">
+                        <use xlink:href="#icon-arrow-down"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-arrow-down</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="10" height="16" class="valign-middle">
+                        <use xlink:href="#icon-arrow-left"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-arrow-left</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="10" height="16" class="valign-middle">
+                        <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-arrow-right</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="22" height="22" class="valign-middle">
+                        <use xlink:href="#icon-external"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-external</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="22" height="22" class="valign-middle">
+                        <use xlink:href="#icon-checked"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-checked</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="22" height="22" class="valign-middle">
+                        <use xlink:href="#icon-checked-filled"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-checked-filled</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="22" height="22" class="valign-middle">
+                        <use xlink:href="#icon-add"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-add</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="22" height="22" class="valign-middle">
+                        <use xlink:href="#icon-subtract"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-subtract</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="22" height="22" class="valign-middle">
+                        <use xlink:href="#icon-cross"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-cross</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="22" height="22" class="valign-middle">
+                        <use xlink:href="#icon-cross-filled"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-cross-filled</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="22" height="22" class="valign-middle">
+                        <use xlink:href="#icon-calendar"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-calendar</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="30" height="30" class="valign-middle">
+                        <use xlink:href="#icon-verified-user"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-verified-user</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="22" height="22" class="valign-middle">
+                        <use xlink:href="#icon-my-location" class="pale"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-my-location</span>
+                </div>
+            </div>
+
+
+
+
+
+            <h3>Social icons (<samp>social_icons_defs.html</samp>)</h3>
+            <div class="line r-cols2to4 r-margin toolbar mbl">
+                <div class="unit pvs">
+                    <svg width="40" height="40" class="valign-middle">
+                        <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-facebook</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="40" height="40" class="valign-middle">
+                        <use xlink:href="#icon-twitter"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-twitter</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="40" height="40" class="valign-middle">
+                        <use xlink:href="#icon-instagram"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-instagram</span>
+                </div>
+
+                <div class="unit pvs">
+                    <svg width="40" height="40" class="valign-middle">
+                        <use xlink:href="#icon-youtube"></use>
+                    </svg>
+                    <span class="valign-middle">#icon-youtube</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 </div>
 </div>
 
