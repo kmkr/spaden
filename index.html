@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="no" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./dist/spaden.min.css?sha=edd10f4ade5d92d3257fa28bda07787756542cdd">
-    <link rel="stylesheet" href="./style.css?sha=edd10f4ade5d92d3257fa28bda07787756542cdd">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="./dist/spaden.min.css?sha=d27912aa40e01dee91d96b84f3f880079e8e1d43">
+    <link rel="stylesheet" href="./style.css?sha=d27912aa40e01dee91d96b84f3f880079e8e1d43">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
 </head>
 <body>
@@ -348,7 +350,7 @@
             <div class="bd">
                 <p>Highly customizable grid system used on all FINN pages. combine <code>.line</code> and multiple <code>.unit</code> to build complex responsive grids. There are several ways of controlling responsivness and also how many units you get pr line. (Think of line more like a containing block, sometimes its a line, sometimes elements may stack differently).</p>
                 <div class="r-margin">
-                  <table class="outerborder">
+                  <table class="collapse outerborder">
                       <thead>
                           <tr>
                               <th>Property</th>
@@ -524,7 +526,7 @@
 </code></pre>
 
                     <div class="mll mrl">
-                    <table class="outerborder">
+                    <table class="outerborder collapse">
                         <thead>
                             <tr>
                                 <th>Property</th>
@@ -566,7 +568,7 @@
 
                 <h5>Mod skins</h5>
                 <div class="mll mrl">
-                    <table class="outerborder">
+                    <table class="outerborder collapse">
                         <thead>
                             <tr>
                                 <th>Property</th>
@@ -843,21 +845,21 @@
             <h2>Text alignment</h2>
 
             <div class="r-margin">
-                <table>
+                <table class="outerborder collapse">
                     <tr>
-                        <td><code>.leftify-ht768</code></td>
+                        <th><code>.leftify-ht768</code></th>
                         <td>Adjust left <strong>over</strong> 768px</td>
                     </tr>
                     <tr>
-                        <td><code>.leftify-lt768</code></td>
+                        <th><code>.leftify-lt768</code></th>
                         <td>Adjust left <strong>under</strong> 768px</td>
                     </tr>
                     <tr>
-                        <td><code>.rightify-ht768</code></td>
+                        <th><code>.rightify-ht768</code></th>
                         <td>Adjust right <strong>over</strong> 768px</td>
                     </tr>
                     <tr>
-                        <td><code>.rightify-lt768</code></td>
+                        <th><code>.rightify-lt768</code></th>
                         <td>Adjust right <strong>under</strong> 768px</td>
                     </tr>
                 </table>
@@ -866,21 +868,21 @@
             <h2>Floating</h2>
 
             <div class="r-margin">
-                <table>
+                <table class="outerborder collapse">
                     <tr>
-                        <td><code>.fleft-ht768</code></td>
+                        <th scope="row"><code>.fleft-ht768</code></th>
                         <td>Float left <strong>over</strong> 768px</td>
                     </tr>
                     <tr>
-                        <td><code>.fleft-lt768</code></td>
+                        <th scope="row"><code>.fleft-lt768</code></th>
                         <td>Float left <strong>under</strong> 768px</td>
                     </tr>
                     <tr>
-                        <td><code>.fright-ht768</code></td>
+                        <th scope="row"><code>.fright-ht768</code></th>
                         <td>Float right <strong>over</strong> 768px</td>
                     </tr>
                     <tr>
-                        <td><code>.fright-lt768</code></td>
+                        <th scope="row"><code>.fright-lt768</code></th>
                         <td>Float right <strong>under</strong> 768px</td>
                     </tr>
                 </table>
@@ -889,31 +891,37 @@
             <h2>Show/hide</h2>
 
             <div class="r-margin">
-                <table class="outerborder">
-                    <thead>
+                <table class="outerborder collapse">
                     <tr>
-                        <th>480px</th>
-                        <th>600px</th>
-                        <th>768px</th>
-                        <th>900px</th>
-                    </tr>
-                    </thead>
-                    <tr>
-                        <td>
+                        <th scope="row">
                             <code>.hide-lt480</code><br>
                             <code>.hide-ht480</code>
-                        </td>
-                        <td>
+                        </th>
+                        <td>Breakpoint: 480px</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
                             <code>.hide-lt600</code><br>
                             <code>.hide-ht600</code>
-                        </td>
-                        <td>
+                        </th>
+                        <td>Breakpoint: 600px</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
                             <code>.hide-lt768</code><br>
                             <code>.hide-ht768</code>
-                        </td>
+                        </th>
                         <td>
+                            Breakpoint: 7680px
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
                             <code>.hide-lt900</code><br>
                             <code>.hide-ht900</code>
+                        </th>
+                        <td>
+                            Breakpoint: 900px
                         </td>
                     </tr>
                 </table>
@@ -978,7 +986,7 @@
 </code></pre>
                 </details>
                 <p>Extends <code>.Flex</code>.</p>
-                <div class="line r-cols2to3">
+                <div class="line cols1upto768 cols2upto990 cols3from990">
                     <div class="unit">
                         <h5><code>.align-items-start</code></h5>
                         <div class="r-margin relative flex align-items-start bg-pale" style="height:100px;width:190px">
@@ -1041,7 +1049,7 @@
                 <p>Extends <code>.Flex</code>.</p>
                 <p>Flex will by default try to fit all flexelements on a single line.</p>
                 <p class="red">! Does not work in certain browsers, including firefox before v.28, use with care, make sure you have a working fallback. </p>
-                <div class="line r-cols2to3">
+                <div class="line cols1upto768 cols2upto990 cols3from990">
 
                     <div class="unit">
                         <h5><code>.wrap</code></h5>
@@ -1090,7 +1098,7 @@
                 <p>Extends <code>.Flex</code>.</p>
                 <p>Establishes a flex main-axis</p>
 
-                <div class="line r-cols2to3">
+                <div class="line cols1upto768 cols2upto990 cols3from990">
                     <div class="unit">
                         <h5><code>.row</code> (Default)</h5>
                         <div class="r-margin relative flex row bg-pale" style="height:100px;width:190px">
@@ -1123,7 +1131,7 @@
                 <p>Extends <code>.Flex</code>.</p>
                 <p>Sets how 'free' space is distributed along the flex main-axis</p>
 
-                <div class="line r-cols2to3">
+                <div class="line cols1upto768 cols2upto990 cols3from990">
                     <div class="unit">
                         <h5><code>.justify-start</code> (Default)</h5>
                         <div class="r-margin relative flex justify-start bg-pale" style="height:100px;width:290px">
@@ -1179,7 +1187,7 @@
                 <p>Extends <code>.Flex</code>.</p>
                 <p>Sets how 'free' space is distributed along the flex cross-axis (behaves Like justify-content but the coss direction from the specified flex-direction )</p>
 
-                <div class="line r-cols2to3">
+                <div class="line cols1upto768 cols2upto990 cols3from990">
                     <div class="unit">
                         <h5><code>.align-content-start</code> (Default)</h5>
                         <div class="r-margin relative flex wrap align-content-start bg-pale" style="height:150px;width:290px">
@@ -1509,86 +1517,76 @@
             <p>All pages should now use the FINNType font and nothing else unless extreme fallback situations.  This font is included and default on all elements from spaden v.5.1.0 </p>
             <h3 class="mtl">Sizes</h3>
             <div class="r-margin">
-                <table class="outerborder">
+                <table class="outerborder collapse">
                     <tr>
-                        <td>Default, <code>.b1</code></td><td><p>The quick brown fox jumps over the lazy dog</p></td>
+                        <th scope="row">Default, <code>.b1</code></th>
+                        <td><p>The quick brown fox jumps over the lazy dog</p></td>
                     </tr>
                     <tr>
-                        <td><code>.smalltext</code></td><td><p class="smalltext">The quick brown fox jumps over the lazy dog</p></td>
+                        <th scope="row"><code>.smalltext</code></th>
+                        <td><p class="smalltext">The quick brown fox jumps over the lazy dog</p></td>
                     </tr>
                     <tr>
-                        <td><code>.largetext</code></td><td><p class="largetext">The quick brown fox jumps over the lazy dog</p></td>
+                        <th scope="row"><code>.largetext</code></th>
+                            <td><p class="largetext">The quick brown fox jumps over the lazy dog</p></td>
                     </tr>
                     <tr>
-                        <td><code>.t5, .h5, &lt;h5&gt;</code></td><td><p class="t5">The quick brown fox jumps over the lazy dog</p></td>
+                        <th scope="row"><code>.t5, .h5, &lt;h5&gt;</code></th>
+                        <td><p class="t5">The quick brown fox jumps over the lazy dog</p></td>
                     </tr>
                     <tr>
-                        <td><code>.t4, .h4, &lt;h4&gt;</code></td><td><p class="t4">The quick brown fox is to lazy to jump over the lazy dog</p></td>
+                        <th scope="row"><code>.t4, .h4, &lt;h4&gt;</code></th>
+                        <td><p class="t4">The quick brown fox is to lazy to jump over the lazy dog</p></td>
                     </tr>
                     <tr>
-                        <td><code>.t3, .h3, &lt;h3&gt;</code></td><td><p class="t3">The quick brown fox jumps over the lazy dog</p></td>
+                        <th scope="row"><code>.t3, .h3, &lt;h3&gt;</code></th>
+                        <td><p class="t3">The quick brown fox jumps over the lazy dog</p></td>
                     </tr>
                     <tr>
-                        <td><code>.t2, .h2, &lt;h2&gt;</code></td><td><p class="t2">The quick brown fox jumps over the lazy dog</p></td>
+                        <th scope="row"><code>.t2, .h2, &lt;h2&gt;</code></th>
+                        <td><p class="t2">The quick brown fox jumps over the lazy dog</p></td>
                     </tr>
                     <tr>
-                        <td><code>.t1, .h1, &lt;h1&gt;</code></td><td><p class="t1">The quick brown fox is lazy</p></td>
+                        <th scope="row"><code>.t1, .h1, &lt;h1&gt;</code></th>
+                        <td><p class="t1">The quick brown fox is lazy</p></td>
                     </tr>
                     <tr>
-                        <td><code>.d1</code></td><td><p class="d1">The quick brown fox jumps over the lazy dog</p></td>
+                        <th scope="row"><code>.d1</code></th>
+                        <td><p class="d1">The quick brown fox jumps over the lazy dog</p></td>
                     </tr>
                     <tr>
-                        <td><code>.d2</code></td><td><p class="d2">The quick brown fox jumps over the lazy dog</p></td>
+                        <th scope="row"><code>.d2</code></th>
+                        <td><p class="d2">The quick brown fox jumps over the lazy dog</p></td>
                     </tr>
 
                 </table>
             </div>
             <h3 class="mtl">Font styles</h3>
             <div class="r-margin">
-                <table class="outerborder">
+                <table class="outerborder collapse">
                     <tr>
-                        <td>Normal (Default)</td><td><p>The quick brown fox jumps over the lazy dog</p></td>
+                        <th scope="row">Normal (Default)</th>
+                        <td><p>The quick brown fox jumps over the lazy dog</p></td>
                     </tr>
                     <tr>
-                        <td><code>.italics, &lt;em&gt;</code></td><td><p><Em>The quick brown fox jumps over the lazy dog</em></p></td>
+                        <th scope="row"><code>.italics, &lt;em&gt;</code></th>
+                        <td><p><Em>The quick brown fox jumps over the lazy dog</em></p></td>
                     </tr>
                     <tr>
-                        <td><code>.strong, &lt;strong&gt;</code></td><td><p><strong>The quick brown fox jumps over the lazy dog</strong></p></td>
+                        <th scope="row"><code>.strong, &lt;strong&gt;</code></th>
+                        <td><p><strong>The quick brown fox jumps over the lazy dog</strong></p></td>
                     </tr>
                     <tr>
-                        <td><code>.strikethrough</code></td><td><p class="strikethrough">The quick brown fox jumps over the lazy dog</p></td>
+                        <th scope="row"><code>.strikethrough</code></th>
+                            <td><p class="strikethrough">The quick brown fox jumps over the lazy dog</p></td>
                     </tr>
                     <tr>
-                        <td><code>.capitalize</code></td><td><p class="capitalize">the quick brown fox is to lazy to jump over the lazy dog</p></td>
+                        <th scope="row"><code>.capitalize</code></th>
+                            <td><p class="capitalize">the quick brown fox is to lazy to jump over the lazy dog</p></td>
                     </tr>
                     <tr>
-                        <td><code>.uppercase</code></td><td><p class="uppercase">The quick brown fox jumps over the lazy dog</p></td>
-                    </tr>
-
-
-                </table>
-            </div>
-
-            <h3 class="mtl">Link styles/behaviour</h3>
-            <div class="r-margin">
-                <table class="outerborder">
-                    <tr>
-                        <td>Default link</td><td><p><a href="#">The quick brown fox jumps over the lazy dog</a></p></td>
-                    </tr>
-                    <tr>
-                        <td><code>.userhistory</code></td><td><p class="userhistory"><a href="#">The quick brown fox jumps over the lazy dog</a></p></td>
-                    </tr>
-                    <tr>
-                        <td><code>.neutral</code></td><td><p><a class="neutral" href="#">The quick brown fox jumps over the lazy dog</a></p></td>
-                    </tr>
-                    <tr>
-                        <td><code>.contrast</code></td><td><p class="bg-navy"><a class="contrast" href="#">The quick brown fox jumps over the lazy dog</a></p></td>
-                    </tr>
-                    <tr>
-                        <td><code>.dark-links</code></td><td><p><a class="dark-links" href="#">The quick brown fox jumps over the lazy dog</a></p></td>
-                    </tr>
-                    <tr>
-                        <td><code>.linkblock</code></td><td><p><a class="linkblock" href="#">The quick brown fox jumps over the lazy dog</a></p></td>
+                        <th scope="row"><code>.uppercase</code></th>
+                            <td><p class="uppercase">The quick brown fox jumps over the lazy dog</p></td>
                     </tr>
 
                 </table>
@@ -1596,36 +1594,77 @@
 
             <h3 class="mtl">Link styles/behaviour</h3>
             <div class="r-margin">
-                <table class="outerborder">
+                <table class="outerborder collapse">
                     <tr>
-                        <td><code>.leftify</code></td><td><p class="leftify">The quick brown fox jumps arround</p></td>
+                        <th scope="row">Default link</th>
+                        <td><p><a href="#">The quick brown fox jumps over the lazy dog</a></p></td>
                     </tr>
                     <tr>
-                        <td><code>.rightify</code></td><td><p class="rightify">The quick brown fox jumps arround</p></td>
+                        <th scope="row"><code>.userhistory</code></th>
+                        <td><p class="userhistory"><a href="#">The quick brown fox jumps over the lazy dog</a></p></td>
                     </tr>
                     <tr>
-                        <td><code>.centerify</code></td><td><p class="centerify">The quick brown fox jumps arround</p></td>
+                        <th scope="row"><code>.neutral</code></th>
+                        <td><p><a class="neutral" href="#">The quick brown fox jumps over the lazy dog</a></p></td>
                     </tr>
                     <tr>
-                        <td><code>.valign-top</code></td><td><span class="prl">The quick brown fox Hangs arround</span><img class="valign-top" height="80px" src="dist/img/dummies/shovelface.jpg" /></td>
+                        <th scope="row"><code>.contrast</code></th>
+                        <td><p class="bg-navy"><a class="contrast" href="#">The quick brown fox jumps over the lazy dog</a></p></td>
                     </tr>
                     <tr>
-                        <td><code>.valign-middle</code></td><td><span class="prl">The quick brown fox Hangs arround</span><img class="valign-middle" height="80px" src="dist/img/dummies/shovelfacelady.jpg" /></td>
+                        <th scope="row"><code>.dark-links</code></th>
+                        <td><p><a class="dark-links" href="#">The quick brown fox jumps over the lazy dog</a></p></td>
                     </tr>
                     <tr>
-                        <td><code>.valign-bottom</code></td><td><span class="prl">The quick brown fox Hangs arround</span><img class="valign-bottom" height="80px" src="dist/img/dummies/shovelface.jpg" /></td>
+                        <th scope="row"><code>.linkblock</code></th>
+                        <td><p><a class="linkblock" href="#">The quick brown fox jumps over the lazy dog</a></p></td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <h3 class="mtl">Link styles/behaviour</h3>
+            <div class="r-margin">
+                <table class="outerborder collapse">
+                    <tr>
+                        <th scope="row"><code>.leftify</code></th>
+                        <td><p class="leftify">The quick brown fox jumps arround</p></td>
                     </tr>
                     <tr>
-                        <td><code>.word-break</code><br>Breaks on overflow even if there are no spaces.</td><td><p class="word-break" style="width:150px;">ThequickbrownfoxjumpsoverthelazydogThequickbrownfoxjumpsoverthelazydog</td>
+                        <th scope="row"><code>.rightify</code></th>
+                        <td><p class="rightify">The quick brown fox jumps arround</p></td>
                     </tr>
                     <tr>
-                        <td><code>.no-break</code><br>Never breaks even with whitespace.</td><td><p class="no-break" style="width:150px;">The quick brown fox jumps over the lazy dog The quick brown fox jumps over the lazy dog</td>
+                        <th scope="row"><code>.centerify</code></th>
+                        <td><p class="centerify">The quick brown fox jumps arround</p></td>
                     </tr>
                     <tr>
-                        <td><code>.justify</code><br>Justifies spaces between words so each line spans the whole width.</td><td><p class="justify" style="width:150px;">The quick brown fox jumps over the lazy dog The quick brown fox jumps over the lazy dog</td>
+                        <th scope="row"><code>.valign-top</code></th>
+                        <td><span class="prl">The fox hangs arround</span><img class="valign-top" height="80px" src="dist/img/dummies/shovelface.jpg" /></td>
                     </tr>
                     <tr>
-                        <td><code>.truncate</code> (ellipsis)<br>Cuts the text when it is longer than the width of the parent element.</td><td><p class="truncate" style="width:150px;">The quick brown fox jumps over the lazy dog The quick brown fox jumps over the lazy dog</td>
+                        <th scope="row"><code>.valign-middle</code></th>
+                        <td><span class="prl">The fox hangs arround</span><img class="valign-middle" height="80px" src="dist/img/dummies/shovelfacelady.jpg" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>.valign-bottom</code></th>
+                        <td><span class="prl">The fox hangs arround</span><img class="valign-bottom" height="80px" src="dist/img/dummies/shovelface.jpg" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>.word-break</code><br>Breaks on overflow even if there are no spaces.</th>
+                        <td><p class="word-break" style="width:150px;">ThequickbrownfoxjumpsoverthelazydogThequickbrownfoxjumpsoverthelazydog</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>.no-break</code><br>Never breaks even with whitespace.</th>
+                        <td><p class="no-break" style="width:150px;">The quick brown fox jumps over the lazy dog The quick brown fox jumps over the lazy dog</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>.justify</code><br>Justifies spaces between words so each line spans the whole width.</th>
+                        <td><p class="justify" style="width:150px;">The quick brown fox jumps over the lazy dog The quick brown fox jumps over the lazy dog</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><code>.truncate</code> (ellipsis)<br>Cuts the text when it is longer than the width of the parent element.</th>
+                        <td><p class="truncate" style="width:150px;">The quick brown fox jumps over the lazy dog The quick brown fox jumps over the lazy dog</td>
                     </tr>
 
                 </table>
@@ -1779,7 +1818,7 @@
 
 
             <h3>Market icons (<samp>market_icons_defs.html</samp>)</h3>
-            <div class="line r-cols2to4 r-margin toolbar mbl">
+            <div class="line r-cols1to3 r-margin toolbar mbl">
                 <div class="unit pvs">
                     <svg width="60" height="60" class="valign-middle">
                         <use xlink:href="#icon-ni-realestate"></use>
@@ -1867,7 +1906,7 @@
 
             <h3>Share icons (<samp>share_icons_defs.html</samp>)</h3>
             <p>These icons use <code>fill="currentColor"</code>. Set the <code>color</code> on the <code>use</code> element to colorize them.
-            <div class="line r-cols2to4 r-margin toolbar mbl">
+            <div class="line r-cols1to3 r-margin toolbar mbl">
                 <div class="unit pvs">
                     <svg width="30" height="30" class="valign-middle">
                         <use xlink:href="#icon-share-email" class="opaque"></use>
@@ -1906,7 +1945,7 @@
 
 
             <h3>Misc icons (<samp>misc_icons_defs.html</samp>)</h3>
-            <div class="line r-cols2to4 r-margin toolbar mbl">
+            <div class="line r-cols1to3 r-margin toolbar mbl">
                 <div class="unit pvs">
                     <svg width="16" height="10" class="valign-middle">
                         <use xlink:href="#icon-arrow-down"></use>
@@ -2004,7 +2043,7 @@
 
 
             <h3>Social icons (<samp>social_icons_defs.html</samp>)</h3>
-            <div class="line r-cols2to4 r-margin toolbar mbl">
+            <div class="line r-cols1to3 r-margin toolbar mbl">
                 <div class="unit pvs">
                     <svg width="40" height="40" class="valign-middle">
                         <use xlink:href="#icon-facebook"></use>
@@ -4223,14 +4262,14 @@
 
                             <small class="hidden"><a href="#core-table" id="core-table">#</a> docs.mustache</small>
                             <div class="line" id="tables">
-    <div class="unit size2of3">
+    <div class="unit r-size2of3">
 
         <div class="mod mbxxl">
             <div class="inner">
                 <div class="bd">
 
                     <div class="r-margin">
-                        <table class="outerborder">
+                        <table class="outerborder collapse">
                             <thead class="t4">
                             <tr>
                                 <th>Property</th>
@@ -4835,7 +4874,7 @@
 
                     </div>
 
-                    <div class="r-margin mbl multicol col-count2upto640 col-count3upto990 col-count3from990">
+                    <div class="r-margin mbl multicol col-count1upto480 col-count2upto990 col-count3from990">
                         <ul class="man ">
                             <li><code>.border-black</code></li>
                             <li><code>.border-dk-gray</code></li>
@@ -5078,7 +5117,7 @@
         </div>
 
     </div>
-    <div class="unit r-size1of3">
+    <div class="unit r-size1of3 hide-lt768">
 
         <div class="mod shadow">
             <div class="inner">
@@ -7354,6 +7393,6 @@
 </div>
 </div>
 
-<script src="./docs.js?sha=edd10f4ade5d92d3257fa28bda07787756542cdd"></script>
+<script src="./docs.js?sha=d27912aa40e01dee91d96b84f3f880079e8e1d43"></script>
 </body>
 </html>

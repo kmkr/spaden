@@ -97,6 +97,27 @@ pre{
   border-radius: 3px;
   overflow-x: auto;
 }
+
+table.collapse thead th{
+    background-color: #f9f9f9;
+    color:#353233;
+}
+@media screen and (max-width: 600px) {
+    table.collapse th, table.collapse td {
+        display:block;
+    }
+    table.collapse td{
+        padding-left:30px;
+        padding-bottom: 30px;
+    }
+    table.collapse th{
+        background-color:#f9f9f9;
+    }
+    table.collapse thead{
+        display:none;
+    }
+}
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *                      Fancy headings                 *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * */
