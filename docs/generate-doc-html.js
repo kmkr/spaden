@@ -4,6 +4,7 @@ const pify      = require('pify');
 const globby    = require('globby');
 const fsp       = pify(fs);
 const path      = require('path');
+const marked    = require('marked');
 const hbs       = require('handlebars');
 const hljs      = require('highlight.js');
 const pkg       = require('../package.json');
@@ -13,165 +14,183 @@ const basePath      = path.join(projectRoot, 'src', 'styles');
 const OUT_FOLDER    = process.argv[2] || 'out';
 
 const spec = [
-	{
-		title: "Core",
+    {
+        title: 'Core',
         id: 'core',
         output: false,
-		children: [
-			{
-				title: "Layout",
+        rootPath: path.join(projectRoot, 'src', 'styles'),
+        children: [
+            {
+                title: 'Layout',
                 output: false,
-				children: [
-					{
-						title: 'Template',
-            id: 'template'
-					},
-					{
-						title: 'Grid',
-						id: 'grid'
-					},
-					{
-						title: 'Module',
-						id: 'module'
-					},
-					{
-						title: 'Media',
-						id: 'media'
-					},
-					{
-						title: 'Spacing',
-						id: 'spacing'
-					},
-					{
-						title: 'Responsive helpers',
-						id: 'responsive'
-					},
-					{
-						title: 'Flex',
-						id: 'flex'
-					}
-
-				]
-			},
-			{
-				title: "Decoration",
-				children: [
-					{
-						title: 'Color',
-						id: 'color'
-					},
-					{
-						title: 'Font/Text',
-						id: 'font'
-					},
-					{
-						title: 'Print',
-						id: 'print'
-					},
-					{
-						title: 'Border',
-						id: 'border'
-					},
-					{
-						title: 'Icon',
-						id: 'icon'
-					},
-					{
-						title: 'Logo',
-						id: 'logo'
-					},
-					{
-						title: 'Image',
-						id: 'image'
-					},
-					{
-						title: 'Form',
-						id: 'form'
-					},
-					{
-						title: 'List',
-						id: 'list'
-					},
-					{
-						title: 'Table',
-						id: 'table'
-					}
-				]
-			}
-		]
-	},
+                children: [
+                    {
+                        title: 'Template',
+                        id: 'template',
+                    },
+                    {
+                        title: 'Grid',
+                        id: 'grid',
+                    },
+                    {
+                        title: 'Module',
+                        id: 'module',
+                    },
+                    {
+                        title: 'Media',
+                        id: 'media',
+                    },
+                    {
+                        title: 'Spacing',
+                        id: 'spacing',
+                    },
+                    {
+                        title: 'Responsive helpers',
+                        id: 'responsive',
+                    },
+                    {
+                        title: 'Flex',
+                        id: 'flex',
+                    },
+                ],
+            },
+            {
+                title: 'Decoration',
+                children: [
+                    {
+                        title: 'Color',
+                        id: 'color',
+                    },
+                    {
+                        title: 'Font/Text',
+                        id: 'font',
+                    },
+                    {
+                        title: 'Print',
+                        id: 'print',
+                    },
+                    {
+                        title: 'Border',
+                        id: 'border',
+                    },
+                    {
+                        title: 'Icon',
+                        id: 'icon',
+                    },
+                    {
+                        title: 'Logo',
+                        id: 'logo',
+                    },
+                    {
+                        title: 'Image',
+                        id: 'image',
+                    },
+                    {
+                        title: 'Form',
+                        id: 'form',
+                    },
+                    {
+                        title: 'List',
+                        id: 'list',
+                    },
+                    {
+                        title: 'Table',
+                        id: 'table',
+                    },
+                ],
+            },
+        ],
+    },
     {
         title: 'Components',
         id: 'components',
+        rootPath: path.join(projectRoot, 'src', 'styles'),
         output: false,
         children: [
             {
                 title: 'Basic',
                 children: [
-										{
-												title: 'Blockquote',
-												id: 'stylizedblockquote',
-										},
-										{
-												title: 'Broadcast',
-												id: 'broadcast',
-										},
+                    {
+                        title: 'Blockquote',
+                        id: 'stylizedblockquote',
+                    },
+                    {
+                        title: 'Broadcast',
+                        id: 'broadcast',
+                    },
                     {
                         title: 'Context-box',
-                        id: 'contextbox'
+                        id: 'contextbox',
                     },
-										{
+                    {
                         title: 'Conversations',
-                        id: 'conversations'
+                        id: 'conversations',
                     },
-										{
+                    {
                         title: 'Crumbs',
-                        id: 'crumbs'
+                        id: 'crumbs',
                     },
-										{
+                    {
                         title: 'Detailssummary',
-                        id: 'detailssummary'
+                        id: 'detailssummary',
                     },
-										{
+                    {
                         title: 'Filters',
-                        id: 'filters'
+                        id: 'filters',
                     },
-										{
+                    {
                         title: 'Notification',
-                        id: 'notification'
+                        id: 'notification',
                     },
-										{
+                    {
                         title: 'OMGnew',
-                        id: 'omgnew'
+                        id: 'omgnew',
                     },
-										{
+                    {
                         title: 'Paging',
-                        id: 'paging'
+                        id: 'paging',
                     },
-										{
+                    {
                         title: 'Profiles',
-                        id: 'profiles'
+                        id: 'profiles',
                     },
-										{
+                    {
                         title: 'Ratings',
-                        id: 'ratings'
+                        id: 'ratings',
                     },
-										{
+                    {
                         title: 'Ribbons',
-                        id: 'ribbons'
+                        id: 'ribbons',
                     },
-										{
+                    {
                         title: 'Speech bubbles',
-                        id: 'speechbubbles'
+                        id: 'speechbubbles',
                     },
-										{
+                    {
                         title: 'Tabs',
-                        id: 'tabs'
-                    }
-                ]
-            }
-        ]
-    }
+                        id: 'tabs',
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        title: 'Examples',
+        id: 'examples',
+        rootPath: path.join(__dirname),
+        output: false,
+        children: [
+            {
+                title: 'Prototypes',
+                children: [
+                    {
+                        title: 'My Profile',
+                        id: 'my-profile-prototype',
+                    },
+                ],
+            },
+        ],
+    },
 ];
 
 function createRef (ref) {
@@ -180,11 +199,11 @@ function createRef (ref) {
         .join('-');
 }
 
-function readFile (filePath) {
+function readFile (filePath, _contextPath) {
     if (path.extname(filePath) !== '') {
         return fsp.readFile(filePath, 'utf8').then(content => {
             return {
-                ref: createRef(filePath),
+                ref: createRef(_contextPath),
                 name: path.basename(filePath),
                 id: path.basename(filePath, path.extname(filePath)),
                 ext: path.extname(filePath).replace(/^\./, ''),
@@ -192,13 +211,16 @@ function readFile (filePath) {
                 content,
             };
         })
-        .catch(() => Promise.resolve(false));
+        .catch((e) => {
+            console.error(e);
+            return Promise.resolve(false);
+        });
     }
     return Promise.resolve(false);
 }
 
-function renderHandlebars (fileObj, files) {
-    // we need a hbs instance for files to be just scoped to this parent "template".
+function renderEntry (fileObj, files) {
+    // we need a hbs instance for files to be just scoped to this parent 'template'.
     const hbsInstance = hbs.create();
     let viewObj = {};
 
@@ -214,7 +236,9 @@ function renderHandlebars (fileObj, files) {
             return;
         }
 
-        hbsInstance.registerPartial(_fileObj.name, _fileObj.content);
+        if (_fileObj.ext === 'hbs') {
+            hbsInstance.registerPartial(_fileObj.name, _fileObj.content);
+        }
 
         // Somewhat funny solution to auto-include non included partials
         Object.defineProperty(viewObj, _fileObj.id, {
@@ -224,8 +248,8 @@ function renderHandlebars (fileObj, files) {
             },
         });
 
-        // plain content
-        Object.defineProperty(viewObj, _fileObj.id + '-plain', {
+        // plain / raw content
+        Object.defineProperty(viewObj,  `${_fileObj.id}-plain`, {
             get () {
                 _fileObj.requested = true;
                 return _fileObj.content;
@@ -233,96 +257,110 @@ function renderHandlebars (fileObj, files) {
         });
     });
 
-    fileObj.rendered = hbsInstance.compile(fileObj.content)(viewObj);
+    if (['mustache', 'mu', 'hbs'].includes(fileObj.ext)) {
+        fileObj.rendered = hbsInstance.compile(fileObj.content)(viewObj);
+    }
+
+    if (['markdown', 'md'].includes(fileObj.ext)) {
+        fileObj.rendered = marked(fileObj.content);
+    }
+
     return fileObj;
 }
 
-function resolveEntry (entry, contextPath = '') {
-    const _contextPath = path.join(contextPath, entry.path || entry.id || '');
-    const entryProm = new Promise((resolve, reject) => {
-        const base = path.basename(_contextPath);
-        const currPath = _contextPath;
+function resolveEntry (entry, rootPath, contextPath = '') {
+    const _contextPath = path.join(contextPath, entry.id || '');
+    const _rootPath = entry.rootPath || rootPath;
 
-        const glob = globby([ '*.md', '*.mustache', '*.mu', '*.hbs', '*.html', '*.json'], { cwd: currPath })
-        .then((result) => {
-            Promise.all(
-                result.map(p => readFile(path.join(_contextPath, p)))
-                    .concat(
-                    (new Array(10)).join(',').split(',').map((_, i) =>
-                        readFile(path.join(_contextPath, `example-${i + 1}.md`))
-                    )
-            )
-            ).then((res) => {
-                entry.ref = createRef(_contextPath),
-                entry.href = `./${createRef(_contextPath)}.html`
-                entry.files = res.filter(Boolean);
+    const currentFolderPath = path.join(_rootPath, _contextPath);
+    const exist = fs.existsSync(currentFolderPath);
+    if (!exist) {
+        throw new Error(`Missing path ${_contextPath}: ${currentFolderPath}`);
+    }
 
-                entry.files = entry.files.map((fileObj) => {
-                    if (['mustache', 'mu', 'hbs'].includes(fileObj.ext)) {
-                        renderHandlebars(fileObj, entry.files);
-                    }
-                    // fileObj.hl = hljs.highlight('html', fileObj.rendered || fileObj.content).value;
-                    return fileObj;
+    const entryProm = new Promise((resolve) => {
+        const globs = ['*.md', '*.mustache', '*.mu', '*.hbs', '*.html', '*.json'];
+        globby(globs, { cwd: currentFolderPath })
+            .then((result) => {
+                Promise.all(
+                    result.map(p => readFile(path.join(currentFolderPath, p), _contextPath))
+                ).then((res) => {
+                    entry.ref = createRef(_contextPath);
+                    entry.href = `./${createRef(_contextPath)}.html`;
+                    entry.files = res.filter(Boolean);
+
+                    entry.files = entry.files.map((fileObj) => {
+                        if (['mustache', 'mu', 'hbs'].includes(fileObj.ext)) {
+                            renderEntry(fileObj, entry.files);
+                        }
+
+                        if (['markdown', 'md'].includes(fileObj.ext)) {
+                            renderEntry(fileObj, entry.files);
+                        }
+                        return fileObj;
+                    });
+
+                    resolve(entry);
+                })
+                .catch((e) => {
+                    console.error('E:', e);
                 });
-
-                resolve(entry);
-            }).catch((e) => {
-                console.log('E:', e);
             });
-        });
     });
 
     return Promise.all(
         [entryProm]
-            .concat(entry.children && resolveTree(entry.children, _contextPath))
+            .concat(entry.children && resolveTree(entry.children, _rootPath, _contextPath))
             .filter(Boolean)
     );
 }
 
-function resolveTree(tree, contextPath = '') {
+function resolveTree (tree, rootPath, contextPath = '') {
     return Promise.all(
-        tree.map((entry) => resolveEntry(entry, contextPath))
+        tree.map((entry) => resolveEntry(entry, rootPath, contextPath))
     );
 }
 
-function getEntryPoints(spec) {
+function getEntryPoints (data) {
     const result = [{
         index: 'index',
         layout: 'base',
         out: 'index',
-        data: spec
+        data,
     }];
 
-    function iterate(entry) {
+    function iterate (entry) {
         const copied = Object.assign({}, entry);
         delete copied.children;
 
         if (entry.output !== false && entry.id) {
-
             result.push({
                 data: copied,
                 index: 'standalone',
                 layout: 'base',
-                out: entry.ref
+                out: entry.ref,
             });;
         } else {
             console.log('Did not process file from entry:', entry.title);
         }
-        entry.children && entry.children.forEach(entry => iterate(entry));
+        if (entry.children) {
+            entry.children.forEach(child => iterate(child));
+        }
     }
 
-    spec.forEach(entry => iterate(entry));
+    data.forEach(entry => iterate(entry));
+
     return result;
 }
 
 const baseData = {
     version: `v${pkg.version}`,
     sha: process.env.GIT_SHA || pkg.version,
-    icons: ''
+    icons: '',
 };
 
 
-function render(template, layout, data) {
+function render (template, layout, data) {
     const index = hbs.compile(template)(Object.assign({}, baseData, { data }));
     const result = hbs.compile(layout)(Object.assign({}, baseData, { data, content: index }));
 
@@ -334,8 +372,10 @@ function collectIcons () {
     return fsp.readdir(iconsDir).then(content =>
         Promise.all(
             content.map(entry => fsp.readFile(path.join(iconsDir, entry), 'utf8'))
-        ).then(results => baseData.icons = results.join('\n'))
-    )
+        ).then(results => {
+            baseData.icons = results.join('\n');
+        })
+    );
 }
 
 
@@ -357,7 +397,6 @@ resolveTree(spec, basePath)
                 render(indexFileContent, baseFileContent, data),
                 'utf8'
             );
-
         });
     })
     .catch((err) => {
@@ -367,9 +406,6 @@ resolveTree(spec, basePath)
 
 
 /*
-
-* examples folder - filer injectes inn i base.hbs
-* filer av alle seksjoner alene (krever filterert spec men kan kjøre i samme index.hbs)
 
 
 * legge til støtte for .js og .md filer
