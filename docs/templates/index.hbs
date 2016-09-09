@@ -55,25 +55,13 @@
 
         {{#each data}}
 
-        {{#each spec}}
-
-
             {{#each children}}
 
 
             <h1 class="fancy"><span>{{../title}} - {{title}}</span></h1>
                 {{#each children}}
-
                 <a id="{{ref}}"></a>
-                <!-- -->
-                <ul class="breadcrumbs green-dk mbn">
-                    <li>{{../../title}}</li>
-                    <li>{{../title}}</li>
-                    <li>{{title}}</li>
-                </ul>
-                <!-- -->
-
-
+                
                     <h2 class="mbn">{{title}} <a href="{{href}}" target="_blank" title="{{title}}">
                         <svg width="22" height="22" class="valign-middle" alt="{{title}}" >
                             <use xlink:href="#icon-external"></use>

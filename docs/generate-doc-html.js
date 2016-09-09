@@ -392,11 +392,17 @@ resolveTree(spec, basePath)
             const baseFileContent = fs.readFileSync(path.join(__dirname, 'templates', `${layout}.hbs`), 'utf8');
             const indexFileContent = fs.readFileSync(path.join(__dirname, 'templates', `${index}.hbs`), 'utf8');
 
-            fs.writeFileSync(
-                outputPath,
-                render(indexFileContent, baseFileContent, data),
-                'utf8'
-            );
+            try {
+                fs.writeFileSync(
+                    outputPath,
+                    render(indexFileContent, baseFileContent, data),
+                    'utf8'
+                );
+            } catch (e) {
+                e += ` from file ${out}`;
+                throw e;
+            }
+
         });
     })
     .catch((err) => {
