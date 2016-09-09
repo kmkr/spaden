@@ -262,7 +262,7 @@ function renderEntry (fileObj, files) {
     }
 
     if (['markdown', 'md'].includes(fileObj.ext)) {
-        fileObj.rendered = marked(fileObj.content);
+        fileObj.rendered = hbsInstance.compile(marked(fileObj.content))(viewObj);
     }
 
     return fileObj;
