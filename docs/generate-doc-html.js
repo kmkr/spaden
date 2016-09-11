@@ -266,16 +266,16 @@ function createRef (ref) {
 
 function readFile (filePath, _contextPath) {
     if (path.extname(filePath) !== '') {
-        return fsp.readFile(filePath, 'utf8').then(content => {
-            return {
+        return fsp.readFile(filePath, 'utf8').then(content => (
+            {
                 ref: createRef(_contextPath),
                 name: path.basename(filePath),
                 id: path.basename(filePath, path.extname(filePath)),
                 ext: path.extname(filePath).replace(/^\./, ''),
                 filePath: filePath.replace(projectRoot, ''),
                 content,
-            };
-        })
+            }
+        ))
         .catch((e) => {
             console.error(e);
             return Promise.resolve(false);
@@ -467,22 +467,16 @@ resolveTree(spec, basePath)
                 e += ` from file ${out}`;
                 throw e;
             }
-
         });
     })
     .catch((err) => {
         console.error('err:', err);
     });
 
-
-
 /*
 
-
-* legge til støtte for .js og .md filer
 * fixe touch/click på sidemenyen/body (skjul/vis)
 * Ikke vis støff fra examples seksjonen i index scrollen?
-
 * lokal utvikling med reload
 
 */
