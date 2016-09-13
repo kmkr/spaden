@@ -176,31 +176,189 @@
 
 <div class="container">
 <div class="page">
-    <h1>Notification</h1>
-            <small class="hidden"><a href="#components-notification" id="components-notification">#</a> notification.hbs</small>
-            <div class="mod mbxxl">
-    <div class="inner">
-        <div class="bd">
-            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"notification bg-red bright centerify inlineblockify"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
-            <p>The notification dot is by default an inline element but can easily be positioned by setting the <code>relativeify</code> class on its parent element and setting top,right,bottom,left for positioning. We might be able to find some patern for these but most likely a one off spesific positioning setting is nessesary for each implementation (?). </p>
-            <div class="r-margin">
-                <div class="notification bg-red bright centerify inlineblockify">1</div>
-                <div class="notification bg-red bright centerify inlineblockify">13</div>
-                <div class="notification bg-red bright centerify inlineblockify">245</div>
-            </div>
+    <h1>market</h1>
+            <small class="hidden"><a href="#examples-market" id="examples-market">#</a> market.mustache</small>
+            <!--
+<div class="topbar fixed">
+    <div class="container">
+        <div class="page">
+            <div class="nav-level1 h4">
+                   <a href="/" class="homelink pln">
+                        <span class="topbar-nav-svg-home">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MjcuNDExIiBoZWlnaHQ9IjE2OS4zOTgiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik00NjguNTA3IDBoLTI1Ni4xODdjLTIxLjcwNyAwLTQwLjY5NSAxMS44MTItNTAuOTEyIDI5LjMzNy0xMC4yMTYtMTcuNTI1LTI5LjIwNC0yOS4zMzctNTAuOTExLTI5LjMzN2gtNTEuNTk1Yy0zMi40NzkgMC01OC45MDIgMjYuNDI1LTU4LjkwMiA1OC45MDV2NTEuNTg3YzAgMzIuNDgxIDI2LjQyMyA1OC45MDYgNTguOTAyIDU4LjkwNmg0MDkuNjA1YzMyLjQ3OSAwIDU4LjkwMy0yNi40MjUgNTguOTAzLTU4LjkwNnYtNTEuNTg3Yy4wMDEtMzIuNDgtMjYuNDIzLTU4LjkwNS01OC45MDMtNTguOTA1eiIvPjxwYXRoIGZpbGw9IiMwOWYiIGQ9Ik00NjguNTA3IDE1My4zODNjMjMuNjg3IDAgNDIuODg4LTE5LjE5OSA0Mi44ODgtNDIuODl2LTUxLjU4OGMwLTIzLjY5MS0xOS4yMDEtNDIuODktNDIuODg4LTQyLjg5aC0yNTYuMTg3Yy0yMy42ODYgMC00Mi44ODcgMTkuMTk4LTQyLjg4NyA0Mi44OXY5NC40NzhoMjk5LjA3NHoiLz48cGF0aCBmaWxsPSIjMDA2IiBkPSJNMTUzLjM4NCAxNTMuMzgzdi05NC40NzhjMC0yMy42OTEtMTkuMjAxLTQyLjg5LTQyLjg4Ny00Mi44OWgtNTEuNTk1Yy0yMy42ODYgMC00Mi44ODcgMTkuMTk4LTQyLjg4NyA0Mi44OXY1MS41ODdjMCAyMy42OTEgMTkuMjAxIDQyLjg5IDQyLjg4NyA0Mi44OWg5NC40ODJ6Ii8%2BPHJlY3QgeD0iMzIwLjE1NiIgeT0iNzUuMjc1IiBmaWxsPSIjZmZmIiB3aWR0aD0iMTkuNjIxIiBoZWlnaHQ9IjUzLjIxMSIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0yNjIuOTEyIDg2LjI4MWMwLTUuNTI5IDMuODEzLTExLjAwNiAxMy4wNjktMTEuMDA2aDI4LjQyMXYxNS42MTNoLTE4LjYxMmMtMi40OTggMC0zLjI1NS45OTItMy4yNTUgMi42NjR2Ny40NzJoMjEuODY3djE1LjYxaC0yMS44Njd2MTEuODUyaC0xOS42MjN2LTQyLjIwNXpNMzc1LjE2NSA5MS4wOTloMTAuMzk5YzIuNDA5IDAgMy4yNDYuODMyIDMuMjQ2IDMuMjM1bC0uMDA4IDM0LjE1MmgxOS42MzJ2LTQxLjk5NmMwLTUuNTI3LTMuODE1LTExLjAwNC0xMy4wNjktMTEuMDA0aC0zOS44MjRsLS4wMSA1M2gxOS42MzR2LTM3LjM4N3pNNDQyLjcxOSA5MS4wOTloMTAuNGMyLjQwOCAwIDMuMjQ1LjgzMiAzLjI0NSAzLjIzNWwtLjAwOSAzNC4xNTJoMTkuNjM0di00MS45OTZjMC01LjUyNy0zLjgxNS0xMS4wMDQtMTMuMDctMTEuMDA0aC0zOS44MjNsLS4wMSA1M2gxOS42MzN2LTM3LjM4N3oiLz48L3N2Zz4%3D"
+                                 alt="logo">
+                            </span>
+                        <span class="topbar-nav-svg-caption caption showbydefault hide-lt900">Mulighetenes marked</span>
+                    </a>
 
-            <div class="r-margin">
-                <span class="bg-blue bright clickable relative pvm phl">
-                    <div class="notification topright bg-red bright centerify inlineblockify ">1</div>
-                    Finnbox
-                </span>
+                <a href="#" class="nav-element centerify">
+                    <span class="topbar-nav-svg">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MiIgaGVpZ2h0PSI2MiIgdmlld0JveD0iMTkuNSAxMTkuNSA2MiA2MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAxOS41IDExOS41IDYyIDYyIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNTAuNTA3IDEyMC4yMDhjLTE2LjczMyAwLTMwLjI5MyAxMy41NjItMzAuMjkzIDMwLjI5MXMxMy41NiAzMC4yOTMgMzAuMjkzIDMwLjI5M2MxNi43MjkgMCAzMC4yOTEtMTMuNTYzIDMwLjI5MS0zMC4yOTMgMC0xNi43MjgtMTMuNTYyLTMwLjI5MS0zMC4yOTEtMzAuMjkxem0wIDUzLjg1N2MtMTMuMDEyIDAtMjMuNTY3LTEwLjU0OS0yMy41NjctMjMuNTY2IDAtMTMuMDE2IDEwLjU1Ni0yMy41NjYgMjMuNTY3LTIzLjU2NiAxMy4wMTUgMCAyMy41NjUgMTAuNTUyIDIzLjU2NSAyMy41NjYgMCAxMy4wMTgtMTAuNTUxIDIzLjU2Ni0yMy41NjUgMjMuNTY2eiIvPjxjaXJjbGUgZmlsbD0iI2ZmZiIgY3g9IjUwLjUxMiIgY3k9IjE1MC40NzkiIHI9IjQuNDE3Ii8%2BPC9zdmc%2BCg%3D%3D" alt="">
+                    </span>
+                    <span class="topbar-nav-svg-caption caption showbydefault no-break">Siste nytt</span>
+                </a>
+
+                <a href="#" class="nav-element centerify">
+                    <span class="topbar-nav-svg">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MiIgaGVpZ2h0PSI2MiIgdmlld0JveD0iMTkuNSAxMTkuNSA2MiA2MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAxOS41IDExOS41IDYyIDYyIj48cmVjdCB4PSIxOS43NzMiIHk9IjE0Ny42ODIiIGZpbGw9IiNmZmYiIHdpZHRoPSI2MS40NTMiIGhlaWdodD0iNiIvPjxyZWN0IHg9IjQ3LjUiIHk9IjExOS43NzMiIGZpbGw9IiNmZmYiIHdpZHRoPSI2IiBoZWlnaHQ9IjYxLjQ1MyIvPjwvc3ZnPgo%3D" alt="">
+                    </span>
+                    <span class="topbar-nav-svg-caption caption showbydefault no-break">Ny annonse</span>
+                </a>
+
+                <a href="#" class="nav-element centerify">
+                    <span class="topbar-nav-svg">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMiIgdmlld0JveD0iMCAwIDIyIDIyIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTkuOTY0IDE2Ljc5YzAtLjAxOC0uMDAyLS4wMzYtLjAwNS0uMDU1LS4wMjctNi40MjgtNC4wMTYtMTMuODYyLTguOTMtMTMuODYyUzIuMTMgMTAuMjk4IDIuMSAxNi43MjNjLS4wMDQuMDIzLS4wMDguMDQ3LS4wMDguMDY3IDAgLjM2OC42MTguNzA2IDEuNjY4Ljk4LS40NzYtLjIyOC0uNzQ0LS40ODItLjc0NC0uNzUzIDAtLjA2Ni4wMTgtLjEzMi4wNS0uMTk3LjQzOC0uOSAzLjg1LTEuNjAzIDcuOTk1LTEuNjAzIDQuMTUgMCA3LjU2LjcwMiA3Ljk5OCAxLjYwMy4wMy4wNjUuMDUuMTMuMDUuMTk3IDAgLjI1NS0uMjM4LjQ5Ni0uNjYyLjcxNC45Ni0uMjY1IDEuNTItLjU5IDEuNTItLjk0eiIvPjxlbGxpcHNlIGZpbGw9IiNmZmYiIGN4PSIxMS4wNTMiIGN5PSIxOC43MjciIHJ4PSIxLjc4NiIgcnk9IjIuMjE2Ii8+PGVsbGlwc2UgZmlsbD0iI2ZmZiIgY3g9IjExLjA1MyIgY3k9IjIuNTYyIiByeD0iMS4yMzgiIHJ5PSIxLjUzOCIvPjwvc3ZnPg==" alt="">
+                    </span>
+                    <span class="topbar-nav-svg-caption caption showbydefault no-break">Varslinger</span>
+                </a>
+
+                <a href="#" class="nav-element centerify no-border">
+                    <span class="topbar-nav-svg">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MiIgaGVpZ2h0PSI2MiIgdmlld0JveD0iMTkuNSAxMTkuNSA2MiA2MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAxOS41IDExOS41IDYyIDYyIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNjUuMjkxIDE1OC41MjFjLTIuNTI5LTEuOTM5LTMuNDk2LTIuODU1LTMuNDk2LTQuNTI4IDAtMS4xODguMzE2LTEuNzYxIDEuMDM1LTIuNTYzLjczLS42ODQgMS40MDItMS40MzIgMi4wMTQtMi4yMjguMTkzLS4yNDMuMzg0LS41MDIuNTcyLS43NzhsLjA0NS0uMDY0Yy4xMjUtLjE4OC4yNS0uMzg3LjM3My0uNTkyIDEuNzI5LTIuNzcgMi43NC02LjAzMSAyLjc0LTkuNTMxIDAtOS45NjktOC4xMDgtMTguMDc3LTE4LjA3NC0xOC4wNzctOS45NyAwLTE4LjA3NyA4LjEwOC0xOC4wNzcgMTguMDc3IDAgMy4wOS43OSA1Ljk5MiAyLjE2MyA4LjUzN2wtLjAyNi4wMTRjLjg1OCAxLjgyNiAxLjk5MSAzLjAxNSAyLjkwMyAzLjk3IDEuMTc1IDEuMjMzIDEuNjYyIDEuNzQzIDEuNjYyIDMuMjM3IDAgMS42OTUtLjk4NyAyLjYwOS0zLjU5NSA0LjYwNC0uMzEyLjIzOC0uNjUxLjUwMi0uOTg3Ljc2Ny02LjU2NSA0Ljg4Ny0xMC44MzYgMTIuNjg4LTEwLjgzNiAyMS40ODFoNS44MTFjMC02LjI4MSAyLjc3Ni0xMS45MjIgNy4xNjQtMTUuNzcxbC4wMy4wMzMuMDk4LS4wODJoLS4xNGwuODkyLS42NDEuOTEzLS43MjEuNDE3LS4yN2M4LjY2Ni02LjYwNyA3Ljg4MS05LjM4MSA3Ljg4MS05LjM4MS0uMTM3LTIuNTg4LTIuMTA0LTQuMTMyLTIuMTA0LTQuMTMyLS42ODYtLjY4Ny0xLjY4OC0xLjc3MS0yLjUyNy0yLjY5Mi0uNTItLjQ4Ni0uOTk2LTEuMDE4LTEuNDI2LTEuNTg2bC0uMTMyLS4xNDguMDYxLjA1NGMtMS41MDgtMi4wMzgtMi40MTItNC41NDktMi40MTItNy4yNzIgMC02Ljc2NCA1LjUwMi0xMi4yNjggMTIuMjY4LTEyLjI2OCA2Ljc2NSAwIDEyLjI2NyA1LjUwNCAxMi4yNjcgMTIuMjY4IDAgMi4yMTktLjYwMyA0LjI5My0xLjYzNSA2LjA5MmwtLjAyOC0uMDE0Yy0uMTExLjIzOC0uMjM2LjQ1Ny0uMzY4LjY2NmwtLjAxNC4wMjFjLS4xMTUuMTc5LS4yNC4zNDctLjM2OS41MTFsLS4wMjEuMDI2LjA5NS0uMDgycy0yLjY5MyAzLjAzNi00LjA4NSA0LjQyOGMwIDAtMS45NjkgMS41NDQtMi4xMDQgNC4xMzIgMCAwLS45MjQgMy4yMjMgMTAuMTAyIDExLjAxaC0uMjNsLjEuMDg0LjA2NC0uMDcxYzQuNDExIDMuODQ5IDcuMjA4IDkuNTA3IDcuMjA4IDE1LjgwOGg1LjgxMmMtLjAwNC05LjMxNS00Ljc3Ny0xNy41MjYtMTIuMDA0LTIyLjMyOHoiLz48L3N2Zz4K" alt="">
+                    </span>
+                    <span class="topbar-nav-svg-caption caption showbydefault no-break">Min FINN</span>
+                </a>
             </div>
         </div>
     </div>
 </div>
 
+-->
+<div class="container">
+<div class="page">
+    <div class="mod green-skin">
+    	<div class="inner">
+    		<div class="bd">
+    			<p>Experimental example</p>
+    		</div>
+    	</div>
+    </div>
+            <div class="mod shadow">
+            <div class="inner">
+                <div class="bd">
+                    <span class="icon-font">
+                        <span class="icon-eiendom r-mll t1 blue" aria-hidden="true"></span>
+                        <h1 class="r-mlm inlineblockify">Eiendom</h1>
+                    </span>
 
+                    <div class="mhm">
+                        <ol class="mhn mvm">
+                            <li class="pvs ellipsify blue">
+                                <button class="blank icon-kryss1 plm prs" ></button>
+                                <a href="#" class="search-title">
+                                    'ringstabekk', Bærum+Bærum, Eiendom
+                                </a>
+                            </li>
+                            <li class="pvs ellipsify blue">
+                                <button class="blank icon-kryss1 plm prs" ></button>
+                                <a href="#" class="search-title">
+                                    'Matamp', Musikkinstrumenter, Torget
+                                </a>
+                            </li>
+                        </ol>
+
+                    </div>
+                    <hr/>
+                    <div class="line r-cols1to3 dark-links bordered hover-background">
+                        <div class="unit">
+                             <a href="#" class="t4 blockify r-phl pvm">Bolig til salgs</a>
+                             <a href="#" class="t4 blockify r-phl pvm">Nye boliger</a>
+                             <a href="#" class="t4 blockify r-phl pvm">Boligtomter</a>
+                             <a href="#" class="t4 blockify r-phl pvm">Bolig til leie</a>
+                             <a href="#" class="t4 blockify r-phl pvm">Bolig ønskes leid</a>
+                        </div>
+                        <div class="unit">
+                             <a href="#" class="t4 blockify r-phl pvm">Næringseiendom til salgs</a>
+                             <a href="#" class="t4 blockify r-phl pvm">Næringseiendom til leie</a>
+                             <a href="#" class="t4 blockify r-phl pvm">Næringstomter</a>
+                             <a href="#" class="t4 blockify r-phl pvm">Bedrifter  til salgs</a>
+                        </div>
+                        <div class="unit">
+                             <a href="#" class="t4 blockify r-phl pvm">Fritidsbolig til salgs"</a>
+                             <a href="#" class="t4 blockify r-phl pvm">Bolig i utlandet</a>
+                             <a href="#" class="t4 blockify r-phl pvm">Fritidstomter</a>
+                             <a href="#" class="t4 blockify r-phl pvm">Ferdighus og -hytter</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mod shadow">
+            <div class="inner">
+                <div class="bd">
+                    <div class="line r-cols1to4">
+                        <div class="unit lt-green">
+                        <a href="#">
+                            <h1>Kjøpe?</h1>
+                            <p>Something Ipsum Something Ipsum Something Ipsum Something Ipsum Something Ipsum </p>
+                        </a>
+                        </div>
+
+                        <div class="unit kiwi">
+                        <a href="#">
+                            <h1>Title</h1>
+                            <p>Something Ipsum Something Ipsum Something Ipsum Something Ipsum Something Ipsum </p>
+                        </a>
+                        </div>
+
+                        <div class="unit kiwi">
+                        <a href="#">
+                            <h1>Title</h1>
+                            <p>Something Ipsum Something Ipsum Something Ipsum Something Ipsum Something Ipsum </p>
+                        </a>
+                        </div>
+
+                        <div class="unit kiwi">
+                        <a href="#">
+                            <h1>Title</h1>
+                            <p>Something Ipsum Something Ipsum Something Ipsum Something Ipsum Something Ipsum </p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+            <small class="hidden"><a href="#examples-market" id="examples-market">#</a> example-1.html</small>
+            
+
+                <pre><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;First Name&lt;/th&gt;
+            &lt;th&gt;Last Name&lt;/th&gt;
+            &lt;th&gt;Language&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Some&lt;/td&gt;
+            &lt;td&gt;One&lt;/td&gt;
+            &lt;td&gt;English&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Joe&lt;/td&gt;
+            &lt;td&gt;Sixpack&lt;/td&gt;
+            &lt;td&gt;English&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Stu&lt;/td&gt;
+            &lt;td&gt;Dent&lt;/td&gt;
+            &lt;td&gt;Code&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
 </div>
 </div>
 

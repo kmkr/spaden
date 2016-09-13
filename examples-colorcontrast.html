@@ -176,30 +176,281 @@
 
 <div class="container">
 <div class="page">
-    <h1>Notification</h1>
-            <small class="hidden"><a href="#components-notification" id="components-notification">#</a> notification.hbs</small>
-            <div class="mod mbxxl">
-    <div class="inner">
-        <div class="bd">
-            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"notification bg-red bright centerify inlineblockify"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
-            <p>The notification dot is by default an inline element but can easily be positioned by setting the <code>relativeify</code> class on its parent element and setting top,right,bottom,left for positioning. We might be able to find some patern for these but most likely a one off spesific positioning setting is nessesary for each implementation (?). </p>
-            <div class="r-margin">
-                <div class="notification bg-red bright centerify inlineblockify">1</div>
-                <div class="notification bg-red bright centerify inlineblockify">13</div>
-                <div class="notification bg-red bright centerify inlineblockify">245</div>
-            </div>
+    <h1>Color contrast</h1>
+            <small class="hidden"><a href="#examples-colorcontrast" id="examples-colorcontrast">#</a> colorcontrast.mustache</small>
+            <div class="container">
+  <div class="page">
+    <div class="line">
+    <h2>Wcag 2.0 Contrast overview (Spaden3.0+)</h2>
+    <p>Quick summary: For compliance (AA), text should have a ratio of at least 4.5:1 (larger text, at least 3:1). The WCAG 2.0 formula differentiates between text smaller than 18pt text larger than 18pt (or text that is bold and larger than 14pt). (18pt is approx 24px, 14pt is approx. 19px) </p>  
+    <table class="outerborder innerborder border-positive">
+	    <colgroup>
+		    <col class="bg-bright" />
+		    <col class="bg-bright" span="2" />
+		    <col class="bg-greyish" span="2" />
+		    <col class="bg-lilac" span="2" />
+	  	</colgroup>
+       	<thead>
+	    	<tr>
+	    		<td> </td>
+	    		<td colspan="2">On white</td>
+	    		<td colspan="2">On Blue</td>
+	    		<td colspan="2">On lilac</td>
+	    	</tr>			
+	   	</thead>
+	 	<tbody>
+		    <tr>
+		    	<td>#0077EE <code>.blue-dk</code></td>
+				<td class="blue-dk">Tekst</td><td>[4.31] 18pt+</td>
+				<td class="blue-dk">Tekst</td><td>[3.72] 18pt+</td>
+		    	<td class="blue-dk">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    </tr>
+		    <tr>
+		    	<td>#0099FF <code>.blue</code></td>
+				<td class="blue">Tekst</td><td>[3] 18pt+</td>
+				<td class="blue">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="blue">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+			 </tr>
+		    <tr>
+		    	<td>#4CB7FF <code>.blue-lt</code></td>
+				<td class="blue-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="blue-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="blue-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    </tr>
+		    <tr>
+		    	<td>#99D6FF <code>.blue-ltlt</code></td>
+				<td class="blue-ltlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="blue-ltlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="blue-ltlt">Tekst</td><td>[3.04] 18pt+</td>
+		    </tr>
+		    <tr>
+		    	<td>#E5F5FF <code>.blue-xlt</code></td>
+				<td class="blue-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="blue-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="blue-xlt">Tekst</td><td>[4.26] 18pt+</td>
+		    </tr>
+		    <tr>
+		    	<td>#F2FAFF <code>.blue-xxlt</code></td>
+				<td class="blue-xxlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="blue-xxlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="blue-xxlt">Tekst</td><td><span class="bg-green bright phs">PASS</span> [4.5]</td>
+		    </tr>
+		    <tr>
+		    	<td>#E9EFF5 <code>.blue-greyish</code></td>
+				<td class="blue-greyish">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="blue-greyish">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="blue-greyish">Tekst</td><td>[4.1] 18pt+</td>
+		    </tr>
+		    <tr>
+		    	<td>#F4F7FB <code>.blue-greyish-lt</code></td>
+				<td class="blue-greyish-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="blue-greyish-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="blue-greyish-lt">Tekst</td><td>[4.42] 18pt+</td>
+		    </tr>
 
-            <div class="r-margin">
-                <span class="bg-blue bright clickable relative pvm phl">
-                    <div class="notification topright bg-red bright centerify inlineblockify ">1</div>
-                    Finnbox
-                </span>
-            </div>
-        </div>
+
+
+		    <tr>
+		    	<td>#04253C <code>.sharp</code></td>
+				<td class="sharp">Tekst</td><td><span class="bg-green bright phs">PASS</span> [15.73]</td>
+				<td class="sharp">Tekst</td><td><span class="bg-green bright phs">PASS</span> [13.58]</td>
+		    	<td class="sharp">Tekst</td><td>[3.31] 18pt+</td>
+		    </tr>
+		    <tr>
+		    	<td>#4F6676 <code>.opaque</code></td>
+				<td class="opaque">Tekst</td><td><span class="bg-green bright phs">PASS</span> [6.01]</td>
+				<td class="opaque">Tekst</td><td><span class="bg-green bright phs">PASS</span> [5.19]</td>
+				<td class="opaque">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+			 </tr>
+		    <tr>
+		    	<td>#9BA8B1 <code>.neutral</code></td>
+				<td class="neutral">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="neutral">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="neutral">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    </tr>
+		    <tr>
+		    	<td>#CDD3D8 <code>.pale</code></td>
+				<td class="pale">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="pale">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="pale">Tekst</td><td>[3.15] 18pt+</td>
+		    </tr>
+		    <tr>
+		    	<td>#EDF0F1 <code>.bare</code></td>
+				<td class="bare">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="bare">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="bare">Tekst</td><td>[4.15] 18pt+</td>
+		    </tr>
+		    <tr>
+		    	<td>#F4F7FA <code>.bare-lt</code></td>
+				<td class="bare-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="bare-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="bare-lt">Tekst</td><td>[4.42] 18pt+</td>
+		    </tr>
+		    <tr>
+		    	<td>#FFFFFF <code>.bright</code></td>
+				<td class="bright">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="bright">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="bright">Tekst</td><td><span class="bg-green bright phs">PASS</span> [4.75]</td>
+		    </tr>
+
+
+		    <tr>
+		    	<td>#7863C8 <code>.lilac</code></td>
+				<td class="lilac">Tekst</td><td><span class="bg-green bright phs">PASS</span> [4.75]</td>
+				<td class="lilac">Tekst</td><td>[4.1] 18pt+</td>
+		    	<td class="lilac">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    </tr>
+		    <tr>
+		    	<td>#C9C1E9 <code>.lilac-lt</code></td>
+				<td class="lilac-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="lilac-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="lilac-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    </tr>
+		    <tr>
+		    	<td>#F1EFF9 <code>.lilac-xlt</code></td>
+				<td class="lilac-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="lilac-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="lilac-xlt">Tekst</td><td>[4.18] 18pt+</td>
+		    </tr>	
+
+		    <tr>
+		    	<td>#8B31E7 <code>.purple</code></td>
+				<td class="purple">Tekst</td><td><span class="bg-green bright phs">PASS</span> [5.69]</td>
+				<td class="purple">Tekst</td><td><span class="bg-green bright phs">PASS</span> [4.91]</td>
+		    	<td class="purple">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    </tr>
+		    <tr>
+		    	<td>#D1ADF5 <code>.purple-lt</code></td>
+				<td class="purple-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="purple-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="purple-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    </tr>
+		    <tr>
+		    	<td>#E8D6FA <code>.purple-xlt</code></td>
+				<td class="purple-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="purple-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="purple-xlt">Tekst</td><td>[3.49] 18pt+</td>
+		    </tr>
+
+		    <tr>
+		    	<td>#FF3BCF <code>.candy</code></td>
+				<td class="candy">Tekst</td><td>[3.1] 18pt+</td>
+				<td class="candy">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="candy">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    </tr>
+		    <tr>
+		    	<td>#FFB1EC <code>.candy-lt</code></td>
+				<td class="candy-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="candy-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="candy-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    </tr>
+		    <tr>
+		    	<td>#FFEBFA <code>.candy-xlt</code></td>
+				<td class="candy-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="candy-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="candy-xlt">Tekst</td><td>[4.19] 18pt+</td>
+		    </tr>
+
+		    <tr>
+		    	<td>#E7384A <code>.red</code></td>
+				<td class="red">Tekst</td><td>[4.15] 18pt+</td>
+				<td class="red">Tekst</td><td>[3.58] 18pt+</td>
+		    	<td class="red">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    </tr>
+		    <tr>
+		    	<td>#EE7380 <code>.red-lt</code></td>
+				<td class="red-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="red-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="red-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    </tr>
+		    <tr>
+		    	<td>#FBE3E6 <code>.red-xlt</code></td>
+				<td class="red-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="red-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="red-xlt">Tekst</td><td>[3.9] 18pt+</td>
+		    </tr>
+
+		    <tr>
+		    	<td>#FBDD25 <code>.lemon</code></td>
+				<td class="lemon">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="lemon">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="lemon">Tekst</td><td>[3.5] 18pt+</td>
+		    </tr>
+		    <tr>
+		    	<td>#FDF1A8 <code>.lemon-lt</code></td>
+				<td class="lemon-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="lemon-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="lemon-lt">Tekst</td><td>[4.15] 18pt+</td>
+		    </tr>
+		    <tr>
+		    	<td>#FEF8E4 <code>.lemon-xlt</code></td>
+				<td class="lemon-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="lemon-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="lemon-xlt">Tekst</td><td>[4.47] 18pt+</td>
+		    </tr>
+		    
+		    <tr>
+		    	<td>#CAD522 <code>.lime</code></td>
+				<td class="lime">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="lime">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="lime">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    </tr>
+		    <tr>
+		    	<td>#EEF1B6 <code>.lime-lt</code></td>
+				<td class="lime-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="lime-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="lime-lt">Tekst</td><td>[4.05] 18pt+</td>
+		    </tr>
+		    <tr>
+		    	<td>#F6F8DA <code>.lime-xlt</code></td>
+				<td class="lime-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="lime-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="lime-xlt">Tekst</td><td>[4.38] 18pt+</td>
+		    </tr>
+
+		    <tr>
+		    	<td>#E78007 <code>.rust</code></td>
+				<td class="rust">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="rust">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="rust">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    </tr>
+		    <tr>
+		    	<td>#FE8D08 <code>.rust-lt</code></td>
+				<td class="rust-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="rust-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="rust-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    </tr>
+		    <tr>
+		    	<td>#FEEFD2 <code>.rust-xlt</code></td>
+				<td class="rust-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="rust-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="rust-xlt">Tekst</td><td>[4.19] 18pt+</td>
+		    </tr>
+
+		    <tr>
+		    	<td>#3B7908 <code>.green</code></td>
+				<td class="green">Tekst</td><td><span class="bg-green bright phs">PASS</span> [5.35]</td>
+				<td class="green">Tekst</td><td><span class="bg-green bright phs">PASS</span> [4.62]</td>
+		    	<td class="green">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    </tr>
+		    <tr>
+		    	<td>#7BB02D <code>.green-lt</code></td>
+				<td class="green-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="green-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="green-lt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    </tr>
+		    <tr>
+		    	<td>#E4EFD4 <code>.green-xlt</code></td>
+				<td class="green-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+				<td class="green-xlt">Tekst</td><td><span class="bg-red bright phs">FAIL</span></td>
+		    	<td class="green-xlt">Tekst</td><td>[3.98] 18pt+</td>
+		    </tr>
+	    </tbody>
+    </table>
+      
     </div>
+  </div>
 </div>
-
 
 </div>
 </div>
