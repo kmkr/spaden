@@ -1,0 +1,219 @@
+
+
+
+<div class="container">
+	<div class="page">
+		<div class="mod green-skin">
+			<div class="inner">
+				<div class="bd">
+					<p>Experimental example</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="mod shadow">
+			<div class="inner pvn">
+				<div class="bd">
+					<h2>Flex example</h2>
+					<p>Using flex together with std line > unit > mod > inner > bd </p>
+					<p class="red">! Works in modern browsewrs wigth some exceptions ref: <a href="http://caniuse.com/#search=flex">Can i use flex</a>. Make sure your stuff falls back nicely if you use this. Take special notice in firefox v27 and below (.wrap didnt work until v28, March 2014) </p>
+<h5>Code example</h5>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;line flex wrap r-cols1to3&quot;&gt;
+	&lt;div class=&quot;unit flex&quot;&gt;
+
+		&lt;div class=&quot;mod shadow flex&quot;&gt;
+			&lt;div class=&quot;inner&quot;&gt;
+				&lt;div class=&quot;bd&quot;&gt;
+					...
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		...
+
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+					<p>Works well with most implemented ways of controlling unit widths on different breakpoints as documented in the <a href="/core/grid/view">grid system</a>.</p>
+<h5>Code example</h5>
+					<pre class="prettyprint linenums">
+&lt;div class=&quot;line flex wrap cols1upto480 cols2upto768 cols3upto990 cols3from990&quot;&gt;
+	&lt;div class=&quot;unit flex&quot;&gt;
+
+		&lt;div class=&quot;mod shadow flex&quot;&gt;
+			&lt;div class=&quot;inner&quot;&gt;
+				&lt;div class=&quot;bd&quot;&gt;
+					...
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		...
+
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<p>Combination of r-colsXtoY and colsXupto[breakpoint] (sometimes r-cols needs to be tuned just a little bit) </p>
+<h5>Code example</h5>
+<pre class="prettyprint linenums">&lt;div class=&quot;line flex wrap cols1upto480 r-cols2to3&quot;&gt;
+	&lt;div class=&quot;unit flex&quot;&gt;
+
+		&lt;div class=&quot;mod shadow flex&quot;&gt;
+			&lt;div class=&quot;inner&quot;&gt;
+				&lt;div class=&quot;bd&quot;&gt;
+					...
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		...
+
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+				</div>
+			</div>
+		</div>
+
+		<div class="line flex wrap cols1upto768 cols2upto990 cols3from990">
+			<div class="unit flex">
+				<div class="mod shadow flex">
+					<div class="inner">
+						<div class="bd">
+							<h5>Mod A</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="unit flex">
+				<div class="mod shadow flex">
+					<div class="inner">
+						<div class="bd">
+							<h5>Mod B</h5>
+							<p>More content in this mod.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="unit flex">
+				<div class="mod shadow flex">
+					<div class="inner">
+						<div class="bd">
+							<h5>Mod C</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="unit flex">
+				<div class="mod shadow flex">
+					<div class="inner">
+						<div class="bd">
+							<h5>Mod D</h5>
+							<div class="r-margin" style="outline:1px solid red;Height:100px;"> </div>
+							<p>Awsome picture or something</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="unit flex">
+				<div class="mod shadow flex">
+					<div class="inner">
+						<div class="bd">
+							<h5>Mod E</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="unit flex">
+				<div class="mod shadow flex">
+					<div class="inner">
+						<div class="bd">
+							<h5>Mod F</h5>
+							<p>More content in this mod.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="unit flex" style="width:100%">
+				<div class="mod shadow flex">
+					<div class="inner">
+						<div class="bd">
+							<h5>Mod G</h5>
+							<p>Forced to 100%</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="unit flex">
+				<a href="#" class="mod shadow flex clickable linkblock">
+					<div class="inner ">
+						<div class="bd">
+							<h5>Mod H</h5>
+							<p><code>.mod.clickable</code></p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="unit flex">
+				<a href="#" class="mod shadow flex clickable linkblock">
+					<div class="inner ">
+						<div class="bd">
+							<h5>Mod I</h5>
+							<p><code>.mod.clickable</code></p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="unit flex">
+				<a href="#" class="mod shadow flex clickable linkblock">
+					<div class="inner ">
+						<div class="bd">
+							<h5>Mod J</h5>
+							<p><code>.mod.clickable</code></p>
+						</div>
+					</div>
+				</a>
+			</div>
+						<div class="unit flex">
+				<a href="#" class="mod shadow flex clickable linkblock">
+					<div class="inner ">
+						<div class="bd">
+							<h5>Mod K</h5>
+							<p><code>.mod.clickable</code></p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="unit flex">
+				<a href="#" class="mod shadow flex clickable linkblock">
+					<div class="inner ">
+						<div class="bd">
+							<h5>Mod L</h5>
+							<p><code>.mod.clickable</code></p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="unit flex">
+				<a href="#" class="mod shadow flex clickable linkblock">
+					<div class="inner ">
+						<div class="bd">
+							<h5>Mod M</h5>
+							<p><code>.mod.clickable</code></p>
+						</div>
+					</div>
+				</a>
+			</div>
+						<div class="unit flex" style="width:100%">
+				<div class="mod shadow flex">
+					<div class="inner">
+						<div class="bd">
+							<h5>Mod N</h5>
+							<p>Forced to 100%</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

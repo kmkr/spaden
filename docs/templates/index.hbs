@@ -1,21 +1,25 @@
-<div class="_outlines">
+<div class="outlines">
 <div id="leftmenu" class="leftmenu brt fixed bg-blue-xlt">
   <div class="navbar bbt relative">
 
   </div>
-  <nav class="mtm mbxxl">
+  <nav class="mtm">
     <dl id="tree-menu">
     {{#each data}}
-        <h3>{{title}}</h3>
-        <hr />
-        {{#each children}}
-        <dt>{{title}}</dt>
-        <dd class="dark-links">
+        <div class="doc-{{title}}">
+            <hr />
+            <h3>{{title}}</h3>
+            <hr />
             {{#each children}}
-                <a href="{{href}}" data-ref="{{ref}}">{{title}}</a>
-            {{/each}}
-        </dd>
+            <dt>{{title}}</dt>
+            <dd class="dark-links">
+                {{#each children}}
+                    <a href="{{href}}" data-ref="{{ref}}">{{title}}</a>
+                {{/each}}
+            </dd>
+
         {{/each}}
+    </div>
     {{/each}}
     </dl>
   </nav>
@@ -43,15 +47,82 @@
 
         <div class="mod mbxxl">
             <div class="inner">
-                <div class="bd ptl relative">
-                    <div class="relative inlineblockify">
-                        <h1 style="font-size:5em">Spaden</h1>
-                        <span class="d1 absolute grey-xdk" style="bottom:6px;left:90px">IMPLEMENTATIONGUIDE</span>
-                        <span class="d1 absolute blue-dk" style="top:20px;right:24px">{{version}}</span>
+                <div class="bd ptl">
+                    <div class="media pan man">
+                        <div class="img relative inlineblockify">
+                            <h1 style="font-size:5em">Spaden</h1>
+                            <span class="d1 absolute grey-xdk" style="bottom:6px;left:90px">IMPLEMENTATIONGUIDE</span>
+                            <span class="d1 absolute grey-xdk" style="top:20px;right:24px">{{version}}</span>
+                        </div>
+                        <div class="bd ptl mtl">
+                            <p class="rightify">This document is currently using Spaden version: <a href="//npmjs.org/package/spaden"><span class="strong">{{version}}</span></a>, <a href="//github.com/finn-no/spaden/blob/master/CHANGELOG.md">change log</a> </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="mod mbxxl">
+            <div class="inner">
+
+                <div class="bd">
+                    <h3 class="mtl">Using Spaden in your application</h3>
+                    <p>Spaden CSS is available on NPM:</p>
+                    <pre><code>$ npm install spaden --save</code></pre>
+                    <p>Or latest major version from FINN CDN:</p>
+                    <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;//static.finncdn.no/bb/latest/css/spaden/5.x/spaden.min.css&quot;&gt;</code></pre>
+                    <p>Or a specific version from FINN CDN:</p>
+                    <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;//static.finncdn.no/bb/css/spaden/5.2.1/spaden.min.css&quot;&gt;</code></pre>
+                        <details id="detailspolyfill_197687173" role="group">
+                            <summary class="r-margin clickable normal" aria-expanded="false" tabindex="0" role="button" aria-controls="detailspolyfill_197687173">Legacy browsers and print</summary>
+                            <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"print"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"//static.finncdn.no/bb/latest/css/spaden/print.min.css"</span><span class="tag">&gt;</span></code></li><li class="L1"><code></code></li><li class="L2"><code><span class="com">&lt;!--[if IE 9]&gt;</span></code></li><li class="L3"><code><span class="com">&lt;link rel="stylesheet" href="//static.finncdn.no/bb/latest/css/spaden/ie9.min.css"&gt;</span></code></li><li class="L4"><code><span class="com">&lt;![endif]--&gt;</span></code></li><li class="L5"><code></code></li><li class="L6"><code><span class="com">&lt;!--[if IE 8]&gt;</span></code></li><li class="L7"><code><span class="com">&lt;link rel="stylesheet" href="//static.finncdn.no/bb/latest/css/spaden/ie8.min.css"&gt;</span></code></li><li class="L8"><code><span class="com">&lt;![endif]--&gt;</span></code></li><li class="L9"><code></code></li><li class="L0"><code><span class="com">&lt;!--[if lte IE 8]&gt;</span></code></li><li class="L1"><code><span class="com">&lt;link rel="stylesheet" href="//static.finncdn.no/bb/latest/css/spaden/ie.min.css"&gt;</span></code></li><li class="L2"><code><span class="com">&lt;![endif]--&gt;</span></code></li></ol></pre>
+                        </details>
+
+                        <details id="detailspolyfill_228063770" role="group">
+                            <summary class="r-margin clickable normal" aria-expanded="false" tabindex="0" role="button" aria-controls="detailspolyfill_228063770">Favicons</summary>
+                            <p>
+                            </p><ol class="decimals">
+                                <li>Download this archive:  <a href="/finn_faviconpack_1.zip">faviconpack</a></li>
+                                <li>Extract this archive in the root of your web site. If your site is <code>http://mysite.com</code>, you should be able to access a file named <code>http://mysite.com/favicon.ico</code></li>
+                                <li>Insert the following code in the <code>HEAD</code> section of your pages:</li>
+                            </ol>
+                            <pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"shortcut icon"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/favicon.ico"</span><span class="tag">&gt;</span></code></li><li class="L1"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"apple-touch-icon"</span><span class="pln"> </span><span class="atn">sizes</span><span class="pun">=</span><span class="atv">"57x57"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/apple-touch-icon-57x57.png"</span><span class="tag">&gt;</span></code></li><li class="L2"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"apple-touch-icon"</span><span class="pln"> </span><span class="atn">sizes</span><span class="pun">=</span><span class="atv">"60x60"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/apple-touch-icon-60x60.png"</span><span class="tag">&gt;</span></code></li><li class="L3"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"apple-touch-icon"</span><span class="pln"> </span><span class="atn">sizes</span><span class="pun">=</span><span class="atv">"72x72"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/apple-touch-icon-72x72.png"</span><span class="tag">&gt;</span></code></li><li class="L4"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"apple-touch-icon"</span><span class="pln"> </span><span class="atn">sizes</span><span class="pun">=</span><span class="atv">"76x76"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/apple-touch-icon-76x76.png"</span><span class="tag">&gt;</span></code></li><li class="L5"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"apple-touch-icon"</span><span class="pln"> </span><span class="atn">sizes</span><span class="pun">=</span><span class="atv">"114x114"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/apple-touch-icon-114x114.png"</span><span class="tag">&gt;</span></code></li><li class="L6"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"apple-touch-icon"</span><span class="pln"> </span><span class="atn">sizes</span><span class="pun">=</span><span class="atv">"120x120"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/apple-touch-icon-120x120.png"</span><span class="tag">&gt;</span></code></li><li class="L7"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"apple-touch-icon"</span><span class="pln"> </span><span class="atn">sizes</span><span class="pun">=</span><span class="atv">"144x144"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/apple-touch-icon-144x144.png"</span><span class="tag">&gt;</span></code></li><li class="L8"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"apple-touch-icon"</span><span class="pln"> </span><span class="atn">sizes</span><span class="pun">=</span><span class="atv">"152x152"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/apple-touch-icon-152x152.png"</span><span class="tag">&gt;</span></code></li><li class="L9"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"apple-touch-icon"</span><span class="pln"> </span><span class="atn">sizes</span><span class="pun">=</span><span class="atv">"180x180"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/apple-touch-icon-180x180.png"</span><span class="tag">&gt;</span></code></li><li class="L0"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"icon"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"image/png"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/favicon-t-32x32.png"</span><span class="pln"> </span><span class="atn">sizes</span><span class="pun">=</span><span class="atv">"32x32"</span><span class="tag">&gt;</span></code></li><li class="L1"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"icon"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"image/png"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/favicon-t-192x192.png"</span><span class="pln"> </span><span class="atn">sizes</span><span class="pun">=</span><span class="atv">"192x192"</span><span class="tag">&gt;</span></code></li><li class="L2"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"icon"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"image/png"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/favicon-t-96x96.png"</span><span class="pln"> </span><span class="atn">sizes</span><span class="pun">=</span><span class="atv">"96x96"</span><span class="tag">&gt;</span></code></li><li class="L3"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"icon"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"image/png"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/favicon-t-16x16.png"</span><span class="pln"> </span><span class="atn">sizes</span><span class="pun">=</span><span class="atv">"16x16"</span><span class="tag">&gt;</span></code></li><li class="L4"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"manifest"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/manifest.json"</span><span class="tag">&gt;</span></code></li><li class="L5"><code><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"mask-icon"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/safari-pinned-tab.svg"</span><span class="pln"> </span><span class="atn">color</span><span class="pun">=</span><span class="atv">"#06befb"</span><span class="tag">&gt;</span></code></li><li class="L6"><code><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"msapplication-TileColor"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"#06befb"</span><span class="tag">&gt;</span></code></li><li class="L7"><code><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"msapplication-TileImage"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"/mstile-144x144.png"</span><span class="tag">&gt;</span></code></li><li class="L8"><code><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"theme-color"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"#06befb"</span><span class="tag">&gt;</span></code></li></ol></pre>
+                        </details>
+                </div>
+            </div>
+        </div>
+        <h3>This doc and organization</h3>
+        <p>Spaden is devided into a core and a Component section, where the core pack contains a minimum base styling needed for most pages. The component section is a mixture of specific css to solve specific needs, and pure markup examples using classes from the core pack. The example section contains some of the examples/prototypes/proposals from the last couple of years, these may or may not be up to date and they are mostly kept for reference.</p>
+        <div class="line r-cols1to3 mbxxl r-mhl">
+            <div class="unit">
+                <div class="mod">
+                    <div class="inner bg-blue-xlt bas roundify border-blue">
+                        <div class="bd relative">
+                            <h3>Core</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit">
+                <div class="mod">
+                    <div class="inner bg-blue-xlt bas roundify border-blue">
+                        <div class="bd relative">
+                            <h3>Components</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="unit">
+                <div class="mod green-skin">
+                    <div class="inner pvn bas roundify">
+                        <div class="bd relative">
+                            <h3>Examples</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
 
         {{#each data}}
 

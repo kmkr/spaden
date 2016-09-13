@@ -114,6 +114,14 @@ h1.fancy:after {
 
 .lm-button {}
 
+/* Nasty little hiding for niceness*/
+.doc-Core>hr:first-child { display: none; }
+/* */
+.doc-Examples{
+    background-color: #e6fef7;
+    padding-bottom:60px;
+}
+
 .leftmenu dt {
     color: #333;
     font-weight: bold;

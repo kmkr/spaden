@@ -1,0 +1,1119 @@
+<style>
+.flex{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex: 0 1 auto; /* Specify the same default for all browsers - IE10 default appears to be something else and thus widths are calculated differently */
+  min-width: 0; /* Fix for issue where flex elements containing truncated text break due to initial value being auto */
+}
+
+/* Nødvendig for prototypen pga specificitets tøbbel? */
+.flex.mod{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+ }
+
+.flex.mod,
+.flex.mod .inner{
+  width:100%;
+}
+/* wrap finnes i spaden fra før */
+.flex.wrap { flex-wrap: wrap; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; }
+.flex.nowrap { flex-wrap: nowrap; -webkit-flex-wrap: nowrap; -webkit-flex-wrap: nowrap; }
+.flex.wrap-reverse { flex-wrap: wrap-reverse; }
+
+.result-item-logo {
+    max-height: 100%;
+}
+
+.listing .logo {
+    background: #fff;
+    padding: 5%;
+    line-height: 0;
+}
+
+.view-list .mod.flex .img {
+    float: left;
+    width: 33%;
+    margin: 5px 10px;
+}
+
+.view-list .result-item { width: 100%; }
+
+@media screen and (min-width: 768px) {
+    .view-grid .flex-unit {
+        font-size: 12px;
+    }
+    .view-grid .result.logo {
+        margin: 20px 20px 10px 20px;
+    }
+    .view-grid .d1,
+    .view-grid .objectstatus {
+        font-size: 11px;
+    }
+    .view-grid .t4 {
+        font-size: 14px;
+    }
+    .view-grid h3 {
+        font-size: 18px;
+    }
+    .view-grid .result-item-logo-container {
+        height: 25px;
+    }
+    .view-grid .truncate {
+        white-space: normal;
+    }
+    .view-list .result-item-logo-container {
+        height: 40px;
+        line-height: 0;
+    }
+    .view-list .mod.flex .img {
+        margin: 10px 20px;
+    }
+    .view-list .listing .inner {
+        padding-top: 10px!important;
+        padding-bottom: 10px!important;
+    }
+}
+</style>
+
+
+
+<div class="container">
+<div class="page">
+    <div class="mod green-skin">
+    	<div class="inner">
+    		<div class="bd">
+    			<p>Experimental example</p>
+    		</div>
+    	</div>
+    </div>
+    <div class="mod shadow">
+        <div class="inner bg-lemon-xlt">
+            <div class="bd">
+                <p class="rightify mvn">
+                    <a href="#" id="view-realestate">Eiendom</a> / <a href="#" id="view-job">Jobb</a> / <a href="#" id="view-list">Liste</a> / <a href="#" id="view-grid">Grid</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="unit r-size1of3">
+            <div class="mod shadow">
+                <div class="inner filters pan">
+                    <div class="bd">
+                        <div class="filter r-pvm">
+                            <div class="r-margin">
+                                <input type="search" name="q" placeholder="Søk">
+                            </div>
+                        </div>
+
+                        <hr class="man" role="presentation">
+
+                        <div class="filter r-pvm">
+                            <h4 class="truncate t5">Område</h4>
+                            <ul>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox1" checked>
+                                        <label for="fancycheckbox1" class="blockify">Akershus <span class="d1 neutral">(3005)</span></label>
+                                    </div>
+                                    <ul class="mvn">
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-1">
+                                                <label for="fancycheckbox1-1" class="blockify">Asker <span class="d1 neutral">(128)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-2">
+                                                <label for="fancycheckbox1-2" class="blockify"><span class="opacity75">Aurskog Høland <span class="d1 neutral">(0)</span></span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-3">
+                                                <label for="fancycheckbox1-3" class="blockify">Bærum <span class="d1 neutral">(433)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-4">
+                                                <label for="fancycheckbox1-4" class="blockify">Eidsvoll <span class="d1 neutral">(93)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-5">
+                                                <label for="fancycheckbox1-5" class="blockify">Enebakk <span class="d1 neutral">(45)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-6">
+                                                <label for="fancycheckbox1-6" class="blockify">Fet <span class="d1 neutral">(36)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-7">
+                                                <label for="fancycheckbox1-7" class="blockify">Frogn - Drøbak <span class="d1 neutral">(37)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-8">
+                                                <label for="fancycheckbox1-8" class="blockify">Gjerdrum <span class="d1 neutral">(42)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-9">
+                                                <label for="fancycheckbox1-9" class="blockify">Hole <span class="d1 neutral">(1)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-10">
+                                                <label for="fancycheckbox1-10" class="blockify">Hurdal <span class="d1 neutral">(28)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-11">
+                                                <label for="fancycheckbox1-11" class="blockify">Lørenskog <span class="d1 neutral">(382)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-12">
+                                                <label for="fancycheckbox1-12" class="blockify">Nannestad <span class="d1 neutral">(113)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-13">
+                                                <label for="fancycheckbox1-13" class="blockify">Nes (Akershus) <span class="d1 neutral">(113)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-14">
+                                                <label for="fancycheckbox1-14" class="blockify">Nesodden <span class="d1 neutral">(60)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-15">
+                                                <label for="fancycheckbox1-15" class="blockify">Nittedal <span class="d1 neutral">(93)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-16">
+                                                <label for="fancycheckbox1-16" class="blockify">Oppegård <span class="d1 neutral">(145)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-17">
+                                                <label for="fancycheckbox1-17" class="blockify">Rælingen <span class="d1 neutral">(41)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-18">
+                                                <label for="fancycheckbox1-18" class="blockify">Skedsmo <span class="d1 neutral">(260)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-19">
+                                                <label for="fancycheckbox1-19" class="blockify">Ski <span class="d1 neutral">(80)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-20">
+                                                <label for="fancycheckbox1-20" class="blockify">Sørum <span class="d1 neutral">(161)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-21">
+                                                <label for="fancycheckbox1-21" class="blockify">Ullensaker <span class="d1 neutral">(474)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-22">
+                                                <label for="fancycheckbox1-22" class="blockify">Vestby - Son <span class="d1 neutral">(105)</span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fancyinput">
+                                                <input type="checkbox" id="fancycheckbox1-23">
+                                                <label for="fancycheckbox1-23" class="blockify">Ås <span class="d1 neutral">(31)</span></label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox2">
+                                        <label for="fancycheckbox2" class="blockify">Aust-Agder <span class="d1 neutral">(1162)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox3">
+                                        <label for="fancycheckbox3" class="blockify">Buskerud <span class="d1 neutral">(1310)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox4">
+                                        <label for="fancycheckbox4" class="blockify">Finnmark <span class="d1 neutral">(273)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox5">
+                                        <label for="fancycheckbox5" class="blockify">Hedmark <span class="d1 neutral">(938)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox6">
+                                        <label for="fancycheckbox6" class="blockify">Hordaland <span class="d1 neutral">(2608)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox7">
+                                        <label for="fancycheckbox7" class="blockify">Møre og Romsdal <span class="d1 neutral">(1710)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox8">
+                                        <label for="fancycheckbox8" class="blockify">Nord-Trøndelag <span class="d1 neutral">(829)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox9">
+                                        <label for="fancycheckbox9" class="blockify">Nordland <span class="d1 neutral">(859)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox10">
+                                        <label for="fancycheckbox10" class="blockify">Oppland <span class="d1 neutral">(732)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox11">
+                                        <label for="fancycheckbox11" class="blockify">Oslo <span class="d1 neutral">(2198)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox12">
+                                        <label for="fancycheckbox12" class="blockify">Rogaland <span class="d1 neutral">(4099)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox13">
+                                        <label for="fancycheckbox13" class="blockify">Sogn og Fjordane <span class="d1 neutral">(409)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox14">
+                                        <label for="fancycheckbox14" class="blockify">Svalbard <span class="d1 neutral">(1)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox15">
+                                        <label for="fancycheckbox15" class="blockify">Sør-Trøndelag <span class="d1 neutral">(2031)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox16">
+                                        <label for="fancycheckbox16" class="blockify">Telemark <span class="d1 neutral">(728)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox17">
+                                        <label for="fancycheckbox17" class="blockify">Troms <span class="d1 neutral">(788)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox18">
+                                        <label for="fancycheckbox18" class="blockify">Vest-Agder <span class="d1 neutral">(1539)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox19">
+                                        <label for="fancycheckbox19" class="blockify">Vestfold <span class="d1 neutral">(1233)</span></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fancyinput">
+                                        <input type="checkbox" id="fancycheckbox20">
+                                        <label for="fancycheckbox20" class="blockify">Østfold <span class="d1 neutral">(1414)</span></label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr class="man" role="presentation">
+
+                        <div class="filter r-pvm">
+                            <h4 class="truncate t5">Pris</h4>
+                            <div class="r-margin">
+                                <div class="finn-slider">
+
+                                    <button type="button" class="blank pan" data-label="Pris" aria-haspopup="true">
+                                        <output class="finn-slider-output d1">Under 1 000 000 – Over 10 000 000 kr</output>
+                                    </button>
+                                    <div class="finn-slider-track"></div>
+                                    <div class="finn-slider-track-inner" style="left: 14.5px; right: 14.5px;"></div>
+                                    <div class="finn-slider-thumb" aria-label="" tabindex="0" role="slider" aria-valuemin="" aria-valuemax="" aria-valuenow="" aria-valuetext="" style="left: 0;"></div>
+                                    <div class="finn-slider-thumb" aria-label="" style="right: 0;" tabindex="0" role="slider" aria-valuemin="" aria-valuemax="" aria-valuenow="" aria-valuetext=""></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <hr class="man" role="presentation">
+
+                        <div class="filter r-pvm">
+                            <h4 class="truncate t5">Størrelse</h4>
+                            <div class="r-margin">
+                                <div class="finn-slider">
+
+                                    <button type="button" class="blank pan" data-label="Pris" aria-haspopup="true">
+                                        <output class="finn-slider-output d1">Under 30 – Over 400 m²</output>
+                                    </button>
+                                    <div class="finn-slider-track"></div>
+                                    <div class="finn-slider-track-inner" style="left: 14.5px; right: 14.5px;"></div>
+                                    <div class="finn-slider-thumb" aria-label="" tabindex="0" role="slider" aria-valuemin="" aria-valuemax="" aria-valuenow="" aria-valuetext="" style="left: 0;"></div>
+                                    <div class="finn-slider-thumb" aria-label="" style="right: 0;" tabindex="0" role="slider" aria-valuemin="" aria-valuemax="" aria-valuenow="" aria-valuetext=""></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="man" role="presentation">
+
+                        <div class="filter r-pvm">
+                            <h4 class="truncate t5">Antall soverom</h4>
+
+
+                            <div class="input r-margin">
+                                <div class="button-group line" role="radiogroup">
+                                    <input tabindex="0" data-selector="" id="sr0" type="radio" value="1" name="bedrooms" checked>
+                                    <label class="pas size1of6 centerify" for="sr0">Alle</label>
+                                    <input tabindex="0" data-selector="" id="sr1" type="radio" value="1" name="bedrooms">
+                                    <label class="pas size1of6 centerify" for="sr1">1+</label>
+                                    <input tabindex="0" data-selector="" id="sr2" type="radio" value="2" name="bedrooms">
+                                    <label class="pas size1of6 centerify" for="sr2">2+</label>
+                                    <input tabindex="0" data-selector="" id="sr3" type="radio" value="3" name="bedrooms">
+                                    <label class="pas size1of6 centerify" for="sr3">3+</label>
+                                    <input tabindex="0" data-selector="" id="sr4" type="radio" value="4" name="bedrooms">
+                                    <label class="pas size1of6 centerify" for="sr4">4+</label>
+                                    <input tabindex="0" data-selector="" id="sr5" type="radio" value="5" name="bedrooms">
+                                    <label class="pas size1of6 centerify" for="sr5">5+</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="unit r-size2of3">
+            <div class="line view-grid flex wrap cols1upto480 cols2upto990 cols3from990 realestate">
+                <!-- -->
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                      <div class="inner">
+                        <div class="bd">
+
+                            <div class="img">
+                                <div class="format4by3">
+                                    <img src="/img/dummies/300x225.jpg" class="centered-element" style="width: 100%;" alt="" srcset="/img/dummies/480x360.jpg 480w, /img/dummies/240x180.jpg 240w, /img/dummies/320x240.jpg 320w, /img/dummies/640x480.jpg 640w, /img/dummies/960x720.jpg 960w" sizes="(min-width: 990px) 210px, (min-width: 768px) 33vw, (min-width: 480px) 50vw">
+                                </div>
+                            </div>
+
+                            <div class="r-margin bd">
+                                <div class="line r-pbs">
+                                    <p class="unit size1of2 d1 man"><span class="objectstatus">Ukens bolig</span></p>
+                                    <p class="d1 truncate opaque rightify man">Nordvågen</p>
+                                </div>
+
+                                <h3 class="pvt man word-break">Solveien 19</h3>
+                                <p class="t4 man truncate pvt">
+                                    <span class="prm">192 m²</span>
+                                    <span class="prm">1&nbsp;450&nbsp;000,-</span>
+                                </p>
+                                <p class="d1 truncate man r-mtm">
+                                    <span class="opaque">EiendomsMegler 1 Hammerfest</span>
+                                </p>
+                                <p class="d1 truncate man fleft">
+                                    <span class="opaque">Eier (Selveier) • Enebolig • 4 soverom</span>
+                                </p>
+                                <p class="mat fright rightify result-item-logo-container hide-lt768">
+                                    <img class="result-item-logo" alt="" src="/img/dummies/logo160x120.jpg">
+                                </p>
+                            </div>
+
+                        </div>
+                      </div>
+                    </a>
+                </div>
+                <!-- -->
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                      <div class="inner">
+                        <div class="bd">
+
+                            <div class="img">
+                                <div class="format4by3">
+                                    <img src="/img/dummies/300x225.jpg" class="centered-element" style="width: 100%;" alt="" srcset="/img/dummies/480x360.jpg 480w, /img/dummies/240x180.jpg 240w, /img/dummies/320x240.jpg 320w, /img/dummies/640x480.jpg 640w, /img/dummies/960x720.jpg 960w" sizes="(min-width: 990px) 210px, (min-width: 768px) 33vw, (min-width: 480px) 50vw">
+                                </div>
+                            </div>
+
+                            <div class="r-margin bd">
+                                <div class="line r-pbs">
+                                    <p class="d1 truncate opaque rightify man">Nordvågen</p>
+                                </div>
+
+                                <h3 class="pvt man word-break">Solveien 19</h3>
+                                <p class="t4 man truncate pvt">
+                                    <span class="prm">192 m²</span>
+                                    <span class="prm">1&nbsp;450&nbsp;000,-</span>
+                                </p>
+                                <p class="d1 truncate man r-mtm">
+                                    <span class="opaque">EiendomsMegler 1 Hammerfest</span>
+                                </p>
+                                <p class="d1 truncate man fleft">
+                                    <span class="opaque">Eier (Selveier) • Enebolig • 4 soverom</span>
+                                </p>
+                                <p class="mat fright rightify result-item-logo-container hide-lt768">
+                                    <img class="result-item-logo" alt="" src="/img/dummies/logo160x120.jpg">
+                                </p>
+                            </div>
+
+                        </div>
+                      </div>
+                    </a>
+                </div>
+                <!-- -->
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                      <div class="inner">
+                        <div class="bd">
+
+                            <div class="img">
+                                <div class="format4by3">
+                                    <img src="/img/dummies/300x225.jpg" class="centered-element" style="width: 100%;" alt="" srcset="/img/dummies/480x360.jpg 480w, /img/dummies/240x180.jpg 240w, /img/dummies/320x240.jpg 320w, /img/dummies/640x480.jpg 640w, /img/dummies/960x720.jpg 960w" sizes="(min-width: 990px) 210px, (min-width: 768px) 33vw, (min-width: 480px) 50vw">
+                                </div>
+                            </div>
+
+                            <div class="r-margin bd">
+                                <div class="line r-pbs">
+                                    <p class="d1 truncate opaque rightify man">Nordvågen</p>
+                                </div>
+
+                                <h3 class="pvt man word-break">Solveien 19</h3>
+                                <p class="t4 man truncate pvt">
+                                    <span class="prm">192 m²</span>
+                                    <span class="prm">1&nbsp;450&nbsp;000,-</span>
+                                </p>
+                                <p class="d1 truncate man r-mtm">
+                                    <span class="opaque">EiendomsMegler 1 Hammerfest</span>
+                                </p>
+                                <p class="d1 truncate man fleft">
+                                    <span class="opaque">Eier (Selveier) • Enebolig • 4 soverom</span>
+                                </p>
+                                <p class="mat fright rightify result-item-logo-container hide-lt768">
+                                    <img class="result-item-logo" alt="" src="/img/dummies/logo160x120.jpg">
+                                </p>
+                            </div>
+
+                        </div>
+                      </div>
+                    </a>
+                </div>
+                <!-- -->
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                      <div class="inner">
+                        <div class="bd">
+
+                            <div class="img">
+                                <div class="format4by3">
+                                    <img src="/img/dummies/300x225.jpg" class="centered-element" style="width: 100%;" alt="" srcset="/img/dummies/480x360.jpg 480w, /img/dummies/240x180.jpg 240w, /img/dummies/320x240.jpg 320w, /img/dummies/640x480.jpg 640w, /img/dummies/960x720.jpg 960w" sizes="(min-width: 990px) 210px, (min-width: 768px) 33vw, (min-width: 480px) 50vw">
+                                </div>
+                            </div>
+
+                            <div class="r-margin bd">
+                                <div class="line r-pbs">
+                                    <p class="d1 truncate opaque rightify man">Nordvågen</p>
+                                </div>
+
+                                <h3 class="pvt man word-break">Solveien 19</h3>
+                                <p class="t4 man truncate pvt">
+                                    <span class="prm">192 m²</span>
+                                    <span class="prm">1&nbsp;450&nbsp;000,-</span>
+                                </p>
+                                <p class="d1 truncate man r-mtm">
+                                    <span class="opaque">EiendomsMegler 1 Hammerfest</span>
+                                </p>
+                                <p class="d1 truncate man fleft">
+                                    <span class="opaque">Eier (Selveier) • Enebolig • 4 soverom</span>
+                                </p>
+                                <p class="mat fright rightify result-item-logo-container hide-lt768">
+                                    <img class="result-item-logo" alt="" src="/img/dummies/logo160x120.jpg">
+                                </p>
+                            </div>
+
+                        </div>
+                      </div>
+                    </a>
+                </div>
+                <!-- -->
+
+                <!-- -->
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                      <div class="inner">
+                        <div class="bd">
+
+                            <div class="img">
+                                <div class="format4by3">
+                                    <img src="/img/dummies/300x225.jpg" class="centered-element" style="width: 100%;" alt="" srcset="/img/dummies/480x360.jpg 480w, /img/dummies/240x180.jpg 240w, /img/dummies/320x240.jpg 320w, /img/dummies/640x480.jpg 640w, /img/dummies/960x720.jpg 960w" sizes="(min-width: 990px) 210px, (min-width: 768px) 33vw, (min-width: 480px) 50vw">
+                                </div>
+                            </div>
+
+                            <div class="r-margin bd">
+                                <div class="line r-pbs">
+                                    <p class="d1 truncate opaque rightify man">Nordvågen</p>
+                                </div>
+
+                                <h3 class="pvt man word-break">Solveien 19</h3>
+                                <p class="t4 man truncate pvt">
+                                    <span class="prm">192 m²</span>
+                                    <span class="prm">1&nbsp;450&nbsp;000,-</span>
+                                </p>
+                                <p class="d1 truncate man r-mtm">
+                                    <span class="opaque">EiendomsMegler 1 Hammerfest</span>
+                                </p>
+                                <p class="d1 truncate man fleft">
+                                    <span class="opaque">Eier (Selveier) • Enebolig • 4 soverom</span>
+                                </p>
+                                <p class="mat fright rightify result-item-logo-container hide-lt768">
+                                    <img class="result-item-logo" alt="" src="/img/dummies/logo160x120.jpg">
+                                </p>
+                            </div>
+
+                        </div>
+                      </div>
+                    </a>
+                </div>
+                <!-- -->
+                <!-- -->
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                      <div class="inner">
+                        <div class="bd">
+
+                            <div class="img">
+                                <div class="format4by3">
+                                    <img src="/img/dummies/300x225.jpg" class="centered-element" style="width: 100%;" alt="" srcset="/img/dummies/480x360.jpg 480w, /img/dummies/240x180.jpg 240w, /img/dummies/320x240.jpg 320w, /img/dummies/640x480.jpg 640w, /img/dummies/960x720.jpg 960w" sizes="(min-width: 990px) 210px, (min-width: 768px) 33vw, (min-width: 480px) 50vw">
+                                </div>
+                            </div>
+
+                            <div class="r-margin bd">
+                                <div class="line r-pbs">
+                                    <p class="d1 truncate opaque rightify man">Nordvågen</p>
+                                </div>
+
+                                <h3 class="pvt man word-break">Solveien 19</h3>
+                                <p class="t4 man truncate pvt">
+                                    <span class="prm">192 m²</span>
+                                    <span class="prm">1&nbsp;450&nbsp;000,-</span>
+                                </p>
+                                <p class="d1 truncate man r-mtm">
+                                    <span class="opaque">EiendomsMegler 1 Hammerfest</span>
+                                </p>
+                                <p class="d1 truncate man fleft">
+                                    <span class="opaque">Eier (Selveier) • Enebolig • 4 soverom</span>
+                                </p>
+                                <p class="mat fright rightify result-item-logo-container hide-lt768">
+                                    <img class="result-item-logo" alt="" src="/img/dummies/logo160x120.jpg">
+                                </p>
+                            </div>
+
+                        </div>
+                      </div>
+                    </a>
+                </div>
+                <!-- -->
+                <div class="mod shadow" style="width: 100%;">
+                    <div class="inner bg-rust-xlt">
+                        <div class="bd">
+                            <h1 class="rust centerify">Banner</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- -->
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                      <div class="inner">
+                        <div class="bd">
+
+                            <div class="img">
+                                <div class="format4by3">
+                                    <img src="/img/dummies/300x225.jpg" class="centered-element" style="width: 100%;" alt="" srcset="/img/dummies/480x360.jpg 480w, /img/dummies/240x180.jpg 240w, /img/dummies/320x240.jpg 320w, /img/dummies/640x480.jpg 640w, /img/dummies/960x720.jpg 960w" sizes="(min-width: 990px) 210px, (min-width: 768px) 33vw, (min-width: 480px) 50vw">
+                                </div>
+                            </div>
+
+                            <div class="r-margin bd">
+                                <div class="line r-pbs">
+                                    <p class="d1 truncate opaque rightify man">Nordvågen</p>
+                                </div>
+
+                                <h3 class="pvt man word-break">Solveien 19</h3>
+                                <p class="t4 man truncate pvt">
+                                    <span class="prm">192 m²</span>
+                                    <span class="prm">1&nbsp;450&nbsp;000,-</span>
+                                </p>
+                                <p class="d1 truncate man r-mtm">
+                                    <span class="opaque">EiendomsMegler 1 Hammerfest</span>
+                                </p>
+                                <p class="d1 truncate man fleft">
+                                    <span class="opaque">Eier (Selveier) • Enebolig • 4 soverom</span>
+                                </p>
+                                <p class="mat fright rightify result-item-logo-container hide-lt768">
+                                    <img class="result-item-logo" alt="" src="/img/dummies/logo160x120.jpg">
+                                </p>
+                            </div>
+
+                        </div>
+                      </div>
+                    </a>
+                </div>
+                <!-- -->
+
+                <!-- -->
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                      <div class="inner">
+                        <div class="bd">
+
+                            <div class="img">
+                                <div class="format4by3">
+                                    <img src="/img/dummies/300x225.jpg" class="centered-element" style="width: 100%;" alt="" srcset="/img/dummies/480x360.jpg 480w, /img/dummies/240x180.jpg 240w, /img/dummies/320x240.jpg 320w, /img/dummies/640x480.jpg 640w, /img/dummies/960x720.jpg 960w" sizes="(min-width: 990px) 210px, (min-width: 768px) 33vw, (min-width: 480px) 50vw">
+                                </div>
+                            </div>
+
+                            <div class="r-margin bd">
+                                <div class="line r-pbs">
+                                    <p class="d1 truncate opaque rightify man">Nordvågen</p>
+                                </div>
+
+                                <h3 class="pvt man word-break">Solveien 19</h3>
+                                <p class="t4 man truncate pvt">
+                                    <span class="prm">192 m²</span>
+                                    <span class="prm">1&nbsp;450&nbsp;000,-</span>
+                                </p>
+                                <p class="d1 truncate man r-mtm">
+                                    <span class="opaque">EiendomsMegler 1 Hammerfest</span>
+                                </p>
+                                <p class="d1 truncate man fleft">
+                                    <span class="opaque">Eier (Selveier) • Enebolig • 4 soverom</span>
+                                </p>
+                                <p class="mat fright rightify result-item-logo-container hide-lt768">
+                                    <img class="result-item-logo" alt="" src="/img/dummies/logo160x120.jpg">
+                                </p>
+                            </div>
+
+                        </div>
+                      </div>
+                    </a>
+                </div>
+                <!-- -->
+                <!-- -->
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                      <div class="inner">
+                        <div class="bd">
+
+                            <div class="img">
+                                <div class="format4by3">
+                                    <img src="/img/dummies/300x225.jpg" class="centered-element" style="width: 100%;" alt="" srcset="/img/dummies/480x360.jpg 480w, /img/dummies/240x180.jpg 240w, /img/dummies/320x240.jpg 320w, /img/dummies/640x480.jpg 640w, /img/dummies/960x720.jpg 960w" sizes="(min-width: 990px) 210px, (min-width: 768px) 33vw, (min-width: 480px) 50vw">
+                                </div>
+                            </div>
+
+                            <div class="r-margin bd">
+                                <div class="line r-pbs">
+                                    <p class="d1 truncate opaque rightify man">Nordvågen</p>
+                                </div>
+
+                                <h3 class="pvt man word-break">Solveien 19</h3>
+                                <p class="t4 man truncate pvt">
+                                    <span class="prm">192 m²</span>
+                                    <span class="prm">1&nbsp;450&nbsp;000,-</span>
+                                </p>
+                                <p class="d1 truncate man r-mtm">
+                                    <span class="opaque">EiendomsMegler 1 Hammerfest</span>
+                                </p>
+                                <p class="d1 truncate man fleft">
+                                    <span class="opaque">Eier (Selveier) • Enebolig • 4 soverom</span>
+                                </p>
+                                <p class="mat fright rightify result-item-logo-container hide-lt768">
+                                    <img class="result-item-logo" alt="" src="/img/dummies/logo160x120.jpg">
+                                </p>
+                            </div>
+
+                        </div>
+                      </div>
+                    </a>
+                </div>
+                <!-- -->
+            </div>
+
+            <!-- Jobb -->
+            <div class="line view-grid flex wrap cols1upto480 cols2upto990 cols3from990 job" style="display: none;">
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                        <div class="inner">
+                            <div class="bd">
+                                <div class="logo img nocrop r-margin result centerify" role="group">
+                                    <div class="format4by3">
+                                        <img src="/img/dummies/logo160x120.jpg" class="centered-element" alt="">
+                                    </div>
+                                </div>
+                                <div class="r-margin bd">
+                                    <div class="line r-pbs">
+                                        <p class="unit size1of2 d1 man"><span class="objectstatus">Betalt plassering</span></p>
+                                        <p class="d1 truncate opaque rightify man">Brumunddal</p>
+                                    </div>
+
+                                    <h3 class="t4 pvt man mbs word-break">Undervisningsstillinger innen programområde Helse- og Oppvekstfag på Ringsaker videregående skole</h3>
+                                    <p class="strong man truncate pvt r-mbs">
+                                        <span class="prm">Undervisningsstillinger</span>
+                                    </p>
+                                    <div>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Hedmark fylkeskommune</span>
+                                        </p>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Antall stillinger: 3</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                        <div class="inner">
+                            <div class="bd">
+                                <div class="logo img nocrop r-margin result centerify" role="group">
+                                    <div class="format4by3">
+                                        <img src="/img/dummies/logo160x120.jpg" class="centered-element" alt="">
+                                    </div>
+                                </div>
+                                <div class="r-margin bd">
+                                    <div class="line r-pbs">
+                                        <p class="unit size1of2 d1 man green-lt">Oppdatert: 11.12.2015</p>
+                                        <p class="d1 truncate opaque rightify man">Brumunddal</p>
+                                    </div>
+                                    <h3 class="t4 pvt man mbs word-break">Undervisningsstillinger innen programområde Helse- og Oppvekstfag på Ringsaker videregående skole</h3>
+                                    <p class="strong man truncate pvt r-mbs">
+                                        <span class="prm">Undervisningsstillinger</span>
+                                    </p>
+                                    <div>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Hedmark fylkeskommune</span>
+                                        </p>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Antall stillinger: 3</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                        <div class="inner">
+                            <div class="bd">
+                                <div class="logo img nocrop r-margin result centerify" role="group">
+                                    <div class="format4by3">
+                                        <img src="/img/dummies/logo160x120.jpg" class="centered-element" alt="">
+                                    </div>
+                                </div>
+                                <div class="r-margin bd">
+                                    <div class="line r-pbs">
+                                        <p class="unit size1of2 d1 man green-lt">Oppdatert: 11.12.2015</p>
+                                        <p class="d1 truncate opaque rightify man">Brumunddal</p>
+                                    </div>
+                                    <h3 class="t4 pvt man mbs word-break">Undervisningsstillinger innen programområde Helse- og Oppvekstfag på Ringsaker videregående skole</h3>
+                                    <p class="strong man truncate pvt r-mbs">
+                                        <span class="prm">Undervisningsstillinger</span>
+                                    </p>
+                                    <div>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Hedmark fylkeskommune</span>
+                                        </p>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Antall stillinger: 3</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                        <div class="inner">
+                            <div class="bd">
+                                <div class="logo img nocrop r-margin result centerify" role="group">
+                                    <div class="format4by3">
+                                        <img src="/img/dummies/logo160x120.jpg" class="centered-element" alt="">
+                                    </div>
+                                </div>
+                                <div class="r-margin bd">
+                                    <div class="line r-pbs">
+                                        <p class="unit size1of2 d1 man green-lt">Oppdatert: 11.12.2015</p>
+                                        <p class="d1 truncate opaque rightify man">Brumunddal</p>
+                                    </div>
+                                    <h3 class="t4 pvt man mbs word-break">Undervisningsstillinger innen programområde Helse- og Oppvekstfag på Ringsaker videregående skole</h3>
+                                    <p class="strong man truncate pvt r-mbs">
+                                        <span class="prm">Undervisningsstillinger</span>
+                                    </p>
+                                    <div>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Hedmark fylkeskommune</span>
+                                        </p>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Antall stillinger: 3</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                        <div class="inner">
+                            <div class="bd">
+                                <div class="logo img nocrop r-margin result centerify" role="group">
+                                    <div class="format4by3">
+                                        <img src="/img/dummies/logo160x120.jpg" class="centered-element" alt="">
+                                    </div>
+                                </div>
+                                <div class="r-margin bd">
+                                    <div class="line r-pbs">
+                                        <p class="unit size1of2 d1 man green-lt">Oppdatert: 11.12.2015</p>
+                                        <p class="d1 truncate opaque rightify man">Brumunddal</p>
+                                    </div>
+                                    <h3 class="t4 pvt man mbs word-break">Undervisningsstillinger innen programområde Helse- og Oppvekstfag på Ringsaker videregående skole</h3>
+                                    <p class="strong man truncate pvt r-mbs">
+                                        <span class="prm">Undervisningsstillinger</span>
+                                    </p>
+                                    <div>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Hedmark fylkeskommune</span>
+                                        </p>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Antall stillinger: 3</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                        <div class="inner">
+                            <div class="bd">
+                                <div class="logo img nocrop r-margin result centerify" role="group">
+                                    <div class="format4by3">
+                                        <img src="/img/dummies/logo160x120.jpg" class="centered-element" alt="">
+                                    </div>
+                                </div>
+                                <div class="r-margin bd">
+                                    <div class="line r-pbs">
+                                        <p class="unit size1of2 d1 man green-lt">Oppdatert: 11.12.2015</p>
+                                        <p class="d1 truncate opaque rightify man">Brumunddal</p>
+                                    </div>
+                                    <h3 class="t4 pvt man mbs word-break">Undervisningsstillinger innen programområde Helse- og Oppvekstfag på Ringsaker videregående skole</h3>
+                                    <p class="strong man truncate pvt r-mbs">
+                                        <span class="prm">Undervisningsstillinger</span>
+                                    </p>
+                                    <div>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Hedmark fylkeskommune</span>
+                                        </p>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Antall stillinger: 3</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mod shadow" style="width: 100%;">
+                    <div class="inner bg-rust-xlt">
+                        <div class="bd">
+                            <h1 class="rust centerify">Banner</h1>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                        <div class="inner">
+                            <div class="bd">
+                                <div class="logo img nocrop r-margin result centerify" role="group">
+                                    <div class="format4by3">
+                                        <img src="/img/dummies/logo160x120.jpg" class="centered-element" alt="">
+                                    </div>
+                                </div>
+                                <div class="r-margin bd">
+                                    <div class="line r-pbs">
+                                        <p class="unit size1of2 d1 man green-lt">Oppdatert: 11.12.2015</p>
+                                        <p class="d1 truncate opaque rightify man">Brumunddal</p>
+                                    </div>
+                                    <h3 class="t4 pvt man mbs word-break">Undervisningsstillinger innen programområde Helse- og Oppvekstfag på Ringsaker videregående skole</h3>
+                                    <p class="strong man truncate pvt r-mbs">
+                                        <span class="prm">Undervisningsstillinger</span>
+                                    </p>
+                                    <div>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Hedmark fylkeskommune</span>
+                                        </p>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Antall stillinger: 3</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                        <div class="inner">
+                            <div class="bd">
+                                <div class="logo img nocrop r-margin result centerify" role="group">
+                                    <div class="format4by3">
+                                        <img src="/img/dummies/logo160x120.jpg" class="centered-element" alt="">
+                                    </div>
+                                </div>
+                                <div class="r-margin bd">
+                                    <div class="line r-pbs">
+                                        <p class="unit size1of2 d1 man green-lt">Oppdatert: 11.12.2015</p>
+                                        <p class="d1 truncate opaque rightify man">Brumunddal</p>
+                                    </div>
+                                    <h3 class="t4 pvt man mbs word-break">Undervisningsstillinger innen programområde Helse- og Oppvekstfag på Ringsaker videregående skole</h3>
+                                    <p class="strong man truncate pvt r-mbs">
+                                        <span class="prm">Undervisningsstillinger</span>
+                                    </p>
+                                    <div>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Hedmark fylkeskommune</span>
+                                        </p>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Antall stillinger: 3</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="unit flex result-item">
+                    <a href="#" class="mod listing clickable flex fullwidth shadow linkblock dark-links">
+                        <div class="inner">
+                            <div class="bd">
+                                <div class="logo img nocrop r-margin result centerify" role="group">
+                                    <div class="format4by3">
+                                        <img src="/img/dummies/logo160x120.jpg" class="centered-element" alt="">
+                                    </div>
+                                </div>
+                                <div class="r-margin bd">
+                                    <div class="line r-pbs">
+                                        <p class="unit size1of2 d1 man green-lt">Oppdatert: 11.12.2015</p>
+                                        <p class="d1 truncate opaque rightify man">Brumunddal</p>
+                                    </div>
+                                    <h3 class="t4 pvt man mbs word-break">Undervisningsstillinger innen programområde Helse- og Oppvekstfag på Ringsaker videregående skole</h3>
+                                    <p class="strong man truncate pvt r-mbs">
+                                        <span class="prm">Undervisningsstillinger</span>
+                                    </p>
+                                    <div>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Hedmark fylkeskommune</span>
+                                        </p>
+                                        <p class="d1 truncate man">
+                                            <span class="opaque">Antall stillinger: 3</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="pagination centerify mtl">
+                <li><a href="#">&laquo; forrige</a></li>
+                <li><a href="#">11</a></li>
+                <li><a href="#">12</a></li>
+                <li><a href="#">13</a></li>
+                <li><a href="#">14</a></li>
+                <li class="current"><span>15</span></li>
+                <li><a href="#">16</a></li>
+                <li><a href="#">17</a></li>
+                <li><a href="#">18</a></li>
+                <li><a href="#">19</a></li>
+                <li><a href="#">neste &raquo;</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</div>

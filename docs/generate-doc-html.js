@@ -184,8 +184,65 @@ const spec = [
                 title: 'Prototypes',
                 children: [
                     {
-                        title: 'My Profile',
-                        id: 'my-profile-prototype',
+                        title: 'Frontpage',
+                        id: 'frontpage',
+                    },
+                    {
+                        title: 'resultpage',
+                        id: 'resultpage',
+                    },
+                    {
+                        title: 'Detailpage',
+                        id: 'detailpage',
+                    },
+                    {
+                        title: 'market',
+                        id: 'market',
+                    },
+                    {
+                        title: 'AD Input',
+                        id: 'adinput',
+                    },
+                    {
+                        title: 'Color contrast',
+                        id: 'colorcontrast',
+                    },
+                    {
+                        title: 'Conversation',
+                        id: 'conversation',
+                    },
+
+                    {
+                        title: 'Flex grid',
+                        id: 'flexgrid',
+                    },
+                    {
+                        title: 'Flex toolbar',
+                        id: 'flextoolbar',
+                    },
+                    {
+                        title: 'Form Elements',
+                        id: 'formelements',
+                    },
+                    {
+                        title: 'Info',
+                        id: 'info',
+                    },
+                    {
+                        title: 'My Stuffs',
+                        id: 'mystuffs',
+                    },
+                    {
+                        title: 'New add',
+                        id: 'newadd',
+                    },
+                    {
+                        title: 'profile',
+                        id: 'profile',
+                    },
+                    {
+                        title: 'template',
+                        id: 'template',
                     },
                 ],
             },
@@ -416,6 +473,7 @@ resolveTree(spec, basePath)
 
 * legge til støtte for .js og .md filer
 * fixe touch/click på sidemenyen/body (skjul/vis)
+* Ikke vis støff fra examples seksjonen i index scrollen?
 
 * lokal utvikling med reload
 
