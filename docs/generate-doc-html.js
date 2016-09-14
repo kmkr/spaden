@@ -187,7 +187,7 @@ const spec = [
                         title: 'Frontpage',
                         id: 'frontpage',
                     },
-                    {
+                    /*{
                         title: 'resultpage',
                         id: 'resultpage',
                     },
@@ -243,7 +243,7 @@ const spec = [
                     {
                         title: 'template',
                         id: 'template',
-                    },
+                    },*/
                 ],
             },
         ],

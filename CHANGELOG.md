@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [6.0.0] - 2016-09-08
+## [6.0.0] - 2016-09-14
 
 ### Breaking Changes
 
@@ -12,6 +12,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 * Documentation is now part of the repo (finn-no.github.io/spaden)
+* Ratings are now responsive and has better user feedback
 
 ## [5.2.0] - 2016-09-01
 

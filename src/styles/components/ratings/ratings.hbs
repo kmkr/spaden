@@ -1,8 +1,9 @@
 <div class="mod mbxxl">
     <div class="inner">
         <div class="bd">
+            <h3>Show ratings</h3>
+
             <p>Width (in percentages) is added with <code>.stars</code> to determine number of stars.</p>
-            <hr>
 
             <div class="mbl">
               <h5 class="mbn">Small stars</h5>
@@ -84,18 +85,14 @@
                 </p>
 
             </div>
-
-
+            <hr role="presentation">
+            <h3>Rating input (Pure CSS verion)</h3>
+            <p>Add <code>.responsive</code> class if you want it to scale down to medium size on desktop, without this class it will always be big (It is this big for better accessability on touch devices).</p>
+            <p>Beware: Since this is based on a std. radiogroup, deselecting it is not an option. In certain situations we might be better of using something like a select instead (for filters that needs the ability to be tottally unselected).</p>
             <h5 class="mbn">Set rating</h5>
             <pre class="mtn"><code>{{{example-5}}}</code></pre>
             <div class="r-margin">
-                <span class="star-rating">
-                    <input type="radio" name="rating" value="1" id="star1"><label for="star1">1 stjerne</label>
-                    <input type="radio" name="rating" value="2" id="star2"><label for="star2">2 stjerner</label>
-                    <input type="radio" name="rating" value="3" id="star3"><label for="star3">3 stjerner</label>
-                    <input type="radio" name="rating" value="4" id="star4"><label for="star4">4 stjerner</label>
-                    <input type="radio" name="rating" value="5" id="star5"><label for="star5">5 stjerner</label>
-                </span>
+                {{{example-5-plain}}}
             </div>
         </div>
     </div>
