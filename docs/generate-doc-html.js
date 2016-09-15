@@ -151,6 +151,10 @@ const spec = [
                         id: 'paging',
                     },
                     {
+                        title: 'Popver',
+                        id: 'popover',
+                    },
+                    {
                         title: 'Profiles',
                         id: 'profiles',
                     },
@@ -169,6 +173,10 @@ const spec = [
                     {
                         title: 'Tabs',
                         id: 'tabs',
+                    },
+                    {
+                        title: 'Tooltip',
+                        id: 'tooltip',
                     },
                 ],
             },

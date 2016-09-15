@@ -1,0 +1,67 @@
+<div class="mod shadow" xmlns="http://www.w3.org/1999/html">
+    <div class="inner">
+        <div class="bd">
+        
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Popover</summary>
+                <p class="opaque"><strong>Note:</strong> The order of the elements is important in this one; <code>.popover-position</code> must be placed before <code>.popover-link</code> in order to make sure the popover positions itself correctly relative to the link.</p>
+                <pre class="prettyprint linenums">&lt;p&gt;
+    heisann
+    &lt;span class=&quot;popover-container&quot;&gt;
+        &lt;span class=&quot;popover-position&quot;&gt;
+            &lt;span class=&quot;popover-content hidden&quot;&gt;
+                &lt;span&gt;text and &lt;a href=&quot;http://finn.no&quot; target=&quot;_blank&quot;&gt;links&lt;/a&gt; and&lt;/span&gt;&lt;br&gt;
+                &lt;button class=&quot;primary&quot;&gt;things&lt;/button&gt; and &lt;button&gt;stuff&lt;/button&gt;
+            &lt;/span&gt;
+        &lt;/span&gt;
+        &lt;a class=&quot;popover-link&quot; href=&quot;#&quot;&gt;hoppsann&lt;/a&gt;
+    &lt;/span&gt;
+    heisann
+&lt;/p&gt;</pre>
+            <p class="opaque">Pop-<strong>under</strong>:<p>
+                                <pre class="prettyprint linenums">&lt;p&gt;
+    heisann
+    &lt;span class=&quot;popover-container&quot;&gt;
+        &lt;span class=&quot;popover-position&quot;&gt;
+            &lt;span class=&quot;popover-content under hidden&quot;&gt;
+                &lt;span&gt;text and &lt;a href=&quot;http://finn.no&quot; target=&quot;_blank&quot;&gt;links&lt;/a&gt; and&lt;/span&gt;&lt;br&gt;
+                &lt;button class=&quot;primary&quot;&gt;things&lt;/button&gt; and &lt;button&gt;stuff&lt;/button&gt;
+            &lt;/span&gt;
+        &lt;/span&gt;
+        &lt;a class=&quot;popover-link&quot; href=&quot;#&quot;&gt;hoppsann&lt;/a&gt;
+    &lt;/span&gt;
+    heisann
+&lt;/p&gt;</pre></details>
+            <p class="opaque">Usage: Display brief additional information or interaction on click. May contain (a limited amount of) inline elements like spans, links, buttons, etc. Toggle visibility by removing or adding <code>.hidden</code> from/to <code>.popover-content</code> (no js provided for the time being).</p>
+
+                <p class="line">
+                    Standard popover: heisann
+                    <span class="popover-container">
+                        <span class="popover-position">
+                            <span class="popover-content hidden">
+                                <span>text and <a href="http://finn.no" target="_blank">links</a> and</span><br>
+                                <button class="primary">things</button> and <button>stuff</button>
+                            </span>
+                        </span>
+                        <a class="popover-link" href="#">hoppsann</a>
+                    </span>
+                    heisann
+                </p>
+
+                <p class="line">
+                    Pop-under: heisann
+                    <span class="popover-container">
+                        <span class="popover-position">
+                            <span class="popover-content under hidden">
+                                <span>text and <a href="http://finn.no" target="_blank">links</a> and</span><br>
+                                <button class="primary">things</button> and <button>stuff</button>
+                            </span>
+                        </span>
+                        <a class="popover-link" href="#">hoppsann</a>
+                    </span>
+                    heisann
+                </p>
+        </div>
+    </div>
+</div>

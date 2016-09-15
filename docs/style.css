@@ -1,6 +1,18 @@
 @import "../node_modules/highlight.js/styles/solarized-dark.css";
 @import '../src/styles/config/variables.css';
 
+
+/*mixintest*/
+@define-mixin icon $network, $color: blue {
+    .icon.is-$(network) {
+        color: $color;
+        @mixin-content;
+    }
+}
+@mixin icon twitter {
+    background: url(twt.png);
+}
+
 html, body {
     background-color: white;
 }
