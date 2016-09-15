@@ -1,4 +1,4 @@
-/* 6.0.0 - Wed Sep 14 2016 13:09:31 GMT+0000 (UTC) */
+/* 6.0.0 - Thu Sep 15 2016 08:27:21 GMT+0000 (UTC) */
 :root {
 
     /* New Identity 2016*/
@@ -3567,6 +3567,7 @@ img { max-width: 100%; }
     width: 15em;
     z-index: 2;
     box-shadow: 3px 3px 4px rgba(0,0,0,.05);
+    font-size:14px;
 }
 .tooltip[data-tooltip]:hover:after,
 .tooltip[data-tooltip]:focus:after {

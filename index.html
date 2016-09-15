@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <link rel="stylesheet" href="./dist/spaden.min.css?sha=6bc9c989c9231bedb3c0c887b56c4a61d40de545">
-    <link rel="stylesheet" href="./style.css?sha=6bc9c989c9231bedb3c0c887b56c4a61d40de545">
+    <link rel="stylesheet" href="./dist/spaden.min.css?sha=99d5ca5566712bcb238c9c57ea6d9914258679b4">
+    <link rel="stylesheet" href="./style.css?sha=99d5ca5566712bcb238c9c57ea6d9914258679b4">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
 </head>
 <body>
@@ -226,11 +226,13 @@
                     <a href="./components-notification.html" data-ref="components-notification">Notification</a>
                     <a href="./components-omgnew.html" data-ref="components-omgnew">OMGnew</a>
                     <a href="./components-paging.html" data-ref="components-paging">Paging</a>
+                    <a href="./components-popover.html" data-ref="components-popover">Popver</a>
                     <a href="./components-profiles.html" data-ref="components-profiles">Profiles</a>
                     <a href="./components-ratings.html" data-ref="components-ratings">Ratings</a>
                     <a href="./components-ribbons.html" data-ref="components-ribbons">Ribbons</a>
                     <a href="./components-speechbubbles.html" data-ref="components-speechbubbles">Speech bubbles</a>
                     <a href="./components-tabs.html" data-ref="components-tabs">Tabs</a>
+                    <a href="./components-tooltip.html" data-ref="components-tooltip">Tooltip</a>
             </dd>
 
     </div>
@@ -6256,6 +6258,90 @@
 </div>
 
 
+                <a id="components-popover"></a>
+
+                    <h2 class="mbn">Popver <a href="./components-popover.html" target="_blank" title="Popver">
+                        <svg width="22" height="22" class="valign-middle" alt="Popver" >
+                            <use xlink:href="#icon-external"></use>
+                        </svg>
+                    </a></h2>
+
+                    <ul class="breadcrumbs green-dk mtn">
+                        <li>Components</li>
+                        <li>Basic</li>
+                        <li>Popver</li>
+                    </ul>
+
+                            <small class="hidden"><a href="#components-popover" id="components-popover">#</a> docs.hbs</small>
+                            <div class="mod shadow" xmlns="http://www.w3.org/1999/html">
+    <div class="inner">
+        <div class="bd">
+        
+
+            <details>
+                <summary class="r-margin clickable h3 normal">Popover</summary>
+                <p class="opaque"><strong>Note:</strong> The order of the elements is important in this one; <code>.popover-position</code> must be placed before <code>.popover-link</code> in order to make sure the popover positions itself correctly relative to the link.</p>
+                <pre class="prettyprint linenums">&lt;p&gt;
+    heisann
+    &lt;span class=&quot;popover-container&quot;&gt;
+        &lt;span class=&quot;popover-position&quot;&gt;
+            &lt;span class=&quot;popover-content hidden&quot;&gt;
+                &lt;span&gt;text and &lt;a href=&quot;http://finn.no&quot; target=&quot;_blank&quot;&gt;links&lt;/a&gt; and&lt;/span&gt;&lt;br&gt;
+                &lt;button class=&quot;primary&quot;&gt;things&lt;/button&gt; and &lt;button&gt;stuff&lt;/button&gt;
+            &lt;/span&gt;
+        &lt;/span&gt;
+        &lt;a class=&quot;popover-link&quot; href=&quot;#&quot;&gt;hoppsann&lt;/a&gt;
+    &lt;/span&gt;
+    heisann
+&lt;/p&gt;</pre>
+            <p class="opaque">Pop-<strong>under</strong>:<p>
+                                <pre class="prettyprint linenums">&lt;p&gt;
+    heisann
+    &lt;span class=&quot;popover-container&quot;&gt;
+        &lt;span class=&quot;popover-position&quot;&gt;
+            &lt;span class=&quot;popover-content under hidden&quot;&gt;
+                &lt;span&gt;text and &lt;a href=&quot;http://finn.no&quot; target=&quot;_blank&quot;&gt;links&lt;/a&gt; and&lt;/span&gt;&lt;br&gt;
+                &lt;button class=&quot;primary&quot;&gt;things&lt;/button&gt; and &lt;button&gt;stuff&lt;/button&gt;
+            &lt;/span&gt;
+        &lt;/span&gt;
+        &lt;a class=&quot;popover-link&quot; href=&quot;#&quot;&gt;hoppsann&lt;/a&gt;
+    &lt;/span&gt;
+    heisann
+&lt;/p&gt;</pre></details>
+            <p class="opaque">Usage: Display brief additional information or interaction on click. May contain (a limited amount of) inline elements like spans, links, buttons, etc. Toggle visibility by removing or adding <code>.hidden</code> from/to <code>.popover-content</code> (no js provided for the time being).</p>
+
+                <p class="line">
+                    Standard popover: heisann
+                    <span class="popover-container">
+                        <span class="popover-position">
+                            <span class="popover-content hidden">
+                                <span>text and <a href="http://finn.no" target="_blank">links</a> and</span><br>
+                                <button class="primary">things</button> and <button>stuff</button>
+                            </span>
+                        </span>
+                        <a class="popover-link" href="#">hoppsann</a>
+                    </span>
+                    heisann
+                </p>
+
+                <p class="line">
+                    Pop-under: heisann
+                    <span class="popover-container">
+                        <span class="popover-position">
+                            <span class="popover-content under hidden">
+                                <span>text and <a href="http://finn.no" target="_blank">links</a> and</span><br>
+                                <button class="primary">things</button> and <button>stuff</button>
+                            </span>
+                        </span>
+                        <a class="popover-link" href="#">hoppsann</a>
+                    </span>
+                    heisann
+                </p>
+        </div>
+    </div>
+</div>
+
+
                 <a id="components-profiles"></a>
 
                     <h2 class="mbn">Profiles <a href="./components-profiles.html" target="_blank" title="Profiles">
@@ -7441,6 +7527,50 @@
 </div>
 
 
+                <a id="components-tooltip"></a>
+
+                    <h2 class="mbn">Tooltip <a href="./components-tooltip.html" target="_blank" title="Tooltip">
+                        <svg width="22" height="22" class="valign-middle" alt="Tooltip" >
+                            <use xlink:href="#icon-external"></use>
+                        </svg>
+                    </a></h2>
+
+                    <ul class="breadcrumbs green-dk mtn">
+                        <li>Components</li>
+                        <li>Basic</li>
+                        <li>Tooltip</li>
+                    </ul>
+
+                            <small class="hidden"><a href="#components-tooltip" id="components-tooltip">#</a> docs.hbs</small>
+                            <div class="mod mbxxl">
+    <div class="inner">
+        <div class="bd">
+            <details>
+                <summary class="r-margin clickable h3 normal">Tooltip</summary>
+                <pre class="prettyprint linenums">&lt;p&gt;
+    heisann &lt;span class=&quot;tooltip&quot; data-tooltip=&quot;Vis innholdet i &#39;data-tooltip&#39;-attributtet som en tooltip&quot;&gt;hoppsann&lt;/span&gt; heisann
+&lt;/p&gt;</pre>
+            </details>
+            <p class="opaque">Usage: Display brief additional information (definitions, short explanations, etc) on hover. May contain text only.</p>
+
+            <div>
+                <p>
+                    heisann <span class="tooltip" data-tooltip="Vis innholdet i 'data-tooltip'-attributtet som en tooltip">hoppsann</span> heisann
+                </p>
+                <h1>
+                    heisann <span class="tooltip" data-tooltip="Vis innholdet i 'data-tooltip'-attributtet som en tooltip">hoppsann</span> heisann
+                </h1>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+                            <small class="hidden"><a href="#components-tooltip" id="components-tooltip">#</a> example-1.html</small>
+                            
+
+                                <pre><code></code></pre>
 
 
 
@@ -7796,6 +7926,6 @@
 </div>
 </div>
 
-<script src="./docs.js?sha=6bc9c989c9231bedb3c0c887b56c4a61d40de545"></script>
+<script src="./docs.js?sha=99d5ca5566712bcb238c9c57ea6d9914258679b4"></script>
 </body>
 </html>
