@@ -88,13 +88,6 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
     /* New Identity 2016*/
 }
 
-
-/*mixintest*/
-.icon.is-twitter {
-  color: blue;
-  background: url(twt.png);
-}
-
 html, body {
     background-color: white;
 }
