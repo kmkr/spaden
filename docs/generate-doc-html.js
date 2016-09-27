@@ -163,6 +163,10 @@ const spec = [
                         id: 'ratings',
                     },
                     {
+                        title: 'Read More',
+                        id: 'readmore',
+                    },
+                    {
                         title: 'Ribbons',
                         id: 'ribbons',
                     },
@@ -191,6 +195,7 @@ const spec = [
             {
                 title: 'Prototypes',
                 children: [
+                    
                     {
                         title: 'Test',
                         id: 'test',
@@ -493,10 +498,4 @@ resolveTree(spec, basePath)
         console.error('err:', err);
     });
 
-/*
 
-* fixe touch/click på sidemenyen/body (skjul/vis)
-* Ikke vis støff fra examples seksjonen i index scrollen?
-* lokal utvikling med reload
-
-*/

@@ -1,5 +1,32 @@
 @import '../../config/variables.css';
 
+/*
+@define-mixin color $name {
+    .$(name) { color: $colorcode; }
+    .bg_(name) { color: $colorcode; }
+    .border_(name) { color: $colorcode; }
+}
+
+
+@mixin color sharp, $(var(--sharp));
+@mixin color opaque, var(--opaque);
+@mixin color neutral, var(--neutral);
+*/
+@define-mixin icon $network, $color: blue {
+    .icon.is-$(network) {
+        color: $color;
+        @mixin-content;
+    }
+    .icon.is-$(network):hover {
+        color: white;
+        background: $color;
+    }
+}
+
+@mixin icon twitter {
+    background: url(twt.png);
+}
+
 /* Gråskala */
 .sharp, a.sharp { color: var(--sharp); }
 .opaque, a.opaque { color: var(--opaque); }

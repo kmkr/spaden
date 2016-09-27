@@ -31,6 +31,35 @@ table.collapse thead th{
     }
 }
 
+
+/*
+@define-mixin color $name {
+    .$(name) { color: $colorcode; }
+    .bg_(name) { color: $colorcode; }
+    .border_(name) { color: $colorcode; }
+}
+
+
+@mixin color sharp, $(var(--sharp));
+@mixin color opaque, var(--opaque);
+@mixin color neutral, var(--neutral);
+*/
+
+/* mixintest */
+@define-mixin icon $network, $color: blue {
+    .icon.is-$(network) {
+        color: $color;
+    }
+    .icon.is-$(network):hover {
+        color: white;
+        background: $color;
+    }
+}
+
+@mixin icon sharp, var(--sharp);
+/* * * * */
+
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *                      Fancy headings                 *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * */
