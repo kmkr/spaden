@@ -1,4 +1,4 @@
-/* 6.0.2 - Tue Sep 27 2016 12:47:54 GMT+0000 (UTC) */
+/* 6.0.2 - Tue Sep 27 2016 12:49:30 GMT+0000 (UTC) */
 :root {
 
     /* New Identity 2016*/
@@ -2259,6 +2259,29 @@ must be included before color.css
 .bln, .bhn, .ban { border-left-width: 0; }
 .blt, .bht, .bat { border-left-width: 1px; }
 .bls, .bhs, .bas { border-left-width: 2px; }
+/*
+@define-mixin color $name {
+    .$(name) { color: $colorcode; }
+    .bg_(name) { color: $colorcode; }
+    .border_(name) { color: $colorcode; }
+}
+
+
+@mixin color sharp, $(var(--sharp));
+@mixin color opaque, var(--opaque);
+@mixin color neutral, var(--neutral);
+*/
+
+.icon.is-twitter {
+    color: blue;
+    background: url(twt.png);
+}
+
+.icon.is-twitter:hover {
+    color: white;
+    background: blue;
+}
+
 /* Gråskala */
 .sharp, a.sharp { color: #474445; }
 .opaque, a.opaque { color: #666364; }

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <link rel="stylesheet" href="./dist/spaden.min.css?sha=783dda6427ac3751ce3acd49486ecd89ab8266a2">
-    <link rel="stylesheet" href="./style.css?sha=783dda6427ac3751ce3acd49486ecd89ab8266a2">
+    <link rel="stylesheet" href="./dist/spaden.min.css?sha=f7c5cbf60892eca4283781e9120bb4d218d50a8a">
+    <link rel="stylesheet" href="./style.css?sha=f7c5cbf60892eca4283781e9120bb4d218d50a8a">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
 </head>
 <body>
@@ -178,27 +178,41 @@
     <div class="page">
      <h1>Popver</h1>-->
                 <small class="hidden"><a href="#components-popover" id="components-popover">#</a> docs.hbs</small>
-                <div class="mod shadow" xmlns="http://www.w3.org/1999/html">
+                <div class="mod mbxxl">
     <div class="inner">
         <div class="bd">
-        
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+    heisann
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"popover-container"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"popover-position"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"popover-content hidden"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>text and <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"http://finn.no"</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span>&gt;</span>links<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> and<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"primary"</span>&gt;</span>things<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span> and <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>stuff<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"popover-link"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>hoppsann<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    heisann
+<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+            <p><p>
+    heisann
+    <span class="popover-container">
+        <span class="popover-position">
+            <span class="popover-content hidden">
+                <span>text and <a href="http://finn.no" target="_blank">links</a> and</span><br>
+                <button class="primary">things</button> and <button>stuff</button>
+            </span>
+        </span>
+        <a class="popover-link" href="#">hoppsann</a>
+    </span>
+    heisann
+</p>
+</p>
 
-            <details>
-                <summary class="r-margin clickable h3 normal">Popover</summary>
+
                 <p class="opaque"><strong>Note:</strong> The order of the elements is important in this one; <code>.popover-position</code> must be placed before <code>.popover-link</code> in order to make sure the popover positions itself correctly relative to the link.</p>
-                <pre class="prettyprint linenums">&lt;p&gt;
-    heisann
-    &lt;span class=&quot;popover-container&quot;&gt;
-        &lt;span class=&quot;popover-position&quot;&gt;
-            &lt;span class=&quot;popover-content hidden&quot;&gt;
-                &lt;span&gt;text and &lt;a href=&quot;http://finn.no&quot; target=&quot;_blank&quot;&gt;links&lt;/a&gt; and&lt;/span&gt;&lt;br&gt;
-                &lt;button class=&quot;primary&quot;&gt;things&lt;/button&gt; and &lt;button&gt;stuff&lt;/button&gt;
-            &lt;/span&gt;
-        &lt;/span&gt;
-        &lt;a class=&quot;popover-link&quot; href=&quot;#&quot;&gt;hoppsann&lt;/a&gt;
-    &lt;/span&gt;
-    heisann
-&lt;/p&gt;</pre>
+
             <p class="opaque">Pop-<strong>under</strong>:<p>
                                 <pre class="prettyprint linenums">&lt;p&gt;
     heisann
@@ -215,60 +229,17 @@
 &lt;/p&gt;</pre></details>
             <p class="opaque">Usage: Display brief additional information or interaction on click. May contain (a limited amount of) inline elements like spans, links, buttons, etc. Toggle visibility by removing or adding <code>.hidden</code> from/to <code>.popover-content</code> (no js provided for the time being).</p>
 
-                <p class="line">
-                    Standard popover: heisann
-                    <span class="popover-container">
-                        <span class="popover-position">
-                            <span class="popover-content hidden">
-                                <span>text and <a href="http://finn.no" target="_blank">links</a> and</span><br>
-                                <button class="primary">things</button> and <button>stuff</button>
-                            </span>
-                        </span>
-                        <a class="popover-link" href="#">hoppsann</a>
-                    </span>
-                    heisann
-                </p>
 
-                <p class="line">
-                    Pop-under: heisann
-                    <span class="popover-container">
-                        <span class="popover-position">
-                            <span class="popover-content under hidden">
-                                <span>text and <a href="http://finn.no" target="_blank">links</a> and</span><br>
-                                <button class="primary">things</button> and <button>stuff</button>
-                            </span>
-                        </span>
-                        <a class="popover-link" href="#">hoppsann</a>
-                    </span>
-                    heisann
-                </p>
         </div>
     </div>
 </div>
 
 
-                <small class="hidden"><a href="#components-popover" id="components-popover">#</a> example-1.html</small>
-                
-
-                    <pre><code>&lt;p&gt;
-    heisann
-    &lt;span class&#x3D;&quot;popover-container&quot;&gt;
-        &lt;span class&#x3D;&quot;popover-position&quot;&gt;
-            &lt;span class&#x3D;&quot;popover-content hidden&quot;&gt;
-                &lt;span&gt;text and &lt;a href&#x3D;&quot;http://finn.no&quot; target&#x3D;&quot;_blank&quot;&gt;links&lt;/a&gt; and&lt;/span&gt;&lt;br&gt;
-                &lt;button class&#x3D;&quot;primary&quot;&gt;things&lt;/button&gt; and &lt;button&gt;stuff&lt;/button&gt;
-            &lt;/span&gt;
-        &lt;/span&gt;
-        &lt;a class&#x3D;&quot;popover-link&quot; href&#x3D;&quot;#&quot;&gt;hoppsann&lt;/a&gt;
-    &lt;/span&gt;
-    heisann
-&lt;/p&gt;
-</code></pre>
         <!--
     </div>
 </div>
 
 -->
-<script src="./docs.js?sha=783dda6427ac3751ce3acd49486ecd89ab8266a2"></script>
+<script src="./docs.js?sha=f7c5cbf60892eca4283781e9120bb4d218d50a8a"></script>
 </body>
 </html>

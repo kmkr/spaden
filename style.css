@@ -118,6 +118,33 @@ table.collapse thead th{
     }
 }
 
+
+/*
+@define-mixin color $name {
+    .$(name) { color: $colorcode; }
+    .bg_(name) { color: $colorcode; }
+    .border_(name) { color: $colorcode; }
+}
+
+
+@mixin color sharp, $(var(--sharp));
+@mixin color opaque, var(--opaque);
+@mixin color neutral, var(--neutral);
+*/
+
+/* mixintest */
+
+.icon.is-sharp {
+  color: var(--sharp);
+}
+
+.icon.is-sharp:hover {
+  color: white;
+  background: var(--sharp);
+}
+/* * * * */
+
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *                      Fancy headings                 *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * */
