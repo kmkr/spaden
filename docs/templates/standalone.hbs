@@ -1,17 +1,19 @@
-
+   <!--
 <div class="container">
-<div class="page">
-    <h1>{{data.title}}</h1>
-    {{#each data.files}}
-        {{^requested}}
-            <small class="hidden"><a href="#{{ref}}" id="{{ref}}">#</a> {{name}}</small>
-            {{{rendered}}}
+    <div class="page">
+     <h1>{{data.title}}</h1>-->
+        {{#each data.files}}
+            {{^requested}}
+                <small class="hidden"><a href="#{{ref}}" id="{{ref}}">#</a> {{name}}</small>
+                {{{rendered}}}
 
-            {{^rendered}}
-                <pre><code>{{content}}</code></pre>
-            {{/rendered}}
-        {{/requested}}
-    {{/each}}
-</div>
+                {{^rendered}}
+                    <pre><code>{{content}}</code></pre>
+                {{/rendered}}
+            {{/requested}}
+        {{/each}}
+        <!--
+    </div>
 </div>
 
+-->

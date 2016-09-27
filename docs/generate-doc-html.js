@@ -192,67 +192,86 @@ const spec = [
                 title: 'Prototypes',
                 children: [
                     {
+                        title: 'Test',
+                        id: 'test',
+                        external: true,
+                    },
+                    {
                         title: 'Frontpage',
                         id: 'frontpage',
                         external: true,
                     },
-                    /*{
+                    {
                         title: 'resultpage',
                         id: 'resultpage',
+                        external: true,
                     },
                     {
                         title: 'Detailpage',
                         id: 'detailpage',
+                        external: true,
                     },
                     {
                         title: 'market',
                         id: 'market',
+                        external: true,
                     },
                     {
                         title: 'AD Input',
                         id: 'adinput',
+                        external: true,
                     },
                     {
                         title: 'Color contrast',
                         id: 'colorcontrast',
+                        external: true,
                     },
                     {
                         title: 'Conversation',
                         id: 'conversation',
+                        external: true,
                     },
 
                     {
                         title: 'Flex grid',
                         id: 'flexgrid',
+                        external: true,
                     },
                     {
                         title: 'Flex toolbar',
                         id: 'flextoolbar',
+                        external: true,
                     },
                     {
                         title: 'Form Elements',
                         id: 'formelements',
+                        external: true,
                     },
                     {
                         title: 'Info',
                         id: 'info',
+                        external: true,
                     },
                     {
                         title: 'My Stuffs',
                         id: 'mystuffs',
+                        external: true,
                     },
                     {
                         title: 'New add',
                         id: 'newadd',
+                        external: true,
                     },
                     {
                         title: 'profile',
                         id: 'profile',
+                        external: true,
                     },
                     {
                         title: 'template',
                         id: 'template',
-                    },*/
+                        external: true,
+                    },
                 ],
             },
         ],
