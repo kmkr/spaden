@@ -194,6 +194,7 @@ const spec = [
                     {
                         title: 'Frontpage',
                         id: 'frontpage',
+                        external: true,
                     },
                     /*{
                         title: 'resultpage',
@@ -404,7 +405,7 @@ function getEntryPoints (data) {
                 index: 'standalone',
                 layout: 'base',
                 out: entry.ref,
-            });;
+            });
         } else {
             console.log('Did not process file from entry:', entry.title);
         }

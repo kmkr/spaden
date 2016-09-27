@@ -14,7 +14,13 @@
             <dt>{{title}}</dt>
             <dd class="dark-links">
                 {{#each children}}
-                    <a href="{{href}}" data-ref="{{ref}}">{{title}}</a>
+                    {{#external}}
+                        <a href="{{href}}">{{title}}</a>
+                    {{/external}}
+                    {{^external}}
+                        <a href="{{href}}" data-ref="{{ref}}">{{title}}</a>
+                    {{/external}}
+
                 {{/each}}
             </dd>
 
@@ -131,7 +137,17 @@
 
             <h1 class="fancy"><span>{{../title}} - {{title}}</span></h1>
                 {{#each children}}
-                <a id="{{ref}}"></a>
+
+                {{#external}}
+                    <h3 class="mbn">{{title}} <a href="{{href}}" target="_blank" title="{{title}}">
+                        <svg width="22" height="22" class="valign-middle" alt="{{title}}" >
+                            <use xlink:href="#icon-external"></use>
+                        </svg>
+                    </a></h3>
+                {{/external}}
+
+                {{^external}}
+                    <a id="{{ref}}"></a>
 
                     <h2 class="mbn">{{title}} <a href="{{href}}" target="_blank" title="{{title}}">
                         <svg width="22" height="22" class="valign-middle" alt="{{title}}" >
@@ -155,6 +171,9 @@
                             {{/rendered}}
                         {{/requested}}
                     {{/each}}
+                {{/external}}
+
+
                 {{/each}}
             {{/each}}
         {{/each}}
