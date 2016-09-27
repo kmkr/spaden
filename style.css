@@ -86,6 +86,15 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 :root {
 
     /* New Identity 2016*/
+/*
+    --xxs:2px;
+    --xs:4px;
+    --s:8px;
+    --m:16px;
+    --l:32px;
+    --xl:64px;
+*/
+
 }
 
 html, body {

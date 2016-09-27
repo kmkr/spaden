@@ -1,7 +1,16 @@
-/* 6.0.2 - Tue Sep 27 2016 12:49:30 GMT+0000 (UTC) */
+/* 6.0.2 - Tue Sep 27 2016 14:22:46 GMT+0000 (UTC) */
 :root {
 
     /* New Identity 2016*/
+/*
+    --xxs:2px;
+    --xs:4px;
+    --s:8px;
+    --m:16px;
+    --l:32px;
+    --xl:64px;
+*/
+
 }
 @media print {
     body, .page { background: #FFFFFF !important; }
