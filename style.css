@@ -86,15 +86,19 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 :root {
 
     /* New Identity 2016*/
-/*
-    --xxs:2px;
-    --xs:4px;
-    --s:8px;
-    --m:16px;
-    --l:32px;
-    --xl:64px;
-*/
 
+    /******* Size system ******/
+    /* x2 golden ratio system */
+
+    /* Spaden v6 default values */
+    /*
+    --xxs:2px;
+    --xs:4px;  
+    --s:5px;
+    --m:10px;
+    --l:20px;
+    --xl:64px; 
+    */
 }
 
 html, body {
@@ -237,7 +241,7 @@ h1.fancy:after {
 }
 
 .topmenu.fixed+.lm-wrapper {
-    margin-top: 65px;
+    margin-top: 64px;
 }
 
 .lm-button {}
@@ -247,7 +251,7 @@ h1.fancy:after {
 /* */
 .doc-Examples{
     background-color: #e6fef7;
-    padding-bottom:60px;
+    padding-bottom: 64px;
 }
 
 .leftmenu dt {
@@ -260,12 +264,12 @@ h1.fancy:after {
 }
 
 .leftmenu dt {
-    padding: 7px 0 7px 20px;
+    padding: 8px 0 8px 32px;
 }
 
 .leftmenu dl a {
     display: block;
-    padding: 7px 0 7px 40px;
+    padding: 8px 0 8px 32px;
 }
 
 .leftmenu a.nav-active {
@@ -307,8 +311,10 @@ h1.fancy:after {
 /* Bigger vertical distance between each section for better readabillity in the doc */
 
 .mbxxl {
-    margin-bottom: 60px!important;
+    margin-bottom: 64px !important;
 }
+
+
 
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -337,21 +343,61 @@ h1.fancy:after {
 }
 
 .wrapper>.inner {
-    padding: 10px;
+    padding: 16px;
 }
 
 .wrapper .mod.skinned {
-    margin: 10px!important;
-    margin-bottom: 20px!important;
+    margin: 16px !important;
+    margin-bottom: 32px !important;
 }
 
 .mod.skinned>.inner {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5, .wrapper p {
-    margin: 10px;
+    margin: 16px;
 }
 
+
+
+/* debug grid */
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.grid-overlay {
+    position: fixed;
+    left: 50%;
+    top:0;
+    width: 980px;
+    height: 100%;
+    xdisplay: none;
+    margin: 0 0 0 -490px;
+}
+.grid-overlay ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.grid-overlay li {
+    display: block;
+    float: left;
+    width: 316px;
+    height: 100%;
+    background-color:rgba(255, 0, 0, .1);
+    border-right: 32px solid rgba(255, 0, 0, .1);
+    text-indent:-9000px;
+}
+.grid-overlay li:first-child {
+    border-left: 32px solid rgba(255, 0, 0, .1);
+    width: 348px;
+}
+.grid-overlay li:last-child {
+    border-right:0;
+}
 /*# sourceMappingURL=style.css.map */
