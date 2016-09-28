@@ -138,7 +138,7 @@ h1.fancy:after {
 }
 
 .topmenu.fixed+.lm-wrapper {
-    margin-top: 65px;
+    margin-top: var(--xl);
 }
 
 .lm-button {}
@@ -148,7 +148,7 @@ h1.fancy:after {
 /* */
 .doc-Examples{
     background-color: #e6fef7;
-    padding-bottom:60px;
+    padding-bottom:var(--xl);
 }
 
 .leftmenu dt {
@@ -161,12 +161,12 @@ h1.fancy:after {
 }
 
 .leftmenu dt {
-    padding: 7px 0 7px 20px;
+    padding: var(--s) 0 var(--s) var(--l);
 }
 
 .leftmenu dl a {
     display: block;
-    padding: 7px 0 7px 40px;
+    padding: var(--s) 0 var(--s) var(--l);
 }
 
 .leftmenu a.nav-active {
@@ -208,8 +208,10 @@ h1.fancy:after {
 /* Bigger vertical distance between each section for better readabillity in the doc */
 
 .mbxxl {
-    margin-bottom: 60px!important;
+    margin-bottom: var(--xl) !important;
 }
+
+
 
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -238,19 +240,60 @@ h1.fancy:after {
 }
 
 .wrapper>.inner {
-    padding: 10px;
+    padding: var(--m);
 }
 
 .wrapper .mod.skinned {
-    margin: 10px!important;
-    margin-bottom: 20px!important;
+    margin: var(--m) !important;
+    margin-bottom: var(--l) !important;
 }
 
 .mod.skinned>.inner {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: var(--m);
+    padding-right: var(--m);
 }
 
 .wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5, .wrapper p {
-    margin: 10px;
+    margin: var(--m);
+}
+
+
+
+/* debug grid */
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.grid-overlay {
+    position: fixed;
+    left: 50%;
+    top:0;
+    width: 980px;
+    height: 100%;
+    xdisplay: none;
+    margin: 0 0 0 -490px;
+}
+.grid-overlay ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.grid-overlay li {
+    display: block;
+    float: left;
+    width: 316px;
+    height: 100%;
+    background-color:rgba(255, 0, 0, .1);
+    border-right:var(--l) solid rgba(255, 0, 0, .1);
+    text-indent:-9000px;
+}
+.grid-overlay li:first-child {
+    border-left:var(--l) solid rgba(255, 0, 0, .1);
+    width: 348px;
+}
+.grid-overlay li:last-child {
+    border-right:0;
 }

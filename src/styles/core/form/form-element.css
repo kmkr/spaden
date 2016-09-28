@@ -371,7 +371,7 @@ label:hover { color: var(--sharp); }
 label.button:hover { color: var(--blue-dk); }
 label.button.primary:hover { color: var(--bright); }
 
-legend { margin: 10px 20px; }
+legend { margin: var(--m) var(--l); }
 .formelement legend { margin: 10px 0; }
 .inputs-list { margin: 0 inherit; }
 /* larger font-size and padding on checbox and radio buttons label */
@@ -669,10 +669,10 @@ select.blank {
 
 /* Layout */
 
-.formelement, .actions { margin: 10px 20px; }
+.formelement, .actions { margin: var(--m) var(--l); }
 
 .formelement, .actions {
-    margin: 10px;
+    margin: var(--m);
     zoom: 1;
 }
 
@@ -691,7 +691,7 @@ select.blank {
 }
 
 @media not all and (--small-screen) {
-    .formelement, .actions { margin: 10px 20px; }
+    .formelement, .actions { margin: var(--m) var(--l); }
 }
 
 @media (width >= 640px) {

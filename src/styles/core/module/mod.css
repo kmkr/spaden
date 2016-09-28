@@ -6,7 +6,7 @@ version: 0.2
 */
 /* **************** BLOCK STRUCTURES ***************** */
 /* mod */
-.mod,.mod-behaviour { margin: 0 var(--xxs) var(--xx) 0 !important; }
+.mod,.mod-behaviour { margin: 0 var(--xxs) var(--xs) 0 !important; }
 .mod .lastUnit .mod { margin-right: 0 !important; }
 .bd, .ft, .hd {
     overflow: hidden;
