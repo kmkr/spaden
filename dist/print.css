@@ -1,21 +1,19 @@
-/* 6.0.2 - Wed Sep 28 2016 13:58:36 GMT+0000 (UTC) */
+/* 6.0.2 - Thu Sep 29 2016 08:32:08 GMT+0000 (UTC) */
 :root {
 
     /* New Identity 2016*/
 
     /******* Size system ******/
-    /* x2 golden ratio system */
-
-    /* Spaden v6 default values */
-    /*
+    /* x2 golden ratio system 
     --xxs:2px;
-    --xs:4px;  
-    --s:5px;
-    --m:10px;
-    --l:20px;
-    --xl:64px; 
-    */
-}
+    --xs:4px;
+    --s:8px;
+    --m:16px;
+    --l:32px;
+    --xl:64px;
+*/
+    /* Spaden v6 default values */ 
+  }
 @media print {
     body, .page { background: #FFFFFF !important; }
     img { max-width: 100%; }
