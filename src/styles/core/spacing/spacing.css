@@ -14,10 +14,11 @@ dt, dd { margin: 0  var(--m) }
 h1, h2, h3, h4, h5, h6, img { padding-bottom: 0px; }
 pre { margin:  var(--l) }
 table h1, table h2, table h3, table h4, table h5, table h6, table p, table ul, table ol, table dl { padding: 0; }
+
 /* spacing helpers
 p,m = padding,margin
 a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
-t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
+t,s,m,l,n,a = tiny(2px),small(5px),medium(10px),large(20px),none(0px), auto
 */
 
 .ptn, .pvn, .pan { padding-top: 0 !important; }
@@ -26,7 +27,7 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
 .ptm, .pvm, .pam { padding-top: var(--m) !important; }
 .ptl, .pvl, .pal { padding-top: var(--l) !important; }
 .prn, .phn, .pan { padding-right: 0 !important; }
-.prt, .pht, .pat { padding-right: var(--l) !important; }
+.prt, .pht, .pat { padding-right: var(--xs) !important; }
 .prs, .phs, .pas { padding-right: var(--s)!important; }
 .prm, .phm, .pam { padding-right: var(--m) !important; }
 .prl, .phl, .pal { padding-right: var(--l) !important; }
@@ -119,5 +120,5 @@ t,s,m,l,n = tiny(2px),small(5px),medium(10px),large(20px),none(0px)
     .r-pbl, .r-pvl, .r-pal { padding-bottom: var(--l) !important; }
 }
 /* Gen. classes for setting auto */
-.margin-left-auto, .margin-horizontal-auto { margin-left: auto; }
-.margin-right-auto, .margin-horizontal-auto { margin-right: auto; }
+.margin-left-auto, .mla, .margin-horizontal-auto, .mha { margin-left: auto; }
+.margin-right-auto, .mra, .margin-horizontal-auto, .mha { margin-right: auto; }

@@ -32,33 +32,6 @@ table.collapse thead th{
 }
 
 
-/*
-@define-mixin color $name {
-    .$(name) { color: $colorcode; }
-    .bg_(name) { color: $colorcode; }
-    .border_(name) { color: $colorcode; }
-}
-
-
-@mixin color sharp, $(var(--sharp));
-@mixin color opaque, var(--opaque);
-@mixin color neutral, var(--neutral);
-*/
-
-/* mixintest */
-@define-mixin icon $network, $color: blue {
-    .icon.is-$(network) {
-        color: $color;
-    }
-    .icon.is-$(network):hover {
-        color: white;
-        background: $color;
-    }
-}
-
-@mixin icon sharp, var(--sharp);
-/* * * * */
-
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *                      Fancy headings                 *
@@ -91,6 +64,8 @@ h1.fancy:after {
     width: 100%;
 }
 */
+
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *             Håndtering av venstremeny               *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -205,14 +180,11 @@ h1.fancy:after {
     }
 }
 
-/* Bigger vertical distance between each section for better readabillity in the doc */
 
+/* Bigger vertical distance between each section for better readabillity in the doc */
 .mbxxl {
     margin-bottom: var(--xl) !important;
 }
-
-
-
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *           Overstyringer for hvit bakgrunn           *
@@ -223,20 +195,9 @@ h1.fancy:after {
     border-bottom: 1px solid #dddddd;
 }
 
-.outlines.container {
-    outline: 1px solid blue;
-}
-
-.outlines .page {
-    outline: 1px solid red;
-}
-
-.outlines .inner {
-    outline: 1px solid green;
-}
-
-.outlines .mod.skinned>.inner p, .outlines .mod.skinned>.inner, .outlines p {
-    outline: 1px dotted red;
+@media not all and (max-width: 767px)
+.page {
+    max-width: 995px;
 }
 
 .wrapper>.inner {
@@ -266,7 +227,7 @@ body, html {
     margin: 0;
     padding: 0;
 }
-.grid-overlay {
+.grid .grid-overlay {
     position: fixed;
     left: 50%;
     top:0;
@@ -275,13 +236,13 @@ body, html {
     xdisplay: none;
     margin: 0 0 0 -490px;
 }
-.grid-overlay ul {
+.grid .grid-overlay ul {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
 }
-.grid-overlay li {
+.grid .grid-overlay li {
     display: block;
     float: left;
     width: 316px;
@@ -290,10 +251,29 @@ body, html {
     border-right:var(--l) solid rgba(255, 0, 0, .1);
     text-indent:-9000px;
 }
-.grid-overlay li:first-child {
+.grid .grid-overlay li:first-child {
     border-left:var(--l) solid rgba(255, 0, 0, .1);
     width: 348px;
 }
-.grid-overlay li:last-child {
+.grid .grid-overlay li:last-child {
     border-right:0;
+}
+
+/* debug outlines */
+.outlines.container {
+    outline: 1px solid blue;
+}
+
+.outlines .page {
+    outline: 1px solid red;
+}
+
+.outlines .inner {
+    outline: 1px solid green;
+}
+
+.outlines .mod.skinned>.inner p, 
+.outlines .mod.skinned>.inner, 
+.outlines p {
+    outline: 1px dotted red;
 }

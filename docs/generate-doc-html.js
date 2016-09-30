@@ -217,6 +217,11 @@ const spec = [
                         external: true,
                     },
                     {
+                        title: 'Småjobber forside',
+                        id: 'smaajobber',
+                        external: true,
+                    },
+                    {
                         title: 'market',
                         id: 'market',
                         external: true,
