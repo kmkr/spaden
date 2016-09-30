@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [6.0.3] - 2016-09-30
+
+### Fixed
+
+* Tooltip mobile fix
+* Tooltip positioning fix when used in weird places
+* Calendar icon can now be colored using regular color classes 
+
 ## [6.0.1] - 2016-09-15
 
 ### Added
