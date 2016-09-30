@@ -23,7 +23,7 @@
     content: '';
     display: block;
     position: absolute;
-    top: -10px;
+    bottom: 19px;
     left: 15px;
     width: 0;
     height: 0;
@@ -44,3 +44,15 @@
     }
     .tooltip[data-tooltip]:focus:before { display: none; }
 }
+
+
+/* Eksempel på Overstyring for lavpriskalenderen, this is soooo not good but it kinda works for now 
+.lowfareTableLayoutFixed .tooltip[data-tooltip]:hover:before,
+.lowfareTableLayoutFixed .tooltip[data-tooltip]:focus:before {
+  bottom:37px;
+}
+.lowfareTableLayoutFixed .tooltip[data-tooltip]:hover:after,
+.lowfareTableLayoutFixed .tooltip[data-tooltip]:focus:after {
+  bottom:31px!important;
+}
+*/
