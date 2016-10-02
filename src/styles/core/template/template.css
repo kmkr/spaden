@@ -21,7 +21,8 @@ body, html { background-color: var(--blue-greyish); }
 .page {
     width: auto;
     _text-align: left;
-    margin-left: 2px;
+    margin-left: var(--small-screen-page-gutter-left);
+    margin-right: var(--small-screen-page-gutter-right);
 }
 .topbar.fixed + .container,
 .topmenu.fixed + .container,
@@ -51,8 +52,9 @@ body, html { background-color: var(--blue-greyish); }
 
 @media not all and (--small-screen) {
     .page {
-        max-width: 990px;
-        margin-left: 10px;
+        max-width: var(--large-screen-page-maxwidth);
+        margin-left: var(--large-screen-page-gutter-left); 
+        margin-right: var(--large-screen-page-gutter-right);
     }
     .container {
         max-width: 1010px;
@@ -71,7 +73,4 @@ body, html { background-color: var(--blue-greyish); }
         right: -240px;
         top: 0;
     }
-}
-@media (min-width: 990px) {
-    .page { margin-left: 15px; }
 }

@@ -8,7 +8,7 @@
 
 
 /* ====== Default spacing ====== */
-h1, h2, h3, h4, h5, h6, ul, ol, dl, p, blockquote, .media { margin: var(--m)  var(--m) }
+h1, h2, h3, h4, h5, h6, ul, ol, dl, p, blockquote, .media { margin: var(--small-screen-block-element-margin) }
 
 dt, dd { margin: 0  var(--m) }
 h1, h2, h3, h4, h5, h6, img { padding-bottom: 0px; }
@@ -90,7 +90,7 @@ t,s,m,l,n,a = tiny(2px),small(5px),medium(10px),large(20px),none(0px), auto
 .rmargin, .r-margin { margin: var(--m) var(--m) }
 
 @media not all and (--small-screen) {
-    h1, h2, h3, h4, h5, h6, ul, ol, dl, p, blockquote, .media { margin: var(--m) var(--l) }
+    h1, h2, h3, h4, h5, h6, ul, ol, dl, p, blockquote, .media { margin: var(--large-screen-block-element-margin) }
     dt, dd { margin: 0 var(--l) }
     .rmargin, .r-margin { margin: var(--m) var(--l) }
 

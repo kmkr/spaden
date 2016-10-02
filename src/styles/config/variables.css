@@ -86,8 +86,10 @@
     --grey-xdk: #474445;
     --grey-xxdk: #353233;
 
-    /****** Size system *******/
+
+    /******* Size system ******/
     /* x2 golden ratio system */
+    
     --xxs:2px;
     --xs:4px;
     --s:8px;
@@ -95,8 +97,17 @@
     --l:32px;
     --xl:64px;
 
-    /* Spaden v6 default values */
+    --small-screen-mod-gutter:4px;
+    --large-screen-mod-gutter:16px;
+    --large-screen-mod-inner:0;
+    --large-screen-page-maxwidth:995px;
+    --small-screen-page-gutter-left:2px;
+    --small-screen-page-gutter-right:2px;
+    --large-screen-page-gutter-left:31px; 
+    --large-screen-page-gutter-right:31px; 
     
+    
+    /* Spaden v6 default values */
     /*
     --xxs:2px;
     --xs:4px;  
@@ -104,6 +115,15 @@
     --m:10px;
     --l:20px;
     --xl:64px; 
-    */
-}
+    
+    --small-screen-mod-gutter:0 2px 4px 0;
+    --large-screen-mod-gutter:0 10px 10px 0;
+    --large-screen-mod-inner:10px;
+    --large-screen-page-maxwidth:990px;
+    --small-screen-page-gutter-left:2px;
+    --small-screen-page-gutter-right:0;
+    --large-screen-page-gutter-left:15px;
+    --large-screen-page-gutter-right:0px;
+*/
 
+}

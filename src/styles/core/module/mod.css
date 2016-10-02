@@ -6,8 +6,8 @@ version: 0.2
 */
 /* **************** BLOCK STRUCTURES ***************** */
 /* mod */
-.mod,.mod-behaviour { margin: 0 var(--xxs) var(--xs) 0 !important; }
-.mod .lastUnit .mod { margin-right: 0 !important; }
+.mod,.mod-behaviour { margin: var(--small-screen-mod-gutter) !important; }
+/*.mod .lastUnit .mod { margin-right: 0 !important; } shouldnt be inn use */
 .bd, .ft, .hd {
     overflow: hidden;
     *overflow: visible;
@@ -41,9 +41,9 @@ a.mod { display: block; }
 .foot > .mod .inner { border-radius: 0 ; }
 
 @media not all and (--small-screen) {
-    .mod,.mod-behaviour { margin: 0 var(--m) var(--m) 0 !important; }
+    .mod,.mod-behaviour { margin: var(--large-screen-mod-gutter) !important; }
     .mod.shadow > .inner {
-        padding-top: var(--m);
-        padding-bottom: var(--m);
+        padding-top: var(--large-screen-mod-inner);
+        padding-bottom: var(--large-screen-mod-inner);
     }
 }
