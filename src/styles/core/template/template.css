@@ -1,4 +1,5 @@
 @import '../../config/variables.css';
+
 /* **************** TEMPLATE ***************** */
 /* ====== Page Head, Body, and Foot ====== */
 .main {
@@ -23,6 +24,7 @@ body, html { background-color: var(--blue-greyish); }
     _text-align: left;
     margin-left: var(--small-screen-page-gutter-left);
     margin-right: var(--small-screen-page-gutter-right);
+    margin-left: var(--small-screen-page-gutter);
 }
 .topbar.fixed + .container,
 .topmenu.fixed + .container,
@@ -34,17 +36,9 @@ body, html { background-color: var(--blue-greyish); }
 /* Special case. Topmenu margin comes from finnlet */
 .topbar-level2.fixed:not(.hidden) + .container { margin-top: 45px; }
 
+
 .container.fullsize { max-width: 100%; }
-/* wraps other template elems to set width */ /* text-align IE5.5 */
-/* ?
-.liquid, .liquid .page {max-width: none!important;} */
-/* ====== Columns ====== */
-/* ?
-.leftCol{float:left;width:330px;_margin-right:-3px;}
-.rightCol{float:right;width:330px;_margin-left:-3px;}
-.rightCol.object > .mod {margin-right:0 !important}
-.rightCol.object{width:320px}
-*/
+
 .head {
     position: relative;
     z-index: 10;
@@ -56,6 +50,7 @@ body, html { background-color: var(--blue-greyish); }
         margin-left: var(--large-screen-page-gutter-left); 
         margin-right: var(--large-screen-page-gutter-right);
     }
+    /* These are dictate by the banner formats, might aswell be considered as constants */
     .container {
         max-width: 1010px;
         margin: 0 auto;
