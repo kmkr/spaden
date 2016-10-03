@@ -669,7 +669,7 @@ select.blank {
 
 /* Layout */
 
-.formelement, .actions { margin: var(--m) var(--l); }
+.formelement, .actions { margin: var(--small-screen-block-element-margin); }
 
 .formelement, .actions {
     margin: var(--m);
@@ -691,7 +691,7 @@ select.blank {
 }
 
 @media not all and (--small-screen) {
-    .formelement, .actions { margin: var(--m) var(--l); }
+    .formelement, .actions { margin: var(--large-screen-block-element-margin); }
 }
 
 @media (width >= 640px) {

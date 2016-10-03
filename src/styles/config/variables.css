@@ -105,8 +105,29 @@
     --small-screen-page-gutter-right:2px;
     --large-screen-page-gutter-left:31px; 
     --large-screen-page-gutter-right:31px; 
+
+    --small-screen-block-element-margin:0;
+    --large-screen-block-element-margin:0 0 16px 0;
     
-    
+    --small-screen-d2-size:0.618em;
+    --small-screen-d1-size:0.618em;
+    --small-screen-base-size:1em;
+    --small-screen-h4-size:1.618em;
+    --small-screen-h3-size:2.618em;
+    --small-screen-h2-size:4.236em;
+    --small-screen-h1-size:6.854em;
+
+/*
+    --large-screen-d2-size:0.618em;
+    --large-screen-d1-size:0.618em;
+    --large-screen-base-size:1em;
+    --large-screen-h4-size:1.618em;
+    --large-screen-h3-size:2.618em;
+    --large-screen-h2-size:4.236em;
+    --large-screen-h1-size:6.854em;
+    --base-line-height:1;
+  */
+
     /* Spaden v6 default values */
 
     /*
@@ -125,6 +146,27 @@
     --small-screen-page-gutter-right:0;
     --large-screen-page-gutter-left:15px;
     --large-screen-page-gutter-right:0px;
+
+    --small-screen-block-element-margin:10px 10px;
+    --large-screen-block-element-margin:10px 20px;
+
+    --small-screen-d2-size:9px;
+    --small-screen-d1-size:10px;
+    --small-screen-h5-size:13px;
+    --small-screen-h4-size:14px;
+    --small-screen-h3-size:16px;
+    --small-screen-h2-size:20px;
+    --small-screen-h1-size:25px;
 */
+    --large-screen-d2-size:10px;
+    --large-screen-d1-size:12px;
+    --large-screen-h5-size:14px;
+    --large-screen-h4-size:16px;
+    --large-screen-h3-size:20px;
+    --large-screen-h2-size:25px;
+    --large-screen-h1-size:35px;
+
+    --base-line-height:1.25;
+
 
 }
